@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>यूदीत - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>यूदीत</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>सभा के आसपास के लोगों का कोलाहल बन्द हो जाने पर अस्सूरी सेना के प्रधान सेनापति होलोफ़ेरनिस ने अन्य सभी जातियों और मोआबियों के सामने कहा,</span> <sup>2</sup><span class='v-txt'>&quot;अहीओर! तुम कौन होते हो और एफ्ऱईम के भाड़े के सब सैनिको! तुम कौन होते हो, जो तुम आज हमारे सामने भविष्यवाणी करते हो और कहते हो कि हम इस्राएलियों से नहीं लड़ें, क्योंकि उनका ईश्वर उनकी रक्षा करेग? नबूकदनेज़र के सिवा और कौन ईश्वर है?  वही अपनी सेनाएँ भेज कर अपनी शक्ति का परिचय देगा, उन्हें पृथ्वी तल से मिटा देगा और उनका ईश्वर उनका उद्धार नहीं कर सकेगा!</span> <sup>3</sup><span class='v-txt'>हम, उसके दास, उन्हें यों मार गिरायेंगे, जैसे वे एक आदमी भर हों।  वे हमारे घुड़सवार सैनिक-बल का सामना कभी नहीं कर सकेंगे।</span> <sup>4</sup><span class='v-txt'>हम इसके द्वारा उन्हें पराजित करेंगे।  उनकी पहाड़ियाँ उनके रक्त से भर जायेंगी और उनके मैदान उनकी लाशों से पट जायेंगे।  उनके पैर हमारे सामने नहीं टिक पायेंगे।  उनका सर्वनाश किया जायेगा।  यह समस्त पृथ्वी के स्वामी राजा नबूकदनेज़र का कहना है।  उसने यही कहा था</span> <sup>5</sup><span class='v-txt'>&quot;अहीओर! तुम अम्मोन के भाड़े के टट्टू हो!  तुम्हारे दुर्भाग्य ने ही तुम से ये शब्द कहलवाये हैं।  तुम मेरा मुँह आज से तब तक नहीं देखोगे, जब तक मैं मिस्र से आयी इस जाति से बदला न ले लूँ।</span> <sup>6</sup><span class='v-txt'>तब मेरे लौटने पर मेरे सैनिकों और सेवकों के भाले तुम्हारी बग़ल छेदेंगे और तुम उन लोगों के घायलों के बीच गिर कर पड़े रहोगे।</span> <sup>7</sup><span class='v-txt'>अब मेरे दास तुम्हें पहाड़ों पर ले जायेंगे और वहाँ घाटी के मार्ग पर के किसी नगर में तुम्हें छोड़ देंगे।</span> <sup>8</sup><span class='v-txt'>तुम्हारा वध तभी होगा, जब उन लोगों का विध्वंस हो जायेगा।</span> <sup>9</sup><span class='v-txt'>यदि तुम अपने मन में आशा करते हो कि उनकी हार नहीं होगी, तो तुम्हारे उदास होने का कोई कारण नहीं। मेरा एक शब्द भी व्यर्थ नहीं जायेगा।&quot;</span> <sup>10</sup><span class='v-txt'>होलोफ़ेरनिस ने अपने तम्बू के पास खड़े अपने दासों को अहीओर को पकड़ कर बेतूलिया ले जाने और वहाँ उसे इस्राएलियों के सुपुर्द करने की आज्ञा दी।</span> <sup>11</sup><span class='v-txt'>उसके दास उसे पकड़ कर पड़ाव के बाहर मैदान में ले गये।  मैदान पार कर और पहाड़ पर चढ़ कर वे उन जलस्रोतों के पास आये, जो बेतूलिया की तलहटी में है।</span> <sup>12</sup><span class='v-txt'>जैसे ही पर्वत की चोटी पर के नगरवासियों ने उन्हें आते देखा, वे अपने अस्त्र-शस्त्र ले कर नगर के बाहर, पहाड़ की चोटी पर दौड़ पड़े और सभी गोफेन चलाने वालों ने पत्थर मार-मार कर उनका रास्ता रोका।</span> <sup>13</sup><span class='v-txt'>तब वे पर्वत के नीचे छिप गये और अहीओर को बाँध कर पर्वत की तलहटी में छोड़ दिया।  इसके बाद वे अपने स्वामी के पास लौट गये।</span> <sup>14</sup><span class='v-txt'>इस्राएली अपने नगर से नीचे उतरे और उन्होंने उसके पास जा कर उसके बन्धन खोल दिये।  फिर उन्होंने उसे बेतूलिया ले जा कर अपने नगर के अध्यक्षों के सामने उपस्थित किया।</span> <sup>15</sup><span class='v-txt'>उन दिनों सिमओनवंशी मीका का पुत्र उज़्ज़ीया, गोतोनीएल का पुत्र काब्रीस और मलकीएल का पुत्र करमीस-ये नगर के अध्यक्ष थे।</span> <sup>16</sup><span class='v-txt'>उन्होंने नगर के सब नेताओ को एकत्रित किया।  सब युवक और स्त्रियाँ भी सभा में उपस्थित हुए।  अब उज़्ज़ीया ने अहीओर को सब लोगों के बीच खड़ा कर उस से पूछा कि उसके साथ क्या हुआ।</span> <sup>17</sup><span class='v-txt'>तब उसने उन्हें वह सब कुछ बताना आरम्भ किया, जो होलोफ़ेरनिस के मन्त्रियों की सभा में हुआ था और उसने वह सारा भाषण भी सुनाया, जो उसने अस्सूरियों के सेनापतियों के सामने दिया था और वह भी, जो होलोफ़ेरनिस ने शेखी मारते हुए इस्राएल के विरुद्ध कहा था।</span> <sup>18</sup><span class='v-txt'>यह सुन कर लोग ईश्वर के सामने नतमस्तक हो कहने लगे,</span> <sup>19</sup><span class='v-txt'>&quot;प्रभु!  स्वर्गेश्वर!  उनका अहंकार देख और हमारी जाति की दुर्गति पर दया कर।  आज तू उन पर दयादृष्टि कर, जिन्होंने अपने को तुझे समर्पित कर दिया है।&quot;</span> <sup>20</sup><span class='v-txt'>इसके बाद उन्होंने अहीओर को सान्त्वना दी और उसकी बड़ी प्रशंसा की।</span> <sup>21</sup><span class='v-txt'>उज़्ज़ीया उसे सभा से अपने घर ले गया और उसने नेताओं को एक भोज दिया।  वे इस्राएल के ईश्वर से सहायता के लिए रात भर प्रार्थना करते रहे।</span> </p>
+        <div class='nav'><a href='018005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='018007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

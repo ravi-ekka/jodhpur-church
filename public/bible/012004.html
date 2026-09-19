@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>राजाओं का दुसरा ग्रन्थ - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>राजाओं का दुसरा ग्रन्थ</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>एक दिन नबियों के शिष्यों में एक की पत्नी ने एलीशा से प्रार्थना करते हुए कहा, &quot;आपके दास, मेरे पति की मृत्यु हो गयी है और आप जानते हैं कि आपके दास प्रभु-भक्त थे।  अब महाजन मेरे दोनों पुत्रों को दास बनाने के लिए आ रहा है।&quot;</span> <sup>2</sup><span class='v-txt'>एलीशा ने उस से पूछा, &quot;तो मैं तुम्हारे लिए क्या कर सकता हूँ?  मुझे बताओ कि तुम्हारे घर में क्या-क्या है।&quot;  उसने उत्तर दिया, &quot;आपकी इस दासी के घर में तेल से भरी एक कुप्पी के सिवा और कुछ नहीं है&quot;।</span> <sup>3</sup><span class='v-txt'>उसने उस से कहा, &quot;जाओ और अपने सब पड़ोसियों से ख़ाली बरतन माँग लाओ।  जितने अधिक ला सको, ले आओ।</span> <sup>4</sup><span class='v-txt'>तुम अपने पुत्रों के साथ घर जा कर भीतर से किवाड़ लगा दो।  उन सब पात्रों में तेल डालो और जैसे-जैसे वे भरते जायें, उन्हें अलग रखती जाओ।&quot;</span> <sup>5</sup><span class='v-txt'>वहाँ से घर आ कर उसने अपने पुत्रों के साथ भीतर जा कर किवाड़ लगा लिये।  वे दोनों उसे बरतन देते जाते और वह उस में तेल डालती जाती।</span> <sup>6</sup><span class='v-txt'>जब सारे बरतन भर गये, तब उसने अपने बेटे से कहा, &quot;और बरतन दो&quot;।  इस पर वह बोला, &quot;और कोई ख़ाली बरतन नहीं है&quot;।  तब तेल बहना बन्द हो गया।</span> <sup>7</sup><span class='v-txt'>उसने जा कर यह सब हाल ईश्वर-भक्त को सुनाया।  असने उस से कहा, &quot;जाओ, तेल बेच कर अपना ऋण चुका दो और बचे हुए तेल का उपयोग अपने और पुत्रों के लिए करो।&quot;</span> <sup>8</sup><span class='v-txt'>एलीशा किसी दिन शूनेम हो कर जा रहा था।  वहाँ की एक धनी महिला ने उस से अनुरोध किया कि वह उसके यहाँ भोजन करे।  इसके बाद, जब-जब उसे वहाँ हो कर जाना था, तो वह उसके यहाँ भोजन करता था।</span> <sup>9</sup><span class='v-txt'>उसने अपने पति से कहा, &quot;मुझे विश्वास है कि जो हमारे यहाँ भोजन करने आया करते हैं, वह एक ईश्वर-भक्त सन्त हैं।</span> <sup>10</sup><span class='v-txt'>हम छत पर एक छोटा-सा कमरा बनवायेंं।  हम उस में पलंग, मेज़, कुर्सी और दीपक रख दें।  जब वह हमारे यहाँ आयेंगे, तो उस में विश्राम करेंगे।&quot;</span> <sup>11</sup><span class='v-txt'>एलीशा किसी दिन आया और छ़त पर चढ़ कर वहाँ सो गया।</span> <sup>12</sup><span class='v-txt'>उसने अपने सेवक गेहज़ी को आज्ञा दी, &quot;शूनेमी स्त्री को बुला लाओ&quot;।  उसने उसे बुलाया, तो वह स्त्री उसके पास आयी।</span> <sup>13</sup><span class='v-txt'>तब उसने सेवक को आज्ञा दी, &quot;उस से कहो, ‘तुम हमारे लिए इतने कष्ट उठाती हो।  बताओ, तुम्हारे लिए क्या किया जा सकता है।  क्या तुम्हारे लिए राजा या सेनाध्यक्ष से कुछ निवेदन किया जाये’?&quot;  स्त्री ने उत्तर दिया, &quot;मैं अपने संबंधियों के साथ सुरक्षित हूँ&quot;।</span> <sup>14</sup><span class='v-txt'>एलीशा ने कहा, &quot;मैं उस महिला के लिए क्या कर सकता हूँ?&quot;  उसके सेवक गेहज़ी ने उत्तर दिया, &quot;उसके कोई पुत्र नहीं है और उसका पति बूढ़ा है&quot;।</span> <sup>15</sup><span class='v-txt'>एलीशा ने कहा, &quot;उसे बुलाओ&quot;।  उसने उसे बुलाया और वह द्वार पर खड़ी हो गयी।</span> <sup>16</sup><span class='v-txt'>तब एलीशा ने कहा, &quot;अगले वर्ष, इसी समय तुम्हारी गोद में पुत्र होगा&quot;।  उसने उत्तर दिया, &quot;नही ईश्वर-भक्त! अपनी दासी को झूठा आश्वासन नहीं दीजिए&quot;।</span> <sup>17</sup><span class='v-txt'>वह स्त्री गर्भवती हुई और अगले वर्ष, उसी समय उसने पुत्र प्रसव किया, जैसा कि एलीशा ने उसे आश्वासन दिया था।</span> <sup>18</sup><span class='v-txt'>जब शूनेमी महिला का पुत्र बड़ा हो गया, तो वह किसी दिन अपने पिता से मिलने आया, जो फ़सल काटने वाले मज़-दूरों के पास था।</span> <sup>19</sup><span class='v-txt'>उसने अपने पिता से कहा, &quot;हाय, मेरा सिर! मेरा सिर!&quot; पिता ने एक नौकर से कहा, &quot; उसे उठा कर उसकी माँ के पास ले जाओ&quot;।</span> <sup>20</sup><span class='v-txt'>नौकर उसे उठा कर उसकी माँ के पास ले आया।  वह दोपहर तक अपनी माता की गोद में बैठा रहा और मर गया।</span> <sup>21</sup><span class='v-txt'>उसने अपने पुत्र को ऊपर ले जा कर ईश्वर-भक्त के पलंग पर लिटा दिया और वह दरवाज़ा बन्द कर बाहर निकल आयी।</span> <sup>22</sup><span class='v-txt'>तब उसने अपने पति को बुला कर उस से कहा, &quot;मेरे पास एक गधी के साथ किसी नौकर को भेज दीजिए।  मैं जल्दी ही ईश्वर- भक्त के पास जाऊँगी।&quot;</span> <sup>23</sup><span class='v-txt'>उसने उस से पूछा, &quot;तुम आज उनके पास क्यों जाओगी?  आज न प्रतिपदा है और न विश्राम-दिवस।&quot;  उसने कहा, &quot;चिन्ता मत कीजिए&quot;।</span> <sup>24</sup><span class='v-txt'>उसने गधी कसवाने के बाद नौकर से यह कहा, &quot;जल्दी-जल्दी हाँको और जब तक मैं न कहूँ, तब तक हाँकने में ढिलाई मत करो&quot;।</span> <sup>25</sup><span class='v-txt'>इस प्रकार चल कर वह करमेल पर्वत पर ईश्वर-भक्त के पास पहुँची।  उसे दूर से आते देख कर ईश्वर-भक्त ने अपने सेवक गेहज़ी से कहा, &quot;देखो, शूनेमी आ रही है।</span> <sup>26</sup><span class='v-txt'>जल्दी जा कर उस से मिलो और उस से पूछो- तुम सकुशल तो हो?  तुम्हारे पति सकुशल तो हैं?  और लड़का अच्छी तरह तो है?&quot;  उसने उत्तर दिया, &quot;सब ठीक है&quot;।</span> <sup>27</sup><span class='v-txt'>उसने पर्वत पर ईश्वर-भक्त के यहाँ पहुँच कर उसके पाँव पकड़े।  गेहज़ी उसे हटाने के लिए पास आया, लेकिन ईश्वर-भक्त ने उस से कहा, &quot;इसे छोड़ दो, क्योंकि इसकी आत्मा दुःखी है और प्रभु ने मुझ से इसका कारण छिपा लिया और मुझे बताया तक नही&quot;।</span> <sup>28</sup><span class='v-txt'>वह कहने लगी, &quot;क्या मैंने श्रीमान् से एक पुत्र की याचना की थी?  क्या मैंने उस समय नहीं कहा था कि मुझे झूठा आश्वासन मत दीजिए?&quot;</span> <sup>29</sup><span class='v-txt'>एलीशा ने गेहज़ी को आज्ञा दी, &quot;अपनी कमर बाँध लो और हाथ में मेरा डण्डा ले कर वहाँ चले जाओ।  यदि तुम्हें रास्ते में कोई मिले, तो उसे प्रमाण नहीं करोगे और यदि कोई तुम्हें प्रणाम करे, तो उसे उत्तर नहीं दोगे।  मेरा डण्डा उस लड़के के चेहरे पर रख  दोगे।&quot;</span> <sup>30</sup><span class='v-txt'>लड़के की माँ ने कहा, &quot;प्रभु की और आपकी शपथ!  मैं आपके बिना यहाँ से नहीं जाऊँगी&quot;।  तब वह उसके साथ चल दिया।</span> <sup>31</sup><span class='v-txt'>गेहज़ी आगे चला गया था और उसने उस डण्डे को लड़के के चेहरे पर रख दिया था, परन्तु उस बालक की दशा में कोई परिवर्तन नहीं हुआ और उस में जीवन का कोई लक्षण दिखाई नहीं दिया।  वह लौट आया और एलीशा से मिल कर उसने कहा, &quot;बच्चा जीवित नहीं हुआ&quot;।</span> <sup>32</sup><span class='v-txt'>एलीशा ने घर आ कर उस लड़के को अपने पलंग पर मरा हुआ पाया।</span> <sup>33</sup><span class='v-txt'>वह कमरे के अन्दर चला गया और दरवाज़ा बन्द कर ईश्वर से प्रार्थना करने लगा।</span> <sup>34</sup><span class='v-txt'>तब वह अपना मुख उसके मुख पर, अपनी आँखें उसकी आँखों पर और अपने हाथ उसके हाथों पर रख कर उस लड़के पर लेट गया।  वह इस प्रकार उस पर तब तक लेटा रहा, जब तक उसका शरीर गर्म न होने लगा।</span> <sup>35</sup><span class='v-txt'>इसके बाद एलीशा उठा और कमरे में इधर-उधर टहल कर फिर लड़के पर लेट गया।  तब लड़के को सात बार छींक आयी और उसने अपनी आँखें खोल दीं।</span> <sup>36</sup><span class='v-txt'>इस पर एलीशा ने गेहज़ी को बुला कर कहा, &quot;शूनेमी महिला को बुलाओ!&quot;  वह उसके बुलाने पर आयी और एलीशा ने उस से कहा, &quot;अपने पुत्र को ले जाओ“।</span> <sup>37</sup><span class='v-txt'>उसने उसके चरणों पर गिर कर उसे दण्डवत् किया और अपने पुत्र को उठा कर वह चली गयी।</span> <sup>38</sup><span class='v-txt'>एलीशा गिलगाल लौटा।  उस समय देश में अकाल पड़ा।  जब नबियों के शिष्य उसके सामने बैठे हुए थे, तो उसने अपने सेवक से कहा, &quot;हण्डा चढ़ा कर नबियों के शिष्यों के लिए भोजन तैयार करो&quot;।</span> <sup>39</sup><span class='v-txt'>तब उन में एक व्यक्ति तरकारी लेने खेत गया।  उसने एक जंगली लता पायी और उस से वह गोद भर इन्द्रायण फल तोड़ कर ले आया।  उसने उनके टुकड़े-टुकड़े काट कर हण्डे में डाल दिया; क्योंकि कोई नहीं जानता था कि वे फल क्या हैं।</span> <sup>40</sup><span class='v-txt'>जब लोगों को भोजन परोसा गया और उन्होंने खाना शुरू किया, तो वे चिल्ला उठे, &quot;ईश्वर- भक्त! हण्डे में मौत है&quot; और वे उसे खा नहीं सके।</span> <sup>41</sup><span class='v-txt'>तब एलीशा ने आज्ञा दी, &quot;थोड़ा आटा ले  आओ’।  उसने उसे उस हण्डे में डालते हुए कहा, &quot;अब लोगों को परोस दो और वे खायें&quot;।  हण्डे में अब कोई हानिकारक चीज़ नहीं रह गयी थी।</span> <sup>42</sup><span class='v-txt'>एक मनुष्य बाल-शालिशा से आया और उसने ईश्वर -भक्त को प्रथम फल के रूप में जौ की बीस रोटियाँ और नये अनाज का बोरा दिया।  तब एलीशा ने कहा &quot;लोगों को खाने के लिए दे दो&quot;</span> <sup>43</sup><span class='v-txt'>किन्तु उसके नौकर ने कहा, &quot;मैं इतने को ही एक सौ लोगों में कैसे बाँट सकता हूँ?&quot;  उसने उत्तर दिया, &quot;लोगों को खाने के लिए दो, क्योंकि प्रभु ने यह कहा है- वे खायेंगे और उस में से कुछ बच भी जायेगा&quot;।</span> <sup>44</sup><span class='v-txt'>उसने लोगों को खिलाया।  उन्होंने खा लिया और जैसा कि प्रभु ने कहा था, उस में से कुछ बच भी गया।</span> </p>
+        <div class='nav'><a href='012003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='012005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 16</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 16</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>अधर्मी पुत्रों के कारण आनन्द मत मनाओे।  यदि वे ईश्वर पर श्रद्धा नहीं रखते, तो उनकी बढ़ती संख्या पर प्रसन्न मत हो।</span> <sup>2</sup><span class='v-txt'>उनकी लम्बी आयु का भरोसा मत करो और उनकी संख्या पर निर्भर मत रहो।</span> <sup>3</sup><span class='v-txt'>हज़ार अधर्मी पुत्रों की अपेक्षा एक भक्त पुत्र अच्छा है।</span> <sup>4</sup><span class='v-txt'>अधर्मी पुत्रों की अपेक्षा निस्सन्तान मरना अच्छा है।</span> <sup>5</sup><span class='v-txt'>एक समझदार व्यक्ति से नगर की रक्षा होती है, किन्तु दुष्टों की पीढ़ी नष्ट हो जायेगी।</span> <sup>6</sup><span class='v-txt'>मैंने यह सब अपनी आँखो से बार-बार देखा और इससे अधिक प्रभावकारी उदाहरण सुने।</span> <sup>7</sup><span class='v-txt'>पापियों की सभा में आग प्रज्वलित होती है और विद्रोही भीड़ के विरुद्ध कोप भड़कता है।</span> <sup>8</sup><span class='v-txt'>प्रभु ने भीमकाय लोगों को क्षमा नहीं किया, जिन्होंने अपनी शक्ति के बल पर विद्रोह  किया था।</span> <sup>9</sup><span class='v-txt'>उसने लोट के नगर की रक्षा नहीं की; क्योंकि उसे उसके घमण्ड से घृणा थी।</span> <sup>10</sup><span class='v-txt'>उसने विनाश की प्रजाति पर दया नहीं की; वह अपने पापों के कारण नष्ट की गयी।</span> <sup>11</sup><span class='v-txt'>उसने छः लाख पैदल सैनिकों के साथ वही किया, जिन्होंने हठपूर्वक उस से विद्रोह किया था।  यदि केवल एक ही हठीला विद्रोही हुआ होता और वह बच गया होता, तो बड़े आश्चर्य की बात होती;</span> <sup>12</sup><span class='v-txt'>क्योंकि उसके पास दया और क्रोध है; वह बड़ा दयालु है, किन्तु अपने क्रोध को भी भड़कने देता है।</span> <sup>13</sup><span class='v-txt'>उसकी दया जितनी बड़ी है, उतनी ही महान् है उसकी डाँट। वह कर्मों के अनुसार मनुष्यों का न्याय करता है।</span> <sup>14</sup><span class='v-txt'>पापी अपनी लूट के साथ नहीं भाग सकेगा और धर्मी की आशा पूर्ण हो जायेगी।</span> <sup>15</sup><span class='v-txt'>जो भलाई करता है, उसे पुरस्कार मिलेगा और सब को अपने कर्मों का फल दिया जायेगा।  प्रभु ने फिराउन का हृदय कठोर बना दिया; जिससे वह प्रभु को नहीं पहचाने और प्रभु के कार्य सर्वत्र सम्पन्न हों।  सारी सृष्टि पर प्रभु की कृपा प्रकट हो गयी है।  उसने प्रकाश और अन्धकार, दोनों को मनुष्यों में बाँट दिया।</span> <sup>16</sup><span class='v-txt'>यह मत कहो, &quot;मैं प्रभु के सामने से छिप जाऊँगा, वहाँ आकाश में मुझे कौन याद करेगा?</span> <sup>17</sup><span class='v-txt'>अपार भीड़ में मुझे कौन पहचानेगा?  समस्त सृष्टि में मैं क्या हूँ?</span> <sup>18</sup><span class='v-txt'>प्रभु के आगमन पर आकाश, सर्वोच्च आकाश, महागत्र्त और पृथ्वी सब-के-सब हिलाये जायेंगे।</span> <sup>19</sup><span class='v-txt'>जब प्रभु उन पर दृष्टि डालेगा, तो पर्वत और पृथ्वी के आधार डर के मारे काँप उठेंगे।</span> <sup>20</sup><span class='v-txt'>फिर भी वह मुझ पर ध्यान नहीं देता।  मेरे मार्ग का निरीक्षण कौन करेगा?</span> <sup>21</sup><span class='v-txt'>जब मैं पाप करता, तो काई नहीं देखता; जब मैं गुप्त में अपराध करता, तो कौन जानता है?</span> <sup>22</sup><span class='v-txt'>कौन भले कामों की चरचा करता है?  कौन उनकी प्रतीक्षा करता है?  न्याय का दिन दूर है।&quot;</span> <sup>23</sup><span class='v-txt'>ये नासमझ के विचार हैं, अविवेकी ऐसी मूर्खतापूर्ण बातें सोचता है।</span> <sup>24</sup><span class='v-txt'>पुत्र! मेरी बात सुनो और ज्ञान ग्रहण करो।</span> <sup>25</sup><span class='v-txt'>मैं तुम केा सन्तुलित शिक्षा प्रदान करूँगा और अपना ज्ञान अच्छी तरह समझाऊँगा।  मेरी बातों में मन लगाओ।</span> <sup>26</sup><span class='v-txt'>प्रभु ने प्रारम्भ से अपने कार्य सम्पन्न किये और प्रत्येक कृति का अपना स्थान निर्धारित किया।</span> <sup>27</sup><span class='v-txt'>उसने सदा के लिए उनका कार्यक्षेत्र निश्चित किया और उनकी अपनी प्रकृति के अनुसार उन को अधिकार दिया।</span> <sup>28</sup><span class='v-txt'>उन्हें न तो भूख लगती और न थकावट होती, वे अपने कार्य नहीं छोड़तीं।</span> <sup>29</sup><span class='v-txt'>कोई न तो उसकी निकटवर्ती कृति से टकराती और न उसके आदेश की अवज्ञा करती।</span> <sup>30</sup><span class='v-txt'>इसके बाद प्रभु ने पृथ्वी पर दृष्टि डाली और उसे अपने बरदानों से भर दिया।</span> <sup>31</sup><span class='v-txt'>उसने पृथ्वीतल हर प्रकार के प्राणियों से भर दिया और उन्हें उसी में लौटना होगा।</span> </p>
+        <div class='nav'><a href='028015.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028017.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

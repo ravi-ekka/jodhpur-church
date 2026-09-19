@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लेवी - अध्याय 19</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लेवी</h1>
+        <h2>अध्याय 19</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु मूसा से बोला,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;इस्राएलियों के सारे समुदाय से यह कहो - पवित्र बनो, क्योंकि मैं प्रभु, तुम्हारा ईश्वर, पवित्र हूँ।</span> <sup>3</sup><span class='v-txt'>तुम में प्रत्येक व्यक्ति अपने माता-पिता का आदर करेगा और मेरे विश्राम-दिवस मनायेगा, क्योंकि मैं प्रभु तुम्हारा ईश्वर हूँ।</span> <sup>4</sup><span class='v-txt'>तुम मूर्तिपूजा नहीं करोगे, न तुम अपने लिए ढाली हुई देव मूर्तियाँ बनाओगे; क्योंकि मैं प्रभु, तुम्हारा ईश्वर हूँ।</span> <sup>5</sup><span class='v-txt'>यदि तुम प्रभु के लिए शान्ति-बलि चढ़ाओं, तो उसे इस प्रकार चढ़ाओ कि तुम प्रभु के कृपापात्र बन जाओ।</span> <sup>6</sup><span class='v-txt'>तुम जिस दिन बलि चढ़ाते हो, उसे उसी दिन जो शेष रह जाये, वह आग में जला दिया जाये।</span> <sup>7</sup><span class='v-txt'>यदि तीसरे दिन उस में से कुछ खाया जायेगा, तो वह अशुद्ध है और चढ़ाने वाले को उस से कुछ लाभ नहीं होगा।</span> <sup>8</sup><span class='v-txt'>जो उस में से खाता है, वह दोषी होगा। उसने प्रभु की पवित्र वस्तु को अपवित्र किया। वह अपने समुदाय से बहिष्कृत किया जायेगा।</span> <sup>9</sup><span class='v-txt'>जब तुम अपनी भूमि की फ़सल काटो, तो अपने खेतों को किनारे तक नहीं काटो और काटे हुए खेत की बालें नहीं बीनो।</span> <sup>10</sup><span class='v-txt'>तुम अपनी दाखबारियों से दूसरी बार फल नहीं बटोरो और गिरे हुए अंगूरों को नहीं बीनो। तुम उन्हें गरीबों और परदेषियों के लिए छोड़ दो। मैं प्रभु, तुम्हारा ईश्वर हूँ।</span> <sup>11</sup><span class='v-txt'>चोरी मत करो, झूठ मत बोलो और अपने पड़ोसी को धोखा मत दो।</span> <sup>12</sup><span class='v-txt'>अपने ईश्वर का नाम अपवित्र करते हुए मेरे नाम की झूठी शपथ मत लो। मैं प्रभु हूँ।</span> <sup>13</sup><span class='v-txt'>तुम न तो अपने पड़ोसी का शोषण करो और न उसके साथ किसी प्रकार का अन्याय। अपने दैनिक मजदूर का वेतन दूसरे दिन तक अपने पास मत रखो।</span> <sup>14</sup><span class='v-txt'>तुम न तो बहरे का तिरस्कार करो और न अन्धे के मार्ग में ठोकर लगाओ, बल्कि अपने ईश्वर पर श्रद्धा रखो। मैं प्रभु हूँ।</span> <sup>15</sup><span class='v-txt'>तुम न्याय करते समय पक्षपात मत करो। तुम न तो दरिद्र का पक्ष लो और न धनी का मन रखो। तुम निष्पक्ष होकर अपने पड़ोसी का न्याय करो।</span> <sup>16</sup><span class='v-txt'>तुम न तो अपने लोगों की बदनामी करो और न अपने पड़ोसी को प्राणदण्ड दिलाओं। मैं प्रभु हूँ।</span> <sup>17</sup><span class='v-txt'>अपने भाई के प्रति अपने हृदय में बैर मत रखो। यदि तुम्हारा पड़ोसी कोई अपराध करे, तो उसे डाँटो। नहीं तो तुम उसके पाप के भागी बनोगे।</span> <sup>18</sup><span class='v-txt'>तुम न तो बदला लो और न तो अपने देश-भाइयों से मनमुटाव रखो। तुम अपने पड़ोसी को अपने समान प्यार करो। मैं प्रभु हूँ।</span> <sup>19</sup><span class='v-txt'>तुम मेरे आदेशों का पालन करो। तुम एक जाति के पशु से दूसरी जाति के पशु का गर्भाधान नहीं कराओं। तुम अपने खेतों में दो प्रकार के बीज नहीं बोओगे तुम दो प्रकार के धागों से बुने वस्त्र नहीं पहनोगे।</span> <sup>20</sup><span class='v-txt'>यदि कोई पुरुष ऐसी स्त्री से प्रसंग करता है, जो दासी है और जिसकी सगाई किसी दूसरे से हो चुकी है, किन्तु जिसको रूपया देखर नहीं छुड़ाया गया है और जो अपनी दासता से मुक्त नहीं हुई है, तो उन्हें उचित दण्ड दिया जाये, लेकिन उन्हें प्राणदण्ड नहीं दिया जाएगा, क्योंकि वह स्वतंत्र नहीं है।</span> <sup>21</sup><span class='v-txt'>पुरुष प्रभु के सामने क्षतिपूर्ति-बलि चढ़ाने के लिए दर्शन-कक्ष के द्वार पर एक मेढ़ा लायेगा।</span> <sup>22</sup><span class='v-txt'>इसके द्वारा याजक उसके पाप के लिए प्रभु के सामने प्रायश्चित-विधि सम्पन्न करेगा इसके बाद उसे पाप की क्षमा मिलेगी।</span> <sup>23</sup><span class='v-txt'>जब तुम देश में पहँुचोगे, और वहाँ भिन्न प्रकार के फल-वृक्ष लगाओगे, तो उनके फल वर्जित होंगे। वे तीन वर्ष तक तुम्हारे लिये वर्जित होंगे तुम उन्हें नहीं खाओगे।</span> <sup>24</sup><span class='v-txt'>चौथे वर्ष उनके सब फल पवित्र होंगे और प्रभु को अर्पित किये जायेंगे।</span> <sup>25</sup><span class='v-txt'>पाँचवे वर्ष तुम उनके फल खा सकोगे। उस समय से वृक्षों की फ़सल बढ़ती जायेगी। मैं प्रभु तुम्हारा ईश्वर हूँ।</span> <sup>26</sup><span class='v-txt'>तुम ऐसा माँस नही खाओगे जिस में रक्त रह गया है। तुम न तो सगुन विचारोगे और न तो भूत-प्रेत की साधना करोगे।</span> <sup>27</sup><span class='v-txt'>तुम कनपटियों पर अपने बाल या अपनी दाढ़ी का किनारा मत कटवाओ।</span> <sup>28</sup><span class='v-txt'>तुम किसी व्यक्ति की मृत्यु के कारण अपने शरीर में घाव नहीं करोगे और न उस पर गोदना बनवाओगे। मैं प्रभु तुम्हारा ईश्वर हूँ।</span> <sup>29</sup><span class='v-txt'>तुम अपनी बेटी को वेश्या बना कर उसे भ्रष्ट नहीं करोगे। कहीं ऐसा न हो कि देश में वेश्यागमन बढ़ जाये और दुराचार से भर जाए।</span> <sup>30</sup><span class='v-txt'>तुम मेरे विश्राम-दिवस मनाओगे और मेरे पवित्र-स्थान का आदर करोगे। मैं प्रभु हूँ।</span> <sup>31</sup><span class='v-txt'>तुम भूत-प्रेत साधने वालों और ओझों के पास नहीं जाओगे और उन से प्रश्न नहीं करोगे। उससे तुम दूषित हो जाओगे। मैं प्रभु, तुम्हारा ईश्वर हूँ।</span> <sup>32</sup><span class='v-txt'>तुम बूढ़ों के सामने खडे हो जाओगे और उनका सम्मान करोगे। तुम अपने ईश्वर पर श्रद्धा रखोगे। मैं प्रभु हूँ।</span> <sup>33</sup><span class='v-txt'>यदि तुम्हारे देश में तुम्हारे साथ कोई प्रवासी रहता हो, तो उसके प्रति अन्याय नहीं करोगे।</span> <sup>34</sup><span class='v-txt'>यदि कोई विदेशी तुम्हारे साथ प्रवासी के रूप में रहता हो, तो उसे अपनी जाति वाले के समान समझोगे। उस से अपने ही समान प्रेम करोगे; क्योंकि तुम भी मिस्र देश में प्रवासी के रूप में रह चुके हो। मैं प्रभु, तुम्हारा ईश्वर हूँ।</span> <sup>35</sup><span class='v-txt'>तुम न्याय करते समय पक्षपात नहीं करोगे और नाप-तोल आदि में कपट नहीं करोगे।</span> <sup>36</sup><span class='v-txt'>तुम्हारा तराजू सच्चा हो, गेहूँ और तेल के लिए तुम्हारे बाट और नाप सही हों। मैं प्रभु तुम्हारा ईश्वर हूँ, जो तुम लोगों को मिस्र से निकाल लाया।</span> <sup>37</sup><span class='v-txt'>तुम मेरे सब आदेशों और विधियों का पालन करोगे और उनके अनुसार आचरण करोगे। मैं प्रभु हूँ।&#039;&#039;</span> </p>
+        <div class='nav'><a href='003018.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='003020.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

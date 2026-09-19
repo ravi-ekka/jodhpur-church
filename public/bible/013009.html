@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>पहला इतिहास ग्रन्थ - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>पहला इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>सब इस्राएलियों की जनगणना की गयी और उनके नाम इस्राएल के राजाओं के इतिहास-ग्रन्थ में लिपिबद्ध हैं। यूदा के निवासी अपने विश्वासघात के कारण बाबुल में निर्वासित किये गये।</span> <sup>2</sup><span class='v-txt'>जो लोग पहले ही अपने-अपने भूमिगत और अपने-अपने नगरों में फिर से बसने लगे, वे इस्राएली याजक, लेवी और लेवियों के सेवक थे।</span> <sup>3</sup><span class='v-txt'>यूदा, बेनयामीन, एफ्ऱईम और मनस्सेवंशी, जो येरूसालेम के रहने वाले थे, ये हैं-</span> <sup>4</sup><span class='v-txt'>ऊतय, जो अम्मीहूद का पुत्र था।  अम्मीहूद ओम्री का पुत्र था, ओम्री इम्री का और इम्री बानी का पुत्र था।  बानी यूदा के पुत्र पेरेस का वंशज था।</span> <sup>5</sup><span class='v-txt'>शिलोनियों में पहलौठा असाया था और उसके पुत्र।</span> <sup>6</sup><span class='v-txt'>जे़रह के पुत्रों में यऊएल और उनके भाई-बन्धु थे-कुल छः सौ नब्बे।</span> <sup>7</sup><span class='v-txt'>बेनयामीन के वंशजों में सल्लू था, जो मशूल्लाम का पुत्र, होदव्या का पौत्र और हस्सनुआ का प्रपौत्र था।</span> <sup>8</sup><span class='v-txt'>यरोहाम का पुत्र यिबनाया, उज़्ज़ी का पुत्र एला, मिक्री का पौत्र मशुल्लाम, जो शफ़ट्या का पुत्र, रऊएल का पौत्र और यिबनाया का प्रपौत्र था।</span> <sup>9</sup><span class='v-txt'>ये अपनी वंशावलियों के अनुसार कुल मिला कर नौ सौ छप्पन थे।  ये सब अपने-अपने घरानों के मुखिया थे।</span> <sup>10</sup><span class='v-txt'>याजकों में यदाया, यहोयारीब, याकीन</span> <sup>11</sup><span class='v-txt'>और ईश्वर के मन्दिर का मुखिया अज़र्या थे।  अज़र्या हिलकीया का पुत्र था, हिलकीया मशुल्लाम का, मशुल्लाम सादोक का, सादोक मरायोत का और मरायोत अहीटूब का पुत्र था।</span> <sup>12</sup><span class='v-txt'>फिर यरोहाम का पुत्र अदायाह।  यरोहाम पशहूर का पुत्र और पशहूर मलकियाह का पुत्र था।  मलकियाह मासय का पुत्र और मासय अदीएल का पुत्र था।  अदीएल यहजे़रा का, यहजे़रा मशुल्लाम का, मशुल्लाम मशिल्लेमीत का और मशिल्लेमीत इम्मेर का पुत्र था।</span> <sup>13</sup><span class='v-txt'>वे अपने भाइयो के साथ, जो अपने-अपने घरानों के मुखिया थे, कुल मिला कर एक हज़ार सात सौ साठ थे। वे सुयोग्य और ईश्वर के मन्दिर की सेवा के उत्तरदायी थे।</span> <sup>14</sup><span class='v-txt'>लेवियों मे शमाया था।  शमाया हशूब का पुत्र था, हशूब अज्ऱीकाम का अज्ऱीकाम हशब्बा का; हशब्या मरारी के वंशजों में से था।</span> <sup>15</sup><span class='v-txt'>फिर बकबक्कर, हेरेश, गालाल और मत्तन्या थे।  मत्तन्या मीका का पुत्र, ज़िक्री का पौत्र और आसाफ़ का प्रपौत्र था।</span> <sup>16</sup><span class='v-txt'>फिर ओबद्या, जो शमाया का पुत्र, गालाल का पौत्र और यदूतून का प्रपौत्र था।  फिर आसा का पुत्र और एल्काना का पौत्र बेरेक्या, जो नटोफ़ातियों के भूमिभाग का रहने वाला था।</span> <sup>17</sup><span class='v-txt'>ये द्वारपाल थेः शल्लूम, अक्कूब, टलमोन, अहीमान और उनके भाई-बन्धु।  शल्लूम उनका मुखिया था।</span> <sup>18</sup><span class='v-txt'>आज तक वे पूर्वी राजद्वार की रक्षा करते हैं।  लेवियों के पड़ाव के द्वारपाल ये थेः</span> <sup>19</sup><span class='v-txt'>कोरे का पुत्र, एबयासाफ़ का पौत्र और कोरह का प्रपौत्र शल्लूम और उनके कोरही भाई-बन्धु शिविर के द्वारोंं पर द्वारपाल का काम करते थे, जैसे उनके पुरखे प्रभु के शिविर में किया करते थे।</span> <sup>20</sup><span class='v-txt'>एलआजा़र का पुत्र पीनहास-प्रभु उसके साथ था-पहले उनका मुखिया था।</span> <sup>21</sup><span class='v-txt'>मशेलेम्या के पुत्र ज़कार्या दर्शन-कक्श के द्वार का द्वारपाल था।</span> <sup>22</sup><span class='v-txt'>द्वारों के चुने हुए द्वारपाल कुल दो सौ बारह थे।  उनके नाम अपने-अपने गाँवों की वंशावालियो में लिखे थे। दाऊद और दृष्टा समूएल ने उन्हें स्थायी रूप से नियुक्त किया था।</span> <sup>23</sup><span class='v-txt'>वे और उनके पुत्र प्रभु के मन्दिर (तम्बू के मन्दिर) के द्वारों पर पहरा दिया करते थे।</span> <sup>24</sup><span class='v-txt'>द्वारपाल चा़रों दिशाओं में पूर्व, पश्चिम, उत्तर और दक्षिण की ओर खड़े रहा करते थे।</span> <sup>25</sup><span class='v-txt'>उनके भाइयों को, जो अपने-अपने गाँवों में रहते थे, सात-सात दिनों की पारी के लिए सेवा करने आना पड़ता था।</span> <sup>26</sup><span class='v-txt'>चार प्रधान द्वारपाल लेवीवंशी थे।  वे उपभवनों और ईश्वर के मन्दिर के कोशों पर नियुक्त थे।</span> <sup>27</sup><span class='v-txt'>वे रात भर ईश्वर के मन्दिर के चारों ओर रहा करते थे; क्योंकि उनका कर्तव्य था- मन्दिर का पहरा देना और प्रातःकाल उसका द्वार खोलना।</span> <sup>28</sup><span class='v-txt'>उन में से कुछ लोग उपासना में प्रयुक्त सामानों की देखरेख करते थे।  जब वे सामान ले जाये और वापस लाये जाते थे, तो वे उनकी गिनती करते थे।</span> <sup>29</sup><span class='v-txt'>उन में से कुछ लोग पात्रों, विशेष रूप से पवित्र पात्रों, मैदे, अंगूरी, तेल, लोबान और सुगन्ध-द्रव्यों की देखरेख करते थे।</span> <sup>30</sup><span class='v-txt'>याज़कों के पुत्र सुगन्ध-द्रव्यों का मिश्रण किया करते थे।</span> <sup>31</sup><span class='v-txt'>मत्तिया, जो लेवियों में से एक था और कोरही शल्लूम का पहलौठा पुत्र था, पूरियाँ तैयार करता था।</span> <sup>32</sup><span class='v-txt'>उनके कुछ कहाती भाई-बन्धु प्रत्येक विश्राम-दिवस के लिए भेंट की रोटियाँ तैयार करते थे।</span> <sup>33</sup><span class='v-txt'>गवैये लेवियों के घरानों के मुखिया थे।  वे सेवा के अन्य कार्यों से मुक्त थे और मन्दिर के उपभवनों में रहते थे; क्योंकि वे दिन-रात सेवा के लिए प्रस्तुत रहते थे।</span> <sup>34</sup><span class='v-txt'>ये अपनी-अपनी वंशवलियों के अनुसार लेवियों के घरानों के मुखिया थे और येरूसालेम में रहते थे।</span> <sup>35</sup><span class='v-txt'>गिबओन का पिता ईएल गिबओन में रहता था।  उसकी पत्नी का नाम माका था।</span> <sup>36</sup><span class='v-txt'>उसका पहलौठा पुत्र अबदोन था, फिर सूर, कीश, बाल, नेर, नादाब,</span> <sup>37</sup><span class='v-txt'>गदोर, अहयो, ज़कार्या और मिकलोत।</span> <sup>38</sup><span class='v-txt'>मिकलोत शिमआम का पिता था।  वे भी अपने भाई-बन्धुओं के पास येरूसालेम में रहते थे।</span> <sup>39</sup><span class='v-txt'>नेर कीश का पिता था, कीश साऊल का, साऊल योनातान, मलकीशूआ, अबीनादाब और एशबाल का पिता था।</span> <sup>40</sup><span class='v-txt'>योनातान का पुत्र मरीब-बाल था।  मरीब-बाल मीका का पिता था।</span> <sup>41</sup><span class='v-txt'>मीका के पुत्रः पीतोन, मेलेक, तहरेआ और आहाज़।</span> <sup>42</sup><span class='v-txt'>आहाज़ यारा का पिता था।  यारा आलेमेत, अज़मावेत और ज़िम्री का पिता था।  ज़िम्री मोसा का पिता था।</span> <sup>43</sup><span class='v-txt'>मोसा बिनआ का पिता था।  उसका पुत्र रफ़ाया था। रफ़ाया का पुत्र एलआसा था और एलआसा का पुत्र आसेल था।</span> <sup>44</sup><span class='v-txt'>आसेल के छह पुत्र थे।  उनके नाम हैः अज़ीकाम, बीक्रू, इसमाएल, शअर्या, आबेद्या और हनान।  ये आसेल के पुत्र थे।</span> </p>
+        <div class='nav'><a href='013008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='013010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

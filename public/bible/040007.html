@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मीकाह - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मीकाह</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>हाय, मनचाही वस्तु नहीं मिलती!  गर्मी के दिन बीत गये हैं, तो मैं फल तोडने गया, पर मैंने पाया कुछ नहीं! अंगूर की फ़सल बटोरी गयी है और गिरे हुए फलों का बीनना भी समाप्त हो गया, तो मैं बेकार ही अंगूर तोडने गया; और न मुझे अंजीर ही मिला, जिसके लिए मैं  ललचा रहा था।</span> <sup>2</sup><span class='v-txt'>वैसे ही पृथ्वीतल पर से धर्मियों का लोप हो गया है, न मनुष्य जाति में कोई सच्चा भक्त रह गया।  सब लोग खून करने के लिए घात लगाये रहते हैं, या अपने भाई को गिराने के लिए जाल बिछाये रहते हैं।</span> <sup>3</sup><span class='v-txt'>वे दुष्कर्म करने में निपुण हैं; शासक और न्यायाधीश घूसखोर हैं, शक्तिशाली लोग मनमानी करते हैं- इस सब में साँठ-गाँठ हैं।</span> <sup>4</sup><span class='v-txt'>जो अच्छे हैं वे भी झाड़-झंखाड़ की तरह निहित-स्वार्थ में उलझे हुए हैं; जो धर्मी हैं, वे ही काँटेदार बाड़ की तरह ढकोसले से घिरे हैं।  उनके दण्ड का दिन निश्चित है, वह उत्तर की ओर से आयेगा; उनके लिए वह लज्जा और आतंक का समय होगा।</span> <sup>5</sup><span class='v-txt'>अपने पडोसी का भी विश्वास मत करो, अपने मित्र पर भी भरोसा मत रखो अपनी प्रिय पत्नी से भी बोलने में सावधान रहो।</span> <sup>6</sup><span class='v-txt'>पुत्र तो अपने पिता को तुच्छ मानता है, पुत्री माँ का और बहू सास का विरोध करती है।  मनुष्य के घर वाले ही उसके शत्रु बन गये हैं।</span> <sup>7</sup><span class='v-txt'>मैं प्रभु की राह देखता रहूँगा, मैं अपने मुक्तिदाता पर भरोसा रखूँगा।  मेरा ईश्वर मेरी प्रार्थना स्वीकार करेगा।</span> <sup>8</sup><span class='v-txt'>मैं अपने शत्रुओं के उपहास का कारण न बनूँ।  मैं गिर गया हूँ, किन्तु खडा हो जाऊँगा; मैं अन्धकार मे बैठा हूँ, किन्तु प्रभु मेरी ज्योति है।</span> <sup>9</sup><span class='v-txt'>मैंने प्रभु के विरुद्ध पाप किया है, इसलिए मुझे तब तक उसका क्रोध सहना पडेगा जब तक वह मेरे मामले पर विचार न करे और मुझे न्याय न दिलाये।  वह मुझे ज्योति तक ले जायेगा और मैं उसकी न्यायप्रियता के दर्शन करूँगा।</span> <sup>10</sup><span class='v-txt'>यह देख कर मेरी उस बैरिन को मुँह बा कर रहना पडेगा, जिसने मुझे यह कह कर चिढाया था, &quot;प्रभु, तेरा ईश्वर कहाँ है?&quot;  वह गली के कीचड की तरह पददलित कर दी जायेगी; तब मेरी आँखें उसे घूर कर तृप्त हो जायेंगी।</span> <sup>11</sup><span class='v-txt'>येरूसालेम! तुझे अपना प्राचीर पुनः खडा करने का दिन आयेगा; उस दिन तेरी सीमा का विस्तार होगा।</span> <sup>12</sup><span class='v-txt'>उस दिन अस्सूर से मिस्र तक के, मिस्र से फ़ारत नदी तक के, एक समुद्र से दूसरे समुद्र तक के और एक पर्वत से दूसरे पर्वत तक के लोग तेरी शरण आयेंगे।</span> <sup>13</sup><span class='v-txt'>उसके निवासियों के दुष्कर्मों के प्रतिकार-स्वरूप पृथ्वी उजाड हो जायेगी।</span> <sup>14</sup><span class='v-txt'>तू अपना डण्डा ले कर अपनी प्रजा, अपनी विरासत की भेडें चराने की कृपा कर।  वे जंगल और बंजर भूमि में अकेली ही पडी हुई है।  प्राचीन काल की तरह उन्हें बाशान तथा गिलआद में चरने दे।</span> <sup>15</sup><span class='v-txt'>जिन दिनों तू हमें मिस्र से निकाल लाया, उन्हीं दिनों की तरह हमें चमत्कार दिखा।</span> <sup>16</sup><span class='v-txt'>यह देख कर विजातियों को हताश होना पडेगा, चाहे वे कितनी भी शक्तिशाली रहे हो; कोई दाँतों तले उँगली दबाये रहेंगे।  और कोई कान पर हाथ रखे रहेंगे।</span> <sup>17</sup><span class='v-txt'>वे साँप के समान धूल चाटेंगे, जमीन पर रेंगने वाले कीड़ों की ही तरह।  वे काँपते हुए अपने गढ़ों से बाहर निकलेंगे, और भयभीत को कर प्रभु, हमारे ईश्वर के सामने आयेंगे; प्रभु-ईश्वर! तू ही उनके भय का कारण है।</span> <sup>18</sup><span class='v-txt'>तेरे सदृश कौन ऐसा ईश्वर है, जो अपराध हरता और अपनी प्रजा का पाप अनदेखा करता हैं; जो अपना क्रोध बनाये नहीं रखता, बल्कि दया करना चाहता हैं?</span> <sup>19</sup><span class='v-txt'>वह फिर हम पर दया करेगा, हमारे अपराध पैरों तले रौंद देगा और हमारे सभी पाप गहरे समुद्र में फेंकेगा।</span> <sup>20</sup><span class='v-txt'>तू याकूब के लिए अपनी सत्यप्रतिज्ञता और इब्राहीम के लिए अपनी दयालुता प्रदर्शित करेगा, जैसी कि तूने शपथ खा कर हमारे पूर्वजों से प्रतिज्ञा की है।</span> </p>
+        <div class='nav'><a href='040006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

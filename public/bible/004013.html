@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 13</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 13</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;जो कनान देश में इस्राएलियों को देने जा रहा हूँ, उसकी टोह लगाने के लिए आदमियों को भेजो - हर एक वंश से एक प्रतिष्ठित व्यक्ति को।&#039;&#039;</span> <sup>3</sup><span class='v-txt'>इसलिए प्रभु की आज्ञा पाकर मूसा ने उन्हें पारान के उजाड़खण्ड से भेजा। वे सब इस्राएलियों के नेता थे।</span> <sup>4</sup><span class='v-txt'>उनके नाम थे : रूबेन के कुल के जक्कूर का पुत्र शम्मूआ,</span> <sup>5</sup><span class='v-txt'>सिमओन कुल के होरी का पुत्र शाफ़ाट,</span> <sup>6</sup><span class='v-txt'>यूदा कुल के यफुन्ने का पुत्र कालेब,</span> <sup>7</sup><span class='v-txt'>इस्साकार कुल के यूसुफ़ का पुत्र यिगआर,</span> <sup>8</sup><span class='v-txt'>एफ्रईम कुल के नून का पुत्र होशेआ,</span> <sup>9</sup><span class='v-txt'>बेनयामीन कुल के राफू का पुत्र पल्टी,</span> <sup>10</sup><span class='v-txt'>ज़बुलोन कुल के सोदी का पुत्र गद्दीएल,</span> <sup>11</sup><span class='v-txt'>मनस्से कुल के, अर्थात् यूसुफ़ के कुल के सूसी का पुत्र गद्दी,</span> <sup>12</sup><span class='v-txt'>दान कुल के गमल्ली का पुत्र अम्मीएल,</span> <sup>13</sup><span class='v-txt'>आशेर कुल के मीकाएल का पुत्र सतूर,</span> <sup>14</sup><span class='v-txt'>नफ्ताली कुल के वापसी का पुत्र नहबी,</span> <sup>15</sup><span class='v-txt'>और गाद कुल के माकी का पुत्र गऊएल।</span> <sup>16</sup><span class='v-txt'>ये उन पुरुषों के नाम हैं, जिन्हें मूसा ने देश की टोह लगाने भेजा। मूसा ने नून के पुत्र होशेआ का नाम योशुआ रखा।</span> <sup>17</sup><span class='v-txt'>मूसा ने उन्हें कनान देश की टोह लगाने भेजते समय उन से कहा, &#039;&#039;यहाँ से नेगेब हो कर पहाड़ी प्रदेश जाओ।</span> <sup>18</sup><span class='v-txt'>उस देश की स्थिति जाँच कर देखो कि वहाँ के लोग बलवान् हैं या निर्बल, उनकी संख्या अधिक है या कम,</span> <sup>19</sup><span class='v-txt'>उनके देश की हालत अच्छी है या बुरी। वे नगर, जिन में वे रहते हैं, कैसे हैं - परकोटे वाले हैं या नहीं</span> <sup>20</sup><span class='v-txt'>और वहाँ की भूमि कैसी है - उपजाऊ है या ऊसर? उस में वन-जंगल हैं या नहीं? वहाँ के फलों में से भी कुछ ले आने का साहस करो।&#039;&#039; (वह मौसम अंगूरों की फ़सल का था।)</span> <sup>21</sup><span class='v-txt'>इस पर वे सिन के उजाड़खण्ड से रहोब तक चलते गये, जहाँ से हमात की ओर मार्ग जाता है और उन्होंने उस भूमि की टोह लगायी।</span> <sup>22</sup><span class='v-txt'>वे नेगेब होते हुए हेब्रोन तक पहुँचे। वहाँ अनाक के वंशज अहीमान, शेषय और तलमय रहते थे। (हेब्रोन नगर मिस्र के सोअन नगर से सात वर्ष पहले बसा था।)</span> <sup>23</sup><span class='v-txt'>वे एषकोल घाटी तक पहुँच गये। वहाँ उन्होंने फल लगी अंगूर की एक बेल काटी। उन में दो व्यक्ति उसे एक डण्डे पर लटका लाये। वे कुछ अनार और अंजीर भी लेते आये।</span> <sup>24</sup><span class='v-txt'>उस अंगूर के गुच्छे के कारण, जिसे इस्राएलियों ने वहाँ काटा था, उस घाटी का नाम एषकोल घाटी (अंगूर घाटी) पड़ गया।</span> <sup>25</sup><span class='v-txt'>चालीस दिन बाद वे उस देश की टोह लगा कर लौटे।</span> <sup>26</sup><span class='v-txt'>वे पारान की मरुभूमि के कादेश नामक स्थान पर मूसा, हारून और इस्राएल के सारे समुदाय के पास आये। उन्होंने उनके और सारे समुदाय के सामने अपना विवरण प्रस्तुत किया और उन्हें उस देश के फल दिखाये।</span> <sup>27</sup><span class='v-txt'>उन्होंने मूसा से कहा, &#039;&#039;हम उस देश में गये, जहाँ आपने हमें भेजा था। वहाँ दूध और मधू की नदियाँ बहती हैं। ये रहे वहाँ के फल!</span> <sup>28</sup><span class='v-txt'>वहाँ के निवासी बलवान् है। उनके नगर सुरक्षित और बहुत बड़े हैं। हमने वहाँ अनाक के वंशजों को भी देखा है।</span> <sup>29</sup><span class='v-txt'>नेगेब प्रदेश में अमालेकी रहते है ; पहाड़ी प्रदेश में हित्ती, यबूसी और अमोरी; समुद्र के किनारे और यर्दन नदी के तट पर कनानी निवास करते हैं।</span> <sup>30</sup><span class='v-txt'>कालेब ने मूसा के विरुद्ध भुनभुनाने वाले लोगों को शान्त किया और कहा, &#039;&#039;हम वहाँ चलें और उस देश को अपने अधिकार में कर लें। हम उसे जीतने में समर्थ हैं।&#039;&#039;</span> <sup>31</sup><span class='v-txt'>किन्तु जो व्यक्ति कालेब के साथ गये थे, वे बोले, &#039;&#039;हम उन लोगों का सामना नहीं कर सकते, क्योंकि वे हम से बलवान् हैं।</span> <sup>32</sup><span class='v-txt'>वे जिस देश की टोह लगा चुके थे, उसकी निन्दा करने लगे और बोले, &#039;&#039;हम जिस देश की टोह लगा चुके हैं, वह एक ऐसा देश है, जो अपने निवासियों को खा जाता है। हमने जिन लोगों का वहाँ देखा है, वे सब बहुत लम्बे कद के हैं।</span> <sup>33</sup><span class='v-txt'>हमने वहाँ भीमकाय लोगों को भी देखा। अनाकी भीमकाय लोगों के वंशज हैं। उनकी तुलना में हम अपने को टिड्डियाँ समझते थे और वे भी हमें यही समझते होंगे।&#039;&#039;</span> </p>
+        <div class='nav'><a href='004012.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004014.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

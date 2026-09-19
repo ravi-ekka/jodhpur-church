@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>स्तोत्र - अध्याय 101</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>स्तोत्र</h1>
+        <h2>अध्याय 101</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैं दया और न्याय का गीत गाऊँगा।  प्रभु!  मैं तेरे आदर में भजन सुनाऊँगा।</span> <sup>2</sup><span class='v-txt'>मैंने सन्मार्ग पर चलने की ठानी है।  तू कब मेरे पास आयेगा?  मैं अपने घर के आँगन में शुद्ध हृदय से जीवन बिताऊँगा।</span> <sup>3</sup><span class='v-txt'>मैं अपनी आँखों के सामने कोई भी बुराई सहन नहीं करूँगा।  मैं पथभ्रष्टों के आचरण से घृणा करता हूँ, वह मुझे आकर्षित नहीं कर सकता।</span> <sup>4</sup><span class='v-txt'>मैं अपने को कुटिलता से दूर रखूँगा।  मैं बुराई की उपेक्षा करूँगा।</span> <sup>5</sup><span class='v-txt'>जो छिप कर अपने पड़ोसी की निन्दा करता है, मैं उसे चुप रहने के लिए विवश करूँगा।  जो इठलाता और घमण्ड करता है, मैं उसे अपने पास नहीं रहने दूँगा।</span> <sup>6</sup><span class='v-txt'>मेरी कृपादृष्टि देश-भक्तों पर बनी रहती है, वे मेरे आसपास निवास करें।  जो सन्मार्ग पर चलता है, वही मेरा सेवक हो सकता है।</span> <sup>7</sup><span class='v-txt'>जो छल-कपट करता है, वह मेरे यहाँ नहीं रह पायेगा। जो झूठ बोलता है, वह मेरी आँखों के सामने नहीं टिकेगा।</span> <sup>8</sup><span class='v-txt'>मैं प्रतिदिन प्रातः देश के सब दुष्टों को चुप करूँगा।  मैं प्रभु के नगर से सब कुकर्मियों को निकाल दूँगा।</span> </p>
+        <div class='nav'><a href='023100.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='023102.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

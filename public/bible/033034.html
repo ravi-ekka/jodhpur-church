@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 34</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 34</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु की वाणी मुझे यह कहते हुए सुनाई दी,</span> <sup>2</sup><span class='v-txt'>“मानवपुत्र! इस्राएल के चरवाहों के विरुद्ध भवियवाणी करो।  भवियवाणी करो और उन से कहोः चरवाहो! प्रभु-ईश्वर यह कहता है!  धिक्कार इस्राएल के चरवाहों को!  वे केवल अपनी देखभाल करते हैं।  क्या चरवाहों को झुुण्ड की देखवाल नहीं करनी चाहिए।</span> <sup>3</sup><span class='v-txt'>तुम भेड़ों का दूध पीते हो, उनका ऊन पहनते और मोटे पशुओं का वध करते हो, किन्तु तुम भेड़ों को नहीं चराते।</span> <sup>4</sup><span class='v-txt'>तुमने कमजोर भेड़ों को पौष्टिक भोजन नहीं दिया, बीमारों को चंगा नहीं किया, घायलों के घावों पर पटटी नहीं बाँधी, भूली-भटकी हुई भेड़ों को नहीं लौटा लाये और जो खो गयी थीं, उनका पता नहीं लगाया।  तुमने भेड़ों के साथ निर्दय और कठोर व्यवहार किया है।</span> <sup>5</sup><span class='v-txt'>वे बिखर गयी, क्योंकि उन को चराने वाला कोई नहीं रहा और वे बनैले पशुओं को शिकार बन गयीं।</span> <sup>6</sup><span class='v-txt'>मेरी भेड़ें सब पर्वतों और ऊँची पहाडियों पर भटकती फिरती हैं: वे समस्त देश में बिखर गयी हैं, और उनकी परवाह कोई नहीं करता, उनकी खोज में कोई नहीं निकलता।</span> <sup>7</sup><span class='v-txt'>“इसलिए चरवाहो! प्रभु की वाणी सुनो।</span> <sup>8</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता है -अपने अस्तित्व की शपथ! मेरी भेड़ें, चराने वालों के अभाव में, बनैले पशुओं का शिकार और भक्य बन गयी हैं: मेरे चरवाहों ने भेडो़ं की परवाह नहीं की - उन्होंने भेडांे की नहीं, बल्कि अपनी देखभाल की है;</span> <sup>9</sup><span class='v-txt'>इसलिए चरवाहो! प्रभु की वाणी सुनों।</span> <sup>10</sup><span class='v-txt'>प्रभु यह कहता हैं; मै उन चरवाहों का विरोधी बन गया हूँ।  मैं उन से अपनी भेड़ें वापस माँगूंगा।  मैं उनकी चरवाही बन्द करूँगा।  वे फिर अपनी ही देखभाल नहीं कर पायेंगे।  मैं अपनी भेड़ों को उनके पँजे से छुडाऊँगा और वे फिर उनकी शिकार नहीं बनेंगी।</span> <sup>11</sup><span class='v-txt'>“क्योंकि प्रभु-ईश्वर यह कहता है- मैं स्वयं अपनी भेड़ों को सुध लूँगा और उनकी देखभाल करूँगा।</span> <sup>12</sup><span class='v-txt'>भेड़ों के भटक जाने पर जिस तरह गडे़रिया उनका पता लगाने जाता है, उसी तरह में अपनी भेडें खोजने जाऊँगा।  कुहरे और अँधेरे में जहाँ कहीं वे तितर-बितर हो गयी हैं, मैं उन्हें वहाँ से छुडा लाऊँगा।</span> <sup>13</sup><span class='v-txt'>मैं उन्हें राष्ट्रों में से निकाल कर और विदेशों से एकत्र कर उनके अपने देश में लौटा लाऊँगा।  मैं उन्हें इस्राएल के पहाड़ों पर, घाटियों में और देश भर के बसे हुए स्थानों पर चाराऊँगा।</span> <sup>14</sup><span class='v-txt'>मैं उन्हें अच्छे चरागाहों में ले चलूँगा।  वे इस्राएल के पर्वतों पर चरेंगी।  वहाँ वे अच्छे चरागाहों में विश्राम करेंगी और इस्राएल के पर्वतों की हरी-भरी भूमि में चरेगी।</span> <sup>15</sup><span class='v-txt'>प्रभु कहता है - मैं स्वयं अपने भेड़ें चराऊँगा और उन्हें विश्राम करने की जगह दिखाऊँगा।</span> <sup>16</sup><span class='v-txt'>जो भेड़ें खो गयी हैं, मैं उन्हें खोज निकालूँगा; जो भटक गयी हैं, मैं उन्हें लौटा लाऊँगा; घायल हो गयी हैं, उनके घावों पर पट्टी बाँधूगा; जो बीमार हैं, उन्हें चंगा करूँगा; जो मोटी और भली-चंगी हैं, उनकी देखरेख करूँगा।  मैं उनका सच्चा चरवाहा होऊँगा।</span> <sup>17</sup><span class='v-txt'>“मेरी भेड़ो! तुम्हारे विषय में प्रभु-ईश्वर यह कहता है- मैं एक-एक कर के भेड़ों, मेढो़ और बकरों का- सब का न्याय करूँगा।</span> <sup>18</sup><span class='v-txt'>क्या तुम्हारे लिए यही काफ़ी नहीं कि तुम अच्छे चरागाहों में चरो और अपने चरागाहों का शेष भाग अपने पाँवों से रौंदो, स्वच्छ पानी पियो और शेष पानी अपने पाँवों से मथ दो?</span> <sup>19</sup><span class='v-txt'>क्या मेरी भेड़ें तुम्हारे पैरों से रौंदे चरागाहों में चरे और तुम्हारे पाँवों से मथा पानी पिये?</span> <sup>20</sup><span class='v-txt'>“इसलिए प्रभु-ईश्वर उन से यह कहता है- मोटी और दुबली भेड़ों का मैं ही न्याय करूँगा।</span> <sup>21</sup><span class='v-txt'>तुम तब तक सभी कमज़ोर भेड़ों को अपनी बग़ल और कन्धे से धक्के देती और अपने सींगों से मारती जाती हो, जब तक तुम उन्हें बाहर नहीं भगा देतीं।</span> <sup>22</sup><span class='v-txt'>इसलिए मैं अपनी भड़ों की रक्षा करूँगा और वे कभी दूसरों की शिकार नहीं होंगी और मैं भेड़ और भेड़ के बीच न्याय करूँगा।</span> <sup>23</sup><span class='v-txt'>मैं उनके लिए एक चरवाहे, अपने सेवक दाऊद को नियुक्त करूँगा और वह उन को चरायेगा और उनका चरवाहा होगा।</span> <sup>24</sup><span class='v-txt'>मैं, प्रभु, उनका ईश्वर होऊँगा और मेरा सेवक दाऊद उनका शासक होगा।  यह मैं, प्रभु ने कहा है।</span> <sup>25</sup><span class='v-txt'>“मैं उनके साथ शान्ति का विधान स्थापित करूँगा तथा देश से बनैले पशुओं का निकाल बाहर करूँगा, जिससे वे उजाड़खण्ड में सुरक्षित रह सकें और जंगलों में सो सकें।</span> <sup>26</sup><span class='v-txt'>मैं उन को और अपनी पहाड़ी के चारों ओर के स्थानों को आशीर्वाद दूँगा; मैं समय पर वर्षा कराऊँगा; वह आशीर्वाद की वर्षा होगी।</span> <sup>27</sup><span class='v-txt'>भूमि के वृक्ष अपने फल प्रदान करेंगे, पृथ्वी अपनी उपज देगी और वे अपने देश में सुरक्षित रहेंगी।  जब मैं उनका जूआ तोड़ दूँगा और उनके हाथ से मुक्त कर दूँगा, जिन्होंने उन्हें दास बनाया था, तो वे यह समझेंगी कि मैं ही प्रभु हूँ।</span> <sup>28</sup><span class='v-txt'>वे फिर कभी राष्ट्रों की शिकार नहीं बनेगी, न ही देश के पशु उन्हें अपना आहार बनायेंगे।  वे सुरक्षित हो कर निवास करेंगी और कोई उन्हें डरा नहीं सकेगा।</span> <sup>29</sup><span class='v-txt'>मैं उन्हें प्रसिद्ध उद्यान दूँगा, जिससे वे फिर कभी देश में भूखों नहीं मरेगी और न उन्हें राष्ट्रों के अपमान सहना पड़ेगा।</span> <sup>30</sup><span class='v-txt'>तब वे यह समझ जायेंगी कि मैं, उनका प्रभु-ईश्वर, उनके साथ हूँ और कि वे, इस्राएल का घराना, मेरी प्रजा हैं। यह प्रभु-ईश्वर की वाणी है।</span> <sup>31</sup><span class='v-txt'>तुम्हीं मेरे भेड़ें हो- मेरे चरागाह की भेड़ें और मैं तुम्हारा ईश्वर हूँ।  यह प्रभु-ईश्वर की वाणी हं।“</span> </p>
+        <div class='nav'><a href='033033.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033035.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

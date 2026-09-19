@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>रोमियों - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>रोमियों</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>भाइयो!  क्या आप लोग यह नहीं जानते- मैं विधि जानने वालों से बोला रहा हूँ- कि मनुष्य पर विधि का अधिकार तभी तक है, जब तक वह जीवित हैं?</span> <sup>2</sup><span class='v-txt'>विवाहित स्त्री तब तक विधि द्वारा अपने पति से बँधी रहती है, जब तक वह जीवित रहता हैं।  यदि पति मर जाता है, तो वह अपने पति के बंधन से मुक्त हो जाती हैं।</span> <sup>3</sup><span class='v-txt'>यदि वह अपने पति के जीवन-काल में किसी दूसरे की पत्नी बन जाती है, तो वह व्यभिचारिणी कहलायेगी।  किंतु यदि पति पर जाता हैं और यदि वह किसी दूसरे की पत्नी बन जाती हैं, तो वह व्यभिचार नहीं करती हैं।</span> <sup>4</sup><span class='v-txt'>मेरे भाइयो!  आप लोग भी मसीह के शरीर से संयुक्त होने के कारण संहिता की दृष्टि में मर गये और अब किसी दूसरे के अर्थात् उसके हो गये हैं, जो मृतकों में से जी उठे।  यह इसलिए हुआ कि हम ईश्वर के लिए फल उत्पन्न करें।</span> <sup>5</sup><span class='v-txt'>जब हम अपने दैहिक स्वभाव के अधीन थे, तो संहिता से प्रेरित पापमय वासनाएँ हमारे अंगों में क्रियाशील थीं और मृत्यु के फल उत्पन्न करती थीं।</span> <sup>6</sup><span class='v-txt'>किन्तु अब हम उन बातें के लिए मर गये हैं, जो हमें बन्धन में जकड़ती थीं, इसलिए हम संहिता से मुक्त हो गये हैं।  इस प्रकार हम पुरानी लिखित संहिता के अनुसार नहीं, बल्कि आत्मा के नवीन विधान के अनुसार ईश्वर की सेवा करते हैं।</span> <sup>7</sup><span class='v-txt'>क्या इसका अर्थ यह है कि संहिता पाप है?  एकदम नहीं!  फिर भी संहिता के द्वारा ही पाप का पता चला। यदि संहिता ने नहीं कहा होता: लालच मत करो, तो मैं यह नहीं जानता कि लालच क्या है।</span> <sup>8</sup><span class='v-txt'>इस आज्ञा से लाभ उठा कर पाप ने मुझ में हर प्रकार का लालच उत्पन्न किया।  संहिता के अभाव में पाप निर्जीव है।</span> <sup>9</sup><span class='v-txt'>एक समय था, जब संहिता नहीं थी और मैं जीवित था। किन्तु आज्ञा के आने से पाप का जन्म हुआ।</span> <sup>10</sup><span class='v-txt'>और मैं मर गया।  इस प्रकार वह आज्ञा, जिसे जीवन की ओर ले जाना चाहिए था, मेरे लिए मृत्यु का कारण बनी;</span> <sup>11</sup><span class='v-txt'>क्योंकि पाप ने, आज्ञा से लाभ उठा कर, मुझे धोखा दिया और आज्ञा के द्वारा मुझे मार दिया।</span> <sup>12</sup><span class='v-txt'>इस प्रकार हम देखते हैं कि संहिता पवित्र है और आज्ञा पवित्र, उचित कल्याणकारी।</span> <sup>13</sup><span class='v-txt'>तो, जो बात कल्याणकारी थी, क्या वह मेरे लिए मृत्यु का कारण बनी?  एकदम नहीं!  किन्तु जो बात कल्याणकारी थी, उसी के द्वारा पाप मेरे लिए मृत्यु का कारण बना। इस प्रकार पाप का वास्तविक स्वरूप प्रकट हो गया और वह आज्ञा के माध्यम से बहुत अधिक पापमय प्रमाणित हुआ।</span> <sup>14</sup><span class='v-txt'>हम जानते हैं कि संहिता आध्यात्मिक है, किन्तु मैं प्राकृतिक और पाप का दास हूँ,</span> <sup>15</sup><span class='v-txt'>मैं अपना ही आचरण नहीं समझता हूँ, क्योंकि मैं जो करना चाहता हूँ, वह नहीं बल्कि वही करता हूँ, जिससे मैं घृणा करता हूँ।</span> <sup>16</sup><span class='v-txt'>यदि मैं वही करता हूँ, जो मैं नहीं करना चाहता, तो मैं संहिता से सहमत हूँ और उसे कल्याणकारी समझता हूँ;</span> <sup>17</sup><span class='v-txt'>किन्तु मैं कर्ता नहीं रहा, बल्कि कर्ता है- मुझे में निवास करने वाला पाप।</span> <sup>18</sup><span class='v-txt'>मैं जानता हूँ कि मुझ में, अर्थात मेरे दैहिक स्वभाव में थोड़ी भी भलाई नहीं; क्योंकि भलाई करने की इच्छा तो मुझ में विद्यमान है, किन्तु उसे कार्र्यान्वित करने की शक्ति नहीं है।</span> <sup>19</sup><span class='v-txt'>मैं जो भलाई चाहता हूँ, वह नहीं कर पाता, बल्कि मैं जो बुराई नहीं चाहता, वही कर डालता हूँ।</span> <sup>20</sup><span class='v-txt'>किन्तु यदि मैं वही करता हूँ जिस मैं नहीं चाहता, तो कर्ता मैं नहीं हूँ, बल्कि कर्ता है-मुझ में निवास करने वाला पाप।</span> <sup>21</sup><span class='v-txt'>इस प्रकार, मेरा अनुभव यह है कि जब मैं भलाई की इच्छा करता हूँ, तो बुराई ही कर पाता हूँ।</span> <sup>22</sup><span class='v-txt'>मेरा अन्तरतम ईश्वर के नियम पर मुग्ध है,</span> <sup>23</sup><span class='v-txt'>किन्तु मैं अपने शरीर में एक अन्य नियम का अनुभव करता हूँ, जो मेरे आध्यात्मिक स्वभाव से संघर्ष करता है और मुझे पाप के उस नियम के अधीन करता है, जो मेरे शरीर में विद्यमान है।</span> <sup>24</sup><span class='v-txt'>मैं कितना अभागा मनुष्य हूँ!  इस मृत्यु के अधीन रहने वाले शरीर से मुझे कौन मुक्त करेगा?</span> <sup>25</sup><span class='v-txt'>ईश्वर ही!  हमारे प्रभु ईसा मसीह के द्वारा।  ईश्वर को धन्यवाद!  इसलिए मैं अपनी बुद्धि से ईश्वर के नियम का, किन्तु अपने शरीर से पाप के नियम का पालन करता हूँ।</span> </p>
+        <div class='nav'><a href='052006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='052008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

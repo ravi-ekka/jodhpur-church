@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 35</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 35</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यर्दन के पास, येरीख़ों के सामने, मोआब के मैदान में, प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;इस्राएलियों को आज्ञा दो कि वे अपने दायभाग में लेवियों को रहने के लिए कुछ नगर दें और लेवियों को उन नगरों के आसपास के कुछ चरागाह भी दें।</span> <sup>3</sup><span class='v-txt'>वे उन नगरों में रहेंगे ओर वे चरागाह उनके गाय-बैलों, भेड़-बकरियों और उनके अन्य पशुओं के लिए होंगे।</span> <sup>4</sup><span class='v-txt'>जो चरागाह तुम लेवियों को दोगे, उसका विस्तार नगर के चारों ओर  एक हज़ार हाथ होगा।</span> <sup>5</sup><span class='v-txt'>नगर के बाहर पूर्वी, दक्षिणी, पष्चिमी और उत्तरी दिशा में तुम दो-दो हज़ार हाथ इस तरह नापोगे कि नगर बीचोंबीच पड़े। यह क्षेत्र उन नगरों का चरागाह होगा।</span> <sup>6</sup><span class='v-txt'>तुम लेवियों को ये नगर दोगे : छह शरण-नगर, जहाँ तुम भागे हुए हत्यारे को शरण दोगे और उनके अतिरिक्त बयालीस नगर।</span> <sup>7</sup><span class='v-txt'>इस प्रकार उन नगरों की संख्या कुल मिला कर अड़तालीस होगी, जिन्हें तुम चरागाहों के साथ लेवियों को दोगे।</span> <sup>8</sup><span class='v-txt'>तुम इस्राएलियों की भूमि से हर वंश के दायभाग के विस्तार के अनुपात में लेवियों को नगर दोगे।&#039;&#039;</span> <sup>9</sup><span class='v-txt'>प्रभु ने मूसा से यह भी कहा,</span> <sup>10</sup><span class='v-txt'>&#039;&#039;इस्राएलियों से कहो : जब तुम यर्दन पार कर कनान देश पहुँचो,</span> <sup>11</sup><span class='v-txt'>तब ऐसे नगरों को चुनो, जो तुम्हारे लिए शरण-नगर हो सके। वहाँ उस व्यक्ति को शरण मिलेगी, जिसने अनजाने हत्या की है।</span> <sup>12</sup><span class='v-txt'>उन नगरों में कोई भी प्रतिशोधी से शरण पा सकेगा। जिस पर हत्या का अभियोग लगाया गया है, उसका तब तक वध नहीं किया जायेगा, जब तक समुदाय के सामने उसका न्याय नहीं किया गया हो।</span> <sup>13</sup><span class='v-txt'>तुम इस प्रकार के छः नगर निर्धारित करोगे -</span> <sup>14</sup><span class='v-txt'>यर्दन के इस पार के तीन नगर और कनान देश के तीन नगर।</span> <sup>15</sup><span class='v-txt'>ये छः नगर इस्राएलियों, विदेशियों और उनके साथ रहने वाले प्रवासियों को शरण देने के लिए होंगे। वहाँ वह व्यक्ति भाग कर शरण पायेगा, जिसने अनजाने हत्या की है।</span> <sup>16</sup><span class='v-txt'>परन्तु यदि किसी ने लोहे के शस्त्र से किसी व्यक्ति को इस प्रकार मारा हो कि वह मर जाये, तो वह हत्यारा माना जायेगा। ऐसे हत्यारे को प्राणदण्ड दिया जायेगा।</span> <sup>17</sup><span class='v-txt'>यदि कोई अपने हाथ से पत्थर से किसी व्यक्ति को इस प्रकार मारे, जिस प्रकार मारने से मृत्यु हो सकती है और वह व्यक्ति मर जाये, तो वह हत्यारा माना जायेगा और उसे प्राणदण्ड दिया जायेगा।</span> <sup>18</sup><span class='v-txt'>यदि कोई अपने हाथ की लकड़ी से किसी व्यक्ति को इस प्रकार मारे, जिस प्रकार मारने से मृत्यु हो सकती है और वह व्यक्ति मर जाये, तो वह हत्यारा माना जायेगा और उसे प्राणदण्ड दिया जायेगा।</span> <sup>19</sup><span class='v-txt'>हत्या का प्रतिषोधी स्वयं हत्यारे का वध करेगा। हत्यारे से मिलते ही वह उसका वध कर सकता है।</span> <sup>20</sup><span class='v-txt'>यदि कोई द्वेष से किसी पर चोट करे या जान कर किसी पर कुछ फेंके और वह मर जाये, या</span> <sup>21</sup><span class='v-txt'>बैर से उसे मुक्का मारे और वह मर जाये, तो मारने वाले का वध किया जायेगा, क्योंकि वह हत्यारा है। प्रतिषोधी हत्यारे से मिलते ही उसका वध कर सकता है।</span> <sup>22</sup><span class='v-txt'>&#039;&#039;किन्तु यदि कोई बैर से नहीं, बल्कि संयोग से किसी व्यक्ति पर चोट करें या अनजाने किसी व्यक्ति पर कुछ फेंके,</span> <sup>23</sup><span class='v-txt'>या अनजाने किसी व्यक्ति पर कोई ऐसा पत्थर गिरने दे, जिससे उसकी मृत्यु हो सकती है, यद्यपि उसके प्रति उसका कोई बैर नहीं या और वह उसे हानि नहीं पहुँचाना चाहता था और वह व्यक्ति मर जाये,</span> <sup>24</sup><span class='v-txt'>तो समुदाय इन नियमों के अनुसार मारने वाले और प्रतिषोधी के बीच निर्णय करे।</span> <sup>25</sup><span class='v-txt'>समुदाय मारनेवालों को प्रतिषोधी से बचायेगा और उसे शरण-नगर वापस भेजेगा, जहाँ उसने शरण ली। मारने वाला महायाजक के देहान्त तक, जिसका अभिषेक पवित्र तेल से किया गया है, उस नगर में रहेगा।</span> <sup>26</sup><span class='v-txt'>परन्तु यदि मारने वाला शरण-नगर की सीमा के बाहर जाये,</span> <sup>27</sup><span class='v-txt'>और प्रतिषोधी उसे उसके शरण-नगर की सीमा के बाहर पाये और उसे मार डाले, तो वह हत्या का अपराधी नहीं समझा जायेगा;</span> <sup>28</sup><span class='v-txt'>क्योंकि मारने वाले के लिए महायाजक की मृत्यु तक अपने शरण-नगर में रहना अनिवार्य था। किन्तु महायाजक की मृत्यु के बाद मारने वाला अपनी भूमि लौट सकता है।</span> <sup>29</sup><span class='v-txt'>तुम जहाँ भी रहोगे, वहाँ ये विधि-निषेध पीढ़ी-दर-पीढ़ी मान्य होंगे।</span> <sup>30</sup><span class='v-txt'>यदि किसी ने किसी मनुष्य को मार दिया है, तो वह हत्यारा केवल साक्षियों के साक्ष्य के आधार पर मृत्युदण्ड पा सकता है। केवल एक ही साक्षी के साक्ष्य के आधार पर कोई मृत्युदण्ड नहीं पा सकता।</span> <sup>31</sup><span class='v-txt'>हत्यारे के जीवन की रक्षा के लिए रूपया स्वीकार नहीं करोगे; उसे मृत्युदण्ड देना है।</span> <sup>32</sup><span class='v-txt'>तुम शरण-नगर में शरण पाये हुए उस व्यक्ति के लिए रूपया नहीं स्वीकार करोगे, जो महायाजक की मृत्यु से पहले अपनी भूमि लौटना चाहता है।</span> <sup>33</sup><span class='v-txt'>तुम वह देश अपवित्र नहीं करोगे, जिस में तुम निवास करते हो। रक्तपात से देश अपवित्र होता है और रक्तपात से दूषित देश का प्रायश्चित हत्यारे का वध किये बिना नहीं किया जा सकता।</span> <sup>34</sup><span class='v-txt'>इसलिए तुम यह देश दूषित नहीं करो, जहाँ तुम निवास करते हो और जहाँ मैं भी निवास करता हूँ; क्योंकि मैं, प्रभु इस्राएलियों के बीच रहता हूँ।&#039;&#039;</span> </p>
+        <div class='nav'><a href='004034.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004036.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>2 योहन - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>2 योहन</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैं, अध्यक्ष, यह पत्र ईश्वर की उन कृपापात्र महिला और उनकी सन्तानों के नाम लिख रहा हूँ, जिन्हें मैं सच्चाई से प्यार करता हूँ और मैं ही नहीं, बल्कि वे सभी, जो सत्य को जानते हैं।  यह प्रेम उस सत्य पर आधारित है,</span> <sup>2</sup><span class='v-txt'>जो हम में विद्यमान है और अनन्त काल तक हमारे साथ रहेगा।</span> <sup>3</sup><span class='v-txt'>यदि हम सत्य और प्रेम में बने रहेंगे, तो हमें पिता-परमेश्वर और पिता के पुत्र ईसा मसीह की ओर से कृपा, दया और शान्ति प्राप्त होगी।</span> <sup>4</sup><span class='v-txt'>मुझे यह देख कर बड़ा आनन्द हुआ कि आपकी कुछ सन्तानें सत्य के मार्ग पर चलती हैं, जैसा कि हमें पिता की ओर से आदेश मिला है।</span> <sup>5</sup><span class='v-txt'>अब, भद्रे! मेरा आप से एक निवेदन है।  मैं आप को कोई नया आदेश नहीं, बल्कि वही आदेश दे रहा हूँ, जो हमें प्रारम्भ से प्राप्त है- हम एक दूसरे को प्यार करें।</span> <sup>6</sup><span class='v-txt'>और प्यार का अर्थ यह है कि हम उसकी आज्ञाओं के मार्ग पर चलते रहें।  जो आदेश आप को प्रारम्भ से प्राप्त है, वह यह है कि आप को प्रेम के मार्ग पर चलना चाहिए।</span> <sup>7</sup><span class='v-txt'>बहुत-से भटकाने वाले संसार में फैल गये हैं।  वे यह नहीं मानते कि ईसा मसीह सचमुच मनुष्य बन गये थे। यह भटकाने वाले और मसीह-विरोधी का लक्षण है।</span> <sup>8</sup><span class='v-txt'>आप लोग सावधान रहें, जिससे आप अपने परिश्रम का फल न खो बैठें, बल्कि अपना पूरा पुरस्कार प्राप्त करें।</span> <sup>9</sup><span class='v-txt'>जो मसीह की शिक्षा की सीमा के अन्दर नहीं रहता, बल्कि उस से आगे बढ़ता है, उसे ईश्वर प्राप्त नहीं है। जो शिक्षा की सीमा के अन्दर रहता है, उसे पिता और पुत्र, दोनों प्राप्त हैं।</span> <sup>10</sup><span class='v-txt'>यदि कोई आप लोगों के पास आता है और यह शिक्षा साथ नहीं लाता, तो आप अपने यहाँ उसका स्वागत नहीं करें और उसका अभिवादन तक नहीं करें;</span> <sup>11</sup><span class='v-txt'>क्योंकि जो व्यक्ति उसका अभिवादन करता है, वह उसके दुष्ट कर्मों का सहभागी बनता है।</span> <sup>12</sup><span class='v-txt'>मुझे आप लोगों को बहुत कुछ लिखना है, किन्तु मैं यह कागज़ और स्याही से नहीं करना चाहता।  मुझे आशा है कि मैं आपके यहाँ आ कर आमने-सामने बातचीत करूँगा, जिससे हमारा आनन्द परिपूर्ण हो।</span> <sup>13</sup><span class='v-txt'>आपकी कृपापात्र बहन की सन्तानें आप लोगों को नमस्कार कहती हैं।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

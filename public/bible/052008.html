@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>रोमियों - अध्याय 8</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>रोमियों</h1>
+        <h2>अध्याय 8</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जो लोग ईसा मसीह से संयुक्त हैं, उनके लिए अब कोई दण्डाज्ञा नहीं रह गयी है;</span> <sup>2</sup><span class='v-txt'>क्योंकि आत्मा के विधान ने, जो ईसा मसीह द्वारा जीवन प्रदान करता है, मुझ को पाप तथा मृत्यु की अधीनता से मुक्त कर दिया है।</span> <sup>3</sup><span class='v-txt'>मानव स्वभाव की दुर्बलता के कारण मूसा की संहिता जो कार्य करने में असमर्थ थी, वह कार्य ईश्वर ने कर दिया है। उसने पाप के प्रायश्चित के लिए अपने पुत्र को भेजा, जिसने पापी मनुष्य के सदृश शरीर धारण किया। इस प्रकार ईश्वर ने मानव शरीर में पाप को दण्डित किया है;</span> <sup>4</sup><span class='v-txt'>जिससे हम में- जो कि शरीर के अनुसार  नहीं, बल्कि आत्मा के अनुसार आचरण करते हैं- संहिता की धार्मिकता पूर्णता एक पहुँच जाये।</span> <sup>5</sup><span class='v-txt'>(5-6) क्योंकि जो शरीर की वासनाओं सें संचालित हैं, वे शरीर की बातों की चिन्ता करते हैं और इसका परिणाम मृत्यु है: जो आत्मा से संचालित हैं, वे आत्मा की बातों की चिन्ता करते हैं और इसका परिणाम जीवन और शान्ति है।</span> <sup>7</sup><span class='v-txt'>क्योंकि शरीर की वासना ईश्वर के प्रतिकूल है। वह ईश्वर के नियम के अधीन नहीं होती और हो भी नहीं सकती।</span> <sup>8</sup><span class='v-txt'>जो लोग शरीर की वासनाओं से संचालित हैं, उन पर ईश्वर प्रसन्न नहीं होता।</span> <sup>9</sup><span class='v-txt'>यदि ईश्वर का आत्मा सचमुच आप लोगों में निवास करता है, तो आप शरीर की वासनाओं से नहीं, बल्कि आत्मा से संचालित हैं।  जिस मनुष्य में मसीह का आत्मा निवास नहीं करता, वह मसीह का नहीं।</span> <sup>10</sup><span class='v-txt'>यदि मसीह आप में निवास करते हैं, तो पाप के फलस्वरूप शरीर भले ही मर जाये, किन्तु पापमुक्ति के फलस्वरूप आत्मा को जीवन प्राप्त है।</span> <sup>11</sup><span class='v-txt'>जिसने ईसा को मृतकों में से जिलाया, यदि उनका आत्मा आप लोगों में निवास करता है, तो जिसने ईसा मसीह को मृतकों में से जिलाया वह अपने आत्मा द्वारा, जो आप में निवास करता है, आपके नश्वर शरीरों को भी जीवन प्रदान करेगा।</span> <sup>12</sup><span class='v-txt'>इसलिए, भाइयो! शरीर की वासनओं का हम पर कोई अधिकर नहीं।  हम उनके अधीन रह कर जीवन नहीं बितायें।</span> <sup>13</sup><span class='v-txt'>यदि आप शरीर की वासनाओं के अधीन रह कर जीवन बितायेंगे, तो अवश्य मर जायेंगे।</span> <sup>14</sup><span class='v-txt'>लेकिन यदि आप आत्मा की प्रेरणा से शरीर की वासनाओें का दमन करेंगे, तो आप को जीवन प्राप्त होगा।</span> <sup>15</sup><span class='v-txt'>जो लोग ईश्वर के आत्मा से संचालित हैं, वे सब ईश्वर के पुत्र हैं- आप लोगों को दासों का मनोभाव नहीं मिला, जिस से प्रेरित हो कर आप फिर डरने लगें।  आप लोगों को गोद लिये पुत्रों का मनोभाव मिला, जिस से प्रेरित हो कर हम पुकार कर कहते हैं, &quot;अब्बा, हे पिता!</span> <sup>16</sup><span class='v-txt'>आत्मा स्वयं हमें आश्वासन देता है कि हम सचमुच ईश्वर की सन्तान हैं।</span> <sup>17</sup><span class='v-txt'>यदि हम उसकी सन्तान हैं, तो हम उसकी विरासत के भागी हैं-हम मसीह के साथ ईश्वर की विरासत के भागी हैं।  यदि हम उनके साथ दुःख भोगते हैं, तो हम उनके साथ महिमान्वित होंगे।</span> <sup>18</sup><span class='v-txt'>मैं समझता हूँ कि हम में जो महिमा प्रकट होने को है, उसकी तुलना में इस समय का दुःख नगण्य है;</span> <sup>19</sup><span class='v-txt'>क्योंकि समस्त सृष्टि उत्कण्ठा से उस दिन की प्रतीक्षा कर रही है, जब ईश्वर के पुत्र प्रकट हो जायेंगे।</span> <sup>20</sup><span class='v-txt'>यह सृष्टि तो इस संसार की असारता के अधीन हो गयी है-अपनी इच्छा से नहीं, बल्कि उसकी इच्छा से, जिसने उसे अधीन बनाया है- किन्तु यह आशा भी बनी रही</span> <sup>21</sup><span class='v-txt'>कि वह असारता की दासता से मुक्त हो जायेगी और ईश्वर की सन्तान की महिमामय स्वतन्त्रता की सहभागी बनेगी।</span> <sup>22</sup><span class='v-txt'>हम जानते हैं कि समस्त सृष्टि अब तक मानो प्रसव-पीड़ा में कराहती रही है और सृष्टि ही नहीं, हम भी भीतर-ही-भीतर कराहते हैं।</span> <sup>23</sup><span class='v-txt'>हमें तो पवित्र आत्मा के पहले कृपा-दान मिल चुके हैं, लेकिन इस ईश्वर की सन्तान बनने की और अपने शरीर की मुक्ति की राह देख रहे हैं।</span> <sup>24</sup><span class='v-txt'>हमारी मुक्ति अब तक आशा का ही विषय है।  यदि कोई वह बात देखता है, जिसकी वह आशा करता है, तो यह आशा नहीं कही जा सकती।</span> <sup>25</sup><span class='v-txt'>हम उसकी आशा करते हैं, जिसे हम अब तक नहीं देख सके हैं।  इसलिए हमें धैर्य के साथ उसकी प्रतीक्षा करनी पड़ती है।</span> <sup>26</sup><span class='v-txt'>आत्मा भी हमारी दुर्बलता में हमारी सहायता करता है। हम यह नहीं जानते कि हमें कैसे प्रार्थना करनी चाहिए, किन्तु हमारी अस्पष्ट आहों द्वारा आत्मा स्वयं हमारे लिए विनती करता है।</span> <sup>27</sup><span class='v-txt'>ईश्वर हमारे हृदय का रहस्य जानता है।  वह समझाता है कि आत्मा क्या कहता है, क्योंकि आत्मा ईश्वर के इच्छानुसार सन्तों के लिए विनती करता है।</span> <sup>28</sup><span class='v-txt'>हम जानते हैं कि जो लोग ईश्वर को प्यार करते हैं और उसके विधान के अनुसार बुलाये गये हैं, ईश्वर उनके कल्याण के लिए सभी बातों में उनकी सहायता करता है;</span> <sup>29</sup><span class='v-txt'>क्योंकि ईश्वर ने निश्चित किया कि जिन्हें उसने पहले से अपना समझा, वे उसके पुत्र के प्रतिरूप बनाये जायेंगे, जिससे उसका पुत्र इस प्रकार बहुत-से भाइयों का पहलौठा हो।</span> <sup>30</sup><span class='v-txt'>उसने जिन्हें पहले से निश्चित किया, उन्हें बुलाया भी है: जिन्हें बुलाया, उन्हें पाप से मुक्त भी किया है और जिन्हें पाप से मुक्त किया, उन्हें महिमान्वित भी किया है।</span> <sup>31</sup><span class='v-txt'>और कहना ही क्या है?  यदि ईश्वर हमारे साथ है, तो कौन हमारे विरुद्ध होगा?</span> <sup>32</sup><span class='v-txt'>उसने अपने निजी पुत्र को भी नहीं बचाया, उसने हम सबों के लिए उसे समर्पित कर दिया।  तो, इतना देने के बाद क्या वह हमें सब कुछ नहीं देगा?</span> <sup>33</sup><span class='v-txt'>जिन्हें ईश्वर ने चुना है, उन पर कौन अभियोग लगा सकेगा?  जिन्हें ईश्वर ने दोषमुक्त कर दिया है,</span> <sup>34</sup><span class='v-txt'>उन्हें कौन दोषी ठहरायेगा?  क्या ईसा मसीह ऐसा करेंगे? वह तो मर गये, बल्कि जी उठे और ईश्वर के दाहिने विराजमान हो कर हमारे लिए प्रार्थना करते रहते हैं।</span> <sup>35</sup><span class='v-txt'>कौन हम को मसीह के प्रेम से वंचित कर सकता है?  क्या विपत्ति या संकट?  क्या अत्याचार, भूख, नग्नता, जोखिम या तलवार?</span> <sup>36</sup><span class='v-txt'>जैसा कि धर्मग्रन्थ में लिखा है- तेरे कारण दिन भर हमारा वध किया जाता है।  वध होने वाली भेड़ों में हमारी गिनती हुई।</span> <sup>37</sup><span class='v-txt'>किन्तु इन सब बातों पर हम उन्हीं के द्वारा सहज ही विजय प्राप्त करते है, जिन्होंने हमें प्यार किया।</span> <sup>38</sup><span class='v-txt'>मुझे दृढ़ विश्वास है कि न तो मरण या जीवन, न स्वर्गदूत या नरकदूत, न वर्तमान या भविष्य,</span> <sup>39</sup><span class='v-txt'>न आकाश या पाताल की कोई शक्ति और न समस्त सृष्टि में कोई या कुछ हमें ईश्वर के उस प्रेम से वंचित कर सकता है, जो हमें हमारे प्रभु ईसा मसीह द्वारा मिला है।</span> </p>
+        <div class='nav'><a href='052007.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='052009.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>1 तिमथी - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>1 तिमथी</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>(1-2) मैं सब से पहले यह अनुरोध करता हूँ कि सभी मनुष्यों के लिए, विशेष रूप से राजाओं और अधिकारियों के लिए, अनुनय-विनय, प्रार्थना निवेदन तथा धन्यवाद अर्पित किया जाये, जिससे हम भक्ति तथा मर्यादा के साथ निर्विघ्न तथा शान्त जीवन बिता सकें।</span> <sup>3</sup><span class='v-txt'>यह उचित भी है और हमारे मुक्तिदाता ईश्वर को प्रिय भी,</span> <sup>4</sup><span class='v-txt'>क्योंकि वह चाहता है कि सभी मनुष्य मुक्ति प्राप्त करें और सत्य को जानें।</span> <sup>5</sup><span class='v-txt'>क्योंकि केवल एक ही ईश्वर है और ईश्वर तथा मनुष्यों के केवल एक ही मध्यस्थ हैं, अर्थात् ईसा मसीह,</span> <sup>6</sup><span class='v-txt'>जो स्वयं मनुष्य हैं और जिन्होंने सब के उद्धार के लिए अपने को अर्पित किया।  उन्होंने उपयुक्त समय पर इसके सम्बन्ध में अपना साक्ष्य दिया।</span> <sup>7</sup><span class='v-txt'>मैं सच कहता हूँ, झूठ नहीं बोलता।  मैं इसी का प्रचारक तथा प्रेरित, गैर-यहूदियों के लिए विश्वास तथा सत्य का उपदेशक नियुक्त हुआ हूँ।</span> <sup>8</sup><span class='v-txt'>मैं चाहता हूँ कि सब जगह पुरुष, बैर तथा विवाद छोड़ कर, श्रद्धापूर्वक हाथ ऊपर उठा कर प्रार्थना करें।</span> <sup>9</sup><span class='v-txt'>मैं यह भी चाहता हूँ कि स्त्रियाँ वेशभूषा में मर्यादा और शालीनता का ध्यान रखें और कृत्रिम केश-विन्यास, स्वर्ण, मोतियों एवं कीमती वस्त्रों से नहीं,</span> <sup>10</sup><span class='v-txt'>बल्कि सत्कार्यों से अपना बनाव-सिंगार करें, जैसा कि उन स्त्रियों को शोभा देता है, जो ईश्वर-भक्त होने का दावा करती हैं।</span> <sup>11</sup><span class='v-txt'>धर्मशिक्षा के समय स्त्रियाँ अधीनता स्वीकार करते हुए मौन रहें।</span> <sup>12</sup><span class='v-txt'>मैं नहीं चाहता कि वे शिक्षा दें या पुरुषों पर अधिकार जतायें।  वे मौन ही रहें;</span> <sup>13</sup><span class='v-txt'>क्योंकि आदम पहले बना, हेवा बाद में</span> <sup>14</sup><span class='v-txt'>और आदम बहकावें में नहीं पड़ा, बल्कि हेवा ने बहकावे में पड़ कर अपराध किया।</span> <sup>15</sup><span class='v-txt'>फिर भी यदि स्त्रियाँ संयम से विश्वास, भ्रातृप्रेम और पवित्रता में दृढ़ बनी रहेंगी, तो वे अपने मातृत्व द्वारा मुक्ति प्राप्त करेंगी।</span> </p>
+        <div class='nav'><a href='061001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='061003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

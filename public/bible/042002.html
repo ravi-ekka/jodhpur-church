@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>हबक्कूक - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>हबक्कूक</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैं अपनी चैकी पर खड़ा हो जाऊँगा, मैं चारदीवारी पर चढ कर प्रतीक्षा करता रहूँगा कि प्रभु मुझ से क्या कहेगा और मेरी शिकायतों का क्या उत्तर देगा।</span> <sup>2</sup><span class='v-txt'>प्रभु ने उत्तर में मुझ से यह कहा, &quot;जो दृश्य तुम देखने वाले हो, उसे स्पष्ट रूप से पाटियों पर लिखो, जिससे सब उसे सुगमता से पढ सकें;</span> <sup>3</sup><span class='v-txt'>क्योंकि वह भविय का दृश्य है, जो निश्चित समय पर पूरा होने वाला है।  यदि उस में देर हो जाये, तो उसकी प्रतीक्षा करते रहो, क्योंकि वह अवश्य ही पूरा हो जायेगा।  जो दृष्ट है, वह नष्ट हो जायेगा।</span> <sup>4</sup><span class='v-txt'>जो धर्मी है, वह अपनी धार्मिकता के कारण सुरक्षित रहेगा।</span> <sup>5</sup><span class='v-txt'>धन धोखेबाज है।  धनी घमण्डी और बेचैन बना रहता है।  वह अधोलोक-जैसा लालची, काल-जैसा अतृप्त रहता है।  वह सब राष्ट्रों को अपने अधीन कर लेना चाहता है।  और सभी जातियों पर अधिकार जमाना चाहता है।&quot;</span> <sup>6</sup><span class='v-txt'>किन्तु इसका नतीजा उलटा होगा- वे लोग उस पर व्यंग्य कसेंगे और यह कह कर ताना मारेंगेः धिक्कार उसे, जो दूसरों का धन चोरी कर संचित करता है और जो बन्धक-के-बंधक लेता रहता है!  यह कब तक होगा?</span> <sup>7</sup><span class='v-txt'>तेरे कर्ज़दार अचानक उठेंगे और तुझ से नकाजा करने वाले सतर्क हो जायेंगे।  तब वे तुझ को लूट लेंगे।</span> <sup>8</sup><span class='v-txt'>चूँकि तूने अनेक राष्ट्रों को लूटा है, अन्य सब राष्ट्र ही तुझे लूटेंगे। तूने तो कितनों का रक्त बहाया है और राष्ट्रों, नगरों और निवासियों को नष्ट-भ्रष्ट कर दिया है।</span> <sup>9</sup><span class='v-txt'>धिक्कार है उसे, जिसने लूट के धन से अपना घर भर लिया है और अपनी सुरक्षा के लिए ऊँचे-ऊँचे महल बनाये हैं!</span> <sup>10</sup><span class='v-txt'>तू अनेक लोगों का विनाश करना चाहता था, किन्तु तूने अपने ही घर की प्रतिष्ठा नष्ट कर दी और अपना ही नाश कर दिया।</span> <sup>11</sup><span class='v-txt'>दीवारों के पत्थर बदला के लिए चिल्ला रहे हैं और लकड़ी की कडियाँ स्वर मिला रही हैं।</span> <sup>12</sup><span class='v-txt'>धिक्कार है उसे, जो खून पर नगर बनाता है और दुष्टता की नींव पर शहर का निर्माण करता है!</span> <sup>13</sup><span class='v-txt'>विश्वमण्डल के प्रभु की इच्छा यह है कि जो कुछ बेगारी से बना है, वह अन्त में भस्म हो जायेगा और बन्दियों का परिश्रम व्यर्थ सिद्ध होगा।</span> <sup>14</sup><span class='v-txt'>जिस तरह समुद्र जल से भरा है, उसी तरह देश प्रभु-इश्वर की महिमा के ज्ञान से भरा होगा।</span> <sup>15</sup><span class='v-txt'>धिक्कार है उसे, जो अपने पडोसियों को शराब पिलाता है और विष भी मिलाता है, जिससे वे होश-हवास खो बैंठे, और उसकी नग्नता उघड जाये!</span> <sup>16</sup><span class='v-txt'>इस प्रकार के मद्यपान से तेरी महिमा नहीं, तेरी नीचता व्यक्त होती है।  अब तो तू ही पी कर अपनी नग्नता उघाड देगा; प्रभु-ईश्वर का प्याला परोसा गया है, तू इसे गटक जायेगा और तेरा सम्मान अपमान में बदल जायेगा।</span> <sup>17</sup><span class='v-txt'>जिस तरह तूने लेबानोन को आघात पहुँचाया था और उसकी मवेशियों का वध किया था, उसी तरह तुझ पर हिंसा और आतंक टूट पडेंगे।  तूने तो देश भर में रक्तपात और बलात्कार किये और नगरों के निवासियों पर हिंसात्मक कार्य किये।</span> <sup>18</sup><span class='v-txt'>धिक्कार है उसे, जो लकडी से बनी प्रतिमा से कहता है, &quot;जागो’- यह जड पत्थर से, &quot;उठो&quot;!  उस पर सोना-चाँदी जडे तो है, किन्तु उस में प्राण कहाँ हैं?</span> <sup>19</sup><span class='v-txt'>मूर्ति को ढालने से क्या लाभ?  वह मनुष्य ही से बनी है- वह धातु-ही-धातु है, मिथ्यावादी! मूर्तिकार भले ही जड प्रतिमा पर विश्वास करे, उसे क्या लाभ?</span> <sup>20</sup><span class='v-txt'>पर प्रभु अपने पवित्र मन्दिर में विराजमान रहता हं; उसके सामने समस्त पृथ्वी मौन रहे।</span> </p>
+        <div class='nav'><a href='042001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='042003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

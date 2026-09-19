@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 28</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 28</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>चाँदी की खानें होती हैं और सोने को परिष्कृत करने के स्थान भी</span> <sup>2</sup><span class='v-txt'>लोहा जमीन से निकाला जाता है और तांबा गलायी हुई चट्टान से।</span> <sup>3</sup><span class='v-txt'>मनुष्य अंधकार दूर करता और पृथ्वी की गोद में दूर तक कच्ची धातु की खोज करता है।</span> <sup>4</sup><span class='v-txt'>वह बस्तियों से दूर, जहाँ राही नहीं पहुँचते, सुरंगे बनाता और वहाँ लटकते हुए काम करता है।</span> <sup>5</sup><span class='v-txt'>भूमि पर ऊपरी सतह से रोटी प्राप्त होती है और उसके भीतर एक आग जलती रहती है।</span> <sup>6</sup><span class='v-txt'>उसकी चट्टानों में नीलम है और वहाँ सोने की धूल भी मिलती है।</span> <sup>7</sup><span class='v-txt'>कोई शिकारी पक्षी वहाँ का मार्ग नहीं जानता, बाज की आँख ने उसे नहीं देखा।</span> <sup>8</sup><span class='v-txt'>जंगली जानवर वहाँ नहीं विचरते, वहाँ सिंह भी कभी नहीं पहुँचा।</span> <sup>9</sup><span class='v-txt'>मनुष्य ही चट्टान पर हथौड़ा मारता और पर्वतों की जड़ खोदता है।</span> <sup>10</sup><span class='v-txt'>वह चट्टानें काट कर सुरंग बनाता और उसकी बहुमूल्य वस्तुओं का पता लगाता है।</span> <sup>11</sup><span class='v-txt'>उसने नदियों के स्रोत सुखा डाले और जो छिपा था, उसे प्रकट कर दिया।</span> <sup>12</sup><span class='v-txt'>किंतु प्रज्ञा कहाँ मिलेगी?  सद्बुद्धि का निवास कहाँ है?</span> <sup>13</sup><span class='v-txt'>मनुष्य उसका मूल्य नहीं समझता, वह जीवलोक में नहीं पायी जाती है।</span> <sup>14</sup><span class='v-txt'>महागत्र्त कहता है, &quot;वह मेरे पास भी नहीं।&quot;  और महासमुद्र कहता है, &quot;वह मेरे पास भी नहीं।&quot;</span> <sup>15</sup><span class='v-txt'>वह शुद्ध सोने के बदले नहीं मिल सकती, वह चाँदी से नहीं खरीदी जाती।</span> <sup>16</sup><span class='v-txt'>उसका मूल्य न तो ओफ़िर के सोने से आंका जा सकता, न कीमती सुलेमानी और न नीलमणि से।</span> <sup>17</sup><span class='v-txt'>न तो सोना या शीशा उसकी बराबरी कर सकता है और न परिष्कृत सोने का पात्र ही।</span> <sup>18</sup><span class='v-txt'>मूँगा और स्फटिक उसके सामने फीके पड जाते हैं।  प्रज्ञा का मूल्य मोतियों से बढ़ कर है।</span> <sup>19</sup><span class='v-txt'>इथोपिया का पुखराज उसके सामने नगण्य है और परिशुद्ध स्वर्ग उसकी बराबरी नहीं कर सकता।</span> <sup>20</sup><span class='v-txt'>प्रज्ञा कहाँ उत्पन्न होती है?  सद्बुद्धि का निवास कहाँ है?</span> <sup>21</sup><span class='v-txt'>वे प्रत्येक प्राणी के लिए अदृश्य है।  आकाश के पक्षी उसे नहीं देख सकते।</span> <sup>22</sup><span class='v-txt'>मृत्यु और अधोलोक कहते हैं, &quot;हमने उसकी चर्चा सुनी है&quot;।</span> <sup>23</sup><span class='v-txt'>उसके मार्ग से केवल ईश्वर परिचित है, वह उसका निवासस्थान जानता है।</span> <sup>24</sup><span class='v-txt'>जब उसने पृथ्वी के सीमांतों तक अपनी दृष्टि दौड़ायी और आकाश के नीचे सब कुछ का निरीक्षण किया;</span> <sup>25</sup><span class='v-txt'>जब उसने पवन का वेग और समुद्र का विस्तार निर्धारित किया;</span> <sup>26</sup><span class='v-txt'>जब उसने वर्षा का नियंत्रण किया और मेघगर्जन और बिजली का मार्ग प्रशस्त किया,</span> <sup>27</sup><span class='v-txt'>उस समय उसने प्रज्ञा को देखा, समझा और उसकी थाह ली।</span> <sup>28</sup><span class='v-txt'>तब उसने मनुष्य से यह कहा, &quot;प्रभु पर श्रद्धा रखना-यही प्रज्ञा है।  बुराई से दूर रहना-यही सद्बुद्धि है।&quot;</span> </p>
+        <div class='nav'><a href='022027.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022029.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

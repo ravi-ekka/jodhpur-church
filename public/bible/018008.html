@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>यूदीत - अध्याय 8</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>यूदीत</h1>
+        <h2>अध्याय 8</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उस समय यूदीत नगर में रहती थी।  वह मरारी की पुत्री थी; मरारी ओक्ष का पुत्र था, ओक्ष यूसुफ़ का, यूसुफ़ ओज़ीएल का, ओज़ीएल हिलकीया का, हिलकीया हनन्या का, हनन्या गिदओन का, गिदओन रफ़ाईन का, रफ़ाईन अहीटूब का, अहीटूब एलीया का, एलीया हिलकीया का, हिलकीया एलीआब का, एलीआब नतनएल का, नतनएल सलामीएल का, सलामीएल सरासदय का और सरासदय सिमओन का और सिमओन इस्राएल का पुत्र था।</span> <sup>2</sup><span class='v-txt'>यूदीत का पति मनस्से उसके वंश और कुल का था।  जौ की फ़सल के समय उसका देहान्त हो गया था।</span> <sup>3</sup><span class='v-txt'>वह खेत में पूले बाँधने वालों का काम देख रहा था कि उसे लू लग गयी।  उसे पलंग पकड़ना पड़ा और वह अपने नगर बेतूलियों में मर गया।  लोगों ने उसे दोतान तथा बलामोन के बीच वाले खेत में अपने पूर्वजों के साथ दफ़ना दिया था</span> <sup>4</sup><span class='v-txt'>विधवा बनने के बाद यूदीत ने सवा तीन वर्ष अपने घर में बिताये।</span> <sup>5</sup><span class='v-txt'>उसने अपने घर की छत पर आने के लिए एक छोटा-सा कमरा बनवाया।  वह टाट ओढ़े थी और शोक के वस्त्र पहनती थी।</span> <sup>6</sup><span class='v-txt'>विधवा बनने के बाद वह विश्राम-दिवस के पूर्वदिन, विश्राम-दिवस, अमावस के पूर्वदिन, अमावस और इस्राएली पर्वों तथा अन्य पर्वों को छोड़ कर प्रतिदिन उपवास करती थी।</span> <sup>7</sup><span class='v-txt'>वह सुडौल और अत्यन्त सुन्दर थी।  वह समझदार और व्यवहारकुशल थी।  उसका पति मनस्से उसके लिए सोना-चाँदी, दास-दासियाँ, पशुधन और खेत छोड़ गया था और वह अपनी सम्पत्ति का प्रबन्ध करती थी।  उसका पति यूसुफ़ का पुत्र था, यूसुफ़ अहीटूब का, अहीटूब मेलखी का, मेलखी एलीआब का, एलीआब नतनएल का, नतनएल शूरीशद्द्य का, शुरीशद्दय सिमओन का और सिमओन इस्राएल का पुत्र था।</span> <sup>8</sup><span class='v-txt'>कोई भी उसकी चुग़ली नहीं खाता था; क्योंकि वह ईश्वर पर बहुत श्रद्धा रखती थी।</span> <sup>9</sup><span class='v-txt'>जनता ने जल के अभाव के कारण निराश हो कर शासक से जो कटु शब्द कहे थे, यूदीत ने उनके विषय में, सुना और वह सब भी सुना, जो उज़्ज़ीया ने लोगों से कहा था और किस प्रकार उसने शपथ खा कर उन्हें आश्वासन दिया था कि वह पाँच दिन बाद नगर को अस्सूरियों के हाथ दे देगा।</span> <sup>10</sup><span class='v-txt'>इस पर उसने अपनी सेविका को, जो उसकी सारी सम्पत्ति की देखरेख करती थी, भेज कर नगर के अध्यक्ष काब्रीस और करमीस को बुलवाया।</span> <sup>11</sup><span class='v-txt'>वे उसके पास आये।  तब उसने उन से कहा, &quot;बेतूलियावासियों के नेताओ!  मेरी बात सुनिए।  आपने लोगों के सामने जो भाषण दिया, वह उचित नहीं है। आपने प्रभु को साक्षी बना कर शपथ खायी है कि यदि प्रभु, हमारे ईश्वर ने निश्चित अवधि तक हमारी सहायता नहीं की,  तो आप नगर हमारे शत्रुओं के हाथ दे देंगे।</span> <sup>12</sup><span class='v-txt'>आप कौन होते हैं, जो आपने आज ईश्वर की परीक्षा ली और जो मनुष्यों के बीच ईश्वर का स्थान लेते हैं?</span> <sup>13</sup><span class='v-txt'>आप सर्वशक्तिमान् प्रभु की परीक्षा लेते है।  आप उसके विषय में कभी कुछ नहीं समझेंगे।</span> <sup>14</sup><span class='v-txt'>जब आप न तो मनुष्य के हृदय की थाह ले सकेंगे और न उसके मन के विचार समझ सकेंगे, तो आप कैसे ईश्वर की थाह लेंगे, जिसने यह सब किया?  आप कैसे उसके विचार जानेंगे और उसका उद्देश्य समझेंगे?</span> <sup>15</sup><span class='v-txt'>कभी नहीं!  भाइयो!  आप हमारे प्रभु-ईश्वर को अप्रसन्न नहीं कीजिए।  यदि वह पाँच दिन के अन्दर हमें सहायता देना नहीं चाहता, तो वह जितने दिनों के अन्दर चाहता है, वह हमारी रक्षा करने में अथवा हमारे शत्रुओं द्वारा हमारा विनाश करवाने में समर्थ है।</span> <sup>16</sup><span class='v-txt'>आप हमारे प्रभु-ईश्वर को निर्णय के लिए बाध्य करने का प्रयत्न मत कीजिए; क्योंकि ईश्वर को मनुष्य की तरह डराया या फुसलाया नहीं जा सकता।</span> <sup>17</sup><span class='v-txt'>इसलिए हम रक्षा के लिए धैर्यपूर्वक उसकी प्रतीक्षा करें और अपनी सहायता के लिए उस से प्रार्थना करें।  यदि वह उचित समझेगा, तो हमारी पुकार सुनेगा ;</span> <sup>18</sup><span class='v-txt'>क्योंकि आजकल हमारे बीच कोई वंश, घराना, कुल या नगर ऐसा नहीं, जहाँ लोग हाथ से निर्मित देवताओं की पूजा करते हों, जैसे पहले की जाती थी</span> <sup>19</sup><span class='v-txt'>और जिसके कारण हमारे पूर्वज तलवार और लूट के शिकार हो गये और हमारे शत्रुओं द्वारा बुरी तरह पराजित किये गये।</span> <sup>20</sup><span class='v-txt'>हम तो उसके सिवा किसी अन्य ईश्वर को नहीं मानते। इसीलिए हमें आशा है कि वह हमारा तिरस्कार नहीं करेगा और न हम से और न हमारी जाति पर से अपनी कृपादृृष्टि हटायेगा ;</span> <sup>21</sup><span class='v-txt'>क्योंकि यदि हम पराधीन हुए, तो सारा यहूदिया प्रदेश पराधीन किया जायेगा और हमारा पवित्र-स्थान लूटा जायेगा और हमें रक्त बहा कर उसके अपवित्रीकरण का प्रायश्चित्त करना पड़ेगा।</span> <sup>22</sup><span class='v-txt'>जहाँ हम विदेश में दास बनेंगे, वहाँ हमारे भाई-बन्धुओं के वध, देश से हमारी जाति के निर्वासन और हमारे दायभाग के उजाड़ का दोष हमारे सिर पड़ेगा और हमारे स्वामी हम से घृणा करेंगे और हमारा उपहास करेंगे;</span> <sup>23</sup><span class='v-txt'>क्योंकि हम अपने स्वामियों के कृपापात्र नहीं बनेंगे, बल्कि हमारा प्रभु-ईश्वर हमारा अपमान क़ायम रखेगा।</span> <sup>24</sup><span class='v-txt'>&quot;भाइयो; हम अपने भाइयों को समझायें कि उनका जीवन हम पर निर्भर है; पवित्र-स्थान, मन्दिर और वेदी की सुरक्षा हमारे हाथ में है।</span> <sup>25</sup><span class='v-txt'>इसके अतिरिक्त हम अपने प्रभु-ईश्वर को धन्यवाद दें। वह हमारी परीक्षा लेता है, जैसे उसने हमारे पूर्वजों की परीक्षा ली है।</span> <sup>26</sup><span class='v-txt'>याद रखिए कि उसने इब्राहीम और इसहाक के साथ क्या-क्या किया और याकूब पर क्या-क्या बीती, जब वह सीरियाई मेसोपोतामिया में अपने मामा लाबान की भेड़ें चराते थे ;</span> <sup>27</sup><span class='v-txt'>क्योंकि जिस प्रकार उसने आग में उनके हृदय की परीक्षा ली उसी प्रकार वह हमें दण्ड नहीं दे रहा है, बल्कि प्रभु शिक्षा देने के उद्देश्य से उन लोगों को कोड़ों से मारता है, जो उसकी ओर अभिमुख होते हैं।&quot;</span> <sup>28</sup><span class='v-txt'>इस पर उज़्ज़ीया ने उस से कहा, &quot;तुमने जो कुछ कहा, उसे तुमने सच्चे हृदय के कहा और कोई भी व्यक्ति तुम्हारे कथन का विरोध नहीं करेगा।</span> <sup>29</sup><span class='v-txt'>सच पूछो, तो यह पहली बार नहीं है कि तुम अपने विवेक का परिचय दे रही हो।  सारी जनता तुम्हारे जीवन के प्रारम्भ से तुम्हारी बुद्धिमानी और तुम्हारे हृदय के सद्भाव जानती है।</span> <sup>30</sup><span class='v-txt'>परन्तु लोग इतने प्यासे थे कि उन्होंने हमें उन बातों के लिए और उस शपथ के लिए विवश किया, जिसे हम भंग नहीं करेंगे।</span> <sup>31</sup><span class='v-txt'>अब तुम हमारे लिए प्रार्थना करो, क्योंकि तुम ईश्वर-भक्त महिला हो, जिससे प्रभु हमारे जलकुण्ड भरने के लिए पानी बरसाये और हम प्यास के कारण शिथिल न पड़ें।&quot;</span> <sup>32</sup><span class='v-txt'>यूदीत ने उन्हें उत्तर दिया, &quot;मेरी बात सुनिए।  मैं एक ऐसा काम करूँगी, जिसकी चरचा पीढ़ी-दर-पीढ़ी हमारी जाति की सन्तानों के बीच होती रहेगी।</span> <sup>33</sup><span class='v-txt'>आप लोग आज रात फाटक के पास आइए।  मैं अपनी सेविका को साथ लिए निकल जाऊँगी और उन दिनों की अवधि के भीतर, जिस में आपने नगर हमारे शत्रुओं के हाथ देने का वचन दिया है, मेरे द्वारा प्रभु इस्राएल का उद्धार करायेगा।</span> <sup>34</sup><span class='v-txt'>लेकिन आप लोग मुझ से यह नहीं पूछेंगे कि मैं क्या करने जा रही हूँ।  मैं जो करने वाली हूँ, जब तक वह बात पूरी नहीं होगी, तब तक मैं आप को उसके विषय में कुछ नहीं बताऊँगी।&quot;</span> <sup>35</sup><span class='v-txt'>इस पर उज़्ज़ीया और प्रशासकों ने उस से कहा, &quot;सकुशल जाओ!  प्रभु-ईश्वर हमारे शत्रुओं से बदला लेने तुम्हारे साथ रहे!&quot;</span> <sup>36</sup><span class='v-txt'>इसके बाद वे उसके यहाँ से निकल कर अपनी-अपनी चैकियों पर चले गये।</span> </p>
+        <div class='nav'><a href='018007.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='018009.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

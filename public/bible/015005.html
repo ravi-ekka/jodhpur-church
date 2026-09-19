@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़्रा - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़्रा</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब नबी हग्गय और इद्दो के पुत्र ज़कर्या ईश्वर की प्रेरणा से यूदा और येरूसालेम के यहूदियों को ईश्वर के नाम पर भविष्यवाणी सुनाने लगे,</span> <sup>2</sup><span class='v-txt'>तो शअलतीएल का पुत्र ज़रूबबाबेल और योसादाक के पुत्र येशूआ ने येरूसालेम में ईश्वर के मन्दिर का पुनर्निर्माण करना प्रारम्भ किया।  ईश्वर के नबी उनकी सहायता करते थे।</span> <sup>3</sup><span class='v-txt'>उस समय नदी के उस पार के प्रदेश का क्षत्रप तत्तनय, शतरबोज़नय और उनके साथी उनके पास आये और उन से पूछने लगे, &quot;आप को इस मन्दिर का पुनर्निर्माण करने और दीवारें फिर उठाने की आज्ञा किसने दी है?&quot;</span> <sup>4</sup><span class='v-txt'>उन्होंने यह भी पूछा, &quot;इस भवन का निर्माण करने वाले व्यक्तियों के नाम क्या हैं?&quot;</span> <sup>5</sup><span class='v-txt'>परन्तु यहूदियों के नेताओं पर प्रभु की कृपादृष्टि थी; इसलिए जब तक दारा की आज्ञा न मिले और क्षत्रप लिखित रूप में उन्हें कोई आज्ञा न दे, तब तक वे उन को रोक नहीं सकते थे।</span> <sup>6</sup><span class='v-txt'>जो पत्र नदी के उस पार के क्षत्रप तत्तनय, शतर-बोज़नय और उनके साथी पदाधिकारियों ने राजा दारा को लिखा था, इसकी प्रतिलिपि इस प्रकार है।</span> <sup>7</sup><span class='v-txt'>उन्होंने राजा को यह प्रतिवेदन भेजाः &quot;राजा दारा को हार्दिक प्रणाम।</span> <sup>8</sup><span class='v-txt'>राजा को विदित हो कि हम यूदा प्रान्त में महान् ईश्वर के मन्दिर गये।  बड़े-बड़े पत्थरों से उसका निर्माण हो रहा है और उसकी दीवारें लकड़ी से मढ़ी जा रही हैं।  यह काम सावधानी से किया जा रहा है और वह उनके निर्देशन में अच्छी प्रगति कर रहा है।</span> <sup>9</sup><span class='v-txt'>हमने उनके नेताओं से यह कहते हुए पूछा, ’आप को यह मन्दिर बनाने और उसकी दीवारें उठाने की आज्ञा किसने दी है?’</span> <sup>10</sup><span class='v-txt'>हमने उनके नाम भी पूछे, जिससे हम उनके नेताओं के नाम लिख कर आप को सूचित कर सकें।</span> <sup>11</sup><span class='v-txt'>&quot;उन्होंने हमें यह उत्तर दिया कि हम स्वर्ग और पृथ्वी के ईश्वर के सेवक हैं।  हम इस मन्दिर का पुनर्निर्माण कर रहे हैं, जो बहुत समय पहले बनाया गया था और जिसे इस्राएल के एक महान् राजा ने बनवा कर पूरा किया।</span> <sup>12</sup><span class='v-txt'>लेकिन जब हमारे पूर्वजों ने स्वर्ग के ईश्वर का क्रोध भड़काया, तो उसने उन्हें बाबुल के राजा खल्दैयी नबूकदनेज़र के हाथ कर दिया।  उसने इस मन्दिर को गिरवा दिया और लोगों को बन्दी बना कर बाबुल ले गया।</span> <sup>13</sup><span class='v-txt'>लेकिन बाबुल के राजा सीरुस ने, अपने शासनकाल के प्रथम वर्ष, ईश्वर के इस मन्दिर के पुनर्निर्माण का आदेश दिया।</span> <sup>14</sup><span class='v-txt'>इसके अतिरिक्त उन्होंने ईश्वर के मन्दिर की सोने और चाँदी की वस्तुएँ, जिन्हें नबूकदनेज़र ने येरूसालेम के मन्दिर से निकलवा कर बाबुल के मन्दिर में रखवाया था, बाबुल के मन्दिर से निकलवायीं और अपने द्वारा नियुक्त राज्यपाल शेशबज़्ज़र को</span> <sup>15</sup><span class='v-txt'>यह कहते हुए दीं, ’ये वस्तुएँ ले जा कर येरूसालेम के मन्दिर में रखवाओ और ईश्वर का मन्दिर अपने पहले स्थान पर ही फिर से बनवाओ’।</span> <sup>16</sup><span class='v-txt'>इसके बाद वही शेशबज़्ज़र येरूसालेम में ईश्वर के मन्दिर की नींव डालने आया है।  उस समय से आज तक यह निर्माण-कार्य हो रहा है, किन्तु अब तक पूरा नहीं हुआ।</span> <sup>17</sup><span class='v-txt'>इसीलिए यदि राजा ठीक समझें, तो बाबुल के राजकीय पुरालेखागार में इसकी खोज की जाये कि येरूसालेम में ईश्वर के इस मन्दिर के निर्माण की आज्ञा राजा सीरूस द्वारा दी गयी थी या नहीं और जब यह पता लगे, तो इस मामले में राजा हमें अपने निर्णय की सूचना दें।&quot;</span> </p>
+        <div class='nav'><a href='015004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='015006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

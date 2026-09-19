@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रकाशना - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रकाशना</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>पाँचवें स्वर्गदूत ने तुरही बजायी।  मैंने एक तारा देखा, जो आकाश से पृथ्वी पर गिरा था और उसे अगाध गर्त के विवर की कुंजी दी गयी।</span> <sup>2</sup><span class='v-txt'>उसने अगाधगत्र्त का विवर खोला।  इस पर विवर से धूआँ निकला, जो बड़ी भट्टी के धूएँ-जैसा था और विवर के धूएँ से सूर्य और वायुमण्डल अन्धकारमय हो गया।</span> <sup>3</sup><span class='v-txt'>उस धूएँ में से टिड्डियाँ पृथ्वी पर उतरीं और उन्हें पृथ्वी के बिच्छुओं-जैसी शक्ति प्रदान की गयी।</span> <sup>4</sup><span class='v-txt'>उन्हें यह आदेश मिला कि वे घास अथवा किसी पौधे या वृक्ष को हानि नहीं पहुँचायें, बल्कि केवल उन मनुष्यों को, जिनके माथे पर ईश्वर की मुहर नहीं लगी हो।</span> <sup>5</sup><span class='v-txt'>टिड्डियों को इन लोगों का वध करने की नहीं, बल्कि इन्हें पाँच महीनों तक पीड़ित करने की अनुमति दी गयी।  उनकी यन्त्रणा बिच्छुओं के डंक-जैसी थी।</span> <sup>6</sup><span class='v-txt'>उन दिनों मनुष्य मृत्यु की खोज करेंगे, किन्तु वह उन्हें नहीं मिलेगी।  वे मरने की अभिलाषा करेंगे, किन्तु मृत्यु उन से भागती रहेगी।</span> <sup>7</sup><span class='v-txt'>उन टिड्डियों की आकृति युद्ध के लिए सुसज्जित अश्वों-जैसी थी।  ऐसा लग रहा था कि उनके सिरों पर स्वर्ण मुकुट हों।  उनके मुख मनुष्यों के मुख-जैसे थे।</span> <sup>8</sup><span class='v-txt'>उनके केश स्त्रियों के केश-जैसे और उनके दाँत सिंहों के दाँतों जैसे थे।</span> <sup>9</sup><span class='v-txt'>ऐसा लग रहा था कि उनके कवच लोहे के कवच थे। उनके डैनों की आवाज युद्ध के लिए तेज दौड़ने वाले बहुसंख्यक रथों और अश्वों की आवाज-जैसी थीं।</span> <sup>10</sup><span class='v-txt'>उनकी पूँछें, जिन में डंक थे, बिच्छुओं की पूँछों-जैसी थीं। उनकी पूँछों में मनुष्यों को पाँच महीनों तक हानि पहुँचाने का सामर्थ्य था।</span> <sup>11</sup><span class='v-txt'>उनका एक राजा था, अर्थात् अगाध गर्त का दूत, जिसका नाम इब्रानी में अबद्दीन है और यूनानी में अपोल्लुओन।</span> <sup>12</sup><span class='v-txt'>पहली विपत्ति अब बीत चुकी।  इसके बाद दो विपत्तियाँ और आने वाली हैं।</span> <sup>13</sup><span class='v-txt'>छठे स्वर्गदूत ने तुरही बजायी।  इस पर ईश्वर के सम्मुख अवस्थित स्वर्ण वेदी के कोनों में से एक वाणी सुनाई पड़ी।</span> <sup>14</sup><span class='v-txt'>मैंने उसे तुरहीधारी छठे स्वर्गदूत से यह कहते सुनाः &quot;महानदी फरात के पास बँधे हुए चार दूतों को खोल दो&quot;।</span> <sup>15</sup><span class='v-txt'>उन चार दूतों के बन्धन खोल दिय गये, जो उसी घड़ी, दिन, महीने और वर्ष के लिए प्रस्तुत थे, जब उन्हें एक तिहाई मनुष्यों का वध करना था।</span> <sup>16</sup><span class='v-txt'>घुड़सवार सैनिकों की संख्या बीस करोड़ थी।  मैंने उनकी संख्या की घोषणा सुनी।</span> <sup>17</sup><span class='v-txt'>मुझे उस दृश्य में वे घोड़े और उन पर सवार सैनिक इस प्रकार दीख पड़े: सैनिक अग्नि-जैसे लाल, धूम्रकान्त-जैसे नीले और गन्धक-जैसे पीले कवच पहने हुए थे।  घोड़ों के सिर सिंहों के सिर-जैसे थे और उनके मुँह से आग, धुँआ और गन्धक निकल रही थी।</span> <sup>18</sup><span class='v-txt'>इन तीन विपत्तियों द्वारा, अर्थात् आग, धूएँ और गन्धक द्वारा, जो घोड़ों के मुँह से निकलती थी, एक तिहाई मनुष्यों का वध किया गया;</span> <sup>19</sup><span class='v-txt'>क्योंकि उन घोड़ों का सामर्थ्य उनके मुँह में ही नहीं, उनकी पूँछें में भी था।  उनकी पूँछें साँपों के सदृश थीं- उनके अपने सिर थे और वे उन से भी हानि पहुँचाते थे।</span> <sup>20</sup><span class='v-txt'>शेष मनुष्यों ने- जो इन विपत्तियों द्वारा नहीं मारे गये थे- अपने हाथों के कर्मों के लिए पश्चात्ताप नहीं किया।  वे अपदूतों की पूजा करते रहे और सोना, चाँदी, काँसे पत्थर और लकड़ी की उन देवमूर्तियों की, जो न तो देख सकती हैं, न सुन और चल सकती हैं।</span> <sup>21</sup><span class='v-txt'>उन्होंने अपने हत्याकाण्डों, अपने जादू-टोनों, अपने व्यभिचार और अपनी चोरियों के लिए भी पश्चात्ताप नहीं किया।</span> </p>
+        <div class='nav'><a href='073008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='073010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

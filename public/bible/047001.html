@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मत्ती - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मत्ती</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इब्राहीम की सन्तान, दाऊद के पुत्र, ईसा मसीह की वंशावली।</span> <sup>2</sup><span class='v-txt'>इब्राहीम से इसहाक उत्पन्न हुआ, इसहाक से याकूब, याकूब से यूदस और उसके भाई,</span> <sup>3</sup><span class='v-txt'>यूदस और थामर से फ़ारेस और ज़़ारा उत्पन्न हुए। फ़ारेस से एस्रोम, एस्रोम से अराम,</span> <sup>4</sup><span class='v-txt'>अराम से अमीनदाब, अमीनदाब से नास्सोन, नास्सोन से सलमोन,</span> <sup>5</sup><span class='v-txt'>सलमोन और रखाब से बोज़, बोज़ और रूथ से ओबेद, ओबेद से येस्से,</span> <sup>6</sup><span class='v-txt'>येस्से से राजा दाऊद उत्पन्न हुआ। दाऊद और उरियस की विधवा से सुलेमान उत्पन्न हुआ।</span> <sup>7</sup><span class='v-txt'>सुलेमान से रोबोआम, रोबोआम से अबीया, अबीया से आसफ़,</span> <sup>8</sup><span class='v-txt'>आसफ़ से योसफ़ात, योसफ़ात से योराम, योराम से ओज़ियस,</span> <sup>9</sup><span class='v-txt'>ओज़ियस से योअथाम, योअथाम से अख़ाज़, अख़ाज़ से एजि़कीअस,</span> <sup>10</sup><span class='v-txt'>एजि़कीअस, से मनस्सेस, मनस्सेस से आमोस, आमोस से योसियस</span> <sup>11</sup><span class='v-txt'>और बाबुल - निर्वासन के समय योसिअस से येख़ोनिअस और उसके भाई उत्पन्न हुए।</span> <sup>12</sup><span class='v-txt'>बाबुल - निर्वासन के बाद येख़ोनिअस से सलाथिएल उत्पन्न हुआ। सलाथिएल से ज़ोरोबबेल,</span> <sup>13</sup><span class='v-txt'>ज़ोरोबबेल से अबियुद, अबियुद से एलियाकिम, एलियाकिम से आज़ोर,</span> <sup>14</sup><span class='v-txt'>आज़ोर से सादोक, सादोक से आख़िम, आख़िम से एलियुद,</span> <sup>15</sup><span class='v-txt'>एलियुद से एलियाज़ार, एलियाज़ार से मत्थान, मत्थान से याकूब,</span> <sup>16</sup><span class='v-txt'>याकूब से मरियम का पति यूसुफ़, और मरियम से ईसा उत्पन्न हुए, जो मसीह कहलाते हैं।</span> <sup>17</sup><span class='v-txt'>इस प्रकार इब्राहीम से दाऊद तक कुल चैदह पीढ़ियाँ हैं, दाऊद से बाबुल- निर्वाचन तक चैदह पीढ़ियाँ और बाबुल -निर्वासन से मसीह तक चैदह पीढ़ियाँ।</span> <sup>18</sup><span class='v-txt'>ईसा मसीह का जन्म इस प्रकार हुआ। उनकी माता मरियम की मँगनी यूसुफ़ से हुई थी, परन्तु ऐसा हुआ कि उनके एक साथ रहने से पहले ही मरियम पवित्र आत्मा से गर्भवती हो गयी।</span> <sup>19</sup><span class='v-txt'>उसका पति यूसुफ़ चुपके से उसका परित्याग करने की सोच रहा था, क्योंकि वह धर्मी था और मरियम को बदनाम नहीं करना चाहता था।</span> <sup>20</sup><span class='v-txt'>वह इस पर विचार कर ही रहा था कि उसे स्वप्न में प्रभु का दूत यह कहते दिखाई दिया, &quot;यूसुफ! दाऊद की संतान! अपनी पत्नी मरियम को अपने यहाँ लाने में नहीं डरे,क्योंकि उनके जो गर्भ है, वह पवित्र आत्मा से है।</span> <sup>21</sup><span class='v-txt'>वे पुत्र प्रसव करेंगी और आप उसका नाम ईसा रखेंगे, क्योंकि वे अपने लोगों को उनके पापों से मुक्त करेगा।&quot;</span> <sup>22</sup><span class='v-txt'>यह सब इसलिए हुआ कि नबी के मुख से प्रभु ने जो कहा था, वह पूरा हो जाये -</span> <sup>23</sup><span class='v-txt'>देखो, एक कुँवारी गर्भवती होगी और पुत्र प्रसव करेगी, और उसका नाम एम्मानुएल रखा जायेगा, जिसका अर्थ हैः ईश्वर हमारे साथ है।</span> <sup>24</sup><span class='v-txt'>यूसुफ़ नींद से उठ कर प्रभु के दूत की आज्ञानुसार अपनी पत्नी को अपने यहाँ ले आया।</span> <sup>25</sup><span class='v-txt'>यूसुफ़ का उस से तब तक संसर्ग नहीं हुआ, जब तक उसने पुत्र प्रसव नहीं किया और यूसुफ़ ने उसका नाम ईसा रखा।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='047002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

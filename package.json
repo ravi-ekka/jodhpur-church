@@ -9,9 +9,24 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@base-ui/react": "^1.8.0",
+    "@swc/core": "^1.16.2",
+    "@swc/core-win32-x64-msvc": "^1.16.2",
+    "class-variance-authority": "^0.7.1",
+    "cloudinary": "^2.11.0",
+    "cn": "^0.2.6",
+    "firebase": "^12.18.0",
+    "firebase-admin": "^14.3.0",
+    "free-use-bible-api": "^0.4.0",
+    "lucide-react": "^1.42.0",
     "next": "16.3.4",
+    "next-intl": "^4.14.2",
+    "next-themes": "^0.4.6",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "shadcn": "^4.21.0",
+    "tw-animate-css": "^1.4.0",
+    "zod": "^4.5.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -23,5 +38,8 @@
     "eslint-config-next": "16.3.4",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "allowScripts": {
+    "@swc/core@1.16.2": true
   }
 }

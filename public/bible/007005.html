@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>न्यायकर्ता - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>न्यायकर्ता</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उस दिन दबोरा ने अबीनोअम के पुत्र बाराक के साथ यह गीत गाया:</span> <sup>2</sup><span class='v-txt'>जब इस्राएल युद्ध की तैयारी करता है और लोग स्वेच्छा से भरती हो जाते हैं, तो प्रभु का स्तुतिगान करो।</span> <sup>3</sup><span class='v-txt'>राजाओ! सुनो।  शासको!  कान दो।  मैं प्रभु का स्तुतिगान करूँगी, मैं प्रभु, इस्राएल के ईश्वर के लिए भजन सुनाऊँगी।</span> <sup>4</sup><span class='v-txt'>प्रभु! जब तू सेईर से चला, जब तू एदोम के मैदान से आगे बढ़ा, तो पृथ्वी काँप उठी, आकाश लड़खड़ाने लगा, बादल बरसने लगे।</span> <sup>5</sup><span class='v-txt'>और पर्वत सीनई के प्रभु के सामने, प्रभु, इस्राएल के ईश्वर के सामने काँपने लगे।</span> <sup>6</sup><span class='v-txt'>अनात के पुत्र, षमगर के दिनों में, याएल के दिनों में राजमार्ग जनषून्य हो गये थे, यात्री घुमावदार पगडण्डियों से आते-जाते थे।</span> <sup>7</sup><span class='v-txt'>इस्राएल में एक भी नेता नहीं रहा, जब तक तुम, ओ दबोरा!  उठ खड़ी नहीं हुई, जब तक तुम इस्राएल में माता के रूप में उठ खड़ी नहीं हुई।</span> <sup>8</sup><span class='v-txt'>लोगों ने अपने लिए नये देवता चुने।  नगरों के फाटकों पर युद्ध आ गया, इस्राएल के चालीस हज़ार योद्धाओं के लिए न तो कोई ढाल मिली और न कोई भाला।</span> <sup>9</sup><span class='v-txt'>मेरा हृदय इस्राएली नेताओं पर मुग्ध है, उन लोगों पर, जो स्वेच्छा से भरती होते हैं।  प्रभु का स्तुतिगान करो।</span> <sup>10</sup><span class='v-txt'>तुम, जो सफ़ेद गदहियों पर सवारी करते हो, तुम, जो कीमती कालीनों पर बैठे हो, तुम, जो रास्तों पर चलते हो,</span> <sup>11</sup><span class='v-txt'>जल-स्थानों पर गाने वालों की वाणी पर ध्यान दो- वे प्रभु की विजयों पर बखान करते हैं, वे इस्राएली योद्धाओं की विजयों का बखान करते हैं।  उस समय प्रभु की प्रजा नगर के फाटकों पर इकट्ठी हो गयी।</span> <sup>12</sup><span class='v-txt'>ओ दबोरा! जागो, जागो। जागो, जागो और गीत सुनाओ। ओ बाराक! उठ कर खड़े हो जाओ।  अबीनोअम के पुत्र! अपने बन्दियों को ले आओ।</span> <sup>13</sup><span class='v-txt'>तब इस्राएल नगर के फाटकों पर आया- प्रभु की प्रजा अपने शूरवीरों के साथ।</span> <sup>14</sup><span class='v-txt'>एफ्ऱईम के नेता मैदान में आये, बेनयामीन भी तुम्हारे अनुयायियों के साथ आया।  माकी से सेना-नायक और ज़बुलोन से शासक आये।</span> <sup>15</sup><span class='v-txt'>इस्साकार के नेता दबोरा के साथ थे; उनके पीछे बाराक मैदान में कूद पड़ा।  रूबेनवंशियों में बड़ा मतभेद था।</span> <sup>16</sup><span class='v-txt'>तुम क्यों बाड़ों के बीच बैठ कर, भेड़ों के पास बाँसुरी सुनते रहे?  रूबेनवंशी सोच-विचार करते रहे।</span> <sup>17</sup><span class='v-txt'>गिलआद यर्दन के उस पार रह गया।  दान अपनी नावों पर क्यों बैठा रहता?  आशेर समुद्रतट पर निवास करता और अपने बन्दरगाह नहीं छोड़ता।</span> <sup>18</sup><span class='v-txt'>ज़बुलोन ने अपने प्राण संकट में डाले और पहाड़ों पर रहने वाले नफ़्ताली ने भी।</span> <sup>19</sup><span class='v-txt'>तानाक में, मगिद्दों के जलाशय के पास, राजा आ धमके और लड़ने लगे, कनान के राजा लड़ने आये, किन्तु चाँॅदी की लूट उनके हाथ नहीं लगी।</span> <sup>20</sup><span class='v-txt'>आकाश के तारों ने युद्ध में भाग लिया, उन्होंने अपने कक्षों में सीसरा का विरोध किया;</span> <sup>21</sup><span class='v-txt'>नदी कीषोन, प्राचीन कीषोन, कीषोन की प्रचण्ड धारा ने उन्हें बहा दिया।  मेरी आत्मा! साहस के साथ आगे बढ़ो।</span> <sup>22</sup><span class='v-txt'>सरपट दौड़ने वाले जंगी घोड़ों की टाप ज़मीन पर बज उठी।</span> <sup>23</sup><span class='v-txt'>प्रभु के दूत ने कहा, &quot;मेरोज़ को शाप दो!  उसके नागरिकों को शाप दो, शाप दो!  वे प्रभु की सहायता करने नहीं आये, प्रभु और उसके शूरवीरों की सहायता करने नहीं आये।&quot;</span> <sup>24</sup><span class='v-txt'>केनीय हेबेर की पत्नी, याएल स्त्रियों में धन्य है!  तम्बुओं में रहने वाली स्त्रियों में याएल सर्वाधिक धन्य है!</span> <sup>25</sup><span class='v-txt'>उसने पानी माँगा और उसने उसे दूध दिया, वह बहुमूल्य पात्र में उसके लिए मलाई लायी।</span> <sup>26</sup><span class='v-txt'>उसके बायें हाथ ने तम्बू की खॅंूँटी ले ली और उसके दाहिने हाथ ने बढ़ई का हथौड़ा।  उसने सीरा को मार कर उसका सिर कुचल दिया।  उसने उसकी कनपटी को फोड़ कर आरपार छेद दिया।</span> <sup>27</sup><span class='v-txt'>वह उसके चरणों पर ढेर हो गया, वह गिर कर पड़ा रहा; वह उसके चरणों पर ढेर हो गया; जहाँ गिरा, वहाँ निष्प्राण पड़ा रहा।</span> <sup>28</sup><span class='v-txt'>सीसरा की माँ खिड़की से झाँकती रही, वह जाली के पीछे विलाप करती रही - &quot;उसके रथ के आने में इतनी देर क्यों?  उसके रथों की आवाज़ क्यों नहीं सुनाई पड़ती?</span> <sup>29</sup><span class='v-txt'>उसकी सखियों में सर्वाधिक बुद्धिमती यह कहते हुए उत्तर देती है,</span> <sup>30</sup><span class='v-txt'>&quot;वे लूट बाँंट रहे होंगे- प्रत्येक योद्धा के लिए एक कन्या, दो कन्याएँ; सीसरा के लिए रंग-बिरंगे वस्त्रों की लूट, गले में पहनने के बेलबूटेदार एक वस्त्र, दो वस्त्र।&quot;</span> <sup>31</sup><span class='v-txt'>प्रभु! तेरे सभी षत्रु इसी तरह नष्ट हो जायें।  तेरे भक्त उदीयमान सूर्य की तरह शक्तिशाली हों।  इसके बाद चालीस वर्ष तक देश में शांति रही।</span> </p>
+        <div class='nav'><a href='007004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='007006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

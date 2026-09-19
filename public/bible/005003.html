@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>“इसके बाद हम बाशान की ओर बढ़ने लगे।  तब बाशान का राजा ओग अपनी सारी सेना के साथ एद्रेई के पास हमारा सामना करने आया।</span> <sup>2</sup><span class='v-txt'>पर प्रभु ने मुझसे कहा, ’उससे मत डरो ,क्योंकि मैने उसकी सारी सेना और उसका देश तुम्हारे हाथ दे दिया है।  और जैसा तुमने हेषबोन के अमोरियों के राजा सीहोन के साथ किया, तुम वैसा ही उसके साथ करो।’</span> <sup>3</sup><span class='v-txt'>इस प्रकार प्रभु, हमारे ईश्वर ने बाशान के राजा ओग को भी उसकी सारी सेना के साथ हमारे हाथ दिया।  हमने उन्हें इतनी बुरी तरह परास्त किया कि उनमें एक भी जीवित नहीं रहा।</span> <sup>4</sup><span class='v-txt'>उस समय हमने उसके सब नगरों को भी अपने अधिकार में कर लिया।  ऐसा एक भी नगर नहीं था, जिसे हमने उस से छीना न हो, अर्थात् साठ नगर, अरगोब का सारा प्रांत, बाशान में ओग का राज्य।</span> <sup>5</sup><span class='v-txt'>ये सभी ऐसे नगर थे, जिन में बडे़-बड़े परकोटे, फाटक और अरगलाएँ थीं और इनके अतिरिक्त ऐसे बहुत-से गाँव भी, जिन मे परकोटे नहीं थे।</span> <sup>6</sup><span class='v-txt'>हमने उनका उसी प्रकार संहार किया, जिस प्रकार हमने हेषबोन के राजा सीहोन का संहार किया था।  हमने किसी भी नगर मे पुरुषों, स्त्रियों और बच्चों में एक को भी नहीं छोड़ा।</span> <sup>7</sup><span class='v-txt'>लेकिन हम उनके सब पशुओं को और उनके नगरों की लूट अपने साथ ले गए।</span> <sup>8</sup><span class='v-txt'>इस प्रकार हमने उस समय यर्दन के उस पार के दोनों अमोरी राजाओं के देशों को, अरनोन नदी से हेरमोन तक अपने अधिकार में ले लिया।</span> <sup>9</sup><span class='v-txt'>(सीदोनी लोग हेरमोन को सिर्योन और अमोरी लोग सनीर कहते हैं।)</span> <sup>10</sup><span class='v-txt'>हमने पठार के सब नगर, सारा गिलआद, सलका से एद्रेई तक सारा बाशान, जो बाशान में ओग राज्य के नगर थे, अपने अधिकार में कर लिया।</span> <sup>11</sup><span class='v-txt'>(बाशान का राजा ओग रफ़ाइयों का अन्तिम वंशज था। उसका पलंग लोहे का बना था।  वह नौ हाथ लंबा और चार हाथ चौड़ा था।  वह आज तक अम्मानियों के देश के रब्बा में सुरक्षित है।)</span> <sup>12</sup><span class='v-txt'>“उस समय हमने जिन देशों को अपने अधिकार में कर लिया, उन में मैंने अरनोन नदी के तट पर स्थित एओएर से लेकर गिलआद के पहाड़ी प्रदेश का आधा भाग और उसके नगरों को रूबेन और गाद के वंशजों को दिया।</span> <sup>13</sup><span class='v-txt'>मैंने मनस्से के आधे वंश को गिलआद का शेष भाग और समस्त बाशान, ओग का राज्य दिया। (बाशान का समस्त प्रान्त पहले रफाइयों का देश कहलाता था।)</span> <sup>14</sup><span class='v-txt'>मनस्से के पुत्र याईर ने अरगोब के सारे प्रान्त को, गशूरियों और माकातियों की सीमा तक, जीत लिया था और अपने नाम पर उनका नाम हव्वोत याईर रखा था। आज तक बाशान का यही नाम है।</span> <sup>15</sup><span class='v-txt'>मैंने माकीर को गिलआद दिया था।</span> <sup>16</sup><span class='v-txt'>मैंने रूबेन और गाद के वंशजो को गिलआद से लेकर अरनोन की घाटी तक का प्रान्त दिया।  उनकी सीमा घाटी का मध्य थी और इसके अतिरिक्त गिलआद से यब्बोक नदी तक का प्रदेश।  यब्बोक नदी अम्मोनियों की सीमा है।</span> <sup>17</sup><span class='v-txt'>उसकी पश्चिमी सीमा अराबा में यर्दन नदी थी, अर्थात् किन्नेरेत से अराबा के समुद्र तक।  अराबा का समुद्र लवण सागर भी कहलाता है।  उसके पूर्व में पिसगा की ढलानें हैं।</span> <sup>18</sup><span class='v-txt'>उस समय मैंने तुम्हें यह आदेश दिया था, ’प्रभु, तुम्हारे ईश्वर ने यह देश तुम्हारे अधिकार में दिया है।  तुम्हारे सब योद्धाओं को इस्राएली भाइयों के आगे चलकर नदी पार करनी चाहिए।</span> <sup>19</sup><span class='v-txt'>केवल तुम्हारी पत्नियाँ, बच्चे और पशु - क्योंकि मैं जानता हूँ कि तुम्हारे पास बहुत पशु धन है - इन नगरों में रह जायें, जिन्हें मैंने तुम्हें दिया है।</span> <sup>20</sup><span class='v-txt'>जब तक प्रभु, तुम्हारे भाइयों को भी तुम्हारी तरह विश्राम करने का स्थान नहीं दे और वे उस देश को अपने अधिकार में नहीं करें, जिसे प्रभु, तुम्हारा ईश्वर उन्हें यर्दन के उस पार देने वाला है, तब तक तुम में कोई भी उस भूमि को नहीं लौटे, जिसे मैंने तुम्हें</span> <sup>21</sup><span class='v-txt'>मैने योशुआ को उस समय यह आदेश दिया था, ’तुमने अपनी आँखों से वह सब देखा है, जो प्रभु, तुम्हारे ईश्वर ने उन दो राजाओं के साथ किया है।  प्रभु उन सब राज्यों के साथ वैसा ही करेगा, जिनके यहाँ तुम नदी पार कर जाओगे।</span> <sup>22</sup><span class='v-txt'>उन से नहीं डरो, क्योंकि प्रभु, तुम्हारा ईश्वर तुम लोगों के लिए युद्ध करेगा।’</span> <sup>23</sup><span class='v-txt'>मैंने प्रभु से उस समय यह प्रार्थना की,</span> <sup>24</sup><span class='v-txt'>’प्रभु-ईश्वर! अब तूने अपने दास पर अपने सामर्थ और अपने भुजबल को प्रकट करना प्रारभ किया हैं।  क्या स्वर्ग में अथवा पृथ्वी पर कहीं कोई ऐसा हो सकता है, जो ऐसे महान कार्य कर सके, जैसे तू करता है?</span> <sup>25</sup><span class='v-txt'>मैं भी उस पार जाना चाहता हूँ और यर्दन के उस पार का रमणीय देश, वह सुन्दर पहाडी प्रदेश और लेबानोन देखना चाहता हूँ।’</span> <sup>26</sup><span class='v-txt'>परन्तु प्रभु तुम्हारे कारण मुझ पर क्रुद्ध था और उसने मेरी प्रार्थना अनसुनी की।  प्रभु ने मुझसे कहा था, ‘बस, बहुत हो चुका; इसके विषय में फिर मुझसे कुछ न कहो।</span> <sup>27</sup><span class='v-txt'>तुम पिसगा पर्वत के शिखर पर चढ़ कर और पश्चिम उत्तर दक्षिण और पूर्व की ओर दृष्टि दौड़ा कर उसे अपनी आँखों से देख लो।  लेकिन तुम यर्दन पार नहीं कर सकोगे।</span> <sup>28</sup><span class='v-txt'>योशुआ क¨ आदेश द¨, उसे प्रोत्साहित करो और ढांरस बँधाओ; क्योंकि वही इन लोगों का नेतृत्व करता हुआ उसे पार करेगा और वह देश, जिसे तुम देखोगे, उनके अधिकार में दे देगा।’</span> <sup>29</sup><span class='v-txt'>इसलिए हम बेत-पओर के सामने के मैदान में ही पड़े रह गये।</span> </p>
+        <div class='nav'><a href='005002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

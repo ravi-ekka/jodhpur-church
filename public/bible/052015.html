@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>रोमियों - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>रोमियों</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>हम लोगों को, जो समर्थ हैं, अपनी सुख-सुविधा का नहीं, बल्कि दुर्बलों की कमज़ोरियों का ध्यान रखना चाहिए।</span> <sup>2</sup><span class='v-txt'>हम में प्रत्येक को अपने पड़ोसी की भलाई तथा चरित्र-निर्माण के लिए उसे प्रसन्न करने का ध्यान रखना चाहिए।</span> <sup>3</sup><span class='v-txt'>मसीह ने भी अपने सुख का ध्यान नहीं रखा।  जैसा कि लिखा है -तेरी निन्दा करने वालों ने मेरी निन्दा की है।</span> <sup>4</sup><span class='v-txt'>धर्म-ग्रन्थ में जो कुछ पहले लिखा गया था, वह हमारी शिक्षा के लिए लिखा गया था, जिससे हमें उस से धैर्य तथा सान्त्वना मिलती रहे और इस प्रकार हम अपनी आशा बनाये रख सकें।</span> <sup>5</sup><span class='v-txt'>ईश्वर ही धैर्य तथा सान्त्वना का स्रोत है।  वह आप लोगों को यह वरदान दे कि आप मसीह की शिक्षा के अनुसार आपस में मेल-मिलाप बनाये रखें,</span> <sup>6</sup><span class='v-txt'>जिससे आप लोग एकचित्त हो कर एक स्वर से हमारे प्रभु ईसा मसीह के ईश्वर तथा पिता की स्तुति करते रहें।</span> <sup>7</sup><span class='v-txt'>जिस प्रकार मसीह ने हमें ईश्वर की महिमा के लिए अपनाया, उसी प्रकार आप एक दूसरे को भ्रातृभाव से अपनायें।</span> <sup>8</sup><span class='v-txt'>मैं यह कहना चाहता हूँ कि मसीह यहूदियों के सेवक इसलिए बने कि वह पूर्वजों की दी गयी प्रतिज्ञाएं पूरी कर ईश्वर की सत्यप्रतिज्ञता प्रमाणित करें</span> <sup>9</sup><span class='v-txt'>और इसलिए भी कि गैर-यहूदी, ईश्वर की दया प्राप्त करें, उसकी स्तुति करें।  जैसा कि धर्मग्रन्थ में लिखा है- इस कारण मैं ग़ैर-यहूदियों के बीच तेरी स्तुति करूँगा और तेरे नाम की महिमा का गीत गाऊँगा।</span> <sup>10</sup><span class='v-txt'>धर्म-ग्रन्थ यह भी कहता है-गै़र-यहूदियों!  ईश्वर की प्रजा के साथ आनन्द मनाओ।</span> <sup>11</sup><span class='v-txt'>और फिर यह- सभी राष्ट्रो! प्रभु की स्तुति करो।  सभी जातियाँ प्रभु की स्तुति करें।</span> <sup>12</sup><span class='v-txt'>और इसायस भी यह कहते हैं- येस्से का वंशज प्रकट हो जायेगा, वह ग़ैर-यहूदियों का शासन करने के लिए उठ खड़ा होगा और ग़ैर-यहूदी उसी पर भरोसा रखेंगे।</span> <sup>13</sup><span class='v-txt'>आशा का स्त्रोत, ईश्वर आप लोगों को विश्वास द्वारा प्रचुर आनन्द और शान्ति प्रदान करे, जिससे पवित्र आत्मा के सामर्थ्य से आप लोगों की आशा परिपूर्ण हो।</span> <sup>14</sup><span class='v-txt'>भाइयो! मुझे दृढ़ विश्वास है कि आप लोग सद्भाव और हर प्रकार के ज्ञान से परिपूर्ण हो कर एक दूसरे को सत्परामर्श देने योग्य हैं।</span> <sup>15</sup><span class='v-txt'>(15-16) फिर भी कुछ बातों का स्मरण दिलाने के लिए मैंने आप को निस्संकोच हो कर लिखा है; क्योंकि ईश्वर ने मुझे गै़र-यहूदियों के बीच ईसा मसीह का सेवक तथा ईश्वर के सुसमाचार का पुरोहित होने का वरदान दिया है, जिससे ग़ैर-यहूदी, पवित्र आत्मा द्वारा पवित्र किये जाने के बाद, ईश्वर को अर्पित और सुग्राह्य हो जायें।</span> <sup>17</sup><span class='v-txt'>इसलिए मैं ईसा मसीह द्वारा ईश्वर की सेवा पर गौरव कर सकता हूँ।</span> <sup>18</sup><span class='v-txt'>मैं केवल उन बातों की चर्चा करने का साहस करूँगा, जिन्हें मसीह ने गैर-यहूदियों को विश्वास के अधीन करने के लिए मेरे द्वारा वचन और कर्म से,</span> <sup>19</sup><span class='v-txt'>शक्तिशाली चिन्हों और चमत्कारों से और आत्मा के सामर्थ्य से सम्पन्न किया है।  मैंने येरूसालेम और उसके आसपास के प्रदेश से लेकर इल्लुरिकुम तक मसीह के सुसमाचार का कार्य पूरा किया है।</span> <sup>20</sup><span class='v-txt'>इस में मैंने एक बात का पूरा-पूरा ध्यान रखा।  मैंने कभी वहाँ सुसमाचार का प्रचार नहीं किया, जहाँ मसीह का नाम सुनाया जा चुका था; क्योंकि मैं दूसरों द्वारा डाली हुई नींव पर निर्माण करना नहीं चाहता था,</span> <sup>21</sup><span class='v-txt'>बल्कि धर्मग्रन्थ का यह कथन पूरा करना चाहता था-जिन्हें कभी उसका सन्देश नहीं मिला था, वे उसके दर्शन करेंगे और जिन्होंने कभी उसके विषय में नहीं सुना, वे समझेंगे।</span> <sup>22</sup><span class='v-txt'>यही कारण है कि अब तक आप लोगों के यहाँ मेरे आगमन में बराबर बाधा पड़ी है।</span> <sup>23</sup><span class='v-txt'>अब तो इधर के प्रान्तों में मेरा कोई कार्यक्षेत्र नहीं रहा और मैं कई वर्षों से चाह रहा हूँ कि स्पेन जाते समय आप लोगों के यहाँ आऊँ।</span> <sup>24</sup><span class='v-txt'>मुझे आशा है कि मैं उस यात्रा में आप लोगों के दर्शन करूँगा और कुछ समय तक आपकी संगति का लाभ उठाने के बाद आप लोगों की सहायता से स्पेन की यात्रा कर सकूँगा।</span> <sup>25</sup><span class='v-txt'>(25-26) मैं अब सन्तों की सेवा में येरूसालेम जा रहा हूँ। येरूसालेम में रहने वाली कलीसिया के दरिद्रों की सहायता के लिए मकेदूनिया और अखै़या के लोगों ने चन्दा एकत्र करने का निश्चय किया है।</span> <sup>27</sup><span class='v-txt'>उनका निश्चय उचित ही है- वास्तव में वे उनके आभारी हैं; क्योंकि यदि गैर-यहूदी उनकी आध्यात्मिक सम्पत्ति के भागी बने, तो गैर-यहूदियों को अपनी भौतिक सम्पत्ति से उनकी सेवा करनी चाहिए:</span> <sup>28</sup><span class='v-txt'>यह कार्य समाप्त कर और यह चन्दा विधिवत् उनके हाथों में सौंपने के बाद मैं आप लोगों के यहाँ हो कर स्पेन जाऊँगा।</span> <sup>29</sup><span class='v-txt'>मुझे विश्वास है कि जब मैं आपके यहाँ आऊँगा तो मसीह का परिपूर्ण आशीर्वाद लिये आऊँगा।</span> <sup>30</sup><span class='v-txt'>भाइयों!  हमारे प्रभु ईसा मसीह और आत्मा के प्रेम के नाम पर मैं आप लोगों से अनुरोध करता हूँ कि आप संघर्ष में मेरा साथ देते रहें और मेरे लिए ईश्वर से प्रार्थना करें।</span> <sup>31</sup><span class='v-txt'>आप प्रार्थना करें, जिससे मैं यहूदिया के अविश्वासियों से बचा रहूँ और जिस सेवा-कार्य के लिए मैं येरूसालेम जा रहा हूँ, वह वहाँ की कलीसिया को सुग्राह्य हो</span> <sup>32</sup><span class='v-txt'>और मैं आनन्द के साथ आप लोगों के यहाँ पहुँच कर ईश्वर के इच्छानुसार आप लोगों के बीच विश्राम कर सकूँ।</span> <sup>33</sup><span class='v-txt'>शान्ति का ईश्वर आप सबों के साथ रहे।  आमेन !</span> </p>
+        <div class='nav'><a href='052014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='052016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

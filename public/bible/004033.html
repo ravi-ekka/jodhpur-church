@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 33</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 33</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब इस्राएली लोग मूसा और हारून के नेतृत्व में अपने-अपने दलों के क्रम से मिस्र देश से बाहर आये, तो उन्होंने निम्नलिखित स्थलों पर पड़ाव डाला।</span> <sup>2</sup><span class='v-txt'>मूसा ने प्रभु के आदेश के अनुसार उनकी यात्रा के पड़ावों के नाम इस प्रकार लिपिबद्ध किये।</span> <sup>3</sup><span class='v-txt'>पहले महीने में, उस पहले महीने के ठीक पन्द्रहवें दिन, उन्होंने रामसेस से प्रस्थान किया। पास्का-पर्व के दूसरे दिन इस्राएली सब मिस्रियों के देखते-देखते विजय घोषणा करते हुए निकल आये।</span> <sup>4</sup><span class='v-txt'>उस समय मिस्री लोग अपने-अपने पहलौठों को दफ़नाने में व्यस्त थे, जिन्हें प्रभु ने मार डाला था और प्रभु उनके देवताओं को भी दण्ड दे रहा था।</span> <sup>5</sup><span class='v-txt'>इस्राएली लोगों ने रामसेस से आगे प्रस्थान कर सुक्कोत में पड़ाव डाला।</span> <sup>6</sup><span class='v-txt'>उन्होंने सुक्कोत से चल कर उजाड़खण्ड की सीमा पर एताम में पड़ाव डाला।</span> <sup>7</sup><span class='v-txt'>वे एताम से प्रस्थान कर पी-हहीरोत की ओर मुड़े, जो बाल-सफ़ोन के पास है। वहाँ उन्होंने मिगदोल के सामने पड़ाव डाला।</span> <sup>8</sup><span class='v-txt'>पी-हहीरोत से प्रस्थान कर और सागर पार कर वे उजाड़खण्ड पहुँचे। एताम के उजाड़खण्ड में तीन दिन तक यात्रा कर उन्होंने मारा में पड़ाव डाला।</span> <sup>9</sup><span class='v-txt'>वे मारा से चल कर एलीम आये। एलीम में पानी के बारह सोते और खजूर के सत्तर वृक्ष थे। उन्होंने वहाँ पड़ाव डाला।</span> <sup>10</sup><span class='v-txt'>उन्होंने एलीम से आगे बढ़ कर लाल समुद्र के पास पड़ाव डाला,</span> <sup>11</sup><span class='v-txt'>लाल समुद्र से आगे चल कर सीन नामक उजाड़खण्ड में पड़ाव डाला,</span> <sup>12</sup><span class='v-txt'>सीन के उजाड़खण्ड से आगे चल कर दोफ़का में पड़ाव डाला,</span> <sup>13</sup><span class='v-txt'>दोफ़का से चल कर आलूष में पड़ाव डाला,</span> <sup>14</sup><span class='v-txt'>आलूष से चल कर रफ़ीदीम में पड़ाव डाला। वहाँ लोगों को पीने का पानी नहीं मिला।</span> <sup>15</sup><span class='v-txt'>रफ़ीदीम से प्रस्थान कर उन्होंने सीनई के उजाड़खण्ड में पड़ाव डाला,</span> <sup>16</sup><span class='v-txt'>सीनई के उजाड़खण्ड से आगे चल कर किब्रोत-हत्ताबा में पड़ाव डाला,</span> <sup>17</sup><span class='v-txt'>किब्रोत-हत्तावा से चल कर हसेरोत में पड़ाव डाला,</span> <sup>18</sup><span class='v-txt'>हसेरोत से चल कर रितमा में पड़ाव डाला,</span> <sup>19</sup><span class='v-txt'>रितमा से चल कर रिम्मोन-पेरेस में पड़ाव डाला,</span> <sup>20</sup><span class='v-txt'>रिम्मोन-पेरेस से चल कर लिबना में पड़ाव डाला,</span> <sup>21</sup><span class='v-txt'>लिबना से चल कर रिस्सा में पड़ाव डाला,</span> <sup>22</sup><span class='v-txt'>रिस्सा से चल कर कहेलाता में पड़ाव डाला,</span> <sup>23</sup><span class='v-txt'>कहेलाता से चल कर शेफेर पर्वत पर पड़ाव डाला,</span> <sup>24</sup><span class='v-txt'>शेफेर पर्वत से चल कर हरादा में पड़ाव डाला,</span> <sup>25</sup><span class='v-txt'>हरादा से चल कर मकहेलोत में पड़ाव डाला,</span> <sup>26</sup><span class='v-txt'>मकहेलोत से चल कर तहत में पड़ाव डाला,</span> <sup>27</sup><span class='v-txt'>तहत से चल कर तेरह में पड़ाव डाला,</span> <sup>28</sup><span class='v-txt'>तेरह से चल कर मितका में पड़ाव डाला,</span> <sup>29</sup><span class='v-txt'>मितका से चल कर हषमोना में पड़ाव डाला,</span> <sup>30</sup><span class='v-txt'>हषमोना से चल कर मोसेरोत में पड़ाव डाला,</span> <sup>31</sup><span class='v-txt'>मोसेरोत से चल कर बने-याकान में पड़ाव डाला,</span> <sup>32</sup><span class='v-txt'>बने-याकान से चल कर होर-गिदगाद में पड़ाव डाला,</span> <sup>33</sup><span class='v-txt'>होर-गिदगाद से चल कर योटबाता में पड़ाव डाला,</span> <sup>34</sup><span class='v-txt'>योटबाता से चल कर अब्रोना में पड़ाव डाला,</span> <sup>35</sup><span class='v-txt'>अब्रोना से चल कर एस्योन-गेबेर में पड़ाव डाला,</span> <sup>36</sup><span class='v-txt'>एस्योन-गेबेर से चल कर सिन के उजाडखण्ड़ में, अर्थात् कादेश में पड़ाव डाला।</span> <sup>37</sup><span class='v-txt'>उन्होंने कादेश से प्रस्थान कर होर पर्वत पर, एदोम देश की सीमा पर, पड़ाव डाला।</span> <sup>38</sup><span class='v-txt'>प्रभु की आज्ञा पा कर याजक हारून होर पर्वत पर गया। इस्राएलियों के मिस्र देश से बाहर आने के चालीसवें वर्ष में, पाँचवें महीने के पहले दिन, वहाँ उसका देहान्त हो गया।</span> <sup>39</sup><span class='v-txt'>जब होर पर्वत पर हारून की मृत्यु हुई, तब उसकी अवस्था एक सौ तेईस वर्ष थी।</span> <sup>40</sup><span class='v-txt'>इसके बाद कनान देश के नेगेब प्रान्त के निवासी, अराद के कनानी राजा को संदेश मिला कि इस्राएली आ रहे हैं।</span> <sup>41</sup><span class='v-txt'>उन्होंने होर पर्वत से आगे प्रस्थान कर सलमोना में पड़ाव डाला,</span> <sup>42</sup><span class='v-txt'>सलमोना से चल कर पूनोन में पड़ाव डाला,</span> <sup>43</sup><span class='v-txt'>पूनोन से चल कर ओबोत में पड़ाव डाला,</span> <sup>44</sup><span class='v-txt'>ओबोत से चल कर मोआब देश में स्थित इय्ये-आबा-रीम में पड़ाव डाला,</span> <sup>45</sup><span class='v-txt'>इय्यीम से चल कर दीबोन-गाद में पड़ाव डाला,</span> <sup>46</sup><span class='v-txt'>दीबोन-गाद से चल कर अलमोन-दिबलायातीम में पड़ाव डाला,</span> <sup>47</sup><span class='v-txt'>अलमोन-दिबलायातीम से चल कर नेबो के सामने अबारीम पर्वत-श्रेणी के पास पड़ाव डाला,</span> <sup>48</sup><span class='v-txt'>अबारीम पर्वत श्रेणी से प्रस्थान कर यर्दन तट पर येरीखो के पास, मोआब के मैदान में पड़ाव डाला।</span> <sup>49</sup><span class='v-txt'>वे यर्दन तट पर मोआब के मैदान में बेत-यशिमोत से आबे शिट्टीम तक पड़ाव डाले पड़े थे।</span> <sup>50</sup><span class='v-txt'>यर्दन के पास, येरीखो के सामने मोआब के मैदान में प्रभु ने मूसा से कहा,</span> <sup>51</sup><span class='v-txt'>&#039;&#039;इस्राएलियों से कहो : जब तुम यर्दन को पार कर कनान में प्रवेश करोगे,</span> <sup>52</sup><span class='v-txt'>उस देश के सब निवासियों को अपने सामने से निकाल दो। उनकी पत्थर की मूर्तियों को तोड़ो, उनकी सब ढली प्रतिमाओं को तोड़ों और उनके सब टीले वाले पूजास्थानों को नष्ट कर दो।</span> <sup>53</sup><span class='v-txt'>फिर उस देश को अपने अधिकार में लो और वहाँ बस जाओ, क्योंकि मैंने वह देश तुम्हारे अधिकार में दे दिया है।</span> <sup>54</sup><span class='v-txt'>तुम चिट्ठी डाल कर अपने-अपने कुलों में दायभाग के रूप में भूमि बाँट दो। बड़े कुल को बड़ा भाग और छोटे कुल को छोटा भाग दो। जिसकी चिट्ठी जिस स्थान के लिए निकले, वह उसी को मिले। तुम अपने पूर्वजों के कुलों के अनुसार भूमि बाँट दो।</span> <sup>55</sup><span class='v-txt'>किन्तु यदि तुम उस देश के निवासियों को नहीं निकाल दोगे, तो फिर तुम जिन्हें वहाँ रहने दोगे, वे तुम्हारी आँखों में किर-किरी और तुम्हारी पसलियों में काँटों-जैसे बनेंगे और तुम जिस देश में रहोगे, उस में तुम्हें कष्ट पहुँचाते रहेंगे।</span> <sup>56</sup><span class='v-txt'>तब मैं उनके साथ जैसा करना चाहता था, वैसा ही तुम्हारे साथ करूँगा।&#039;&#039;</span> </p>
+        <div class='nav'><a href='004032.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004034.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

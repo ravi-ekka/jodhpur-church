@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मारकुस - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मारकुस</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ईसा ने यह भी कहा, &quot;मैं तुम से यह कहता हूँ - यहाँ कुछ ऐसे लोग विद्यमान हैं, जो तब तक नहीं मरेंगे, जब तक वे ईश्वर का राज्य सामर्थ्य के साथ आया हुआ न देख लें&quot;।</span> <sup>2</sup><span class='v-txt'>छः दिन बाद ईसा ने पेत्रुस, याकूब और योहन को अपने साथ ले लिया और वह उन्हें एक ऊँचे पहाड़ पर एकान्त में ले चले।  उनके सामने ही ईसा का रूपान्तरण हो गया।</span> <sup>3</sup><span class='v-txt'>उनके वस्त्र ऐसे चमकीले और उजले हो गये कि दुनिया का कोई भी धोबी उन्हें उतना उजला नहीं कर सकता।</span> <sup>4</sup><span class='v-txt'>शिष्यों को एलियस और मूसा दिखाई दिये-वे ईसा के साथ बातचीत कर रहे थे।</span> <sup>5</sup><span class='v-txt'>उस समय पेत्रुस ने ईसा से कहा, &quot;गुरुवर!  यहाँ होना हमारे लिए कितना अच्छा है!  हम तीन तम्बू खड़े कर दें- एक आपके लिए, एक मूसा और एक एलियस के लिए।&quot;</span> <sup>6</sup><span class='v-txt'>उसकी समझ में नहीं आ रहा था कि वह क्या कहे, क्योंकि वे सब बहुत डर गये थे।</span> <sup>7</sup><span class='v-txt'>तब एक बादल आ कर उन पर छा गया और उस बादल में से यह वाणी सुनाई दी, &quot;यह मेरा प्रिय पुत्र है।  इसकी सुनो।&quot;</span> <sup>8</sup><span class='v-txt'>इसके तुरन्त बाद जब शिष्यों ने अपने चारों ओर दृष्टि दौड़ायी, तो उन्हें ईसा के सिवा और कोई नहीं दिखाई पड़ा।</span> <sup>9</sup><span class='v-txt'>ईसा ने पहाड़ से उतरते समय उन्हें आदेश दिया कि जब तक मानव पुत्र मृतकों में से न जी उठे, तब तक तुम लोगों ने जो देखा है, उसकी चर्चा किसी से नहीं करोगे।</span> <sup>10</sup><span class='v-txt'>उन्होंने ईसा की यह बात मान ली, परन्तु वे आपस में विचार-विमर्श करते थे कि ’मृतकों में से जी उठने’ का अर्थ क्या हो सकता है।</span> <sup>11</sup><span class='v-txt'>उन्होंने ईसा से पूछा, &quot;शास्त्री यह क्यों कहते हैं कि पहले एलियस को आना है?&quot;</span> <sup>12</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;एलियस अवश्य पहले सब ठीक करने आता है।  फिर मानव पुत्र के विषय में यह क्यों लिखा है कि वह बहुत दुःख उठायेगा और तिरस्कृत किया जायेगा?</span> <sup>13</sup><span class='v-txt'>मैं तुम से कहता हूँ -  एलियस आ चुका है और उसके विषय में जैसे लिखा है, उन्होंने उसके साथ वैसा ही मनमाना व्यवहार किया है।&quot;</span> <sup>14</sup><span class='v-txt'>जब वे शिष्यों के पास लौटे, तो उन्होंने देखा कि बहुत-से  लोग उनके चारों ओर  इकट्ठे हो गये हैं और कुछ शास्त्री उन स विवाद कर रहे हैं।</span> <sup>15</sup><span class='v-txt'>ईसा को देखते ही लोग अचम्भे में पड़ गये और दौड़ते हुए उन्हें प्रणाम करने आये।</span> <sup>16</sup><span class='v-txt'>ईसा ने उन से पूछा, &quot;तुम लोग इनके साथ क्या विवाद कर रहे हो?&quot;</span> <sup>17</sup><span class='v-txt'>भीड़ में से एक ने उत्तर दिया, &quot;गुरुवर!  मैं अपने बेटे को, जो एक गूँगे अपदूत के वश में है, आपके पास ले आया हूँ।</span> <sup>18</sup><span class='v-txt'>वह जहाँ कहीं उसे लगता है, उसे वहीं पटक देता है और लड़का फेन उगलता है, दाँत पीसता है और उसके अंग अकड़ जाते हैं।  मैंने आपके शिष्यों से उसे निकालने को कहा, परन्तु वे ऐसा नहीं कर सके।&quot;</span> <sup>19</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;अविश्वासी पीढ़ी!  मैं कब तक तुम्हारे साथ रहूँ?  कब तक तुम्हें सहता रहूँ?  उस लड़के को मेरे पास ले आओ।&quot;</span> <sup>20</sup><span class='v-txt'>वे उसे ईसा के पास ले आये।  ईसा को देखते ही अपदूत ने लड़के को मरोड़ दिया।  लड़का गिर गया और फेन उगलता हुआ भूमि पर लोटता रहा।</span> <sup>21</sup><span class='v-txt'>ईसा ने उसके पिता से पूछा, &quot;इसे कब से ऐसा हो जाया करता है?&quot;  उसने उत्तर दिया, &quot;बचपन से ही।</span> <sup>22</sup><span class='v-txt'>अपदूत ने इसका विनाश करने के लिए इसे बार-बार आग अथवा पानी में डाल दिया है।  यदि आप कुछ कर सकें, तो हम पर तरस खा कर हमारी सहायता कीजिए।&quot;</span> <sup>23</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;यदि आप कुछ कर सकें!  विश्वास करने वाले के लिए सब कुछ सम्भव है।&quot;</span> <sup>24</sup><span class='v-txt'>इस पर लड़के के पिता ने पुकार कर कहा, &quot;मैं विश्वास करता हूँ, मेरे अल्प विश्वास की कमी पूरी कीजिए&quot;।</span> <sup>25</sup><span class='v-txt'>ईसा ने देखा कि भीड़ बढ़ती जा रही है, इसलिए उन्होंने अशुद्ध आत्मा को यह कहते हुए डाँटा, &quot;बहरे-गूँगे आत्मा! मैं तुझे आदेश देता हूँ- इस से निकल जा और इस में फिर कभी नहीं घुसना&quot;।</span> <sup>26</sup><span class='v-txt'>अपदूत चिल्ला कर और लड़के को मरोड़ कर उस से निकल गया।  लड़का मुरदा-सा पड़ा रहा, इसलिए बहुत-से लोग कहते थे, &quot;यह मर गया है&quot;।</span> <sup>27</sup><span class='v-txt'>परन्तु ईसा ने उसका हाथ पकड़ कर उसे उठाया और वह खड़ा हो गया।</span> <sup>28</sup><span class='v-txt'>जब ईसा घर पहुँचे, तो उनके शिष्यों ने एकान्त में उन से पूछा, &quot;हम लोग उसे क्यों नहीं निकाल सके?&quot;</span> <sup>29</sup><span class='v-txt'>उन्होंने उत्तर दिया, &quot;प्रार्थना और उपवास के सिवा और किसी उपाय से यह जाति नहीं निकाली जा सकती।&quot;</span> <sup>30</sup><span class='v-txt'>वे वहाँ से चल कर गलीलिया पार कर रहे थे।  ईसा नहीं चाहते थे कि किसी को इसका पता चले,</span> <sup>31</sup><span class='v-txt'>क्योंकि वे अपने शिष्यों को शिक्षा दे रहे थे।  ईसा ने उन से कहा, &quot;मानव पुत्र मनुष्यों के हवाले कर दिया जायेगा। वे उसे मार डालेंगे और मार डाले जाने के बाद वह तीसरे दिन जी उठेगा।&quot;</span> <sup>32</sup><span class='v-txt'>शिष्य यह बात नहीं समझ पाते थे, किन्तु ईसा से प्रश्न करने में उन्हें संकोच होता था।</span> <sup>33</sup><span class='v-txt'>वे कफ़रनाहूम आये।  घर पहुँच कर ईसा ने शिष्यों से पूछा, &quot;तुम लोग रास्ते में किस विषय पर विवाद कर रहे थे?&quot;</span> <sup>34</sup><span class='v-txt'>वे चुप रह गये, क्योंकि उन्होंने रास्ते में इस पर वाद-विवाद किया था कि हम में सब से बड़ा कौन है।</span> <sup>35</sup><span class='v-txt'>ईसा बैठ गये और बारहों को बुला कर उन्होंने उन से कहा, &quot;जो पहला होना चाहता है, वह सब से पिछला और सब का सेवक बने&quot;।</span> <sup>36</sup><span class='v-txt'>उन्होंने एक बालक को शिष्यों के बीच खड़ा कर दिया और उसे गले लगा कर उन से कहा,</span> <sup>37</sup><span class='v-txt'>&quot;जो मेरे नाम पर इन बालकों में किसी एक का भी स्वागत करता है, वह मेरा स्वागत करता है और जो मेरा स्वागत करता है, वह मेरा नहीं, बल्कि उसका स्वागत करता है, जिसने मुझे भेजा है।&quot;</span> <sup>38</sup><span class='v-txt'>योहन ने उन से कहा, &quot;गुरुवर! हमने किसी को आपका नाम ले कर अपदूतों को निकालते देखा और हमने उसे रोकने की चेष्टा की, क्योंकि वह हमारे साथ नहीं चलता&quot;।</span> <sup>39</sup><span class='v-txt'>परन्तु ईसा ने उत्तर दिया, &quot;उसे मत रोको; क्योंकि कोई ऐसा नहीं, जो मेरा नाम ले कर चमत्कार दिखाये और बाद में मेरी निन्दा करें।</span> <sup>40</sup><span class='v-txt'>जो हमारे विरुद्ध नहीं है, वह हमारे साथ ही है।</span> <sup>41</sup><span class='v-txt'>&quot;जो तुम्हें एक प्याला पानी इसलिए पिलायेगा कि तुम मसीह के शिष्य हो, तो मैं तुम्हें विश्वास दिलाता हूँ कि वह अपने पुरस्कार से वंचित नहीं रहेगा।</span> <sup>42</sup><span class='v-txt'>&quot;जो इन विश्वास करने वाले नन्हों में किसी एक के लिए भी पाप का कारण बनता है, उसके लिए अच्छा यही होता कि उसके गले में चक्की का पाट बाँधा जाता और वह समुद्र में फेंक दिया जाता।</span> <sup>43</sup><span class='v-txt'>(43-44) और यदि तुम्हारा हाथ तुम्हारे लिए पाप का कारण बनता है, तो उसे काट डालो।  अच्छा यही है कि तुम लुले हो कर ही जीवन में प्रवेश करो, किन्तु दोनों हाथों के रहते नरक की न बुझने वाली आग में न डाले जाओ।</span> <sup>45</sup><span class='v-txt'>(45-46) और यदि तुम्हारा पैर तुम्हारे लिए पाप का कारण बनता है, तो उसे काट डालो।  अच्छा यही है कि तुम लँगड़े हो कर ही जीवन में प्रवेश करो, किन्तु दोनों पैरों के रहते नरक में न डाले जाओ।</span> <sup>47</sup><span class='v-txt'>और यदि तुम्हारी आँख तुम्हारे लिए पाप का कारण बनती है, तो उसे निकाल दो।  अच्छा यही है कि तुम काने हो कर ही ईश्वर के राज्य में प्रवेश करो, किन्तु दोनों आँखों के रहते नरक में न डाले जाओ,</span> <sup>48</sup><span class='v-txt'>जहाँ उन में पड़ा हुआ कीड़ा नहीं मरता और आग नहीं बुझती।</span> <sup>49</sup><span class='v-txt'>&quot;क्योंकि हर व्यक्ति आग-रूपी नमक द्वारा रक्षित किया जायेगा।</span> <sup>50</sup><span class='v-txt'>&quot;नमक अच्छी चीज़ है; किन्तु यदि वह फीका पड़ जाये, तो तुम उसे किस से छौंकोगे?  &quot;अपने में नमक बनाये रखो और आपस में मेल रखो।&quot;</span> </p>
+        <div class='nav'><a href='048008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='048010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

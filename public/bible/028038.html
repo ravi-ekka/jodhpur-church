@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 38</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 38</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>चिकित्सक का सम्मान करो, तुम को उसकी आवश्यकता है।  सर्वोच्च प्रभु ने उसकी भी सृष्टि की है।</span> <sup>2</sup><span class='v-txt'>सर्वोच्च प्रभु से स्वास्थ्यलाभ होता और राजा की ओर से चिकित्सक को उपहार मिलता है।</span> <sup>3</sup><span class='v-txt'>चिकित्सक का उसके विज्ञान के कारण सम्मान किया जाता और बडे़ लोग उसकी प्रशंसा करते हैं।</span> <sup>4</sup><span class='v-txt'>प्रभु पृथ्वी से जड़ी-बूटियाँ उत्पन्न करता है और समझदार व्यक्ति उनकी उपेक्षा नहीं करता।</span> <sup>5</sup><span class='v-txt'>क्या पानी लकड़ी द्वारा मीठा नहीं बना,</span> <sup>6</sup><span class='v-txt'>जिससे मनुष्य प्रभु का सामर्थ्य पहचान सके?</span> <sup>7</sup><span class='v-txt'>उसने मनुष्यों को विज्ञान प्रदान किया है, जिससे वे उसके चमत्कारों के कारण प्रभु की महिमा करें।</span> <sup>8</sup><span class='v-txt'>चिकित्सक जड़ी-बूटियों द्वारा पीड़ा दूर करता हैं।  भेषजज्ञ उनका मिश्रण तैयार करता है, जिससे प्रभु की कृतियाँ नष्ट न हों।</span> <sup>9</sup><span class='v-txt'>पुत्र! अपनी बीमारी में लापरवाह न बनो; प्रभु से प्रार्थना करो और वह तुम्हें स्वास्थ्य प्रदान करेगा।</span> <sup>10</sup><span class='v-txt'>अपने अपराधों पर पश्चात्तप करो, अपने हाथ निर्दोष रखो और अपना हृदय हर पाप से शुद्ध रखो।</span> <sup>11</sup><span class='v-txt'>सुगन्धयुक्त धूप एवं अन्न-बलि चढ़ाओे और शक्ति भर तेल का अर्पण करो।  चिकित्सक को निवास दो,</span> <sup>12</sup><span class='v-txt'>क्योंकि प्रभु ने उसकी भी सृष्टि की है।  वह तुम से दूर न जाये, क्योंकि तुम को उसकी ज़रूरत है;</span> <sup>13</sup><span class='v-txt'>क्योंकि कभी-कभी तुम्हारा स्वास्थ्य लाभ उनके हाथ में है।</span> <sup>14</sup><span class='v-txt'>वे भी प्रभु से प्रार्थना करते हैं कि वह उन्हें निदान पहचानने में और जीवन की रक्षा में सफलता प्रदान करें।</span> <sup>15</sup><span class='v-txt'>जो अपने सृष्टिकर्ता के सामने पाप करेगा, वह चिकित्सक के हाथों पड़ेगा।</span> <sup>16</sup><span class='v-txt'>पुत्र! मृतक पर आँसू बहाओ और दुःखी हो कर विलाप करो।  उसका शरीर योग्य रीति से दफनाओे और उसकी कब्र का ध्यान रखो।</span> <sup>18</sup><span class='v-txt'>लोगों की निन्दा से बचने के लिए एकाध दिन मृतक की योग्यता के अनुसार शोक मनाओे और इसके बाद अपना दुःख शान्त हो जाने दो;</span> <sup>19</sup><span class='v-txt'>क्योंकि शोक मृत्यु का कारण बन सकता है और मन का दुःख शक्ति घटाता है।</span> <sup>20</sup><span class='v-txt'>शोक विपत्ति में बना रहता है और दरिद्रता का जीवन हृदय के लिए अभिशाप है।</span> <sup>21</sup><span class='v-txt'>अपना हृदय शोक में मत डूबने दो, उसे हटाओे और अपनी अन्तगति पर विचार करो।</span> <sup>22</sup><span class='v-txt'>मृतक को भूल जाओ, वह लौट कर नहीं आयेगा।  उसे तुम से कोई लाभ नहीं होता और तुम अपने को हानि पहुँचाते हो।</span> <sup>23</sup><span class='v-txt'>यह याद रखो कि उसकी गति तुम्हारी भी होगी- कल उसकी और आज तुम्हारी।</span> <sup>24</sup><span class='v-txt'>मृत्यु के बाद मृतक की स्मृति मिट जाने दो, उसके प्राण निकलने के बाद अपना दुःख शान्त होने दो।</span> <sup>25</sup><span class='v-txt'>अवकाष मिलने के कारण ही शास्त्री को प्रज्ञा प्राप्त होती है।  जो काम-धन्धों में नहीं फँसा रहता, वही प्रज्ञ बन सकता है।</span> <sup>26</sup><span class='v-txt'>जो हल चलाता और घमण्ड से पैना भाँजता है, जो बैलों को जोतता और उनके कामों में लगा रहता है, जो अपने साँड़ों की ही बात करता है, उसे प्रज्ञा कैसे प्राप्त हो सकती है?</span> <sup>27</sup><span class='v-txt'>वह हल की रेखा खींचने की चिन्ता करता रहता और रात में देर तक बछड़ों को चारा देता है।</span> <sup>28</sup><span class='v-txt'>यही हाल प्रत्येक शिल्पकार और हर कारीगर का है, जो दिन-रात अपने काम में लगा रहता है।  यही हाल उन लोगों का है, जो मुद्राएँ उकेरते हैं और निरन्तर नयी आकृतियाँ बनाते रहते हैं।  ऐसा व्यक्ति सच्ची प्रतिकृति बनाने में तल्लीन रहता और रात में देर तक अपनी कृति का परिष्कार करता है।</span> <sup>29</sup><span class='v-txt'>यही हाल लोहार का है, जो निकाई के पास बैठ मन लगा कर लोहे का काम करता है।  आग की भाप उसका शरीर गलाती है; वह भट्टी की गरमी में परिश्रम करता रहता है।</span> <sup>30</sup><span class='v-txt'>हथोड़े की आवाज उसके कानों में निरन्तर गूँजती रहती है।  उसकी आँखेें अपनी कृति के नमूने पर टिकी रहती हैं।</span> <sup>31</sup><span class='v-txt'>यह दत्तचित्त हो कर अपने कार्य में लगा रहता।  और रात में देर तक उसका परिष्कार करता है।</span> <sup>32</sup><span class='v-txt'>यही हाल कुम्हार का है, जो अपने चाक के पास बैठ कर उसे अपने पैरों से घुमाता रहता है।  वह अपने काम पर निरन्तर ध्यान रखता और समय पर उसे पूरा करने की चिन्ता करता है।</span> <sup>33</sup><span class='v-txt'>वह अपने हाथों से मिट्टी के लोंदे बनाता और पैरों से उसे गूँधता है।</span> <sup>34</sup><span class='v-txt'>वह दत्तचित्त होकर बरतनों पर रोगन लगाता और रात में देर तक अपना आँवा साफ करता है।</span> <sup>35</sup><span class='v-txt'>इन सबों को अपने हस्तकौशल का भरोसा है।  ये सभी अपने-अपने कार्य में निपुण हैं।</span> <sup>36</sup><span class='v-txt'>इनके बिना कोई भी नगर नहीं बसाया जा सकता।</span> <sup>37</sup><span class='v-txt'>इनके बिना यहाँ न तो कोई रह सकता और न कोई आ-जा सकता; किन्तु नगर परिषद में इन से परामर्श नहीं लिया जायेगा।  इन्हें सार्वजनिक  सभाओें में प्रमुख स्थान नहीं दिये जायेंगे।</span> <sup>38</sup><span class='v-txt'>ये न्यायाधीश के आसन पर नहीं बैठेंगे।  ये न तो संहिता के निर्णय समझते और न शिक्षा एवं न्याय के क्षेत्र में योग देते हैं।  शासकों में इन में से कोई नहीं,</span> <sup>39</sup><span class='v-txt'>किन्तु ये ईश्वर की सृष्टि बनाये रखते हैं।  इनका काम ही इनकी प्रार्थना है।</span> </p>
+        <div class='nav'><a href='028037.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028039.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

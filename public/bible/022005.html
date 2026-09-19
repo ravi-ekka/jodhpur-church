@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>पुकारो!  किंतु तुम को उत्तर नहीं मिलेगा।  तुम संतों में से किसकी दुहाई दोगे?</span> <sup>2</sup><span class='v-txt'>द्वेष ही मूर्ख की जान लेता हैं।  ईर्ष्या ही नासमझ को मारती है।</span> <sup>3</sup><span class='v-txt'>मैंने मूर्ख को जड़ पकड़ते देखा है, किंतु उसके घर पर अचानक अभिशाप पड़ा।</span> <sup>4</sup><span class='v-txt'>उसके पुत्र सुरक्षित नहीं रहते और सहारे के अभाव में कचहरी में कुचले जाते हैं।</span> <sup>5</sup><span class='v-txt'>भूखा उसकी फसल खा जाता है, बल्कि काँटों की बाड़ में से उसे निकालता है।  प्यासा उसकी सम्पत्ति के लिए मचल जाता है;</span> <sup>6</sup><span class='v-txt'>क्योंकि विपत्ति मिट्टी में से नहीं उगती और दुःख भूमि पर उत्पन्न नहीं होता।</span> <sup>7</sup><span class='v-txt'>जिस तरह चिनगारियाँ ऊपर उड़ती हैं, उसी तरह मनुष्य दुःख के लिए जन्म लेता है।</span> <sup>8</sup><span class='v-txt'>यदि मैं होता, तो मैं ईश्वर की दुहाई देता और अपना मामला उसके सामने पेश करता</span> <sup>9</sup><span class='v-txt'>वह अबोधगम्य महान् कार्य करता और असंख्य चमत्कार दिखाता है।</span> <sup>10</sup><span class='v-txt'>वह पृथ्वी पर पानी बरसाता और खेतों को सींचता है।</span> <sup>11</sup><span class='v-txt'>वह दीनों को ऊपर उठाता हैं और दुःखियों को सुख-शांति देता है।</span> <sup>12</sup><span class='v-txt'>वह धूर्ताें के षड्यंत्र व्यर्थ करता है, जिससे उन्हें सफलता नहीं मिलती।</span> <sup>13</sup><span class='v-txt'>वह चतुरों को उनकी चतुराई में फाँसता और कपटियों की योजनाएं मिटा देता है।</span> <sup>14</sup><span class='v-txt'>अंधकार उन्हें दिन में ही घेर लेता है और वे दोपहर को रात की तरह टटोलते-फिरते हैं।</span> <sup>15</sup><span class='v-txt'>उसनें दरिद्र को उनकी तलवार, उनके दाँतों, उनके चंगुल से बचा लिया है।</span> <sup>16</sup><span class='v-txt'>इस प्रकार निर्बल आशा नहीं छोड़ता और अन्याय का मुँह बंद हो जाता है।</span> <sup>17</sup><span class='v-txt'>धन्य वह मनुष्य, जिसे ईश्वर सुधारता है!  इसलिए तुम सर्वशक्तिमान् के अनुशासन की उपेक्षा मत करो;</span> <sup>18</sup><span class='v-txt'>क्योंकि वह घायल करने के बाद पट्टी बाँधता हैं।  उसके हाथ मारते भी है और चंगा भी करते हैं।</span> <sup>19</sup><span class='v-txt'>वह छः विपत्तियों से तुम्हारी रक्षा करेगा और सातवीं तुम्हें कोई हानि नहीं पहुँचायेगी।</span> <sup>20</sup><span class='v-txt'>वह अकाल में तुम को मृत्यु से बचायेगा और युद्ध में तलवार के आघात से।</span> <sup>21</sup><span class='v-txt'>तुम जीभ के कीड़े से सुरक्षित होगे और आने वाली विपत्तियों से नहीं डरोगे।</span> <sup>22</sup><span class='v-txt'>तुम विनाश और अकाल का उपहास करोगे; तुम्हें पृृथ्वी के पशुओं से भय नहीं होगा।</span> <sup>23</sup><span class='v-txt'>खेत के पत्थरों से तुम्हारी सन्धि होगी और जंगल के बनैले पशु तुमसे मेल रखेंगे।</span> <sup>24</sup><span class='v-txt'>तुम देखोगे कि तुम्हारे तम्बू में शांति है; अपने पशुओं की गिनती करने पर तुम्हें एक भी कम नहीं मिलेगा।</span> <sup>25</sup><span class='v-txt'>तुम देखोगे कि तुम्हारी संतति बहुसंख्यक होगी, तुम्हारे वंशज पृथ्वी की घास की तरह होंगे।</span> <sup>26</sup><span class='v-txt'>जिस तरह फसल के समय पूले बखार में रखे जाते हैं, उसी तरह तुम्हें अच्छी पकी उमर में कब्र में दफनाया जायेगा।</span> <sup>27</sup><span class='v-txt'>हमने इन बातों की जाँच की हैः यही सच है।  इन बातों पर ध्यान दो और लाभ उठाओ।</span> </p>
+        <div class='nav'><a href='022004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रज्ञासम्पन्न शासक अपनी प्रजा को शिक्षा देता है; समझदार व्यक्ति का शासन सुदृढ़ रहता है।</span> <sup>2</sup><span class='v-txt'>जैसा शासक, वैसे ही उसके पदाधिकारी; जैसा नगराध्यक्ष, वैसे ही उसके निवासी।</span> <sup>3</sup><span class='v-txt'>मूर्ख राजा अपनी प्रजा का विनाश करता है।  नगरों की सुव्यवस्था उसके शासकों की समझदारी पर निर्भर है।</span> <sup>4</sup><span class='v-txt'>प्ृथ्वी का शासन प्रभु के हाथ में है।  वह सुयोग्य व्यक्ति को उपयुक्त समय पर भेजता है।</span> <sup>5</sup><span class='v-txt'>मनुष्य की समृद्धि प्रभु के हाथ में है।  वह शास्त्री को महिमा प्रदान करता है।</span> <sup>6</sup><span class='v-txt'>अन्याय के कारण अपने पड़ोसी से बैर मत रखो और घमण्ड के आवेश में कोई काम मत करो।</span> <sup>7</sup><span class='v-txt'>प्रभु और मनुष्यों को घमण्ड से बैर है; अन्याय से दोनों को घृणा है।</span> <sup>8</sup><span class='v-txt'>अन्याय, अत्याचार और लोभ के कारण राजसत्ता एक राष्ट्र से दूसरे राष्ट्र के हाथ चली जाती है।</span> <sup>9</sup><span class='v-txt'>कृपण व्यक्ति से अधिक बुरा कोई नहीं।  वह अपनी आत्मा को भी बेच सकता है।</span> <sup>10</sup><span class='v-txt'>मिट्टी और राख का पुतला घमण्ड क्यों करता है? जीवित रहते भी उसकी अॅतिड़ियों में कीड़े हैं।</span> <sup>11</sup><span class='v-txt'>दीर्घकालीन बीमारी वैद्य को निराश और अल्पकालीन बीमारी उसे प्रसन्न करती है।</span> <sup>12</sup><span class='v-txt'>हर राज्याधिकार अल्पकालीन है।  आज का राजा कल मर जाता है।</span> <sup>13</sup><span class='v-txt'>ज्यों ही मनुष्य मर जाता है, साँप, पशु और कीडे़ उसकी विरासत बनते हैं।</span> <sup>14</sup><span class='v-txt'>मनुष्य का घमण्ड इस से प्रारम्भ होता है कि वह ईश्वर का परित्याग करता</span> <sup>15</sup><span class='v-txt'>और अपने सृष्टिकर्ता से विमुख हो जाता है; क्योंकि हर पाप घमण्ड से प्रारम्भ होता है।  जो पाप करता है, वह अभिशप्त है।</span> <sup>16</sup><span class='v-txt'>इसलिए प्रभु ने पापियों पर विपत्तियाँ ढाहीं और उनका सर्वनाश किया है।</span> <sup>17</sup><span class='v-txt'>ईश्वर ने घमण्डियों के सिंहासन गिराये और उन पर दीनों को बैठाया है।</span> <sup>18</sup><span class='v-txt'>प्रभु ने घमण्डी राष्ट्रों की जड़ उखाड़ी और उनके स्थान पर दीनों को रोपा है।</span> <sup>19</sup><span class='v-txt'>प्रभु ने राष्ट्रों की भूमि उजाड़ दी और उनका समूल विनाश किया है।</span> <sup>20</sup><span class='v-txt'>उसने उन्हें मनुष्यों के बीच से उखाड़ दिया और पृथ्वी पर उनकी स्मृति तक मिटा दी है।</span> <sup>21</sup><span class='v-txt'>ईश्वर ने घमण्डियों की स्मृति को मिटा दिया और दीनों की स्मृति को बनाये रखा।</span> <sup>22</sup><span class='v-txt'>घमण्ड मनुष्यों को शोभा नहीं देता और न स्त्री की सन्तान को क्रोध का आवेश।</span> <sup>23</sup><span class='v-txt'>जो प्रजाति प्रभु पर श्रद्धा रखती है, वही सम्मान के योग्य है।  जो प्रजाति प्रभु की आज्ञाओें का उल्लंघन करती है, वह सम्मान से वंचित रह जाती है।</span> <sup>24</sup><span class='v-txt'>जो अपने भाइयों का नेता है, उसका उनके बीच सम्मान किया जाता है।</span> <sup>25</sup><span class='v-txt'>परदेशी, शरणार्थी और भिखारी: उनका गौरव इस में है कि वे प्रभु पर श्रद्धा रखते हैं।</span> <sup>26</sup><span class='v-txt'>धार्मिक दरिद्र की उपेक्षा करना अन्याय है और पापी की महिमा करना अनुचित है।</span> <sup>27</sup><span class='v-txt'>राजा, न्यायाधीश और शासक का सम्मान किया जाता है, किन्तु उन में कोई उस व्यक्ति से महान् नहीं, जो प्रभु पर श्रद्धा रखता है।</span> <sup>28</sup><span class='v-txt'>स्वाधीन व्यक्ति समझदार दास की सेवा करेंगे और इस पर किसी विवेकी को आपत्ति नहीं होगी।</span> <sup>29</sup><span class='v-txt'>अपने व्यवसाय में प्रज्ञा का और तंगहाली में बड़प्पन का स्वाँग मत रचो।</span> <sup>30</sup><span class='v-txt'>उस घमण्डी की अपेक्षा, जिसके पास रोटी नहीं, वह कर्मशील व्यक्ति अच्छा है, जिसे किसी बात की कमी नहीं।</span> <sup>31</sup><span class='v-txt'>पुत्र! विनम्रता से अपनी स्वाभिमान की रक्षा करो, अपने को अपनी योग्यता के अनुसार ही श्रेय दो।</span> <sup>32</sup><span class='v-txt'>जो व्यक्ति अपने साथ अन्याय करता, उसे कौन निर्दोष ठहरायेगा?  जो व्यक्ति अपना ही अपमान करता, उस को कौन सम्मान देगा?</span> <sup>33</sup><span class='v-txt'>ज्ञान के कारण दरिद्र का और धन के कारण धनी का सम्मान किया जाता है।</span> <sup>34</sup><span class='v-txt'>दरिद्रता में जिसका सम्मान किया जाता है, उसका समृद्धि में कहीं अधिक सम्मान किया जायेगा।  समृद्धि में जिसका अपमान किया जाता है, उसका दरिद्रता में कहीं अधिक अपमान किया जायेगा।</span> </p>
+        <div class='nav'><a href='028009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

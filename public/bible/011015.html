@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>राजाओं का पहला ग्रन्थ - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>राजाओं का पहला ग्रन्थ</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>नबाट के पुत्र राजा यरोबआम के शासन के अठारहवें वर्ष अबीयाम यूदा का राजा बना।</span> <sup>2</sup><span class='v-txt'>उसने येरूसालेम में तीन वर्ष तक शासन किया।  उसकी माता का नाम माका था, जो अबसालेाम की पुत्री थी।</span> <sup>3</sup><span class='v-txt'>अबीयाम ने वही कुकर्म किये, जो उसका पिता उसके पहले कर चुका था।  उसका हृदय अपने पूर्वज दाऊद की तरह पुभु, अपने ईश्वर के प्रति पूर्ण रूप से ईमानदार नहीं रहा।</span> <sup>4</sup><span class='v-txt'>प्रभु, उसके ईश्वर ने केवल दाऊद के कारण येरूसालेम में उसके बाद उसके पुत्र के रूप में एक दीपक छोड़ रखा था और येरूसालेम को भी सुरक्षित रखा था;</span> <sup>5</sup><span class='v-txt'>क्योंकि दाऊद ने ऐसे कार्य किये थे, जो प्रभु को प्रिय थे।  हित्ती ऊरीया के मामले के सिवा उसने जीवन भर कभी प्रभु की किसी आज्ञा का उल्लंघन नहीं किया था।</span> <sup>6</sup><span class='v-txt'>अबीयाम के जीवनकाल में रहबआम और यरोबआम में हमेशा युद्ध होता रहा।</span> <sup>7</sup><span class='v-txt'>अबीयाम का शेष इतिहास और उसका सारा कार्यकलाप यूदा के राजाओं के इतिहास-ग्रन्थ में लिखा है।  अबीयाम और यरोबआम में भी युद्ध होता रहा।</span> <sup>8</sup><span class='v-txt'>अबीयाम अपने पितरों से जा मिला और दाऊदनगर में दफ़नाया गया।  उसका पुत्र आसा उसकी जगह राजा बना।</span> <sup>9</sup><span class='v-txt'>इस्राएल के राजा यरोबआम के शासन के ‘बीसवें वर्ष आसा यूदा का राजा बना।</span> <sup>10</sup><span class='v-txt'>उसने येरूसालेम के इकतालीस वर्ष तक शासन किया।  उसकी दादी का नाम माका था, जो अबसालोम की पुत्री थी।</span> <sup>11</sup><span class='v-txt'>आसा ने अपने पुरखे दाऊद की तरह ऐस काम किये जो प्रभु की दृष्टि में अच्छे थे।</span> <sup>12</sup><span class='v-txt'>उसने देश से उन लोगों को निकाल दिया, जो पूजा की आ़ड़ में पुरुषगमन करते थे और वे सारी देवमूर्तियाँ भी हटा दीं, जिन्हें उसके पुरखों ने बनवाया था।</span> <sup>13</sup><span class='v-txt'>उसने अपनी दादी माका को राजमाता के पद से हटा दिया, क्योंकि उसने घृणित अशेरा-देवी का खूँट बनवाया था।  आसा ने उसके द्वारा स्थापित घृणित मूर्ति तुड़वा दी और केद्रोन घाटी में जलवा दी।</span> <sup>14</sup><span class='v-txt'>केवल पहाड़ी पूजास्थान अभी तक नष्ट नहीं किये गये थे।  आसा का हृदय जीवन भर प्रभु के प्रति ईमानदार रहा।</span> <sup>15</sup><span class='v-txt'>उसने अपने पिता के और अपने सभी च़ढ़ावे मन्दिर में रखवाये- चाँदी, सोना और पात्र।</span> <sup>16</sup><span class='v-txt'>आसा और इस्राएल के राजा बाशा में तब तक युद्ध होता रहा, जब तक दोनों जीवित रहे।</span> <sup>17</sup><span class='v-txt'>इस्राएल के राजा बाशा ने यूदा पर आक्रमण कर रामा को क़िलाबन्द बनाना चाहा, जिससे यूदा के राजा आसा की ओर से न तो कोई उसके यहाँ आ सके और न कोई इधर से जा सके।</span> <sup>18</sup><span class='v-txt'>तब आसा ने प्रभु के मन्दिर और अपने महल के कोषागारों में बची हुई सब चाँदी और सोना ले लिया और उसे अपने सेवकों द्वारा हेज़योन के पौत्र, टबरिम्मोन के पुत्र, दमिश्कवासी अराम के राजा बेनहदद के यहाँ यह कहते हुए भेजा,</span> <sup>19</sup><span class='v-txt'>&quot;मुझ में और आप में, मेरे पिता और आपके पिता में सन्धि है।  देखिए, मैं आप को उपहार के रूप में चाँदी और सोना भेज रहा हूँ।  अब इस्राएल के राजा बाशा से अपनी सन्धि तोड़ डालिए, जिससे वह मुझ पर और आक्रमण नहीं करे।&quot;</span> <sup>20</sup><span class='v-txt'>बेन-हदद ने राजा आसा की बात मन ली।  उसने अपने सेनापतियों को इस्राएल के नगरों पर आक्रमण करने भेजा और इय्योन, दान, आबेल-बेत-माका, सारा किन्नेरोत और नफ़्ताली प्रान्त को अधिकार में कर लिया।</span> <sup>21</sup><span class='v-txt'>यह सुन कर बाशा ने रामा को क़िलाबन्द करने का काम रोक दिया और तिर्सा में रहने लगा।</span> <sup>22</sup><span class='v-txt'>अब राजा आसा ने सभी यूदावंशियों को बुलवाया और वे बाशा द्वारा रामा में एकत्रित सब पत्थर और लकड़ी ले गये।  इन से राजा आसा ने बेनयामीन के गेबा और मिस्पा को क़िलाबन्द करवाया।</span> <sup>23</sup><span class='v-txt'>आसा का शेष इतिहास, उसकी सभी विजयों, उसके समस्त कार्यकलाप और उसके द्वारा बनवाये नगरों का वर्णन यूदा के राजाओं के इतिहास-ग्रन्थ में लिखा है। उसकी वृद्धावस्था में उसकें पाँवों में बीमारी हो गयी।</span> <sup>24</sup><span class='v-txt'>आसा अपने पितरों से जा मिला और वह पितरों के पास ही दाऊदनगर में दफ़नाया गया।  उसका पुत्र यहोशाफाट उसकी जगह राजा बना।</span> <sup>25</sup><span class='v-txt'>यूदा के राजा आसा के शासन के दूसरे वर्ष यरोबआम का पुत्र नादाब इस्राएल का राजा बना।</span> <sup>26</sup><span class='v-txt'>उसने इस्राएल पर दो वर्ष तक राज्य किया।  उसने वही किया, जो प्रभु की दृष्टि में बुरा है।  वह अपने पिता के मार्ग पर चला और उसने अपने पिता की तरह इस्राएल से पाप करवाया।</span> <sup>27</sup><span class='v-txt'>इस्साकारवंशी अहीया के पुत्र बाशा ने उसके विरुद्ध षड्यंत्र किया और उसे फ़िलिस्तियों के नगर गिब्बतोन में उस समय मार गिराया, जब नादाब और सभी इस्राएली गिब्बतोन को घेरे हुए थे।</span> <sup>28</sup><span class='v-txt'>यूदा के राजा आसा के शासन के तीसरे वर्ष बाशा ने उसका वध किया और उसकी जगह स्वयं राज्य करने लगा।</span> <sup>29</sup><span class='v-txt'>राजा बनते ही उसने यरोबआम के घराने के सब लोगों को मार दिया।  जैसा प्रभु ने अपने शिलोवासी सेवक अहीया द्वारा कहा था, ठीक वैसा ही उसने उसके घर में एक भी प्राणी जीवित नहीं छोड़ा।</span> <sup>30</sup><span class='v-txt'>यह यरोबआम द्वारा किये गये उन पापों के कारण हुआ, जिन्हें करने उसने इस्राएलियों को फुसलाया था और इसलिए भी कि उसने प्रभु, इस्राएल के ईश्वर का क्रोध भड़काया था।</span> <sup>31</sup><span class='v-txt'>नादाब का शेष इतिहास और उसका सारा कार्यकलाप इस्राएलियों के राजाओं के इतिहास-ग्रन्थ में लिखा है।</span> <sup>32</sup><span class='v-txt'>आसा और इस्राएल के राजा बाशा के बीच तब तक युद्ध होता रहा, जब तक वे जीवित थे।</span> <sup>33</sup><span class='v-txt'>यूदा के राजा आसा के तीसरे वर्ष अहीया का पुत्र बाशा सारे इस्राएल का राजा बना।  उसने तिर्सा में चैबीस वर्ष तक राज्य किया।</span> <sup>34</sup><span class='v-txt'>उसने वही किया, जो प्रभु की दृष्टि में बुरा है।  यह यरोबआम के मार्ग पर चला और उसने यरोबआम की तरह इस्राएल से पाप कराया।</span> </p>
+        <div class='nav'><a href='011014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='011016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

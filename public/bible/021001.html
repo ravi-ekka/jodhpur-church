@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मक्काबियों का दूसरा ग्रन्थ - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मक्काबियों का दूसरा ग्रन्थ</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मिस्र के यहूदी भाइयों को नमस्कार।  येरूसालेम और यहूदियों में रहने वाले यहूदी भाइयों की ओर से शांति और कुशलक्षेम की शुभकामनाएँ!</span> <sup>2</sup><span class='v-txt'>ईश्वर आपका भला करे और अपने उस विधान का ध्यान रखे, जो उसने अपने भक्त सेवक इब्राहीम, इसहाक और याकूब के लिए निर्धारित किया था।</span> <sup>3</sup><span class='v-txt'>वह आप सब को ऐसा मनोभाव प्रदान करे कि आप उसकी आराधना करते रहें और सारे हृदय और मन से उसकी आज्ञाओं का पालन करें।</span> <sup>4</sup><span class='v-txt'>वह आपके हृदय में अपनी संहिता और आज्ञाओं के प्रति प्रेम भर दे, आप को शांति प्रदान करे,</span> <sup>5</sup><span class='v-txt'>आपकी प्रार्थनाएँ स्वीकार कर ले, आप को क्षमा कर दे और विपत्ति के समय आपका त्याग न करें।</span> <sup>6</sup><span class='v-txt'>हम इस समय आपके लिए यही प्रार्थना करते हैं।</span> <sup>7</sup><span class='v-txt'>एक सौ उनहत्तरवें वर्ष, जब देमेत्रियस राज्य कर रहा था, हम यहूदियों ने आप को यह लिखा था: इन दिनों हम पर घोर विपत्तिया पड़ी हैं।  यासोन और उसके अनुयायियों ने पवित्र देश और राज्य के विरुद्ध विद्रोह किया,</span> <sup>8</sup><span class='v-txt'>मंदिर का फाटक जलाया और निर्दोष रक्त बहाया है।  तब हमने प्रभु से प्रार्थना की और उसने हमारी सुनी। हमने होम-बलि और अन्न बलि चढायी, दीप जलाये और भेंट की रोटियाँ मंदिर में रख दी।</span> <sup>9</sup><span class='v-txt'>अब हम आप को फिर पत्र लिखकर एक सौ अठासीवें वर्ष के किसलेव महीने में शिविर-पर्व मनाने का अनुरोध करते हैं।</span> <sup>10</sup><span class='v-txt'>अरिस्तोबूलस को (जो अभ्यंजित याजकों के वंशज तथा राजा पतोलेमेउस के गुरू है)  और मिस्र के निवासियों तथा यूदाह और परिषद का नमस्कार।  आप स्वस्थ और सानंद रहें।</span> <sup>11</sup><span class='v-txt'>ईश्वर ने घोर विपत्तियों से हमारी रक्षा की और वह राजा के विरुद्ध हमारा सहायक रहा, इसलिए हम उसके बहुत कृतज्ञ हैं।</span> <sup>12</sup><span class='v-txt'>उसने स्वयं उन लोगों को भगा दिया, जो पवित्र नगर पर आक्रमण करने आये थे।</span> <sup>13</sup><span class='v-txt'>उस सेना का सेनापति एक ऐसी सेना ले कर, जो अजेय-जैसी लगती थी, फारस गया था और वहाँ ननैया देवी के मंदिर पुजारियों द्वारा टुकडे-टुकडे कर दिया गया।</span> <sup>14</sup><span class='v-txt'>अन्तियोख देवी के साथ विवाह करने के बहाने अपने सहचारों के साथ वहाँ आया।  उसने सोचा कि इस तरह दहेज रूप में मंदिर की भारी संपत्ति उनके हाथ आ जायेगी।</span> <sup>15</sup><span class='v-txt'>ननैया के पुजारियों ने मंदिर की सम्पत्ति निकाल कर प्रदर्शित की और अंतियोख ने थोड़े ही लोगों के साथ मंदिर के क्षेत्र में प्रवेश किया।  उसके प्रवेश करते ही पुजारियों ने द्वार बंद कर दिया।</span> <sup>16</sup><span class='v-txt'>फिर वे छत का गुप्त दरवाजा खोल कर उन पर पत्थर फेंकने लगे और सेनापति को और उसके आदमियों को मार गिराया।  इसके बाद उन्होंने अन्तियोख के टुकडे-टुकडे कर और उसके सिर काट कर उन्हें बाहर खडे लोगों के सामने फेंक दिया।</span> <sup>17</sup><span class='v-txt'>ईश्वर सदा-सर्वदा धन्य है।  उसने विधर्मियों को मृत्यु के हवाले कर दिया।</span> <sup>18</sup><span class='v-txt'>किसलेव मास के पच्चीसवें दिन हम मंदिर के शुद्धीकरण का उत्सव मना रहे हैं।  आप को इसकी सूचना देना हमने उचित समझा, जिससे आप शिविर-पर्व और उस अग्नि का स्मरणोत्सव मनायें, जो उस समय प्रकट हुई, जब मंदिर और वेदी के निर्माता नहेम्या बलिदान चढ़ाते थे।</span> <sup>19</sup><span class='v-txt'>जब हमारे पूर्वज फारस में निर्वासित किये जा रहे थे, तो उस समय के भक्त याजकों ने चुपके से वेदी की अग्नि को सूखे कुँए की एक ऐसी गुफा में छिपा दिया, जिसका पता किसी को नहीं चल सका,</span> <sup>20</sup><span class='v-txt'>बहुत वर्ष बाद ईश्वर को यह उचित जान पड़ा कि फारस के राजा द्वारा वापस भेजे हुए नहेम्या ने उन याजकों के वंशजों को बुला भेजा, जिन्होंने आग छिपायी थी और उसे ले आने का आदेश दिया।  लेकिन उन्होंने आ कर कहा कि हमें वहाँ आग नहीं, बल्कि गंदला पानी मिला,</span> <sup>21</sup><span class='v-txt'>जब बलिदान की पूरी सामग्री रखी जा चुकी, तो नहेम्या ने याजकों से कहा कि वे लकडी और उस पर रखे हुए चढ़ावों पर वह पानी उँडेलें।</span> <sup>22</sup><span class='v-txt'>उन्होंने वैसा ही किया।  कुछ देर बाद बादलों के हट जाने से हट जाने से सूर्य प्रकट हुआ और वेदी पर से आग की लपटें ज़ोरों से उठने लगीं।  सब लोग आश्यर्च करने लगे।</span> <sup>23</sup><span class='v-txt'>जिस समय होमबलि जल रही थी, याजक और सभी लोग प्रार्थना कर रहे थे।  योनातान पहले प्रार्थना सुनाते थे और अन्य लोग नहेम्या के साथ उसके शब्द दोहराते थे।</span> <sup>24</sup><span class='v-txt'>प्रार्थना इस प्रकार थी: &quot;प्रभु! प्रभु-ईश्वर! सब के सृष्टा! भीषण, शक्तिशाली, न्यायी और करूणामय! तू ही राजा, तू ही भला है।</span> <sup>25</sup><span class='v-txt'>तू ही दाता है, तू ही न्यायी है, सर्वशक्तिशाली और शाश्वत है।  तू सभी विपत्तियों से इस्राएल की रक्षा करता है।  तूने हमारे पूर्वजों को चुना और पवित्र किया।</span> <sup>26</sup><span class='v-txt'>तू अपनी समस्त प्रजा इस्राएल के लिए चढ़ाया हुआ यह बलिदान स्वीकार कर।  तू अपनी विरासत सुरक्षित रख और उसे पवित्र कर।</span> <sup>27</sup><span class='v-txt'>हमारे निर्वासितों को एकत्र कर।  जो गैर-यहूदी राष्ट्रों में दास हैं, उन्हें मुक्त कर।  जो तिरस्कृत और उपेक्षित हैं, उन पर दयादृष्टि कर, जिससे गै़र-यहूदी राष्ट्र जान जायें कि तू हमारा ईश्वर है।</span> <sup>28</sup><span class='v-txt'>जो लोग हम पर अत्याचार करते और घमण्ड के आवेश में हमारा अपमान करते हैं, तू उन्हें दण्डित कर।</span> <sup>29</sup><span class='v-txt'>जैसा मूसा ने कहा था, तू अपनी प्रजा को फिर इस पवित्र भूमि पर स्थापित कर।&quot;</span> <sup>30</sup><span class='v-txt'>इसके बाद याजक भजन गाते थे।</span> <sup>31</sup><span class='v-txt'>जब होम-बलि जल चुकी थी, तो नहेम्या ने बचा हुआ पानी बडे़ पत्थरों पर उँड़ेलने का आदेश दिया।</span> <sup>32</sup><span class='v-txt'>जैसे ही ऐसा किया गया, पत्थरों से एक ज्वाला निकली, जो होम-बलि की वेदी से उठने वाली प्रखर ज्योति में विलीन हो गयी।</span> <sup>33</sup><span class='v-txt'>इस घटना की चर्चा फैल गयी।  फारसियों के राजा को भी बताया गया कि उस स्थान पर, जहाँ याजकों ने आग छिपा रखी थी, वहाँ वह पानी मिला था, जिस से नहेम्या और उसके साथियों ने होम-बलि की सामग्री का शुद्धीकरण किया था।</span> <sup>34</sup><span class='v-txt'>इस पर राजा ने घटना की जाँच कराने के बाद वह स्थान घेर दिया और उसे पवित्र घोषित किया।</span> <sup>35</sup><span class='v-txt'>राजा को उस स्थान से बहुत आमदनी होती थी और उस में से वह उन लोगों को एक बड़ा हिस्सा देता, जिन्हें उसने उस स्थान की देखरेख का प्रबंध सौंपा था।</span> <sup>36</sup><span class='v-txt'>नहेम्या के आदमियों ने उस द्रव का नाम ’नफ़थार’ रखा, जिसका अर्थ है- शुद्धीकरण।  प्रायः लोग इसे ’नफ़थाय’ कहते हैं।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='021002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

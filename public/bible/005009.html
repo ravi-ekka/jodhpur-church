@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इस्राएल! सुनो! आज तुम उन लोगों के देश पर अधिकार करने के लिए यर्दन पार करने वाले हो जो तुम से बड़े और शक्तिशाली हैं और जिनके नगर गंगनचुम्बी परकोटों से घिरे हुए है।</span> <sup>2</sup><span class='v-txt'>वहाँ बड़े और ऊँचे क़द वाले अनाकियों की जाति रहती है।  उनके विषय में तुम स्वयं जानते हो और तुमने यह कहावत भी सुनी है, ’अनाकियों का सामना कौन कर सकता है?’</span> <sup>3</sup><span class='v-txt'>आज तुम्हें यह मालूम होना चाहिए कि प्रभु, तुम्हारा ईश्वर भस्म करने वाली अग्नि की तरह तुम्हारे आगे-आगे उस पार चलेगा। वह उनका नाश करेगा और उन्हें तुम्हारे अधीन कर देगा, जिससे तुम उन को भगा दोगे और थोड़े ही समय में उनका विनाश करोगे, जैसा कि प्रभु  ने तुम्हें वचन दिया है।</span> <sup>4</sup><span class='v-txt'>अब यदि प्रभु, तुम्हारा ईश्वर उन्हें तुम्हारे सामने से भगा देगा, तो यह नहीं सोचो कि तुम्हारे धर्माचरण के कारण ही प्रभु तुम्हें इस देश पर अधिकार कराने के लिए यहाँ लाया है।  नहीं; उन लोगों के दुराचरण के कारण प्रभु उन्हें तुम्हारे सामने से भगा रहा है।</span> <sup>5</sup><span class='v-txt'>तुम अपनी धर्मपरायणता अथवा अपनी निष्कपटता के कारण उस देश पर अधिकार नहीं करोगे, बल्कि उन लोगों के दुराचरण के कारण प्रभु, तुम्हारा ईश्वर स्वयं उन्हें तुम्हारे सामने से भगायेगा।  प्रभु इसलिए भी यह कर रहा है कि वह तुम्हारे पूर्वजों-इब्राहीम, इसहाक और याकूब - से शपथपूर्वक की हुई प्रतिज्ञा पूरी करना चाहता है।</span> <sup>6</sup><span class='v-txt'>यह समझ लो कि प्रभु तुम्हारा ईश्वर तुम्हें तुम्हारे धर्माचरण के कारण उस रमणीय देश पर अधिकार नहीं दे रहा है, क्योंकि तुम एक हठधर्मी प्रजा हो।</span> <sup>7</sup><span class='v-txt'>यह याद रखो और कभी नहीं भुलाओ कि तुमने उजाड़खण्ड में प्रभु को चिढ़ाया था।  जिस दिन तुम मिस्र से निकले, उसी दिन से आज यहाँ आने तक तुम हमेशा प्रभु के विरुद्ध विद्रोह करते आ रहे हो।</span> <sup>8</sup><span class='v-txt'>होरेब पर्वत पर तुमने प्रभु के कोप को प्रज्वलित किया था और प्रभु तुम पर इतना कुपित हुआ था कि वह तुम्हारा विनाश कर डालने वाला था।</span> <sup>9</sup><span class='v-txt'>मैं पत्थर की पाटियाँ, प्रभु द्वारा तुम्हारे लिए निर्धारित विधान की पाटियाँ प्राप्त करने के लिए पर्वत पर चढ़ गया था।  चालीस दिन और चालीस रात तक मैं बिना अन्न-पानी ग्रहण किये वहाँ पर्वत पर रहा।</span> <sup>10</sup><span class='v-txt'>उस समय प्रभु ने मुझे दो पाटियाँ दीं, जिन पर उसने अपने हाथ से वे सब आज्ञाएँ अंकित की थीं, जिन्हें प्रभु ने तुम्हारे समुदाय को अग्नि में से पर्वत पर सुनाया था।</span> <sup>11</sup><span class='v-txt'>चालीस दिन और चालीस रात बीत जाने पर प्रभु ने मुझे पत्थर की वे दो पाटियाँ, विधान की पाटियाँ दे दीं।</span> <sup>12</sup><span class='v-txt'>प्रभु ने मुझ से कहा, ’यहाँ से जल्दी नीचे जाओ, क्योंकि तुम्हारे उन लोगों ने कुकर्म किया है, जिन्हें तुम मिस्र से निकाल लाये।  वे मेरे बताये पथ से जल्द ही भ्रष्ट हो गये है।  उन्होंने अपने लिए एक प्रतिमा गढ़ी हैं’।</span> <sup>13</sup><span class='v-txt'>प्रभु ने मुझ से यह भी कहा, ’मैंने इन लोगों को देखा है। ये निष्चय ही एक हठधर्मी प्रजा हैं।  मुझे इनका नाश करने दो।</span> <sup>14</sup><span class='v-txt'>मुझे मत रोको मैं इनका नाश करूँगा और पृथ्वी पर से इनका नाम मिटा दूँगा।  मैं तुम्हारे द्वारा एक ऐसा राष्ट्र उत्पन्न करूँगा, जो इन से शक्तिशाली और संख्या में बड़ा होगा।’</span> <sup>15</sup><span class='v-txt'>“इस पर मैं मुड़ कर अपने हाथों में विधान की वे दो पाटियाँ लिये पर्वत सें नीचे उतरा।  अब तक पर्वत अग्नि से प्रज्वलित हो रहा था।</span> <sup>16</sup><span class='v-txt'>तब मैंने अपनी आँखों से देखा कि तुम लोगों ने धातु से बछडे़ की मूर्ति बना कर प्रभु के विरुद्ध पाप किया था। तुम जल्द ही प्रभु के बताये मार्ग से भ्रष्ट हो गये थे।</span> <sup>17</sup><span class='v-txt'>यह देख मैंने उन दोेनों पाटियों को अपने हाथों से पटक दिया था और तुम्हारे देखते ही उनके टुकड़े-टुकड़े कर डाले थे।</span> <sup>18</sup><span class='v-txt'>फिर मै पहले की तरह चालीस दिन और चालीस रात, बिना अन्न-जल ग्रहण किये, प्रभु के विरुद्ध तुम्हारे पापों के कारण पड़ा रहा क्योंकि तुमने वही किया, जो प्रभु की दृष्टि में बुरा है और उसका क्रोध भड़काया।</span> <sup>19</sup><span class='v-txt'>मुझे डर था कि कहीं प्रभु अपने क्रोध के आवेष में तुम्हारा सर्वनाश न कर दे।  परन्तु इस बार भी प्रभु ने मेरी प्रार्थना सुनी।</span> <sup>20</sup><span class='v-txt'>प्रभु हारून पर इतना कुपित हुआ था कि वह उसका भी नाश करने वाला था।  उस बार मैंने हारून के लिए प्रार्थना की थी।</span> <sup>21</sup><span class='v-txt'>फिर मैंने तुम्हारी वह पापमय कृति, वह बछड़ा पकड़ कर अग्नि में जला लिया उसके टुकड़े-टुकड़े कर दिये, उसे रेत कणों की तरह चूर-चूर कर दिया और पर्वत से बहती हुई नदी में बहा दिया।</span> <sup>22</sup><span class='v-txt'>&quot;तबएरा, मस्सा और किब्रोत-हत्तावा के पास भी तुम लोगों ने प्रभु का क्रोध भड़काया।</span> <sup>23</sup><span class='v-txt'>प्रभु ने तुम्हें कादेश-बरनेअ से यह आदेश दे कर भेजा कि उधर जाओ और उस देश को अपने अधिकार में ले लो, जिसे मैंने तुम्हें दे दिया है।  लेकिन तुमने प्रभु, अपने ईश्वर के इस आदेश के विरुद्ध विद्रोह किया।  तुमने उस पर भरोसा नहीं रखा और उसके आदेश का पालन नहीं किया।</span> <sup>24</sup><span class='v-txt'>तुम लोगों से जिस दिन से मेरा परिचय हुआ, उस दिन से तुम प्रभु से विद्रोह करते आ रहे हो।</span> <sup>25</sup><span class='v-txt'>मैं चालीस दिन और चालीस रात मुँह के बल प्रभु के सामने पड़ा रहा, क्योंकि प्रभु ने तुम्हारा विनाश करने को कहा था।</span> <sup>26</sup><span class='v-txt'>उस समय मैंने प्रभु से यह प्रार्थना की, ’प्रभु! ईश्वर! तू अपनी निजी प्रजा का विनाश नहीं कर, जिसका तूने अपने सामर्थ्य द्वारा उद्धार किया और जिसे तू अपने बाहुबल से मिस्र से निकाल लाया।</span> <sup>27</sup><span class='v-txt'>तू इब्राहीम, इसहाक और याकूब को, अपने सेवकों को स्मरण कर।  इस प्रजा की हठधर्मिता, इसके अपराधों और पापों पर ध्यान न दे।</span> <sup>28</sup><span class='v-txt'>उस देश के लोग, जहाँ से तू इन लोगों को निकाल लाया, यह न कहने पायें कि प्रभु इन्हें उस देश में ले जाने में असमर्थ रहा, जिसके लिए उसने इन से प्रतिज्ञा की थी, या वह इन से घृणा करता है, इसीलिए वह इन्हें उजाड़खण्ड़ में मार डालने के लिए ले गया था।</span> <sup>29</sup><span class='v-txt'>वे तो तेरी अपनी प्रजा हैं, जिसे तू सामर्थ्य और बाहुबल से निकाल लाया।’</span> </p>
+        <div class='nav'><a href='005008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>पहला इतिहास ग्रन्थ - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>पहला इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इस्राएल के पुत्र ये थेः रूबेन, सिमओन लेवी और यूदा, इस्साकार और ज़बुलोन,</span> <sup>2</sup><span class='v-txt'>दान, युसुफ़ और बेनयामीन, नफ़्ताली, गाद और आशेर।</span> <sup>3</sup><span class='v-txt'>यूदा के पुत्रः एर, ओनान और षेला।  षूअह नामक एक कनानी स्त्री से उसके ये तीन पुत्र उत्पन्न हुएः यूदा का पहलौठा पुत्र एर प्रभु की दृष्टि में दुष्ट था, इसलिए उसने उसे मर जाने दिया।</span> <sup>4</sup><span class='v-txt'>उसकी बहू तामार से उसके पेरेस और जे़रह उत्पन्न हुए। यूदा के कुल पाँच पुत्र थे।</span> <sup>5</sup><span class='v-txt'>पेरेस के पुत्रः हेस्रोन और हामूल।</span> <sup>6</sup><span class='v-txt'>जेरह के पुत्रः जिम्री, एतान, हेमान, कलकोल और दारा, कुल पाँच।</span> <sup>7</sup><span class='v-txt'>करमी का पुत्र आका था।  प्रभु को अर्पित वस्तुएँ अपनाने के कारण वह इस्राएलियों की विपत्ति का कारण बना।</span> <sup>8</sup><span class='v-txt'>एतान का पुत्र अज़र्या था।</span> <sup>9</sup><span class='v-txt'>हेस्रोन के पुत्र ये थेः यरहमएल, राम और कलूबाय।</span> <sup>10</sup><span class='v-txt'>राम अम्मीनादाब का पिता था।  अम्मीनादाब यूदा के पुत्रों के मुखिया नहशोन का पिता था।</span> <sup>11</sup><span class='v-txt'>नहशोन सलमा का, सलमा बोअज़ का</span> <sup>12</sup><span class='v-txt'>बोअज़ ओबेद का और ओबेद यिशय का पिता था।</span> <sup>13</sup><span class='v-txt'>यिशय का पहला पुत्र एलीआब था, दूसरा अबीनादाब, तीसरा षिमआ,</span> <sup>14</sup><span class='v-txt'>चौथा नतनएल, पाँचवा रद्दय,</span> <sup>15</sup><span class='v-txt'>छठा ओसेम और सातवाँ दाऊद।</span> <sup>16</sup><span class='v-txt'>उनकी बहनें सरूया और अबीगैल थी।  सरूया के तीन पुत्र थेः अबीषय, योआब और असाएल।</span> <sup>17</sup><span class='v-txt'>अबीगैल ने अमासा को जन्म दिया।  अमासा का पिता इसमाएली येतेर था।</span> <sup>18</sup><span class='v-txt'>हेस्रोन के पुत्र कालेब के अपनी पत्नी अजूबा और यरीओत से पुत्र उत्पन्न हुए।  अजूबा के पुत्र ये थे: येषेर, षोबाब और अरदोन।</span> <sup>19</sup><span class='v-txt'>अजूबा की मृत्यु हो गयी और कालेब ने एफ्ऱाता से विवाह किया।  उसने हूर को जन्म दिया।</span> <sup>20</sup><span class='v-txt'>हूर ऊरी का और ऊरी बसलएल का पिता था।</span> <sup>21</sup><span class='v-txt'>बाद में हेस्रोन का गिलआद के पिता माकीर की पुत्री से संसर्ग हुआ।  जब उसने उसके साथ विवाह किया, तो वह साठ वर्ष का था; उसके उस से सगूब उत्पन्न हुआ।</span> <sup>22</sup><span class='v-txt'>सगूब सेईर का पिता था, जिसके गिलआद देश में तेईस नगर थे।</span> <sup>23</sup><span class='v-txt'>पर गषूर और आराम ने होव्वोत-याईर, कनात और उसके गाँव उन से छीन लिये-कुल साठ नगर।  ये सब गिलआद के पिता माकीर के वंशज थे।</span> <sup>24</sup><span class='v-txt'>हेस्रोन की मृत्यु के बाद कालेब का अपने पिता की पत्नी एफ्ऱाता से संसर्ग हुआ और उसके तकोआ के पिता अषहूर का जन्म हुआ।</span> <sup>25</sup><span class='v-txt'>हेस्रोन के पहलौठे बेटे यरहमएल के पुत्रः उसका पहला पुत्र राम, फिर बूना, ओरेन, ओसेम और अहीया।</span> <sup>26</sup><span class='v-txt'>यरहमएल की एक दूसरी पत्नी थी, जिसका नाम अटारा था।  वह ओनाम की माँ थी।</span> <sup>27</sup><span class='v-txt'>यरहमएल के पहलौठे बेटे राम के पुत्रः मास, यामीन और एकेर।</span> <sup>28</sup><span class='v-txt'>ओनाम के पुत्रः शम्मय और यादा।  शम्मय के पुत्रः नादाब और अबीषूर।</span> <sup>29</sup><span class='v-txt'>अबीषूर की पत्नी का नाम अबीहैल था।  उस से अहबान और मोलीद का जन्म हुआ।</span> <sup>30</sup><span class='v-txt'>नादाब के पुत्र: सेलेद और अप्पयीम।  सेलेद सन्तानहीन मरा।</span> <sup>31</sup><span class='v-txt'>अप्पयीम का पुत्र यिशई।  यिशई का पुत्र: शेशान। शेशान का पुत्रः अहलय।</span> <sup>32</sup><span class='v-txt'>शम्मय के भाई यादा के पुत्रः येतेर और योनातान।  येतेर सन्तानहीन मर गया।</span> <sup>33</sup><span class='v-txt'>योनातान के पुत्रः पेलेत और जा़जा़।  यही यरहमएल के वंशज है।</span> <sup>34</sup><span class='v-txt'>शेशान के कोई पुत्र नहीं था, उसके केवल पुत्रियाँ थीं। शेशान के पास यरहा नाम का एक मिस्री सेवक था;</span> <sup>35</sup><span class='v-txt'>इसलिए शेशान ने अपने सेवक यरहा के साथ अपनी पुत्री का विवाह किया।  उस से उसके यहाँ अत्तय उत्पन्न हुआ।</span> <sup>36</sup><span class='v-txt'>अत्तय नातान का पिता था और नातान, ज़ाबाद का।</span> <sup>37</sup><span class='v-txt'>ज़ाबाद एफ़्लाल,का पिता था और एफ़्लाल, ओबेद का।</span> <sup>38</sup><span class='v-txt'>ओबेद येहू का पिता था और येहू, अज़र्या का।</span> <sup>39</sup><span class='v-txt'>अज़र्या हेलेस का पिता था और हेलेस, एलआसा का।</span> <sup>40</sup><span class='v-txt'>एलआसा सिसमय का पिता था और सिसमय, षल्लूम का।</span> <sup>41</sup><span class='v-txt'>षल्लूम यकम्या का बेटा था ओर यकम्या, एलीषामा का।</span> <sup>42</sup><span class='v-txt'>यरहमएल के भाई कालेब के पुत्रः उसका पहलौठा पुत्र मारेषा, जो ज़ीफ़ का पिता था।  मारेषा का पुत्र हेब्रोन।</span> <sup>43</sup><span class='v-txt'>हेब्रोन के पुत्रः कोरह, तप्पुअह, रेकेम और शेमा।</span> <sup>44</sup><span class='v-txt'>शेमा योर्कआम के पिता रहम का पिता था, रेकेम शम्मय का पिता था।</span> <sup>45</sup><span class='v-txt'>शम्मय का पुत्र माओन था और माओन बेत-सूर का पिता था।</span> <sup>46</sup><span class='v-txt'>कालेब की उप-पत्नी एफ़ा ने हारान, मोसा और गाजे़ज़ को जन्म दिया।  हारान गाजे़ज़ का पिता था।</span> <sup>47</sup><span class='v-txt'>यहदाय के पुत्रः रेगेम, योताम, गोशान, पेलेट, एफ़ा और शअफ़।</span> <sup>48</sup><span class='v-txt'>कालेब की उपपत्नी माका ने शेबेर और तिरहना को जन्म दिया।</span> <sup>49</sup><span class='v-txt'>उसने मदमन्ना के पिता शअफ़ को, मकबेना के पिता शवा को और गिबआ के पिता को जन्म दिया।</span> <sup>50</sup><span class='v-txt'>कालेब की पुत्री अक्सा थी।  कालेब के वंशज यही थे। एफ्ऱाता के पहलौठ हूर के पुत्र ये थे: किर्यत-यआरीम का पिता शोबाल,</span> <sup>51</sup><span class='v-txt'>बेथलेहेम का पिता सलमा और बेत-गदेर का पिता हरेफ़।</span> <sup>52</sup><span class='v-txt'>किर्यत-यआरीम के पिता शोबाल के वंशज ये थे: हरोए, मानहतियों का आधा वंश और</span> <sup>53</sup><span class='v-txt'>किर्यत-यआरीम के वंशज यित्री, पूती, शुमाती और मिश्राई।  इन से सोरआई और एश्ताओली वंश उत्पन्न हुए।</span> <sup>54</sup><span class='v-txt'>सलमा के वंशजः बेथलेहेम, नटोफ़ाती लोग, अट्रोल बेत-योआब, मानहतियों का आधा वंश, सोरई।</span> <sup>55</sup><span class='v-txt'>इन से याबेस में रहने वाले सोफ़ियों के वंश उत्पन्न हुए, फिर तिरआती, शिमआती, सूकाती।  सूकाती वे केनी हैं, जो बेत-रेकाब के पिता हम्मत के वंशज है।</span> </p>
+        <div class='nav'><a href='013001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='013003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

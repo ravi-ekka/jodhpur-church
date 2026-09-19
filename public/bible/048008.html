@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मारकुस - अध्याय 8</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मारकुस</h1>
+        <h2>अध्याय 8</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उस समय फिर एक विशाल जन-समूह एकत्र हो गया था और लोगों के पास खाने को कुछ भी नहीं था।  ईसा ने अपने शिष्यों को अपने पास बुला कर कहा,</span> <sup>2</sup><span class='v-txt'>&quot;मुझे इन लोगों पर तरस आता है।  ये तीन दिनों से मेरे साथ रह रहे हैं और इनके पास खाने को कुछ भी नहीं है।</span> <sup>3</sup><span class='v-txt'>यदि मैं इन्हें भूखा ही घर भेजूँ, तो ये रास्ते में मूच्र्छित हो जायेंगे।  इन में कुछ लोग दूर से आये हैं।&quot;</span> <sup>4</sup><span class='v-txt'>उनके शिष्यों ने उत्तर दिया, &quot;इस निर्जन स्थान में इन लोगों को खिलाने के लिए कहाँ से रोटियाँ मिलेंगी?&quot;</span> <sup>5</sup><span class='v-txt'>ईसा ने उन से पूछा, &quot;तुम्हारे पास कितनी रोटियाँ हैं?&quot; उन्होंने कहा, &quot;सात&quot;।</span> <sup>6</sup><span class='v-txt'>ईसा ने लोगों को भूमि पर बैठ जाने का आदेश दिया और वे सात रोटियाँ ले कर धन्यवाद की प्रार्थना पढ़ी, और वे रोटियाँ तोड़-तोड़ कर शिष्यों को देते गये, ताकि वे लोगों को परोसते जायें।  शिष्यों ने ऐसा ही किया।</span> <sup>7</sup><span class='v-txt'>उनके पास कुछ छोटी मछलियाँ भी थीं।  ईसा ने उन पर आशिष की प्रार्थना पढ़ी और उन्हें भी बाँटने का आदेश दिया।</span> <sup>8</sup><span class='v-txt'>लोगों ने खाया और खा कर तृप्त हो गये और बचे हुए टुकड़ों से सात टोकरे भर गये।</span> <sup>9</sup><span class='v-txt'>खाने वालों की संख्या लगभग चार हज़ार थी।  ईसा ने लोगों को विदा कर दिया।</span> <sup>10</sup><span class='v-txt'>वे तुरन्त अपने शिष्यों के साथ नाव पर चढ़े और दलमनूथा प्रान्त पहॅुँचे।</span> <sup>11</sup><span class='v-txt'>फ़रीसी आ कर ईसा से विवाद करने लगे।  उनकी परीक्षा लेने के लिए वे स्वर्ग की ओर का कोई चिह्न माँगते थे।</span> <sup>12</sup><span class='v-txt'>ईसा ने गहरी आह भर कर कहा, &quot;यह पीढ़ी चिह्न क्यों माँगती है?  मैं तुम लोगों से यह कहता हॅू- इस पीढ़ी को कोई भी चिह्न नहीं दिया जायेगा।&quot;</span> <sup>13</sup><span class='v-txt'>इस पर ईसा उन्हें छोड़ कर नाव पर चढ़े और उस पार चले गये।</span> <sup>14</sup><span class='v-txt'>शिष्य रोटियाँ लेना भूल गये थे, और नाव में उनके पास एक ही रोटी थी।</span> <sup>15</sup><span class='v-txt'>उस समय ईसा ने उन्हें यह चेतावनी दी, &quot;सावधान रहो। फ़रीसियों के ख़मीर और हेरोद के ख़मीर से बचते रहो&quot;।</span> <sup>16</sup><span class='v-txt'>इस पर वे आपस में कहने लगे, &quot;हमारे पास रोटियाँ नहीं है, इसलिए यह ऐसा कहते हैं&quot;।</span> <sup>17</sup><span class='v-txt'>ईसा ने यह जान कर उन से कहा, &quot;तुम लोग यह क्यों सोचते हो कि हमारे पास रोटियाँ नहीं है, इसलिए यह ऐसा कहते है?  क्या तुम अब तक नहीं जान सके हो? नही समझ गये हो?  क्या तुम्हारी बुद्धि मारी गयी है?</span> <sup>18</sup><span class='v-txt'>क्या आँखें रहते भी तुम देखते नहीं?  और कान रहते भी तुम सुनते नहीं?  क्या तुम्हें याद नही है-</span> <sup>19</sup><span class='v-txt'>जब मैने उन पाँच हज़ार लोगों के लिए पाँच रोटियाँ तोड़ीं, तो तुमने टूकड़ों के कितने टोकरे भरे थे?&quot;  शिष्यों ने उत्तर दिया, &quot;बारह&quot;।</span> <sup>20</sup><span class='v-txt'>&quot;और जब मैंने चार हज़ार लोगों के लिए सात रोटियाँ तोड़ीं, तो तुमने टुकड़ों के कितने टोकरे भरे थे?&quot;  उन्होंने उत्तर दिया, &quot;सात&quot;।</span> <sup>21</sup><span class='v-txt'>इस पर ईसा ने उन से कहा, &quot;क्या तुम लोग अब भी नहीं समझ सके?&quot;</span> <sup>22</sup><span class='v-txt'>वे बेथसाइदा पहुँचे।  लोग एक अन्धे को ईसा के पास ले आये और उन से यह प्रार्थना की कि आप उस पर हाथ रख दीजिए।</span> <sup>23</sup><span class='v-txt'>वे अन्धे का हाथ पकड़ कर उसे गाँव के बाहर ले गये। वहाँ उन्होंने उसकी आँखों पर अपना थूक लगा कर और उस पर हाथ रख कर उस से पूछा, &quot;क्या तुम्हें कुछ दिखाई दे रहा है?&quot;</span> <sup>24</sup><span class='v-txt'>अन्धा कुछ-कुछ देखने लगा था, इसलिए उसने उत्तर दिया, &quot;मैं लोगों को देखता हूँ।  वे पेड़ों-जैसे लगते, लेकिन चलते हैं।&quot;</span> <sup>25</sup><span class='v-txt'>तब उन्होंने फिर अन्धे को आँखों पर हाथ रख दिये और वह अच्छी तरह देखने लगा।  वह चंगा हो गया और दूर तक सब कुछ साफ़-साफ़ देख सकता था।</span> <sup>26</sup><span class='v-txt'>ईसा ने यह कहते हुए उसे घर भेजा, &quot;इस गाँव में पैर मत रखना&quot;।</span> <sup>27</sup><span class='v-txt'>ईसा अपने शिष्यों के साथ कैसरिया फि़लिपी के गाँवों की ओर गये।  रास्ते में उन्होंने अपने शिष्यों से पूछा, &quot;मैं कौन हूँ, इस विषय में लोग क्या कहते हैं?&quot;</span> <sup>28</sup><span class='v-txt'>उन्होंने उत्तर दिया, &quot;योहन बपतिस्ता; कुछ लोग कहते हैं- एलियस, और कुछ लोग कहते हैं- नबियों में से कोई&quot;।</span> <sup>29</sup><span class='v-txt'>इस पर ईसा ने पूछा, &quot;और तुम क्या कहते हो कि मैं कौन हूँ?&quot; पेत्रुस ने उत्तर दिया, &quot;आप मसीह हैं&quot;।</span> <sup>30</sup><span class='v-txt'>इस पर उन्होंने अपने शिष्यों को कड़ी चेतावनी दी कि तुम लोग मेरे विषय में किसी को भी नहीं बताना।</span> <sup>31</sup><span class='v-txt'>उस समय से ईसा अपने शिष्यों को स्पष्ट शब्दों में यह समझाने लगे कि मानव पुत्र को बहुत दुःख उठाना होगा; नेताओं, महायाजकों और शास्त्रियों द्वारा ठुकराया जाना, मार डाला जाना और तीन दिन के बाद जी उठना होगा।</span> <sup>32</sup><span class='v-txt'>पेत्रुस ईसा को अलग ले जा कर फटकारने लगा,</span> <sup>33</sup><span class='v-txt'>किन्तु ईसा ने मुड़ कर अपने शिष्यों की ओर देखा, और पेत्रुस को डाँटते हुए कहा, &quot;हट जाओ, शैतान!  तुम ईश्वर की बातें नहीं, बल्कि मनुष्यों की बातें सोचते हो&quot;।</span> <sup>34</sup><span class='v-txt'>ईसा ने अपने शिष्यों के अतिरिक्त अन्य लोगों को भी अपने पास बुला कर कहा, &quot;जो मेरा अनुसरण करना चाहता है, वह आत्मत्याग करे और अपना क्रूस उठा कर मेरे पीछे हो ले।</span> <sup>35</sup><span class='v-txt'>क्योंकि जो अपना जीवन सुरक्षित रखना चाहता है, वह उसे खो देगा और जो मेरे तथा सुसमाचार के कारण अपना जीवन खो देता है, वह उसे सुरक्षित रखेगा।</span> <sup>36</sup><span class='v-txt'>मनुष्य को इससे क्या लाभ यदि वह सारा संसार तो प्राप्त कर ले, लेकिन अपना जीवन ही गँवा दे?</span> <sup>37</sup><span class='v-txt'>अपने जीवन के बदले मनुष्य दे ही क्या सकता है?</span> <sup>38</sup><span class='v-txt'>जो इस अधर्मी और पापी पीढ़ी के सामने मुझे तथा मेरी शिक्षा को स्वीकार करने में लज्जा अनुभव करेगा, मानव पुत्र भी उसे स्वीकार करने में लज्जा अनुभव करेगा, जब वह स्वर्गदूतों के साथ अपने पिता की महिमा-सहित आयेगा।&quot;</span> </p>
+        <div class='nav'><a href='048007.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='048009.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

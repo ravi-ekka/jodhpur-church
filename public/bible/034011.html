@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>दानिएल - अध्याय 11</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>दानिएल</h1>
+        <h2>अध्याय 11</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>और मेदिया के राजा दारा के पहले वर्ष से मैं उसके पक्ष में लड़ता और उसकी रक्षा करता रहा।“</span> <sup>2</sup><span class='v-txt'>“फ़ारस में तीन और राजाओं का उदय होगा तथा चैथा दूसरों से बहुत अधिक धनवान् होगा।  जब वह अपनी धन-सम्पत्ति के द्वारा अपने राज्य का विस्तार करेगा, तब वह यूनान राज्य के विरुद्ध सब को भड़कायेगा।</span> <sup>3</sup><span class='v-txt'>उसके बाद एक महापराक्रमी राजा का उदय होगा।  वह एक विशाल राज्य की स्थापना कर अपनी इच्छा के अनुसार उस पर शासन करेगा।</span> <sup>4</sup><span class='v-txt'>किन्तु ज्यों ही उस राज्य की स्थापना की जायेगी, वह चारों दिशाओं में छिन्न-भिन्न हो जायेगा।  किन्तु वह उसके वंशजों को नहीं मिलेगा।  वे उतने शक्तिशाली नहीं होंगे, जितना वह था; क्योंकि उसका राज्य नष्ट हो जायेगा और अपनों के साथ ही दूसरों के बीच बँट जायेगा।</span> <sup>5</sup><span class='v-txt'>“इसके बाद दक्षिण का राजा शक्तिशाली हो उठेगा; किन्तु उसके सामन्तों में एक उस से भी अधिक शक्तिशाली बन जायेगा और उस से भी महान् राज्य प्राप्त करेगा।</span> <sup>6</sup><span class='v-txt'>कुछ वर्षों के बाद दोनों में सन्धि हो जायेगी और शान्ति स्थापित करने के लिए उत्तर के राजा के घर में दक्षिण के राजा की पुत्री का विवाह हो जायेगा, परन्तु पुत्री का प्रभाव बहुत दिन बना नहीं रहेगा और उत्तर का राजवंश नहीं टिक पायेगा।  पुत्री, उसकी सेविकाएँ, उसका पुत्र और उसका पति, सब मौत के घाट उतार दिये जायेंगे।</span> <sup>7</sup><span class='v-txt'>“कुछ समय बाद उसके मूल में से उत्तर के राजा के स्थान में एक टहनी फूटेगी।  वह सेना पर हमला कर उत्तर के राजा के गढ़ में प्रवेश करेगा और विजयी हो कर उस पर अधिकार कर लेगा।</span> <sup>8</sup><span class='v-txt'>वह उसकी ढाली मूर्तियाँ और उसके बहुमूल्य सोने और चाँदी के पात्र लूट कर मिस्र ले जायेगा।  इसके बाद वह कुछ वर्षों तक उत्तर के राजा पर आक्रमण करना छोड़ देगा।</span> <sup>9</sup><span class='v-txt'>तब उत्तर का राजा दक्षिण के राज्य को पारास्त करेगा, किन्तु अन्त में अपने प्रदेश की ओर लौट जायेगा।</span> <sup>10</sup><span class='v-txt'>फिर उसी के पुत्र युद्ध करेंगे और बड़ी भारी सेना एकत्रित कर बाढ़ की तरह आगे बढ़ेंगे और उत्तर के राजा के गढ़ तक युद्ध करते चले जायेंगे।</span> <sup>11</sup><span class='v-txt'>इस पर क्रोधित हो कर दक्षिण का राजा आगे बढ़ कर उत्तर के राजा से लड़ेगा।  वह भी एक बहुत बड़ी सेना इकट्ठी कर उसका सामना करेगा, किन्तु निष्फल रहेगा।</span> <sup>12</sup><span class='v-txt'>जब उत्तर की सेना दक्षिण के राजा के अधिकार में आयेगी, तो वह घमण्ड से फूल उठेगा और लाखों की संख्या में उनका वध करेगा।  फिर भी उसकी विजय स्थायी नहीं रहेगी।</span> <sup>13</sup><span class='v-txt'>उत्तर का राजा एक बार और, पहले से भी अधिक बड़ी सेना एकत्रित करेगा और कुछ वर्षों के बाद एक विशाल सेना और अपार युद्ध-सामग्री ले कर आगे बढेगा।</span> <sup>14</sup><span class='v-txt'>&quot;उस समय दक्षिण के राजा के विरुद्ध अनेकानेक लोक विद्रोह करेंगे और तुम्हारी जाति के कुछ हिंसक लोक एक दिव्य दृश्य को पूरा करने के लिए सिर उठायेंगे, किंतु वे भी निष्फल रहेंगे।</span> <sup>15</sup><span class='v-txt'>इसके बाद उत्तर का राजा आगे बढेगा और सुदृढ़ नगर के चारों ओर घेरा डाल कर उसे जीत लेगा।  दक्षिण की सेना, उसके सर्वोत्तम योद्धा भी उसके सामने नहीं टिक सकेंगे।</span> <sup>16</sup><span class='v-txt'>इसलिए आक्रमण करने वाला जो चाहेगा, वह कर लेगा। उसे कोई नहीं रोक सकेगा।  वह सम्पन्न देश में सुस्थिर हो कर सब कुछ अपने अधिकार में कर लेगा।</span> <sup>17</sup><span class='v-txt'>उसके बाद वह समस्त दक्षिण के राज्य को अधीन कर लेने का विचार करेगा, किन्तु वह उस से संधि स्थापित करेगा और दक्षिण के राज्य को पराधीन बनाने के विचार से उसकी पुत्री से विवाह कर लेगा।  परन्तु इस से भी कोई सफलता नहीं मिलगी और न उसे कुछ लाभ होगा।</span> <sup>18</sup><span class='v-txt'>इसके बाद वह तटवर्ती प्रान्तों पर आक्रमण करेगा; उन में वह बहुतों को जीत लेगा, किन्तु एक सेनाध्यक्ष उसके घमण्ड को चूर कर देगा, क्योंकि वह उसे मांगी हुई क्षतिपूर्ति देने में असमर्थ होगा।</span> <sup>19</sup><span class='v-txt'>इसके पश्चात् वह फिर अपने प्रदेश के गढ़ों की ओर मुडेगा, लेकिन वह ठोकर खा कर इस तरह गिर जायेगा कि उसका नामोनिशान नहीं रहेगा।</span> <sup>20</sup><span class='v-txt'>उसके स्थान पर फिर एक और राजा आयेगा, जो देश का वैभव लूटने के विचार से कर उगाहने के लिए एक धूर्त व्यक्ति भेज देगा।  किन्तु कुछ ही दिन उसका विनाश हो जायेगा , परन्तु न तो लोगों के सामने और न युद्ध में।</span> <sup>21</sup><span class='v-txt'>&quot;उसके स्थान पर एक ऐसे क्षुद्र व्यक्ति का उदय होगा, जो राजकीय पद के योग्य नहीं होगा।  वह अचानक षड्यंत्र और कुटिलता के द्वारा राज्य प्राप्त करेगा।</span> <sup>22</sup><span class='v-txt'>वह आगे बढ़ते-बढ़ते सब सैनिक शक्तियाँ छिन्न-भिन्न कर देगा और विधान का प्रधान भी परास्त हो जायेगा।</span> <sup>23</sup><span class='v-txt'>वह कपटपूर्ण सन्धियाँ करेगा और थोड़े ही लोगों की सहायता से ही विजयी हो जायेगा।</span> <sup>24</sup><span class='v-txt'>वह बिना किसी पूर्वसूचना के सब से संपन्न क्षेत्रों में प्रवेश कर ऐसे दुष्कर्म करेगा, जो उसके पूर्वजों ने भी कभी न किये थे।  वह लूट का माल, धन और भूमि अपने अनुयायियों के बीच बांट देगा और कुछ समय तक गढ़ो के विरुद्ध षडयंत्र रचेगा।</span> <sup>25</sup><span class='v-txt'>&quot;वह अपना समस्त बल और साहस बटोर कर दक्षिण के राजा पर विशाल सेना के साथ आक्रमण कर देगा।  दक्षिण का राजा बहुत विशाल और शक्तिशाली सेना के साथ युद्ध करेगा, किन्तु वह विजय नहीं हागा, क्योंकि उसके विरुद्ध षडयंत्र रचे जायेंगे।</span> <sup>26</sup><span class='v-txt'>वे लोग भी, जो उसके सहभोजी हैं, उसके पतन के कारण बन जायेंगे।  उसकी सेना तितर-बितर हो जायेगी और बहुत से लोगों की हत्या की जायेगी।</span> <sup>27</sup><span class='v-txt'>दोनों राजा समान रूप से ही कुकर्म करने पर उतारू हो जायेंगे, एक ही मेज पर भोजन करते हुए भी दोनों झूठ बोलेंगे; किन्तु यह सब निष्फल हो जायेगा, क्योंकि तब तक निर्धारित अवधि पूरी नहीं होगी।</span> <sup>28</sup><span class='v-txt'>वह बहुत युद्ध-सामग्री के साथ अपने देश लौटेगा, किन्तु उसका मन पवित्र विधान के विरुद्ध होगा।  अपनी इच्छा के अनुसार काम कर लेने पर वह अपने देश लौट जायेगा।</span> <sup>29</sup><span class='v-txt'>&quot;निर्धारित समय पर वह फिर दक्षिण की ओर लौट कर उसके विरुद्ध मोरचाबन्दी करेगा, किन्तु वह पहले की तरह सफल नहीं होगा;</span> <sup>30</sup><span class='v-txt'>क्योंकि कितीम से आये जहाज उस पर आक्रमण करेंगे और वह डर कर लौट जायेगा।  लौटते समय वह पवित्र विधान पर क्रोध बरसायेगा।  लौटने पर उन लोगों पर विशेष ध्यान देगा,  जिन्होंने पवित्र विधान को त्याग दिया है।</span> <sup>31</sup><span class='v-txt'>उसके द्वारा भेजे गये सैनिक दल पवित्र मंदिर को और गढ़ को दूषित कर देंगे और दैनिक होम-बलियाँ बन्द कर देंगे।  वे वीभत्स मूर्तियाँ स्थापित करेंगे औरे उसे उजाड़ बना डालेंगे।</span> <sup>32</sup><span class='v-txt'>वह विधान भंग करने वाले लोगों को फुसला कर अपने साथ कर लेगा, किन्तु जो तुम अपने ईश्वर के अटल भक्त बने रहेंगे, वे प्रतिकार करेंगे।</span> <sup>33</sup><span class='v-txt'>देश के बुद्धिमान व्यक्ति बहुत-से लोगों को अच्छा परामर्श देंगे, यद्यपि उन को कुछ समय तक तलवार, आग, बन्दीगृह और लूट का शिकार होना पडेगा।</span> <sup>34</sup><span class='v-txt'>अपनी गिरी हुई दशा में उन को कुछ सहायता मिल जायेगी, यद्यपि षड्यंत्र रचने वाले बहुत-से लोग उन से जा मिलेंगे।</span> <sup>35</sup><span class='v-txt'>इन नेताओं में से कुछ को बहुत कष्ट सहना पडेगा, जिससे वे शुद्ध हो कर अग्नि-परीक्षा में खरे उतरें क्योंकि अब तक निर्धारित अवधि पूरी नहीं हुई है।</span> <sup>36</sup><span class='v-txt'>&quot;वह राजा मनमाना आचरण करेगा और प्रत्येक देवता से अपने आप को ऊपर समझते हुए प्रभु-ईश्वर के विरुद्ध बड़ी-बड़ी बातें बोलेगा।  जब तक कोप का घड़ा भर न जाये, तब तक वह फलता-फूलता रहेगा; क्योंकि जो पूर्वनिर्धारित है, वह हो कर रहेगा।</span> <sup>37</sup><span class='v-txt'>वह अपने पूर्वजों के देवताओं की और अपनी स्त्रियों के इष्टदेवता की भी उपेक्षा करेगा।  वह किसी अन्य देवता की भी परवाह नहीं करेगा, क्योंकि वह अपने को सब से ऊपर समझेगा।</span> <sup>38</sup><span class='v-txt'>इनके बदले वह गढ़ों के देवता की पूजा करेगा, जिसे उसके पूर्वज नहीं जानते थे और जिसकी पूजा वह सोने, चाँदी, रत्नों और बहुमूल्य उपहारों द्वारा करेगा।</span> <sup>39</sup><span class='v-txt'>पराये देवता की सहयता द्वारा वह शक्तिशाली गढ़ों को जीत लेगा और जो उसे मान्यता देंगे, उन्हें सम्मानित करेगा।  वह उन्हें बहुत-से लोगों का शासक बनायेगा और उन्हें पुरस्कार के रूप में भूमि प्रदान करेगा।</span> <sup>40</sup><span class='v-txt'>अंतिम समय में दक्षिण का राजा उसके सामने शक्तिशाली हो उठेगा और उत्तर का राजा रथों, घुडसवारों और बहुत-से जहाजों के साथ उस पर तूफान ही तरह टूट पडेगा।  वह राष्ट्रों पर आक्रमण कर उन पर हावी हो जायेगा</span> <sup>41</sup><span class='v-txt'>और वैभावशाली देश में आयेगा।  लाखों आदमी मौत के घाट उतारे जायेंगे, किन्तु उसके अधिकार से एदोम और मोआब और अम्मोनियों का मुख्य भाग मुक्त रहेंगे।</span> <sup>42</sup><span class='v-txt'>वह राष्ट्रों के विरुद्ध अपने हाथ बढायेगा और मिस्र देश भी उस से नहीं बच पायेगा।</span> <sup>43</sup><span class='v-txt'>वह सोने-चाँदी के कोषों और मिस्र की धन-सम्पति पर अधिकार कर लेगा।  लीबियायी और कूशी भी उसके साथ हो जायेंगे।</span> <sup>44</sup><span class='v-txt'>किन्तु पूर्व और उत्तर से प्राप्त अफवाहों से वह भय-भीत हो उठेगा।  तब वह आगबबूला हो कर बहुत-से लोगों का विनाश करने और उन को मिटा दने के लिए वहाँ जायेगा।</span> <sup>45</sup><span class='v-txt'>वह समुद्र और महिमामय पवित्र पर्वत के बीच अपने राजकीय तम्बू गाडेगा।  तब भी उसका अन्त हो जायेगा और उसकी सहायता कोई नहीं करेगा।</span> </p>
+        <div class='nav'><a href='034010.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='034012.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

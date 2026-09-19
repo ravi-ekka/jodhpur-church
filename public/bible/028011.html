@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 11</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 11</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रज्ञा दीन का सिर ऊँचा करती और उसे शासकों के बीच बैठाती है।</span> <sup>2</sup><span class='v-txt'>सौन्दर्य के कारण किसी की प्रशंसा मत करो और रूप-रंग के कारण किसी की उपेक्षा मत करो।</span> <sup>3</sup><span class='v-txt'>पंख वाले जीवों में मधुमक्खी छोटी है, किन्तु वह जो उत्पन्न करती है, वह सब से मधुर है।</span> <sup>4</sup><span class='v-txt'>अपने वस्त्रों पर गौरव मत करो और सम्मान मिलने पर घमण्डी मत बनो; क्योंकि प्रभु के कार्य ही प्रशंसनीय हैं, यद्यपि वे मनुष्य से छिपे रहते हैं।</span> <sup>5</sup><span class='v-txt'>कई तानाशाहों को भूमि पर बैठ जाना पड़ा और जिसका कोई ध्यान नहीं करता था, उसने किरीट धारण किया।</span> <sup>6</sup><span class='v-txt'>कई शासकों को बहुत अपमानित किया गया और सुप्रसिद्ध व्यक्तियो को शत्रुओें के हवाले कर दिया गया है।</span> <sup>7</sup><span class='v-txt'>जानकारी के अभाव में किसी को दोष मत दो; सोच-विचार करने के बाद ही किसी को डाँटो।</span> <sup>8</sup><span class='v-txt'>सुनने के बाद ही उत्तर दो और बोलने वाले को मत टोको।</span> <sup>9</sup><span class='v-txt'>जो मामला तुम से सम्बन्ध नहीं रखता, उसके विषय में झगड़ा मत करो और दुष्टों के विवाद में मत पड़ो।</span> <sup>10</sup><span class='v-txt'>पुत्र! बहुत बातों के फेर में मत पड़ो: ऐसा करने पर तुम निर्दोष नहीं रहोगे।  जिसका पीछा करोगे, उसे नहीं पकड़ पाओगे और जिस से भाग जाओगे, उस से नहीं बचोगे।</span> <sup>11</sup><span class='v-txt'>कुछ लोग परिश्रम और संघर्ष करते हुए दौड़ते हैं, किन्तु तब भी पिछड़ जाते हैं।</span> <sup>12</sup><span class='v-txt'>कुछ लोग कमजोर और निस्सहाय, साधनहीन और दरिद्र हैं, किन्तु प्रभु की कृपादृष्टि उन्हें प्राप्त है और वह उन्हें उनकी दयनीय दशा से ऊपर उठाता है।</span> <sup>13</sup><span class='v-txt'>वह उनका सिर ऊँचा करता और इस पर बहुतों को आश्चर्य होता है।</span> <sup>14</sup><span class='v-txt'>दुःख और सुख, जीवन और मृत्यु गरीबी और अमीरी- यह सब कुछ प्रभु के हाथ है।</span> <sup>15</sup><span class='v-txt'>प्रज्ञा, अनुशासन, संहिता का ज्ञान, भा्रतृप्रेम और परोपकार का मार्ग यह सब प्रभु का वरदान है।</span> <sup>16</sup><span class='v-txt'>भ्रम और अन्धकार पापियों का भाग्य है।  जो बुराई को प्यार करते है, वे उसे बुढ़ापे तक नहीं छोड़ते।</span> <sup>17</sup><span class='v-txt'>भक्तों को प्रभु के वरदान मिलते हैं; उसकी कृपादृष्टि उनका सदा पथप्रदर्शन करेगी।</span> <sup>18</sup><span class='v-txt'>कुछ लोग परिश्रम और मितव्यय से धनी बनते हैं, किन्तु अन्त में उनका यह भाग्य होगा:</span> <sup>19</sup><span class='v-txt'>वे कहेंगे, &quot;मुझे शान्ति प्राप्त हो गयी है।  अब मैं अपनी सम्पत्ति का उपभोग करूँगा&quot;;</span> <sup>20</sup><span class='v-txt'>जब कि वे नहीं जानते कि उनकी घड़ी कब आयेगी।  वे मर जायेंगे और अपनी सम्पत्ति दूसरों के लिए छोड़ देंगे।</span> <sup>21</sup><span class='v-txt'>कर्तव्यपालन में दृढ़ बने रहो और बुढ़ापे तक अपना काम करते जाओ।</span> <sup>22</sup><span class='v-txt'>पापी के कर्मो पर आश्चर्य पत करो; प्रभु पर भरोसा रखते हुए अपना काम करते जाओ ;</span> <sup>23</sup><span class='v-txt'>क्योंकि प्रभु सुगमता से किसी दरिद्र को अचानक धनी बना सकता है।</span> <sup>24</sup><span class='v-txt'>प्रभु का आशीर्वाद धर्मी का पुरस्कार है; उसका आशीर्वाद क्षण भर में फलता है।</span> <sup>25</sup><span class='v-txt'>यह मत कहो, &quot;मुझे और क्या चाहिए?  मुझे और कौन सुख मिल सकता है?&quot;</span> <sup>26</sup><span class='v-txt'>यह मत कहो, &quot;मुझे किसी बात की कमी नहीं, भविष्य में मुझ पर कौन विपत्ति आ सकती है?&quot;</span> <sup>27</sup><span class='v-txt'>सुख के दिनों में दुःख और दुःख के दिनों में सुख भुलाया जाता है।</span> <sup>28</sup><span class='v-txt'>प्रभु आसानी से मृत्यु के दिन मनुष्य को उसके समस्त कर्मो का फल दे सकता है।</span> <sup>29</sup><span class='v-txt'>घड़ी भर का दुःख समृद्धि को भुला देता है; मनुष्य का अन्त उसके कर्म प्रकट करता है।</span> <sup>30</sup><span class='v-txt'>किसी को मृत्यु के पूर्व सौभाग्यशाली मत कहो; मृत्यु के समय ही मनुष्य को पहचाना जाता है।</span> <sup>31</sup><span class='v-txt'>हर किसी को अपने घर में मत आने दो; क्योंकि कपटी मनुष्य के बहुत-से जाल होते हैं।</span> <sup>32</sup><span class='v-txt'>अहंकारी का हृदय पिंजड़े में बन्द तीतर के सदृश है।  वह गुप्तचर की तरह तुम्हारे पतन की ताक में रहता है।</span> <sup>33</sup><span class='v-txt'>चुगलखोर अच्छाई को बुराई में बदल देता है।  ओैर अच्छी-से-अच्छी बातों में भी दोष निकालता है।</span> <sup>34</sup><span class='v-txt'>एक चिनगारी कोयले के ढेर में आग लगा सकती है। पापी रक्तपात की ताक में रहता है।</span> <sup>35</sup><span class='v-txt'>दुष्ट से सावधान रहो, वह बुराई ही सोचता है; वह सदा के लिए तुम पर कलंक लगा सकता है।</span> <sup>36</sup><span class='v-txt'>यदि परदेशी को अपने यहाँ ठहराओगे, तो वह तुम को परेशानी में डालेगा और तुम्हारे अपनों से विमुख करेगा।</span> </p>
+        <div class='nav'><a href='028010.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028012.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

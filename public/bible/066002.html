@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>याकूब - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>याकूब</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>भाइयो! आप लोग हमारे महिमान्वित प्रभु ईसा मसीह में विश्वास करते हैं, इसलिए भेदभाव और चापलूसी से दूर रहें।</span> <sup>2</sup><span class='v-txt'>मान लें कि आप लोगों की सभा में सोने की अंगूठी और कीमती वस्त्र पहने कोई व्यक्ति प्रवेश करता है और साथ ही फटे-पुराने कपड़े पहने कोई कंगाल।</span> <sup>3</sup><span class='v-txt'>यदि आप कीमती वस्त्र पहने व्यक्ति का विशेष ध्यान रख कर उस से कहें- &quot;आप यहाँ इस आसन पर विराजिए&quot; और कंगाल से कहें- &quot;तुम वहाँ खड़ रहो&quot; या &quot;मेरे पांवदान के पास बैठ जाओ&quot;।</span> <sup>4</sup><span class='v-txt'>तो क्या आपने अपने मन में भेदभाव नहीं आने दिया और गलत विचार के अनुसार निर्णय नहीं दिया।</span> <sup>5</sup><span class='v-txt'>प्यारे भाइयो! सुन लें।  क्या ईश्वर ने उन लोगों को नहीं चुना है, जो संसार की दृष्टि में दरिद्र हैं, जिससे वे विश्वास के धनी हो जायें और उस राज्य के उत्तराधिकारी बनें, जिसे असने अपने भक्तों को प्रदान करने की प्रतिज्ञा की है?</span> <sup>6</sup><span class='v-txt'>तब भी आपने दरिद्र का तिरस्कार किया है।  क्या धनी आप लोगों का शोषण नहीं करते और आप को अदालतों में घसीट कर नहीं ले जाते?</span> <sup>7</sup><span class='v-txt'>क्या वे उस सुन्दर नाम की निन्दा नहीं करते, जिस से आप पुकारे जाते हैं?</span> <sup>8</sup><span class='v-txt'>धर्मग्रन्थ कहता है- तुम अपने पड़ोसी को अपने समान प्यार करो।  यदि आप इसके अनुसार सब से बड़ी आज्ञा पूरी करते हैं, तो अच्छा करते हैं।</span> <sup>9</sup><span class='v-txt'>किन्तु यदि आप पक्षपात करते हैं, तो पाप करते हैं और संहिता के अनुसार दोषी हैं।</span> <sup>10</sup><span class='v-txt'>यदि कोई पूरी संहिता का पालन करता है, किन्तु उसकी एक धारा का ही उल्लंघन करता है तो वह समस्त संहिता के प्रति अपराध करता है;</span> <sup>11</sup><span class='v-txt'>क्योंकि जिसने कहा- व्यभिचार मत करो, उसने यह भी कहा -हत्या मत करो, इसलिए यदि आप व्यभिचार नहीं करते, किन्तु हत्या करते हैं, तो आप संहिता का उल्लंघन करते हैं।</span> <sup>12</sup><span class='v-txt'>आपकी बातचीत और आपका आचरण उन लोगों के सदृश हो, जिनका न्याया स्वतन्त्रता प्रदान करने वाली संहिता के अनुसार किया जायेगा।</span> <sup>13</sup><span class='v-txt'>जिसने दया नहीं दिखायी है, उसके साथ दया नहीं की जायेगी; किन्तु दया न्याय पर विजय पाती है।</span> <sup>14</sup><span class='v-txt'>भाइयो! यदि कोई यह कहता है कि मैं विश्वास करता हूँ, किन्तु उसके अनुसार आचरण नहीं करता, तो इस से क्या लाभ?  क्या विश्वास ही उसका उद्धार कर सकता है?</span> <sup>15</sup><span class='v-txt'>मान लीजिए कि किसी भाई या बहन के पास न पहनने के लिए कपड़े हों और न रोज-रोज खाने की चीजे़ं।</span> <sup>16</sup><span class='v-txt'>यदि आप लोगों में कोई उन से कहे, &quot;खुशी से जाइए, गरम-गरम कपड़े पहनिए और भर पेट खाइए&quot;, किन्तु वह उन्हें शरीर के लिए ज़रूरी चीजें नहीं दे, तो इस से क्या लाभ?</span> <sup>17</sup><span class='v-txt'>इसी तरह कर्मों के अभाव में विश्वास पूर्ण रूप से निर्जीव होता है।</span> <sup>18</sup><span class='v-txt'>और ऐसे मनुष्य से कोई कह सकता है, &quot;तुम विश्वास करते हो, किन्तु मैं उसके अनुसार आचरण करता हूँ।  मुझे अपना विश्वास दिखाओ, जिस पर तुम नहीं चलते और मैं अपने आचरण द्वारा तुम्हें अपने विश्वास का प्रमाण दूँगा।&quot;</span> <sup>19</sup><span class='v-txt'>तुम विश्वास करते हो कि केवल एक ईश्वर है।  अच्छा करते हो।  दुष्ट आत्मा भी ऐसा विश्वास करते हैं, किन्तु काँपते रहते हैं</span> <sup>20</sup><span class='v-txt'>मूर्ख! क्या तुम इसका प्रमाण चाहते हो कि कर्मों के अभाव में विश्वास व्यर्थ है?</span> <sup>21</sup><span class='v-txt'>क्या हमारे पिता इब्राहीम अपने कर्मों के कारण धार्मिक नहीं माने गये, जब उन्होंने वेदी पर अपने पुत्र इसहाक को अर्पित किया?</span> <sup>22</sup><span class='v-txt'>तुम देखते हो कि उनका विश्वास क्रियाशील था और उनके कर्मों द्वारा ही पूर्णतः प्राप्त कर सका।</span> <sup>23</sup><span class='v-txt'>इस प्रकार धर्मग्रन्थ का यह कथन पूरा हुआ- इब्राहीम ने ईश्वर में विश्वास किया और इसी से वह धार्मिक माने गये और ईश्वर के मित्र कहलाये।</span> <sup>24</sup><span class='v-txt'>आप लोग देखते हैं कि मनुष्य केवल विश्वास से नहीं, बल्कि कर्मों से धार्मिक बनता है।</span> <sup>25</sup><span class='v-txt'>इसी प्रकार वेश्या रहाब अपने कर्मों से धार्मिक बनी, क्योंकि उसने अपने घर में दूतों का स्वागत किया और उन्हें दूसरे रास्ते से विदा किया।</span> <sup>26</sup><span class='v-txt'>जिस तरह आत्मा के बिना शरीर निर्जीव है, उसी तरह कर्मों के अभाव में विश्वास निर्जीव है।</span> </p>
+        <div class='nav'><a href='066001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='066003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

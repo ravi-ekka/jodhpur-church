@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>राजाओं का पहला ग्रन्थ - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>राजाओं का पहला ग्रन्थ</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब दाऊद के मरने का समय निकट आया, तो उसने अपने पुत्र सुलेमान को ये अनुदेश दिये,</span> <sup>2</sup><span class='v-txt'>&quot;मैं भी दूसरे मनुष्यों की तरह मिट्टी में मिलने जा रहा हूँ।  धीरज धरो और अपने को पुरुष प्रमाणित करो।</span> <sup>3</sup><span class='v-txt'>तुम अपने प्रभु-ईश्वर के प्रति अपना कर्तव्य पूरा करो।  उसके बताये हुए मार्ग पर चलो; उसकी विधियों, आदेशों, आज्ञाओं और नियमों का पालन करो, जेसा कि मूसा की संहिता में लिखा हुआ है।  तब तुम अपने सब कार्यों और उद्योगों में सफलता प्राप्त करोगे और</span> <sup>4</sup><span class='v-txt'>मुझे दी गयी प्रभु की यह प्रतिज्ञा पूरी हो जायेगी: ‘यदि तुम्हारे पुत्र ईमानदार हो कर मेरे सामने सारे हृदय और सारी आत्मा से सन्मार्ग पर चलते रहेंगे, तो इस्राएल के सिंहासन पर सदा ही तुम्हारा कोई वंशज विराजमान होगा।’</span> <sup>5</sup><span class='v-txt'>&quot;तुम जानते हो कि सरूया के पुत्र योआब ने मेरे साथ क्या किया।  उसने इस्राएल के दोनों सेनाध्यक्ष नेर के पुत्र अबनेर और येतेर के पुत्र अमासा के साथ क्या किया।  उसने उनका वध किया और इस प्रकार उसने युद्ध के समय बहाये रक्त का प्रतिशोध शान्ति के समय लिया और  निर्दोष रक्त बहा कर उस से अपना कमरबन्द तथा अपने पैरों के जूते दूषित किये।</span> <sup>6</sup><span class='v-txt'>तुम अपने विवेक से उसके साथ व्यवहार करो, किन्तु उसे दण्ड दिये बिना अधोलोक नहीं जाने दो।</span> <sup>7</sup><span class='v-txt'>गिलआदी बरज़िल्लय के पुत्रों पर दया करो।  वे उन लोगों के साथ रहें, जो तुम्हारी मेज़ पर भोजन करेंगे; क्योंकि जब मुझे तुम्हारे भाई अबसालोम के सामने से भागना पड़ा था, तो उन्होंने मेरे प्रति स्वामी भक्ति दिखायी।</span> <sup>8</sup><span class='v-txt'>तुम्हारे यहाँ गेरा का पुत्र शिमई भी है, जो बेनयामीन कुल के बहूरीम का निवासी है।  जब मै महनयीम जा रहा था, तब उसने मुझे अभिशाप दिया था; परन्तु जब वह यर्दन के पास मुझ से मिलने आया था, तब मैंने प्रभु की शपथ खा कर उसे यह वचन दिया था कि मैं उसे तलवार  से नहीं मारूँगा।</span> <sup>9</sup><span class='v-txt'>अब तुम उसे निर्दोष मत समझो।  तुम अपने विवेक के अनुसार उसके साथ व्यवहार करो।  उसके पके बालों को उसके रक्त से रंजित कर उसे अधोलोक उतरवाओ।&quot;</span> <sup>10</sup><span class='v-txt'>दाऊद ने अपने पूर्वजों के साथ विश्राम किया और वह दाऊदनगर में क़ब्र में रखा गया।</span> <sup>11</sup><span class='v-txt'>दाऊद ने इस्राएल पर चालीस वर्ष तक राज्य किया- हेब्रोन में सात वर्ष तक और येरूसालेम में तैंतीस वर्ष तक।</span> <sup>12</sup><span class='v-txt'>सुलेमान अपने पिता दाऊद के सिंहासन पर बैठा और उसका राज्य सुदृढ़ होता गया।</span> <sup>13</sup><span class='v-txt'>हग्गीत का पुत्र अदोनीया सुलेमान की माँ बत-शेबा के यहाँ गया। बत-शेबा ने उस से पूछा, &quot;क्या तुम शान्ति के अभिप्राय से आये हो?&quot; तब उसने उत्तर दिया, &quot;हाँ शान्ति के अभिप्राय से&quot;।</span> <sup>14</sup><span class='v-txt'>फिर उसने कहा, &quot;मेरा आप से एक निवेदन है&quot;। वह बोली, &quot;कहो&quot;।</span> <sup>15</sup><span class='v-txt'>तब उसने कहा, &quot;आप जानती हैं कि राज्य मुझे मिलना चाहिए था और सब इस्राएली समझ रहे थे कि मैं ही राजा बनूँगा, परन्तु परिस्थिति बदल गयी।  मेरे भाई को राज्याधिकार इसलिए मिला कि प्रभु की यही इच्छा थी।</span> <sup>16</sup><span class='v-txt'>अब मेरी आप से एक प्रार्थना है, उसे अस्वीकार न कीजिएगा।&quot; वह बोली, &quot;कहो।&quot;</span> <sup>17</sup><span class='v-txt'>इस पर वह कहने लगा, &quot;कृपया राजा सुलेमान ने निवेदन कीजिए कि वह शूनेम की अबीशग के साथ मेरा विवाह करवा दें।  वह आपकी बात नहीं टालेंगे।&quot;</span> <sup>18</sup><span class='v-txt'>बत-शेबा ने उत्तर दिया, &quot;अच्छा, मैं तुम्हारे विषय से राजा से बातचीत करूँगी।&quot;</span> <sup>19</sup><span class='v-txt'>इसके बाद जब बत-शेबा राजा सुलेमान के पास अदोनीया के विषय में बात करने आयी, तब राजा उठ कर उसे मिलने आगे बढ़ा और उसे नमन किया।  फिर सिंहासन पर बैठ कर राजमाता के लिए भी एक आसन मँगवाया, जिससे वह उसके दाहिने बैठ सके।</span> <sup>20</sup><span class='v-txt'>वह कहने लगी, &quot;मेरा तुम से एक छोटा-सा निवेदन है।  उसे अस्वीकार न करना।&quot;  राजा ने उसे उत्तर दिया, &quot;माँ, बताओ न क्या चाहती हो?  मैं उसे अस्वीकार नहीं करूँगा&quot;।</span> <sup>21</sup><span class='v-txt'>वह बोली, &quot;शूनेम की अबीशग का विवाह अपने भाई अदोनीया से करवाओ&quot;।</span> <sup>22</sup><span class='v-txt'>लेकिन राजा सुलेमान ने अपनी माता को उत्तर दिया, &quot;तुम अदोनीया के लिए शूनेम की अबीशग को क्यों माँगती हो?  तुम उसके लिए मेरा राज्य ही क्यों नहीं माँग लेती?  वह तो मेरा बड़ा भाई है और याजक एबयातर और सरूया का पुत्र योआब उसके पक्ष में हैं।&quot;</span> <sup>23</sup><span class='v-txt'>इस पर राजा सुलेमान ने प्रभु का नाम ले कर यह शपथ खायी, &quot;यदि अदोनीया की इस माँग के लिए उसे प्राणदण्ड न दिया जाये, तो ईश्वर मुझे कठोर-से-कठोर दण्ड दिलाये।&quot;</span> <sup>24</sup><span class='v-txt'>जिस प्रभु ने मुझे अपने पिता दाऊद के सिंहासन पर बैठने को नियुक्त किया और जिसने अपनी प्रतिज्ञा के अनुसार मेरे लिए एक राजवंश की स्थापना की है, मैं उस प्रभु की शपथ खा कर कहता हूँ कि आज ही अदोनीया को प्राणदण्ड मिलेगा।&quot;</span> <sup>25</sup><span class='v-txt'>राजा सुलेमान ने यहोयादा के पुत्र बनाया को उसका वध करने का आदेश दिया और उसने उस पर प्रहार कर उसे मार डाला।</span> <sup>26</sup><span class='v-txt'>तब राजा ने याजक एबयातर से कहा, &quot;तुम अनातोत के अपने खेत चले जाओ।  तुम प्राणदण्ड के योग्य हो, किन्तु मैं तुम्हें इसलिए प्राणदण्ड नहीं दूँगा कि तुमने मेरे पिता दाऊद के सामने प्रभु-ईश्वर की मंजूषा उठायी थी और वे सब कष्ट भोगे थे, जो मेरे पिता ने सहे थे।&quot;</span> <sup>27</sup><span class='v-txt'>इस प्रकार सुलेमान ने एबयातर को प्रभु के याजकीय पद से हटा दिया।  प्रभु का वह कथन पूरा हुआ, जो उसने शिलो में एली के घराने के विषय में कहा था।</span> <sup>28</sup><span class='v-txt'>जब योआब को यह समाचार मिला (योआब ने भी अदोनीया का पक्ष लिया था, किन्तु उसने अबसालोम का पक्ष नहीं लिया था,) तो उसने भाग कर प्रभु के तम्बू की वेदी के कंगूरो का पकड़ लिया।</span> <sup>29</sup><span class='v-txt'>राजा सुलेमान को यह सूचना दी गयी कि योआब प्रभु के तम्बू में भाग कर वेदी के पास खड़ा है।  इस पर सुलेमान ने यह कहते हुए यहोयादा के पुत्र बनाया को भेजा कि तुम वहाँ जा कर उस को प्राणदण्ड दो।</span> <sup>30</sup><span class='v-txt'>प्रभु के तम्बू में आ कर बनाया ने उस से कहा, &quot;राजा उन्हें बाहर आने का आदेश देते हैं।&quot;  परन्तु उसने उत्तर दिया, &quot;नहीं, मैं यही मरना चाहता हूँ&quot;।  बनाया राजा के पास यह उत्तर लाया।</span> <sup>31</sup><span class='v-txt'>तब राजा ने उसे आज्ञ दी, &quot;तो उसने जैसा कहा है, वेसा ही करो।  उसे मार कर दफ़नाओ।  इस प्रकार योआब ने जो रक्त अकारण बहाया, उसका दोष मुझ से और मेरे पिता के घराने से दूर करो।</span> <sup>32</sup><span class='v-txt'>उसने जो रक्त बहाया, प्रभु उस से इसका बदला चुकाता है।  मेरे पिता दाऊद के अनजान में  उसने दो ऐसे पुरुषों पर आक्रमण कर उन्हें तलवार के घाट उतारा, जो उस से कहीं अधिक धार्मिक और योग्य थे, अर्थात् इस्राएल के सेनापति नेर के पुत्र अवनेर को और यूदा के सेनापति येतेर के पुत्र आमासा को।</span> <sup>33</sup><span class='v-txt'>उनके रक्तपात का दोष योआब और उसके वंशजों के सिर पर सदा लगा रहे; लेकिन दाऊद, उनके वंशजोें, उनके घराने और उनके सिंहासन को सदा-सर्वदा प्रभु की शान्ति मिलती रहे।&quot;</span> <sup>34</sup><span class='v-txt'>तब यहोयादा का पुत्र बनाया गया और उसने उस प्रहार कर उसका वध किया।  उसे उजाड़खण्ड के अपने ही घर में दफ़ना दिया गया।</span> <sup>35</sup><span class='v-txt'>राजा ने योआब के स्थान पर यहोयादा के पुत्र बनाया को सेनापति नियुक्त किया और राजा ने एबयातर का याजक पद सादोक को दे दिया।</span> <sup>36</sup><span class='v-txt'>इसके बाद रजा ने शिमई को बुला कर उस से कहा, &quot;येरूसालेम में अपने लिए एक घर बनवाओ।  यहीं रहो और यहाँ से कहीं मत जाओ।</span> <sup>37</sup><span class='v-txt'>अगर तुमने बाहर जाकर केद्रोन नाला पार किया, तो तुम्हें अवश्य प्राणदण्ड मिलेगा।  तब तुम्हारे रक्तपात का दोष तुम्हारे ही सिर पड़ेगा।&quot;</span> <sup>38</sup><span class='v-txt'>शिमई ने राजा को उत्तर दिया, &quot;आपका कहना ठीक है।  मेरे स्वामी, राजा ने जैसी आज्ञा दी है, आपका दास वैसा ही करेगा।&quot;  शिमई बहुत दिनों तक येरूसालेम में रहा।</span> <sup>39</sup><span class='v-txt'>तीन साल बाद शिमई के दो दास गत के राजा माका के पुत्र आकीश के यहाँ भाग गये।  जैसे ही शिमई को ख़बर मिली कि उसके दास गत में हैं,</span> <sup>40</sup><span class='v-txt'>तो वह उठ कर और अपने गधे को कस कर अपने दासों को ढूँढ़ने के लिए आकीश के पास गत गया और वह अपने दासों को गत से वापस ले आया।</span> <sup>41</sup><span class='v-txt'>सुलेमान को यह ख़बर मिली कि शिमई येरूसालेम से गत गया था और वहाँ से लोट आया है।</span> <sup>42</sup><span class='v-txt'>इसलिए राजा ने शिमई को बुलवा कर उस से कहा, &quot;क्या मैंने तुम को प्रभु के नाम यह शपथ नहीं खिलायी थी और क्या मैंने यह चेतावनी नहीं दी थी कि यदि तुम कहीं बाहर् जाओगे, तो तुम्हें अवश्य प्राणदण्ड मिलेगा?  तुमने उत्तर दिया था कि आपका कहना ठीक है, मैं आपकी आज्ञा मानूँगा।</span> <sup>43</sup><span class='v-txt'>अब तुमने प्रभु से की हुई शपथ क्यों तोड़ी और मेरी आज्ञा क्यों भंग की?&quot;</span> <sup>44</sup><span class='v-txt'>फिर राजा ने शिमई से कहा, &quot;तुम जानते हो कि तुमने मेरे पिता दाऊद के साथ कितनी बुराई की है।  अब प्रभु तुम से इस बुराई का बदला चुकायेगा।</span> <sup>45</sup><span class='v-txt'>किन्तु राजा सुलेमान को आशीर्वादा मिलेगा और दाऊद का सिंहासन प्रभु के सामने सदा सुदृढ़ बना रहेगा।&quot;</span> <sup>46</sup><span class='v-txt'>इसके बाद राजा ने यहोयादा के पुत्र बनाया को आदेश दिया।  वह गया और उसने उस पर प्रहार कर उसे मार डाला।  इस प्रकार राजसत्ता सुलेमान के हाथ में सुदृढ़ हो गयी।</span> </p>
+        <div class='nav'><a href='011001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='011003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;दो तुरहियाँ बनवाओं। तुम उन्हे चाँदी से गढ़वाओ। उन से लोगों को बुलाने और शिविर उठाने की सूचना देने का काम लो।</span> <sup>3</sup><span class='v-txt'>जब दोनों बजायी जायेंगी, तो सारा समुदाय तुम्हारे पास दर्शन-कक्ष के द्वार पर एकत्रित हो जायेगा।</span> <sup>4</sup><span class='v-txt'>जब केवल एक ही तुरही बजायी जायेगी, तब तुम्हारे पास नेतागण, इस्राएली वंशों के मुखिया एकत्रित हो जायेंगे।</span> <sup>5</sup><span class='v-txt'>जब उस से देर तक जोरों की आवाज हो, तब पूर्व दिषा के पड़ाव प्रस्थान करेंगे।</span> <sup>6</sup><span class='v-txt'>जब दूसरी बार ज़ोरों से देर तक आवाज हो, तब दक्षिण के पड़ाव प्रस्थान करेंगे। जब प्रस्थान करना हो, तो देर तक ज़ोरों की आवाज में उन्हें बजाया जाये</span> <sup>7</sup><span class='v-txt'>और जब समुदाय को एकत्रित करना हो, तो देर तक ज़ोर से बजवा कर सामान्य रूप से बजवाओ।</span> <sup>8</sup><span class='v-txt'>हारून के याजक पुत्र तुरही बजायें। यह तुम्हारी पीढ़ियों के लिए चिरस्थायी आदेश है।</span> <sup>9</sup><span class='v-txt'>जब अपने देश में तुम को सताने वाले शत्रु के विरुद्ध लड़ाई करनी पड़े, तब लगातार जोर से तुरहियाँ बजवाओ। इससे प्रभु, तुम्हारे ईश्वर को तुम्हारा स्मरण हो जायेगा और तुम अपने शत्रुओं के हाथों से सुरक्षित रहोगे।</span> <sup>10</sup><span class='v-txt'>अपने आनन्द के दिनों, अपने उत्सवों, अमावस की होम-बलियों और शान्ति-बलियों के अवसरों पर तुरहियाँ बजवाओ। ये प्रभु को तुम्हारा स्मरण करायेंगी। मैं प्रभु तुम्हारा ईश्वर हूँ।&#039;&#039;</span> <sup>11</sup><span class='v-txt'>दूसरे वर्ष के दूसरे महीने के बीसवें दिन बादल विधान की मंजूषा के निवास से ऊपर उठा।</span> <sup>12</sup><span class='v-txt'>तब इस्राएली लोग भी सीनई के उजाड़खण्ड से शिविर उठाते हुए आगे की ओर बढ़े। बादल पारान नामक उजाड़खण्ड में रुक गया।</span> <sup>13</sup><span class='v-txt'>यह पहला अवसर था कि प्रभु के द्वारा मूसा को दी गयी आज्ञा के अनुसार प्रस्थान किया गया।</span> <sup>14</sup><span class='v-txt'>सब से पहले यूदा कुल के लोगों ने अपने दलों के अनुसार अपने झण्डे के साथ प्रस्थान किया। उनके समुदाय का नेता अम्मीनादाब का पुत्र नहषोन था।</span> <sup>15</sup><span class='v-txt'>सूआर का पुत्र नतनएल इस्साकार कुल वालों का नेता था।</span> <sup>16</sup><span class='v-txt'>हेलोन का पुत्र एलीआब ज़बुलोन कुल वालों का नेतृत्व कर रहा था।</span> <sup>17</sup><span class='v-txt'>तब निवास का शिविर उठाया गया और गेरषोनी और मरारी लोगों ने प्रस्थान किया, जो निवास का परिवहन करते थे।</span> <sup>18</sup><span class='v-txt'>फिर रूबेन कुल के लोगों ने अपने दलों के अनुसार अपने झण्डे साथ प्रस्थान किया। उनके समुदाय का नेता शदेऊर का पुत्र एलीसूर था।</span> <sup>19</sup><span class='v-txt'>सूरीषद्दय का पुत्र शलुमीएल सिमओन कुल का नेता था।</span> <sup>20</sup><span class='v-txt'>दऊएल का पुत्र एल्यासाफ गाद कुल वालों के समुदाय का नेता था।</span> <sup>21</sup><span class='v-txt'>इसके बाद कहातियों ने प्रस्थान किया, जो पवित्र वस्तुएँ ढोया करते थे। इनके पहँुचने के पहले ही निवास का शिविर तान दिया गया था।</span> <sup>22</sup><span class='v-txt'>इसके बाद एफ्रईम कुल के लोगों ने अपने झण्डे के साथ, अपने दलों के अनुसार, प्रस्थान किया। अम्मीहूद का पुत्र एलीषामा उनके समुदाय का नेता था।</span> <sup>23</sup><span class='v-txt'>पदाहसूर का पुत्र गमलीएल मनस्से कुल वालों का नेतृत्व कर रहा था।</span> <sup>24</sup><span class='v-txt'>गिदओनी का पुत्र अबीदान बेनयामीन कुल वालों के समुदाय का नेता था।</span> <sup>25</sup><span class='v-txt'>अन्त में दान कुल के लोगों ने अपने झण्डे के साथ, अपने दलों के अनुसार, प्रस्थान किया। अम्मीशद्दय का पुत्र अहीएज़ेर उनके समुदाय का नेता था।</span> <sup>26</sup><span class='v-txt'>अक्रोन का पुत्र पगीएल आषेर कुल वालों के समुदाय का नेता था</span> <sup>27</sup><span class='v-txt'>और एनान का पुत्र अहीरा नफ्ताली कुल का नेता था।</span> <sup>28</sup><span class='v-txt'>इसी क्रम में इस्राएलियों के दलों को प्रस्थान करना पड़ता था और इसी के अनुसार उन्होंने प्रस्थान किया।</span> <sup>29</sup><span class='v-txt'>मूसा ने अपने ससूर, मिदयानी रऊएल के पुत्र होबाब से कहा, &#039;&#039;अब हम वह देश जायेंगे, जिसके विषय में प्रभु ने यह वचन दिया था कि मैं उसे तुम्हें दे दूँगा ; तुम भी हमारे साथ चलो। हम तुम्हारी भलाई करेंगे, क्योंकि प्रभु ने इस्राएलियों की भलाई करने का वचन दिया है।&#039;&#039;</span> <sup>30</sup><span class='v-txt'>परन्तु उसने उत्तर दिया, &#039;&#039;मैं नहीं जाऊँगा। मैं अपने देश में, अपने कुटुम्बियों के पास लौट जाऊँगा।&#039;&#039;</span> <sup>31</sup><span class='v-txt'>तब मूसा ने निवेदन किया, &#039;&#039;हमें नहीं त्यागना, क्योंकि तुम उजाड़खण्ड के उन सब स्थानों को जानते हो, जो पड़ाव डालने के लिए उपयुक्त होंगे। इसलिए तुम हमारे पथप्रदर्षक बन जाओ।</span> <sup>32</sup><span class='v-txt'>यदि तुम हमारे साथ चलोगे, तो हम भी तुम्हारी वैसी ही भलाई करेंगे, जैसी प्रभु हमारी करेगा।&#039;&#039;</span> <sup>33</sup><span class='v-txt'>तब उन्होंने प्रभु के पर्वत से अपनी तीन दिन की यात्रा के लिए प्रस्थान किया। तीन दिन की इस यात्रा में प्रभु के विधान की मंजूषा उनके आगे चलती रही, जिससे उसके माध्यम से ठहरने के स्थान का पता चले।</span> <sup>34</sup><span class='v-txt'>जब वे अपना शिविर उठाते, तब दिन में प्रभु का बादल उनके ऊपर छाया रहता।</span> <sup>35</sup><span class='v-txt'>जब मंजूषा आगे बढ़ने लगती, तब मूसा कहता, &#039;&#039;प्रभु! उठ खड़ा हो जा, जिससे तेरे शत्रु तितर-बितर हो जायें और तेरे विरोधी तेरे सामने से भाग जायें!</span> <sup>36</sup><span class='v-txt'>और जब वह ठहर जाती, जब वह कहता, &#039;&#039;प्रभु! इन लाखों इस्राएलियों के पास लौट आ।&#039;&#039;</span> </p>
+        <div class='nav'><a href='004009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

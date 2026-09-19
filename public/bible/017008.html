@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>टोबीत - अध्याय 8</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>टोबीत</h1>
+        <h2>अध्याय 8</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>वे भोजन के बाद विश्राम करना चाहते थे।  उन्होंने युवक को ले जा कर सारा के कमरे में पहुँचा दिया।</span> <sup>2</sup><span class='v-txt'>टोबीयाह को रफ़ाएल का कहना याद आया और उसने अपने बस्ते में मछली का दिल और कलेजा निकाल कर जलते धूपदान पर रख दिया।</span> <sup>3</sup><span class='v-txt'>पिशाच मछली की गन्ध सूँघते ही मिस्र के ऊपरी प्रदेश में भाग गया।  एफ़ाएल ने वहाँ जा कर उसे बाँध दिया और तुरन्त वापस आया।</span> <sup>4</sup><span class='v-txt'>माता-पिता ने कमरे से बाहर आ कर उसका दरवाज़ा बन्द कर दिया।  टोबीयाह ने पलंग से उठ कर सारा से कहा, &quot;बहन!  उठो।  हम प्रार्थना करें और अपने प्रभु से निवेदन करें कि वह हम पर दया करें और हमें सुरक्षित रखे&quot;।</span> <sup>5</sup><span class='v-txt'>वह उठी और दोनों प्रार्थना करने लगे।  उन्होंने प्रभु से निवेदन किया कि वह उन्हें सुरक्षित रखे।  वे कहने लगे, &quot;हमारे पूर्वजों के प्रभु!  तू धन्य है!  तेरा नाम युग-युग तक धन्य है।  आकाश और सारी सृष्टि तुझे अनन्त काल तक धन्य कहे।</span> <sup>6</sup><span class='v-txt'>तूने आदम की सृष्टि की और उसे स्थायी सहयोगिनी के रूप में हेवा को प्रदान किया।  उन दोनों से मानवजाति की उत्पत्ति हुई है।  तूने कहा कि अकेला रहना मनुष्य के लिए अच्छा नहीं।  इसलिए हम उसके लिए सदृश एक सहयोगिनी बनायें।</span> <sup>7</sup><span class='v-txt'>अब मैं काम-वासना से प्रेरित हो कर नहीं, बल्कि धर्म के अनुसार अपनी इस बहन को पत्नी के रूप में ग्रहण करता हूँ।  इस पर और मुझ पर दया कर और ऐसा कर कि हम दोनों बुढ़ापे तक सकुशल साथ रहें।&quot;</span> <sup>8</sup><span class='v-txt'>दोनों ने कहा, &quot;आमेन! आमेन!</span> <sup>9</sup><span class='v-txt'>और वे रात बिताने के लिए पलंग पर लेट गये।</span> <sup>10</sup><span class='v-txt'>रागुएल ने उठ कर अपने नौकरों को बुलाया।  वे उसके साथ क़ब्र खोदने गये; क्योंकि वह सोचता था, &quot;कहीं ऐसा न हो कि टोबीयाह की मृत्यु हो गयी हो और लोग हमारा उपहास और अपमान करें&quot;।</span> <sup>11</sup><span class='v-txt'>रागुएल क़ब्र खोदने के बाद लौटा और अपनी पत्नी को बुला कर</span> <sup>12</sup><span class='v-txt'>उस से बोला, &quot;एक नौकरानी को भेजो।  वह अन्दर जा कर पता लगाये कि वह जीवित है या नहीं।  यदि उसकी मृृत्यु हो गयी है, तो हम उसे सब के अनजाने दफ़नायें।&quot;</span> <sup>13</sup><span class='v-txt'>उन्होंने दीपक जला कर नौकरानी को भेजा।  दरवाज़ा खोला गया और नौकरानी ने अन्दर जा कर देखा कि दोनों गहरी नींद में सो रहे हैं।</span> <sup>14</sup><span class='v-txt'>उसने लौट कर समाचार दिया कि वह जीवित और सकुशल है।</span> <sup>15</sup><span class='v-txt'>उन्होंने स्वर्ग के ईश्वर को धन्यवाद देते हुए कहा, &quot;ईश्वर! तू धन्य है!  तू हर प्र्रकार की पावन स्तुति के योग्य है।  तेरे सभी भक्त और तेरी सारी सृष्टि तुझे धन्य कहे।  तेरे सभी स्वर्गदूत और कृपापात्र तुझे युग-युग धन्य कहें।</span> <sup>16</sup><span class='v-txt'>तू धन्य हैं, क्योंकि तूने मुझे आनन्द प्रदान किया।  जिस बात की मुझे आशंका थी, वह घटित नहीं हुई।  तूने अपनी महती दया के अनुसार हमारे साथ व्यवहार किया है।</span> <sup>17</sup><span class='v-txt'>तू धन्य है, क्योंकि तूने हमारी दो एकमात्र सन्तानों पर दया की है।  प्रभु!  उन्हें कृपा और सुरक्षा प्रदान कर।  वे आनन्द में जीवन बितायें और अन्त तक तेरे कृपापात्र बने रहे।&quot;</span> <sup>18</sup><span class='v-txt'>इसके बाद उसके अपने नौकरों को भोर से पहले क़ब्र भरने का आदेश दिया।</span> <sup>19</sup><span class='v-txt'>उसने अपनी पत्नी को बहुत-सी रोटियाँ सेंकने को कहा। वह अपने पशुओं में से दो गायें और चार मेढ़ें चुनने गया और उन्हें ले आ कर उसने उनका वध करने का आदेश दिया।  इसके बाद नौकर विवाहोत्सव की तैयारी करने लगे।</span> <sup>20</sup><span class='v-txt'>उसने टोबीयाह को बुलाया और शपथ खाते हुए कहा, &quot;तुम चैदह दिन तक यहाँ से नहीं जाओगे।  तुम यहाँ रह कर मेरे साथ खाओगे-पिओगे और तुम यहाँ रह कर मेरे साथ खाओगे-पिओगे और मेरी बेटी का जी बहलाओगे; क्योंकि उसे बहुत दुःख सहना पड़ा।</span> <sup>21</sup><span class='v-txt'>मेरी आधी सम्पत्ति स्वीकार करो और अपने पिता के पास सकुशल लौटो।  शेष सम्पत्ति तुम्हें मेरी और मेरी पत्नी की मृत्यु के बाद मिलेगी।  पुत्र!  ढारस रखो।  मैं तुम्हारा पिता हूँ और एदना तुम्हारी माता है।  हम अब से और सदा के लिए तुम्हारे और तुम्हारी बहन के अपने हैं।  पुत्र! तुम ढ़ारस रखो।&quot;</span> </p>
+        <div class='nav'><a href='017007.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='017009.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

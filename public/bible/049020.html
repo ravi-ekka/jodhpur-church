@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 20</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 20</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>एक दिन ईसा मन्दिर में जनता को शिक्षा दे रहे थे और सुसमाचार सुना रहे थे कि महायाजक, शास्त्री और नेता उनके पास आ कर</span> <sup>2</sup><span class='v-txt'>बोले, &quot;हमें बताइए कि आप किस अधिकार से यह सब कर रहे हैं?  आप को किसने यह आधिकार दिया?</span> <sup>3</sup><span class='v-txt'>उन्होंने उनको उत्तर दिया, &quot;मैं भी आप लोगों से एक प्रश्न पूछना चाहता हूँ।  आप मुझे बताइए,</span> <sup>4</sup><span class='v-txt'>योहन का बपतिस्मा स्वर्ग का था अथवा मनुष्यों का?&quot;</span> <sup>5</sup><span class='v-txt'>उन्होंने यह कहते हुए आपस में परामर्श किया, &quot;यदि हम कहें, ’स्वर्ग का’, तो यह कहेंगे, ’तब आप लोगों ने उस पर विश्वास क्यों नहीं किया?’</span> <sup>6</sup><span class='v-txt'>यदि हम कहें, ’मनुष्यों का’, तो सारी जनता हमें पत्थरों से मार डालेगी, क्योंकि उसे पका विश्वास है कि योहन नबी था&quot;</span> <sup>7</sup><span class='v-txt'>इसलिए उन्होंने उत्तर दिया, &quot;हम नहीं जानते कि वह कहाँ का था&quot;।</span> <sup>8</sup><span class='v-txt'>इस पर ईसा ने उनसे कह, मैं भी आप लोगों को नहीं बताऊँगा कि मैं किस अधिकार से यह सब कर रहा हूँ&quot;।</span> <sup>9</sup><span class='v-txt'>तब वे जनता को यह दृष्टान्त सुनाने लगे, &quot;किसी मनुष्य ने दाख की बारी लगवायी और उसे असामियों को पट्टे पर दे कर बहुत दिनों के लिए परदेश चला गया।</span> <sup>10</sup><span class='v-txt'>समय आने पर उसने फ़सल का हिस्सा वसूल करने के लिए असामियों के पास एक नौकर को भेजा। किन्तु असामियों ने उसे मारा-पीटा और खाली हाथ लौटा दिया।</span> <sup>11</sup><span class='v-txt'>उसने एक दूसरे नौकर को भेजा और उन्होंने उसे भी मारा-पीटा, अपमानित किया और ख़ाली हाथ लौटा दिया।</span> <sup>12</sup><span class='v-txt'>उसने एक तीसरे नौकर को भेजा और उन्होंने उसे भी घायल कर दाखबारी के बाहर फेंक दिया।</span> <sup>13</sup><span class='v-txt'>तब दाखबारी के स्वामी ने कहा, ’मैं क्या करूँ?  मैं अपने प्रिय पुत्र को भेजूँगा।  सम्भव है, वे उसका आदर करें।</span> <sup>14</sup><span class='v-txt'>परन्तु उसे देख कर असामी यह कहते हुए आपस में परामर्श करते रहे, ‘यह तो उत्तराधिकारी है।  हम इसे मार डालें, जिससे इसकी विरासत हमारी हो जाये।’</span> <sup>15</sup><span class='v-txt'>उन्होंने उसे दाखबारी के बाहर पटक दिया और मार डाला।  अब दाखबारी का स्वामी क्या करेगा?</span> <sup>16</sup><span class='v-txt'>वह आ कर उन असामियों का सर्वनाश करेगा और अपनी दाखबारी दूसरों को सौंप देगा।&quot;</span> <sup>17</sup><span class='v-txt'>उन्होंने यह सुन कर ईसा से कहा, &quot;ईश्वर करे कि ऐसा न हो&quot;।  किन्तु ईसा ने उन पर आँखें गड़ा कर कहा, &quot;धर्मग्रन्थ के इस कथन का क्या अर्थ है-कारीगरों ने जिस पत्थर को बेकार समझ कर निकाल दिया था, वही कोने का पत्थर बन गया है?</span> <sup>18</sup><span class='v-txt'>जो उस पत्थर पर गिरेगा, वह चूर-चूर हो जायेगा और जिस पर वह पत्थर गिरेगा, उस को पीस डालेगा।&quot;</span> <sup>19</sup><span class='v-txt'>शास्त्री और महायाजक उन को उसी समय पकड़ना चाहते थे, किन्तु वे जनता से डरते थे।  वे अच्छी तरह समझ गये थे कि ईसा ने यह दृष्टान्त हमारे ही विषय में कहा।</span> <sup>20</sup><span class='v-txt'>वे ईसा को फँसाने की ताक में रहते थे।  उन्होंने उनके पास गुप्तचर भेजे, जिससे वे धर्मी होने का ढोंग रच कर ईसा को उनकी अपनी बात के फन्दे में फँसाये और उन्हें राज्यपाल के कब्जे़ और अधिकार में दे सकें।</span> <sup>21</sup><span class='v-txt'>इन्होंने ईसा से पूछा, &quot;गुरूवर! हम यह जानते हैं कि आप सत्य बोलते और सत्य ही सिखालते हैं।  आप मुँह-देखी बात नहीं करते, बल्कि सच्चाई से ईश्वर के मार्ग की शिक्षा देते हैं।</span> <sup>22</sup><span class='v-txt'>कैसर को कर देना हमारे लिए उचित है या नहीं?&quot;</span> <sup>23</sup><span class='v-txt'>ईसा ने उनकी धूर्तता भाँप कर उन से कहा,</span> <sup>24</sup><span class='v-txt'>&quot;मुझे एक दीनार दिखलाओ।  इस पर किसका चेहरा और किसका लेख है?&quot; उन्होंने उत्तर दिया, &quot;कैसर का&quot;।</span> <sup>25</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;तो, जो कैसर का है, उसे कैसर को दो और जो ईश्वर का है, उसे ईश्वर को&quot;।</span> <sup>26</sup><span class='v-txt'>वे उनके उत्तर पर अचम्भे में पड़ कर चुप हो गये और लोगों के सामने उनके शब्दों में कोई दोष नहीं निकाल सके।</span> <sup>27</sup><span class='v-txt'>इसके बाद सदूकी उनके पास आये।  उनकी धारणा है कि मृतकों का पुनरूत्थान नहीं होता।  उन्होंने ईसा के सामने यह प्रश्न रखा,</span> <sup>28</sup><span class='v-txt'>&quot;गुरूवर! मूसा ने हमारे लिए यह नियम बनाया-यदि किसी का भाई अपनी पत्नी के रहते निस्सन्तान मर जाये, तो वह अपने भाई की विधवा को ब्याह कर अपने भाई के लिए सन्तान उत्पन्न करे।</span> <sup>29</sup><span class='v-txt'>सात भाई थे।  पहले ने विवाह किया और वह निस्सन्तान मर गया।</span> <sup>30</sup><span class='v-txt'>दूसरा और</span> <sup>31</sup><span class='v-txt'>तीसरा आदि सातों भाई विधवा को ब्याह कर निस्सन्तान मर गये।</span> <sup>32</sup><span class='v-txt'>अन्त में वह स्त्री भी मर गयी।</span> <sup>33</sup><span class='v-txt'>अब पुनरूत्थान में वह किसकी पत्नी होगी?  वह तो सातों की पत्नी रह चुकी है।&quot;</span> <sup>34</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;इस लोक में पुरुष विवाह करते हैं और स्त्रियाँ विवाह में दी जाती हैं;</span> <sup>35</sup><span class='v-txt'>परन्तु जो परलोक तथा मृतकों के पुनरूत्थान के योग्य पाये जाते हैं, उन लोगों में न तो पुरुष विवाह करते और न स्त्रियाँ विवाह में दी जाती हैं।</span> <sup>36</sup><span class='v-txt'>वे फिर कभी नहीं मरते।  वे तो स्वर्गदूतों के सदृश होते हैं और पुनरूत्थान की सन्तति होने के कारण वे ईश्वर की सन्तति बन जाते हैं।</span> <sup>37</sup><span class='v-txt'>मृतकों का पुनरूत्थान होता हैं मूसा ने भी झाड़ी की कथा में इसका संकेत किया है, जहाँ वह प्रभु को इब्राहीम का ईश्वर, इसहाक का ईश्वर और याकूब का ईश्वर कहते है।</span> <sup>38</sup><span class='v-txt'>वह मृतकों का नहीं, जीवितों का ईश्वर है, क्योंकि उसके लिये सभी जीवित है।&quot;</span> <sup>39</sup><span class='v-txt'>इस पर कुछ शास्त्रियों ने उन से कहा, &quot;गुरुवर! आपने ठीक ही कहा&quot;।</span> <sup>40</sup><span class='v-txt'>इसके बाद उन्हें ईसा से और कोई प्रश्न पूछने का साहस नहीं हुआ।</span> <sup>41</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;मसीह, दाऊद के पुत्र कैसे कहे जा सकते हैं?</span> <sup>42</sup><span class='v-txt'>क्योंकि भजनों के ग्रन्थ में दाऊद स्वयं कहते हैं-प्रभु ने मेरे प्रभु से कहा, तुम तब तक मेरे दाहिने बैठे रहो,</span> <sup>43</sup><span class='v-txt'>जब तक मैं तुम्हारे शत्रुओं को तुम्हारा पावदान न बना दूँ।</span> <sup>44</sup><span class='v-txt'>इस तरह दाऊद उन्हें प्रभु कहते हैं, तो वे उनके पुत्र कैसे हो सकते हैं?&quot;</span> <sup>45</sup><span class='v-txt'>सारी जनता सुन रही थी, जब उन्होंने अपने शिष्यों से कहा,</span> <sup>46</sup><span class='v-txt'>&quot;शास्त्रियों से सावधान रहो।  लम्बे लबादे पहन कर टहलने जाना, बाजारों में प्रणाम-प्रणाम सुनना, सभागृहों में प्रथम आसनों पर और भोजों में प्रथम स्थानों पर विराजमान होना-यह सब उन्हें बहुत पसंद है।</span> <sup>47</sup><span class='v-txt'>वे विधवाओं की सम्पत्ति चट कर जाते और दिखावे के लिए लम्बी-लम्बी प्रार्थनाएँ करते हैं।  उन लोगों को बड़ी कठोर दण्डाज्ञा मिलेगी।&quot;</span> </p>
+        <div class='nav'><a href='049019.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049021.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

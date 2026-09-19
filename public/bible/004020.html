@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 20</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 20</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इस्राएलियों का सारा समुदाय, पहले महीने, सिन नामक मरूभूमि पहुँचा और कुछ समय तक कादेश में रहा। वहाँ मिरयम की मृत्यु हो गयी और वह दफ़नायी गयी।</span> <sup>2</sup><span class='v-txt'>लोगों को पानी नहीं मिल रहा था, इसलिए वे एकत्र हो कर मूसा और हारून का विरोध करने लगे।</span> <sup>3</sup><span class='v-txt'>उन्होंने यह कहते हुए मूसा से शिकायत की, &#039;&#039;ओह! यदि हम अपने भाई-बन्धुओं के साथ ही प्रभु के हाथ मर गये होते!</span> <sup>4</sup><span class='v-txt'>क्या आप इसलिए प्रभु का समुदाय इस मरूभूमि में ले आये कि हम और हमारे पशु यहाँ मर जायें?</span> <sup>5</sup><span class='v-txt'>आप हमें मिस्र से निकाल कर इस अशुभ स्थान में क्यों ले आये, जहाँ न तो अजान मिलता है, न अंजीर, न अंगूर और न अनार? यहाँ तो पीने का पानी तक नहीं मिलता!&#039;&#039;</span> <sup>6</sup><span class='v-txt'>मूसा और हारून सभा को छोड़ कर दर्शन कक्ष के द्वार पर आये। वे मुँह के बल गिर पड़े और उन्हें प्रभु की महिमा दिखाई दी।</span> <sup>7</sup><span class='v-txt'>प्रभु ने मूसा से यह कहा,</span> <sup>8</sup><span class='v-txt'>&#039;&#039;डण्डा ले लो और अपने भाई हारून के साथ समुदाय को एकत्र करो। तुम लोगों के सामने चट्टान को यह आदेश दोगे - हमें अपना पानी दो। इस प्रकार तुम चट्टान से पानी निकालोगे और तुम लोगों और पशुओं को पीने के लिए पानी दोगे।&#039;&#039;</span> <sup>9</sup><span class='v-txt'>मूसा ने तम्बू से डण्डा ले लिया, जैसा कि प्रभु ने उसे आदेश दिया था।</span> <sup>10</sup><span class='v-txt'>मूसा और हारून ने चट्टान के सामने लोगों को एकत्र किया और उन से कहा, &#039;&#039;विद्रोहियों! सुनो। क्या हम तुम लोगों के लिए इस चट्टान से पानी निकालें?&#039;&#039;</span> <sup>11</sup><span class='v-txt'>मूसा ने हाथ उठा कर दो बार चट्टान पर डण्डा मारा और चट्टान से पानी की धारा फूट निकली। इस प्रकार लोगों और पशुओं को पीने के लिए पानी मिला।</span> <sup>12</sup><span class='v-txt'>इसके बाद प्रभु ने मूसा और हारून से कहा, &#039;&#039;तुमने मुझ में विश्वास नहीं किया और इस्राएलियों की दृष्टि में मेरी पवित्रता को बनाये नहीं रखा ; इसलिए तुम इस समुदाय को उस देश नहीं पहुँचाओंगे, जिसे मैं उन्हें दे दूँगा।&#039;&#039;</span> <sup>13</sup><span class='v-txt'>यह मरीबा का पानी है, जहाँ इस्राएलियों ने प्रभु की शिकायत की और प्रभु ने उनके सामने अपनी पवित्रता प्रकट की।</span> <sup>14</sup><span class='v-txt'>कादेश से मूसा ने एदोम के राजा के पास अपने दूत भेज कर यह कहलवाया, &#039;&#039;आपके भाई इस्राएल यह कहते हैं आप को उन सभी कष्टों की जानकारी है, जो हमें झेलने पड़ रहे हैं।</span> <sup>15</sup><span class='v-txt'>हमारे पूर्वज मिस्र गये थे। हम वहाँ बहुत समय तक रहे। मिस्री हमारे और हमारे पूर्वजों के साथ बुरा व्यवहार करते थे।</span> <sup>16</sup><span class='v-txt'>जब हमने प्रभु की दुहाई दी, तो उसने हमारी पुकार सुन कर हमें मिस्र से निकाल ले जाने के लिए एक दूत भेजा। अब हम कादेश में हैं, जो आपके देश की सीमा पर अवस्थित नगर है।</span> <sup>17</sup><span class='v-txt'>आप हमें अपने देश से हो कर जाने दें। हम खेतों या दाखबारियों से होकर नहीं जायेंगे और न किसी कुएँ से पानी ही पियेंगे। हम राजमार्ग से सीधे चले जायेंगे और जब तक हम आपका देश पार नहीं करेंगे, तब तक न तो दाहिनी ओर मुड़ेंगे और न बायीं ओर।&#039;&#039;</span> <sup>18</sup><span class='v-txt'>परन्तु एदोम ने यह उत्तर भिजवाया, &#039;&#039;तुम पार नहीं जा सकते। यदि पार जाओगे, तो हमें तुम्हारे विरुद्ध तलवार उठानी पड़ेगी।&#039;&#039;</span> <sup>19</sup><span class='v-txt'>इस पर इस्राएलियों ने उसे उत्तर दिया, &#039;&#039;हम केवल राजमार्ग से जायेंगे और यदि हम और हमारे पशु आपके देश का पानी पियेंगे, तो हम उसका मूल्य चुकायेंगे। हमें पैदल ही निकल जाने दीजिए। हम इस से अधिक कुछ नहीं चाहतें।&#039;&#039;</span> <sup>20</sup><span class='v-txt'>परन्तु एदोम ने उत्तर दिया, &#039;&#039;तुम पार नहीं कर सकते।&#039;&#039; एदोम अपने बहुत से पैदल और सषस्त्र सैनिकों को ले कर उनका सामना करने के लिए निकल आया।</span> <sup>21</sup><span class='v-txt'>जब एदोम ने इस्राएलियों को देश पार करने की अनुमति नहीं दी, तब इस्राएली दूसरी ओर मुड़ गये।</span> <sup>22</sup><span class='v-txt'>कादेश से आगे बढ़कर इस्राएलियों का सारा समुदाय होर पर्वत पर पहुँचा। होर पर्वत पर,</span> <sup>23</sup><span class='v-txt'>जो एदोम देश की सीमा पर है, प्रभु ने मूसा और हारून से कहा,</span> <sup>24</sup><span class='v-txt'>&#039;&#039;अब हारून अपने पूर्वजों के पास जायेगा। वह उस देश में नहीं जा सकेगा, जिसे मैं इस्राएलियों को देने वाला हूँ; क्योंकि तुमने मरीबा के जलाशयों के पास मेरे आदेशों की अवहेलना की थी।</span> <sup>25</sup><span class='v-txt'>हारून और उसके पुत्र एलआज़ार को ले कर होर पर्वत पर, जाओ।</span> <sup>26</sup><span class='v-txt'>वहाँ हारून ने अपने वस्त्र उतर दे। फिर तुम उन्हें उसके पुत्र एलआज़ार को पहना दो। वहाँ हारून की मृत्यु हो जायेगी और वह अपने पूर्वजों से जा मिलेगा।</span> <sup>27</sup><span class='v-txt'>मूसा ने प्रभु के आदेश का पालन किया। सारे समुदाय के देखते-देखते वे होर पर्वत पर चढ़ गये।</span> <sup>28</sup><span class='v-txt'>वहाँ मूसा ने हारून से उसके वस्त्र उतरवाये और उन्हें उसके पुत्र एलआज़ार को पहना दिया। उसी पर्वत-शिखर पर हारून का देहान्त हो गया। तब मूसा और एलआज़ार पर्वत से नीचे उतरे।</span> <sup>29</sup><span class='v-txt'>सारे समुदाय को पता चला कि हारून का देहान्त हो गया है। इस्राएल के सारे घराने ने हारून के लिए तीस दिन तक शोक मनाया।</span> </p>
+        <div class='nav'><a href='004019.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004021.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

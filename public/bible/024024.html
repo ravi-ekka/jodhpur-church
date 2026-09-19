@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>सूक्ति - अध्याय 24</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>सूक्ति</h1>
+        <h2>अध्याय 24</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>दुष्टों से ईर्ष्या मत करो, उनकी संगति की इच्छा न करो;</span> <sup>2</sup><span class='v-txt'>क्योंकि उनका हृदय हिंसा से भरा है और उनके मुख से अनिष्ट की बातें निकलती है।</span> <sup>3</sup><span class='v-txt'>प्रज्ञा से घर बनता और समझदारी से दृढ़ होता है।</span> <sup>4</sup><span class='v-txt'>ज्ञान से उसके कमरे सब प्रकार की बहुमूल्य और सुन्दर वस्तुओें से भरते हैं।</span> <sup>5</sup><span class='v-txt'>प्रज्ञासम्पन्न व्यक्ति शक्तिशाली है और ज्ञान से उसका सामर्थ्य बढ़ता है।</span> <sup>6</sup><span class='v-txt'>युद्ध में पथप्रदर्शन की आवश्यकता होती है, विजय परामर्शदाताओें की भारी संख्या पर निर्भर है।</span> <sup>7</sup><span class='v-txt'>प्रज्ञा मूर्ख के लिए पहाड़-जैसी है;  मूर्ख नगर-द्वार की सभा में मुँह नहीं खोलता।</span> <sup>8</sup><span class='v-txt'>जो बुराई की येाजना बनाता, वह कपटी कहा जायेगा।</span> <sup>9</sup><span class='v-txt'>मूर्ख पाप की ही येाजना बनाता है।  उपहास करने वाले से मनुष्यों को घृणा है।</span> <sup>10</sup><span class='v-txt'>यदि तुम विपत्ति के समय निराश होते हो, तो तुम में शक्ति की बहुत कमी है।</span> <sup>11</sup><span class='v-txt'>प्राणदण्ड मिलने वालों को छुड़ाओ, लड़खड़ाते हुए वध के लिए ले जाये जाने वालो को बचाओे।</span> <sup>12</sup><span class='v-txt'>यदि तुम यह कहते हो: &quot;हम इस विषय में कुछ नहीं जानते&quot; तो क्या हृदयों की थाह लेने वाला कोई नहीं?  वह जानता है!  जो तुम्हारी निगरानी करता, वह जानता है और प्रत्येक व्यक्ति को उसके कर्मों का फल देगा।</span> <sup>13</sup><span class='v-txt'>पुत्र! मधु खाओ, क्योंकि वह अच्छा है।  छत्ते का मधु तालू को मीठा लगता है।</span> <sup>14</sup><span class='v-txt'>समझ लो कि प्रज्ञा इसी तरह तुम्हारी आत्मा को मीठी लगेगी।  उसे प्राप्त करने पर तुम्हारा भविष्य सुरक्षित रहेगा और तुम्हारी आशा व्यर्थ नहीं जायेगी।</span> <sup>15</sup><span class='v-txt'>दुष्ट! धर्मी के घर के पास घात मत लगाओ, उसके निवासस्थान पर छापा मत मारो;</span> <sup>16</sup><span class='v-txt'>क्योंकि धर्मी भले ही सात बार गिरे, वह फिर उठेगा, जबकि दुष्ट विपत्ति में नष्ट हो जाते हैं।</span> <sup>17</sup><span class='v-txt'>अपने शत्रु के पतन पर आनन्द मत मनाओे।  जब वह ठोकर है, तो तुम्हारा हृदय उल्लसित न हो।</span> <sup>18</sup><span class='v-txt'>कहीं ऐसा न हो कि प्रभु यह देख कर अप्रसन्न हो और तुम्हारे शत्रु पर से अपना क्रोध हटा ले।</span> <sup>19</sup><span class='v-txt'>कुकर्मियों के कारण मत कुढ़ो और दुष्टों से ईर्ष्या मत करो;</span> <sup>20</sup><span class='v-txt'>क्योंकि कुकर्मी का कोई भविष्य नहीं और दुष्टों का दीया बुझ जायेगा।</span> <sup>21</sup><span class='v-txt'>पुत्र!  प्रभु और राजा पर श्रद्धा रखो और विद्रोहियों की संगति मत करो;</span> <sup>22</sup><span class='v-txt'>क्योंकि विनाश उन पर अचानक आ पड़ेगा, कौन जानता है कि वे, कौन-सी विपत्ति ढा सकते हैं?</span> <sup>23</sup><span class='v-txt'>ज्ञानियों की कुछ और सूक्तियाँ: निर्णय देते समय पक्षपात उचित नहीं है।</span> <sup>24</sup><span class='v-txt'>जो दोषी से यह कहता है, &quot;तुम निर्दोष हो&quot;, जनता उसे अभिशाप देगी और राष्ट्र उसकी निन्दा करेगा।</span> <sup>25</sup><span class='v-txt'>जो दोषी को दण्ड देंगे, उन्हें सुख-शान्ति मिलेगी; उन्हें आशीर्वाद और समृद्धि प्राप्त होगी।</span> <sup>26</sup><span class='v-txt'>जो निष्कपट उत्तर देता, वह मानों होंठों का चुम्बन करता है।</span> <sup>27</sup><span class='v-txt'>तुम पहले बाहर और खेत का काम पूरा करो, बाद में अपना घर बनाओे।</span> <sup>28</sup><span class='v-txt'>तुम अकारण अपने पड़ोसी के विरुद्ध साक्ष्य मत दो। अपने मुख से किसी को धोखा मत दो।</span> <sup>29</sup><span class='v-txt'>यह मत कहो, &quot;उसने मेरे साथ जो किया, वही उसके साथ करूँगा।  मैं प्रत्येक को उसके कर्मों का बदला चुकाऊँगा।&quot;</span> <sup>30</sup><span class='v-txt'>मैं आलसी के खेत के सामने से निकला, उस मनुष्य की दाखबारी के सामने से, जो मूर्ख है।</span> <sup>31</sup><span class='v-txt'>मैंने देखा कि काँटे सब जगह पर उग गये, भूमि जंगली पौधों से ढकी है और पत्थरों की दीवार गिर गयी है।</span> <sup>32</sup><span class='v-txt'>मैंने जो देखा, उस पर विचार किया और उससे यह शिक्षा मिली:</span> <sup>34</sup><span class='v-txt'>ऐसा होने पर दरिद्रता टहलते हुए तुम्हारे पास आयेगी; अभाव तुम पर बलशाली की तरह आक्रमण करेगा।</span> </p>
+        <div class='nav'><a href='024023.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='024025.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

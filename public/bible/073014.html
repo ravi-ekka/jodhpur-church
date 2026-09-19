@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रकाशना - अध्याय 14</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रकाशना</h1>
+        <h2>अध्याय 14</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैंने फिर देखा- मेमना सियोन पर्वत पर खड़ा है।  उसके साथ एक लाख चैवालीस हजार व्यक्ति हैं, जिनके माथे पर उसका नाम और उसके पिता का नाम अंकित है।</span> <sup>2</sup><span class='v-txt'>मैंने तेजी से बहती हुई नदियों के निनाद और घोर मेघगर्जन की-सी आवाज स्वर्ग से आती हुई सुनी।  मैं जो आवाज सुन रहा था, वह वीणा बजाने वालों की-सी आवाज थी।</span> <sup>3</sup><span class='v-txt'>वे सिंहासन और चार प्राणियों एवं वयोवृद्धों के सामने एक नया गीत गा रहे थे।  उन एक लाख चैवालीस हजार व्यक्तियों के सिवा, जिन को पृथ्वी पर से खरीद लिया गया था, और कोई वह गीत नहीं सीख सकता था।</span> <sup>4</sup><span class='v-txt'>ये वे लोग हैं, जो स्त्रियों के संसर्ग से दूषित नहीं हुए हैं, ये कुँवारे हैं।  जहाँ कहीं भी मेमना जाता है, ये उसके साथ चलते हैं।  ईश्वर और मेमने के लिए प्रथम फल के रूप में इन्हें मनुष्यों में से खरीदा गया है।</span> <sup>5</sup><span class='v-txt'>इनके मुख में झूठ नहीं पाया गयाः ये अनिन्द्य हैं।</span> <sup>6</sup><span class='v-txt'>तब मैंने एक स्वर्गदूत को मध्य आकाश में उड़ते देखा। पृथ्वी पर रहने वालों को, हर एक राष्ट्र, वंश, भाषा और प्रजाति को सुनाने के लिए उसके पास एक शाश्वत सुसमाचार था।</span> <sup>7</sup><span class='v-txt'>वह ऊँचें स्वर से यह कह रहा था, &quot;ईश्वर पर श्रद्धा रखो! उसकी स्तुति करो!  क्योंकि उसके न्याय का दिन आ गया है।  जिसने स्वर्ग और पृथ्वी, समुद्र और जलस्त्रोतों की रचना की, उसकी आराधना करो।&quot;</span> <sup>8</sup><span class='v-txt'>इसके बाद एक दूसरा स्वर्गदूत आया और बोला &quot;उसका सर्वनाश हो गया है!  महान् बाबुल का सर्वनाश हो गया है!  उसने सभी राष्ट्रों को अपने व्यभिचार की तीखी मदिरा पिलायी है।&quot;</span> <sup>9</sup><span class='v-txt'>फिर एक तीसरा स्वर्गदूत आया और ऊँचे स्वर से बोला, &quot;यदि कोई पशु या उसकी प्रतिमा की आराधना करेगा और अपने माथे या अपने हाथ पर उसकी छाप ग्रहण करेगा,</span> <sup>10</sup><span class='v-txt'>तो उसे ईश्वर के के्रोध की मदिरा पिलायी जायेगी, जो बिना मिलावट के, उसके क्रोध के प्याले में ढाली गयी है और वह पवित्र स्वर्गदूतों और मेमने के सामने आग और गन्धक की यन्त्रणा भोगेगा।</span> <sup>11</sup><span class='v-txt'>जो लोग पशु या उसकी प्रतिमा की आराधना करते अथवा उसके नाम की छाप ग्रहण करते हैं, उनकी यन्त्रणा का धूआं युग-युगों तक ऊपर उठता रहेगा और उन्हें दिन-रात कभी चैन नहीं मिलेगा।&quot;</span> <sup>12</sup><span class='v-txt'>अब सन्तों के धैर्य का समय है, जो ईश्वर की आज्ञाओं का पालन करते और ईसा में विश्वास बनाये रखते हैं।</span> <sup>13</sup><span class='v-txt'>मैंने स्वर्ग में किसी को अपने से यह कहते सुना: &quot;लिखो धन्य हैं वे मृतक, जो प्रभु में विश्वास करते हुए मरते हैं!&quot; आत्मा कहता है, &quot;अब से वे अपने परिश्रम के बाद विश्राम करें, क्योंकि उनके सत्कर्म उनके साथ जाते हैं&quot;।</span> <sup>14</sup><span class='v-txt'>मैंने देखा कि एक उजला बादल दिखाई पड़ रहा है।  उस पर मानव पुत्र-जैसा कोई बैठा हुआ है।  उसके सिर पर सोने का मुकुट है और हाथ में एक पैनी हंसिया।</span> <sup>15</sup><span class='v-txt'>एक दूसरा स्वर्गदूत मन्दिर से निकला और ऊँचे स्वर से पुकारते हुए बादल पर बैठने वाले से बोला, &quot;अपनी हंसिया चला कर लुनिए, क्योंकि कटनी का समय आ गया है और पृथ्वी की फसल पक चुकी है&quot;।</span> <sup>16</sup><span class='v-txt'>बादल पर बैठने वाले ने अपनी  हंसिया चलायी और पृथ्वी की फसल कट गयी।</span> <sup>17</sup><span class='v-txt'>तब एक दूसरा स्वर्गदूत स्वर्ग के मन्दिर से निकला।  वह भी एक पैनी हंसिया लिये था।</span> <sup>18</sup><span class='v-txt'>एक और स्वर्गदूत ने, जिसे अग्नि पर अधिकार था, वेदी से आ कर ऊँचे स्वर से उस स्वर्गदूत से कहा, जो पैनी हंसिया लिये था, &quot;अपनी पैनी हंसिया चला कर पृथ्वी की दाखबारी के गुच्छे बटोर लीजिए, क्योंकि उसके अंगूर पक चुके हैं&quot;।</span> <sup>19</sup><span class='v-txt'>इस पर स्वर्गदूत ने अपनी हंसिया चलायी और पृथ्वी की दाखबारी की फसल बटोर कर उसे ईश्वर के कोप-रूपी विशाल कुण्ड में डाल दिया।</span> <sup>20</sup><span class='v-txt'>नगर के बाहर कुण्ड रौंद दिया गया और उस में से जो रक्त निकला, वह सोलह सौ फरलांग की दूरी तक, घोड़ों की बागडोर की ऊँचाई तक, पहुँच गया।</span> </p>
+        <div class='nav'><a href='073013.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='073015.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

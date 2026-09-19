@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 14</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 14</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>धन्य है वह मनुष्य, जिसने अपने मुख से पाप नहीं किया और जो अपने पुराने पापों के कारण दुःखी न हो!</span> <sup>2</sup><span class='v-txt'>धन्य है वह मनुष्य, जिसका अन्तःकरण उसे दोषी नहीं ठहराता और जिसने आशा नहीं छोड़ी है!</span> <sup>3</sup><span class='v-txt'>क्षुद्र मनुष्य को धन शोभा नहीं देता और कृपण का सोना किसी काम का नहीं।</span> <sup>4</sup><span class='v-txt'>जो अपना पेट काट कर धन संचित करता है, वह उसे दूसरों के लिए संचित करता है, पराये लोग उसका धन भोगेंगे।</span> <sup>5</sup><span class='v-txt'>जो अपना ही शत्रु है, वह किसका हित करेगा?  वह अपने ही धन का उपभोग नहीं करता।</span> <sup>6</sup><span class='v-txt'>जो अपने साथ दुव्र्यवहार करता, उस से बुरा कोई नहीं; वह अपने से अपनी बुराई का बदला चुकाता है।</span> <sup>7</sup><span class='v-txt'>यदि वह भलाई करता, तो अनजाने ऐसा करता और अन्त में अपनी बुराई प्रकट करता है।</span> <sup>8</sup><span class='v-txt'>ईर्ष्यालु मनुष्य दुष्ट है।  वह मुँह मोड़ कर दूसरो का तिरस्कार करता है।</span> <sup>9</sup><span class='v-txt'>लालची अपने भाग से सन्तुष्ट नहीं होता उसका लालच उसे खा जाता है।</span> <sup>10</sup><span class='v-txt'>कृपण रोटी का लालच करता, किन्तु अपनी मेज़ पर भूखा रहता है।</span> <sup>11</sup><span class='v-txt'>पुत्र! अपने धन का उपभोग करो और प्रभु को उचित बलिदान चढ़ाओ।</span> <sup>12</sup><span class='v-txt'>याद रखो कि मृत्यु के आने में देर नहीं है और तुम अधोलोक का निर्णय नहीं जानते।</span> <sup>13</sup><span class='v-txt'>मरने से पहले अपने मित्र की भलाई करो और जहाँ तक बन पड़े, उसे उदार दान दो।</span> <sup>14</sup><span class='v-txt'>वर्तमान की अच्छी चीजों से अपने को वंचित मत रखो और सुख का अपना भाग हाथ से न जाने दो।</span> <sup>15</sup><span class='v-txt'>क्या तुम को अपना धन दूसरों के लिए नहीं छोड़ना पड़ेगा?  क्या तुम्हारे परिश्रम का फल चिट्ठी डाल कर नहीं बँटेगा ?</span> <sup>16</sup><span class='v-txt'>दे दो, ले लो और आनन्द मनाओ।</span> <sup>17</sup><span class='v-txt'>मरने से पहले धर्माचरण करो, क्योंकि अधोलोक में तुम को सुख नहीं मिलेगा।</span> <sup>18</sup><span class='v-txt'>हर शरीर वस्त्र की तरह जीर्ण हो जाता है और यह निर्णय अपरिवर्तनीय है &quot;तुम मर जाओगे&quot;।  जिस तरह हरे पेड़ के पत्तों में</span> <sup>19</sup><span class='v-txt'>कुछ फूट कर निकलते और कुछ गिर जाते हैं, उसी तरह शरीरधारियो की पीढ़ियों में होता है- कोई मरती और कोई उत्पन्न होती है।</span> <sup>20</sup><span class='v-txt'>कोई भी नश्वर कृति अन्त में नही टिकेगी और उसका निर्माता भी उसके साथ चला जायेगा।</span> <sup>21</sup><span class='v-txt'>हर सत्कार्य टिका रहेगा और उसके कर्ता का सम्मान किया जायेगा।</span> <sup>22</sup><span class='v-txt'>धन्य है वह मनुष्य, जो प्रज्ञा की खोज करता रहता और विवेक की प्राप्ति के लिए उत्सुक है;</span> <sup>23</sup><span class='v-txt'>जो अपने मन में प्रज्ञा के मार्ग का चिन्तन और उसके रहस्य समझने का प्रयत्न करता है; जो शिकारी की तरह उसका  पीछा करता और उसकी गति-विधि की ताक में रहता है;</span> <sup>24</sup><span class='v-txt'>जो उसकी खिड़की के अन्दर झाँकता और उसके द्वार पर कान लगा कर सुनता है;</span> <sup>25</sup><span class='v-txt'>जो उसके घर के पास निवास करता और उसकी दीवार में अपने तम्बू की खूँटी गाड़ता है; जो उसके निकट अपना तम्बू खड़ा करता और सुखद स्थान में निवास करता है;</span> <sup>26</sup><span class='v-txt'>जो अपने पुत्रों को उसके आश्रय में रखता और उसकी डालियों के नीचे रहता है!</span> <sup>27</sup><span class='v-txt'>वह उसकी छाया में गरमी से बचता और उसकी महिमा में विश्राम पाता है।</span> </p>
+        <div class='nav'><a href='028013.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028015.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

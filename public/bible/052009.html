@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>रोमियों - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>रोमियों</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैं मसीह के नाम पर सच कहता हूँ और मेरा अन्तःकरण पवित्र आत्मा से प्रेरित हो कर मुझे विश्वास दिलाता है कि मैं झूठ नहीं बोलता-</span> <sup>2</sup><span class='v-txt'>मेरे हृदय में बड़ी उदासी तथा निरन्तर दुःख होता है।</span> <sup>3</sup><span class='v-txt'>मैं अपने रक्त-सम्बन्धी भाइयों के कल्याण के लिए मसीह से वंचित हो जाने के लिए तैयार हूँ।</span> <sup>4</sup><span class='v-txt'>वे इस्राएली हैं।  ईश्वर ने उन्हें गोद लिया था।  उन्हें ईश्वर के सान्निध्य की महिमा, विधान, संहिता, उपासना तथा प्रतिज्ञाएं मिली है।</span> <sup>5</sup><span class='v-txt'>कुलपति उन्हीं के हैं और मसीह उन्हीं में उत्पन्न हुए हैं। मसीह सर्वश्रेष्ठ हैं तथा युगयुगों तक परमधन्य ईश्वर हैं। आमेन।</span> <sup>6</sup><span class='v-txt'>फिर भी यह नहीं समझना चाहिए कि ईश्वर का वचन रद्द हो गया है, क्योंकि इस्राएल के वंश में उत्पन्न सभी लोग सच्चे इस्राएली नहीं हैं</span> <sup>7</sup><span class='v-txt'>और इब्राहीम के वंश में जन्म लेने से ही सभी उनकी सच्ची सन्तान नहीं हो जाते; क्योंकि धर्मग्रन्थ कहता है- जो इसहाक के वंश में जन्म लेते हैं, वही तुम्हारे वंशज माने जायेंगे।</span> <sup>8</sup><span class='v-txt'>इसका अर्थ यह है कि जो प्रकृति के अनुसार जन्म लेते हैं, वे ईश्वर की सन्तान नहीं हैं, बल्कि जिनका जन्म प्रतिज्ञा के अनुसार हुआ, वही वंशज माने जाते हैं;</span> <sup>9</sup><span class='v-txt'>क्योंकि प्रतिज्ञा इस प्रकार थी- मैं अगले वर्ष फिर आऊँगा और तब सारा के एक पुत्र होगा।</span> <sup>10</sup><span class='v-txt'>इतना ही नहीं-रेबेक्का एक ही पुरुष, हमारे पूर्वज इसहाक से गर्भवती हुई।</span> <sup>11</sup><span class='v-txt'>(11-12) बच्चों का जन्म भी नहीं हुआ था और उन्होंने उस समय तक कोई पाप या पुण्य का काम नहीं किया था, जब रेबेक्का से यह कहा गया-अग्रज अपने अनुज के अधीन रहेगा।  यह इसलिए हुआ कि ईश्वर का निर्णय बना रहे और यह निर्णय मनुष्य के कर्मों पर नहीं, बल्कि बुलाने वाले के स्वतन्त्र चुनाव पर निर्भर है।</span> <sup>13</sup><span class='v-txt'>इसलिए धर्मग्रन्थ में लिखा है-मैंने याकूब से प्रेम किया और एसाव से बैर।</span> <sup>14</sup><span class='v-txt'>इस सम्बन्ध में हम क्या कहें?  क्या ईश्वर अन्याय करता है?  एकदम नहीं!</span> <sup>15</sup><span class='v-txt'>उसने मूसा से कहा, &quot;मैं जिस पर दया करना चाहूँगा, उसी पर दया करूँगा और जिस पर तरस खाना चाहूँगा, उसी पर तरस खाऊँगा&quot;।</span> <sup>16</sup><span class='v-txt'>इसलिए यह मनुष्य की इच्छा या उसके परिश्रम पर नहीं, बल्कि दया करने वाले ईश्वर पर निर्भर रहता है।</span> <sup>17</sup><span class='v-txt'>धर्मग्रन्थ फिराउन से कहता है, &quot;मैंने तुमको इसलिए ऊपर उठाया है कि तुम में अपना सामर्थ्य प्रदर्शित करूँ और सारी पृथ्वी पर अपने नाम का प्रचार करूँ।</span> <sup>18</sup><span class='v-txt'>इसलिए ईश्वर जिस पर चाहे, दया करता है और जिसे चाहे, हठधर्मी बना देता है।</span> <sup>19</sup><span class='v-txt'>तुम मुझ से कहोगे, &quot;तो, ईश्वर मनुष्य को क्यों दोष देता है?  ईश्वर की इच्छा का विरोध कौन कर सकता है?&quot;</span> <sup>20</sup><span class='v-txt'>अरे भई!  तुम कौन हो, जो ईश्वर से विवाद करते हो? क्या प्रतिमा अपने गढ़ने वाले से कहती है, ’तुमने मुझे ऐसा क्यों बनाया?’</span> <sup>21</sup><span class='v-txt'>क्या कुम्हार को यह अधिकार नहीं कि वह मिट्टी के एक ही लौंदे से एक पात्र ऊँचे प्रयोजन के लिए बनाये और दूसरा पात्र साधारण प्रयोजन के लिए?</span> <sup>22</sup><span class='v-txt'>यदि ईश्वर ने अपना क्रोध प्रदर्शित करने तथा अपना सामर्थ्य प्रकट करने के उद्देश्य से बहुत समय तक कोप के उन पात्रों को सहन किया, जो विनाश के लिए तैयार थे, तो कौन आपत्ति कर सकता है?</span> <sup>23</sup><span class='v-txt'>उसने ऐसा इसलिए किया कि वह दया के उन पात्रों पर अपनी महिमा का वैभव प्रकट करना चाहता है, जिन्हें अपने प्रारम्भ से ही उस महिमा के लिए तैयार किया था।</span> <sup>24</sup><span class='v-txt'>वे दया के पात्र हम हैं, जिन्हें उसने न केवल यहूदियों में से बुलाया है, बल्कि गैर-यहूदियों में से भी।</span> <sup>25</sup><span class='v-txt'>जैसा कि वह होशेआ के ग्रन्थ में कहता है- जो लोग मेरी प्रजा नहीं थे, मैं उन्हें अपनी प्रजा कहूँगा और जो मुझे प्रिय नहीं थे, मैं उन्हें प्रिय कहूँगा।</span> <sup>26</sup><span class='v-txt'>और जिस जगह उसने उन से यह कहा था, ’तुम मेरी प्रजा नहीं हो’ उसी जगह वे जीवन्त ईश्वर के पुत्र कहलायेंगे।</span> <sup>27</sup><span class='v-txt'>इसायस इस्राएल के विषय में पुकार कर कहते हैं, &quot;इस्राएलियों की संख्या समुद्र के बालू-कणों के सदृश क्यों न हो, फिर भी उन में अवशेष मात्र मुक्ति पायेगा,</span> <sup>28</sup><span class='v-txt'>क्योंकि प्रभु पूर्ण रूप से एवं शीघ्र ही पृथ्वी पर अपना निर्णय पूरा करेगा।</span> <sup>29</sup><span class='v-txt'>इसायस ने पहले भी कहा था, &quot;यदि विश्वमण्डल के प्रभु ने हमारे लिए राष्ट्र का बीज मात्र नहीं छोड़ा होता, तो हम सोदोम और गोमोरा के सदृश बन गये होते&quot;।</span> <sup>30</sup><span class='v-txt'>हम क्या कहें?  इसका निष्कर्ष यह है कि गैर-यहूदियों ने, जो धार्मिकता की खोज में नहीं लगे हुए थे, धार्मिकता, अर्थात् विश्वास पर आधारित धार्मिकता प्राप्त की।</span> <sup>31</sup><span class='v-txt'>परन्तु इस्राएल, जो धार्मिकता की संहिता के प्रति उत्साह दिखलाता था, संहिता की परिपूर्णता तक नहीं पहुँच सका।</span> <sup>32</sup><span class='v-txt'>ऐसा क्यों हुआ?  क्योंकि इस्राएली विश्वास पर नहीं, बल्कि कर्मकाण्ड पर निर्भर रहते थे।  उनके पैर ’ठोकर के पत्थर’ से लग गये और वे गिर पड़े।</span> <sup>33</sup><span class='v-txt'>जैसा कि लिखा है- देखो, मैं सियोन में ठोकर का पत्थर, लोगों को गिराने वाली शिला रख देता हूँ।  जो उस पर विश्वास करता है, उसे लज्जित नहीं होना पड़ेगा।</span> </p>
+        <div class='nav'><a href='052008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='052010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

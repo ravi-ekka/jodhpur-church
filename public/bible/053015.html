@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>1 कुरिन्थियों - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>1 कुरिन्थियों</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>भाइयो! मैं आप लोगेां को उस सुसमाचार का स्मरण दिलाना चाहता हूँ, जिसका प्रचार मैंने आपके बीच किया, जिसे आपने ग्रहण किया, जिस में आप दृढ बने हुये हैं,</span> <sup>2</sup><span class='v-txt'>और यदि आप उसे उसी रूप में बनाये रखेंगे, जिस रूप में मैंने उसे आप को सुनाया, तो उसके द्वारा आप को मुक्ति मिलेगी।  नहीं तो आपका विश्वाश व्यर्थ होगा।</span> <sup>3</sup><span class='v-txt'>मैंने आप लोगों को मुख्य रूप से वही शिक्षा सुनायी, जो मुझे मिली थी और वह इस प्रकार है- मसीह हमारे पापों के प्रायश्चित के लिए मरे, जैसा कि धर्मग्रन्थ में लिखा है।</span> <sup>4</sup><span class='v-txt'>वह कब्र में रखे गये और तीसरे दिन जी उठे, जैसा कि धर्मग्रन्थ में लिखा है।</span> <sup>5</sup><span class='v-txt'>वह कैफ़स को और बाद में बारहों में दिखाई दिये।</span> <sup>6</sup><span class='v-txt'>फिर वही एक ही समय पाँच सौ से अधिक भाइयों को दिखाई दिये।  उन में से अधिकांश आज भी जीवित हैं, यद्यपि कुछ मर गये हैं।</span> <sup>7</sup><span class='v-txt'>बाद में वह याकूब को और फिर सब प्रेरितों को दिखाई दिये।</span> <sup>8</sup><span class='v-txt'>सब के बाद वह मुझे भी, मानों ठीक समय से पीछे जन्में को दिखाई दिये।</span> <sup>9</sup><span class='v-txt'>मैं प्रेरितों में सब से छोटा हूँ।  सच पूछिए, तो मैं प्रेरित कहलाने योग्य भी नहीं; क्योंकि मैंने ईश्वर की कलीसिया पर अत्याचार किया है।</span> <sup>10</sup><span class='v-txt'>मैं जो कुछ भी हूँ, ईश्वर की कृपा से हूँ और मुझे उस से जो कृपा मिली, वह व्यर्थ नहीं हुई।  मैंने उन सब से अधिक परिश्रम किया है- मैंने नहीं, बल्कि ईश्वर की कृपा ने, जो मुझ में विद्यमान है।</span> <sup>11</sup><span class='v-txt'>ख़ैर, चाहे मैं होऊँ, चाहे वे हों - हम वही शिक्षा देते हैं और उसी पर आप लोगों ने विश्वास किया।</span> <sup>12</sup><span class='v-txt'>यदि हमारी शिक्षा यह है कि मसीह मृतकों में से जी उठे, तो आप लोगों में कुछ यह कैसे कहते हैं कि मृतकों का पुनरूत्थान नहीं होता?</span> <sup>13</sup><span class='v-txt'>यदि मृतकों का पुनरूत्थान नहीं होता, तो मसीह भी नहीं जी उठे।</span> <sup>14</sup><span class='v-txt'>यदि मसीह नहीं जी उठे, तो हमारा धर्मप्रचार व्यर्थ है और आप लोगों का विश्वास भी व्यर्थ है।</span> <sup>15</sup><span class='v-txt'>तब हम ने ईश्वर के विषय में मिथ्या साक्ष्य दिया; क्योंकि हमने ईश्वर के विषय में यह साक्ष्य दिया कि उसने मसीह को पुनर्जीवित किया और यदि मृतकों का पुनरूत्थान नहीं होता, तो उसने ऐसा नहीं किया।</span> <sup>16</sup><span class='v-txt'>कारण, यदि मृतकों का पुनरुत्थान नहीं होता, तो मसीह भी नहीं जी उठे।</span> <sup>17</sup><span class='v-txt'>यदि मसीह नहीं जी उठे, तो आप लोगों का विश्वास व्यर्थ है और आप अब तक अपने पापों में फंसे हैं।</span> <sup>18</sup><span class='v-txt'>इतना ही नहीं, जो लोग मसीह में विश्वास करते हुए मरे हैं, उनका भी विनाश हुआ है।</span> <sup>19</sup><span class='v-txt'>यदि मसीह पर हमारा भरोसा इस जीवन तक ही सीमित है, तो हम सब मनुष्यों में सब से अधिक दयनीय हैं।</span> <sup>20</sup><span class='v-txt'>किन्तु मसीह सचमुच मृतकों में से जी उठे।  जो लोग मृत्यु में सो गये हैं, उन में वह सब से पहले जी उठे।</span> <sup>21</sup><span class='v-txt'>चूँकि मृत्यु मनुष्य द्वारा आयी थी, इसलिए मनुष्य द्वारा ही मृतकों का पुनरूत्थान हुआ है।</span> <sup>22</sup><span class='v-txt'>जिस तरह सब मनुष्य आदम (से सम्बन्ध) के कारण मरते हैं, उसी तरह सब मसीह (से सम्बन्ध) के कारण पुनर्जीवित किये जायेंगे-</span> <sup>23</sup><span class='v-txt'>सब अपने क्रम के अनुसार, सब से पहले मसीह और बाद में उनके पुनरागमन के समय वे जो मसीह के बन गये हैं।</span> <sup>24</sup><span class='v-txt'>जब मसीह बुराई की सब शक्तियों को नष्ट करने के बाद अपना राज्य पिता-परमेश्वर को सौंप देंगे, तब अन्त आ जायेगा;</span> <sup>25</sup><span class='v-txt'>क्योंकि वह तब तक राज्य करेंगे, जब तक वह अपने सब शत्रुओं को अपने पैरों तले न डाल दें।</span> <sup>26</sup><span class='v-txt'>सबों के अन्त में नष्ट किया जाने वाला शत्रु है- मृत्यु।</span> <sup>27</sup><span class='v-txt'>धर्मग्रन्थ कहता है कि उसने सब कुछ उसके अधीन कर दिया है; किन्तु जब वह कहता है कि &quot;सब कुछ उसके अधीन हैं&quot;, तो यह स्पष्ट है कि ईश्वर, जिसने सब कुछ मसीह के अधीन किया है, इस ’सब कुछ’ में सम्मिलित नहीं हैं।</span> <sup>28</sup><span class='v-txt'>जब सब कुछ पुत्र के अधीन कर दिया जायेगा, तब पुत्र स्वयं उस ईश्वर के अधीन हो जायेगा, जिसने सब कुछ उसके अधीन कर दिया और इस प्रकार ईश्वर सब पर पूर्ण शासन करेगा।</span> <sup>29</sup><span class='v-txt'>यदि ऐसा नहीं है, तो उन लोगों का क्या, जो मृतकों के लिए बपतिस्मा ग्रहण करते हैं?  यदि मृतकों का पुनरूत्थान बिलकुल नहीं होता, तो वे मृतकों के लिए बपतिस्मा क्यों ग्रहण करते हैं?</span> <sup>30</sup><span class='v-txt'>और हम स्वयं-हम क्यों हर समय संकटों का सामना करते रहते हैं?</span> <sup>31</sup><span class='v-txt'>आप हमारे प्रभु ईसा में मेरे गौरव हैं।  मैं आपकी शपथ खा कर कहता हूँ कि मुझे प्रतिदिन मृत्यु का सामना करना पड़ता है।</span> <sup>32</sup><span class='v-txt'>यदि मुझे, लोकोक्ति की भाषा में, ’एफेसुम में ’हिंस्र पशुओं से लड़ना’ पड़ा, तो इस से मुझे क्या लाभ? यदि मृतकों का पुनरूत्थान नहीं होता, तो हम खायें और पियें; क्योंकि कल हमें मरना ही है।</span> <sup>33</sup><span class='v-txt'>धोखे में न रहें! बुरी संगति से अच्छा चरित्र भ्रष्ट होता है।</span> <sup>34</sup><span class='v-txt'>होश में आयें, जैसा कि उचित है और पाप करना छोड़ दें।  आप में कुछ लोग ईश्वर के सम्बन्ध में कुछ नहीं जानते -मैं आप को लज्जित करने के लिए यह कह रहा हूँ।</span> <sup>35</sup><span class='v-txt'>अब कोई प्रश्न पूछ सकता है, &quot;मृतक कैसे जी उठते हैं? वे कौन-सा शरीर ले कर आते हैं?&quot;</span> <sup>36</sup><span class='v-txt'>अरे मूर्ख! तू जो बोता है, वह जब तक नहीं मरता तब तक उस में जीवन नहीं आ जाता।</span> <sup>37</sup><span class='v-txt'>तू जो बोता है, वह बाद में उगने वाला पौधा नहीं, बल्कि निरा दाना है, चाहे वह गेहूँ का हो या दूसरे प्रकार का।</span> <sup>38</sup><span class='v-txt'>ईश्वर अपनी इच्छा के अनुसार उसे शरीर प्रदान करता है- प्रत्येक दाने को उसका अपना शरीर।</span> <sup>39</sup><span class='v-txt'>प्रत्येक देह एक-जैसी नहीं होती।  मनुष्यों, पशुओं, पक्षियों और मछलियों की देह अपने-अपने प्रकार की होती है।</span> <sup>40</sup><span class='v-txt'>आकाशीय देह-पिण्ड होते हैं और पार्थिव देह-पिण्ड, किन्तु आकाशीय देह-पिण्डों का तेज एक प्रकार का है और पार्थिव देह-पिण्डों का दूसरे प्रकार का।</span> <sup>41</sup><span class='v-txt'>सूर्य, चन्द्रमा और नक्षत्रों का तेज अपने-अपने प्रकार का होता है, क्योंकि एक नक्षत्र का तेज दूसरे नक्षत्र के तेज से भिन्न है।</span> <sup>42</sup><span class='v-txt'>मृतकों के पुनरुत्थान के विषय में भी यही बात है।  जो बोया जाता है, वह नश्वर है।  जो जी उठता है, वह अनश्वर है।</span> <sup>43</sup><span class='v-txt'>जो बोया जाता है, वह दीन-हीन है।  जो जी उठता है, वह महिमान्वित है।  जो बोया जाता है, वह दुर्बल है।  जो जी उठता है, वह शक्तिशाली है।</span> <sup>44</sup><span class='v-txt'>एक प्राकृत शरीर बोया जाता है और एक आध्यात्मिक शरीर जी उठता है।  प्राकृत शरीर भी होता है और आध्यात्मिक शरीर भी।</span> <sup>45</sup><span class='v-txt'>धर्मग्रन्थ में लिखा है कि प्रथम मनुष्य आदम जीवन्त प्राणी बन गया और अन्तिम आदम जीवन्तदायक आत्मा।</span> <sup>46</sup><span class='v-txt'>जो पहला है, वह आध्यात्मिक नहीं, बल्कि प्राकृत है। इसके बाद ही आध्यात्मिक आता है।</span> <sup>47</sup><span class='v-txt'>पहला मनुष्य मिट्टी का बना है और पृथ्वी का है, दूसरा स्वर्ग का है।</span> <sup>48</sup><span class='v-txt'>मिट्टी का बना मनुष्य जैसा था, वैसे ही मिट्टी के बने मनुष्य हैं और स्वर्ग का मनुष्य जैसा है, वैसे ही सभी स्वर्गी होंगे;</span> <sup>49</sup><span class='v-txt'>जिस तरह हमने मिट्टी के बने मनुष्य का रूप धारण किया है, उसी तरह हम स्वर्ग के मनुष्य का भी रूप धारण करेंगे।</span> <sup>50</sup><span class='v-txt'>भाइयो! मेरे कहने का अभिप्राय यह है कि निरा मनुष्य ईश्वर के राज्य का अधिकारी नहीं हो सकता और नश्वरता अनश्वरता की अधिकरी नहीं होती।</span> <sup>51</sup><span class='v-txt'>(51-52) मैं आप लोगों को एक रहस्य बता रहा हूँ।  हम सब नहीं मरेंगे, बल्कि क्षण भर में, पलक मारते, अन्तिम तुरही बजते ही हम सब-के-सब रूपान्तरित हो जायेंगे; तुरही बजेगी, मृतक अनश्वर बन कर पुनर्जीवित होंगे और हम रूपान्तरित हो जायेंगे;</span> <sup>53</sup><span class='v-txt'>क्योंकि यह आवश्यक है कि यह नश्वर शरीर अनश्वरता को और यह मरणशील शरीर अमरता को धारण करे।</span> <sup>54</sup><span class='v-txt'>जब यह नश्वर शरीर अनश्वरता को धारण करेगा, जब यह मरणशील शरीर अमरता को धारण करेगा, तब धर्मग्रन्थ का यह कथन पूरा हो जायेगा: मृत्यु का विनाश हुआ।  विजय प्राप्त हुई।</span> <sup>55</sup><span class='v-txt'>मृत्यु!  कहाँ है तेरी विजय?  मृत्यु! कहाँ है तेरा दंश?</span> <sup>56</sup><span class='v-txt'>मृत्यु का दंश तो पाप है और पाप को संहिता से बल मिलता है।</span> <sup>57</sup><span class='v-txt'>ईश्वर को धन्यवाद, जो हमारे प्रभु ईसा मसीह द्वारा हमें विजय प्रदान करता है!</span> <sup>58</sup><span class='v-txt'>प्यारे भाइयो! आप दृढ़ तथा अटल बने रहें और यह जान कर कि प्रभु के लिए आपका परिश्रम व्यर्थ नहीं है, आप निरन्तर उनका कार्य करते रहें।</span> </p>
+        <div class='nav'><a href='053014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='053016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

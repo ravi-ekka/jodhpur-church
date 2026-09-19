@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योहन - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योहन</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>आदि में शब्द था, शब्द ईश्वर के साथ था और शब्द ईश्वर था।</span> <sup>2</sup><span class='v-txt'>वह आदि में ईश्वर के साथ था।</span> <sup>3</sup><span class='v-txt'>उसके द्वारा सब कुछ उत्पन्न हुआ।  और उसके बिना कुछ भी उत्पन्न नहीं हुआ।</span> <sup>4</sup><span class='v-txt'>उस में जीवन था, और वह जीवन मनुष्यों की ज्योति था।</span> <sup>5</sup><span class='v-txt'>वह ज्योति अन्धकार में चमकती रहती है- अन्धकार ने उसे नहीं बुझाया।</span> <sup>6</sup><span class='v-txt'>ईश्वर को भेजा हुआ योहन नामक मनुष्य प्रकट हुआ।</span> <sup>7</sup><span class='v-txt'>वह साक्षी के रूप में आया, जिससे वह ज्योति के विषय में साक्ष्य दे और सब लोग उसके द्वारा विश्वास करें।</span> <sup>8</sup><span class='v-txt'>वह स्वयं ज्योति नहीं था; उसे ज्योति के विषय में साक्ष्य देना था।</span> <sup>9</sup><span class='v-txt'>शब्द वह सच्ची ज्योति था, जो प्रत्येक मनुष्य का अन्धकार दूर करती है।  वह संसार में आ रहा था।</span> <sup>10</sup><span class='v-txt'>वह संसार में था, संसार उसके द्वारा उत्पन्न हुआ; किन्तु संसार ने उसे नहीं पहचाना।</span> <sup>11</sup><span class='v-txt'>वह अपने यहाँ आया और उसके अपने लोगों ने उसे नहीं अपनाया।</span> <sup>12</sup><span class='v-txt'>जितनों ने उसे अपनाया, और जो उसके नाम में विश्वास करते हैं, उन सब को उसने ईश्वर की सन्तति बनने का अधिकार दिया।</span> <sup>13</sup><span class='v-txt'>वे न तो रक्त से, न शरीर की वासना से, और न मनुष्य की इच्छा से, बल्कि ईश्वर से उत्पन्न हुए हैं।</span> <sup>14</sup><span class='v-txt'>शब्द ने शरीर धारण कर हमारे बीच निवास किया।  हमने उसकी महिमा देखी।  वह पिता के एकलौते की महिमा-जैसी है- अनुग्रह और सत्य से परिपूर्ण।</span> <sup>15</sup><span class='v-txt'>योहन ने पुकार-पुकार कर उनके विषय में यह साक्ष्य दिया, &quot;यह वहीं हैं, जिनके विषय में मैंने कहा- जो मेरे बाद आने वाले हैं, वह मुझ से बढ़ कर हैं; क्योंकि वह मुझ से पहले विद्यमान थे।&quot;</span> <sup>16</sup><span class='v-txt'>उनकी परिपूर्णता से हम सब को अनुग्रह पर अनुग्रह मिला है।</span> <sup>17</sup><span class='v-txt'>संहिता तो मूसा द्वारा दी गयी है, किन्तु अनुग्रह और सत्य ईसा मसीह द्वारा मिला है।</span> <sup>18</sup><span class='v-txt'>किसी ने कभी ईश्वर को नहीं देखा; पिता की गोद में रहने वाले एकलौते, ईश्वर, ने उसे प्रकट किया है।</span> <sup>19</sup><span class='v-txt'>जब यहूदियों ने येरूसालेम से याजकों और लेवियों को योहन के पास यह पूछने भेजा कि आप कोन हैं,</span> <sup>20</sup><span class='v-txt'>तो उसने यह साक्ष्य दिया- उसने स्पष्ट शब्दों में यह स्वीकार किया कि मैं मसीह नहीं हूँ।</span> <sup>21</sup><span class='v-txt'>उन्होंने उस से पूछा, &quot;तो क्या? क्या आप एलियस हैं?&quot; उसने कहा, &quot;में एलियस नहीं हूँ&quot;।  &quot;क्या आप वह नबी हैं?&quot; उसने उत्तर दिया, &quot;नहीं&quot;।</span> <sup>22</sup><span class='v-txt'>तब उन्होंने उस से कहा, &quot;तो आप कौन हैं?  जिन्होंने हमें भेजा, हम उन्हें कौनसा उत्तर दें?  आप अपने विषय में क्या कहते हैं?&quot;</span> <sup>23</sup><span class='v-txt'>उसने उत्तर दिया, &quot;मैं हूँ- जैसा कि नबी इसायस ने कहा हैं- निर्जन प्रदेश में पुकारने वाले की आवाज़ः प्रभु का मार्ग सीधा करो&quot;।</span> <sup>24</sup><span class='v-txt'>जो लोग भेजे गये है, वे फ़रीसी थे।</span> <sup>25</sup><span class='v-txt'>उन्होंने उस से पूछा, &quot;यदि आप न तो मसीह हैं, न एलियस और न वह नबी, तो बपतिस्मा क्यों देते हैं?&quot;</span> <sup>26</sup><span class='v-txt'>योहन ने उन्हें उत्तर दिया, &quot;मैं तो जल में बपतिस्मा देता हूँ।  तुम्हारे बीच एक हैं, जिन्हें तुम नहीं पहचानते।</span> <sup>27</sup><span class='v-txt'>वह मेरे बाद आने वाले हैं।  मैं उनके जूते का फीता खोलने योग्य भी नहीं हूँ।&quot;</span> <sup>28</sup><span class='v-txt'>यह सब यर्दन के पास बेथानिया में घटित हुआ, जहाँ योहन बपतिस्मा देता था।</span> <sup>29</sup><span class='v-txt'>दूसरे दिन योहन ने ईसा को अपनी ओर आते देखा और कहा, &quot;देखो-ईश्वर का मेमना, जो संसार का पाप हरता है।</span> <sup>30</sup><span class='v-txt'>यह वहीं हैं, जिनके विषय में मैंने कहा, मेरे बाद एक पुरुष आने वाले हैं।  वह मुझ से बढ़ कर हैं, क्योंकि वह मुझ से पहले विद्यमान थे।</span> <sup>31</sup><span class='v-txt'>मैं भी उन्हें नहीं जानता था, परन्तु मैं इसलिए जल से बपतिस्मा देने आया हूँ कि वह इस्राएल पर प्रकट हो जायें।&quot;</span> <sup>32</sup><span class='v-txt'>फिर योहन ने यह साक्ष्य दिया, &quot;मैंने आत्मा को कपोत के रूप में स्वर्ग से उतरते और उन पर ठहरते देखा।</span> <sup>33</sup><span class='v-txt'>मैं भी उन्हें नहीं जानता था; परन्तु जिसने मुझे जल से बपतिस्मा देने भेजा, उसने मुझ से कहा था, ‘तुम जिन पर आत्मा को उतरते और ठहरते देखोगे, वही पवित्र आत्मा से बपतिस्मा देते हैं’।</span> <sup>34</sup><span class='v-txt'>मैंने देखा और साक्ष्य दिया कि यह ईश्वर के पुत्र हैं।&quot;</span> <sup>35</sup><span class='v-txt'>दूसरे दिन योहन फिर अपने दो शिष्यों के साथ वहीं था।</span> <sup>36</sup><span class='v-txt'>उसने ईसा को गुज़रते देखा और कहा, &quot;देखो- ईश्वर का मेमना!’</span> <sup>37</sup><span class='v-txt'>दोनों शिष्य उसकी यह बात सुन कर ईसा के पीछे हो लिये।</span> <sup>38</sup><span class='v-txt'>ईसा ने मुड़ कर उन्हें अपने पीछे आते देखा और कहा, &quot;क्या चाहते हो?&quot;  उन्होंने उत्तर दिया, &quot;रब्बी! &quot; (अर्थात गुरुवर) आप कहाँ रहते हैं?&quot;</span> <sup>39</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;आओ और देखो&quot;।  उन्होंने जा कर देखा कि वे कहाँ रहते हैं और उस दिन वे उनके साथ रहे।  उस समय शाम के लगभग चार बजे थे।</span> <sup>40</sup><span class='v-txt'>जो योहन की बात सुन कर ईसा के पीछे हो लिय थे, उन दोनों में एक सिमोन पेत्रुस का भाई अन्द्रेयस था।</span> <sup>41</sup><span class='v-txt'>उसने प्रातः अपने भाई सिमोन से मिल कर कहा, &quot;हमें मसीह (अर्थात् खीस्त) मिल गये हैं&quot;</span> <sup>42</sup><span class='v-txt'>और वह उसे ईसा के पास ले गया।  ईसा ने उसे देख कर कहा, &quot;तुम योहन के पुत्र सिमोन हो।  तुम केफस (अर्थात् पेत्रुस) कहलाओगे।&quot;</span> <sup>43</sup><span class='v-txt'>दूसरे दिन ईसा ने गलीलिया जाने का निश्चय किया। उनकी भेंट फिलिप से हुई और उन्होंने उस से कहा, &quot;मेरे पीछे चले आओ&quot;।</span> <sup>44</sup><span class='v-txt'>फिलिप बेथसाइदा का, अन्द्रेयस और पेत्रुस के नगर का निवासी था।</span> <sup>45</sup><span class='v-txt'>फिलिप नथानाएल से मिला और बोला, &quot;मूसा ने संहिता में और नबियों ने जिनके विषय में लिखा है, वही हमें मिल गये हैं।  वह नाज़रेत-निवासी, यूसुफ़ के पुत्र ईसा हैं।&quot;</span> <sup>46</sup><span class='v-txt'>नथानाएल ने उत्तर दिया, &quot;क्या नाज़रेत से भी कोई अच्छी चीज़ आ सकती है?&quot;  फिलिप ने कहा, &quot;आओ और स्वयं देख लो&quot;।</span> <sup>47</sup><span class='v-txt'>ईसा ने नथानाएल को अपने पास आते देखा और उसके विषय में कहा, &quot;देखो, यह एक सच्चा इस्राएली है।  इस में कोई कपट नहीं।&quot;</span> <sup>48</sup><span class='v-txt'>नथानाएल ने उन से कहा, &quot;आप मुझे कैसे जानते हैं?&quot; ईसा ने उत्तर दिया, &quot;फिलिप द्वारा तुम्हारे बुलाये जाने से पहले ही मैंने तुम को अंजीर के पेड़ के नीचे देखा&quot;।</span> <sup>49</sup><span class='v-txt'>नथानाएल ने उन से कहा, &quot;गुरुवर!  आप ईश्वर के पुत्र हैं, आप इस्राएल के राजा हैं&quot;।</span> <sup>50</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;मैंने तुम से कहा, मैंने तुम्हें अंजीर के पेड़ के नीचे देखा, इसीलिए तुम विश्वास करते हो। तुम इस से भी महान् चमत्कार देखोगे।&quot;</span> <sup>51</sup><span class='v-txt'>ईसा ने उस से यह भी कहा, &quot;मैं तुम से यह कहता हूँ -  तुम स्वर्ग को खुला हुआ और ईश्वर के दूतों को मानव पुत्र के ऊपर उतरते-चढ़ते हुए देखोगे&quot;।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='050002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

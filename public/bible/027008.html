@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रज्ञा - अध्याय 8</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रज्ञा</h1>
+        <h2>अध्याय 8</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रज्ञा की शक्ति पृथ्वी के एक छोर से दूसरे छोर तक सक्रिय है और वह सुचारू रूप से विश्वका संचालन करती है।</span> <sup>2</sup><span class='v-txt'>मैंने उस को प्यार किया और युवावस्था से उसे प्राप्त करने का प्रयत्न करता रहा।  मैंने उसे अपनी दुलहन बना कर अपने घर में लाना चाहा, क्योंकि मैं उसके सौन्दर्य का उपासक बन गया था।</span> <sup>3</sup><span class='v-txt'>वह अपनी कुलीनता पर गर्व करती है, क्योंकि वह ईश्वर के यहाँ निवास करती है और सर्वेश्वर उस को प्यार करता है।</span> <sup>4</sup><span class='v-txt'>वह ईश्वर-सम्बन्धी ज्ञान में दीक्षित हो चुकी है और ईश्वर के कार्य निर्धारित करती है।</span> <sup>5</sup><span class='v-txt'>यदि जीवन मेंं सम्पत्ति वांछनीय है, तो प्रज्ञा से बड़ी सम्पत्ति क्या है, जो सब कार्य सम्पन्न करती है?</span> <sup>6</sup><span class='v-txt'>यदि हमारी बुद्धि कार्यकुशल है, तो प्रज्ञा कहीं अधिक कार्यकुशल है, क्योंकि वह सब कुछ की जन्मदात्री है।</span> <sup>7</sup><span class='v-txt'>यदि कोई धार्मिकता को प्यार करता है, तो सद्गुण प्रज्ञा के परिश्रम से उत्पन्न होते हैं; क्योंकि वह संयम, विवेक, न्याय और धैर्य की शिक्षा देती है और मानव जीवन में इन से लाभदायक कुछ नहीं हो सकता।</span> <sup>8</sup><span class='v-txt'>और यदि कोई प्रचुर मात्रा में अनुभव प्राप्त करना चाहता है, तो प्रज्ञा अतीत जानती और भविष्य का अनुमान लगाती है।  वह सूक्तियों की व्याख्या करती और पहेलियाँ सुलझाती है।  उसे चिन्हों चमत्कारों, कालों और युगों का पूर्वज्ञान है।</span> <sup>9</sup><span class='v-txt'>इसलिए मैंने उसे अपनी जीवन-संगिनी बनाने का संकल्प किया; क्योंकि मैं जानता था कि इस प्रकार मुझे उस से कल्याणकारी परामर्श और चिन्ताओें एवं दुःख में सान्त्वना मिलती।</span> <sup>10</sup><span class='v-txt'>उसी के कारण मुझे जनता में यश और युवक होते हुए भी बड़ों का सम्मान प्राप्त होता।</span> <sup>11</sup><span class='v-txt'>मैं निर्णय देने में प्रवीण बनता और मुझे शासकों की प्रशंसा प्राप्त होती।</span> <sup>12</sup><span class='v-txt'>यदि मैं मौन रहता, तो लोग प्रतीक्षा करते, यदि मैं बोलता, तो वे ध्यान से सुनते।  यदि मैं बहुत देर तक भाषण देता, तो वे दाँत तले उँगली दबाते।</span> <sup>13</sup><span class='v-txt'>मैं प्रज्ञा द्वारा, अमरत्व प्राप्त करता और आने वाली पीढ़ियों में मेरी स्मृति सदा बनी रहती।</span> <sup>14</sup><span class='v-txt'>मैं जातियों पर राज्य करता और राष्ट्र मेरे अधीन हो जाते।</span> <sup>15</sup><span class='v-txt'>मेरा नाम सुनते ही दुर्जेय राजा काँपते।  मैं जनता के बीच भला और युद्ध में वीर दिखता।</span> <sup>16</sup><span class='v-txt'>अपने यहाँ लौटने पर मैं उसके पास विश्राम करता; क्योंकि उसकी संगति में न तो कोई कटुता है और न उसके सान्निध्य में कोई क्लान्ति वहाँ केवल सुख और आनन्द मिलता है।</span> <sup>17</sup><span class='v-txt'>मन-ही-मन विचार कर और हृदय में यह सोच कर कि प्रज्ञा के रिष्ते से अमरता प्राप्त होती है,</span> <sup>18</sup><span class='v-txt'>उसकी मित्रता से शुभ आनन्द, उसके हाथ के कार्यों से अक्षय सम्पत्ति, उसके साहचर्य से विवेक और उसके साथ वार्तालाप से सुयष मिलता है।  मैं उसे चारों ओर  ढूँढ़ता रहा, जिससे मैं उसे अपनाऊँ।</span> <sup>19</sup><span class='v-txt'>मैं उस समय एक प्रतिभाशाली और सहृदय नवयुवक था;</span> <sup>20</sup><span class='v-txt'>सद्गुणी होने के कारण मुझे एक अदोष शरीर मिला,</span> <sup>21</sup><span class='v-txt'>किन्तु यह ज्ञान कर कि यदि ईश्वर मुझे प्रज्ञा प्रदान नहीं करेगा, तो मैं उसे प्राप्त नहीं कर पाऊँगा हालाँकि यह जानना भी प्रज्ञा था कि वह किसका वरदान है।  मैंने प्रभु की ओर अभिमुख हो कर सारे हृदय से यह कहते हुए प्रार्थना की:</span> </p>
+        <div class='nav'><a href='027007.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='027009.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

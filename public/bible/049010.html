@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इसके बाद प्रभु ने अन्य बहत्तर शिष्य नियुक्त किये और जिस-जिस नगर और गाँव में वे स्वयं जाने वाले थे, वहाँ दो-दो करके उन्हें अपने आगे भेजा।</span> <sup>2</sup><span class='v-txt'>उन्होंने उन से कहा, &quot;फ़सल तो बहुत है, परन्तु मज़दूर थोड़े हैं; इसलिए फ़सल के स्वामी से विनती करो कि वह अपनी फ़सल काटने के लिए मज़दूरों को भेजे।</span> <sup>3</sup><span class='v-txt'>जाओ, मैं तुम्हें भेडि़यों के बीच भेड़ों की तरह भेजता हूँ।</span> <sup>4</sup><span class='v-txt'>तुम न थैली, न झोली और न जूते ले जाओ और रास्ते में किसी को नमस्कार मत करो।</span> <sup>5</sup><span class='v-txt'>जिस घर में प्रवेश करते हो, सब से पहले यह कहो, ’इस घर को शान्ति!’</span> <sup>6</sup><span class='v-txt'>यदि वहाँ कोई शान्ति के योग्य होगा, तो उस पर तुम्हारी शान्ति ठहरेगी, नहीं तो वह तुम्हारे पास लौट आयेगी।</span> <sup>7</sup><span class='v-txt'>उसी घर में ठहरे रहो और उनके पास जो हो, वही खाओ-पियो; क्योंकि मज़दूर को मज़दूरी का अधिकार है। घर पर घर बदलते न रहो।</span> <sup>8</sup><span class='v-txt'>जिस नगर में प्रवेश करते हो और लोग तुम्हारा स्वागत करते हैं, तो जो कुछ तुम्हें परोसा जाये, वही खा लो।</span> <sup>9</sup><span class='v-txt'>वहाँ के रोगियों को चंगा करो और उन से कहो, ’ईश्वर का राज्य तुम्हारे निकट आ गया है’।</span> <sup>10</sup><span class='v-txt'>परन्तु यदि किसी नगर में प्रवेश करते हो और लोग तुम्हारा स्वागत नहीं करते, तो वहाँ के बाज़ारों में जा कर कहो,</span> <sup>12</sup><span class='v-txt'>मैं तुम से यह कहता हूँ -  न्याय के दिन उस नगर की दशा की अपेक्षा सोदोम की दशा कहीं अधिक सहनीय होगी।</span> <sup>13</sup><span class='v-txt'>&quot;धिक्कार तुझे, खोराजि़न! धिक्कार तुझे, बेथसाइदा! जो चमत्कार तुम में किये गये हैं, यदि वे तीरुस और सीदोन में किये गये होते, तो उन्होंने न जाने कब से टाट ओढ़ कर और भस्म रमा कर पश्चात्ताप किया होता।</span> <sup>14</sup><span class='v-txt'>इसलिए न्याय के दिन तुम्हारी दशा की अपेक्षा तीरुस और सिदोन की दशा कहीं अधिक सहनीय होगी।</span> <sup>15</sup><span class='v-txt'>और तू, कफ़रनाहूम! क्या तू स्वर्ग तक ऊँचा उठाया जायेगा? नहीं, तू अधोलोक तक नीचे गिरा दिया जायेगा?</span> <sup>16</sup><span class='v-txt'>&quot;जो तुम्हारी सुनता है, वह मेरी सुनता है और जो तुम्हारा तिरस्कार करता है, वह मेरा तिरस्कार करता है।  जो मेरा तिरस्कार करता है, वह उसका तिरस्कार करता है, जिसने मुझे भेजा है।&quot;</span> <sup>17</sup><span class='v-txt'>बहत्तर शिष्य सानन्द लौटे और बोले, &quot;प्रभु! आपके नाम के कारण अपदूत भी हमारे अधीन होते हैं&quot;।</span> <sup>18</sup><span class='v-txt'>ईसा ने उन्हें उत्तर दिया, &quot;मैंने शैतान को बिजली की तरह स्वर्ग से गिरते देखा।</span> <sup>19</sup><span class='v-txt'>मैंने तुम्हें साँपों, बिच्छुओं और बैरी की सारी शक्ति को कुचलने का सामर्थ्य दिया है।  कुछ भी तुम्हें हानि नहीं पहुँचा सकेगा।</span> <sup>20</sup><span class='v-txt'>लेकिन, इसलिए आनन्दित न हो कि अपदूत तुम्हारे अधीन हैं, बल्कि इसलिए आनन्दित हो कि तुम्हारे नाम स्वर्ग में लिखे हुए हैं।&quot;</span> <sup>21</sup><span class='v-txt'>उसी घड़ी ईसा ने पवित्र आत्मा से परिपूर्ण हो कर आनन्द के आवेश में कहा, &quot;पिता! स्वर्ग और पृथ्वी के प्रभु! मैं तेरी स्तुति करता हूँ, क्योंकि तूने इन सब बातों को ज्ञानियों और समझदारों से छिपा कर निरे बच्चों पर प्रकट किया है।  हाँ, पिता, यही तुझे अच्छा लगा</span> <sup>22</sup><span class='v-txt'>मेरे पिता ने मुझे सब कुछ सौंपा है।  पिता को छोड़ कर यह कोई भी नहीं जानता कि पुत्र कौन है और पुत्र को छोड़ कर यह कोई नहीं जानता कि पिता कौन है।  केवल वही जानता है, जिस पर पुत्र उसे प्रकट करने की कृपा करता है।&quot;</span> <sup>23</sup><span class='v-txt'>तब उन्होंने अपने शिष्यों की ओर मुड़ कर एकान्त में उन से कहा, &quot;धन्य हैं वे आँखें, जो वह देखती हैं जिसे तुम देख रहे हो!</span> <sup>24</sup><span class='v-txt'>क्योंकि मैं तुम से कहता हूँ - तुम जो बातें देख रहे हो, उन्हें कितने ही नबी और राजा देखना चाहते थे, परन्तु उन्होंने उन्हें नहीं देखा और जो बातें तुम सुन रहे हो, वे उन्हें सुनना चाहते थे, परन्तु उन्होंने उन्हें नहीं सुना।&quot;</span> <sup>25</sup><span class='v-txt'>किसी दिन एक शास्त्री आया और ईसा की परीक्षा करने के लिए उसने यह पूछा, &quot;गुरूवर! अनन्त जीवन का अधिकारी होने के लिए मुझे क्या करना चाहिए?&quot;</span> <sup>26</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;संहिता में क्या लिखा है?&quot; तुम उस में क्या पढ़ते हो?&quot;</span> <sup>27</sup><span class='v-txt'>उसने उत्तर दिया, &quot;अपने प्रभु-ईश्वर को अपने सारे हृदय, अपनी सारी आत्मा, अपनी सारी शक्ति और अपनी सारी बुद्धि से प्यार करो और अपने पड़ोसी को अपने समान प्यार करो&quot;।</span> <sup>28</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;तुमने ठीक उत्तर दिया।  यही करो और तुम जीवन प्राप्त करोगे।&quot;</span> <sup>29</sup><span class='v-txt'>इस पर उसने अपने प्रश्न की सार्थकता दिखलाने के लिए ईसा से कहा, &quot;लेकिन मेरा पड़ोसी कौन है?&quot;</span> <sup>30</sup><span class='v-txt'>ईसा ने उसे उत्तर दिया, &quot;एक मनुष्य येरूसालेम से येरीख़ो जा रहा था और वह डाकुओं के हाथों पड़ गया। उन्होंने उसे लूट लिया, घायल किया और अधमरा छोड़ कर चले गये।</span> <sup>31</sup><span class='v-txt'>संयोग से एक याजक उसी राह से जा रहा था और उसे देख कर कतरा कर चला गया।</span> <sup>32</sup><span class='v-txt'>इसी प्रकार वहाँ एक लेवी आया और उसे देख कर वह भी कतरा कर चला गया।</span> <sup>33</sup><span class='v-txt'>इसके बाद वहाँ एक समारी यात्री आया और उसे देख कर उस को तरस हो आया।</span> <sup>34</sup><span class='v-txt'>वह उसके पास गया और उसने उसके घावों पर तेल और अंगूरी डाल कर पट्टी बाँधी।  तब वह उसे अपनी ही सवारी पर बैठा कर एक सराय ले गया और उसने उसकी सेवा शुश्रूषा की।</span> <sup>35</sup><span class='v-txt'>दूसरे दिन उसने दो दीनार निकाल कर मालिक को दिये और उस से कहा, ’आप इसकी सेवा-शुश्रूषा करें।  यदि कुछ और ख़र्च हो जाये, तो मैं लौटते समय आप को चुका दूँगा।’</span> <sup>36</sup><span class='v-txt'>तुम्हारी राय में उन तीनों में कौन डाकुओं के हाथों पड़े उस मनुष्य का पड़ोसी निकला?&quot;</span> <sup>37</sup><span class='v-txt'>उसने उत्तर दिया, &quot;वही जिसने उस पर दया की&quot;।  ईसा बोले, &quot;जाओ, तुम भी ऐसा करो&quot;।</span> <sup>38</sup><span class='v-txt'>ईसा यात्रा करते-करते एक गाँव आये और मरथा नामक महिला ने अपने यहाँ उनका स्वागत किया।</span> <sup>39</sup><span class='v-txt'>उसके मरियम नामक एक बहन थी, जो प्रभु के चरणों में बैठ कर उनकी शिक्षा सुनती रही।</span> <sup>40</sup><span class='v-txt'>परन्तु मरथा सेवा-सत्कार के अनेक कार्यों में व्यस्त थी। उसने पास आ कर कहा, &quot;प्रभु! क्या आप यह ठीक समझते हैं कि मेरी बहन ने सेवा-सत्कार का पूरा भार मुझ पर ही छोड़ दिया है?  उस से कहिए कि वह मेरी सहायता करे।&quot;</span> <sup>41</sup><span class='v-txt'>प्रभु ने उसे उत्तर दिया, &quot;मरथा! मरथा! तुम बहुत-सी बातों के विषय में चिन्तित और व्यस्त हो;</span> <sup>42</sup><span class='v-txt'>फिर भी एक ही बात आवश्यक है।  मरियम ने सब से उत्तम भाग चुन लिया है; वह उस से नहीं लिया जायेगा।&quot;</span> </p>
+        <div class='nav'><a href='049009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

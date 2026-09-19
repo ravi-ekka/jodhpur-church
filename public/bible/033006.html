@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मुझे प्रभु की यह वाणी सुनाई पड़ी,</span> <sup>2</sup><span class='v-txt'>“मानवपुत्र! अपना मुँह इस्राएल के पर्वतों की ओर करो और उनके विरुद्ध यह भवियवाणी करो।</span> <sup>3</sup><span class='v-txt'>कहो, ’इस्राएल के पर्वतों! प्रभु-ईश्वर की यह वाणी सुनो।  प्रभु-ईश्वर पर्वतों और पहाड़ियों, दरियों और घाटियों से कहता हैः देखो, मैं तुम पर तलवार भेजूँगा  और तुम्हारे पहाड़ी पूजा-स्थानों को नष्ट कर दूँगा।</span> <sup>4</sup><span class='v-txt'>तुम्हारी वेदियाँ उड़ज जायेंगी धूप-वेदियाँ तोड़ दी जायेंगी और मैं तुम्हारे मृतकों को तुम्हारी मूर्तियों के सामने फेंक दूँगा।</span> <sup>5</sup><span class='v-txt'>मैं इस्राएल के मृतकों के शव उनकी मूर्तियों के सामने डाल दूँगा और तुम्हारी हड्डियाँ तुम्हारी वेदियों के पास बिखेर दूँगा।</span> <sup>6</sup><span class='v-txt'>तुम जहाँ कहीं निवास करोगे, तुम्हारे नगर उजाड़ हो जायेंगे और तुम्हारे पहाड़ी पूजास्थान नष्ट कर दिये जायेंगे, जिससे तुम्हारी वेदियाँ उजाड़ और नष्ट हो जायें, तुम्हारी मूर्तियाँ टुकडे-टुकडे हो कर नष्ट हो जायें, तुम्हारी धूप-वेदियाँ तोड़ दी जायें और तुम्हारे हाथों की कृतियों का नाम तक न रहे।</span> <sup>7</sup><span class='v-txt'>मृतक तुम्हारे बीच गिर पड़ेंगे और तुम तभी यह समझोेगे कि मैं ही प्रभु हूँ।</span> <sup>9</sup><span class='v-txt'>तो तुम में से वे लोग, जो बच निकले हैं, तब उन राष्ट्रों में मुझे याद करेंगे, जहाँ वे बन्दी बना कर ले जाये गये हैं।  मैं उनके व्यभिचारी हृदय को, जो मुझ से विमुख हो गया है, चूर कर दूँगा और उनकी वे आँखें फोड़ दूँगा, जो अपनी मूर्तियों को कामातुरता से देखती हैं। वे अपने द्वारा किये गये पापों और सभी वीभत्स कमोर्ं के लिए स्वयं अपनी दृष्टि में घृणा के पात्र हो जायेंगे।</span> <sup>10</sup><span class='v-txt'>वे तभी यह समझेंगे कि मैं ही प्रभु हूँ; मैंने यों ही नहीं कहा है कि मैं उन पर यह विपत्ति ढाहूँगा।’</span> <sup>11</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता हैः ’हाथ पीट कर और पैर पटक कर यह कहो- इस्राएल के घराने के घृणित कुकर्मों के लिए धिक्कार! क्योंकि वह तलवार, अकाल और महामारी का शिकार होगा।</span> <sup>12</sup><span class='v-txt'>जो दूर होगा, वह महामारी से मरेगा; जो नज़दीक होगा, वह तलवार से मारा जायेगा और जो बच कर सुरक्षित रह जायेगा, उसकी मृृत्यु अकाल से होगी।  इस प्रकार मैं उन पर अकाल क्रोध उतारूँगा।</span> <sup>13</sup><span class='v-txt'>तुम तभी यह समझोगे कि मैं ही प्रभु हूँ, जब उनकी वेदियों के चारों ओर, उनकी देवमूर्तियों के पास, प्रत्येक पहाड़ी पर, सभी पर्वत-शिखरों पर, प्रत्येक हरे वृक्ष और प्रत्येक पत्तेदार बलूत के नीचे, जहाँ कहीं भी वे अपनी देवमूर्तियों को सुगन्धित धूप चढाया करते थे, उनके मृतक बिछ जायेंगे।</span> <sup>14</sup><span class='v-txt'>मैं अपना हाथ उनके विरुद्ध उठाऊँगा और उनके सभी निवास-स्थानों में, रिबला से ले कर उजाड़खण्ड तक, उनके देश को निर्जन और उजाड़ बना दूँगा।  वे तभी यह समझेंगे कि मैं ही प्रभु हूँ।“</span> </p>
+        <div class='nav'><a href='033005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जनता को अपने ये उपदेश सुनाने के बाद ईसा कफ़रनाहूम आये।</span> <sup>2</sup><span class='v-txt'>वहाँ एक शतपति का अत्यन्त प्रिय नौकर किसी रोग से मर रहा था।</span> <sup>3</sup><span class='v-txt'>शतपति ने ईसा की चर्चा सुनी थी; इसलिए उसने यहूदियों के कुछ प्रतिष्ठित नागरिकों को ईसा के पास यह निवेदन करने के लिए भेजा कि आप आ कर मेरे नौकर को बचायें।</span> <sup>4</sup><span class='v-txt'>वे ईसा के पास आ कर आग्रह के साथ यह कहते हुए उन से विनय करते रहे, &quot;वह शतपति इस योग्य है कि आप उसके लिए ऐसा करें।</span> <sup>5</sup><span class='v-txt'>वह हमारे राष्ट्र से प्रेम करता है और उसी ने हमारे लिए सभागृह बनवाया।&quot;</span> <sup>6</sup><span class='v-txt'>ईसा उनके साथ चले।  वे उसके घर के निकट पहुँचे ही थे कि शतपति ने मित्रों द्वारा ईसा के पास यह कहला भेजा, &quot;प्रभु! आप कष्ट न करें, क्योंकि मैं इस योग्य नहीं हूँ कि आप मेरे यहाँ आयें।</span> <sup>7</sup><span class='v-txt'>इसलिए मैने अपने को इस योग्य नहीं समझा कि आपके पास आऊँ।  आप एक ही शब्द कह दीजिए और मेरा नौकर चंगा हो जायेगा।</span> <sup>8</sup><span class='v-txt'>मैं एक छोटा-सा अधिकारी हूँ।  मेरे अधीन सिपाही रहते हैं।  जब मैं एक से कहता हूँ -  ’जाओ’, तो वह जाता है और दूसरे से- ’आओ’, तो वह आता है और अपने नौकर से-’यह करो’, तो वह यह करता है।&quot;</span> <sup>9</sup><span class='v-txt'>ईसा यह सुन कर चकित हो गये और उन्होंने पीछे आते हुए लोगों की ओर मुड़ कर कहा, &quot;मै तुम लोगों से कहता हूँ -  इस्राएल में भी मैंने इतना दृढ़ विश्वास नहीं पाया&quot;।</span> <sup>10</sup><span class='v-txt'>और भेजे हुए लोगों ने घर लौट कर रोगी नौकर को भला-चंगा पाया।</span> <sup>11</sup><span class='v-txt'>इसके बाद ईसा नाईन नगर गये।  उनके साथ उनके शिष्य और एक विशाल जनसमूह भी चल रहा था।</span> <sup>12</sup><span class='v-txt'>जब वे नगर के फाटक के निकट पहुँचे, तो लोग एक मुर्दे को बाहर ले जा रहे थे।  वह अपनी माँ का इकलौता बेटा था और वह विधवा थी।  नगर के बहुत-से लोग उसके साथ थे।</span> <sup>13</sup><span class='v-txt'>माँ को देख कर प्रभु को उस पर तरस हो आया और उन्होंने उस से कहा, &quot;मत रोओ&quot;,</span> <sup>14</sup><span class='v-txt'>और पास आ कर उन्होंने अरथी का स्पर्श किया।  इस पर ढोने वाले रुक गये।  ईसा ने कहा, &quot;युवक! मैं तुम से कहता हूँ, उठो&quot;।</span> <sup>15</sup><span class='v-txt'>मुर्दा उठ बैठा और बोलने लगा।  ईसा ने उसको उसकी माँ को सौंप दिया।</span> <sup>16</sup><span class='v-txt'>सब लोग विस्मित हो गये और यह कहते हुए ईश्वर की महिमा करते रहे, &quot;हमारे बीच महान् नबी उत्पन्न हुए हैं और ईश्वर ने अपनी प्रजा की सुध ली है&quot;।</span> <sup>17</sup><span class='v-txt'>ईसा के विषय में यह बात सारी यहूदिया और आसपास के समस्त प्रदेश में फैल गयी।</span> <sup>18</sup><span class='v-txt'>योहन के शिष्यों ने योहन को इन सब बातों की ख़बर सुनायी।</span> <sup>19</sup><span class='v-txt'>योहन ने अपने दो शिष्यों को बुला कर ईसा के पास यह पूछने भेजा, &quot;क्या आप वही हैं, जो आने वाले हैं या हम किसी और की प्रतीक्षा करें?&quot;</span> <sup>20</sup><span class='v-txt'>इन दो शिष्यों ने ईसा के पास आ कर कहा, &quot;योहन बपतिस्मा ने हमें आपके पास यह पूछने भेजा है-क्या आप वहीं हैं, जो आने वाले हैं या हम किसी और की प्रतीक्षा करें?&quot;</span> <sup>21</sup><span class='v-txt'>उस समय ईसा बहुतों को बीमारियों, कष्टों और अपदूतों से मुक्त कर रहे थे और बहुत-से अन्धों को दृष्टि प्रदान कर रहे थे।</span> <sup>22</sup><span class='v-txt'>उन्होंने योहन के शिष्यों से कहा, &quot;जाओ, तुमने जो सुना और देखा है, उसे योहन को बता दो-अन्धे देखते हैं, लंगड़े चलते हैं, कोढ़ी शुद्ध किये जाते हैं, बहरे सुनते हैं, मुर्दे जिलाये जाते हैं, दरिद्रों को सुसमाचार सुनाया जाता है</span> <sup>23</sup><span class='v-txt'>और धन्य है वह, जिसका, विश्वास मुझ पर से नहीं उठता!&quot;</span> <sup>24</sup><span class='v-txt'>योहन द्वारा भेजे हुए शिष्यों के चले जाने के बाद ईसा लोगों से योहन के विषय में कहने लगे, &quot;तुम निर्जन प्रदेश में क्या देखने गये थे? हवा से हिलते हुए सरकण्डे को? नहीं!</span> <sup>25</sup><span class='v-txt'>तो, तुम क्या देखने गये थे? बढि़या कपड़े पहने मनुष्य को? नहीं! कीमती वस्त्र पहनने वाले और भोग-विलास में जीवन बिताने वाले महलों में रहते हैं।</span> <sup>26</sup><span class='v-txt'>आखि़र तुम क्या देखने निकले थे? किसी नबी को? निश्चय ही! मैं तुम से कहता हूँ, - नबी से भी महान् व्यक्ति को।</span> <sup>27</sup><span class='v-txt'>यह वही है, जिसके विषय में लिखा है-देखो, मैं अपने दूत को तुम्हारे आगे भेजता हूँ।  वह तुम्हारा मार्ग तैयार करेगा।</span> <sup>28</sup><span class='v-txt'>मैं तुम से कहता हूँ, मनुष्यों में योहन बपतिस्ता से बड़ा कोई नहीं।  फिर भी, ईश्वर के राज्य में जो सब से छोटा है, वह योहन से बड़ा है।</span> <sup>29</sup><span class='v-txt'>&quot;सारी जनता और नाकेदारों ने भी योहन की बात सुन कर और उसका बपतिस्मा ग्रहण कर ईश्वर की इच्छा पूरी की,</span> <sup>30</sup><span class='v-txt'>परन्तु फ़रीसियों और शास्त्रियों ने उसका बपतिस्मा ग्रहण नहीं कर अपने विषय में ईश्वर का आयोजन व्यर्थ कर दिया।</span> <sup>31</sup><span class='v-txt'>मैं इस पीढ़ी के लोगों की तुलना किस से करूँ?  वे किसके सदृश हैं?</span> <sup>32</sup><span class='v-txt'>वे बाज़ार में बैठे हुए छोकरों के सदृश हैं, जो एक दूसरे को पुकार कर कहते हैं: हमने तुम्हारे लिए बाँसुरी बजायी और तुम नहीं नाचे, हमने विलाप किया और तुम नहीं रोये;</span> <sup>33</sup><span class='v-txt'>क्योंकि योहन बपतिस्ता आया, जो न रोटी खाता और न अंगूरी पीता है और तुम कहते हो-उसे अपदूत लगा है।</span> <sup>34</sup><span class='v-txt'>मानव पुत्र आया, जो खाता-पीता है और तुम कहते हो-देखो, यह आदमी पेटू और पियक्कड़ है, नाकेदारों और पापियों का मित्र है।</span> <sup>35</sup><span class='v-txt'>किन्तु ईश्वर की प्रज्ञा उसकी प्रजा द्वारा सही प्रमाणित हुई है।&quot;</span> <sup>36</sup><span class='v-txt'>किसी फ़रीसी ने ईसा को अपने यहाँ भोजन करने का निमन्त्रण दिया।  वे उस फ़रीसी के घर आ कर भोजन करने बैठे।</span> <sup>37</sup><span class='v-txt'>नगर की एक पापिनी स्त्री को यह पता चला कि ईसा फ़रीसी के यहाँ भोजन कर रहे हैं।  वह संगमरमर के पात्र में इत्र ले कर आयी</span> <sup>38</sup><span class='v-txt'>और रोती हुई ईसा के चरणों के पास खड़ी हो गयी। उसके आँसू उनके चरण भिगोने लगे, इसलिए उसने उन्हें अपने केशों से पोंछ लिया और उनके चरणो को चूम-चूम कर उन पर इत्र लगाया।</span> <sup>39</sup><span class='v-txt'>जिस फ़रीसी ने ईसा को निमन्त्रण दिया था, उसने यह देख कर मन-ही-मन कहा, &quot;यदि वह आदमी नबी होता, तो जरूर जान जाता कि जो स्त्री इसे छू रही है, वह कौन और कैसी है-वह तो पापिनी है&quot;।</span> <sup>40</sup><span class='v-txt'>इस पर ईसा ने उस से कहा, &quot;सिमोन, मुझे तुम से कुछ कहना है&quot;।  उसने उत्तर दिया, &quot;गुरूवर! कहिए&quot;।</span> <sup>41</sup><span class='v-txt'>&quot;किसी महाजन के दो कर्जदार थे।  एक पाँच सौ दीनार का ऋणी था और दूसरा, पचास का।</span> <sup>42</sup><span class='v-txt'>उनके पास कर्ज अदा करने के लिए कुछ नहीं था, इसलिए महाजन ने दोनों को माफ़ कर दिया।  उन दोनों में से कौन उसे अधिक प्यार करेगा?&quot;</span> <sup>43</sup><span class='v-txt'>सिमोन ने उत्तर दिया, &quot;मेरी समझ में तो वही, जिसका अधिक ऋण माफ हुआ&quot;।  ईसा ने उस से कहा, &quot;तुम्हारा निर्णय सही है।&quot;।</span> <sup>44</sup><span class='v-txt'>तब उन्होंने उस स्त्री की ओर मुड़ कर सिमोन से कहा, &quot;इस स्त्री को देखते हो?  मैं तुम्हारे घर आया, तुमने मुझे पैर धोने के लिए पानी नहीं दिया; पर इसने मेरे पैर अपने आँसुओं से धोये और अपने केशों से पोंछे।</span> <sup>45</sup><span class='v-txt'>तुमने मेरा चुम्बन नहीं किया, परन्तु यह जब से भीतर आयी है, मेरे पैर चूमती रही है।</span> <sup>46</sup><span class='v-txt'>तुमने मेरे सिर में तेल नहीं लगाया, पर इसने मेरे पैरों पर इत्र लगाया है।</span> <sup>47</sup><span class='v-txt'>इसलिए मैं तुम से कहता हूँ, इसके बहुत-से पाप क्षमा हो गये हैं, क्योंकि इसने बहुत प्यार दिखाया है।  पर जिसे कम क्षमा किया गया, वह कम प्यार दिखाता है।&quot;</span> <sup>48</sup><span class='v-txt'>तब ईसा ने उस स्त्री से कहा, &quot;तुम्हारे पाप क्षमा हो गये हैं&quot;।</span> <sup>49</sup><span class='v-txt'>साथ भोजन करने वाले मन-ही-मन कहने लगे, &quot;यह कौन है जो पापों को भी क्षमा करता है?&quot;</span> <sup>50</sup><span class='v-txt'>पर ईसा ने उस स्त्री से कहा, &quot;तुम्हारे विश्वास ने तुम्हारा उद्धार किया है।  शान्ति प्राप्त कर जाओ।&quot;</span> </p>
+        <div class='nav'><a href='049006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तुम अपनी प्रिय पत्नी से ईर्ष्या मत करो- कहीं ऐसा न हो कि वह तुम्हारी शत्रु बन जाये।</span> <sup>2</sup><span class='v-txt'>किसी स्त्री के प्रति इस तरह आसक्त मत हो कि वह तुम पर शासन करने लगे।</span> <sup>3</sup><span class='v-txt'>किसी वेश्या के निकट मत जाओ- कहीं ऐसा न हो कि तुम उसके जाल में फॅस जाओ।</span> <sup>4</sup><span class='v-txt'>किसी गायिका की संगति मत करो- कहीं ऐसा न हो कि तुम उस पर आसक्त हो जाओ।</span> <sup>5</sup><span class='v-txt'>किसी युवती पर दृष्टि मत डालो- कहीं ऐसा न हो कि उसका सौन्दर्य तुम्हारे पतन का कारण बन जाये।</span> <sup>6</sup><span class='v-txt'>वेश्याओें पर आसक्त मत हो- कहीं ऐसा न हो कि तुम अपनी विरासत खो दो।</span> <sup>7</sup><span class='v-txt'>नगर की गलियों में मत मारा-मारा फिरो और उसके एकान्त स्थानों में मत भटको।</span> <sup>8</sup><span class='v-txt'>सुन्दर स्त्री से अपनी दृष्टि हटालो और परायी सुन्दरी को मत निहारो।</span> <sup>9</sup><span class='v-txt'>स्त्री के सौन्दर्य के कारण बहुतों का विनाश हुआ।  वासना उसके कारण आग की तरह भड़क उठती है।</span> <sup>12</sup><span class='v-txt'>विवाहित परस्त्री की संगति मत करो; उसके साथ बैठ कर मदिरा मत पियो</span> <sup>13</sup><span class='v-txt'>कहीं ऐसा न हो कि तुम उस पर आसक्त हो जाओ और वासना के कारण तुम्हारा विनाश हो जाये।</span> <sup>14</sup><span class='v-txt'>पुराने मित्र का परित्याग मत करो, क्योंकि नया मित्र उसकी बराबरी नहीं कर सकता।</span> <sup>15</sup><span class='v-txt'>नया मित्र नयी अंगूरी के सदृश है: पुराने हो जाने पर तुम उसे रूचि से पियोगे।</span> <sup>16</sup><span class='v-txt'>पापी की सफलता से ईर्ष्या मत करो: तुम नहीं जानते कि उसका अन्त कितना दुःखमय होगा।</span> <sup>17</sup><span class='v-txt'>दुष्टों की समृद्धि की प्रशंसा मत करो।  याद रखो कि मृत्यु से पहले उन्हें, दण्ड दिया जायेगा।</span> <sup>18</sup><span class='v-txt'>प्राणदण्ड का अधिकार रखने वाले से दूर रहो और तुम्हें मृत्यु के भय का अनुभव  नहीं होगा।</span> <sup>19</sup><span class='v-txt'>उसके निकट आने पर अपराध मत करो कहीं ऐसा न हो कि वह तुम्हारे प्राण हर ले।</span> <sup>20</sup><span class='v-txt'>समझ लो कि तुम फन्दों के बीच चलते हो और नगर के प्राचीर पर टहलते हो।</span> <sup>21</sup><span class='v-txt'>इस में सावधान रहो कि किसके साथ मेल-जोल रखते हो; ज्ञानियों से परामर्श करो।</span> <sup>22</sup><span class='v-txt'>समझदार लोगों की संगति करो और सर्वोच्च प्रभु की आज्ञाओें की ही चरचा करो।</span> <sup>23</sup><span class='v-txt'>धर्मियों के साथ भोजन करो और ईश्वर के प्रति श्रद्धा पर गौरव करो।</span> <sup>24</sup><span class='v-txt'>शिल्पकार की कुशलता के कारण कृति की प्रशंसा होती है और अपने वचनों के कारण शासक प्रज्ञ माना जाता है।</span> <sup>25</sup><span class='v-txt'>बकवादी अपने नगर में संकट पैदा करता है और अन्धाधुन्ध बोलने वाले व्यक्ति से लोग बैर करते हैं।</span> </p>
+        <div class='nav'><a href='028008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

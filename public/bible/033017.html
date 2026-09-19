@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 17</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 17</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मुझे प्रभु की यह वाणी सुनाई पड़ी,</span> <sup>2</sup><span class='v-txt'>“मानवपुत्र! इस्र्राएल के घराने से यह पहेली पूछो और यह दृष्टान्त सुनाओ।</span> <sup>3</sup><span class='v-txt'>कहो, प्रभु-ईश्वर यह कहता है- विशाल पंखों वाला, लम्बे डैनों वाला, घने रंगबिरंगे पिच्छकों वाला एक महागरुड़ लेबानोन पर उतरा और देवदार के शिखर पर बैठ गया।</span> <sup>4</sup><span class='v-txt'>उसने उसकी सब से ऊँची टहनी तोड़ी, वह उस को व्यापार करने वाले देश में ले गया और उसे व्यापारियों के नगर में रोप दिया।</span> <sup>5</sup><span class='v-txt'>तब उसने उस देश से थोड़ा बीज ले कर उसे रोपण-क्यारी में डाल दिया।  उसने उसे मजनूँ की टहनी की तरह प्रचुर जल के पास लगाया।</span> <sup>6</sup><span class='v-txt'>उस में पत्तियँ फूटीं और वह नीचे ज़मीन पर फैलने वाली दखलता बन गयी।  उसकी शाखएँ गरुड़ की ओर बढ़ गयीं और उसकी जडेंं उसके नीचे जमी रही।  इस प्रकार वह दाखलता बन गयी।  उस से शाखाएँ फूटीं और पत्ते निकल आये।</span> <sup>7</sup><span class='v-txt'>“किन्तु विशाल पंखों वाला, घने पिच्छकों वाला एक दूसरा महागरुड़ था।  उस दाखलता की जडे़ं उसकी ओर मुड़ गयीं, और उसकी शाखाएँ उसकी ओर फैल गयीं, जिससे वह उसे जल से सींचे- उस क्यारी से, जहाँ उसने उस को लगाया था।</span> <sup>8</sup><span class='v-txt'>वह प्रचुर जल के समीप उपजाऊ भूमि में लगायी गयी, जिससे उस में शाखाएँ फूटें और फल लगें और वह विशाल दाखलता बन जाये।</span> <sup>9</sup><span class='v-txt'>कहो, प्रभु-ईश्वर यह कहता है- क्या वह वहाँ पनपेगी?  क्या वह उसकी जडे़ नही उखाडे़गा, उसकी शाखाएँ नहीं काटेगा और उस से फूटने वाली सभी नयी पत्तियाँ नही सूखेंगी?  उस को जड़ से उखाड़ने के लिए मज़बूत हाथ या बहुत लोगों की ज़रूरत नहीं होगी।</span> <sup>10</sup><span class='v-txt'>क्या रोपे जाने पर वह पनपेगी?  जब पुरवैया उसे झकझोरेगी, तो क्या वह नहीं सूख जायेगी?  वह उसी क्यारी में सूख जायेगी, जहाँ वह उगी थी’।“</span> <sup>11</sup><span class='v-txt'>फिर मुझे प्रभु की यह वाणी सुनाई पड़ी,</span> <sup>12</sup><span class='v-txt'>“अब उस विद्रोही घराने से कहो, ’क्या तुम यह नहीं समझते कि इन बातों को अभिप्राय क्या हैं?’ उन से बोलोः बाबुल का राजा येरूसालेम आया।  वह उसके राजा और पदाधिकारियों को पकड़ कर अपने यहाँ बाबुल ले गया।</span> <sup>13</sup><span class='v-txt'>उसने राजकुल के एक व्यक्ति को चुन कर उसके साथ सन्धि की और उसे शपथ खिलायी।  वह उस देश के नेताओं को अपने साथ ले आया था,</span> <sup>14</sup><span class='v-txt'>जिससे वह राज्य अपने को ऊपर उठा न सके और दब कर रहे और उसके साथ सन्धि का पालन कर उसे मानता रहे।</span> <sup>15</sup><span class='v-txt'>किन्तु उस व्यक्ति ने उस से विद्रोह किया।  उसने भारी संख्या में घोड़े और सैनिक प्राप्त करने के विचार से दूतों को मिस्र भेजा।  क्या वह सफल हो सकेगा?  क्या ऐसा काम करने वाला व्यक्ति बच पायेगा?  क्या वह विधान भंग करने पर भी सुरक्षित रह सकेगा?</span> <sup>16</sup><span class='v-txt'>“प्रभु कहता है- अपने अस्तित्व की शपथ!  निश्चय ही उसकी मृत्यु बाबुल में होगी- उस स्थान में, जहाँ वह राजा निवास करता है, जिसने उसे राजा बनाया, जिसकी शपथ की उसने अवहेलना की और जिस से की हुई सन्धि को उसने भंग किया।</span> <sup>17</sup><span class='v-txt'>जब बहुतों के वध के लिये टीले बनाये जायेंगे और मोरचाबन्दी की जायेगी तो फ़िराउन अपनी शक्तिाशाली सेना और विशाल समूह के साथ यूद्ध में उसकी सहायता नहीं करेगा।</span> <sup>18</sup><span class='v-txt'>उसने शपथ की अवहेलना की और सान्धि भंग की, उसने हाथ मिलाया और तब भी यह सब कियाः वह नहीं बच पायेगा।</span> <sup>19</sup><span class='v-txt'>इसलिए प्रभु-ईश्वर यह कहता है- अपने अस्तित्व की शपथ!  उसने मेरी जिस शपथ की अवहेलना की और मेरे साथ की हुई जिस सन्धि को भंग किया, उसका अपराध उसके सिर डालूँगा।</span> <sup>20</sup><span class='v-txt'>मैं उस पर अपना जाल डालूँगा और वह मेर फन्दे में फँस जायेगा।  मैं उस को बाबुल ले आऊँगा और उसने मेरे साथ जो विश्वासघात किया है, वहाँ उसका न्याय करूँगा।</span> <sup>21</sup><span class='v-txt'>उसके सभी चुने हुए सैनिक तलवार के घाट उतारे जायेंगे और बच कर निकलने वाले चारों ओर तितर-बितर कर, दिये जायेंगे।  तुम तभी यह समझोगे कि मैं, प्रभु, ने यह कहा है।</span> <sup>22</sup><span class='v-txt'>“प्रभु-ईश्वर यह कहता है- मैं देवदार की फुनगी से, उसकी ऊँची-ऊँची शाखाओं से एक टहनी  काटूँगा।  उसे मैं स्वयं एक ऊँचे पहाड़ पर लगाऊँगा,</span> <sup>23</sup><span class='v-txt'>उसे मैं इस्राएल के ऊँचे पहाड़ पर लगाऊँगा।  उस में डालियाँ निकल आयेंगी।  वह फल उत्पन्न करेगा और एक शानदार देवदार बन जायेगा।  नाना प्रकार के पक्षी उसके नीचे आ जायेंगे; वे उसकी डालियों की छाया में बसेरा करेंगे</span> <sup>24</sup><span class='v-txt'>और मैदान के सभी पेड़ जान लेंगे कि मैं प्रभु, ऊँचे वृक्ष को नीचा बना देता हूँ और नीचे वृक्ष को ऊँचा। मैं हरे वृक्ष को सूखा बना देता हूँ और सूखे वृक्ष को हरा।  मैं, प्रभु जो कह चुका हूँ, उसे पूरा कर देता हूँ।“</span> </p>
+        <div class='nav'><a href='033016.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033018.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

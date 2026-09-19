@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>ज़कारिया - अध्याय 14</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>ज़कारिया</h1>
+        <h2>अध्याय 14</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>देखो, प्रभु-ईश्वर का ऐसा दिन आ रहा है, जब तुम्हारे देखते ही तुम से लूटा हुआ माल बाँटा जायेगा।</span> <sup>2</sup><span class='v-txt'>प्रभु-ईश्वर येरूसालेम के विरुद्ध युद्ध करने के लिए सब राष्ट्रों को एकत्रित करेगा।  येरूसालेम पर शत्रु का कब्ज़ा हो जायेगा, घर लूट लिये जायेंगे और स्त्रियाँ बलात्कार का शिकार हो जायेंगी।  नगर की आधी आबादी निर्वासित हो जायेगी; बाकी लोग नगर में रह जायेंगे।</span> <sup>3</sup><span class='v-txt'>तब प्रभु ईश्वर युद्धक्षेत्र में उतरेगा, जैसे वह युद्ध किया करता था।</span> <sup>4</sup><span class='v-txt'>उस दिन उसके पैर येरूसालेम के पूर्व की ओर, जैतून पहाड पर जमे रहेंगे।  जैतून पहाड पूर्व से पश्चिम तक बीच में फट जायेगा, जिससे विशाल खाई बन जायेगी: पहाड आधा भाग उत्तर की ओर हट जायेगा और दूसरा भाग दक्षिण की ओर।</span> <sup>5</sup><span class='v-txt'>हिन्नोम घाटी गोआह से यसोल तक भरी  जायेगी; वह वैसे ही भरी होगी, जैसे यूदा के राजा उजि़्ज़या के समय में भूकम्प से हो गया था।  प्रभु-ईश्वर और उसके साथ सभी स़त आ धमकेंगं।</span> <sup>6</sup><span class='v-txt'>उस दिन न ठण्ड पडेगी, न गर्मी और न पाला।</span> <sup>7</sup><span class='v-txt'>तब दिन और रात का चक्र बन्द होगा; दिन ही दिन होगा, जिसकी कब सन्ध्या होगी, यह केवल प्रभु-ईश्वर जानता है।</span> <sup>8</sup><span class='v-txt'>उस दिन जीवन्त जल का स्रोत येरूासलेम से फूट निकालेगा!  आधा जल पूर्वी समुद्र की ओर बहेगा और और आधा पश्चिमी समुद्र की ओर।  जल ग्रीष्म में भी और शरद मैं भी निरन्तर बहता रहेगा।</span> <sup>9</sup><span class='v-txt'>सारी पृथ्वी पर प्रभु-ईश्वर राज्य करेगा।  उस दिन स्वानामधन्य प्रभु-ईश्वर अनन्य होगा।</span> <sup>10</sup><span class='v-txt'>गेबा से ले कर दक्षिण के रिम्मोन तक सारा देश सपाट हो जायेगा, जिससे येरूसालेम, अपने ही स्थान में स्थिति हो कर, और ऊँचा उभरेगा, बेनयामीन-द्वार से पूर्व-द्वार तक, कोण-द्वार तथा हननएल के बुर्ज से राजकीय अंगूरी कुण्डों तक आबाद होगा।</span> <sup>11</sup><span class='v-txt'>शापमुक्त हो कर येरूसालेम सुरक्षित बना रहेगा।</span> <sup>12</sup><span class='v-txt'>येरूसालेम के विरुद्ध लडने वाले राष्ट्रों पर प्रभु-ईश्वर यह विपत्ति ढाहेगा: उनके जीते जी मांस सड जायेगा; उनकी आँखें अपने कूपों में ही सड जायेंगी और उनके मुहों में उनकी जीभें सड जायेंगी।</span> <sup>13</sup><span class='v-txt'>घोड़ों, खच्चरों, ऊँटो और गधों तथा पड़ाव के सभी पशुओं पर वैसी ही विपत्ति आ पडेगी।</span> <sup>14</sup><span class='v-txt'>उस दिन प्रभु से भेजा हुआ भयानक आतंक उनके बीच फैल जायेगा, जिससे एक दूसरे की सहायता करते हुए भी वे एक दूसरे पर हाथ उठायेंगे।</span> <sup>15</sup><span class='v-txt'>यूदा भी येरूालेम में युद्ध करगा।  आसपास के सभी राष्ट्रों की धन-सपंत्ति, ढेर-सा सोना, चाँदी और वस्त्र एकत्रित हो जायेगा।</span> <sup>16</sup><span class='v-txt'>तब येरूसालेम पर आक्रमण करने वाले सब राष्ट्रों में जो शेष रह जायेंगे, वे प्रति वर्ष येरूसालेम की तीर्थयात्रा करेंगे; वे वहाँ विश्वमण्डल के प्रभु की आराधना करके मण्डप-पर्व मनायेंगे।</span> <sup>17</sup><span class='v-txt'>पृथ्वीतल की जातियों में से अधीश्वर, विश्वमण्डल के प्रभु की आराधना करने के लिए कहीं कोई जाति येरूसालेम जाने से चूक गया जो, उनके यहाँ वर्षा बन्द होगी।</span> <sup>18</sup><span class='v-txt'>यदि मिस्र की जाति वार्शिक तीर्थयात्रा करके मन्दिर के दर्शन करने से चूक जाये, तो उस पर वही वही विपत्ति पडेगी, जिसे प्रभु-ईश्वर ने ऐसे सभी राष्ट्रों के लिए ठहराया है, जो मण्डप-पर्व मनाने के लिए यात्रा नहीं करते।</span> <sup>19</sup><span class='v-txt'>यही होगा मिस्र का दण्ड और अन्य किसी राष्ट्र का भी, जो मण्डप-पर्व मनाने के लिए यात्रा नहीं करता।</span> <sup>20</sup><span class='v-txt'>उस दिन घोड़ों की घण्टियों पर अंकित होगा, &quot;प्रभु के लिए पवित्र&quot;, और प्रभु-ईश्वर के मंदिर की हँडियाँ वैसे ही सुन्दर होंगी, जैसे वेदी के अर्घ के कटोरे।  येरूसालेम और यूदा में सभी हँडियाँ विश्वमण्डल के प्रभु के पवित्र पात्र समझी जायेंगी, जिससे सभी यज्ञकारी उन्हीं में यज्ञ का मांस पका सकें और उस दिन विश्वमण्डल के प्रभु के मन्दिर में व्यापारी नहीं रह जायेंगे।</span> </p>
+        <div class='nav'><a href='045013.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

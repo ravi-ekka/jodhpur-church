@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>नहेम्या - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>नहेम्या</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उस समय लोग और उनकी पत्नियाँ अपने यहूदी भाई-बन्धुओं के विरुद्ध बड़ी-बड़ी शिकायतें करने लगे।</span> <sup>2</sup><span class='v-txt'>कुछ लोग कहते थे, &quot;हमारे अनेक पुत्र और पुत्रियाँ हैं। हमें अन्न दिया जाये, जिसे खा कर हम जीवित रह सकें।&quot;</span> <sup>3</sup><span class='v-txt'>अन्य लोग कहते थे, &quot;इस अकाल में अन्न के लिए हमें अपने खेतों, दाखबारियों और घरों को गिरवी रखना पड़ रहा है&quot;।</span> <sup>4</sup><span class='v-txt'>और कुछ लोग कहते थे, &quot;अपने खेतों और दाखबारियों का कर राजा को देने के लिए हमें ऋण लेना पड़़ रहा है।</span> <sup>5</sup><span class='v-txt'>हम अपने भाइयों के रक्त-सम्बन्धी हैं, हमारे पुत्र उनके पुत्रों जैसे हैं।  फिर भी हमें अपने पुत्र-पुत्रियों को उनके यहाँ दास-दासियों के रूप में रखना पड़ता है।  हमारी कई पुत्रियाँ उनकी दासियाँ बन चुकी हैं।  हम लाचार हैं; क्योंकि हमारे खेत और दाखबारियाँ दूसरों के हाथ में हैं।&quot;</span> <sup>6</sup><span class='v-txt'>उनकी इस तरह की बातें सुन कर मुझे बड़ा क्रोध हुआ।</span> <sup>7</sup><span class='v-txt'>मैंने अपने मन में विचार करने के बाद कुलीनों और पदाधिकारियों को दोष देते हुए उन से कहा, &quot;आप अपने देश-भाइयों से सूद लेते हैं&quot;।  तब मैंने उनके विरुद्ध एक बड़ी सभा एकत्रित कर</span> <sup>8</sup><span class='v-txt'>उन से कहा, &quot;हम से जितना बन पाया, हमने द्रव्य दे कर अपने उन यहूदी भाइयों का उद्धार किया, जो अन्य जातियों के हाथ में बिक चुके थे और अब आप अपने भाइयों को बेच रहे हैं और हमें द्रव्य दे कर उनका फिर उद्धार करना पड़ता है।&quot;</span> <sup>9</sup><span class='v-txt'>वे चुप रहे और कुछ उत्तर न दे सके।  मैंने फिर कहा, &quot;आप लोग जो कर रहे हैं, वह ठीक नहीं है।  आप को हमारे ईश्वर पर श्रद्धा रखनी चाहिए, जिससे हमारे गैर-यहूदी शत्रु हमारा अपमान नहीं करें।</span> <sup>10</sup><span class='v-txt'>मैं, मेरे भाई-बन्धु और मेरे सेवक उन्हें पैसा और अन्न उधार देते हैं।  अब हम सब उनका ऋण माफ़ करें।</span> <sup>11</sup><span class='v-txt'>आज ही उन्हें उनके खेत, दाखबारियाँ, जैतून-कुंज और घर लौटा दें और जो पैसा, अन्न, अंगूरी और तेल उधार दे चुके हैं, उसका सूद माफ़ करें।&quot;</span> <sup>12</sup><span class='v-txt'>इस पर उन्होंने कहा, &quot;हम उन्हें वापस दे देंगे और इसके बाद उन से कुछ नहीं माँगेंगे।  आपकी जैसी आज्ञा है, हम वैसा ही करेंगे।&quot;  अब मैंने याजकों को बुलवा कर उन से यह प्रतिज्ञा पूरी करने की शपथ ली।</span> <sup>13</sup><span class='v-txt'>इसके बाद मैंने अपने वस्त्र की धूल झाड़ कर कहा, &quot;यदि कोई व्यक्ति अपनी प्रतिज्ञा पूरी न करे, तो ईश्वर इसी तरह उस मनुष्य को उसके घर और उसकी सम्पत्ति से अलग कर दे।  वह इसी तरह झाड़ दिया जाये और उसके हाथ ख़ाली कर दिये जायें।&quot; इस पर सारी सभा ने कहाः &quot;आमेन!&quot;  और इसके बाद उन्होंने  प्रभु का स्तुतिगान किया।  लोगों ने अपनी प्रतिज्ञा पूरी की।</span> <sup>14</sup><span class='v-txt'>मैं जिस दिन से यूदा प्रान्त का राज्यपाल नियुक्त हुआ, उस दिन से राजा अर्तज़र्कसीस के बीसवें वर्ष से बत्तीसवें वर्ष तक अर्थात् बारह वर्ष तक-मैंने और मेरे भाई-बन्धुओं ने राज्यपाल का भत्ता स्वीकार नहीं किया।</span> <sup>15</sup><span class='v-txt'>मेरे पहले के राज्यपालों ने लोगों का बोझ भारी बना दिया था।  वे रोटी और अंगूरी के अतिरिक्त उन से चाँदी के चालीस शेकेल भी लिया करते थे और उनके अनुचर भी लोगों पर अत्याचार करते थे।  मैं ईश्वर पर श्रद्धा रखता था, इसलिए मैंने ऐसा नहीं किया।</span> <sup>16</sup><span class='v-txt'>मैंने इस दीवार के निर्माण में भी हाथ बँटाया और किसी का खेत नहीं लिया और मेरे अनुचरों ने भी वहाँ काम में सहायता पहुँचायी।</span> <sup>17</sup><span class='v-txt'>आसपास से आये हुए लोगों के अतिरिक्त ड़ेढ़ सौ यहूदी पदाधिकारी मेरी मेज़ पर भोजन करते थे।</span> <sup>18</sup><span class='v-txt'>जो कुछ प्रतिदिन तैयार किया जाता, अर्थात् एक बछड़ा, छः चुनी हुई भेड़ें और मुर्गियाँ, इन सब का व्यय मैं ही उठाता।  इसके अतिरिक्त हर दसवें दिन जितनी भी अंगूरी की आवश्यकता होती थी, उसका मैं प्रबन्ध करता था।  इन सब के बावजूद मैंने राज्यपाल का भत्ता नहीं माँगा, क्योंकि लोगों पर काम का बोझ बहुत भारी था।</span> <sup>19</sup><span class='v-txt'>मेरे ईश्वर!  जो कुछ मैंने इन लोगों के लिये किया है, तू उसे मेरे कल्याण के लिए याद रख।</span> </p>
+        <div class='nav'><a href='016004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='016006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>निर्गमन - अध्याय 40</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>निर्गमन</h1>
+        <h2>अध्याय 40</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>पहले महीने के पहले दिन दर्शन-कक्ष, निवास की स्थापना करो।</span> <sup>3</sup><span class='v-txt'>उस में विधान की मंजूषा रखो और उसके सामने अन्तरपट लटकाओ।</span> <sup>4</sup><span class='v-txt'>उसके सामने मेज और उसका सारा सामान सजा कर रखो, उसके बाद दीपवृक्ष और उसके दीपक।</span> <sup>5</sup><span class='v-txt'>विधान की मंजूषा के सामने सोने की धूप वेदी रखो और निवास के द्वार पर परदा लगाओ।</span> <sup>6</sup><span class='v-txt'>निवास के प्रवेश-द्वार, दर्शन-कक्ष के सामने बलि-वेदी रखो।</span> <sup>7</sup><span class='v-txt'>दर्शन-कक्ष और वेदी के बीच चिलमची रखो और उसे जल से भर दो।</span> <sup>8</sup><span class='v-txt'>चारों ओर का आँगन तैयार करो और उसके प्रवेश द्वार पर परदा लगाओ।</span> <sup>9</sup><span class='v-txt'>फिर अभ्यंजन के तेल से निवास और उसकी सारी वस्तुओं का विलेपन और अभिषेक करो, जिससे वह पवित्र हो जाये।</span> <sup>10</sup><span class='v-txt'>इसी प्रकार बलि-वेदी और उसके सारे सामान का भी विलेपन करो, जिससे वह परमपवित्र हो जाये।</span> <sup>11</sup><span class='v-txt'>चिलमची और उसकी चौकी का भी विलेपन और अभिषेक करो।</span> <sup>12</sup><span class='v-txt'>तब हारून और उसके पुत्रों को दर्शन-कक्ष के द्वार पर बुलाओ और उन्हें जल से नहलाओ।</span> <sup>13</sup><span class='v-txt'>हारून को पवित्र वस्त्र पहनाओ, उसका अभ्यंजन करो और मेरे पुरोहित के रूप में उसका अभिषेक करो।</span> <sup>14</sup><span class='v-txt'>उसके पुत्रों को बुलाओ और उन्हें कुरते पहनाओ</span> <sup>15</sup><span class='v-txt'>और उनके पिता की तरह पुरोहित के रूप में उनका अभ्यंजन करो। उनका यह अभ्यंजन पीढ़ी-दर-पीढ़ी, सदा के लिए उन्हें याजक का पद प्रदान करेगा।</span> <sup>16</sup><span class='v-txt'>प्रभु ने जो कुछ कहा था, मूसा ने वह सब पूरा किया।</span> <sup>17</sup><span class='v-txt'>दूसरे वर्ष के प्रथम महीने, उस महीने के प्रथम दिन, निवास का निर्माण हुआ।</span> <sup>18</sup><span class='v-txt'>मूसा ने निवास का निर्माण किया। उसने जमीन में कुर्सियाँ डाल दीं और उन पर तख्ते रख कर और छड़ बाँध कर खूँटे खड़े किये।</span> <sup>19</sup><span class='v-txt'>उसने निवास पर तम्बू ताना और उसके ऊपर तम्बू का आवरण रख दिया, जैसा कि प्रभु ने मूसा को आदेश दिया था।</span> <sup>20</sup><span class='v-txt'>उसने विधान की पाटियाँ मंजूषा में रखीं, मंजूषा में डण्डे लगाये और उस पर छादन-फलक रखा।</span> <sup>21</sup><span class='v-txt'>उसने मंजूषा निवास में रख कर उसके सामने एक अन्तरपट लगाया और इस प्रकार विधान की मंजूषा आँखों से ओझल कर दी, जैसा कि प्रभु ने मूसा को आदेश दिया था।</span> <sup>22</sup><span class='v-txt'>इसके बाद उसने दर्शन-कक्ष में, निवास के उत्तरी भाग में अन्तरपट के सामने मेज रखी</span> <sup>23</sup><span class='v-txt'>और उस पर भेंट की रोटियाँ रखीं; जैसा कि प्रभु ने मूसा को आदेश दिया था।</span> <sup>24</sup><span class='v-txt'>उसने दर्शन कक्ष में, उसके दक्षिणी भाग में, मेज के सामने दीपवृक्ष रखा।</span> <sup>25</sup><span class='v-txt'>उसने प्रभु के लिए दीपक सजाये, जैसा कि प्रभु ने उसे आदेश दिया था।</span> <sup>26</sup><span class='v-txt'>उसने दर्शन कक्ष में, अन्तरपट के सामने, सोने की वेदी रखी।</span> <sup>27</sup><span class='v-txt'>इसके बाद मूसा ने सुगन्धित लोबान जलाया, जैसा कि प्रभु ने उसे आदेश दिया था।</span> <sup>28</sup><span class='v-txt'>तब उसने निवास के प्रवेश-द्वार पर परदा लगाया।</span> <sup>29</sup><span class='v-txt'>उसने निवास, दर्शन-कक्ष के सामने होम बलि की वेदी रखी और उस पर होम-बलि और नैवेद्य चढ़ाया, जैसा कि प्रभु ने मूसा को आदेश दिया था।</span> <sup>30</sup><span class='v-txt'>दर्शन-कक्ष और वेदी के बीच चिलमची रखी और उस में जल भर दिया।</span> <sup>31</sup><span class='v-txt'>मूसा, हारून और उसके पुत्रों ने उस से अपने हाथ-पैर धोये।</span> <sup>32</sup><span class='v-txt'>जब-जब वे दर्शन-कक्ष में प्रवेश करते और वेदी के पास जाते, तब-तब वे हाथ-पैर धोते थे, जैसा कि प्रभु ने मूसा को आदेश दिया था।</span> <sup>33</sup><span class='v-txt'>निवास और वेदी के चारों ओर आँगन लगाया गया और आँगन के द्वार पर परदा। इस प्रकार मूसा का काम समाप्त हो गया।</span> <sup>34</sup><span class='v-txt'>तब एक बादल ने दर्शन-कक्ष को ढक लिया और प्रभु की महिमा निवास में भर गयी।</span> <sup>35</sup><span class='v-txt'>मूसा तम्बू में प्रवेश नहीं कर सका, क्योंकि बादल उसे छाये रहता था और निवास प्रभु की महिमा से भर गया था।</span> <sup>36</sup><span class='v-txt'>समस्त यात्रा के समय इस्राएली तभी आगे बढ़ते थे, जब बादल निवास पर से उठ कर दूर हो जाता था।</span> <sup>37</sup><span class='v-txt'>जब बादल नहीं उठता, तो वे प्रतीक्षा करते रहते।</span> <sup>38</sup><span class='v-txt'>उनकी समस्त यात्रा के समय प्रभु का बादल दिन में निवास के ऊपर छाया रहता था, किन्तु रात को बादल में आग दिखाई पड़ती, जिसे सभी इस्राएली देख सकते थे।</span> </p>
+        <div class='nav'><a href='002039.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

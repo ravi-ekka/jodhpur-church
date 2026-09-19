@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>निर्गमन - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>निर्गमन</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मूसा ने उत्तर दिया, &#039;&#039;वे लोग मेरा विश्वास नहीं करेंगे और मेरी बात नहीं मानकर यह कहेंगे कि प्रभु ने तुम्हें दर्शन नहीं दिये।&#039;&#039;</span> <sup>2</sup><span class='v-txt'>इस पर प्रभु ने उससे कहा, &#039;&#039;तुम्हारे हाथ में क्या है।&#039;&#039; उसने बताया, &#039;&#039;एक डण्डा है।&#039;&#039;</span> <sup>3</sup><span class='v-txt'>उसने उसे आदेश दिया, &#039;&#039;उसे जमीन पर फेंक दो।&#039;&#039; जैसे ही उसने उसे जमीन पर फेंका, वह साँप बन गया। मूसा उससे दूर भाग गया।</span> <sup>4</sup><span class='v-txt'>प्रभु ने मूसा से कहा, &#039;&#039;अपना हाथ बढ़ाओ, उसकी पूँछ पकड़ कर उसे उठा लो।&#039;&#039; (इसलिए उसने अपना हाथ बढ़ाया और उसे पकड़ लिया। उसके हाथ में वह फिर डण्डा बन गया।)</span> <sup>5</sup><span class='v-txt'>&#039;&#039;तुम्हारे ऐसा करने पर उन्हें विश्वास होगा कि उनके पुरखों के ईश्वर इब्राहीम, इसहाक और याकूब के प्रभु-ईश्वर ने तुम्हें दर्शन दिये हैं।&#039;&#039;</span> <sup>6</sup><span class='v-txt'>फिर प्रभु ने उससे कहा, &#039;&#039;अपना हाथ भीतर सीने पर रखो।&#039;&#039; उसने अपना हाथ भीतर अपने सीने पर रखा, परन्तु जब उसने उसे निकाला, तो उसके हाथ पर हिम की तरह श्वेत कोढ़ हो गया था।</span> <sup>7</sup><span class='v-txt'>उसने फिर आज्ञा दी, &#039;&#039;अपना हाथ फिर से भीतर सीने पर रखो।&#039;&#039; उसने अपना हाथ भीतर सीने पर रखा। जब उसने उसे बाहर निकाला, तो वह फिर उसके सारे शरीर की तरह हो गया।</span> <sup>8</sup><span class='v-txt'>ईश्वर ने कहा, &#039;&#039;यदि वे तुम्हारे पहले चिह्न पर विश्वास न करें और ध्यान न दें तो वे इस दूसरे पर विश्वास करेंगे।</span> <sup>9</sup><span class='v-txt'>यदि वे इन दो चिन्हों पर भी विश्वास न करें और तुम्हारी बात न मानें, तो तुम नील नदी से कुछ पानी लेना और उसे सूखी भूमि पर डाल देना। नील नदी से लिया हुआ वह पानी सूखी भूमि पर रक्त बन जायेगा।</span> <sup>10</sup><span class='v-txt'>मूसा ने प्रभु से कहा, &#039;&#039;प्रभु! मैं अच्छा वक्ता कभी नहीं रहा। मैं पहले नहीं था, अब तू मुझ, अपने सेवक, से बोला है, इसके बाद भी नहीं हूँ। मुझे बोलने में कठिनाई होती है। मेरी जीभ भोथरी है।&#039;&#039;</span> <sup>11</sup><span class='v-txt'>तब प्रभु ने उसे पूछा, &#039;&#039;मनुष्य मुख किसने बनाया है? उसे कौन गूँगा या बहरा, देखने वाला या अन्धा बनाता है? क्या मैं प्रभु ऐसा नहीं करता?</span> <sup>12</sup><span class='v-txt'>अच्छा अब जाओ। मैं बोलने में तुम्हारी सहायता करूँगा। और तुमको जो कहना है उसे बता दूँगा।&#039;&#039;</span> <sup>13</sup><span class='v-txt'>परन्तु उसने कहा, &#039;&#039;प्रभु किसी दूसरे को भेजने की कृपा कर।&#039;&#039;</span> <sup>14</sup><span class='v-txt'>तब प्रभु को मूसा पर क्रोध आया और उसने कहा, &#039;&#039;लेवीवंशी हारून तुम्हारा भाई है, न? मैं जानता हूँ कि वह अच्छा वक्ता है; वह तुम से मिलने आ रहा है। तुम को देख कर वह प्रसन्ना होगा।</span> <sup>15</sup><span class='v-txt'>तुम उस से बात करना और उसे समझाना कि क्या कहना हैं। मैं बोलने में तुम दोनों की सहायता करूँगा। और जो करना है, उसे बता दूँगा।</span> <sup>16</sup><span class='v-txt'>वह तुम्हारी ओर से सम्बोधित करेगा। वह मानो तुम्हारा प्रवक्ता होगा और तुम मानो उसके ईश्वर होगे।</span> <sup>17</sup><span class='v-txt'>अपना यह डण्डा अपने हाथ में लो। इसी के द्वारा तुम चमत्कार दिखाओगे।&#039;&#039;</span> <sup>18</sup><span class='v-txt'>इसके बाद मूसा अपने ससुर यित्रो के पास लौट गया और उससे बोला, &#039;&#039;आप कृपा कर मुझे मिस्र में अपने भाई-बन्धुओं के पास यह देखने के लिए जाने दीजिए कि वे अब तक जीवित हैं या नहीं।&#039;&#039; यित्रो ने मूसा से कहा, &#039;&#039;सकुशल जाओ।&#039;&#039;</span> <sup>19</sup><span class='v-txt'>मिदयान में प्रभु ने मूसा से कहा, &#039;&#039;मिस्र लौट जाओ। वे सभी लोग मर गये, जो तुम्हारे प्राण लेना चाहते थे।&#039;&#039;</span> <sup>20</sup><span class='v-txt'>तब मूसा अपनी पत्नी और अपने बच्चों को ले कर और उन्हें गधे पर बिठा कर मिस्र वापस चला गया। मूसा अपने हाथ में ईश्वर का डण्डा भी ले गया।</span> <sup>21</sup><span class='v-txt'>प्रभु ने मूसा से कहा, &#039;&#039;जब तुम मिस्र वापस आओगे, तो फिराउन के सामने वे सब चमत्कार दिखाओ, जिन्हें करने का सामर्थ्य मैंने तुम को दिया है। मैं उनका हृदय कठोर कर दूँगा, वह इस्राएलियों को नहीं जाने देगा।</span> <sup>22</sup><span class='v-txt'>तुम फिराउन से कहोगे, &quot;प्रभु का यह कहना है - इस्राएल मेरा पहलौठा पुत्र है।</span> <sup>23</sup><span class='v-txt'>मैं तुम को आदेश देता हूँ कि मेरे पुत्र को मेरी सेवा करने के लिए जाने दो। यदि तुम उसे नहीं जाने दोगे तो मैं तुम्हारे पहलौठे पुत्र को मारूँगा।&#039;&#039;</span> <sup>24</sup><span class='v-txt'>मार्ग में एक विश्रामस्थल पर प्रभु उस से मिला और उसने उसे मार डालना चाहा।</span> <sup>25</sup><span class='v-txt'>तब सिप्पोरा ने एक चकमक पत्थर का टुकड़ा ले कर अपने पुत्र का खतना किया और काटी हुई चमड़ी से उसके (मूसा के) पैरों का स्पर्ष कर कहा, &#039;&#039;अब तुम निश्चय ही रक्त के कारण मेरे दूल्हा हो।&#039;&#039;</span> <sup>26</sup><span class='v-txt'>प्रभु ने उसे छोड़ दिया। ख़तना हो जाने के कारण ही उसने उससे कहा, &#039;&#039;तुम रक्त के कारण मेरे दूल्हा हो।&#039;&#039;</span> <sup>27</sup><span class='v-txt'>प्रभु ने हारून को मूसा से मिलने के लिये निर्जन प्रदेश जाने की आज्ञा दी। इसलिए वह ईश्वर के पर्वत के पास मूसा से मिला और उसका चुम्बन किया।</span> <sup>28</sup><span class='v-txt'>मूसा ने हारून से प्रभु की वे सारी बातें कहीं, जो उसने उससे कही थीं और वे सब चिह्न भी बता दिये, जिन्हें दिखाने की आज्ञा उसे दी गयी थी।</span> <sup>29</sup><span class='v-txt'>इसके बाद मूसा और हारून ने जा कर इस्राएलियों के सब नेताओं का एकत्रित किया।</span> <sup>30</sup><span class='v-txt'>हारून ने भी वे सब बातें बतायीं, जो प्रभु ने मूसा से कही थीं और लोगों के सामने उसने वे चिह्न भी दिखाये।</span> <sup>31</sup><span class='v-txt'>लोगों ने विश्वास किया और जब उन्होंने सुना कि प्रभु ने इस्राएलियों की सुध ली है और उनके कष्टों पर ध्यान दिया है, तब उन्होंने सिर झुका कर उसकी आराधना की।</span> </p>
+        <div class='nav'><a href='002003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='002005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 19</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 19</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&quot;जब प्रभु, तुम्हारे ईश्वर ने उन राष्ट्रों का संहार किया होगा, जिनका देश प्रभु, तुम्हारे ईश्वर तुम्हें देने वाला है और तुम लोगों ने उन्हें भगा दिया होगा और तुम उनके नगरों और घरों में निवास करते होगे,</span> <sup>2</sup><span class='v-txt'>तो जो देश प्रभु, तुम्हारा ईश्वर तुम्हारे अधिकार में देता है, तुम उस में तीन नगर निर्धारित करोगे।</span> <sup>3</sup><span class='v-txt'>तुम वहाँ तक पहुँचने के लिए सड़कें बनाओगे और प्रभु, अपने ईश्वर द्वारा तुम को प्रदत्त देश तीन भागों में विभाजित करोगे, जिससे हत्या करने वाला हर व्यक्ति वहाँ भाग कर शरण ले सके।</span> <sup>4</sup><span class='v-txt'>जो व्यक्ति अनजाने, बिना किसी पूर्व शत्रुता के, किसी की हत्या करे वह अपने जीवन की रक्षा के लिए वहाँ भाग सकता है।</span> <sup>5</sup><span class='v-txt'>उदाहरणार्थ, यदि कोई अपने पड़ोसी के साथ लकड़ी काटने के लिए वन में जाये और लकडी काटने को कुल्हाड़ी हाथ से उठाये, पर कुल्हाड़ी बेंट से निकल कर उस पड़ोसी को इस तरह लगे की उसकी मृत्यु हो जाये, तो वह इन नगरो में से एक में शरण लेकर अपने जीवन की रक्षा कर सकता है।</span> <sup>6</sup><span class='v-txt'>नहीं तो ऐसा हो सकता है कि रक्त का प्रतिषोधी क्रोध के आवेश में उसका पीछा करें रास्ता लम्बा होने के कारण उसे पकड़ कर मार डाले, हालाँकि वह निर्दोष है क्योंकि उसकी अपने पड़ोसी के साथ कोई पूर्व शत्रुता नहीं थी।</span> <sup>7</sup><span class='v-txt'>इसलिए मै तुम्हें तीन नगरों को निर्धारित करने का आदेश देता हूँ</span> <sup>8</sup><span class='v-txt'>(8-9) यदि तुम लोग उन सब नियमों का पालन करोगे, जिन्हें मैं आज तुम को दे रहा हूँ और तुम ईश्वर को प्यार करते हुए उसके बताये हुये मार्ग पर चलते रहोगे, तो प्रभु, तुम्हारा ईश्वर तुम्हारे देश का विस्तार बढ़ाएगा, जैसा कि उसने तुम्हारे पूर्वजों को शपथ पूर्वक वचन दिया और वह तुम्हें सारा देश दे देगा, जैसा कि उसने तुम्हारे पूर्वजों से प्रतिज्ञा की। तब तुम और तीन नगर निर्धारित करोगे।</span> <sup>10</sup><span class='v-txt'>इस प्रकार तुम्हारे देश में, जिसे प्रभु, तुम्हारा ईश्वर तुम्हें विरासत के रूप में दे रहा है, निर्दोष रक्त नहीं बहाया जायेगा और तुम पर हत्या का दोष नहीं लगेगा।</span> <sup>11</sup><span class='v-txt'>&quot;परन्तु यदि कोई अपने पड़ोसी से द्वेष करता है, घात लगाकर उस पर टूट पड़ता और उसे मार डालता है और तब उन नगरो में से किसी में भाग जाता है,</span> <sup>12</sup><span class='v-txt'>तो उसके निवास स्थान के नेता किसी को भेज कर उसे वापस ले आयेंगे और रक्त-प्रतिशोधी के हवाले कर देंगे, जो उसका वध करेगा।</span> <sup>13</sup><span class='v-txt'>ऐसे लोगों के प्रति दया नहीं करोगे।  जिसने निर्दोष रक्त बहाया है, वह इस्राएल से निकाल दिया जाएगा।  इसी में तुम्हारा कल्याण है।</span> <sup>14</sup><span class='v-txt'>&quot;जो भूमि तुम को दायभाग के रूप में उस देश में मिलेगी, जिसे प्रभु, तुम्हारा ईश्वर तुम लोगों को देने वाला है, तुम उस में अपने पड़ोसी का वह सीमा-पत्थर नहीं हटाओगे, जिसे तुम्हारे पूर्वजों ने लगाया है।</span> <sup>15</sup><span class='v-txt'>&quot;केवल एक ही साक्षी के आधार पर किसी भी व्यक्ति द्वारा किया हुआ कोई भी दोष या अपराध प्रमाणित नहीं माना जायेगा, बल्कि दो या तीन साक्षियों के आधार पर दोष प्रमाणित माना जा सकता है।</span> <sup>16</sup><span class='v-txt'>यदि कोई साक्षी किसी पर द्वेष के कारण दोष लगाये,</span> <sup>17</sup><span class='v-txt'>तो दानों पक्ष प्रभु के सामने, याजकों और उस समय के न्यायाधीशों के सामने, उपस्थित होंगे।</span> <sup>18</sup><span class='v-txt'>न्यायाधीश इस मामले की ठीक-ठीक जाँच करें और जब यह मालूम हो कि साक्षी झूठा है और उसने अपने भाई के विरुद्ध मिथ्या आरोप लगाया है,</span> <sup>19</sup><span class='v-txt'>तो तुम लोग उसके साथ वैसा ही व्यवहार करोगे, जैसा उसने अपने भाई के साथ करना चाहा था।  इस प्रकार तुम अपने बीच से यह बुराई निकाल दोगे।</span> <sup>20</sup><span class='v-txt'>दूसरे लोग इसके विषय में सुन कर भयभीत हो जायेंगे और इस प्रकार का कुकर्म कभी नहीं करेंगे।</span> <sup>21</sup><span class='v-txt'>तुम दया नहीं दिखाओगे प्राण के बदले प्राण, आँख के बदले आँख, दाँत के बदले दाँत, हाथ के बदले हाथ, पाँव के बदले पाँव लोगे।</span> </p>
+        <div class='nav'><a href='005018.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005020.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>याकूब - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>याकूब</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यह पत्र ईश्वर और प्रभु ईसा मसीह के सेवक याकूब की ओर से है।  संसार भर में बिखरे हुए बारह वंशों को नमस्कार!</span> <sup>2</sup><span class='v-txt'>भाइयो! जब आप लोगों को अनेक प्रकार की विपत्तियों का सामना करना पड़े, तो अपने को धन्य समझिए।</span> <sup>3</sup><span class='v-txt'>आप जानते हैं कि आपके विश्वास का इस प्रकार का परीक्षण धैर्य उत्पन्न करता है।</span> <sup>4</sup><span class='v-txt'>धैर्य को पूर्णता तक पहुँचने दीजिए, जिससे आप लोग स्वयं पूर्ण तथा अनिन्द्य बन जायें और आप में किसी बात की कमी नहीं रहे।</span> <sup>5</sup><span class='v-txt'>यदि आप लोगों में किसी में प्रज्ञा का अभाव हो, तो वह ईश्वर से प्रार्थना करे और उसे प्रज्ञा मिलेगी; क्योंकि ईश्वर खुले हाथ और खुशी से सबों को देता है।</span> <sup>6</sup><span class='v-txt'>किन्तु उसे विश्वास के साथ और सन्देह किये बिना प्रार्थना चाहिए; क्योंकि जो सन्देह करता है, वह समुद्र की लहरों के सदृश है, जो हवा से इधर-उधर उछाली जाती हैं।</span> <sup>7</sup><span class='v-txt'>ऐसा व्यक्ति यह न समझे कि उसे ईश्वर की ओर से कुछ मिलेगा;</span> <sup>8</sup><span class='v-txt'>क्योंकि उसका मन अस्थिर और उसका सारा आचरण अनिश्चित है।</span> <sup>9</sup><span class='v-txt'>जो भाई दरिद्र है, वह ईश्वर द्वारा प्रदत्त अपनी श्रेष्ठता पर गौरव करे।</span> <sup>10</sup><span class='v-txt'>जो धनी है, वह अपनी हीनता पर गौरव करे; क्योंकि वह घास के फूल की तरह नष्ट हो जायेगा।</span> <sup>11</sup><span class='v-txt'>जब सूर्य उगता है और लू चलने लगती है, तो घास मुरझाती है, फूल झड़ता है और उसकी कान्ति नष्ट हो जाती है।  इसी तरह धनी और उसका सारा कारबार समाप्त हो जायेगा।</span> <sup>12</sup><span class='v-txt'>धन्य है वह, जो विपत्ति में दृढ़ बना रहता है; परीक्षा में खरा उतरने पर उसे जीवन का वह मुकुट प्राप्त होगा, जिसे प्रभु ने अपने भक्तों को देने की प्रतिज्ञा की है।</span> <sup>13</sup><span class='v-txt'>प्रलोभन में पड़ा हुआ कोई भी व्यक्ति यह न कहे कि ईश्वर मुझे प्रलोभन देता है।  ईश्वर न तो बुराई के प्रलोभन में पड़ सकता और न किसी को प्रलोभन देता है।</span> <sup>14</sup><span class='v-txt'>जो प्रलोभन में पड़ता है, वह अपनी ही वासना द्वारा खींचा और बहकाया जाता है।</span> <sup>15</sup><span class='v-txt'>वासना के गर्भ से पाप का जन्म होता है और पाप विकसित हो कर मृत्यु को जन्म देता है।</span> <sup>16</sup><span class='v-txt'>प्रिय भाइयो! आप गलती न करें।</span> <sup>17</sup><span class='v-txt'>सभी उत्तम दान और सभी पूर्ण वरदान ऊपर के हैं और नक्षत्रों के उस सृष्टिकर्ता के यहाँ से उतरते हैं, जिसमें न तो कोई परिवर्तन है और न परिक्रमा के कारण कोई अन्धकार।</span> <sup>18</sup><span class='v-txt'>उसने अपनी ही इच्छा से सत्य की शिक्षा द्वारा हम को जीवन प्रदान किया, जिससे हम एक प्रकार से उसकी सृष्टि के प्रथम फल बनें।</span> <sup>19</sup><span class='v-txt'>प्रिय भाइयो! आप यह अच्छी तरह समझ लें।  प्रत्येक व्यक्ति सुनने के लिए तत्पर रहे, किन्तु बोलने और क्रोध में देर करें;</span> <sup>20</sup><span class='v-txt'>क्योंकि मनुष्य का क्रोध उस धार्मिकता में सहायक नहीं होता, जिसे ईश्वर चाहता है।</span> <sup>21</sup><span class='v-txt'>इसलिए आप लोग हर प्रकार की मलिनता और बुराई को दूर कर नम्रतापूर्वक ईश्वर का वह वचन ग्रहण करें, जो आप में रोपा गया है और आपकी आत्माओं का उद्धार करने में समर्थ है।</span> <sup>22</sup><span class='v-txt'>आप लोग अपने को धोखा नहीं दें।  वचन के श्रोता ही नहीं, बल्कि उसके पालनकर्ता भी बनें।</span> <sup>23</sup><span class='v-txt'>जो व्यक्ति वचन सुनता है, किन्तु उसके अनुसार आचरण नहीं करता, वह उस मनुष्य के सदृश है, जो दर्पण में अपना चेहरा देखता है।</span> <sup>24</sup><span class='v-txt'>वह अपने को देख कर चला जाता है और उसे याद नहीं रहता कि उसका अपना स्वरूप कैसा है।</span> <sup>25</sup><span class='v-txt'>किन्तु जो व्यक्ति इस संहिता को, जो पूर्ण है और हमें स्वतन्त्रता प्रदान करती है, ध्यान से देता है और उसका पालन करता है, वह उस श्रोता के सदृश नहीं, जो तुरन्त भूल जाता है, बल्कि वह कर्ता बन जाता और उस संहिता को अपने जीवन में चरितार्थ करता है।  वह अपने आचरण के कारण धन्य होगा।</span> <sup>26</sup><span class='v-txt'>यदि कोई अपने को धार्मिक मानता है, किन्तु अपनी जीभ पर नियन्त्रण नहीं रखता, तो वह अपने को धोखा देता है और उसका धर्माचरण व्यर्थ है।</span> <sup>27</sup><span class='v-txt'>हमारे ईश्वर और पिता की दृष्टि में शुद्ध और निर्मल धर्माचरण यह है- विपत्ति में पड़े हुए अनाथों और विधवाओं की सहायता करना और अपने को संसार के दूषण से बचाये रखना।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='066002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

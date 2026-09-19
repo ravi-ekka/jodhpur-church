@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>2 कुरिन्थियों - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>2 कुरिन्थियों</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रिय भाइयो!  हमें इस प्रकार की प्रतिज्ञाएँ मिली हैं। इसलिए हम शरीर और मन के हर प्रकार के दूषण से अपने को शुद्ध करें और ईश्वर पर श्रद्धा रखते हुए पवित्रता की परिपूर्णता तक पहुँचने का प्रयत्न करते रहें।</span> <sup>2</sup><span class='v-txt'>आप हमारे प्रति उदार बनें।  हमने किसी के साथ अन्याय नहीं किया, किसी को आर्थिक हानि नहीं पहुँचायी और किसी से अनुचित लाभ नहीं उठाया है।</span> <sup>3</sup><span class='v-txt'>मैं आप लोगों के दोष देने के लिए यह नहीं कह रहा हूँ। मैं तो आप से कह चुका हूँ कि आप हमारे हृदय में घर कर गये हैं- हम जीवन- मरण के साथी हैं।</span> <sup>4</sup><span class='v-txt'>मैं आप लोगों से खुल कर बातें करता हूँ।  मैं आप लोगों पर बड़ा गर्व करता हूँ।  इस से मुझे भरपूर सान्त्वना मिलती है और मेरे सब कष्टों में आनन्द उमड़ता रहता है।</span> <sup>5</sup><span class='v-txt'>जब हम मकेदूनिया पहुँचे, तो हमें कोई शान्ति नहीं मिल रही थी।  हम हर तरह के कष्टों से घिर रहे थे।  हमारे चारों ओर संघर्ष थे और हमारे अन्दर आशंकाएँ थीं।</span> <sup>6</sup><span class='v-txt'>किन्तु दीन-हीन लोगों को सान्त्वना देने वाले ईश्वर ने हम को तीतुस के आगमन द्वारा ढारस बँधाया</span> <sup>7</sup><span class='v-txt'>और उनके आगमन द्वारा ही नहीं, बल्कि उस सान्त्वना द्वारा भी, जो उन्हें आप लोगों की ओर से मिली थी।  मुझे मिलने की आपकी उत्सुकता, आपका पश्चाताप और मेरे प्रति आपकी चिन्ता-इसके विषय में उन्होंने हम को बताया और इस से मेरा आनन्द और भी बढ़ गया।</span> <sup>8</sup><span class='v-txt'>यद्यपि मैंने अप लोगों को उस पत्र द्वारा दुःख दिया, फिर भी मुझे उस पर खेद नहीं है।  मुझे यह देख कर खेद हुआ था कि उस पत्र ने आप को थोड़े समय के लिए दुःखी बना दिया था,</span> <sup>9</sup><span class='v-txt'>किन्तु अब मुझे प्रसन्नता है मुझे इसलिए प्रसन्नता नहीं कि आप लोगों को दुःख हुआ, बल्कि इसलिए कि उस दुःख के कारण आपका हृदय-परिवर्तन हुआ।  आप लोगों ने उस दुःख को ईश्वर की इच्छानुसार स्वीकार किया और इस तरह आप को मेरी ओर से कोई हानि नहीं हुई;</span> <sup>10</sup><span class='v-txt'>क्योंकि जो दुःख ईश्वर की इच्छानुसार स्वीकार किया जाता है, उस से ऐसा कल्याणकारी हृदय-परिवर्तन होता है कि खेद का प्रश्न ही नहीं उठता।  संसार के दुःख से मृत्यु उत्पन्न होती है।</span> <sup>11</sup><span class='v-txt'>आप देखते हैं कि आपने जो दुःख ईश्वर की इच्छानुसार स्वीकार किया, उस से आप में कितनी चिन्ता उत्पन्न हुई, अपनी सफ़ाई देने की कितनी तत्परता, कितना क्रोध, कितनी आशंका, कितनी अभिलाषा, न्याय करने के लिए कितना उत्साह! इस प्रकार आपने इस मामले में हर तरह से निर्दोष होने का प्रमाण दिया है।</span> <sup>12</sup><span class='v-txt'>वास्तव में मैंने वह पत्र इसलिए नहीं लिखा था कि मुझे अन्याय करने वाले अथवा अन्याय सहने वाले व्यक्ति की अधिक चिन्ता थी, बल्कि इसलिए कि अधिक चिन्ता थी, बल्कि इसलिए कि आप लोग ईश्वर के सामने यह अच्छी तरह समझ लें कि आप लोगों को मेरी कितनी चिन्ता है।</span> <sup>13</sup><span class='v-txt'>इस से हमें सान्त्वना मिली।  इस सान्त्वना के अतिरिक्त हम तीतुस आ आनन्द देख कर और भी आनन्दित हो उठे।  आप सबों ने उनका मन हरा कर दिया।</span> <sup>14</sup><span class='v-txt'>मैंने उनके सामने आप लोगों पर जो गर्व प्रकट किया था, उसके लिए हम को लज्जित नहीं होना पड़ा।  मैंने आप लोगों से जो भी कहा, वह सत्य पर आधारित था।  इस प्रकार तीतुस के सामने मैंने आप पर गर्व प्रकट करते हुए जो कहा था, वह सच निकला।</span> <sup>15</sup><span class='v-txt'>जब उन्हें याद आता है कि आप सबों ने उनकी बात मानी और डरते-काँपते हुए उनका स्वागत किया तो, आपके प्रति उनका प्रेम और भी बढ़ जाता है।</span> <sup>16</sup><span class='v-txt'>मैं पूर्ण रूप से आप लोगेों पर भरोसा रखता हूँ -इस से मैं आनन्दित हूँ।</span> </p>
+        <div class='nav'><a href='054006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='054008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

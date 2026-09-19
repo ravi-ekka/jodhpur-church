@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 51</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 51</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु! मेरा राजा! मैं तुझे धन्य कहूँगा।  ईश्वर! मेरे मुक्तिदाता! मैं तेरी स्तुति करूँगा।</span> <sup>2</sup><span class='v-txt'>मैं तुझे धन्यवाद देता हूँ; क्येांकि तू मेरी रक्षा और सहायता करता रहा।</span> <sup>3</sup><span class='v-txt'>तूने मुझे सर्वनाश से, छल-कपट करने वालों के फन्दे से और झूठ बोलने वालों के षड्यन्त्र से बचाया है।  तू मेरे शत्रुओें के विरुद्ध मेरा सहारा रहा।</span> <sup>4</sup><span class='v-txt'>अपनी असीम दया तथा महिमामय नाम के अनुरूप तूने इन सब बातों से मेरी रक्षा की है-</span> <sup>5</sup><span class='v-txt'>भक्षकों के दाँतों से, हत्या पर उतारू लोगों के पंजों से, आ पड़ने वाली असंख्य विपत्तियों से,</span> <sup>6</sup><span class='v-txt'>घेरने वाली आग के धुएँ से, उस अग्नि-ज्वाला से, जिसे मैंने नहीं जलाया,</span> <sup>7</sup><span class='v-txt'>अधोलोक के गर्त से, कपटी जीभ की निन्दा से और मुझ पर लगाये हुए मिथ्यावाद से।</span> <sup>8</sup><span class='v-txt'>मृत्यु मेरे निकट आ गयी थी,</span> <sup>9</sup><span class='v-txt'>मैं अधोलोक के फाटक तक पहुँच गया था।</span> <sup>10</sup><span class='v-txt'>उन्होंने मुझे चारों ओर से घेर लिया था।  मेरा कोई सहायक नहीं था।  कोई भी मनुष्य मुझे सँभालने के लिए तैयार नहीं था।</span> <sup>11</sup><span class='v-txt'>प्रभु! तब मैंने तेरी दयालुता और पहले किये हुए तेरे कार्यों का स्मरण किया-</span> <sup>12</sup><span class='v-txt'>तू अपने पर भरोसा रखने वालों की रक्षा करता और उन्हें उनके शत्रुओं के पंजे से छुड़ाता है।</span> <sup>13</sup><span class='v-txt'>मैंने पृथ्वी पर से प्रभु की दुहाई दी और मृत्यु से रक्षा की प्रार्थन की।</span> <sup>14</sup><span class='v-txt'>मैने कहा, &quot;प्रभु! तू मेरा पिता है! घमण्डी शत्रुओं के सामने, मुझे विपत्ति के दिन, असहाय नहीं छोड़।</span> <sup>15</sup><span class='v-txt'>मैं निरन्तर तेरा नाम धन्य कहूँगा, मैं धन्यवाद के गीत गाता रहूँगा।&quot;  मेरी प्रार्थना सुनी गयी,</span> <sup>16</sup><span class='v-txt'>क्योंकि तूने मुझे विनाश से बचाया और विपत्ति से मेरा उद्धार किया।</span> <sup>17</sup><span class='v-txt'>इस कारण मैं तेरा धन्यवाद और तेरी स्तुति करूँगा, मैं प्रभु का नाम धन्य कहूँगा।</span> <sup>18</sup><span class='v-txt'>अपनी यात्राएँ प्रारम्भ करने से पहले मैं युवावस्था में आग्रह के साथ प्रज्ञा के लिए प्रार्थना करता था।</span> <sup>19</sup><span class='v-txt'>मैं मन्दिर के प्रांगण में उसके लिए अनुरोध करता था और अन्त तक उसे प्राप्त करने का प्रयत्न करता रहूँगा।  वह फलते-फूलते हुए अंगूर की तरह मुझ में विकसित हो कर</span> <sup>20</sup><span class='v-txt'>मुझे आनन्दित करती रही।  मैं सीधे मार्ग पर आगे बढ़ता गया और बचपन से ही प्रज्ञा का अनुगामी बना।</span> <sup>21</sup><span class='v-txt'>मैंने थोड़े समय तक उस पर कान दिया था।</span> <sup>22</sup><span class='v-txt'>और मुझे प्रचुर मात्रा में शिक्षा मिली।  मैं उसी के कारण प्रगति कर सका।</span> <sup>23</sup><span class='v-txt'>जिसने मुझे प्रज्ञा प्रदान की है, मैं उसकी महिमा करूँगा।</span> <sup>24</sup><span class='v-txt'>मैंने प्रज्ञा  के अनुसार आचरण करने का निश्चय किया।  मैं भलाई करता रहा।  मुझे कभी लज्जित  नहीं होना पड़ेगा।</span> <sup>25</sup><span class='v-txt'>मैं प्रज्ञा प्राप्त करने के लिए पूरी शक्ति से प्रयास करता रहा।  और संहिता के पालन में ईमानदार रहा।</span> <sup>26</sup><span class='v-txt'>मैंने आकाश की ओर हाथ ऊपर उठाया और अपनी नासमझी पर दुःख प्रकट किया।</span> <sup>27</sup><span class='v-txt'>मै उत्सुकता से प्रज्ञा को खोजता रहा और अपने सदाचरण के कारण मैंने उसे पाया।</span> <sup>28</sup><span class='v-txt'>मुझे प्रारम्भ से उसके द्वारा विवेक मिला, इसलिए मुझे कभी परित्यक्त नहं किया जायेगा।</span> <sup>29</sup><span class='v-txt'>मैं पूरी शक्ति से उसकी खोज करता रहा और मुझे एक अमूल्य निधि प्राप्त हुई।</span> <sup>30</sup><span class='v-txt'>प्रभु ने पुरस्कार के रूप में मुझे कुशल जिह्वा प्रदान की और मैं उस से उसका यश गाऊँगा।</span> <sup>31</sup><span class='v-txt'>तुम, जो अशिक्षित हो, मेरे पास आओे और शिक्षा के घर में एकत्र हो जाओ।</span> <sup>32</sup><span class='v-txt'>देर क्यों करते हो, जब कि तुम्हारी आत्माएँ उसके लिए तरस रही हैं?</span> <sup>33</sup><span class='v-txt'>मैं मुँह खोल कर बोलता हूँ &quot;मुफ्त में प्रज्ञा प्राप्त करो।</span> <sup>34</sup><span class='v-txt'>तुम जूए के नीचे गरदन झुकाओे।  तुम्हारा हृदय शिक्षा ग्रहण करे; क्येांकि वह तुम्हारे लिए प्रस्तुत है।</span> <sup>35</sup><span class='v-txt'>तुम अपनी आँखों से देख सकते हो कि मुझे उसके लिए कम परिश्रम करना पड़ा और मुझे बहुत शान्ति मिली</span> <sup>37</sup><span class='v-txt'>तुम प्रभु की दया के कारण आनन्द मनाओ और उसकी स्तुति करने में लज्जा का अनुभव मत करो।</span> <sup>38</sup><span class='v-txt'>समय समाप्त होने से पहले अपना कार्य पूरा करो और समय आने पर प्रभु तुम को पुरस्कार प्रदान करेगा।&quot;</span> </p>
+        <div class='nav'><a href='028050.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

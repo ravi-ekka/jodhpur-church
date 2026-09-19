@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रज्ञा - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रज्ञा</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>पृथ्वी के शासको!  न्याय से प्रेम रखो।  प्रभु के विषय में ऊँचे विचार रखो और निष्कपट हृदय से उसे खोजते रहो;</span> <sup>2</sup><span class='v-txt'>क्योंकि जो उसकी परीक्षा नहीं लेते, वे उसे प्राप्त करते हैं।  प्रभु अपने को उन लोगों पर प्रकट करता है, जो उस पर अविश्वास नहीं करते।</span> <sup>3</sup><span class='v-txt'>कुटिल विचार मनुष्य को ईश्वर से दूर करते हैं। सर्वशक्तिमत्ता उन मूर्खों को पराजित करती है, जो उसकी परीक्षा लेते हैं।</span> <sup>4</sup><span class='v-txt'>प्रज्ञा उस आत्मा में प्रवेश नहीं करती, जो बुराई की बातें सोचती है और उस शरीर में निवास नहीं करती, जो पाप के अधीन है;</span> <sup>5</sup><span class='v-txt'>क्योंकि शिक्षा प्रदान करने वाला पवित्र आत्मा छल-कपट से घृणा करता है।  वह मूर्खतापूर्ण विचारों को तुच्छ समझता और अन्याय से अलग रहता है।</span> <sup>6</sup><span class='v-txt'>प्रज्ञा मनुष्य का हित तो चाहती है, किन्तु वह ईशनिन्दक को उसके शब्दों का दण्ड दिये बिना नहीं छोड़ेगी; क्योंकि ईश्वर मनुष्य के अन्तरतम का साक्षी है।  वह उसके हृदय की थाह लेता और उसके मुख के सभी शब्द सुनता है।</span> <sup>7</sup><span class='v-txt'>प्रभु का आत्मा संसार में व्याप्त है।  वह सब कुछ को एकता में बाँधे रखता है और मनुष्य जो कुछ कहते हैं, वह सब जानता है।</span> <sup>8</sup><span class='v-txt'>इसलिए जो दुष्टतापूर्ण बातें करते हैं, वे छिप नहीं सकते और न्यायकर्ता उन्हें अवश्य दण्ड देगा।</span> <sup>9</sup><span class='v-txt'>दुष्ट की योजनाओें की जाँच की जायेगी और उसके शब्दों की आवाज़ प्रभु तक पहुँचेगी, जिससे उसे उसके अपराधों का दण्ड दिया जाये।</span> <sup>10</sup><span class='v-txt'>धर्मोत्साही कान सब कुछ सुनता है; धीमी फुसफुसाहट भी उस से नहीं छिप सकती।</span> <sup>11</sup><span class='v-txt'>इसलिए व्यर्थ फुसफुसाहट से बचते रहो; अपनी जीभ की परनिन्दा नहीं करने दो; क्योंकि गुप्त में कही बात व्यर्थ नहीं जाती और झूठ बोलने वाला मुख आत्मा का विनाश करता है।</span> <sup>12</sup><span class='v-txt'>अपने असंयम से मृत्यु को मत बुलाओ; अपने कर्मों से अपने विनाश का कारण मत बनो।</span> <sup>13</sup><span class='v-txt'>ईश्वर ने मृत्यु नहीं बनायी; वह प्राणियों की मृत्यु से प्रसन्न नहीं होता।</span> <sup>14</sup><span class='v-txt'>उसने सब कुछ की सृष्टि इसलिए की है कि वह अस्तित्व में बना रहे।  संसार में जो कुछ है, वह हितकर है; उस में कहीं भी घातक विष नहीं।  अधोलोक पृथ्वी पर शासन नहीं करता;</span> <sup>15</sup><span class='v-txt'>क्योंकि न्याय का कभी अन्त नहीं होगा।</span> <sup>16</sup><span class='v-txt'>दुष्टों ने अपने कर्मों और वचनों से अधोलोक को निमन्त्रण दिया।  वे उसे मित्र समझ कर उसकी लालसा करते रहे उन्होंने उसके साथ सन्धि कर ली; इसलिए वे उसके शिकार बनने योग्य हैं।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='027002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मक्काबियों का पहला ग्रन्थ - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मक्काबियों का पहला ग्रन्थ</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>आसपास के गैर-यहूदी लोग यह जान कर बहुत क्रुद्ध हुए कि वेदी बनायी गयी है और पहले की ही तरह मंदिर का प्रतिष्ठान हुआ है।</span> <sup>2</sup><span class='v-txt'>उन्होंने निश्चय किया कि वे अपने यहाँ रहने वाले याकूबवंशियों को निर्मूल कर दें और वे इधर-उधर बिखरे हुए यहूदियों को मारने और उन पर अत्याचार करने लगे।</span> <sup>3</sup><span class='v-txt'>इसलिए यूदाह ने इदुमैया के अक्रबत्तेने में निवास करने वाले एसाववंशियों पर आक्रमण किया, क्योंकि वे इस्राएलियों को तंग करते थे।  उसने उन्हें पराजित कर भगा दिया और लूटा।</span> <sup>4</sup><span class='v-txt'>उसे बयानियों की दुष्टता की भी याद आयी, जो लोगों के लिए फंदा-जैसा हो गये थे; क्योंकि वे रास्तों पर उनकी घात में बैठे रहते थे।</span> <sup>5</sup><span class='v-txt'>उसने उन्हें उनके बुर्जों में बंद कर घेर लिया और उनका सर्वनाश करने का निश्चय किया।  तब उसने बुर्जों और उन में रहने वाले लोगों को, सब कुछ को जला दिया। इसके बाद वह अम्मोनियों के विरुद्ध आगे बढ़ा।</span> <sup>6</sup><span class='v-txt'>वहाँ उसे एक बड़ी सेना और बहुत लोग मिले।  तिमोथेव उनका नेता था।</span> <sup>7</sup><span class='v-txt'>उसने उन से कई लडाइयाँ लड़ी, उन्हें हराया और उनका विनाश कर डाला।</span> <sup>8</sup><span class='v-txt'>उसने याजेर और उसके आसपास के गाँव भी अधिकार में कर लिये।  तब वह यहूदिया लौट गया।</span> <sup>9</sup><span class='v-txt'>तब गिलआद में रहने वाले गैर-यहूदी लोग उस देश के निवासी यहूदियों के विरुद्ध इस नीयत से एकत्रित हुए कि वे उनका सर्वनाश कर दें।  इस पर उन्होंने दथेमा गढ़ में शरण ली।</span> <sup>10</sup><span class='v-txt'>और यूदाह और उसके भाइयों के नाम पत्र भेजे।  उन्होंने लिखा: &quot;गैर-यहूदी हमारा सर्वनाश करने जमा हो गये।</span> <sup>11</sup><span class='v-txt'>वे वह गढ घेर लेने की तैयारियाँ कर रहे हैं, जिस में हमने शरण ले रखी हैं।  तिमोथेव उनका सेनाध्यक्ष है।</span> <sup>12</sup><span class='v-txt'>इसलिए आप लोग आ कर हमें उनके हाथ से छुडाये; क्योंकि हम में बहुत लोग मारे जा चुके हैं।</span> <sup>13</sup><span class='v-txt'>और तूबी प्रदेश में रहने वाले हमारे सभी भाइयों का वध किया गया है।  उनकी पत्नियों और बच्चों को बंदी बना कर ले जाया गया।  उनकी संपत्ति जब्त कर ली गयी और वहाँ लगभग एक हजार आदमी मारे जा चुके है।&quot;</span> <sup>14</sup><span class='v-txt'>वे पत्र पढ़ ही रहे थे कि फटे कपडे़ पहले गलीलिया से दूसरे दूत आये।  वे भी वैसा ही संदेश लायें।</span> <sup>15</sup><span class='v-txt'>उन्होंने कहा, &quot;पतोलेमाइस, तीरुस, सीदोन और गैर-यहूदियों की सारी गलीलिया के लोग हमारा विनाश करने जमा हो गये है&quot;।</span> <sup>16</sup><span class='v-txt'>जब यूदाह और लोगों ने यह सुना, तो एक बड़ी सभा बुलायी गयी, जिससे वे इस बात पर विचार-विमर्श करें, कि अपने उन भाइयों का क्या करें, जो कष्ट में है और जिन पर प्रहार हो रहा है।</span> <sup>17</sup><span class='v-txt'>यूदाह ने अपने भाई सिमोन से कहा, &quot;अपने लिए आदमी ले लो और गलीलिया जा कर वहाँ अपने भाइयों की रक्षा करो।  मैं भाई योनातान को ले कर गिलआद जाऊँगा।&quot;</span> <sup>18</sup><span class='v-txt'>उसने रक्षा के लिए जकर्या के पुत्र यूसुफ़ और जनता के अध्यक्ष अजर्या को, सेना के शेष लोगों के साथ, वहीं यहूदिया में छोड़ दिया।</span> <sup>19</sup><span class='v-txt'>उसने उन्हें यह आज्ञा दी, &quot;आप इन लोगों के प्रधान रहिए, किंतु जब तक हम नहीं लौटे, आप गैर-यहूदियों के साथ लड़ाई नहीं छेडें&quot;।</span> <sup>20</sup><span class='v-txt'>गलीलिया जाने के लिए सिमोन को तीन हजार आदमी दिये गये और गिलआद देश जाने के लिए यूदाह को आठ हजार।</span> <sup>21</sup><span class='v-txt'>सिमोन गलीलिया पहुँचा और उसने गैर-यहूदियों से कई युद्ध किये।  वे उस से पराजित हो कर भाग गये।</span> <sup>22</sup><span class='v-txt'>और उसने उन्हें पतोलेमाइस के फाटक तक खदेड दिया। उन में लगभग तीन हजार आदमी मारे गये।  उसने उन्हें लूट भी लिया।</span> <sup>23</sup><span class='v-txt'>वह गलीलिया और अरबत्ता के यहूदियों को, उनकी पत्नियों, बाल-बच्चों और उनकी सारी संपत्ति के साथ, सकुशल यहूदिया ले चला।</span> <sup>24</sup><span class='v-txt'>इधर यूदाह मक्काबी और उसका भाई योनातान यर्दन पार कर उजाड़खण्ड में तीन दिन यात्रा करते रहे।</span> <sup>25</sup><span class='v-txt'>वहाँ उनकी भेंट नबातैयी लोगों से हुई।  उन्होंने उनका शांतिपूर्वक स्वागत किया और उन्हें बतलाया कि गिलआद में उनके भाई-बंधुओं पर क्या बीती तथा उन में</span> <sup>26</sup><span class='v-txt'>कितने लोग बसोरा, बसोर, अलेमा, खसफ़ो, मकेद और करनईम में घिरे पड़े हैं।  ये सब बड़े किला बंद नगर है।</span> <sup>27</sup><span class='v-txt'>उन्होंने यह भी बतलाया कि गिलआद के अन्य नगरों में भी लोग घिरे पड़ है और शत्रुओं ने यह निश्चय किया है कि वे अगले दिन उन गढों पर आक्रमण करेंगे, उन्हें अधिकार में कर लेंगे और एक ही दिन में उन सब का विनाश कर डालेंगे।</span> <sup>28</sup><span class='v-txt'>यूदाह तुरंत अपनी सेना के साथ मुड़ा और बसोरा के उजाडखण्ड की ओर चल पड़ा।  उसने उस नगर पर अधिकार कर लिया और वहाँ के सभी पुरुषों को तलवार के घाट उतार दिया, नगर को पूरी तरह लूट लिया और उसे जला दिया।</span> <sup>29</sup><span class='v-txt'>वहाँ से रात को चल कर वह (दथेमा) गढ़ पहुँचा</span> <sup>30</sup><span class='v-txt'>सुबह हुई, तो उसके सैनिकों ने यह देखा कि वहाँ असंख्य लोग इकट्ठे पडे हैं।  वे उस समय गढ पर अधिकार करने के उद्देश्य से सीढ़िया और अन्य यंत्र ठीक कर रहे थे। गढ़ पर आक्रमण होने ही जा रहा था।</span> <sup>31</sup><span class='v-txt'>जब यूदाह ने यह देखा कि आक्रमण प्रारंभ हो गया हैं और युद्ध का भीषण कोलाहल और तुरहियों की ध्वनि नगर में आकाश तक गूँज उठी हैं,</span> <sup>32</sup><span class='v-txt'>तो उसने अपने आदमियों से यह कहा, &quot;आज तुम्हें अपने भाइयों के लिए युद्ध करना होगा।&quot;</span> <sup>33</sup><span class='v-txt'>वह अपनी सेना को तीन दलों में बाँट कर शत्रुओं पर पीछे से टूट पडा।  वे तुरहियाँ बजाते और ऊँचे स्वर में प्रार्थना करते थे।</span> <sup>34</sup><span class='v-txt'>जैसे ही तिमोथेव के आदमियों ने देखा कि यह मक्काबी की सेना हैं, तो वे उसके सामने से भाग खड़े हुए।  यूदाह ने उन्हें इतनी बुरी तरह हराया कि उस दिन उसके लगभग आठ हजार आदमी खेत आये।</span> <sup>35</sup><span class='v-txt'>इसके बाद उसने अलेमा की ओर मुड़ कर उस पर आक्रमण किया और उसे अधिकार में कर लिया, वहाँ के सभी पुरुषों को मार डाला, उसे लूटा और जला दिया।</span> <sup>36</sup><span class='v-txt'>वहाँ से चल कर उसने खसफ़ो, मकेद, बसोर और गिलआद के अन्य नगरों पर अधिकार किया।</span> <sup>37</sup><span class='v-txt'>इसके बाद तिमोथेव ने एक दूसरी सेना एकत्र की और नदी के उस पार रफ़ोन के सामने पडाव डाला।</span> <sup>38</sup><span class='v-txt'>यूदाह ने पडाव की जाँच-पडताल के लिए आदमी भेजे और उन्होंने उसे यह सूचना दी, &quot;हमारे आसपास के सभी गैर-यहूदी उसके साथ हैं, उसकी सेना बहुत बड़ी हैं।</span> <sup>39</sup><span class='v-txt'>और किराये के अरब भी उसके पडाव डाले पडे हैं।  और आप पर आक्रमण करने को तैयार हैं।&quot; यह सुन कर यूदाह उनका सामना करने निकल पडा।</span> <sup>40</sup><span class='v-txt'>तिमोथेव यूदाह और उसके सैनिकों को नदी के पास आते देख अपने सेनापतियों से बोला, &quot;यदि वह हम से पहले नदी के पार कर हम पर आक्रमण करता हैं, तो हम उसके सामने नहीं टिक सकेंगे, वह हमें पराजित कर देगा</span> <sup>41</sup><span class='v-txt'>किंतु यदि वह डरता और नदी के उस पार पडाव डाले पडा रहता हैं, तो हम नदी पार करेंगे और उसे जीत लेंगे।&quot;</span> <sup>42</sup><span class='v-txt'>यूदाह धारा के किनारे पहुँचा और उसने नदी के पास जनता के अधिकारियों का पहरा बैठा कर उन्हें यह आदेश दिया, ’कोई भी यहाँ डेरा नहीं डाले; सब को युद्ध करने जाना है&quot;।</span> <sup>43</sup><span class='v-txt'>सेना के पहले ही वह स्वयं नदी पार कर गया और सब लोग उसके पीछे हो लिये।  गैर-यहूदी उन से पूरी तरह पराजित हुए।  उन्होंने अपने शस्त्र फेंक कर करनईम के मंदिर में शरण ली।</span> <sup>44</sup><span class='v-txt'>यहूदियों ने नगर को अपने अधिकार में कर लिया और मंदिर और उस में रहने वालों को, सब को जला दिया। इस प्रकार करनईम यहूदियों के अधीन हो गया और फिर यूदाह का सामना नहीं कर पाया।</span> <sup>45</sup><span class='v-txt'>इसके बाद यूदाह ने यूदा देश लौटने के लिए गिलआद में रहने वाले सभी इस्राएलियों को, उनकी पत्नियों, बच्चों और संपत्ति के साथ, एकत्र किया।  वे बड़ी संख्या में जमा हो गये।</span> <sup>46</sup><span class='v-txt'>वे चलते-चलते एफ्रोन पहुँचे जो एक बड़ा किलाबंदी नगर था।  उसके दायें-बायें कोई मार्ग नहीं था।  उसे पार करना ज़रूरी था।</span> <sup>47</sup><span class='v-txt'>उस नगर के निवासियों ने उन्हें रोक दिया और फाटक बंद कर पत्थर लगा दिये।</span> <sup>48</sup><span class='v-txt'>यूदाह ने उसके यहाँ दूत भेज कर शांति का यह प्रस्ताव किया, &quot;अपने देश पहुँचने के लिए हम अपनी भूमि पार करना चाहते है।  कोई आप को हानि नहीं पहुँचायेगा। हम उसे केवल पैदल पार करना चाहते हैं।&quot;  किंतु वे उसके लिए फाटक खोलने को राजी नहीं हुए।</span> <sup>49</sup><span class='v-txt'>तब यूदाह ने पडाव में घोषणा की कि जो जहाँ हो, वहाँ तैयार हो जाये।</span> <sup>50</sup><span class='v-txt'>अतः सैनिक तैयार हो गये।  यूदाह पूरे दिन और पूरी रात उस नगर से युद्ध करता रहा।  इसके बाद नगर उसके हाथ आ गया।</span> <sup>51</sup><span class='v-txt'>उसने सभी पुरुषों को तलवार के घाट उतार दिया, नगर का सर्वनाश किया अैार उसे लूटा।  उसने लाशों पर पैर रख कर नगर में प्रवेश किया।</span> <sup>52</sup><span class='v-txt'>इसके बाद वे यर्दन पार कर बेत-शान के विस्तृत मैदान की ओर बढ़े।</span> <sup>53</sup><span class='v-txt'>यूदाह बार-बार पीछे के लोगों को इकट्ठा करता था और जब तक वे यूदा देश नहीं पहुँचे, जब तक वह मार्ग में लोगों का साहस बँधाता रहा।</span> <sup>54</sup><span class='v-txt'>वे हर्ष और उल्लास के साथ सियोन पर्वत पर चढ़े और उन्होंने होम-बलिया चढ़ायी; क्योंकि सभी सकुशल लौट आये थे और उन में एक भी खेत नहीं रहा।</span> <sup>55</sup><span class='v-txt'>जब यूदाह और योनातान गिलआद में थे और उनका भाई सिमोन गलीलिया में पतोलेमाइस के सामने पडाव डाले पड़ा था,</span> <sup>56</sup><span class='v-txt'>तब जकार्य के पुत्र यूसुफ़ और अजर्या ने, जो सेनापति थे, उसके साहसी कार्यों और उनकी लडाइयों के संबध में सुना।</span> <sup>57</sup><span class='v-txt'>उन्होंने कहा, &quot;चलों, हम भी अपना नाम कमायें और आसपास के गैर-यहूदियों से युद्ध करने चले&quot;।</span> <sup>58</sup><span class='v-txt'>उन्होंने अपनी सेना को आदेश दिया और वे यमनिया पर आक्रमण के उद्देश्य से निकल पड़े।</span> <sup>59</sup><span class='v-txt'>गोरगियस उन से लड़ने नगर से बाहर आया।</span> <sup>60</sup><span class='v-txt'>यूसुफ और अज़र्या हार गये और यहूदिया की सीमा तक खदेड दिये गये।  उस दिन इस्राएल के लगभग दो हजार आदमी मारे गये।</span> <sup>61</sup><span class='v-txt'>इस तरह लोग बुरी तरह पराजित हुए; क्योंकि उन्होंने यूदाह और उसके भाइयों की बात की चिंता नहीं की थी और सोचा था कि वे अपनी बहादुरी का परिचय दे सकेंगे</span> <sup>62</sup><span class='v-txt'>किंतु वे ऐेसे लोग नहीं थे, जिनके हाथों इस्राएल का उद्धार हो सकें।</span> <sup>63</sup><span class='v-txt'>इस्राएल भर में और सारे गैर-यहूदियों के बीच, जहाँ कहीं वीर यूदाह और उसके भाइयों की चर्चा होती, उन्हें सर्वत्र सम्मान की दृष्टि से देखा जाता।</span> <sup>64</sup><span class='v-txt'>लोग आते और उन्हें बधाइयाँ देते।</span> <sup>65</sup><span class='v-txt'>यूदाह अपने भाइयों के साथ चल पड़ा और उसने दक्षिण में रहने वाले एसाववंशियों से युद्ध किया।  उसने हेब्रोन और उसके निटकवर्ती नगरों को पराजित किया, उनके मोर्चें ध्वस्त कर दिये और उनके आसपास के बुर्ज जला दिये।</span> <sup>66</sup><span class='v-txt'>इसके बाद वह मरीसा होते हुए फिलिस्तिया की ओर चल पड़ा।</span> <sup>67</sup><span class='v-txt'>उस दिन लडाई में कई याजकों की मृत्यु हो गयी, जो अपनी वीरता का परिचय देने के लिए दुःसाहस से लडाई में गये थे।</span> <sup>68</sup><span class='v-txt'>फिर यूदाह अजोत की ओर गया, जो फिलिस्तियों के अधिकार में था।  उसने उनकी वेदियाँ ध्वस्त कर दी, उनकी देवमूर्तियाँ जला डाली, नगर लूटे और यूदा लौट आया।</span> </p>
+        <div class='nav'><a href='020004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='020006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

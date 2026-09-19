@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>एक दिन ईसा गेनेसरेत की झील के पास थे।  लोग ईश्वर का वचन सुनने के लिए उन पर गिरे पड़ते थे।</span> <sup>2</sup><span class='v-txt'>उस समय उन्होंने झील के किनारे लगी दो नावों को देखा।  मछुए उन पर से उतर कर जाल धो रहे थे।</span> <sup>3</sup><span class='v-txt'>ईसा ने सिमोन की नाव पर सवार हो कर उसे किनारे से कुछ दूर ले चलने के लिये कहा।  इसके बाद वे नाव पर बैठे हुए जनता को शिक्षा देते रहे।</span> <sup>4</sup><span class='v-txt'>उपदेश समाप्त करने के बाद उन्होंने सिमोन से कहा, &quot;नाव गहरे पानी में ले चलो और मछलियाँ पकड़ने के लिए अपने जाल डालो&quot;।</span> <sup>5</sup><span class='v-txt'>सिमोन ने उत्तर दिया, &quot;गुरूवर! रात भर मेहनत करने पर भी हम कुछ नहीं पकड़ सके, परन्तु आपके कहने पर मैं जाल डालूँगा&quot;।</span> <sup>6</sup><span class='v-txt'>ऐसा करने पर बहुत अधिक मछलियाँ फँस गयीं और उनका जाल फटने को हो गया।</span> <sup>7</sup><span class='v-txt'>उन्होंने दूसरी नाव के अपने साथियों को इशारा किया कि आ कर हमारी मदद करो।  वे आये और उन्होंने दोनों नावों को मछलियों से इतना भर लिया कि नावें डूबने को हो गयीं।</span> <sup>8</sup><span class='v-txt'>यह देख कर सिमोन ने ईसा के चरणों पर गिर कर कहा, &quot;प्रभु! मेरे पास से चले जाइए।  मैं तो पापी मनुष्य हूँ।&quot;</span> <sup>9</sup><span class='v-txt'>जाल में मछलियों के फँसने के कारण वह और उसके साथी विस्मित हो गये।</span> <sup>10</sup><span class='v-txt'>यही दशा याकूब और योहन की भी हुई; ये ज़ेबेदी के पुत्र और सिमोन के साझेदार थे।  ईसा ने सिमोन से कहा, &quot;डरो मत। अब से तुम मनुष्यों को पकड़ा करोगे।&quot;</span> <sup>11</sup><span class='v-txt'>वे नावों को किनारे लगा कर और सब कुछ छोड़ कर ईसा के पीछे हो लिये।</span> <sup>12</sup><span class='v-txt'>किसी नगर में ईसा के पास एक मनुष्य आया, जिसका शरीर कोढ़ से भरा हुआ था।  वह ईसा को देख कर मुँह के बल गिर पड़ा और विनय करते हुए यह बोला, &quot;प्रभु! आप चाहें, तो मुझे शुद्ध कर सकते हैं।</span> <sup>13</sup><span class='v-txt'>ईसा ने हाथ बढ़ा कर यह कहते हुए उसका स्पर्श किया, &quot;मैं यही चाहता हूँ-शुद्ध जो जाओ&quot;।  उसी क्षण उसका कोढ़ दूर हो गया।</span> <sup>14</sup><span class='v-txt'>ईसा ने उसे किसी से कुछ न कहने का आदेश दिया और कहा, &quot;जा कर अपने को याजक को दिखाओ और अपने शुद्धीकरण के लिए मूसा द्वारा निर्धारित भेंट चढ़ाओं, जिससे तुम्हारा स्वास्थ्यलाभ प्रमाणित हो जाये&quot;</span> <sup>15</sup><span class='v-txt'>ईसा की ख्याति बढ़ रहीं थी।  भीड़-की-भीड़़ उनका उपदेश सुनने और अपने रोगों से छुटकारा पाने के लिए उनके पास आती थी,</span> <sup>16</sup><span class='v-txt'>और वे अलग जा कर एकान्त स्थानों में प्रार्थना किया करते थे।</span> <sup>17</sup><span class='v-txt'>ईसा किसी दिन शिक्षा दे रहे थे।  फ़रीसी और शास्त्री पास ही बैठे हुए थे।  वे गलीलिया तथा यहूदिया के हर एक गाँव से और येरूसालेम से भी आये थे।  प्रभु के सामर्थ्य से प्रेरित हो कर ईसा लोगों को चंगा करते थे।</span> <sup>18</sup><span class='v-txt'>उसी समय कुछ लोग खाट पर पड़े हुए एक अर्ध्दांगरोगी को ले आये।  वे उसे अन्दर ले जा कर ईसा के सामने रख देना चाहते थे।</span> <sup>19</sup><span class='v-txt'>भीड़ के कारण अद्र्धागरोगी को भीतर ले जाने का कोई उपाय न देख कर वे छत पर चढ़ गये और उन्होंने खपड़े हटा कर खाट के साथ अर्ध्दांगरोगी को लोगों के बीच में ईसा सामने उतार दिया।</span> <sup>20</sup><span class='v-txt'>उनका विश्वास देख कर ईसा ने कहा, &quot;भाई! तुम्हारे पाप क्षमा हो गये हैं&quot;।</span> <sup>21</sup><span class='v-txt'>इस पर शास्त्री और फ़रीसी सोचने लगे, &quot;ईश-निन्दा करने वाला यह कौन है?  ईश्वर के सिवा कौन पाप क्षमा कर सकता है?&quot;</span> <sup>22</sup><span class='v-txt'>उनके ये विचार जान कर ईसा ने उन से कहा, &quot;मन-ही-मन क्या सोच रहे हो?</span> <sup>23</sup><span class='v-txt'>अधिक सहज क्या है-यह कहना, ’तुम्हारे पाप क्षमा हो गये हैं; अथवा यह कहना उठो, और चलो फिरो’?;</span> <sup>24</sup><span class='v-txt'>परन्तु इसलिए कि तुम लोग यह जान लो कि मानव पुत्र को पृथ्वी पर पाप क्षमा करने का अधिकार है, वह अर्ध्दांगरोगी से बोले मैं तुम से कहता हूँ, उठो और अपनी खाट उठा कर घर जाओ।</span> <sup>25</sup><span class='v-txt'>उसी क्षण वह सब के सामने उठ खड़ा हुआ और अपनी खाट उठा कर ईश्वर की स्तुति करते हुए अपने घर चला गया।</span> <sup>26</sup><span class='v-txt'>सब-के-सब विस्मित हो कर ईश्वर की स्तुति करते रहे। उन पर भय छा गया और वे कहते थे, &quot;आज हमने अद्भुत कार्य देखे हैं&quot;।</span> <sup>27</sup><span class='v-txt'>इसके बाद ईसा बाहर निकले।  उन्होंने लेवी नामक नाकेदार को चुंगीघर में बैठा हुआ देखा और उस से कहा, &quot;मेरे पीछे चले आओ&quot;।</span> <sup>28</sup><span class='v-txt'>वह उठ खड़ा हुआ और अपना सब कुछ छोड़ कर ईसा के पीछे हो लिया।</span> <sup>29</sup><span class='v-txt'>लेवी ने अपने यहाँ ईसा के सम्मान में एक बड़ा भोज दिया।  नाकेदार और अतिथि बड़ी संख्या में उनके साथ भोजन पर बैठे।</span> <sup>31</sup><span class='v-txt'>ईसा ने उन्हें उत्तर दिया, &quot;निरोगियों को नहीं, रोगियों को वैद्य की ज़रूरत होती है।</span> <sup>32</sup><span class='v-txt'>मैं धर्मियों को नहीं, पापियों को पश्चाताप के लिए बुलाने आया हूँ।&quot;</span> <sup>33</sup><span class='v-txt'>उन्होंने ईसा से कहा &quot;योहन के शिष्य बारम्बार उपवास करते हैं और प्रार्थना में लगे रहते हैं और फरीसियों के शिष्य भी ऐसा ही करते हैं, किन्तु आपके शिष्य खाते-पीते हैं&quot;।</span> <sup>34</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;जब तक दुलहा उनके साथ हैं, क्या तुम बारातियों से उपवास करा सकते हो?</span> <sup>35</sup><span class='v-txt'>किन्तु वे दिन आयोंगे, जब दुलहा उनके स बिछुड़ जायेगा। उन दिनों वे उपवास करेंगे।&quot;</span> <sup>36</sup><span class='v-txt'>ईसा ने उन्हें यह दृष्टान्त भी सुनाया, &quot;कोई नया कपड़ा फाड़ कर पुराने कपड़े में पैबंद नहीं लगाता।  नहीं तो वह नया कपड़ा फाड़ेगा और नये कपड़े का पैबंद पुराने कपड़े के साथ मेल भी नहीं खायेगा।</span> <sup>37</sup><span class='v-txt'>और कोई पुरानी मशकों में नयी अंगूरी नहीं भरता।  नहीं तो नयी अंगूरी पुरानी मशकों को फाड़ देगी, अंगूरी बह जायेगी और मशकें बरबाद हो जायेंगी।</span> <sup>38</sup><span class='v-txt'>नयी अंगूरी को नयी मशकों में ही भरना चाहिए।</span> <sup>39</sup><span class='v-txt'>&quot;कोई पुरानी अंगूरी पी कर नयी नहीं चाहता।  वह तो कहता है, ’पुरानी ही अच्छी है।&quot;</span> </p>
+        <div class='nav'><a href='049004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

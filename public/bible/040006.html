@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मीकाह - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मीकाह</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु का यह कहना सुनो- &quot;उठो! पहाड़ों के सामने अपनी सफाई दो।  पहाडियों को अपनी बात सुनाओ।&quot;</span> <sup>2</sup><span class='v-txt'>पर्वतों! पृृथ्वी को सँभालने वाले चिरस्थायी खंबो!  प्रभु का मुकदमा सुनो।  वह इस्राएल पर अभियोग लगा रहा है:</span> <sup>3</sup><span class='v-txt'>&quot;मेरी प्रजा! मैंने तुम्हारा क्या अपराध किया?  मैंने तुम को क्या कष्ट दिया?  मुझे उत्तर दो।</span> <sup>4</sup><span class='v-txt'>मैं तुम को मिस्र से निकाल लाया, मैंने तुम को दासता के घर से छुडाया।  मैंने पथप्रदर्शक के रूप में मूसा, हारून और मिरयम को तुम्हारे पास भेजा।</span> <sup>5</sup><span class='v-txt'>मेरे लोगो, याद करो कि मोआब के राजा बालाक ने कैसा कुचक्र रचा था और बओर के पुत्र, बलिआम ने उसे कैसा उत्तर दिया था; याद रहे कि शिट्टीम से गिलगाल तक क्या-क्या हुआ था, जिससे तुम प्रभु के उद्धार के कार्यों को समझ सको।&quot;</span> <sup>6</sup><span class='v-txt'>&quot;मैं क्या ले कर प्रभु के सामने आऊँगा और सर्वोच्य ईश्वर को दण्डवत करूँगा?  क्या मैं होम ले कर उसके सामने आऊँगा?  अथवा एक वर्ष के बछड़ों को?</span> <sup>7</sup><span class='v-txt'>क्या ईश्वर हज़ारों मेढ़ों से प्रसन्न होगा?  अथवा तेल की कोटि-कोटि धाराओं से?  क्या मैं अपने अपराध के प्राश्श्चित्तस्वरूप आपने पहलौठे को अपने पाप के बदले में अपने शरीर के फल को अर्पित करूँगा?&quot;</span> <sup>8</sup><span class='v-txt'>&quot;मनुष्य! तुम को बताया गया है कि उचित क्या है और प्रभु तुम से क्या चाहता है।  यह इतना ही है- न्यायपूर्ण व्यवहार, कोमल भक्ति और ईश्वर के सामने विनयपूर्ण आचरण।&quot;</span> <sup>9</sup><span class='v-txt'>प्रभु-ईश्वर की वाणी।  यह नगर का सम्बेाधन कर रहा है- प्रभु के नाम का आदर करना हितकर है।  यूदा के वंश और नगर की परिषद् के सदस्यों! सुनो।</span> <sup>10</sup><span class='v-txt'>क्या मैं नाप-जोख में छल-कपट सहन करूँगा, अथवा खोटे बटखरे से घृणा न करूँ?</span> <sup>11</sup><span class='v-txt'>क्या मैं उस व्यक्ति को बिना दण्ड के ही छोड़ दूँ, जो खोटे तराजू का प्रयोग करता है और अपनी थैली में खोटे बाट रखता है?</span> <sup>12</sup><span class='v-txt'>तेरे धनवान् लोगों में हिंसावृत्ति भरी है, तेरे निवासी झूठ-पर-झूठ बोलते हैं और उनकी बातचीत कपटपूर्ण होती है।</span> <sup>13</sup><span class='v-txt'>इसीलिए तेरे पापों के कारण ही मैंने तुझ पर आघात करना और तेरा विध्वंस करना प्रारंभ किया है।</span> <sup>14</sup><span class='v-txt'>तू खायेगा, पर भूख मिटेगी नहीं, पेट हमेशा खाली रहेगा; बचाने पर भी तू कुछ न संचित कर सकेगा; और जो कुछ बेचेगा भी, उसे दसूरे आकर तलवार के बल पर छीन लेंगे।</span> <sup>15</sup><span class='v-txt'>तू बोयेगा, किन्तु काट नहीं पायेगा; भले ही तू जैतून का तेल निकालेगा, पर उसे अपने ही बदन पर कभी न लगा पायेगा; तू अंगूर का रस निचोडेगा, किन्तु अंगूरी नहीं पी पायेगा।</span> <sup>16</sup><span class='v-txt'>तूने तो ओम्री के विधानों का पालन किया अहाब के घराने की सब रीतियों का अनुसरण किया और अपने रहन-सहन में उनका अनुकरण भी किया।  अतः मैं तुझ को उजाड दूँगा और तेरे निवासियों को उपहास का पात्र बना दूँगा; तुझे दूसरी जातियों की निंदा सहनी पडेगी।</span> </p>
+        <div class='nav'><a href='040005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='040007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

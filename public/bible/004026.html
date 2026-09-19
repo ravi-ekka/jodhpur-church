@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 26</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 26</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>महामारी के बाद प्रभु ने मूसा और हारून के पुत्र याजक, एलआजार से कहा,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;इस्राएलियों के सारे समुदाय की गणना, उनके अपने-अपने घरानों के अनुसार, करो - उन सब पुरुषों की, जो सैनिक सेवा के योग्य हैं और जिनकी अवस्था बीस वर्ष या इस से अधिक है।</span> <sup>3</sup><span class='v-txt'>इस पर याजक एलआजार के साथ मूसा ने मोआब के मैदान में, यर्दन के पास, येरीखो के निकट,</span> <sup>4</sup><span class='v-txt'>बीस वर्ष और इस से अधिक के लोगों की गणना ठीक वैसे ही की, जैसे प्रभु ने मूसा को आदेश दिया। वे इस्राएली जो, मिस्र से निकल आये थे, ये थे :</span> <sup>5</sup><span class='v-txt'>इस्राएल के जेठा पुत्र रूबेन। रूबेन के पुत्र ये थे : हनोक, जिस में हनोकियों का कुल; पल्लू, जिस से पल्लुओं का कुल;</span> <sup>6</sup><span class='v-txt'>हेस्रोन, जिस से हेस्रोनियों का और करमी, जिस से करमियों का कुल उत्पन्न हुआ।</span> <sup>7</sup><span class='v-txt'>ये रूबेन के कुल थे। इनकी संख्या तैंतालीस हज़ार सात सौ तीस थी।</span> <sup>8</sup><span class='v-txt'>पल्लू का पुत्र एलीआब था।</span> <sup>9</sup><span class='v-txt'>एलीआब के पुत्र ये थे : नमूएल, दातान और अबीराम दातान और अबीराम ससुदाय के वे नेता थे, जिन्होंने मूसा और हारून के विरुद्ध विद्रोह किया था। वे कोरह के दल के साथ थे, जब उन्होंने प्रभु के विरुद्ध विद्रोह किया था।</span> <sup>10</sup><span class='v-txt'>पृथ्वी ने उन्हें और कोरह को अपना मुँह खोल कर निगल लिया था और उसके दल वाले उस अग्नि में मर गये थे, जिसने ढाई सौ पुरुषों को भस्म कर दिया था। उनके भस्म होने की घटना चेतावनी के रूप में थी।</span> <sup>11</sup><span class='v-txt'>उनकी साथ कोरह के पुत्रों की मृत्यु नहीं हुई थी।</span> <sup>12</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार सिमओन के पुत्र ये थे : नमूएल, जिस से नमुएलियों का कुल; यामीन, जिस से यामीनियों का कुल; याकीन, जिस से याकीनियों का कुल;</span> <sup>13</sup><span class='v-txt'>जेरह, जिस से जेरहियों का कुल और शौल, जिस से शौलियों का कुल उत्पन्न हुआ।</span> <sup>14</sup><span class='v-txt'>ये सिमओन के कुल थे। इनकी संख्या बाईस हज़ार दो सौ थी।</span> <sup>15</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार गाद के पुत्र ये थे : सिफ़ोन, जिस से सिफ़ोनियों का कुल; हग्गी, जिसे से हग्गियों का कुल; शूनी, जिस से शूनियों का कुल;</span> <sup>16</sup><span class='v-txt'>ओज़नी जिसे से ओज़नियों का कुल; एरी, जिस से एरियों का कुल;</span> <sup>17</sup><span class='v-txt'>अरोद, जिस से अरोदियों का कुल और अरएली, जिस से अरएलियों का कुल उत्पन्न हुआ।</span> <sup>18</sup><span class='v-txt'>ये गाद के कुल थे। इनकी संख्या चालीस हज़ार पाँच सौ थी।</span> <sup>19</sup><span class='v-txt'>यूदा के पुत्र एर और ओनान थे। एर और ओनान की मृत्यु कनान देश में हुई थी।</span> <sup>20</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार यूदा के पुत्र ये थे : शेला, जिस से शेलानियों का कुल; येरेस, जिस से येरेसियों का कुल और ज़ेरह, जिस से ज़ेरहियों का कुल उत्पन्न हुआ।</span> <sup>21</sup><span class='v-txt'>येरेस के पुत्र ये थे : हेस्रोन, जिस से हेस्रोनियों का कुल उत्पन्न हुआ।</span> <sup>22</sup><span class='v-txt'>ये यूदा के कुल थे। इनकी संख्या छिहत्तर हजार पाँच सौ थी।</span> <sup>23</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार इस्साकार के पुत्र ये थे : तोला, जिस से तोलाईयों का कुल; पुव्वा, जिस से पुव्वाइयों का कुल;</span> <sup>24</sup><span class='v-txt'>याषूब, जिस से याषूबियों का कुल और शिम्रोन, जिस से शिम्रोनियों का कुल उत्पन्न हुआ।</span> <sup>25</sup><span class='v-txt'>ये इस्साकार के कुल थे। इनकी संख्या चौसठ हज़ार तीन सौ थी।</span> <sup>26</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार जबुलोन के पुत्र ये थे : सेरेद, जिसे से सेरेदियों का कुल; एलोन जिस से एलोनियों का कुल और यहलएल, जिस से यहलएलियों का कुल उत्पन्न हुआ।</span> <sup>27</sup><span class='v-txt'>ये जबुलोन के कुल थे। इनकी संख्या साठ हजार पाँच सौ थी।</span> <sup>28</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार यूसुफ़ के पुत्र थे : मनस्से और एफ्रईम।</span> <sup>29</sup><span class='v-txt'>मनस्से के पुत्र : माकीर से माकीरियों का कुल। माकीर गिलआद का पिता था; गिलआद से गिलआदियों का कुल।</span> <sup>30</sup><span class='v-txt'>गिलआद के पुत्र : येज़ेर से येज़ेरियों का कुल, हेलेक से हेलेकियों का कुल,</span> <sup>31</sup><span class='v-txt'>अस्रीएल से अस्रीएलियों का कुल, सिखेम से सिखेमियों का कुल,</span> <sup>32</sup><span class='v-txt'>शमीदा से शमीदाइयों का कुल और हेफेर से हेफ़ेरियों का कुल।</span> <sup>33</sup><span class='v-txt'>हेफ़ेर के पुत्र सलोफ़हाद के कोई पुत्र न था, उसके केवल पुत्रियाँ थीं। सलोफ़हाद के पुत्रियों के नाम ये थे : महला, नोआ, होगला, मिल्का और तिर्सा।</span> <sup>34</sup><span class='v-txt'>ये मनस्से के कुल थे। इनकी संख्या बावन हज़ार सात सौ थी।</span> <sup>35</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार एफ्रईम के पुत्र ये थे : षूतेलह से शूतेलहियों का कुल, बेकेर से बेकेरियो का कुल और तहन से तहनियों का कुल।</span> <sup>36</sup><span class='v-txt'>शूतेलह के पुत्र ये थे : एरान से एरानियों का कुल।</span> <sup>37</sup><span class='v-txt'>ये एफ्रईम के कुल थे। इनकी संख्या बत्तीस हजार पाँच सौ थी।</span> <sup>38</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार बेनयामीन के पुत्र ये थे : बेला से बेलाइयों का कुल, अषबेल से अषबेलियों का कुल, अहीराम से अहीरामियों का कुल,</span> <sup>39</sup><span class='v-txt'>शफूफ़ाम से शफूफ़ामियों का कुल और हूफ़ाम से हूफ़ामियों का कुल।</span> <sup>40</sup><span class='v-txt'>बेला के पुत्र अर्द और नामान थे : अर्द से र्अदियों का कुल और नामान से नामानियों का कुल।</span> <sup>41</sup><span class='v-txt'>ये बेनयामीन के कुल थे। इनकी संख्या पैंतालीस हज़ार छः सौ थी।</span> <sup>42</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार दान के पुत्र ये थे : शूहाम से शूहामियों का कुल। ये दान के कुल थे।</span> <sup>43</sup><span class='v-txt'>ये सब शूहमियों के कुल थे। इनकी संख्या चौसठ हजार चार सौ थी।</span> <sup>44</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार आषेर के पुत्र ये थे : यिमना से यिमनाइयों का कुल, यिषवी से यिषवियों का कुल और बरीआ से बरीआइयों का कुल।</span> <sup>45</sup><span class='v-txt'>बरीआ के पुत्रों से : हेबेर से हेबेरियों का और मलकीएल से मलकीएलियों का कुल।</span> <sup>46</sup><span class='v-txt'>आषेर की पुत्री का नाम सारह था।</span> <sup>47</sup><span class='v-txt'>ये आषेर के कुल थे। इनकी संख्या तिरपन हजार चार सौ थी।</span> <sup>48</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार नफ्ताली के पुत्र ये थे : यहसेएल से यहसेएलियों का कुल, गूनी से गूनियों का कुल,</span> <sup>49</sup><span class='v-txt'>येसेर से येसेरियो का कुल और शिल्लेम से शिल्लेमियों का कुल।</span> <sup>50</sup><span class='v-txt'>ये नफ्ताली के कुल थे। इनकी संख्या पैंतालीस हज़ार चार सौ थी।</span> <sup>51</sup><span class='v-txt'>इस प्रकार इस्राएल के लोगों की कुल संख्या छः लाख एक हज़ार सात सौ तीस थी।</span> <sup>52</sup><span class='v-txt'>(५२-५३) प्रभु ने मूसा से कहा, &#039;&#039;इन कुलों में, इनकी जनसंख्या के अनुसार, विरासत के रूप में भूमि बाँट दी जाये।</span> <sup>54</sup><span class='v-txt'>बडे कुल को बड़ा दायभाग दिया जाये और छोटे कुल को छोटा दायभाग। अपनी जनसंख्या के अनुसार प्रत्येक कुल को अपना दायभाग दिया जाये।</span> <sup>55</sup><span class='v-txt'>भूमि का बँटवारा चिट्टी डाल कर किया जाये। उनके पूर्वजों के कुलों की जनसंख्या के अनुसार उन्हें भूमिभाग दिया जाये। प्रत्येक दल को, चाहे वह छोटा हो या बड़ा,</span> <sup>56</sup><span class='v-txt'>अपना दायभाग चिट्टी डाल कर दिया जाये।</span> <sup>57</sup><span class='v-txt'>अपने-अपने कुलों के अनुसार नामांकित लेवी ये थे : गेरषोन से गेरषोनियों का कुल, कहात से कहातियों का कुल और मरारी से मरारियों का कुल।</span> <sup>58</sup><span class='v-txt'>ये भी लेवियों के कुल थे : लिबनियों का कुल, हेब्रोनियों का कुल, महलियों का कुल, मूशियों का कुल और कोरहियों का कुल। कहात अम्राम का पिता था।</span> <sup>59</sup><span class='v-txt'>अम्राम की पत्नी लेवी की पुत्री योकेबेद थी, जो मिस्र मे लेवी के यहाँ पैदा हुई थी। उस से अम्राम के यहाँ हारून, मूसा और उनकी बहन मिरयम का जन्म हुआ।</span> <sup>60</sup><span class='v-txt'>नादाब, अबीहू, एलआज़ार, और ईतामार हारून के पुत्र थे।</span> <sup>61</sup><span class='v-txt'>नादाब और अबीहू की मृत्यु उस समय हो गयी, जब वे प्रभु को अवैध अग्नि अर्पित कर रहे थे।</span> <sup>62</sup><span class='v-txt'>एक महीने के बालक और इस से ऊपर के सब नामांकित लेवी पुरुषों की संख्या तेईस हज़ार थी। इस्राएल के अन्य लोगों के साथ उनकी गणना नहीं की गयी, क्योंकि उन को अन्य इस्राएलियों के साथ विरासत नहीं मिलती थी।</span> <sup>63</sup><span class='v-txt'>मूसा और याजक एलआज़ार द्वारा नामांकित पुरुष ये थे, जब उन्होंने यर्दन तट पर येरीखों के पास, मोआब के मैदानों में इस्राएली लोगों की जनगणना की।</span> <sup>64</sup><span class='v-txt'>उन में एक भी ऐसा नहीं था, जिसका नामांकन उस समय हुआ था, जब मूसा और याजक हारून ने सीनई के उजाड़खण्ड में इस्राएलियों की गणना की थी।</span> <sup>65</sup><span class='v-txt'>कारण यह था कि प्रभु ने उनके विषय में कहा था कि वे उजाड़खण्ड में ही मर जायेंगे। यफुन्ने के पुत्र कालेब और नून के पुत्र योशुआ के सिवा उन में एक भी शेष नहीं रहा।</span> </p>
+        <div class='nav'><a href='004025.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004027.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

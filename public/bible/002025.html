@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>निर्गमन - अध्याय 25</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>निर्गमन</h1>
+        <h2>अध्याय 25</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा :</span> <sup>2</sup><span class='v-txt'>&#039;&#039;इस्राएलियों से कहो कि वे मेरे लिऐ चन्दा ले आयें। तुम प्रत्येक व्यक्ति से, जो स्वेच्छा से देना चाहे, मेरे लिए चन्दा स्वीकार करो।</span> <sup>3</sup><span class='v-txt'>तुम उन से यह स्वीकार करोगे : सोना, चाँदी और काँसा;</span> <sup>4</sup><span class='v-txt'>नीले, बैंगनी और लाल रंग के कपड़े तथा छालटी, बकरी के बाल;</span> <sup>5</sup><span class='v-txt'>मेढों की सीझी हुई खालें ओर सूस की खालें; बबूल की लकड़ी;</span> <sup>6</sup><span class='v-txt'>दीपक के लिए तेल, अभ्यंजन के तेल और सुगन्धित लोबान के लिए मसाले;</span> <sup>7</sup><span class='v-txt'>एफ़ोद और वक्षपेटिका में लगाने के लिए सुलेमानी और अन्य मणियाँ।</span> <sup>8</sup><span class='v-txt'>लोग मेरे लिए एक पवित्र-स्थान बनायें और मैं उनके बीच निवास करूँगा।</span> <sup>9</sup><span class='v-txt'>जो नमूना मैं तुम को दिखाऊँगा, ठीक उसी के अनुसार निवास और उसके लिए अन्य सब सामग्री बनवाओ।</span> <sup>10</sup><span class='v-txt'>&#039;&#039;बबूल की लकड़ी से एक मंजूषा बनवाओ। उसकी लम्बाई ढाई हाथ और चौड़ाई तथा ऊँचाई डेढ़-डेढ़ हाथ हो।</span> <sup>11</sup><span class='v-txt'>उसे भीतर-बाहर शुद्ध सोने से मढ़वाओ और उसके चारों ओर  सोने की किनारी भरवाओं।</span> <sup>12</sup><span class='v-txt'>उसके चार पायों में सोने के चार कड़े ढलवा कर बनवाओं; दो कड़े एक ओर और दो कडे दूसरी ओर।</span> <sup>13</sup><span class='v-txt'>फिर बबूल की लकड़ी के डण्डे बनवाओ और उन्हें भी सोने से मढ़वाओ।</span> <sup>14</sup><span class='v-txt'>मंजूषा के किनारों के कड़ो में उन डण्डों को डलवाओ, जिससे मंजूषा उठायी जा सके।</span> <sup>15</sup><span class='v-txt'>डण्डे हमेशा मंजूषा के कड़ो में लगे रहेंगे, वे उन से कभी अलग नहीं किया जायेगा।</span> <sup>16</sup><span class='v-txt'>मंजूषा में उस विघान-पत्र को रख दो, जिसे मैं तुम को दूँगा।</span> <sup>17</sup><span class='v-txt'>शुद्ध सोने का एक छादन-फलक बनवाओ। उसकी लम्बाई ढाई हाथ हो और उसकी चौड़ाई डेढ़ हाथ।</span> <sup>18</sup><span class='v-txt'>छादन-फलक के दोनों ओर सोने से गढ़े दो केरूब बनवाओ;</span> <sup>19</sup><span class='v-txt'>एक सिरे पर एक केरूब और दूसरे सिरे पर दूसरा केरूब। ये केरूब और छादल-फलक एक ही धातु खण्ड के बने हों।</span> <sup>20</sup><span class='v-txt'>उन केरूबों के पंख ऊपर से ऐसे फैले हुए हों कि वे अपने पंखों से छादन-फलक को ढके रहें। वे एक दूसरे के आमने-सामने हों और उनका मुख छादन-फलक की ओर हो।</span> <sup>21</sup><span class='v-txt'>मंजूषा के ऊपर उस छादन-फलक को और मंजूषा में उस विधान-पत्र को रखो, जिसे मैं तुम को दूँगा।</span> <sup>22</sup><span class='v-txt'>मैं वहाँ तुम से मिलूँगा और छादन-फलक के ऊपर से, अर्थात् विधान की मंजूषा पर स्थित उन दो केरूबों के बीच के स्थान से तुम को इस्राएलियों के लिए अपनी सब आज्ञाएँ सुना दूँगा।</span> <sup>23</sup><span class='v-txt'>&#039;&#039;बबूल की लकड़ी की एक मेज बनवाओ, जो दो हाथ लम्बी, एक हाथ चौड़ी और डेढ़ हाथ ऊँची हो।</span> <sup>24</sup><span class='v-txt'>उसे शुद्ध सोने से मढ़वाओं और उसके चारों ओर सोने की किनारी लगवाओ।</span> <sup>25</sup><span class='v-txt'>उसके चारों ओर चार अंगुल चौड़ी एक पटरी बनवाओ और उस पटरी के चारों ओर सोने की किनारी लगवाओ।</span> <sup>26</sup><span class='v-txt'>सोने के चार कड़े बनवा कर उन कड़ों को चारों कोनों में, चारों पायों में लगवाओ।</span> <sup>27</sup><span class='v-txt'>वे कड़े पटरी के पास ही हों और डण्डों के घरों का काम दे, जिससे मेज उनके द्वारा उठायी जा सके।</span> <sup>28</sup><span class='v-txt'>बबूल की लकड़ी के डण्डे बनवा कर उन्हें सोने से मढ़वाओं। वे मेज उठाने के काम आयेंगे।</span> <sup>29</sup><span class='v-txt'>तुम शुद्ध सोने की थालियाँ कलछे, घड़े और प्याले बनवाओं। ये अर्घ देने के काम आयेंगे।</span> <sup>30</sup><span class='v-txt'>उस मेज़ पर मेरे सामने सदा भेंट की रोटियाँ रखा करोगे।</span> <sup>31</sup><span class='v-txt'>शुद्ध सोने का एक दीपवृक्ष भी बनवाओ। दीपवृक्ष का पाया, उसकी डण्डी, उसके प्याले, उसकी कलियाँ और फूल-सब एक ही धातु खण्ड के होंगे।</span> <sup>32</sup><span class='v-txt'>उसी में छह शाखाएँ हों। दीपवृक्ष की एक ओर तीन शाखाएँ हों और दीपवृक्ष की दूसरी ओर तीन शाखाएँ।</span> <sup>33</sup><span class='v-txt'>एक शाखा में बादाम की बौंड़ी के आकार के तीन प्याले हों, जिन में एक कली और एक फूल हो। दूसरी शाखा में बादाम की बौंड़ी के आकार के तीन प्याले हों, जिन में एक कली और एक फूल हो। वृक्ष की छहों शाखाओं पर ऐसा ही हो।</span> <sup>34</sup><span class='v-txt'>दीपवृक्ष में ही बादाम की बौंड़ी के आकार के चार प्याले हों, जिन में एक कली और एक फूल हो।</span> <sup>35</sup><span class='v-txt'>दीपवृक्ष से निकली हुई प्रथम शाखा-द्वय के नीचे एक कली हो, दूसरी कली दूसरी शाखा-द्वय के नीचे और तीसरी कली तीसरी शाखा-द्वय के नीचे।</span> <sup>36</sup><span class='v-txt'>शाखाएँ, कलियाँ और दीपवृक्ष ये सब शुद्ध सोने के एक ही धातु-खण्ड के बने हो।</span> <sup>37</sup><span class='v-txt'>तब तुम उसके लिए सात दीपक बनवाओ। उन दीपकों को इस प्रकार जलते रखोगे कि उनका प्रकाश सामने के स्थान पर पड़े।</span> <sup>38</sup><span class='v-txt'>उसकी कैंचियाँ और अग्निपात्र शुद्ध सोने के बने हों।</span> <sup>39</sup><span class='v-txt'>उसे और उसके सब पात्रों को एक मन शुद्ध सोने से बनवाओ।</span> <sup>40</sup><span class='v-txt'>इसका ध्यान रखो कि ये सब ठीक उसी नमूने अनुसार बनें, जो तुम को पर्वत पर दिखाया गया है।</span> </p>
+        <div class='nav'><a href='002024.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='002026.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 17</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 17</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इसके बाद प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;याजक हारून के पुत्र एलआज़ार से कहो कि वह अधबुझी अग्नि से धूपदानों को निकाल लें ओर अग्नि इधर-उधर फैला दे। वे धूपदान पवित्र हो गये हैं।</span> <sup>3</sup><span class='v-txt'>जो व्यक्ति अपने पापों के कारण मर गये हैं, उनके धूपदान ठोंक-पीट कर उन से पत्तर बनवाओ, जो वेदी को ढकने के काम आयेंगे। वे प्रभु को अर्पित हो चुके हैं, इसलिए वे पवित्र हो गये हैं। वे इस्राएलियों के लिए एक चिह्न होंगे।</span> <sup>4</sup><span class='v-txt'>इस पर याजक एलआज़ार ने काँसे के उन धूपदानों को उठा लिया, जिन्हें वे लोग ले आये थे, जो भस्म हो गये थे। उन्हें ठोक-पीट कर वेदी के लिए आवरण बना लिया गया।</span> <sup>5</sup><span class='v-txt'>वइ इस्राएलियों को यह स्मरण दिलाता है कि हारूनवंशियों के सिवा कोई अनधिकारी व्यक्ति प्रभु के सामने धूप जलाने न आये। कहीं ऐसा न हो कि उसके साथ वह हो जाये, जो कोरह और उसके दल वालों के साथ हुआ था। प्रभु ने मूसा के माध्यम से कोरह को यह चेतावनी दी थी।</span> <sup>6</sup><span class='v-txt'>दूसरे दिन इस्राएलियों का सारा समुदाय मूसा और हारून के विरुद्ध भुनभुनाने लगा। वे कहते थे, &#039;&#039;आपने प्रभु की प्रजा को मार डाला।&#039;&#039;</span> <sup>7</sup><span class='v-txt'>जब सारा समुदाय मूसा और हारून के विरुध्द एकत्रित हुआ और दर्शन-कक्ष के पास आया, तो लोगों ने देखा कि बादल ने उसे ढक लिया और प्रभु की महिमा प्रकट हो गयी है।</span> <sup>8</sup><span class='v-txt'>इस पर हारून और मूसा दर्शन-कक्ष के सामने आये।</span> <sup>9</sup><span class='v-txt'>प्रभु ने मूसा से यह कहा,</span> <sup>10</sup><span class='v-txt'>&#039;&#039;तुम इस समुदाय से दूर रहो। मैं क्षणभर में इसे नष्ट कर दूँगा। तब दोनों मुँह के बल गिर पड़े।</span> <sup>11</sup><span class='v-txt'>मूसा ने हारून से कहा, &#039;&#039;तुम अपने धूपदान में वेदी पर से आग लो और उस पर लोबान रखों। उसे तुरन्त समुदाय के पास ले जाओ और उनके लिए प्रायश्चित-विधि सम्पन्न करो, क्योंकि प्रभु का क्रोध भड़क उठा और महामारी प्रारम्भ हो चुकी है।&#039;&#039;</span> <sup>12</sup><span class='v-txt'>हारून, मूसा की आज्ञा के अनुसार धूपदान ले कर जल्दी ही लोगों के बीच आया। उन में सचमुच महामारी प्रारम्भ हो चुकी थी उसने धूप चढ़ा कर लोगों के लिए प्रायश्चित किया।</span> <sup>13</sup><span class='v-txt'>वह मृतकों और जीवितों के बीच ख़ड़ा रहा और महामारी रुक गयी।</span> <sup>14</sup><span class='v-txt'>उन लोगों के अतिरिक्त, जो कोरह के कारण मर गये थे, उस महामारी में चौदह हजार सात सौ व्यक्तियों की मृत्यु हुई।</span> <sup>15</sup><span class='v-txt'>महामारी रूकने के बाद हारून मूसा के पास दर्शन कक्ष के द्वार पर लौट आया।</span> <sup>16</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>17</sup><span class='v-txt'>&#039;&#039;तुम इस्राएलियों से कहो कि प्रत्येक वंश का मुखिया एक डण्डा ले आये। कुल मिला कर बारह डण्डे होंगे। हर डण्डे पर वंश के मुखिया का नाम लिखो।</span> <sup>18</sup><span class='v-txt'>लेवी के डण्डे पर हारून का नाम लिखो। प्रत्येक मुखिया के लिए एक डण्डा हो।</span> <sup>19</sup><span class='v-txt'>उन्हें दर्शन-कक्ष में विधान की मंजूषा के सामने रखो, जहाँ मैं तुम से मिलने आता हूँ।</span> <sup>20</sup><span class='v-txt'>उस व्यक्ति के डण्डे में अंकुर निकल आयेंगे, जिसे मैं चुनता हूँ। इस तरह मैं तुम्हारे विरुद्ध इस्राएलियों की भुनभुनाहट शान्त कर दूँगा।</span> <sup>21</sup><span class='v-txt'>मूसा ने इस्राएलियों से यह कहा और हर वंश का मुखिया एक डण्डा लाया। कुल मिला कर बारह डण्डे थे और उन में हारून का डण्डा भी था।</span> <sup>22</sup><span class='v-txt'>मूसा ने इन डण्डों को प्रभु के सामने दर्शन-कक्ष में रख दिया।</span> <sup>23</sup><span class='v-txt'>दूसरे दिन जब मूसा ने विधान-पत्र के तम्बू में प्रवेश किया, तो उसने देखा कि लेवीवंशी हारून के डण्डे में अंकुर निकले थे। उस में कोपलें और बौंड़ियाँ निकल आयी थीं और उस में बादाम भी लग गये थे।</span> <sup>24</sup><span class='v-txt'>मूसा उन सब डण्डों को इस्राएलियों के पास बाहर लाया, जो प्रभु के सामने रखे हुए थे। उन्होंने उन्हें देखा और अपना डण्डा वापस ले लिया।</span> <sup>25</sup><span class='v-txt'>इसके बाद प्रभु ने मूसा से कहा, &#039;&#039;हारून का डण्डा विधान-पत्र के सामने फिर रखो। वह वहाँ विद्रोहियों को चेतावनी देता रहेगा। इस प्रकार वे मेरे विरुद्ध भुनभुनाना बन्द करेंगे और उनकी मृत्यु नहीं होगी।&#039;&#039;</span> <sup>26</sup><span class='v-txt'>प्रभु ने मूसा को जैसा आदेश दिया, मूसा ने वैसा ही किया।</span> <sup>27</sup><span class='v-txt'>इस्राएलियों ने मूसा से कहा, &#039;&#039;देखिए, हमारा विनाश हो रहा है। हम मर रहे हैं, हम सब मर रहे हैं।</span> <sup>28</sup><span class='v-txt'>जो व्यक्ति प्रभु के निवास के पास आता है, वह मर जाता है। क्या हम सब की मृत्यु हो जायेगी?&#039;&#039;</span> </p>
+        <div class='nav'><a href='004016.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004018.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

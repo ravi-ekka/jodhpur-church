@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 32</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 32</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&quot;आकाश मण्ड़ल! ध्यान दो; मैं बोलूगा।  पृथ्वी! मेरे शब्दों को सुनो।</span> <sup>2</sup><span class='v-txt'>मेरी शिक्षा वृष्टि की तरह फैले, मेरी वाणी ओस की तरह उतरे - घासस्थली पर मूसलाधार वर्षा की तरह, फ़सलों पर बौछार की तरह।</span> <sup>3</sup><span class='v-txt'>मैं प्रभु के नाम की स्तुति करूँगा।  हमारे ईश्वर की महिमा घोषित करो।</span> <sup>4</sup><span class='v-txt'>वह हमारी चट्टान है।  उसके सभी कार्य अदोष हैं।  और उसके सभी मार्ग न्यायपूर्ण; क्योंकि ईश्वर सत्य प्रतिज्ञ है, उसमें अन्याय नहीं, वह न्यायी और निष्कपट है।</span> <sup>5</sup><span class='v-txt'>उन्होंने उसके विरुद्ध पाप किया, इसके कारण वे उसके पुत्र नहीं रहे।  वह एक दुष्ट और भ्रष्ट पीढ़ी है।</span> <sup>6</sup><span class='v-txt'>मूर्ख और अविवेकी प्रजा!  क्या प्रभु के साथ ऐसा व्यवहार उचित है?  क्या वह तुम्हारा पिता नहीं, जिसने तुम्हें उत्पन्न किया?  उसने तुमको बनाया और जीवन दिया।</span> <sup>7</sup><span class='v-txt'>प्राचीन काल को याद करो, युग-युगों के वर्षों पर ध्यान दो।  अपने पिता से पूछो, वह तुम्हें बतायेगा।  बड़ों से पूछो, वे तुम्हें समझायेंगे</span> <sup>8</sup><span class='v-txt'>जब सर्वोच्च प्रभु ने राष्ट्रों के देश निर्धारित किये और मनुष्यों को पृथ्वी पर बिखेर दिया, तो उसने ईश्वर के पुत्रों की संख्या के अनुसार राष्ट्रों की सीमाओं का निर्धारण किया।</span> <sup>9</sup><span class='v-txt'>ईश्वर की विरासत है उसकी अपनी प्रजा, याकूब है उसका दायभाग।</span> <sup>10</sup><span class='v-txt'>उसने उन्हें मरूभूमि में, भयानक निर्जन स्थान में पाया। उसने उन्हें सँभाला और शिक्षा प्रदान की, आँखों की पुतली की तरह उनकी रक्षा की।</span> <sup>11</sup><span class='v-txt'>गरूड़ जिस तरह अपने नीड़ की रखवाली करता और अपने बच्चों के ऊपर मँडराता है, उसी तरह उसने अपने पंखों को फैला कर उन्हें उठाया और अपनें पंखों पर ले गया।</span> <sup>12</sup><span class='v-txt'>प्रभु ही अपनी प्रजा का पथप्रदर्षक रहा।  उसका कोई और देवता नहीं था।</span> <sup>13</sup><span class='v-txt'>उसने उसे देश की पहाड़ियों पर बसाया, जिससे वह, खेतों की उपज खाये।  वह उसे चट्टान का मधु चटाता और कड़े पत्थरों का तेल देता है।</span> <sup>14</sup><span class='v-txt'>वह उसे गायों का मक्खन, भेड़ो का दूध, मेमनों की चरबी बाशान के बछड़े और बकरे और साथ-साथ उत्तम गेहूँ देता है।  तुम लोग अंगूर के रस की मदिरा पीते हो।</span> <sup>15</sup><span class='v-txt'>यषुरून खा-पी कर मोटा हुआ और लात मारने लगा, मोटा और हष्ट-पुष्ट हो कर मस्त हो गया।  उसने ईश्वर को भुला दिया जिसने उसे बनाया था।  वह अपने उद्धार की चट्टान का तिरस्कार करने लगा।</span> <sup>16</sup><span class='v-txt'>उन्होंने अन्य देवताओं की पूजा कर प्रभु को चिढ़ाया और घृणित कार्यों से उसकी कोपग्नि प्रज्वलित की।</span> <sup>17</sup><span class='v-txt'>उन्होंने ऐसे असुरों की पूजा की, जो ईश्वर नहीं है; ऐसे देवताओं की जिन्हें वे कभी नहीं जानते थे; ऐसे देवताओं की जो अभी-अभी प्रकट हुए थे; ऐसे देवताओं की जिन पर उनके पूर्वज श्रद्धा नहीं रखते थे।</span> <sup>18</sup><span class='v-txt'>जिस चट्टान से तुम्हारी उत्पत्ति हुई है, उसे तुम लोग भूल गये।  तुमने अपने सृष्टिकर्ता ईश्वर को भुला दिया।</span> <sup>19</sup><span class='v-txt'>ईश्वर ने यह देखा और उसने क्रुद्ध हो कर अपने पुत्र-पुत्रियों को त्याग दिया।</span> <sup>20</sup><span class='v-txt'>उसने कहा, ’मैं उन से अपना मुँह मोड़ लूँगा और यह देखूँगा कि उनका क्या होगा; क्योंकि यह एक दुष्ट पीढ़ी है यह एक विश्वासघाती सन्तति है।</span> <sup>21</sup><span class='v-txt'>ऐसे देवताओं को मान कर, जो ईश्वर नहीं हैं, उन्होंने मुझे चिढ़ाया।  तुच्छ देवमूर्तियों की पूजा कर उन्होंने मेरा अनादर किया।  इसलिए मैं ऐसे लोगों द्वारा उन्हें चिढ़ाऊँगा, जो मेरी प्रजा नहीं हैं।  मैं एक तुच्छ राष्ट्र द्वारा उनका अनादर कराऊँगा;</span> <sup>22</sup><span class='v-txt'>क्योंकि मेरे क्रोध के कारण एक ऐसी अग्नि प्रज्वलित हो उठी, जो अधोलोक के तेल तक फैला गयी।  वह पृथ्वी और उसकी समस्त उपज भस्म कर देगी और पर्वतों की नींव जलायेगी।</span> <sup>23</sup><span class='v-txt'>मैं उन पर विपत्ति पर विपत्ति ढ़ाहूँगा; मैं उन्हें अपने तीरों का निषाना बनाऊँगा।</span> <sup>24</sup><span class='v-txt'>जब वे भुखमरी से दुर्बल हो गये होंगे, महामारी से अशक्त और ताऊन से आक्रान्त, तो मैं उनके विरुद्ध जंगली जानवरों के दाँत और पृथ्वी पर रेंगने वाले सर्पों का विष भेजूँगा।</span> <sup>25</sup><span class='v-txt'>तलवार सड़कों पर उसकी सन्तति मिटा देगी।  उनके घरों में आतंक बना रहेगा।  नवयुवकों और नवयुवतियों का वध किया जायेगा।  पके बाल वाले बूढ़े और दूधमुँहे बच्चे समान रूप से मारे जायेंगे।</span> <sup>26</sup><span class='v-txt'>मैंने कहा कि मैं उन्हें मिट्टी में मिला कर मनुष्यों में से उनकी स्मृति मिटा सकता हूँ;</span> <sup>27</sup><span class='v-txt'>किन्तु तब उनके शत्रु शेखी मारते और उसका ग़लत अर्थ लगाते हुये कहते: ’यह हमारे बाहुबल की विजय है, इस में प्रभु ने हस्तक्षेप नहीं किया।’</span> <sup>28</sup><span class='v-txt'>वे एक नासमझ राष्ट्र हैं।  उनमें विवेक का अभाव है।</span> <sup>29</sup><span class='v-txt'>यदि वे बुद्धिमान् होते, तो यह बात समझते और उन्हें अपने भविष्य का ज्ञान होता।</span> <sup>30</sup><span class='v-txt'>’यदि उनकी चट्टान ने उन्हें नहीं बेचा होता, यदि प्रभु ने उनका परित्याग नहीं किया होता, तो कैसे एक व्यक्ति एक हज़ार लोगों को खदेड सकता, कैसे दो व्यक्ति एक लाख लोगों को भगा सकते?’</span> <sup>31</sup><span class='v-txt'>हमारे शत्रुओं की चट्टान हमारी चट्टान जैसी नहीं हैं।  हमारे शत्रु भी यह स्वीकार करते हैं।</span> <sup>32</sup><span class='v-txt'>उनकी दाखलता सोदोम की दाखलताओं से, गोमोरा के खेतों से निकली है।  उनकी अंगूर विष से भरे हुये हैं और उनके अंगूर गुच्छे कड़वे हैं।</span> <sup>33</sup><span class='v-txt'>उनकी अंगूरी साँपो का विष, नाग का हलाहल है।</span> <sup>34</sup><span class='v-txt'>क्या मैंने यह अपने पास नहीं रोक रखा है?  क्या यह मेरे अन्तरतम में मुहरबन्द नहीं?</span> <sup>35</sup><span class='v-txt'>जब उनके पैर फिसलेंगे, तो प्रतिशोध और बदला लेना मेरा अधिकार होगा, क्योंकि उन लोगों की विपत्ति का दिन निकट है और उनका सर्वनाश शीघ्र ही होगा।</span> <sup>36</sup><span class='v-txt'>जब प्रभु देखेगा कि अपनी प्रजा कि सारी शक्ति शेष हो गई है।  और उन मैं न कोई दास और न कोई स्वतन्त्र है, तब वह अपनी प्रजा को न्याय दिलायेगा और अपने सेवकों पर दया करेगा।</span> <sup>37</sup><span class='v-txt'>तब वह कहेगा, ’अब कहाँ है उनके देवता?  कहाँ है वह चट्टान, जिनके आश्रय में वह रहते थे?</span> <sup>38</sup><span class='v-txt'>वे देवता, जो उनकी बलियों की चर्बी खाते और उनके अर्घों की अंगूरी पीते थे?  जब वे उठकर तुम्हारी सहायता करें और तुम लोगों की रक्षा करें।</span> <sup>39</sup><span class='v-txt'>अब समझो की मैं वही हूँ, मेरे सिवा और कोई देवता नहीं है।  मैं ही जीवन और मरण का विधाता हूँ।  मैं मारता भी हूँ और चंगा भी करता हूँ।  मेरे हाथ से कोई किसी को छुड़ा नहीं सकता।</span> <sup>40</sup><span class='v-txt'>मैं आकाश की ओर हाथ उठाकर कहता हूँः मैं अनन्त काल तक जीवित रहता हूँ</span> <sup>41</sup><span class='v-txt'>जब मैं अपनी चमचमाती तलवार तेज़ कर चुका होऊँगा। और उसे न्याय करने के लिए हाथ में लूँगा तो मैं अपने विरोधियों का प्रतिकार करूँगा और अपने बैरियों को बदला चुकाऊँगा।</span> <sup>42</sup><span class='v-txt'>मैं अपने बाणों को रक्त से मदोन्मत्त करूँगा और अपनी तलवार को मांस से तृप्त करूँगा: मृतकों और बन्दियों के रक्त से, शत्रु के झबरे सीरों के मांस से।</span> <sup>43</sup><span class='v-txt'>राष्ट्रों! उसकी प्रजा का जयकार करो, क्योंकि वह अपने सेवकों के रक्त का बदला चुकायेगा।  वह अपने शत्रुओं का प्रतिकार करेगा, वह अपने देश और अपनी प्रजा का शुद्धीकरण करेगा।</span> <sup>44</sup><span class='v-txt'>मूसा ने नून के पुत्र योशुआ के साथ आकर यह भजन लोगों को सुनाया।</span> <sup>45</sup><span class='v-txt'>जब मूसा इस्राएलियों के समस्त समुदाय को ये शब्द सुना चुका,</span> <sup>46</sup><span class='v-txt'>तब वह उन से बोला, इन सब शब्दों को, जिन्हें मैंने आज तुम को सुनाया, अपने हृदय पर अंकित करो।  अपने बच्चों को आदेश दो कि वे इस संहिता के सब शब्दों का सावधानी से पालन करें।</span> <sup>47</sup><span class='v-txt'>ये तुम्हारे लिए निरे शब्द नहीं हैं, बल्कि इन पर तुम्हारा जीवन निर्भर है।  इन का पालन करने से तुम दीर्घ काल तक उस देश में जीवित रहोगे, जिसे अपने अधिकार में करने तुम यर्दन पार करने वाले हो।</span> <sup>48</sup><span class='v-txt'>उसी दिन प्रभु ने मूसा से कहा,</span> <sup>49</sup><span class='v-txt'>&quot;इस अबारीम पर्वतश्रेणी के नेबो पर्वत पर चढ़ो, जो मोआब देश में येरीखो के पूर्व में है और कनान देश को देखो, जिसे मैं इस्राएलियों के अधिकार में देता हूँ।</span> <sup>50</sup><span class='v-txt'>उस पर्वत पर चढ़ने पर वहाँ तुम्हारी मृत्यु हो जायेगी और तुम अपने पूर्वजों से जा मिलोगे, जैसे तुम्हारे भाई हारून की मृत्यु होर पर्वत पर हुई थी और वह अपने पूर्वजों से जा मिला था;</span> <sup>51</sup><span class='v-txt'>क्योंकि तुम दोनों ने इस्राएलियों के सामने मेरी पवित्रता का सम्मान नहीं किया।</span> <sup>52</sup><span class='v-txt'>तुम वहाँ से देश तो देखोगे, किन्तु तुम उस देश में प्रवेश नहीं करोगे जिसे मैं इस्राएलियों को दे रहा हूँ।&quot;</span> </p>
+        <div class='nav'><a href='005031.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005033.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

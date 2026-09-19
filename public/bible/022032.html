@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 32</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 32</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इन तीन व्यक्तियों ने अय्यूब को उत्तर देना बंद कर दिया, क्योंकि वह अपने आप को धार्मिक समझता था।</span> <sup>2</sup><span class='v-txt'>तब रामकुल के बूजवंश बारकएल का पुत्र एलीहू क्रुद्ध हो उठा।  वह अय्यूब पर इसलिए क्रुद्ध हुआ कि अय्यूब ने ईश्वर के सामने अपने को दोषमुक्त प्रमाणित करना चाहा।</span> <sup>3</sup><span class='v-txt'>वह उसके तीन मित्रों पर भी क्रुद्ध हुआ, क्योंकि उन्हें कोई उत्तर नहीं सूझा और इस प्रकार उन्होंने प्रभु को दोषी माना था।</span> <sup>4</sup><span class='v-txt'>उन में सब से छोटा होने के कारण ही एलीहू अब तक अय्यूब से नहीं बोला था।</span> <sup>5</sup><span class='v-txt'>जब एलीहू ने देखा कि ये तीनों कोई उत्तर नहीं दे सके हैं, तब वह क्रुद्ध हो उठा।</span> <sup>6</sup><span class='v-txt'>तब बूजवंशज बारकएल के पुत्र एलीहू ने उत्तर देते हुए कहा: उमर की दृष्टि से मैं छोटा हूँ और आप लोग बड़े हैं, इसलिए मुझे संकोच हुआ और अपना मत प्रकट करने का साहस नहीं हुआ।</span> <sup>7</sup><span class='v-txt'>मैं सोचता था, बडे-बूढ़ों को ही बोलने दो; वे प्रज्ञा की शिक्षा देंगे।</span> <sup>8</sup><span class='v-txt'>परन्तु मनुष्य की आत्मा और सर्वशक्तिमान् की प्रेरणा उसे विवेक प्रदान करती है।</span> <sup>9</sup><span class='v-txt'>न तो प्रज्ञा वर्षों की संख्या पर निर्भर रहती और न बड़े-बूढ़ों में ही विवेक होता है।</span> <sup>10</sup><span class='v-txt'>इसलिए मैं कहता हूँः मेरी बात सुनिए, मैं भी अपना मत प्रस्तुत करूँगा।</span> <sup>11</sup><span class='v-txt'>देखिए, मैं आप लोगों की बातों की प्रतीक्षा करता रहा। जब आप अय्यूब का खण्डन करने के लिए शब्द ढूँढ़ रहे थे, तो मैं आपके तर्क सुनता रहा।</span> <sup>12</sup><span class='v-txt'>मैंने आप लोगों के कहने पर पूरा ध्यान दिया, किंतु आप लोगों में किसी ने अय्यूूब का खण्डन नहीं किया, आप लोगों में किसी ने उसे उत्तर नहीं दिया।</span> <sup>13</sup><span class='v-txt'>आप यह न कहें: वह हम से अधिक बुद्धिमान् है, ईश्वर की उसका खण्डन कर सकता है, मनुष्य नहीं।</span> <sup>14</sup><span class='v-txt'>उसने मुझे संबोधित नहीं किया, मैं उसके सामने आपके तर्क प्रस्तुत नहीं करूँगा।</span> <sup>15</sup><span class='v-txt'>अब वे घबरा गये; वे कुछ नहीं करते।  उन्हें कोई उत्तर नहीं सूझता।</span> <sup>16</sup><span class='v-txt'>मैं क्यों चुप रहूँ?  वे फिर नहीं बोलेंगे।  वे चुप्पी लगाये खड़े हैं।</span> <sup>17</sup><span class='v-txt'>मैं भी अपनी ओर से अय्यूब को उत्तर दूँगा।  मैं भी अपना मत प्रस्तुत करूँगा।</span> <sup>18</sup><span class='v-txt'>मेरे पास असंख्य तर्क हैं, मेरी आत्मा मुझे बोलने के लिए बाध्य करती है।</span> <sup>19</sup><span class='v-txt'>मेरा अंतरतम चर्मपात्र में बंद अंगूरी-जैसा है, नयी अंगूरी से भरी मशकों-जैसा, जो फटी जा रही है।</span> <sup>20</sup><span class='v-txt'>राहत के लिए मुझे बोलना ही पड़ेगा, मैं होंठ खोल कर अय्यूब को उत्तर दूँगा।</span> <sup>21</sup><span class='v-txt'>मैं न किसी ने साथ पक्षपात करूँगा और और न किसी की चापलूसी।</span> <sup>22</sup><span class='v-txt'>यदि मैं चापलूसी करने में निपुण होता, तो ईश्वर तुरंत मेरा अंत कर देता।</span> </p>
+        <div class='nav'><a href='022031.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022033.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>याकूब - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>याकूब</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>भाइयो! आप लोगों में बहुत लोग गुरु न बनें, क्योंकि आप जानते हैं कि हम गुरुओं से अधिक कड़ाई से लेखा मांगा जायेगा।</span> <sup>2</sup><span class='v-txt'>हम सब बारम्बार गलत काम करते हैं।  जो कभी गलत बात नहीं कहता, वह पहुँचा हुआ मनुष्य है और वह अपने पूर्ण शरीर को नियन्त्रण में रख सकता है।</span> <sup>3</sup><span class='v-txt'>यदि हम घोड़ों को वश में रखने के लिए उनके मुंह में लगाम लगाते हैं, तो उनके सारे शरीर को इधर-उधर घुमा सकते हैं।</span> <sup>4</sup><span class='v-txt'>जहाज का उदाहरण लीजिए।  वह कितना ही बड़ा क्यों न हो और तेज हवा से भले ही बहाया जा रहा हो, तब भी वह कर्णधार की इच्छा के अनुसार एक छोटी सी पतवार से चलाया जाता है।</span> <sup>5</sup><span class='v-txt'>इसी प्रकार जीभ शरीर का एक छोटा-सा अंग है, किन्तु वह शक्तिशाली होने का दावा कर सकती है।  देखिए, एक-छोटी-सी चिनगारी कितने विशाल वन में आग लगा सकती है।</span> <sup>6</sup><span class='v-txt'>जीभ भी एक आग है, जो हमारे अंगों के बीच हर प्रकार की बुराई का स्रोत है।  वह हमारा समस्त शरीर दूषित करती और नरकाग्नि से प्रज्वलित हो कर हमारे पूरे जीवन में आग लगा देती है।</span> <sup>7</sup><span class='v-txt'>हर प्रकार के पशु और पक्षी, रेंगने वाले और जलचर जीवजन्तु- सब-के-सब मानव जाति द्वारा वश में किये जा सकते हैं या वश में किये जा चुके हैं,</span> <sup>8</sup><span class='v-txt'>किन्तु कोई मनुष्य अपनी जीभ को वश में नहीं कर सकता।  वह एक ऐसी बुराई है, जो कभी शान्त नहीं रहती और प्राणघातक विष से भरी हुई है।</span> <sup>9</sup><span class='v-txt'>हम उस से अपने प्रभु एवं पिता की स्तुति करते हैं और उसी से मनुष्यों को अभिशाप देते हैं, जिन्हें ईश्वर ने अपना प्रतिरूप बनाया है।</span> <sup>10</sup><span class='v-txt'>एक ही मुख से स्तुति भी निकलती है और अभिशाप भी। मेरे भाइयो! यह उचित नहीं है।</span> <sup>11</sup><span class='v-txt'>क्या जलस्रोत की एक ही धारा से मीठा पानी भी निकलता है और खारा भी?</span> <sup>12</sup><span class='v-txt'>क्या अंजीर के पेड़ पर जैतून लगते हैं या दाखलता पर अंजीर?  खारे जलस्रोत से भी मीठा पानी नहीं निकलता।</span> <sup>13</sup><span class='v-txt'>आप लोगों में जो ज्ञानी और समझदार होने का दावा करते हैं, वह अपने सदाचरण द्वारा, अपने नम्र तथा बुद्धिमान व्यवहार द्वारा इस बात का प्रमाण दें।</span> <sup>14</sup><span class='v-txt'>यदि आपका हृदय कटु ईर्ष्या और स्वार्थ से भरा हुआ है, तो डींग मार कर झूठा दावा मत करें।</span> <sup>15</sup><span class='v-txt'>इस प्रकार की बुद्धि ऊपर से नहीं आती, बल्कि वह पार्थिव, पाशविक और शैतानी है।</span> <sup>16</sup><span class='v-txt'>जहाँ ईर्ष्या और स्वार्थ है, वहाँ अशान्ति और हर तरह की बुराई पायी जाती है।</span> <sup>17</sup><span class='v-txt'>किन्तु ऊपर से आयी हुई प्रज्ञा मुख्यतः पवित्र है और वह शान्तिप्रिय, सहनशील, विनम्र, करुणामय, परोपकारी, पक्षपातहीन और निष्कपट भी है।</span> <sup>18</sup><span class='v-txt'>धार्मिकता शान्ति के क्षेत्र में बोयी जाती है और शान्ति स्थापित करने वाले उसका फल प्राप्त करते हैं।</span> </p>
+        <div class='nav'><a href='066002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='066004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

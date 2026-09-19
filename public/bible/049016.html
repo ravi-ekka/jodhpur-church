@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 16</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 16</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ईसा ने अपने शिष्यों से यह भी कहा, &quot;किसी धनवान् का एक कारिन्दा था।  लोगों ने उसके पास जा कर कारिन्दा पर यह दोष लगाया कि वह आपकी सम्पत्ति उड़ा रहा है।</span> <sup>2</sup><span class='v-txt'>इस पर स्वामी ने उसे बुला कर कहा, ‘यह मैं तुम्हारे विषय में क्या सुन रहा हूँ? अपनी कारिन्दगरी का हिसाब दो, क्योंकि तुम अब से कारिन्दा नहीं रह सकते।’</span> <sup>3</sup><span class='v-txt'>तब कारिन्दा ने मन-ही-मन यह कहा, ‘मै क्या करूँ? मेरा स्वामी मुझे कारिन्दगरी से हटा रहा है।  मिट्टी खोदने का मुझ में बल नहीं; भीख माँगने में मुझे लज्जा आती है।</span> <sup>4</sup><span class='v-txt'>हाँ, अब समझ में आया कि मुझे क्या करना चाहिए, जिससे कारिन्दगरी से हटाये जाने के बाद लोग अपने घरों में मेरा स्वागत करें।’</span> <sup>5</sup><span class='v-txt'>उसने अपने मालिक के कर्ज़दारों को एक-एक कर बुला कर पहले से कहा, ’तुम पर मेरे स्वामी का कितना ऋण है?’</span> <sup>6</sup><span class='v-txt'>उसने उत्तर दिया, ‘सौ मन तेल’।  कारिन्दा ने कहा, ‘अपना रुक्का लो और बैठ कर जल्दी पचास लिख दो’।</span> <sup>7</sup><span class='v-txt'>फिर उसने दूसरे से पूछा, ‘तुम पर कितना ऋण है?’ उसने कहा, ‘सौ मन गेंहूँ।  कारिन्दा ने उस से कहा, ‘अपना रुक्का लो और अस्सी लिख दो’।</span> <sup>8</sup><span class='v-txt'>स्वामी ने बेईमान कारिन्दा को इसलिए सराहा कि उसने चतुराई से काम किया; क्योंकि इस संसार की सन्तान आपसी लेन-देन में ज्योति की सन्तान से अधिक चतुर है।</span> <sup>9</sup><span class='v-txt'>&quot;और मैं तुम लोगों से कहता हूँ, झूठे धन से अपने लिए मित्र बना लो, जिससे उसके समाप्त हो जाने पर वे परलोक में तुम्हारा स्वागत करें।</span> <sup>10</sup><span class='v-txt'>&quot;जो छोटी-से-छोटी बातों में ईमानदार है, वह बड़ी बातों में भी ईमानदार है और जो छोटी-से-छोटी बातों बेईमान है, वह बड़ी बातों में भी बेईमान है।</span> <sup>11</sup><span class='v-txt'>यदि तुम झूठे धन में ईमानदार नहीं ठहरे, तो तुम्हें सच्चा धन कौन सौंपेगा?</span> <sup>12</sup><span class='v-txt'>और यदि तुम पराये धन में ईमानदार नहीं ठहरे, तो तुम्हें तुम्हारा अपना धन कौन देगा?</span> <sup>13</sup><span class='v-txt'>&quot;क़ोई भी सेवक दो स्वामियों की सेवा नहीं कर सकता; क्योंकि वह या तो एक से बैर और दूसरे से प्रेम करेगा, या एक का आदर और दूसरे का तिरस्कार करेगा।  तुम ईश्वर और धन-दोनों क़ी सेवा नहीं कर सकते।&quot;</span> <sup>14</sup><span class='v-txt'>फ़रीसी, जो लोभी थे, ये बातें सुन कर ईसा की हँसी उड़ाते थे।</span> <sup>15</sup><span class='v-txt'>इस पर ईसा ने उन से कहा, &quot;तुम लोग मनुष्यों के सामने तो धर्मी होने का ढोंग रचते हो, परन्तु ईश्वर तुम्हारा हृदय जानता है।  जो बात मनुष्यों की दृष्टि में महत्व रखती है, वह ईश्वर की दृष्टि में घृणित है।</span> <sup>16</sup><span class='v-txt'>&quot;योहन तक संहिता और नबियों का समय था।  उसके बाद से ईश्वर के राज्य का सुसमाचार सुनाया जाता है और सब उस में प्रवेश करने का बहुत प्रयत्न कर रहे हैं।</span> <sup>17</sup><span class='v-txt'>&quot;आकाश और पृथ्वी टल जायें, तो टल जायें, परन्तु संहिता की एक मात्रा भी नहीं टल सकती।</span> <sup>18</sup><span class='v-txt'>&quot;जो अपनी पत्नी का परित्याग करता और किसी दूसरी स्त्री से विवाह करता है, वह व्यभिचार करता है और जो पति द्वारा परित्यक्ता से विवाह करता है, वह व्यभिचार करता है।</span> <sup>19</sup><span class='v-txt'>&quot;एक अमीर था, जो बैंगनी वस्त्र और मलमल पहन कर प्रतिदिन दावत उड़ाया करता था।</span> <sup>20</sup><span class='v-txt'>उसके फाटक पर लाज़रूस नामक कंगाल पड़ा रहता था, जिसका शरीर फोड़ों से भरा हुआ था।</span> <sup>21</sup><span class='v-txt'>वह अमीर की मेज़ की जूठन से अपनी भूख मिटाने के लिए तरसता था और कुत्ते आ कर उसके फोड़े चाटा करते थे।</span> <sup>22</sup><span class='v-txt'>वह कंगाल एक दिन मर गया और स्वर्गदूतों ने उसे ले जा कर इब्राहीम की गोद में रख दिया।  अमीर भी मरा और दफ़नाया गया।</span> <sup>23</sup><span class='v-txt'>उसने अधोलोक में यन्त्रणाएँ सहते हुए अपनी आँखें ऊपर उठा कर दूर ही से इब्राहीम को देखा और उसकी गोद में लाज़रूस को भी।</span> <sup>24</sup><span class='v-txt'>उसने पुकार कर कहा, ‘पिता इब्राहीम! मुझ पर दया कीजिए और लाज़रुस को भेजिए, जिससे वह अपनी उँगली का सिरा पानी में भिगो कर मेरी जीभ ठंडी करे, क्योंकि मैं इस ज्वाला में तड़प रहा हूँ’।</span> <sup>25</sup><span class='v-txt'>इब्राहीम ने उस से कहा, ‘बेटा, याद करो कि तुम्हें जीवन में सुख-ही-सुख मिला था और लाज़रुस को दुःख-ही-दुःख।  अब उसे यहाँ सान्त्वना मिल रही है और तुम्हें यन्त्रणा।</span> <sup>26</sup><span class='v-txt'>इसके अतिरिक्त हमारे और तुम्हारे बीच एक भारी गर्त अवस्थित है; इसलिए यदि कोई तुम्हारे पास जाना भी चाहे, तो वह नहीं जा सकता और कोई भ़ी वहाँ से इस पार नहीं आ सकता।’</span> <sup>27</sup><span class='v-txt'>उसने उत्तर दिया, ’पिता! आप से एक निवेदन है।  आप लाज़रुस को मेरे पिता के घर भेजिए,</span> <sup>28</sup><span class='v-txt'>क्योंकि मेरे पाँच भाई हैं।  लाज़रुस उन्हें चेतावनी दे।  कहीं ऐसा न हो कि वे भी यन्त्रणा के इस स्थान में आ जायें।’</span> <sup>29</sup><span class='v-txt'>इब्राहीम ने उस से कहा, ‘मूसा और नबियों की पुस्तकें उनके पास है, वे उनकी सुनें‘।</span> <sup>30</sup><span class='v-txt'>अमीर ने कहा, ‘पिता इब्राहीम!  वे कहाँ सुनते हैं!  परन्तु यदि मुरदों में से कोई उनके पास जाये, तो वे पश्चात्ताप करेंगे।’</span> <sup>31</sup><span class='v-txt'>पर इब्राहीम ने उस से कहा, ‘जब वे मूसा और नबियों की नहीं सुनते, तब यदि मुरदों में से कोई जी उठे, तो वे उसकी बात भी नहीं मानेंगे’।’</span> </p>
+        <div class='nav'><a href='049015.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049017.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

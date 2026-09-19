@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लेवी - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लेवी</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&#039;&#039;क्षतिपूर्ति बलि की विधि इस प्रकार है। वह परमपवित्र है।</span> <sup>2</sup><span class='v-txt'>जिस स्थान पर होम-बलि के पशु का वध किया जाता है, वहीं क्षतिपूर्ति-बलि के पशु का वध किया जाये। उसका रक्त वेदी के चारों ओर छिड़ता जाये,</span> <sup>3</sup><span class='v-txt'>उसकी सारी चरबी चढ़ायी जाये - उसकी मोटी पूँछ, अँतड़ियों के आसपास की चरबी,</span> <sup>4</sup><span class='v-txt'>उसके गुरदे तथा उनकी चरबी और कमर के आसपास की चरबी तथा जिगर की झिल्ली, जिसे गुरदों के साथ निकाला जाता है।</span> <sup>5</sup><span class='v-txt'>याजक यह सब वेदी पर जलाये। यह चढ़ावा प्रभु के लिए है।</span> <sup>6</sup><span class='v-txt'>याजक वंश के पुरुष ही इसे एक पवित्र स्थान पर खा सकते हैं, क्योंकि यह परमपवित्र है।</span> <sup>7</sup><span class='v-txt'>प्रायश्चित-बलि का नियम क्षतिर्पूति-बलि पर भी लागू है। दोनों उस याजक की हैं, जो क्षतिपूर्ति की विधि सम्पन्न करता है।</span> <sup>8</sup><span class='v-txt'>जब याजक किसी के लिए होम-बलि चढ़ाता है, तो बलि-पशु की खाल उसे मिलती है।</span> <sup>9</sup><span class='v-txt'>भट्ठी में पकायी हुई, कड़ाही में या तवे पर सेंकी हुई हर अन्न-बलि उस याजक को मिलती है, जो उसे चढ़ाता है।</span> <sup>10</sup><span class='v-txt'>अन्य सब अन्न-बलियों को, चाहे वे तेल-मिश्रित हों या सूखी, बराबर भागों में बाँट कर हारून के सब पुत्रों को दिया जाये।</span> <sup>11</sup><span class='v-txt'>प्रभु को अर्पित शान्ति-बलि की विधि इस प्रकार है।</span> <sup>12</sup><span class='v-txt'>यदि कोई व्यक्ति उसे धन्यवाद के रूप में चढ़ाना चाहे, तो वह बलि-पशु के साथ तेल-मिश्रित बेख़मीर रोटियाँ, तेल से चुपड़ी हुई बेख़मीर चपातियाँ और तेल-मिश्रित मैदे की गूँथी हुई रोटियाँ चढ़ाये।</span> <sup>13</sup><span class='v-txt'>इनके अतिरिक्त वह इस प्रकार की शान्ति-बलि के अवसर पर बेख़मीर रोटी भी चढ़ाये।</span> <sup>14</sup><span class='v-txt'>इन सब प्रकार की अर्पित वस्तुओं में से एक-एक प्रभु को चढ़ायी जाये। वह उस याजक का भाग होगा, जिसने बलि पशु का रक्त छिड़का।</span> <sup>15</sup><span class='v-txt'>इस बलि का मांस उसी दिन खाया जाये। दूसरे दिन तक उसका कुछ नहीं छोड़ा जाये।</span> <sup>16</sup><span class='v-txt'>मन्नत की या स्वेच्छा से अर्पित बलि का मांस भी उसी दिन खाया जाये, किन्तु उस में से जो बचता है, वह उसके दूसरे दिन भी खाया जा सकता है।</span> <sup>17</sup><span class='v-txt'>यदि तीसरे दिन बलि का कुछ माँस बचा रहता है, तो वह जलाया जाये।</span> <sup>18</sup><span class='v-txt'>यदि तीसरे दिन भी शान्ति-बलि का मांस खाया जाये, तो शान्ति-बलि चढ़ाने वाले को कुछ लाभ नहीं होगा, क्योंकि वह मांस दूषित हो गया है और जो व्यक्ति उस में से कुछ खाता है, वह दोषी होगा।</span> <sup>19</sup><span class='v-txt'>अशुद्ध वस्तु से स्पर्श किया हुआ मांस खाना मना है; उसे जलाना चाहिए। जो व्यक्ति शुद्ध है, वह दूसरा मांस खा सकता है।</span> <sup>20</sup><span class='v-txt'>यदि कोई व्यक्ति अशुद्ध हो और प्रभु को अर्पित बलि का मांस खाये, तो वह समुदाय से बहिष्कृत कर दिया जाये।</span> <sup>21</sup><span class='v-txt'>यदि कोई व्यक्ति अशुद्ध वस्तु का स्पर्श करे - चाहे वह अशुद्ध व्यक्ति हो या कोई अशुद्ध पशु या ऐसा कुछ, जो घृणित माना जाता है - और यदि वह ऐसी अवस्था में प्रभु को चढ़ायी शान्ति-बलि का मांस खाये, तो वह समुदाय से बहिष्कृत कर दिया जाये।&#039;&#039;</span> <sup>22</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>23</sup><span class='v-txt'>&#039;&#039;इस्राएलियों से यह कहो - तुम गायों या बैलों, भेड़ों या बकरियों की किसी भी प्रकार की चरबी नहीं खाओ।</span> <sup>24</sup><span class='v-txt'>मरे हुए या जंगली जानवरों द्वारा मारे हुए पशु की चरबी को किसी दूसरे उपयोग में लाया जा सकता है, परन्तु उसे खाया नहीं जायेगा।</span> <sup>25</sup><span class='v-txt'>प्रत्येक व्यक्ति, जो किसी ऐसे जानवर की चरबी खाये, जो प्रभु की बलि के रूप में चढ़ाया गया है, वह समुदाय से बहिष्कृत किया जाये।</span> <sup>26</sup><span class='v-txt'>तुम अपने घरों में भी किसी पक्षी या पशु के रक्त का उपभोग नहीं कर सकते हो।</span> <sup>27</sup><span class='v-txt'>जो रक्त का उपभोग करता है, उसे समुदाय से बहिष्कृत कर दिया जायेगा।&#039;&#039;</span> <sup>28</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>29</sup><span class='v-txt'>&#039;&#039;इस्राएलियों से कहो - जो प्रभु को शान्ति-बलि अर्पित करता है, वह अपने चढ़ावे का एक भाग प्रभु के पास ले आये।</span> <sup>30</sup><span class='v-txt'>वह अपने ही हाथों से उसकी चरबी और उसका सीना ले आये और सीना प्रभु के सामने हिला-हिला कर अर्पित करे।</span> <sup>31</sup><span class='v-txt'>याजक चरबी को वेदी पर जलायेगा, किन्तु सीना हारून और उसके पुत्रों का होगा।</span> <sup>32</sup><span class='v-txt'>तुम अपनी शान्ति-बलियों के पशु की दाहिनी जाँघ</span> <sup>33</sup><span class='v-txt'>हारून के उस पुत्र को दोगे, जो बलि-पशु का रक्त और चरबी चढ़ाता है। दाहिनी जाँघ पर याजक का अधिकार है।</span> <sup>34</sup><span class='v-txt'>सीना, जो प्रभु के सामने हिला-हिला कर चढ़ाया जाता है और जाँघ, जो दी जाती है, यह इस्राएलियों की शान्ति-बलियों का वह भाग है, जिसे मैंने हारून और उसके पुत्रों के लिए अलग कर दिया है। इसे इस्राएलियों से पाने का अधिकार सदा उनका होगा।&#039;&#039;</span> <sup>35</sup><span class='v-txt'>यह प्रभु को अर्पित चढ़ावों का वह भाग है, जिस पर हारून और उसके पुत्रों का उस दिन से अधिकार है, जिस दिन प्रभु के याजकों के पद पर उनकी नियुक्ति हुई है।</span> <sup>36</sup><span class='v-txt'>प्रभु ने इस्राएलियों को आदेश दिया है कि वे वह भाग अभ्यंजन के दिन याजकों को दिया करें - यह पीढ़ी-दर-पीढ़ी उनका चिरस्थायी अधिकार है।</span> <sup>37</sup><span class='v-txt'>होम बलि, अन्न-बलि, प्रायश्चित और क्षतिपूर्ति-बलि, अभ्यंजन-बलि और शान्ति-बलि की विधियाँ यही हैं।</span> <sup>38</sup><span class='v-txt'>प्रभु ने सीनई पर्वत पर इनके सम्बन्ध में मूसा को उस दिन आदेश दिया था, जिस दिन उसने इस्राएलियों को सीनई की मरुभूमि में प्रभु को बलि चढ़ाने का आदेश दिया।</span> </p>
+        <div class='nav'><a href='003006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='003008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

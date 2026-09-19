@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>सूक्ति - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>सूक्ति</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>बुद्धिमान् पुत्र अपने पिता को आनन्द देता, किन्तु मूर्ख पुत्र से माता को दुःख होता है।</span> <sup>2</sup><span class='v-txt'>अन्याय की सम्पत्ति से लाभ नहीं, किन्तु धार्मिकता मृत्यु से रक्षा करती है।</span> <sup>3</sup><span class='v-txt'>प्रभु धार्मिक मनुष्य को भूखा नहीं रहने देता, किन्तु पापियों की लालसा की पूर्ति में बाधा डालता है।</span> <sup>4</sup><span class='v-txt'>आलसी हाथ गरीब और परिश्रमी हाथ अमीर बनाते हैं।</span> <sup>5</sup><span class='v-txt'>जो उपयुक्त समय पर रसद एकत्र करता, वह बुद्धिमान् है।  जो फसल के समय सोता रहता, वह घृणित है।</span> <sup>6</sup><span class='v-txt'>धार्मिक मनुष्य को आशीर्वाद प्राप्त है, किन्तु विधर्मी के मुख में हिंसा भरी है।</span> <sup>7</sup><span class='v-txt'>धार्मिक मनुष्य का स्मरण मंगलकारी है, किन्तु विधर्मी का नाम मिट जायेगा।</span> <sup>8</sup><span class='v-txt'>जो बुद्धिमान् है, वह आज्ञाओें का पालन करता है; किन्तु बकवादी मूर्ख का विनाश होता है।</span> <sup>9</sup><span class='v-txt'>जो धर्म के मार्ग पर चलता है, वह सुरक्षित है; किन्तु जो टेढ़े-मेढ़े मार्गों पर चलता है, वह दण्ड पायेगा।</span> <sup>10</sup><span class='v-txt'>जो आँख मारता है, वह दुःख का कारण बनता है और बकवादी मूर्ख नष्ट होता है।</span> <sup>11</sup><span class='v-txt'>सद्धर्मी का मुख जीवन का स्रोत है, किन्तु विधर्मी के मुख में हिंसा भरी है।</span> <sup>12</sup><span class='v-txt'>बैर झगड़े को बढ़ावा देता है, किन्तु प्रे्रम सभी पाप ढाँक देता है।</span> <sup>13</sup><span class='v-txt'>बुद्धिमान् के शब्दों में प्रज्ञा का निवास है, किन्तु लोग मूर्ख की पीठ पर लाठी मारते हैं।</span> <sup>14</sup><span class='v-txt'>बुद्धिमान अपने ज्ञान का भण्डार भरता रहता है।  मूर्ख का बकवाद उसके विनाश का कारण बनता है।</span> <sup>15</sup><span class='v-txt'>धनी की सम्पत्ति उसके लिए किलाबन्द नगर है।  कंगाल की गरीबी उसकी विपत्ति का कारण है।</span> <sup>16</sup><span class='v-txt'>धर्मी की कमाई जीवन की ओर, किन्तु विधर्मी की आमदनी पाप की ओर ले जाती है।</span> <sup>17</sup><span class='v-txt'>जो अनुशासन में रहता, वह जीवन की ओर आगे बढ़ता है; किन्तु जो चेतावनी की उपेक्षा करता, वह पथभ्रष्ट होता है।</span> <sup>18</sup><span class='v-txt'>जो अपना बैर छिपाता, वह कपटपूर्ण बातें करता है।  जो झूठा आरोप लगाता, वह निरा मूर्ख है।</span> <sup>19</sup><span class='v-txt'>जो बहुत अधिक बोलता, वह पाप से नहीं बचता; किन्तु जो अपनी जिह्वा पर नियन्त्रण रखता, वह बुद्धिमान् है।</span> <sup>20</sup><span class='v-txt'>धर्मी की जिह्वा शुद्ध चाँदी है, किन्तु पापियों के हृदय का कोई मूल्य नहीं।</span> <sup>21</sup><span class='v-txt'>धर्मी की बातों से बहुतों को लाभ होता है, किन्तु मूर्ख अपने अविवेक के कारण नष्ट होते हैं।</span> <sup>22</sup><span class='v-txt'>प्रभु के आशीर्वाद से ही कोई धनवान बनता है।  इसकी तुलना में हमारा परिश्रम नगण्य है।</span> <sup>23</sup><span class='v-txt'>मूर्ख पापकर्म में, किन्तु बुद्धिमान् प्रज्ञा में रस लेता है।</span> <sup>24</sup><span class='v-txt'>दुर्जन जिस बात से डरता, वह उसके सिर पड़ती है; किन्तु धर्मियों की मनोकामनाएँ पूरी हो जाती हैं।</span> <sup>25</sup><span class='v-txt'>बवण्डर पापी को उड़ा ले जाता है, किन्तु धर्मी सदा दृढ़ बना रहता है।</span> <sup>26</sup><span class='v-txt'>आलसी अपने को कार्य सौंपने वालों के लिए वैसा है, जैसा सिरका दाँतों के लिए और धुआँ आँखों के लिए।</span> <sup>27</sup><span class='v-txt'>प्रभु पर श्रद्धा आयु बढ़ाती है, किन्तु दुष्टों के वर्ष घटाये जाते हैं।</span> <sup>28</sup><span class='v-txt'>धर्मियों का भविष्य आनन्दमय है, किन्तु दुष्टों की आशा व्यर्थ हो जाती है।</span> <sup>29</sup><span class='v-txt'>प्रभु का मार्ग धर्मी का गढ़ है, किन्तु वह कुकर्मियों का विनाश करता है।</span> <sup>30</sup><span class='v-txt'>धर्मी कभी विचलित नहीं होगा, किन्तु विधर्मी देश में निवास नहीं करेंगे।</span> <sup>31</sup><span class='v-txt'>धर्मी के मुख से प्रज्ञा के शब्द निकलते हैं, किन्तु कपटी जिह्वा काट दी जायेगी।</span> <sup>32</sup><span class='v-txt'>धर्मी के होंठ प्रिय बातें करते हैं, किन्तु दुष्ट के मुख से कुटिल बातें निकलती हैं।</span> </p>
+        <div class='nav'><a href='024009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='024011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

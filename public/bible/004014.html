@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 14</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 14</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>सारा समुदाय ये बातें सुन कर ज़ोर से चिल्लाने लगा और रात भर विलाप करता रहा।</span> <sup>2</sup><span class='v-txt'>सभी इस्राएली मूसा और हारून के विरुद्ध भुनभुनाने लगे। सारे समुदाय ने उन से कहा, &#039;&#039;अच्छा होता कि हम मिस्र देश में ही मर गये होते या इसी उजाड़खण्ड में मर जाते।</span> <sup>3</sup><span class='v-txt'>प्रभु हमें उस देश में क्यों ले जाना चाहता है? इसीलिए कि हम तलवार के घाट उतार दिये जायें और हमारी स्त्रियाँ और बच्चें शत्रुओं द्वारा लूट लिए जायें? हमारे लिए यही अच्छा होगा कि हम फिर मिस्र लौट जायें।</span> <sup>4</sup><span class='v-txt'>वे आपस में कहने लगे, &#039;&#039;चलो, हम अपने लिए एक नेता चुन लें और फिर मिस्र लौट जायें।&#039;&#039;</span> <sup>5</sup><span class='v-txt'>इस पर मूसा और हारून इस्राएलियों के सारे समुदाय के सामने मुँह के बल गिर पड़े।</span> <sup>6</sup><span class='v-txt'>नून के पुत्र योशुआ और यफुन्ने के पुत्र कालेब ने, जो देश की टोह लेने वालों में थे, अपने वस्त्र फाड़ कर</span> <sup>7</sup><span class='v-txt'>इस्राएलियों के सारे समुदाय से कहा, &#039;&#039;वह देश एक अनुपम देश है, जिसके निरीक्षण के लिए हम गये थे।</span> <sup>8</sup><span class='v-txt'>यदि हम पर प्रभु की कृपा हुई, तो वह हमें उस देश में बसा देगा। सचमुच वह एक ऐसा देश है, जहाँ दूध और मधु की नदियाँ बहती हैं,</span> <sup>9</sup><span class='v-txt'>परन्तु तुम प्रभु के विरुद्ध विद्रोह मत करो। उस देश के रहने वालों से मत डरो, क्योंकि हम उन्हें समाप्त कर देंगे। उनका कोई संरक्षक नहीं रहा। प्रभु हमारे साथ है, इसलिए उन से डरने का कोई सवाल नहीं उठता।&#039;&#039;</span> <sup>10</sup><span class='v-txt'>इस पर सारा समुदाय उन्हें पत्थरों से मार डालने का उपक्रम करने लगा। तब प्रभु की महिमा दर्शन-कक्ष के ऊपर सब इस्राएलियों को दिखाई पड़ी</span> <sup>11</sup><span class='v-txt'>और प्रभु ने मूसा से कहा, &#039;&#039;ये लोग कब तक मेरी निन्दा करते रहेंगे? मैंने इनके बीच कितने चमत्कार दिखाये; फिर भी वे मुझ में विश्वास नहीं करते।</span> <sup>12</sup><span class='v-txt'>मैं इन पर महामारी भेज कर इनका विनाश करूँगा। फिर मैं तुम से एक ऐसा राष्ट्र उत्पन्न करूँगा, जो इन लोगों से महान् और शक्तिशाली होगा।&#039;&#039;</span> <sup>13</sup><span class='v-txt'>इस पर मूसा ने प्रभु को उत्तर दिया, &#039;&#039;मिस्री जानते हैं कि तू बड़े सामर्थ्य के साथ इस्राएलियों को उनके देश से निकाल लाया है।</span> <sup>14</sup><span class='v-txt'>उन्होंने इस देश के लोगों को भी यह बात बता दी है। उन्होंने यह भी सुना है कि तू, प्रभु! इस प्रजा के साथ रहता है; तू, प्रभु! इन्हें दर्शन देता है, तेरा बादल इनके ऊपर बना रहता है और कि तू दिन में बादल के खम्भे के रूप में और रात को अग्नि-स्तम्भ के रूप में इनके आगे-आगे चलता है।</span> <sup>15</sup><span class='v-txt'>अब यदि तू इन लोगों का पूर्ण रूप से विनाश करेगा, तो वे राष्ट्र, जिन्होंने तेरी कीर्ति सुनी है, यह कहेंगे,</span> <sup>16</sup><span class='v-txt'>प्रभु इन लोगों को उस देश में ले जाने में असमर्थ रहा, जिस में ले जाने का उसने शपथ खा कर वचन दिया था। इसलिए उसने उन्हें उजाड़खण्ड में ही मार डाला।</span> <sup>17</sup><span class='v-txt'>इसलिए प्रभु! अपने सामर्थ्य का प्रदर्शन कर, जैसा कि तूने कहा है :</span> <sup>18</sup><span class='v-txt'>प्रभु देर से क्रोध करता और अनुकम्पा का धनी है। वह अपराध और विरोध क्षमा करता है, किन्तु वह कोई पाप अनदेखा नहीं करता और पूर्वजों के अपराधों का दण्ड तीसरी-चौथी, पीढ़ी&quot; तक उनकी सन्तति को देता है।&quot;</span> <sup>19</sup><span class='v-txt'>इसलिए तू अपनी महान् दया के अनुरूप इन लोगों का अपराध क्षमा कर, जैसा कि तू मिस्र से यहाँ तक करता आया है।&#039;&#039;</span> <sup>20</sup><span class='v-txt'>इस पर प्रभु ने कहा, मैं तुम्हारी प्रार्थना स्वीकार कर उन्हें क्षमा करता हूँ।</span> <sup>21</sup><span class='v-txt'>मेरे अस्तित्व की शपथ! समस्त पृथ्वी में व्याप्त प्रभु की महिमा की शपथ!</span> <sup>22</sup><span class='v-txt'>जिन लोगों ने मेरी महिमा और मिस्र तथा मरूभूमि में मेरे चमत्कार देखे हैं, किन्तु जिन्होंने मेरी अवज्ञा करते हुए दस बार मेरी परीक्षा ली है,</span> <sup>23</sup><span class='v-txt'>उन में एक भी उस देश के दर्शन नहीं करेंगे, जिसे मैंने शपथ खा कर उनके पूर्वजों को देने की प्रतिज्ञा की है। जिन्होंने मेरी निन्दा की है, उन में एक भी उस देश के दर्शन नहीं करेगा।</span> <sup>24</sup><span class='v-txt'>मेरे सेवक कालेब का मनोभाव उन से भिन्न था। वह मेरा सच्चा अनुयायी बना रहा। मैं उसे वह देश पहुँचा दूँगा, जहाँ वह गया है और उसके वंशजों को वह देश विरासत के रूप में मिलेगा।</span> <sup>25</sup><span class='v-txt'>अमालेकी और कनानी लोग तराइयों में रहते हैं ; इसलिए कल तुम मुड़ कर लाल समुद्र की ओर उजाड़खण्ड जाओ।&#039;&#039;</span> <sup>26</sup><span class='v-txt'>प्रभु ने मूसा और हारून से यह कहा,</span> <sup>27</sup><span class='v-txt'>&#039;&#039;मैं कब तक इस दुष्ट समुदाय की शिकायतें सहन करता रहूँ? मैं इस्राएलियों से अपनी शिकायतें सुन चुका हूँ।</span> <sup>28</sup><span class='v-txt'>उन्हें यह बता दो - प्रभु कहता है, “अपने अस्तित्व की शपथ! मैंने तुम लोगों को जो बातें कहते सुना है, उन्हीं के अनुसार मैं तुम्हारे साथ व्यवहार करूँगा।</span> <sup>29</sup><span class='v-txt'>यहाँ इस मरूभूमि में तुम्हारे शव पड़े रहेंगे, क्योंकि तुम लोगों ने मेरी शिकायत की है। जितने लोगों के नाम जनगणना के समय लिखे गये थे और जिनकी आयु बीस के ऊपर है,</span> <sup>30</sup><span class='v-txt'>उन में एक भी उस देश में प्रवेश नहीं करेगा, जहाँ मैंने हाथ उठा कर तुम्हें बसाने की शपथ ली है। यफुन्ने का पुत्र कालेब और नून का पुत्र योशुआ इसके एकमात्र अपवाद हैं।</span> <sup>31</sup><span class='v-txt'>परन्तु मैं तुम्हारे छोटे बच्चों को वहाँ पहुँचा दूँगा, जिनके विषय में तुमने कहा था कि वे शत्रुओं की लूट में आ जायेंगे। वे उस देश के दर्शन करेंगे, जिसकी तुमने अवहेलना की है।</span> <sup>32</sup><span class='v-txt'>परन्तु तुम्हारे शरीर इसी अजाड़खण्ड में धराषायी हो जायेंगे।</span> <sup>33</sup><span class='v-txt'>तुम्हारे पुत्र चरवाहे होकर चालीस वर्ष तक उजाड़खण्ड में मारे-मारे फिरेंगे और इस प्रकार तुम्हारे विश्वासघात का फल तब तक भुगतेंगे, जब तक तुम्हारे शरीर उजाड़खण्ड में ढेर न हो जायें।</span> <sup>34</sup><span class='v-txt'>तुम लोगों ने चालीस दिन तक उस देश का निरीक्षण किया। उनका हर दिन एक वर्ष गिना जायेगा। इसके अनुसार तुम्हें चालीस वर्ष तक अपने अपराधों का फल भुगतना पड़ेगा और तुम जान जाओगे कि मेरा विरोध करने का फल क्या होता है।</span> <sup>35</sup><span class='v-txt'>मैं प्रभु यह कह चुका हूँ। इस दुष्ट समुदाय ने मेरा विरोध किया है। मैं इसके साथ यही व्यवहार करूँगा। यह इस मरूभूमि में समाप्त हो जायेगा। ये लोग सब-के-सब यहाँ मर जायेंगे।&#039;&#039;</span> <sup>36</sup><span class='v-txt'>जिन लोगों को मूसा ने देश का भेद लेने भेजा था और जिन्होंने लौटने पर उस देश के विषय में झूठ बोलते हुए सारे समुदाय को उसके विरुद्ध भुनभुनाने के लिए उकसाया था,</span> <sup>37</sup><span class='v-txt'>जो लोग उस देश के विषय में झूठ बोले थे, वे प्रभु के सामने महामारी से मर गये।</span> <sup>38</sup><span class='v-txt'>जो लोग उस देश की टोह लगाने गये थे, उन में केवल नून का पुत्र योशुआ और यफुन्ने का पुत्र कालेब जीवित रह गये।</span> <sup>39</sup><span class='v-txt'>जब मूसा ने ये बातें सब इस्राएलियों को सुनायीं, तब लोगों ने बहुत शोक मनाया।</span> <sup>40</sup><span class='v-txt'>वे दूसरे दिन बड़े सबेरे उठ कर उस पहाड़ी प्रान्त की और चल पड़े और बोले, &#039;&#039;हमने पाप किया है, जिसके विषय में प्रभु ने प्रतिज्ञा की, हम उस स्थान पर जाने के लिए तैयार हैं।&#039;&#039;</span> <sup>41</sup><span class='v-txt'>किन्तु मूसा ने उत्तर दिया, &#039;&#039;तुम प्रभु का आदेश भंग क्यों करते हो? तुम इस में सफल नहीं होगे।&#039;&#039;</span> <sup>42</sup><span class='v-txt'>प्रभु तुम्हारे साथ नहीं है। इसलिए उधर मत जाओ, नहीं तो तुम्हारे शत्रु तुम्हें पराजित करेंगे।</span> <sup>43</sup><span class='v-txt'>वहाँ अमालेकी और कनानी तुम्हारा सामना करेंगे और तुम तलवार के घाट उतार दिये जाओगे। तुम प्रभु से विमुख हो गये हो, इसलिए प्रभु तुम्हारे साथ नहीं होगा।&#039;&#039;</span> <sup>44</sup><span class='v-txt'>लोगों ने पहाड़ी प्रदेश की ओर प्रस्थान किया, यद्यपि प्रभु के विधान की मंजूषा और मूसा शिविर में रह गये।</span> <sup>45</sup><span class='v-txt'>तब पहाड़ी प्रदेश के रहने बाले अमालेकियों और कनानियों ने उतर कर उन्हें पराजित किया और होरमा तक भगा दिया।</span> </p>
+        <div class='nav'><a href='004013.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004015.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

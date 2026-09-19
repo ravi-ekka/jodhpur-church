@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मक्काबियों का पहला ग्रन्थ - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मक्काबियों का पहला ग्रन्थ</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उन्हीं दिनों योहन के पुत्र सिमओन के पौत्र मत्तथ्या का उदय हुआ, जाा योयारीब के वंश का याजक था।  वह था तो येरूसालेम का, किंतु मोदीन में बस गया था।</span> <sup>2</sup><span class='v-txt'>उसके पाँच पुत्र थे योहन, जो गद्दी कहलाता था;</span> <sup>3</sup><span class='v-txt'>सिमोन, जो थास्सी कहलाता था;</span> <sup>4</sup><span class='v-txt'>यूदाह जो मक्काबी कहलाता था;</span> <sup>5</sup><span class='v-txt'>एलआज़ार, जो अव कहलाता था और योनातान, जो अफूस कहलाता था।</span> <sup>6</sup><span class='v-txt'>जब मत्तथ्या ने यूदा और येरूसालेम में होने वाली ये घृणित बातें देखी,</span> <sup>7</sup><span class='v-txt'>तो उसने कहा, धिक्कार है मुझे!  क्या मेरा जन्म इसीलिए हुआ कि मैं अपनी जाति का नाश और पवित्र नगर का पतन देखूँ और जब नगर शत्रुओं के हाथ में आ गया और पवित्र-स्थान विदेशियों के पंजे पड़ गया, तब भी हाथ-पर-हाथ धरे बैठा रहूँ?</span> <sup>8</sup><span class='v-txt'>उसका मंदिर उस व्यक्ति के समान हो गया है, जिसकी प्रतिष्ठा छिन गयी है।</span> <sup>9</sup><span class='v-txt'>उसके महिमामय पात्र लूट लिये गये, उसके बच्चों की हत्या उसकी गलियों में की गयी है, उसके युवक और युवतियाँ तलवार के घाटे उतारे गये हैं।</span> <sup>10</sup><span class='v-txt'>ऐसा राष्ट्र कौन हैं, जिसने उसके राजकीय वैभव का कुछ लिया न हो और उस से कुछ लूटा न हो?</span> <sup>11</sup><span class='v-txt'>उसकी सारी शोभा, उस से छीन ली गयी।  जो स्वतंत्र थी, अब दासी बन गयी।</span> <sup>12</sup><span class='v-txt'>हमारा मंदिर, हमारा सौन्दर्य और हमारी महिमा नष्ट हो गयी है।  गैर-यहूदियों ने उसे अपवित्र किया।</span> <sup>13</sup><span class='v-txt'>तो हमें जीवन से क्या?&quot;</span> <sup>14</sup><span class='v-txt'>तब मत्तथ्या और उसके पुत्रों ने अपने वस्त्र फाड़े और टाट पहन कर भारी विलाप किया।</span> <sup>15</sup><span class='v-txt'>राजा के पदाधिकारी, जो लोगों को स्वधर्मत्याग के लिए बाध्य करते थे, बलिदानों का प्रबंध करने मोदीन नामक नगर पहुँचे।</span> <sup>16</sup><span class='v-txt'>बहुत-से इस्राएली उन से मिल गये किंतु मत्तथ्या और उसके पुत्र अलग रहे।</span> <sup>17</sup><span class='v-txt'>राजा के पदाधिकारो ने मत्तथ्या को सम्बोधित करते हुए कहा, &quot;आप इस नगर के प्रतिष्ठित और शक्तिशाली नेता हैं।  आप को अपने पुत्रों और भाइयों का समर्थन प्राप्त हैं।</span> <sup>18</sup><span class='v-txt'>आप सर्वप्रथम आगे बढ़ कर राजाज्ञा का पालन कीजिए, जैसा कि सभी राष्ट्र, यूदा के लोग और येरूसालेम के निवासी कर चुके हैं।  ऐसा करने पर आपके पुत्र राजा के मित्र बनेंगे और सोना चाँदी और बहुत-से उपहारों द्वारा आपका और आपके पुत्रों का सम्मान किया जायेगा।&quot;</span> <sup>19</sup><span class='v-txt'>मत्तथ्या ने पुकार कर यह उत्तर दिया, &quot;साम्राज्य के सभी राष्ट्र भले ही राजा की बात मान जायें, सभी आपने पुरखों का धर्म छोड़ दें और राजा के आदेशों का पालन करें,</span> <sup>20</sup><span class='v-txt'>किंतु मैं, मेरे पुत्र और मेरे भाई-हम अपने पुरखों के विधान के अनुसार ही चलेंगे।</span> <sup>21</sup><span class='v-txt'>ईश्वर हमारी रक्षा करे, जिससे हम उसकी संहिता और उसके नियमों का परित्याग न करें।</span> <sup>22</sup><span class='v-txt'>हम राजा की आज्ञाओं का पालन नहीं करेंगे और अपने धर्म का किसी भी प्रकार से उल्लंघन नहीं करेंगे।</span> <sup>23</sup><span class='v-txt'>मत्तथ्या ने इन शब्दों के तुरंत बाद एक यहूदी राजा के आदेशानुसार मोदीन की वेदी पर बलि चढ़ाने के लिए सब के देखते आगे बढा।</span> <sup>24</sup><span class='v-txt'>इस पर मत्तथ्या का धर्मोत्साह भड़क उठा और वह आगबबूला हो गया।  उसने क्रोध के आवेग में आगे झपट कर उस यहूदी को वेदी पर मार डाला।</span> <sup>25</sup><span class='v-txt'>उसने बलि के लिए लोगों को बाध्य करने वाले पदाधिकारी का वध किया और वेदी का विध्वंस किया।</span> <sup>26</sup><span class='v-txt'>इस प्रकार मत्तथ्या ने पीनहास के सदृश संहिता के प्रति अपना उत्साह प्रदर्शित किया- पीनहास ने इसी तरह सालू के पुत्र ज़िम्री का वध किया था।</span> <sup>27</sup><span class='v-txt'>इसके बाद मत्तथ्या ने नगर भर में घूमते हुए ऊँचे स्वर से पुकार कर यह कहा, &quot;जो संहिता के प्रति उत्साही हैं। और विधान को बनाये रखने के पक्ष में हैं, वे मेरे पीछे चले आयें&quot;।</span> <sup>28</sup><span class='v-txt'>इसके बाद वह और उसके पुत्र नगर में अपनी सारी संपत्ति छोड़ कर पहाड़ों पर भाग गये।</span> <sup>29</sup><span class='v-txt'>उस समय बहुत-से लोग, जिन्हें धर्म और न्याय प्रिय था, उजाड़ प्रदेश जा कर वहाँ बस गये।</span> <sup>30</sup><span class='v-txt'>वे अपने बच्चों, पत्नियों और पशुओं को भी साथ लेते गये; क्योंकि वे अत्याचार के बोझ से दबे जा रहे थे।</span> <sup>31</sup><span class='v-txt'>येरूसालेम के दाऊदनगर में रहने वाले राजकीय पदाधिकारियों और सेना को यह बात बतलायी गयी कि कुछ लोगों ने राजाज्ञा अवहेलना कर उजाड़खण्ड के गुप्त स्थानों में शरण ली है,</span> <sup>32</sup><span class='v-txt'>तो उन में एक बड़ा दल पीछा करने निकला और उनके पास पहुँच कर उनके सामने पडाव डाला उन्होंने विश्राम के दिन उन पर आक्रमण किया।</span> <sup>33</sup><span class='v-txt'>उन्होंने उन से कहा, &quot;बहुत हुआ।  निकलों और राजा की आज्ञा मानो, तभी जीवित रह सकोगे।&quot;</span> <sup>34</sup><span class='v-txt'>उन्होंने उत्तर दिया, &quot;हम नहीं निकलेगे।  हम न तो राजा की आज्ञा मानेंगे और न विश्राम-दिवस को अपवित्र करेंगे।&quot;</span> <sup>35</sup><span class='v-txt'>तब उस दल ने उन पर आक्रमण कर दिया; किंतु उन्होंने उनका सामना नहीं किया।</span> <sup>36</sup><span class='v-txt'>उन्होंने न उस पर पत्थर मारे और न छिपने के स्थान बंद किये;</span> <sup>37</sup><span class='v-txt'>क्योंकि उनका कहना था, &quot;हम सब निर्दोष मरना चाहते हैं।  आकाश और पृथ्वी साक्षी है कि तुम हमें अन्याय से मार रहे हो।&quot;</span> <sup>38</sup><span class='v-txt'>उस दल ने विश्राम के दिन उन पर आक्रमण किया और वे, उनकी पत्नियाँ, उनके बच्चे और उनके पशु-सभी मार डाले गये।  प्रायः एक हजार लोग मारे गये।</span> <sup>39</sup><span class='v-txt'>जब मत्तथ्या और उसके मित्रों को इस बात का पता चला, तो उन्होंने उनके लिए विलाप किया।</span> <sup>40</sup><span class='v-txt'>वे एक दूसरे से कहने लगे, &quot;यदि हम भी वैसा ही करेंगे, जैसा हमारे भाइयों ने किया; यदि हम अपने प्राणों और रीति रिवाजों के लिए गैर-यहूदियों से नहीं लड़ते, तो पृथ्वीतल से हमारा सर्वनाश शीघ्र हो जायेगा&quot;।</span> <sup>41</sup><span class='v-txt'>इसलिए उस दिन उन्होंने यह निश्चय किया: &quot;यदि कोई विश्राम के दिन हम पर चढाई करेगा, तो हम उस दिन भी उसका सामना करेंगे, जिससे हम सब की मृत्यु न हो, जैसे हमारे भाइयों की मृत्यु उजाड़खण्ड में हुई थीं।</span> <sup>42</sup><span class='v-txt'>उसी समय हसीदियों का समुदाय भी उन में आ मिला।  वे इस्राएल के वीर पुरुष थे और सब संहिता के उत्साही अनुगामी थे।</span> <sup>43</sup><span class='v-txt'>जो लोग भीषण अत्याचार के कारण भाग गये, वे उनसे मिले और इस प्रकार उनका सामर्थ्य बढता रहा।  उन्होंने एक सेना का संगठन किया।</span> <sup>44</sup><span class='v-txt'>उन्होंने क्रुद्ध होकर अपने धर्मोत्साह में पापियों और दुष्टों का वध किया।  जो शेष रह गये, उन्होंने अपनी प्राण-रक्षा के लिए गैर-यहूदियों की शरण ली।</span> <sup>45</sup><span class='v-txt'>मत्तथ्या और उसके मित्र इधर-उधर घूम-घूम कर वेदियों को ढाहने लगे।</span> <sup>46</sup><span class='v-txt'>और इस्राएल की सीमा में जो भी शिशु ऐसा मिलता, जिसका खतना नहीं हुआ था, उसका बलपूर्वक खतना नहीं हुआ था, उसका बलपूर्वक खतना कराते थे।</span> <sup>47</sup><span class='v-txt'>उन्होंने अहंकारियों को भगा दिया और वे अपना उद्देश्य पूरा करने में सफल हुए।</span> <sup>48</sup><span class='v-txt'>उन्होंने राष्ट्रों और राजाओं से संहिता की रक्षा की और पापी को अपने ऊपर हावी नहीं होने दिया।</span> <sup>49</sup><span class='v-txt'>जब मत्तथ्या की मृत्यु का समय निकट आया, तो उसने पुत्रों से कहा, &quot;इन दिनों घमण्ड तथा अवज्ञा का बोलबाला है।  यह विपत्ति तथा भीषण प्रकोप का समय है।</span> <sup>50</sup><span class='v-txt'>मेरे पुत्रों!  तुम संहिता के पालन में उत्साह दिखाओ और अपने पूर्वजों के विधान के लिए अपने प्राण अर्पित करो।</span> <sup>51</sup><span class='v-txt'>याद रखों कि उन्होंने अपने समय में क्या-क्या किया था और तुम्हें बड़ी प्रतिष्ठा तथा अमर यश मिलेगा।</span> <sup>52</sup><span class='v-txt'>क्या इब्राहीम परीक्षा के समय दृढ़ नहीं रहे और इस कारण वह धार्मिक नहीं माने गये?</span> <sup>53</sup><span class='v-txt'>यूसुफ ने विपत्ति में नियम का पालन किया और वह मिस्र के शासक बन गये।</span> <sup>54</sup><span class='v-txt'>हमारे पूर्वज पीनहास में ईश्वर के प्रति उत्साह था और इसलिए यह विधान निर्धारित किया गया कि उन्हें और उनके वंशजों को सदा याजकपद प्राप्त होगा।</span> <sup>55</sup><span class='v-txt'>योशुआ ने आदेशों का पालन किया और इसलिए वह इस्राएल के न्यायाधीश हो गये।</span> <sup>56</sup><span class='v-txt'>कालेब ने सभा में सच्चा साक्ष्य दिया और उन्हें दायभाग मिला।</span> <sup>57</sup><span class='v-txt'>दाऊद निष्ठावान् थे और उन्हें एक चिरस्थायी राज्य का सिंहासन प्राप्त हुआ।</span> <sup>58</sup><span class='v-txt'>संहिता के लिए एलियाह का उत्साह कभी मंद नहीं हुआ और वह स्वर्ग में आरोहित कर लिये गये।</span> <sup>59</sup><span class='v-txt'>हनन्या, अजर्या और मीशाएल अपने विश्वास के कारण जलती हुए भट्टी से बच निकले।</span> <sup>60</sup><span class='v-txt'>दानिएल निर्दोष थे और सिंहों के जबड़ों से बच निकले।</span> <sup>61</sup><span class='v-txt'>इस प्रकार सब पीढ़ियों पर विचार कर देख लो कि जो उस पर भरोसा रखते हैं, वे विचलित नहीं होते।</span> <sup>62</sup><span class='v-txt'>पापी मनुष्य की धमकियों से मत डरो, क्योंकि उसका वैभव घूरे और कीड़ों के लिए है।</span> <sup>63</sup><span class='v-txt'>वह आज प्रतिष्ठित हैं, किंतु कल उसका कहीं पता नहीं चलेगा; क्योंकि जहाँ से वह आया था, उसी धूल में वह मिल गया है और उसकी सब योजनाएँ व्यर्थ हो जायेंगी।</span> <sup>64</sup><span class='v-txt'>मेरे पुत्रो! तुम संहिता की रक्षा में साहसी और दृढ़ रहो, क्योंकि वह तुम्हें महिमा प्रदान करेगी।</span> <sup>65</sup><span class='v-txt'>देखो, मैं जानता हूँ कि तुम्हारा भाई सिमोन बुद्धिमान है। तुम सदा उसकी मानों, वही तुम्हारा पिता होगा।</span> <sup>66</sup><span class='v-txt'>यूदाह मक्काबी बचपन से ही शारीरिक शक्ति में सब से बढकर है, वही तुम्हारा सेनापति होगा और वह जनता के लिए युद्ध करेगा।</span> <sup>67</sup><span class='v-txt'>तुम उन सब को अपने पास एकत्र करो, जो संहिता का पालन करते हैं और अपनी जाति का बदला चुकाओं।</span> <sup>68</sup><span class='v-txt'>तुम गैर-यहूदियों को जैसे को तैसा दण्ड दो और संहिता को पालन करो।</span> <sup>69</sup><span class='v-txt'>इसके बाद उसने उन्हें आशीर्वाद दिया और वह अपने पूर्वजों से जा मिला।  उसकी मृत्यु एक सौ छियालीसवें वर्ष हुई।</span> <sup>70</sup><span class='v-txt'>उसे उसके पूर्वजों के मोदीन-अवस्थित समाधिस्थान में दफनाया गया।  सारे इस्राएल ने उसकी मृत्यु पर बड़ा शोक मनाया।</span> </p>
+        <div class='nav'><a href='020001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='020003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

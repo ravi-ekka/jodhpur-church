@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>1 योहन - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>1 योहन</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>हमारा विषय वह शब्द है, जो आदि से विद्यमान था। हमने उसे सुना है।  हमने उसे अपनी आंखों से देखा है। हमने उसका अवलोकन किया और अपने हाथों से उसका स्पर्श किया है।  वह शब्द जीवन है</span> <sup>2</sup><span class='v-txt'>और यह जीवन प्रकट किया गया है।  यह शाश्वत जीवन, जो पिता के यहाँ था और हम पर प्रकट किया गया है- हमने इसे देखा है, हम इसके विषय में साक्ष्य देते ओर तुम्हें इसका सन्देश सुनाते हैं।</span> <sup>3</sup><span class='v-txt'>हमने जो देखा और सुना है, वही हम तुम लोगों को भी बताते हैं, जिससे तुम हमारे साथ पिता और उस के पुत्र ईसा मसीह के जीवन के सहभागी बनो।</span> <sup>4</sup><span class='v-txt'>हम तुम्हें यह लिख रहे हैं, जिससे हम सबों का आनन्द परिपूर्ण हो जाये।</span> <sup>5</sup><span class='v-txt'>हमने जो सन्देश उन से सुना और तुम को भी सुनाते हैं, वह यह है- ईश्वर ज्योति है और उस में कोई अन्धकार नहीं!</span> <sup>6</sup><span class='v-txt'>यदि हम कहते हैं कि हम उसके जीवन के सहभागी हैं, किन्तु अन्धकार में चल रहे हैं, तो हम झूठ बोलते हैं और सत्य के अनुसार आचरण नहीं करते।</span> <sup>7</sup><span class='v-txt'>परन्तु यदि हम ज्योति में चलते हैं- जिस तरह वह स्वयं ज्योति में हैं- तो हम एक दूसरे के जीवन के सहभागी हैं और उसके पुत्र ईसा का रक्त हमें हर पाप से शुद्ध करता है।</span> <sup>8</sup><span class='v-txt'>यदि हम कहते हैं कि हम निष्पाप हैं, तो हम अपने आप को धोखा देते हैं और हम में सत्य नहीं है।</span> <sup>9</sup><span class='v-txt'>यदि हम अपने पाप स्वीकार करते हैं, तो वह हमारे पाप क्षमा करेगा और हमें हर अधर्म से शुद्ध करेगा; क्योंकि वह विश्वसनीय तथा सत्यप्रतिज्ञ है।</span> <sup>10</sup><span class='v-txt'>यदि हम कहते हैं कि हमने पाप नहीं किया है, तो हम उसे झूठा सिद्ध करते हैं और उसका सत्य हम में नहीं है।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='069002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

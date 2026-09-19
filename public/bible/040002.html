@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मीकाह - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मीकाह</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>धिक्कार उन लोगों को, जो अधर्म की योजना बनाते और शय्या पर पडे हुए बुराई सोचा करते हैं!  वे उठते ही ऐसा करते हैं, क्योंकि उनके हाथ में शक्ति हैं।</span> <sup>2</sup><span class='v-txt'>यदि वे किसी खेत के लिए लालच करते हैं, तो उसे ले लेते हैं; यदि किसी घर पर उनकी आँख लग जाती, तो वे उसे हथियाते हैं।  वे मनुष्य और उसके घर को, मालिक और उसकी सम्पत्ति को अपने अधिकार में कर लेते हैं।</span> <sup>3</sup><span class='v-txt'>इसलिए प्रभु उन लोगों से यह कहता है- मैं तुम पर एक ऐसी विपत्ति भेजने की सोच रहा हूँ, जिसका भार तुम अपने कंधों से उतार नहीं सकोगे और फिर सीधे हो कर चल नहीं सकोगे।  यह तुम्हारे लिए घोर संकट का समय होगा।</span> <sup>4</sup><span class='v-txt'>उस दिन लोग तुम्हारे विषय में उपहास का गीत गायेंगे और तुम लोग इस तरह विलाप करोगे- हमारा सर्वनाश हो गया है।  प्रभु ने अपनी प्रजा की भूमि को विदेशियों को दे दिया।  उसने विधार्मियों में हमारे खेत बाँट दिये।  कौन हमें हमारे खेत लौटा सकेगा?</span> <sup>5</sup><span class='v-txt'>तब कोई नहीं होगा, जो चिट्ठी डाल कर तुम्हें प्रभु की सभा में विरासत दिलायेगा।</span> <sup>6</sup><span class='v-txt'>&quot;मत बको&quot;, वे बकते हैं, &quot;इस तरह मत बको; हमें शरमिन्दा नहीं होना पडेगा&quot;।</span> <sup>7</sup><span class='v-txt'>याकूब के घराने! क्या यह कहा जा सकता है, क्या प्रभु अपनी सहनशक्ति खो बैठा है?  क्या वह इस प्रकार कार्य करता है?  क्या उसके शब्द इस्राएल के प्रति दयापूर्ण नहीं हैं।</span> <sup>8</sup><span class='v-txt'>किन्तु तुम तो शत्रु-जैसे मेरे लोगों का विरोध करते हो; तुम निर्दोष लोगों की चादर लूटते हो, और जो सुख-शांति से रहते हैं, तुम उन पर धावा बोल देते हो।</span> <sup>9</sup><span class='v-txt'>तुम मेरे लोगों की स्त्रियों को उनके प्रिय घरों से भगा देते हो, और उनके बच्चों को बन्दी बना कर उन से यह स्वतन्त्रता छीन लेते हो, जिसे मैंने स्वयं उन को प्रदान किया था।</span> <sup>10</sup><span class='v-txt'>हटो, भाग जाओ, अब यह रहने की जगह नहीं रह गयी।  तुम थोडे-से रूपयों के लिए मूल्यवान् वस्तु रेहन रखते हो।</span> <sup>11</sup><span class='v-txt'>इस प्रकार के लोगों के लिए ऐसा झूठा नबी पसंद आयेगा, जो अनाप-शनाप बकते फिरेगा और नबूवत करेगा, &quot;शराब पिओ, नशा जम जाने दो&quot;।</span> <sup>12</sup><span class='v-txt'>मैं याकूब के समस्त घराने को इस्राएल के बाकी लोगों को बुला भेजूँगा और एकत्रित करूँगा। बाड़े में भेड़ों के झुण्ड की तरह, या रखवाले के साथ चरागाह में रेवड की तरह, तुम निडर रहोगे।  उनका नेता उनके आगे-आगे चलेगा; वे उनके पीछे-पीछे चल कर द्वार को पार कर बाहर निकलेंगे;</span> <sup>13</sup><span class='v-txt'>उनका राजा उनके आगे-आगे चलेगा और प्रभु-ईश्वर उनका नेतृत्व करेगा।</span> </p>
+        <div class='nav'><a href='040001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='040003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 39</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 39</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उस व्यक्ति की बात दूसरी है, जो पूरा ध्यान लगा कर सर्वोच्च प्रभु की संहिता का मनन करता है; जो प्राचीन काल के प्रज्ञा-साहित्य का और नबियों के उद्गारों का अध्ययन करता है।</span> <sup>2</sup><span class='v-txt'>वह विख्यात पुरुषों की उक्तियों को सुरक्षित रखता और दृष्टान्तों की गहराई तक पहुँचने का प्रयत्न करता है।</span> <sup>3</sup><span class='v-txt'>वह जीवन भर सूक्तियों की गहराई का और दृष्टान्तों की पहेलियों का अध्ययन करता रहता है।</span> <sup>4</sup><span class='v-txt'>वह उच्च पदाधिकारियों की सेवा में उपस्थित रहता और शासकों का द्वार उसके लिए खुला है।</span> <sup>5</sup><span class='v-txt'>वह विदेशी राष्ट्रों का भ्रमण करता और मनुष्यों की भलाई एवं बुराई की जानकारी रखता है।</span> <sup>6</sup><span class='v-txt'>वह बड़े सबेरे अपने सृष्टिकर्ता प्रभु की शरण जाता और सारे हृदय से सर्वोच्च ईश्वर से विनय करता है।</span> <sup>7</sup><span class='v-txt'>वह अपने होंठों से प्रार्थना करता और अपने पापों की क्षमा माँगता है।</span> <sup>8</sup><span class='v-txt'>यदि सर्वोच्च प्रभु ऐसा चाहेगा, तो उसे बुद्धि का आत्मा प्राप्त होगा।</span> <sup>9</sup><span class='v-txt'>तब वह प्रज्ञापूर्ण सूक्तियाँ बोलेगा और अपनी प्रार्थना में प्रभु की स्तुति करेगा।</span> <sup>10</sup><span class='v-txt'>उसका परामर्श और ज्ञान विवेकपूर्ण होगा और वह ईश्वर के रहस्यों का मनन करेगा।</span> <sup>11</sup><span class='v-txt'>जो शिक्षा उसे प्राप्त हुई, वह उसे प्रकट करेगा और ईश्वर के विधान के नियमों पर गर्व करेगा।</span> <sup>12</sup><span class='v-txt'>बहुत-से लोग उसकी बुद्धि की प्रशंसा करेंगे और वह कभी नहीं भुलायी जायेगी।</span> <sup>13</sup><span class='v-txt'>उसकी स्मृति नहीं मिटेगी।  उसका नाम पीढ़ी-दर-पीढ़ी बना रहेगा।</span> <sup>14</sup><span class='v-txt'>राष्ट्रों में उसकी प्रज्ञा की चरचा होगी और सभा में उसकी प्रशंसा की जायेगी।</span> <sup>15</sup><span class='v-txt'>यदि वह बहुत दिनों तक जीवित रहेगा, तो उसका नाम हज़ारों से महान् होगा।  और यदि उसकी मृत्यु हो जायेगी, तो उसे कोई चिन्ता नहीं होगी।</span> <sup>16</sup><span class='v-txt'>मैं एक बार और अपने विचार प्रकट करूँगा, क्योंकि मैं पूर्णिमा के चन्द्रमा की तरह पूर्ण हूँ।</span> <sup>17</sup><span class='v-txt'>भक्त पुत्रों! मेरी बात सुनो और उस गुलाब की तरफ बढ़ो, जो जलस्रोत के निकट लगाया गया है,</span> <sup>18</sup><span class='v-txt'>लोबान की तरह सुगन्ध बिखेरो,</span> <sup>19</sup><span class='v-txt'>सोसन की तरह खिलो, ऊँचे स्वर में भजन सुनाओ ओैर प्रभु के सभी कार्यों के कारण उसकी स्तुति करो।</span> <sup>20</sup><span class='v-txt'>उसके नाम की महिमा घोषित करो, उसका स्तुतिगान करो, गीत गाते और सितार बजाते हुए इन शब्दों में उसकी स्तुति करो:</span> <sup>22</sup><span class='v-txt'>उसके आदेश पर पानी एकत्र हो गया, उसके शब्द मात्र से महासागर के भण्डार भर गये।</span> <sup>23</sup><span class='v-txt'>उसके आदेश पर उसकी इच्छा पूरी हुई, क्योंकि उसके कल्याण-कार्य में कोई भी बाधा नहीं डाल सकता।</span> <sup>24</sup><span class='v-txt'>सभी मनुष्यों के कार्य उसके सामने हैं और कोई भी उसकी दृष्टि से नहीं छिप सकता।</span> <sup>25</sup><span class='v-txt'>वह आदि से काल के अन्त तक देखता रहता है; उसकी दृष्टि में कोई बात असाधारण नहीं।</span> <sup>26</sup><span class='v-txt'>यह मत पूछो, &quot;यह क्या है?  इस से क्या लाभ? &quot; क्योंकि सब कुछ का अपना-अपना प्रयोजन है।</span> <sup>27</sup><span class='v-txt'>उसका आशीर्वाद उमड़ती नदी के सदृश है,</span> <sup>28</sup><span class='v-txt'>जो सूखी भूमि को प्रलय की तरह सींचती है!  जिन राष्ट्रों ने उसकी खोज नहीं की, उसका क्रोध उनका इस तरह विनाश करेगा,</span> <sup>29</sup><span class='v-txt'>जिस तरह उसने पानी को खारा कर दिया।  सन्तों के लिए उसके मार्ग सीधे हैं, किन्तु दुष्टों के लिए वे काँटों से भरे हैं।</span> <sup>30</sup><span class='v-txt'>प्रारम्भ से ही अच्छे लोगों के लिए अच्छी चीज़ों की और बुरे लोगों के लिए बुरी चीज़ों की सृष्टि हुई।</span> <sup>31</sup><span class='v-txt'>मनुष्यों के जीवन के लिए ये अत्यावश्यक हैं: पानी, आग, लोहा, नमक, गेहूँ का मैदा, दूध, मधु, दाखरस, तेल और वस्त्र।</span> <sup>32</sup><span class='v-txt'>यह सब भक्तों के लिए कल्याणकारी हैं, किन्तु पापियों के लिए अहितकर होता है।</span> <sup>33</sup><span class='v-txt'>दण्ड देने के लिए आँधियों की सृष्टि हुई: प्रभु का कोप उनका संकट दुगुना कर देता है।</span> <sup>34</sup><span class='v-txt'>समय आने पर वे विनाशलीला रचती और अपने सृष्टिकर्ता का क्रोध शान्त करती हैं।</span> <sup>35</sup><span class='v-txt'>आग, ओले, अकाल और मृत्यु- इनकी सृष्टि दण्ड देने के लिए हुई है।</span> <sup>37</sup><span class='v-txt'>ये सब सहर्ष उसकी आज्ञा मानते हैं, इनकी उस समय के लिए सृष्टि की गयी है, जब इनकी ज़रूरत पडे़गी; समय आने पर ये उसकी आज्ञा का उल्लंघन नहीं करेंगे।</span> <sup>38</sup><span class='v-txt'>इसलिए प्रारम्भ से मेरी यही धारणा थी, मैंने सोच-विचार करने के बाद यह लिखा है:</span> <sup>39</sup><span class='v-txt'>&quot;प्रभु के सभी कार्य उत्तम हैं, वह समय पर सब आवश्यकताएँ पूरी करता है&quot;।</span> <sup>40</sup><span class='v-txt'>यह मत कहो, &quot;यह उस से बुरा है&quot;, क्योंकि सब कुछ अपने समय पर अच्छा प्रमाणित होगा।</span> <sup>41</sup><span class='v-txt'>और अब हमारे हृदय से ऊँचे स्वर में गाओे और प्रभु का नाम धन्य कहो।</span> </p>
+        <div class='nav'><a href='028038.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028040.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

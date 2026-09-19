@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योहन - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योहन</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>फरीसियों को यह सूचना मिली कि ईसा योहन की अपेक्षा अधिक शिष्य बनाते और बपतिस्मा देते हैं-</span> <sup>2</sup><span class='v-txt'>यद्यपि ईसा स्वयं नहीं, बल्कि उनके शिष्य बपतिस्मा देते थे।  जब ईसा को इसका पता चला,</span> <sup>3</sup><span class='v-txt'>तो वह यहूदिया छोड़ कर फिर गलीलिया गये ।</span> <sup>4</sup><span class='v-txt'>उन्हें समारिया हो कर जाना था।</span> <sup>5</sup><span class='v-txt'>वह समारिया के सुख़ार नामक नगर पहुँचे।  यह उस भूमि के निकट है, जिसे याकूब ने अपने पुत्र यूसुफ़ को दिया था।</span> <sup>6</sup><span class='v-txt'>वहाँ याकूब का झरना है।  ईसा यात्रा से थक गये थे, इसलिए वह झरने के पास बैठ गये।  उस समय दोपहर हो चला था।</span> <sup>7</sup><span class='v-txt'>एक समारी स्त्री पानी भरने आयी।  ईसा ने उस से कहा, &quot;मुझे पानी पिला दो&quot;,</span> <sup>8</sup><span class='v-txt'>क्योंकि उनके शिष्य नगर में भोजन खरीदने गये थे। यहूदी लोग समारियों से कोई सम्बन्ध नहीं रखते।</span> <sup>9</sup><span class='v-txt'>इसलिए समारी स्त्री ने उन से कहा, &quot;यह क्या कि आप यहूदी हो कर भी मुझ समारी स्त्री से पीने के लिए पानी माँगते हैं?&quot;</span> <sup>10</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;यदि तुम ईश्वर का वरदान पहचानती और यह जानती कि वह कौन है, जो तुम से कहता है- मुझे पानी पिला दो, तो तुम उस से माँगती और और वह तुम्हें संजीवन जल देता&quot;।</span> <sup>11</sup><span class='v-txt'>स्त्री ने उन से कहा, &quot;महोदय!  पानी खींचने के लिए आपके पास कुछ भी नहीं है और कुआँ गहरा है; तो आप को वह संजीवन जल कहाँ से मिलेगा?</span> <sup>12</sup><span class='v-txt'>क्या आप हमारे पिता याकूब से भी महान् हैं?  उन्होंने हमें यह कुआँ दिया।  वह स्वयं, उनके पुत्र और उनके पशु भी उस से पानी पीते थे।&quot;</span> <sup>13</sup><span class='v-txt'>ईसा ने कहा, &quot;जो यह पानी पीता है, उसे फिर प्यास लगेगी,</span> <sup>14</sup><span class='v-txt'>किन्तु जो मेरा दिया हुआ जल पीता है, उसे फिर कभी प्यास नहीं लगेगी।  जो जल मैं उसे प्रदान करूँगा, वह उस में वह स्रोत बन जायेगा, जो अनन्त जीवन के लिए उमड़ता रहता है।“</span> <sup>15</sup><span class='v-txt'>इस पर स्त्री ने कहा, &quot;महोदय! मुझे वह जल दीजिए, जिससे मुझे फिर प्यास न लगे और मुझे यहाँ पानी भरने नहीं आना पड़े&quot;।</span> <sup>16</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;जा कर अपने पति को यहाँ बुला लाओ&quot;।</span> <sup>17</sup><span class='v-txt'>स्त्री ने उत्तर दिया, &quot;मेरा कोई पति नहीं नहीं है&quot;।  ईसा ने उस से कहा, &quot;तुमने ठीक ही कहा कि मेरा कोई पति नहीं है।</span> <sup>18</sup><span class='v-txt'>तुम्हारे पाँच पति रह चुके हैं और जिसके साथ अभी रहती हो, वह तुम्हारा पति नहीं है।  यह तुमने ठीक ही कहा।&quot;</span> <sup>19</sup><span class='v-txt'>स्त्री ने उन से कहा, &quot;महोदय!  मैं समझ गयी- आप नबी हैं।</span> <sup>20</sup><span class='v-txt'>हमारे पुरखे इस पहाड़ पर आराधना करते थे और आप लोग कहते हैं कि येरूसालेम में आराधना करनी चाहिए।&quot;</span> <sup>21</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;नारी !  मैं तुम्हें विश्वास दिलाता हूँ कि वह समय आ रहा है, जब तुम लोग न तो इस पहाड़ पर पिता की आराधना करोगे और न येरूसोलेम में ही।</span> <sup>22</sup><span class='v-txt'>तुम लोग जिसकी आराधना करते हो, उसे नहीं जानते। हम लोग जिसकी आराधना करते हैं, उसे जानते हैं, क्योंकि मुक्ति यहूदियों से ही प्रारम्भ होती हैं</span> <sup>23</sup><span class='v-txt'>परन्तु वह समय आ रहा है, आ ही गया है, जब सच्चे आराधक आत्मा और सच्चाई से पिता की आराधना करेंगे। पिता ऐसे ही आराधकों को चाहता है।</span> <sup>24</sup><span class='v-txt'>ईश्वर आत्मा है।  उसके आराधकों को चाहिए कि वे आत्मा और सच्चाई से उसकी आराधना करें।&quot;</span> <sup>25</sup><span class='v-txt'>स्त्री ने कहा, &quot;मैं जानती हूँ कि मसीह, जो खीस्त कहलाते हैं, आने वाले हैं।  जब वे आयेंगे, तो हमें सब कुछ बता देंगे।&quot;</span> <sup>26</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;मैं, जो तुम से बोल रहा हूँ, वहीं हूँ&quot;।</span> <sup>27</sup><span class='v-txt'>उसी समय शिष्य आ गये और उन्हें एक स्त्री के साथ बातें करते देख कर अचम्भे में पड़ गये; फिर भी किसी ने यह नहीं कहा, ‘इस से आप को क्या?’ अथवा ‘आप इस से क्यों बातें करते हैं?’</span> <sup>28</sup><span class='v-txt'>उस स्त्री ने अपना घड़ा वहीं छोड़ दिया और नगर जा कर लोगों से कहा,</span> <sup>29</sup><span class='v-txt'>&quot;चलिए, एक मनुष्य को देखिए, जिसने मुझे वह सब जो मैंने किया, बता दिया है।  कहीं वह मसीह तो नहीं हैं?&quot;</span> <sup>30</sup><span class='v-txt'>इसलिए वे लोग नगर से निकल कर ईसा से मिलने आये।</span> <sup>31</sup><span class='v-txt'>इस बीच उनके शिष्य उन से यह कहते हुए अनुरोध करते रहे, &quot;गुरुवर! खा लीखिए&quot;।</span> <sup>32</sup><span class='v-txt'>उन्होंने उन से कहा, &quot;खाने के लिए मेरे पास वह भोजन है, जिसके विषय में तुम लोग कुछ नहीं जानते&quot;।</span> <sup>33</sup><span class='v-txt'>इस पर शिष्य आपस में बोले, &quot;क्या कोई उनके लिए खाने को कुछ ले आया है?&quot;</span> <sup>34</sup><span class='v-txt'>इस पर ईसा ने उन से कहा, &quot;जिसने मुझे भेजा, उसकी इच्छा पर चलना और उसका कार्य पूरा करना, यही भेरा भोजन है।</span> <sup>35</sup><span class='v-txt'>&quot;क्या तुम यह नहीं कहते कि अब कटनी के चार महीने रह गये हैं?  परन्तु मैं तुम लोगों से कहता हूँ -  आँखें उठा कर खेतों को देखो।  वे कटनी के लिए पक चुके हैं।</span> <sup>36</sup><span class='v-txt'>अब तक लुनने वाला मजदूरी पाता और अनन्त जीवन के लिए फसल जमा करता है, जिससे बोने वाला और लुनने वाला, दोनों मिल कर आनन्द मनायें;</span> <sup>37</sup><span class='v-txt'>क्योंकि यहाँ यह कहावत ठीक उतरती है- एक बोता है और दूसरा लुनता है।</span> <sup>38</sup><span class='v-txt'>मैंने तुम लोगों को वह खेत लुनने भेजा, जिस में तुमने परिश्रम नहीं किया है- दूसरों ने परिश्रम किया और तुम्हें उनके परिश्रम का फल मिल रहा है।&quot;</span> <sup>39</sup><span class='v-txt'>उस स्त्री ने कहा था- ‘उन्होंने मुझे वह सब, जो मैंने किया, बता दिया है-।  इस कारण उस नगर के बहुत-से समारियों ने ईसा में विश्वास किया।</span> <sup>40</sup><span class='v-txt'>इसलिए जब वे उनके पास आये, तो उन्होंने अनुरोध किया कि आप हमारे यहाँ रहिए।  वह दो दिन वहीं रहे।</span> <sup>41</sup><span class='v-txt'>बहुत-से अन्य लोगों ने उनका उपदेश सुन कर उन में विश्वास किया</span> <sup>42</sup><span class='v-txt'>और उस स्त्री से कहा, &quot;अब हम तुम्हारे कहने के कारण ही विश्वास नहीं करते।  हमने स्वयं सुन लिया है और हम जान गये है कि वह सचमुच संसार के मुक्तिदाता हैं।&quot;</span> <sup>43</sup><span class='v-txt'>उन दो दिनों के बाद वह वहाँ से विदा हो कर गलीलिया गये।</span> <sup>44</sup><span class='v-txt'>ईसा ने स्वयं यह कहा था कि अपने देश में नबी का आदर नहीं होता।</span> <sup>45</sup><span class='v-txt'>जब वह गलीलिया पहुँचे, तो लोगों ने उनका स्वागत किया; क्योंकि ईसा ने पर्व के दिनों येरूसालेम में जो कुछ किया था, वह सब उन्होंने देखा था।  पर्व के लिए वे भी वहाँ गये थे।</span> <sup>46</sup><span class='v-txt'>वे फिर गलीलिया के काना नगर आये, जहाँ उन्होंने पानी को अंगूरी बना दिया था।  कफरनाहूम में राज्य के किसी पदाधिकारी का पुत्र बीमार था।</span> <sup>47</sup><span class='v-txt'>जब उस पदाधिकारी ने सुना कि ईसा यहूदिया से गलीलिया आ गये हैं, तो वह उनके पास आया।  उसने उन से यह प्रार्थना की कि वह चल कर उसके पुत्र को चंगा कर दें, क्यांकि वह मरने-मरने को था।</span> <sup>48</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;आप लोग चिह्न तथा चमत्कार देखे बिना विश्वास नहीं करेंगे&quot;।</span> <sup>49</sup><span class='v-txt'>इस पर पदाधिकारी ने उन से कहा, &quot;महोदय! कृपया चलिए, कहीं मेरा बच्चा न मर जाये&quot;।</span> <sup>50</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;जाइए, आपका पुत्र अच्छा हो गया है&quot;।  वह मनुष्य ईसा के वचन पर विश्वास कर चला गया।</span> <sup>51</sup><span class='v-txt'>वह रास्ते में ही था कि उसके नौकर मिल गये और उस से बोले, &quot;आपका पुत्र अच्छा हो गया है&quot;।</span> <sup>52</sup><span class='v-txt'>उसने उन से पूछा कि वह किस समय अच्छा होने लगा था।  उन्होंने कहा कि कल दिन के एक बजे उसका बुख़ार उतर गया।</span> <sup>53</sup><span class='v-txt'>तब पिता समझ गया कि ठीक उसी समय ईसा ने उस से कहा था, ‘आपका पुत्र अच्छा हो गया है’ और उसने अपने सारे परिवार के साथ विश्वास किया।</span> <sup>54</sup><span class='v-txt'>यह ईसा का दूसरा चमत्कार था, जो उन्होंने यहूदिया से गलीलिया आने के बाद दिखाया।</span> </p>
+        <div class='nav'><a href='050003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='050005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

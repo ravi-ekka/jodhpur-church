@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रज्ञा - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रज्ञा</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब अकेले आदि मानव, संसार के पिता की ही सृष्टि हुई थी, तो प्रज्ञा ने उसकी रक्षा की थी, उसके पतन के बाद उसका उद्धार किया था।</span> <sup>2</sup><span class='v-txt'>और उसे समस्त सृष्टि पर शासन करने की शक्ति प्रदान की थी।</span> <sup>3</sup><span class='v-txt'>जब एक अधर्मी मनुष्य अपने क्रोधावेष में उस से विमुख हो गया था, तो उसका विनाश हुआ, क्योंकि उसने क्रुद्ध हो कर अपने भाई की हत्या की थी।</span> <sup>4</sup><span class='v-txt'>जब उसके कारण पृथ्वी पर जलप्रलय हुआ था, तो प्रज्ञा ने फिर उसकी रक्षा की थी और एक भंगुर लकड़ी पर धर्मी को बिठा कर पार कराया था।</span> <sup>5</sup><span class='v-txt'>जब सर्वत्र फैली हुई दुष्टता के कारण राष्ट्रों में उलझन पैदा हुई थी, तो प्रज्ञा ने धर्मी को पहचान कर उसे ईश्वर की दृष्टि में अनिन्द्य बनाये रखा और उसे वात्सल्य पर विजय का सामर्थ्य प्रदान किया था।</span> <sup>6</sup><span class='v-txt'>जब अधर्मी नष्ट हो रहे थे और पाँच नगरों पर आग बरस रही थी, तो प्रज्ञा ने भागने वाले धर्मी को बचाया था।</span> <sup>7</sup><span class='v-txt'>उन लोगो की दुष्टता के साक्ष्य के रूप में अब तक वहाँ एक उजाड़भूमि विद्यमान है, जिस में से धुँआ उठता है, जहाँ वृक्ष अनिश्चित समय तक फल देते हैं और एक अविश्वासी आत्मा की स्मृति में नमक का खम्भा खड़ा है।</span> <sup>8</sup><span class='v-txt'>जिन लोगों ने प्रज्ञा की उपेक्षा की थी, वे न केवल भलाई पहचानने में असमर्थ हो गये, बल्कि उन्होंने आने वाली पीढ़ियों के लिए अपनी मूर्खता का स्मारक छोड़ दिया था, जिससे उनका पाप गुप्त न रहे।</span> <sup>9</sup><span class='v-txt'>किन्तु जो प्रज्ञा के अनुयायी बने, उसने उन्हें उनके कष्टों से मुक्त किया।</span> <sup>10</sup><span class='v-txt'>प्रज्ञा धर्मी को सीधे मार्गों पर ले चली, जब वह अपने भाई के क्रोध से भाग रहा था।  उसने उसे ईश्वर के राज्य के दर्शन कराये और पवित्रता का ज्ञान प्रदान किया।  उसने उसे उसके कार्यों द्वारा सम्पन्न बनाया और उसके परिश्रम का प्रचुर पुरस्कार दिया।</span> <sup>11</sup><span class='v-txt'>उसने लोभी शोषकों के विरुद्ध उसकी सहायता की और उसे धनी बनाया।</span> <sup>12</sup><span class='v-txt'>उसने उसके शत्रुओं से उसकी रक्षा की और उसे फन्दा बिछाने वालों से बचा लिया।  उसने उसे घोर संघर्ष में विजय दिलायी, जिससे वह समझ सके कि भक्ति सब से शक्तिशाली है।</span> <sup>13</sup><span class='v-txt'>उसने बेचे हुए धर्मी का परित्याग नहीं किया, बल्कि उसे पाप से बचाया।</span> <sup>14</sup><span class='v-txt'>वह उसके साथ कुएँ में उतरी और उसने बन्दीगृह में उसे अकेला नहीं छोड़ा बल्कि उसे देश का राजदण्ड दिलाया। उसने उस को अत्याचारियों पर अधिकार दिया।  उसने उसके निन्दकों को झूठा सिद्ध किया और उसे अमर यष प्रदान किया।</span> <sup>15</sup><span class='v-txt'>उसने एक पवित्र पूजा और निर्दोष प्रजाति को उस पर अत्याचार करने वाले राष्ट्र से मुक्त किया।</span> <sup>16</sup><span class='v-txt'>उसने प्रभु के सेवक की आत्मा में प्रवेश किया और चमत्कारों एवं चिन्हों द्वारा विकट राजाओें का सामना किया।</span> <sup>17</sup><span class='v-txt'>उसने सन्तों को उनके परिश्रम का पुरस्कार दिलाया।  वह उन्हें एक आश्चर्यजनक मार्ग से ले चली।  वह दिन में उनके लिए आच्छादन और में तारों की ज्योति बनी।</span> <sup>18</sup><span class='v-txt'>उसने उन्हें लाल सागर के पार उतारा; वह उन्हें विशाल जलाशय के उस पार ले गयी।</span> <sup>19</sup><span class='v-txt'>उसने उनके शत्रुओे को जल में बहा दिया और उन्हें गर्त की गहराई से निकाल कर ऊपर फेंक दिया।</span> <sup>20</sup><span class='v-txt'>इसलिए धर्मियों ने दुष्टों को लूटा।  प्रभु! उन्होंने तेरे पवित्र नाम की स्तुति की और एक स्वर से तेरी विजयी भुजा का गुणगान किया;</span> <sup>21</sup><span class='v-txt'>क्योंकि प्रज्ञा ने गूँगों का मुख खोला और शिशुओं की जिह्वा को वाणी दी।</span> </p>
+        <div class='nav'><a href='027009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='027011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

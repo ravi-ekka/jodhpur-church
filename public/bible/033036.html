@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 36</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 36</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>“मानवपुत्र! इस्राएल के पर्वतों से भवियवाणी करो यह कहो - इस्राएल के पर्वतो! प्रभु की यह वाणी सुनो।</span> <sup>2</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता है: शत्रुओं ने तुम्हारे विषय में ’अहा-हा!’  और ’प्राचीन पर्वत हमारे अधिकार में आ गये हैं’ - यह कहा;</span> <sup>3</sup><span class='v-txt'>इसलिए भवियवाणी करते हुए कहो- प्रभु ईश्वर कहता है: हाँ, क्योंकि उन्होंने तुम्हें उजाड बनाया और सब ओर से तुम को कुचला, जिसमें तुम अन्य राष्ट्रों की सम्पत्ति बन गये और लोगों के बीच चर्चा और उपहास के विषय हो गये;</span> <sup>4</sup><span class='v-txt'>इसलिए इस्राएल के पर्वतों! प्रभु-ईश्वर की यह वाणी सुनो।  पर्वतों और पहाड़ियों, खड्डों और घाटियों, निर्जन उजाड़खण्डों और परित्यक्त नगरों से? जो आसपास के अन्य सभी राष्ट्रों के शिकार और उपहास के पात्र बन गये हैं, प्रभु-ईश्वर यह कहता है।</span> <sup>5</sup><span class='v-txt'>इसलिए प्रभु-ईश्वर कहता हैः मैं अन्य सभी राष्ट्रों और समस्त एदोम के विरुद्ध क्रोध के आवेश में यह कहता हूँ।  उन्होंने हार्दिक प्रसन्नता और भारी घृणा के साथ मेरा देश उनके अधिकार में दे दिया, जिससे वे उसे लूटें।</span> <sup>6</sup><span class='v-txt'>इसलिए इस्राएल देश के विरुद्ध भवियवाणी करो तथा पर्वतों और पहाड़ियों, खड्डों और घाटियों से कहो प्रभु-ईश्वर यह कहता है: मैं अपने ईर्यालु क्रोध के साथ कहता हूँ क्योंकि तुम्हें राष्ट्रों का अपमान सहना पड़ा है।</span> <sup>7</sup><span class='v-txt'>इसलिए प्रभु-ईश्वर कहता हैः मैं यह शपथपूर्वक कहता हूँ कि तुम्हारे आसपास के राष्ट्रों को भी अपमान सहना होगा।</span> <sup>8</sup><span class='v-txt'>&quot;इस्राएल के पर्वतों! तुम्हारी शाखाएँ फूटेंगी और तुम मेरी प्रजा इस्राएल को अपने फल प्रदान करोगे, क्योंकि वह शीघ्र ही अपने देश लौटेंगी।</span> <sup>9</sup><span class='v-txt'>देखों, मैं तुम्हारे पक्ष में हूँ और तुम्हारी ओर अभिमुख हूँगा तथा तुम को जोता और बोया जायेगा।</span> <sup>10</sup><span class='v-txt'>मैं तुम पर लोगों की, इस्राएल के समस्त घराने की संख्या बढ़ाऊँगाः नगर फिर बसेंगे और उजाड़े स्थानों का पुनर्निर्माण होगा।</span> <sup>11</sup><span class='v-txt'>मैं तुम पर मनुष्यों और पशुओं की संख्या बढाऊँगा।  उनकी संख्या बढती जायेगी और वे फलेंगे-फूलेंगे।  मैं प्राचीन काल की तरह तुम्हें फिर बसाऊँगा और तुम्हारी पहले से कहीं अधिक भलाई करूँगा।  तब तुम यह जान जाओगे कि मैं ही प्रभु हूँ।</span> <sup>12</sup><span class='v-txt'>मैं तुम लोगों को, स्वयं अपनी प्रजा इस्राएल को चलने दूँगा।  उनका तुम पर अधिकार होगा और तुम उनकी विरासत होगे और तुम उन्हें फिर कभी निःसन्तान नहीं बनाओगे।</span> <sup>13</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता है: लोग तुम से यह कहते हैं, &quot;तुम मनुष्यों को खाते और स्वयं अपने राष्ट्र को निःसन्तान बनाते हो’;</span> <sup>14</sup><span class='v-txt'>इसलिए तुम फिर कभी मनुष्यों का आहार नहीं करोगे और अपने राष्ट्र को निःसन्तान नहीं बनाओगे- यह प्रभु-ईश्वर की वाणी है-</span> <sup>15</sup><span class='v-txt'>और मैं तुम्हें राष्ट्रों की निंदा फिर कभी सुनने नहीं दूँगा और तुम्हें फिर कभी राष्ट्रों का अपमान नहीं सहना पड़ेगा।  मैं फिर कभी तुम्हारे राष्ट्र को निःसन्तान बनने नहीं दूँगा।  यह प्रभु-ईश्वर को वाणी है।&quot;</span> <sup>16</sup><span class='v-txt'>प्रभु की वाणी मुझे यह कहते हुए सुनाई पड़ी,</span> <sup>17</sup><span class='v-txt'>&quot;मानवपुत्र! इस्राएल के लोगों ने, अपनी निजी देश में रहते समय, उसे अपने आचरण और व्यवहार से अशुद्ध कर दिया।  मेरे सामने उनका आचरण रजस्वला स्त्री की अशुद्धता-जैसा था।</span> <sup>18</sup><span class='v-txt'>उन्होंने देश में रक्त बहा कर और देवमूर्तियों को स्थापित कर उसे अपवित्र कर दिया, इसलिए मैंने उन पर अपना क्रोध प्रदार्शित किया।</span> <sup>19</sup><span class='v-txt'>मैंने उन्हें राष्ट्रों में तितर-बितर कर दिया और वे विदेशों में बिखर गये।  मैंने उनके आचरण और व्यवहार के अनुसार उनका न्याय किया है।</span> <sup>20</sup><span class='v-txt'>उन्होंने दूसरे राष्ट्रों में पहुँच कर मेरे पवित्र नाम का अनादर कराया।  लोग उनके विषय में कहते थे, ’यह प्रभु की प्रजा है, फिर भी इन्हें अपना देश छोड़ना पड़ा।’</span> <sup>21</sup><span class='v-txt'>परन्तु मुझे अपने पवित्र नाम का ध्यान है, जिसका अनादर इस्राएलियों ने देश-विदेश में, जहाँ वे गये थे, कराया है।</span> <sup>22</sup><span class='v-txt'>&quot;इसलिए इस्राएल की प्रजा से कहना- प्रभु-ईश्वर यह कहता हैः इस्राएल की प्रजा! मैं जो करने जा रहा हूँ वह तुम्हारे कारण नहीं करूँगा, बल्कि अपने पवित्र नाम के कारण, जिसका अनादर तुम लोगों ने देश-विदेश में कराया।</span> <sup>23</sup><span class='v-txt'>मैं अपने महान् नाम की पवित्रता प्रमाणित करूँगा, जिस पर देश-विदेश में कलंक लग गया है और जिसका अनादर तुम लोगों ने वहाँ जा कर कराया है।  जब मैं तुम लोगों के द्वारा राष्ट्रों के सामने अपने पवित्र नाम की महिमा प्रदर्शित करूँगा, तब वे जान जायेंगे कि मैं ही प्रभु हूँ।</span> <sup>24</sup><span class='v-txt'>&quot;मैं तुम लोगों को राष्ट्रों में से निकाल कर और देश-विदेश से एकत्र कर तुम्हारे अपने देश वापस ले जाऊँगा।</span> <sup>25</sup><span class='v-txt'>मैं तुम लोगों पर पवित्र जल छिडकूँगा और तुम पवित्र हो जाओगे।  मैं तुम लोगों को तुम्हारी सारी अपवित्रता से और तुम्हारी सब देवमूर्तियों के दूषण से शुद्ध कर दूँगा।</span> <sup>26</sup><span class='v-txt'>मैं तुम लोगों को एक नया हृदय दूँगा और तुम में एक नया आत्मा रख दूँगा।  मैं तुम्हारे शरीर से पत्थर का हृदय निाकल कर तुम लोगों को रक्त-मांस का हृदय प्रदान करूँगा।</span> <sup>27</sup><span class='v-txt'>मैं तुम लोगों में अपना आत्मा रख दूँगा, जिससे तुम मेरी संहिता पर चलोगे और ईमानदारी से मेरी आज्ञाओं का पालन करोग।</span> <sup>28</sup><span class='v-txt'>तुम लोग उस देश में निवास करोगे, जिसे मैंने तुम्हारे पूर्वजों को दिया है।  तुम मेरी प्रजा होगे और मैं तुम्हारा ईश्वर होऊँगा।</span> <sup>29</sup><span class='v-txt'>तब मैं तुम लोगों को तुम्हारी सारी अपवित्रता से शुद्ध कर दूँगा।  मैं अन्न प्रचुर मात्रा में उपजने का अदेश दूँगा और तुम पर कभी अकाल पडने नहीं दूँगा।</span> <sup>30</sup><span class='v-txt'>मैं वृक्षों के फल और खेती की उपज बढाऊँगा, जिससे तुम लोगों को राष्ट्रों के बीच अकाल का कलंक फिर कभी झेलना न पड़े।</span> <sup>31</sup><span class='v-txt'>तब तुम लोगों को अपने दुराचरणों और कुकर्मों की याद आयेगी और तुम अपने पापों और वीभत्स कर्मों से स्वयं घृणा करने लगोगे।</span> <sup>32</sup><span class='v-txt'>प्रभु-ईश्वर कहता हैः मैं ऐसा तुम्हारे कारण नहीं करूँगा।  तुम यह अच्छी तरह समझ लो।  इस्राएल की प्रजा! तुम अपने आचरणों के लिए लज्जा और संकोच करो।</span> <sup>33</sup><span class='v-txt'>&quot;प्रभु-ईश्वर यह कहता हैः मैं जिस दिन तुम लोगों को तुम्हारे सभी पापों से शुद्ध कर दूँगा उस दिन मैं नगरों को फिर से बसाऊँगा और उजड़े स्थानों का पुनर्निर्माण होगा</span> <sup>34</sup><span class='v-txt'>और वह भूमि, जो उजाड़ पड़ी हुई थी, वहाँ से गुजरने वाले लोगों के सामने उजाड़ दिखने के बदले, जोती जाने लगेगी।</span> <sup>35</sup><span class='v-txt'>तब वे लोग यह कहेंगे, ’यह भूमि, जो पहले उजाड़ थी, अदन वाटिका-जैसी हो गयी है तथा बंजर, उजाड़ और विनष्ट नगर आबाद और किलाबंद हो गये हैं’।</span> <sup>36</sup><span class='v-txt'>तब तुम्हारे पड़ोस के बचे हुए राष्ट्र यह जान जायेंगे कि मैं, प्रभु, ने इस विनष्ट स्थानों को पुनर्निर्माण किया और जो उजाड़ था, उसे हराभरा बनाया है।  यह मैं, प्रभु, ने कहा है और मैं इसे पूरा करूँगा।</span> <sup>37</sup><span class='v-txt'>&quot;प्रभु-ईश्वर यह कहता हैं: मैं अपने प्रति, इस्राएल की प्रजा द्वारा उसके निवासियों की संख्या भेड़ों की तरह बढाने का अनुरोध कराऊँगा।</span> <sup>38</sup><span class='v-txt'>जैसे बलि की भेड़ों के झुण्ड, येरूसालेम के निर्धारित पर्वों की भेड़ों के झुण्ड, ये वैसे ही उजड़े नगर लोगों के झुण्ड से भर जायेंगे।  तब वे यह जान जायेंगे कि मैं ही प्रभु हूँ।&quot;</span> </p>
+        <div class='nav'><a href='033035.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033037.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

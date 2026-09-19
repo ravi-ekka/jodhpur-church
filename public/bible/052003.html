@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>रोमियों - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>रोमियों</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तो दूसरों की अपेक्षा यहूदी को अधिक क्या मिला?  और खतने से क्या लाभ?</span> <sup>2</sup><span class='v-txt'>हर प्रकार से बहुत कुछ!  सर्वप्रथम यहूदियों को ईश्वर की वाणी सुनायी गयी है।</span> <sup>3</sup><span class='v-txt'>यदि यहूदियों में कुछ अविश्वासी निकले, तो क्या हुआ? क्या उनका अविश्वास ईश्वर की सत्य प्रतिज्ञता नष्ट कर देगा?</span> <sup>4</sup><span class='v-txt'>कभी नहीं!  भले ही प्रत्येक मनुष्य झूठा निकल जाये, किन्तु ईश्वर सत्यप्रतिज्ञ है।  जैसा कि लिखा है- तेरे निर्णय सही प्रमाणित होंगे और इनकी जाँच होने पर तू विजयी होगा।</span> <sup>5</sup><span class='v-txt'>यदि हमारा अन्याय ईश्वर की न्यायप्रियता प्रदर्शित करता है, तो मैं यह मानवीय तर्क के अनुसार कह रहा हूँ - क्या ईश्वर अन्याय नहीं करता, जब वह हमें दण्ड देता है?</span> <sup>6</sup><span class='v-txt'>कभी नहीं! यदि ईश्वर अन्यायी होता, तो वह संसार का न्याय कैसे कर सकता?</span> <sup>7</sup><span class='v-txt'>यदि मेरी असत्यवादिता ईश्वर की सत्यप्रियता और उसकी महिमा को बढ़ावा देती है, तो पापी की तरह मेरा न्याय क्यों किया जाता है?</span> <sup>8</sup><span class='v-txt'>यदि ऐसी बात है, तो हम बुराई क्यों न करें, जिससे भलाई उत्पन्न हो?  कुछ लोगों के अनुसार, जो मुझे बदनाम करना चाहते हैं, मेरी शिक्षा यही है।  ऐसे लोग दण्डाज्ञा के योग्य हैं।</span> <sup>9</sup><span class='v-txt'>तो, क्या हम यहूदियों की कोई श्रेष्ठता नहीं? एकदम नहीं!  हम इसका उल्लेख कर चुके हैं कि सब, चाहे यहूदी हों या यूनानी, पाप के अधीन हैं,</span> <sup>10</sup><span class='v-txt'>जैसा कि लिखा है-कोई भी धार्मिक नहीं रहा- एक भी नहीं;</span> <sup>11</sup><span class='v-txt'>कोई भी समझदार नहीं; ईश्वर की खोज में लगा रहने वाला कोई नहीं!</span> <sup>12</sup><span class='v-txt'>सभी भटक गये, सब समान रूप से भ्रष्ट हो गये हैं।  कोई भी भलाई नहीं करता-एक भी नहीं।</span> <sup>13</sup><span class='v-txt'>उनका गला खुली हुई कब्र है; उनकी वाणी में छल-कपट और उनके होंठो के तले साँप का विष है।</span> <sup>14</sup><span class='v-txt'>उनका मुँह अभिशाप और कटुता से भरा है।</span> <sup>15</sup><span class='v-txt'>उनके पैर रक्तपात करने दौड़ते हैं,</span> <sup>16</sup><span class='v-txt'>उनके मार्ग में विनाश है और विपत्ति।</span> <sup>17</sup><span class='v-txt'>वे शान्ति का मार्ग नहीं जानते</span> <sup>18</sup><span class='v-txt'>और ईश्वर की श्रद्धा उनकी आँखों के सामने नहीं रहती।</span> <sup>19</sup><span class='v-txt'>हम जानते हैं कि संहिता जो कुछ कहती है, वह उन लोगों से कहती है, जो संहिता के अधीन हैं।  इस प्रकार कोई कुछ नहीं कह सकता और ईश्वर के सामने समस्त संसार दण्ड के योग्य माना जाता है;</span> <sup>20</sup><span class='v-txt'>क्योंकि संहिता के कर्मकाण्ड द्वारा कोई भी मनुष्य ईश्वर के सामने धार्मिक नहीं माना जायेगा: संहिता केवल पाप का ज्ञान कराती है।</span> <sup>21</sup><span class='v-txt'>ईश्वर का मुक्ति-विधान, जिसके विषय में मूसा की संहिता और नबियों ने साक्ष्य दिया था, अब संहिता के स्वतन्त्र रूप में प्रकट किया गया है।</span> <sup>22</sup><span class='v-txt'>यह मुक्ति ईसा मसीह में विश्वास करने से प्राप्त होती है। अब भेदभाव नहीं रहा।  यह मुक्ति उन सबों के लिए है, जो विश्वास करते है;</span> <sup>23</sup><span class='v-txt'>क्योंकि सबों ने पाप किया और सब ईश्वर की महिमा से वंचित किये गये।</span> <sup>24</sup><span class='v-txt'>ईश्वर की कृपा से सबों को मुफ्त में पापमुक्ति का वरदान मिला है; क्योंकि ईसा मसीह ने सबों का उद्धार किया है।</span> <sup>25</sup><span class='v-txt'>ईश्वर ने चाहा कि ईसा अपना रक्त बहा कर पाप का प्रायश्चित्त करें और हम विश्वास द्वारा उसका फल प्राप्त करें।  ईश्वर ने इस प्रकार अपनी न्यायप्रियता का प्रमाण दिया; क्योंकि उसने अपनी सहनशीलता के अनुरूप पिछले युगों के पापों को अनदेखा कर दिया था।</span> <sup>26</sup><span class='v-txt'>उसने युग में अपनी न्यायप्रियता का प्रमाण देना चाहा, जिससे यह स्पष्ट हो जाये कि वह स्वयं पवित्र है और उन सबों को पापमुक्त करता है, जो ईसा में विश्वास करते हैं।</span> <sup>27</sup><span class='v-txt'>इसलिए किसी को अपने पर गर्व करने का अधिकार नहीं रहा।  किस विधान के कारण यह अधिकार जाता रहा? यह कर्मकाण्ड के विधान के कारण नहीं, बल्कि विश्वास के विधान के कारण हुआ।</span> <sup>28</sup><span class='v-txt'>क्योंकि हम मानते हैं कि मनुष्य संहिता के कर्मकाण्ड द्वारा नहीं, बल्कि विश्वास द्वारा पापमुक्त होता है।</span> <sup>29</sup><span class='v-txt'>क्या ईश्वर केवल यहूदियों का ईश्वर है?  क्या वह गैर-यहूदियों का ईश्वर नहीं?  वह निश्चय ही गैर-यहूदियों का भी ईश्वर है।</span> <sup>30</sup><span class='v-txt'>क्योंकि केवल एक ही ईश्वर है, जो खतने वालों को विश्वास द्वारा पापमुक्त करेगा और उसी विश्वास द्वारा बेखतने लोगों को भी।</span> <sup>31</sup><span class='v-txt'>तो, क्या हम अपने विश्वास द्वारा संहिता को रद्द करते हैं? उल्टे, हम संहिता की पुष्टि करते हैं।</span> </p>
+        <div class='nav'><a href='052002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='052004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

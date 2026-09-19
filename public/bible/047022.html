@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मत्ती - अध्याय 22</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मत्ती</h1>
+        <h2>अध्याय 22</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ईसा उन्हें फिर दृष्टान्त सुनाने लगे।  उन्होंने कहा,</span> <sup>2</sup><span class='v-txt'>&quot;स्वर्ग का राज्य उस राजा के सदृश है, जिसने अपने पुत्र के विवाह में भोज दिया।</span> <sup>3</sup><span class='v-txt'>उसने आमन्त्रित लोगों को बुला लाने के लिए अपने सेवकों को भेजा, लेकिन वे आना नहीं चाहते थे।</span> <sup>4</sup><span class='v-txt'>राजा ने फिर दूसरे सेवकों को यह कहते हुए भेजा, ’अतिथियों से कह दो- देखिए! मैंने अपने भोज की तैयारी कर ली है।  मेरे बैल और मोटे-मोटे जानवर मारे जा चुके हैं। सब कुछ तैयार है; विवाह-भोज में पधारिये।’</span> <sup>5</sup><span class='v-txt'>अतिथियों ने इस की परवाह नहीं की।  कोई अपने खेत की ओर चला गया, तो कोई अपना व्यापार देखने।</span> <sup>6</sup><span class='v-txt'>दूसरे अतिथियों ने राजा के सेवकों को पकड़ कर उनका अपमान किया और उन्हें मार डाला।</span> <sup>7</sup><span class='v-txt'>राजा को बहुत क्रोध आया।  उसने अपनी सेना भेज कर उन हत्यारों का सर्वनाश किया और उनका नगर जला दिया।</span> <sup>8</sup><span class='v-txt'>&quot;तब राजा ने अपने सेवकों से कहा, ’विवाह-भोज की तैयारी तो हो चुकी है, किन्तु अतिथि इसके योग्य नहीं ठहरे।</span> <sup>9</sup><span class='v-txt'>इसलिए चैराहों पर जाओ और जितने भी लोग मिल जायें, सब को विवाह-भोज में बुला लाओ।’</span> <sup>10</sup><span class='v-txt'>सेवक सड़कों पर गये और भले-बुरे जो भी मिले, सब को बटोर कर ले आये और विवाह-मण्डप अतिथियों से भर गया।</span> <sup>11</sup><span class='v-txt'>&quot;राजा अतिथियों को देखने आया, तो वहाँ उसकी दृष्टि एक ऐसे मनुष्य पर पड़ी, जो विवाहोत्सव के वस्त्र नहीं पहने था।</span> <sup>12</sup><span class='v-txt'>उसने उस से कहा, ’भई, विवाहोत्सव के वस्त्र पहने बिना तुम यहाँ कैसे आ गये?’  वह मनुष्य चुप रहा।</span> <sup>13</sup><span class='v-txt'>तब राजा ने अपने सेवकों से कहा, ’इसके हाथ-पैर    बाँध कर इसे बाहर, अन्धकार में फेंक दो।  वहाँ वे लोग रोयेंगे और दाँत पीसते रहेंगे।’</span> <sup>14</sup><span class='v-txt'>क्योंकि बुलाये हुए तो बहुत हैं, लेकिन चुने हुए थोडे़ हैं।&quot;</span> <sup>15</sup><span class='v-txt'>उस समय फरीसियों ने जा कर आपस में परामर्श किया कि हम किस प्रकार ईसा को उनकी अपनी बात के फन्दे में फँसायें।</span> <sup>16</sup><span class='v-txt'>इन्होंने ईसा के पास हेरोदियों के साथ अपने शिष्यों को यह प्रश्न पूछने भेजा, &quot;गुरुवर! हम यह जानते हैं कि आप सत्य बोलते हैं और सच्चाई से ईश्वर के मार्ग की शिक्षा देते हैं।  आप को किसी की परवाह नहीं।  आप मुँह-देखी बात नहीं करते।</span> <sup>17</sup><span class='v-txt'>इसलिए हमें बताइए, आपका क्या विचार है- कैसर को कर देना उचित है या नहीं&quot;</span> <sup>18</sup><span class='v-txt'>उनकी धूर्त्तता भाँप कर ईसा ने कहा, &quot;ढ़ोगियों! मेरी परीक्षा क्यों लेते हो?</span> <sup>19</sup><span class='v-txt'>कर का सिक्का मुझे दिखलाओ।&quot; जब उन्होंने एक दीनार प्रस्तुत किया,</span> <sup>20</sup><span class='v-txt'>तो ईसा ने उन से कहा, &quot;यह किसका चेहरा और किसका लेख है?&quot;</span> <sup>21</sup><span class='v-txt'>उन्होंने उत्तर दिया, &quot;कैसर का&quot;। इस पर ईसा ने उन से कहा, &quot;तो, जो कैसर का है, उसे कैसर को दो और जो ईश्वर का है, उसे ईश्वर को&quot;।</span> <sup>22</sup><span class='v-txt'>यह सुन कर वे अचम्भे में पड़ गये और ईसा को छोड़ कर चले गये।</span> <sup>23</sup><span class='v-txt'>उसी दिन सदूकी ईसा के पास आये।  उनकी धारणा है कि पुनरुत्थान नहीं होता।</span> <sup>24</sup><span class='v-txt'>उन्होने ईसा के सामने यह प्रश्न रखा, &quot;गुरुवर! मूसा ने कहा- यदि कोई निस्सन्तान मर जाये, तो उसका भाई उसकी विधवा को ब्याह कर अपने भाई के लिए संतान उत्पन्न करे।</span> <sup>25</sup><span class='v-txt'>अब, हमारे यहाँ सात भाई थे।  पहले ने विवाह किया और निस्सन्तान मर कर अपनी पत्नी को अपने भाई के लिये छोड़ दिया।</span> <sup>26</sup><span class='v-txt'>दूसरे और तीसरे आदि सातों भाइयों के साथ वही हुआ।</span> <sup>27</sup><span class='v-txt'>सबों के बाद वह स्त्री मर गयी।</span> <sup>28</sup><span class='v-txt'>अब पुनरुत्थान में वह सातों में से किसकी पत्नी होगी? वह तो सबों की पत्नी रह चुकी है।&quot;</span> <sup>29</sup><span class='v-txt'>ईसा ने उन्हें उत्तर दिया, &quot;तुम लोग न तो धर्मग्रन्थ जानते हो और न ईश्वर का सामर्थ्य, इसलिए भ्रम में पडे़ हुए हो।</span> <sup>30</sup><span class='v-txt'>पुनरुत्थान में न तो पुरुष विवाह करते और न स्त्रियाँ विवाह में दी जाती हैं, बल्कि वे स्वर्गदूतों के सदृश होते हैं।</span> <sup>31</sup><span class='v-txt'>&quot;जहाँ तक मृतकों के पुनरुत्थान का प्रश्न है, क्या तुम लोगों ने कभी यह नहीं पढा कि ईश्वर ने तुम से कहा -</span> <sup>32</sup><span class='v-txt'>मैं इब्राहीम का ईश्वर, इसहाक का ईश्वर और याकूब का ईश्वर हूँ? वह मुतकों का नहीं, जीवतों का ईश्वर है।&quot;</span> <sup>33</sup><span class='v-txt'>यह सुन कर लोग उनकी शिक्षा पर बडे़ अचम्भे में पड़ गये।</span> <sup>34</sup><span class='v-txt'>जब फरीसियों ने यह सुना कि ईसा ने सदूकियों का मुँह बन्द कर दिया था, तो वे इकट्ठे हो गये।</span> <sup>35</sup><span class='v-txt'>और उन में से एक शास्त्री ने ईसा की परीक्षा लेने के लिए उन से पूछा,</span> <sup>36</sup><span class='v-txt'>गुरुवर! संहिता में सब से बड़ी आज्ञा कौन-सी है?&quot;</span> <sup>37</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;अपने प्रभु-ईश्वर को अपने सारे हृदय, अपनी सारी आत्मा और अपनी सारी बुद्धि से प्यार करो।</span> <sup>38</sup><span class='v-txt'>यह सब से बड़ी और पहली आज्ञा है।</span> <sup>39</sup><span class='v-txt'>दूसरी आज्ञा इसी के सदृश है- अपने पड़ोसी को अपने समान प्यार करो।</span> <sup>40</sup><span class='v-txt'>इन्हीं दो आज्ञायों पर समस्त संहिता और नबियों की शिक्षा अवलम्बित हैं।&quot;</span> <sup>41</sup><span class='v-txt'>ईसा ने इकट्ठे हुए फरीसियों से पूछा,</span> <sup>42</sup><span class='v-txt'>&quot;मसीह के बारे में तुम लोगों का क्या विचार है- वे किसके पुत्र हैं?&quot; उन्होंने उत्तर दिया, &quot;दाऊद के&quot;।</span> <sup>43</sup><span class='v-txt'>इस पर ईसा ने उन से कहा, &quot;तब दाऊद आत्मा की प्रेरणा से उन्हें प्रभु क्यों कहते हैं?  उन्होंने तो लिखा है-</span> <sup>44</sup><span class='v-txt'>प्रभु ने मेरे प्रभु से कहा, तुम तब तक मेरे दाहिने बैठे रहो, जब तक मैं तुम्हारे शत्रुओं को तुम्हारे पैरों तले न डाल दूँ।</span> <sup>45</sup><span class='v-txt'>&quot;यदि दाऊद उन्हें प्रभु कहते हैं, तो वह उनके पुत्र कैसे हो सकते हैं?&quot;</span> <sup>46</sup><span class='v-txt'>इसके उत्तर में कोई ईसा से एक शब्द भी नहीं बोल सका और उस दिन से किसी को उन से और प्रश्न करने का साहस नहीं हुआ।</span> </p>
+        <div class='nav'><a href='047021.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='047023.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

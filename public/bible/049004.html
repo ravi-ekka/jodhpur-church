@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ईसा पवित्र आत्मा से परिपूर्ण हो कर यर्दन के तट से लौटे।  उस समय आत्मा उन्हें निर्जन प्रदेश ले चला।</span> <sup>2</sup><span class='v-txt'>वह चालीस दिन वहाँ रहे और शैतान ने उनकी परीक्षा ली।  ईसा ने उन दिनों कुछ भी नहीं खाया और इसके बाद उन्हें भूख लगी।</span> <sup>3</sup><span class='v-txt'>तब शैतान ने उन से कहा, &quot;यदि आप ईश्वर के पुत्र हैं, तो इस पत्थर से कह दीजिए कि यह रोटी बन जाये&quot;।</span> <sup>4</sup><span class='v-txt'>परन्तु ईसा ने उत्तर दिया, &quot;लिखा है-मनुष्य रोटी से ही नहीं जीता है&quot;।</span> <sup>5</sup><span class='v-txt'>फिर शैतान उन्हें ऊपर उठा ले गया और क्षण भर में संसार के सभी राज्य दिखा कर</span> <sup>6</sup><span class='v-txt'>बोला, &quot;मैं आप को इन सभी राज्यों का अधिकार और इनका वैभव दे दूँगा।  यह सब मुझे दे दिया गया है और मैं जिस को चाहता हूँ, उस को यह देता हूँ।</span> <sup>7</sup><span class='v-txt'>यदि आप मेरी आराधना करें, तो यह सब आप को मिल जायेगा।&quot;</span> <sup>8</sup><span class='v-txt'>पर ईसा ने उसे उत्तर दिया, &quot;लिखा है-अपने प्रभु-ईश्वर की आराधना करो और केवल उसी की सेवा करो&quot;।</span> <sup>9</sup><span class='v-txt'>तब शैतान ने उन्हें येरूसालेम ले जा कर मन्दिर के शिखर पर खड़ा कर दिया और कहा, &quot;यदि आप ईश्वर के पुत्र हैं, तो यहाँ से नीचे कूद जाइए;</span> <sup>10</sup><span class='v-txt'>क्योंकि लिखा है-तुम्हारे विषय में वह अपने दूतों को आदेश देगा कि वे तुम्हारी रक्षा करें</span> <sup>11</sup><span class='v-txt'>और वे तुम्हें अपने हाथों पर सँभाल लेंगे कि कहीं तुम्हारे पैरों को पत्थर से चोट न लगे&quot;।</span> <sup>12</sup><span class='v-txt'>ईसा ने उसे उत्तर दिया, &quot;यह भी कहा है-अपने प्रभु-ईश्वर की परीक्षा मत लो&quot;।</span> <sup>13</sup><span class='v-txt'>इस तरह सब प्रकार की परीक्षा लेने के बाद शैतान, निश्चित समय पर लौटने के लिए, ईसा के पास से चला गया।</span> <sup>14</sup><span class='v-txt'>आत्मा के सामर्थ्य से सम्पन्न हो कर ईसा गलीलिया लौटे और उनकी ख्याति सारे प्रदेश में फैल गयी।</span> <sup>15</sup><span class='v-txt'>वह उनके सभागृहों में शिक्षा दिया करते और सब उनकी प्रशंसा करते थे।</span> <sup>16</sup><span class='v-txt'>ईसा नाज़रेत आये, जहाँ उनका पालन-पोषण हुआ था। विश्राम के दिन वह अपनी आदत के अनुसार सभागृह गये।  वह पढ़ने के लिए उठ खड़े हुए</span> <sup>17</sup><span class='v-txt'>और उन्हें नबी इसायस की पुस्तक़ दी गयी।  पुस्तक खोल कर ईसा ने वह स्थान निकाला, जहाँ लिखा हैः</span> <sup>18</sup><span class='v-txt'>प्रभु का आत्मा मुझ पर छाया रहता है, क्योंकि उसने मेरा अभिषेक किया है।  उसने मुझे भेजा है, जिससे मैं दरिद्रों को सुसमाचार सुनाऊँ, बन्दियों को मुक्ति का और अन्धों को दृष्टिदान का सन्देश दूँ, दलितों को स्वतन्त्र करूँ</span> <sup>19</sup><span class='v-txt'>और प्रभु के अनुग्रह का वर्ष घोषित करूँ।</span> <sup>20</sup><span class='v-txt'>ईसा ने पुस्तक बन्द कर दी और वह उसे सेवक को दे कर बैठ गये।  सभागृह के सब लोगों की आँखें उन पर टिकी हुई थीं।</span> <sup>21</sup><span class='v-txt'>तब वह उन से कहने लगे, &quot;धर्मग्रन्थ का यह कथन आज तुम लोगों के सामने पूरा हो गया है&quot;।</span> <sup>22</sup><span class='v-txt'>सब उनकी प्रशंसा करते रहे।  वे उनके मनोहर शब्द सुन कर अचम्भे में पड़ जाते और कहते थे, &quot;क्या यह युसूफ़ का बेटा नहीं है?&quot;</span> <sup>23</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;तुम लोग निश्चय ही मुझे यह कहावत सुना दोगे-वैद्य! अपना ही इलाज करो। कफ़रनाहूम में जो कुछ हुआ है, हमने उसके बारे में सुना है।  वह सब अपनी मातृभूमि में भी कर दिखाइए।&quot;</span> <sup>24</sup><span class='v-txt'>फिर ईसा ने कहा, &quot;मैं तुम से यह कहता हूँ - अपनी मातृभूमि में नबी का स्वागत नहीं होता।</span> <sup>25</sup><span class='v-txt'>मैं तुम्हें विश्वास दिलाता हूँ कि जब एलियस के दिनों में साढ़े तीन वर्षों तक पानी नहीं बरसा और सारे देश में घोर अकाल पड़ा था, तो उस समय इस्राएल में बहुत-सी विधवाएँ थीं।</span> <sup>26</sup><span class='v-txt'>फिर भी एलियस उन में किसी के पास नहीं भेजा गया-वह सिदोन के सरेप्ता की एक विधवा के पास ही भेजा गया था।</span> <sup>27</sup><span class='v-txt'>और नबी एलिसेयस के दिनों में इस्राएल में बहुत-से कोढ़ी थे।  फिर भी उन में कोई नहीं, बल्कि सीरी नामन ही निरोग किया गया था।&quot;</span> <sup>28</sup><span class='v-txt'>यह सुन कर सभागृह के सब लोग बहुत क्रुद्ध हो गये।</span> <sup>29</sup><span class='v-txt'>वे उठ खड़े हुए और उन्होंने ईसा को नगर से बाहर निकाल दिया।  उनका नगर जिस पहाड़ी पर बसा था, वे ईसा को उसकी चोटी तक ले गये, ताकि उन्हें नीचे गिरा दें,</span> <sup>30</sup><span class='v-txt'>परन्तु वे उनके बीच से निकल कर चले गये।</span> <sup>31</sup><span class='v-txt'>वे गलीलिया के कफ़रनाहूम नगर आये और विश्राम के दिन लोगों को शिक्षा दिया करते थे।</span> <sup>32</sup><span class='v-txt'>लोग उनकी शिक्षा सुन कर अचम्भे में पड़ जाते थे, क्योंकि वे अधिकार के साथ बोलते थे।</span> <sup>33</sup><span class='v-txt'>सभागृह में एक मनुष्य था, जो अशुद्ध आत्मा के वश में था।  वह ऊँचे स्वर से चिल्ला उठा,</span> <sup>34</sup><span class='v-txt'>&quot;ईसा नाज़री! हम से आप को क्या? क्या आप हमारा सर्वनाश करने आये हैं? मैं जानता हूँ कि आप कौन हैं-ईश्वर के भेजे हुए परमपावन पुरुष।&quot;</span> <sup>35</sup><span class='v-txt'>ईसा ने यह कहते हुए उसे डाँटा, &quot; चुप रह, इस मनुष्य से बाहर निकल जा&quot;।  अपदूत ने सब के देखते-देखते उस मनुष्य को भूमि पर पटक दिया और उसकी कोई हानि किये बिना वह उस से बाहर निकल गया।</span> <sup>36</sup><span class='v-txt'>सब विस्मित हो गये और आपस में यह कहते रहे, &quot;यह क्या बात है!  वे अधिकार तथा सामर्थ्य के साथ अशुद्ध आत्माओं को आदेश देते हैं और वे निकल जाते हैं।&quot;</span> <sup>37</sup><span class='v-txt'>इसके बाद ईसा की चर्चा उस प्रदेश के कोने-कोने में फैल गयी।</span> <sup>38</sup><span class='v-txt'>वे सभागृह से निकल कर सिमोन के घर गये।  सिमोन की सास तेज़ बुखार में पड़ी हुई थी और लोगों ने उसके लिए उन से प्रार्थना की।</span> <sup>39</sup><span class='v-txt'>ईसा ने उसके पास जा कर बुख़ार को डाँटा और बुख़ार जाता रहा।  वह उसी क्षण उठ कर उन लोगों के सेवा-सत्कार में लग गयी।</span> <sup>40</sup><span class='v-txt'>सूरज डूबने के बाद सब लोग नाना प्रकार की बीमारियों से पीड़ित अपने यहाँ के रोगियों को ईसा के पास ले आये।  ईसा एक-एक पर हाथ रख कर उन्हें चंगा करते थे।</span> <sup>41</sup><span class='v-txt'>अपदूत बहुतों में से यह चिल्लाते हुये निकलते थे, &quot;आप ईश्वर के पुत्र हैं&quot;।  परन्तु वह उन को डाँटते और बोलने से रोकते थे, क्योंकि अपदूत जानते थे कि वह मसीह हैं।</span> <sup>42</sup><span class='v-txt'>ईसा प्रातःकाल घर से निकल कर किसी एकान्त स्थान में चले गये।  लोग उन को खोजते-खोजते उनके पास आये और अनुरोध करते रहे कि वह उन को छोड़ कर नहीं जायें।</span> <sup>43</sup><span class='v-txt'>किन्तु उन्होंने उत्तर दिया, &quot;मुझे दूसरे नगरों को भी ईश्वर के राज्य का सुसमाचार सुनाना है-मैं इसीलिए भेजा गया हूँ&quot;</span> <sup>44</sup><span class='v-txt'>और वे यहूदिया के सभागृहों में उपदेश देते रहे।</span> </p>
+        <div class='nav'><a href='049003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मारकुस - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मारकुस</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>वहाँ से विदा हो कर ईसा अपने शिष्यों के साथ अपने नगर आये।</span> <sup>2</sup><span class='v-txt'>जब विश्राम-दिवस आया, तो वे सभागृह में शिक्षा देने लगे।  बहुत-से लोग सुन रहे थे और अचम्भे में पड़ कर कहते थे, &quot;यह सब इसे कहाँ से मिला? यह कौन-सा ज्ञान है, जो इसे दिया गया है? यह जो महान् चमत्कार दिखाता है, वे क्या हैं?</span> <sup>3</sup><span class='v-txt'>क्या यह वही बढ़ई नहीं है- मरियम का बेटा, याकूब, यूसुफ़़, यूदस और सिमोन का भाई?  क्या इसकी बहनें हमारे ही बीच नहीं रहती?&quot; और वे ईसा में विश्वास नहीं कर सके।</span> <sup>4</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;अपने नगर, अपने कुटुम्ब और अपने घर में नबी का आदर नहीं होता’।</span> <sup>5</sup><span class='v-txt'>वे वहाँ कोई चमत्कार नहीं कर सके।  उन्होंने केवल थोड़े-से रोगियों पर हाथ रख कर उन्हें अच्छा किया।</span> <sup>6</sup><span class='v-txt'>उन लोगों के अविश्वास पर ईसा को बड़ा आश्चर्य हुआ।</span> <sup>7</sup><span class='v-txt'>ईसा शिक्षा देते हुए गाँव-गाँव घूमते थे।  वे बारहों को अपने पास बुला कर और उन्हें अपदूतों पर अधिकार दे कर, दो-दो करके, भेजने लगे।</span> <sup>8</sup><span class='v-txt'>ईसा ने आदेश दिया कि वे लाठी के सिवा रास्ते के लिए कुछ भी नहीं ले जायें- न रोटी, न झोली, न फेंटे में पैसा।</span> <sup>9</sup><span class='v-txt'>वे पैरों में चप्पल बाँधें और दो कुरते नहीं पहनें</span> <sup>10</sup><span class='v-txt'>उन्होंने उन से कहा, &quot;जिस घर में ठहरने जाओ, नगर से विदा होने तक वहीं रहो!</span> <sup>11</sup><span class='v-txt'>यदि किसी स्थान पर लोग तुम्हारा स्वागत न करें और तुम्हारी बातें न सुनें, तो वहाँ से निकलने पर उन्हें चेतावनी देने के लिए अपने पैरों की धूल झाड़ दो।&quot;</span> <sup>12</sup><span class='v-txt'>वे चले गये।  उन्होंने लोगों को पश्चात्ताप का उपदेश दिया,</span> <sup>13</sup><span class='v-txt'>बहुत-से अपदूतों को निकाला और बहुत-से रोगियों पर तेल लगा कर उन्हें चंगा किया।</span> <sup>14</sup><span class='v-txt'>हेरोद ने ईसा की चर्चा सुनी, क्योंकि उनका नाम प्रसिद्ध हो गया था। लोग कहते थे-योहन बपतिस्ता मृतकों में से जी उठा है, इसलिए वह ये महान् चमत्कार दिखा रहा है।</span> <sup>15</sup><span class='v-txt'>कुछ लोग कहते थे- यह एलियस है।  कुछ लोग कहते थे- यह पुराने नबियों की तरह कोई नबी है।</span> <sup>16</sup><span class='v-txt'>हेरोद ने यह सब सुन कर कहा, &quot; यह योहन ही है, जिसका सिर मैंने कटवाया है और जो जी उठा है&quot;</span> <sup>17</sup><span class='v-txt'>हेरोद ने अपने भाई फि़लिप की पत्नी हेरोदियस के कारण योहन को गिरफ़्त्तार किया और बन्दीगृह में बाँध रखा था; क्योंकि हेरोद ने हेरोदियस से विवाह किया था</span> <sup>18</sup><span class='v-txt'>और योहन ने हेरोद से कहा था, &quot;अपने भाई की पत्नी को रखना आपके लिए उचित नहीं है&quot;।</span> <sup>19</sup><span class='v-txt'>इसी से हेरोदियस योहन से बैर करती थी और उसे मार डालना चाहती थी; किन्तु वह ऐसा नहीं कर पाती थी,</span> <sup>20</sup><span class='v-txt'>क्योंकि हेरोद योहन को धर्मात्मा और सन्त जान कर उस पर श्रद्धा रखता और उसकी रक्षा करता था।  हेरोद उसके उपदेश सुन कर बड़े असमंजस में पड़ जाता था। फिर भी, वह उसकी बातें सुनना पसन्द करता था।</span> <sup>21</sup><span class='v-txt'>हेरोद के जन्मदिवस पर हेरोदियस को एक सुअवसर मिला।  उस उत्सव के उपलक्ष में हेरोद ने अपने दरबारियों, सेनापतियों और गलीलिया के रईसों को भोज दिया।</span> <sup>22</sup><span class='v-txt'>उस अवसर पर हेरोदियस की बेटी ने अन्दर आ कर नृत्य किया और हेरोद तथा उसके अतिथियों को मुग्ध कर लिया।  राजा ने लड़की से कहा, &quot;जो भी चाहो, मुझ से माँगो।  मैं तुम्हें दे दॅूंगा&quot;,</span> <sup>23</sup><span class='v-txt'>और उसने शपथ खा कर कहा, &quot;जो भी माँगो, चाहे मेरा आधा राज्य ही क्यों न हो, मैं तुम्हें दे दूँगा&quot;।</span> <sup>24</sup><span class='v-txt'>लड़की ने बाहर जा कर अपनी माँ से पूछा, &quot;मैं क्या माँगूं?&quot;  उसने कहा, &quot;योहन बपतिस्ता का सिर&quot;।</span> <sup>25</sup><span class='v-txt'>वह तुरन्त राजा के पास दौड़ती हुई आयी और बोली, &quot;मैं चाहती हूँ कि आप मुझे इसी समय थाली में योहन बपतिस्ता का सिर दे दें&quot;</span> <sup>26</sup><span class='v-txt'>राजा को धक्का लगा, परन्तु अपनी शपथ और अतिथियों के कारण वह उसकी माँग अस्वीकार करना नहीं चाहता था।</span> <sup>27</sup><span class='v-txt'>राजा ने तुरन्त जल्लाद को भेज कर योहन का सिर ले आने का आदेश दिया।  जल्लाद ने जा कर बन्दीगृह में उसका सिर काट डाला</span> <sup>28</sup><span class='v-txt'>और उसे थाली में ला कर लड़की को दिया और लड़की ने उसे अपनी माँ को दे दिया।</span> <sup>29</sup><span class='v-txt'>जब योहन के शिष्यों को इसका पता चला, तो वे आ कर उसका शव ले गये और उन्होंने उसे क़ब्र में रख दिया।</span> <sup>30</sup><span class='v-txt'>प्रेरितो ने ईसा के पास लौट कर उन्हें बताया कि हम लोगों ने क्या-क्या किया और क्या-क्या सिखलाया है।</span> <sup>31</sup><span class='v-txt'>तब ईसा ने उन से कहा, &quot;तुम लोग अकेले ही मेरे साथ निर्जन स्थान चले आओ और थोड़ा विश्राम कर लो&quot;; क्योंकि इतने लोग आया-जाया करते थे कि उन्हें भोजन करने की भी फुरसत नही रहती थी।</span> <sup>32</sup><span class='v-txt'>इस लिए वे नाव पर चढ़ कर अकेले ही निर्जन स्थान की ओर चल दिये।</span> <sup>33</sup><span class='v-txt'>उन्हें जाते देख कर बहुत-से लोग समझ गये कि वह कहाँ जा रहे हैं।  वे नगर-नगर से निकल कर पैदल ही उधर दौड़ पड़े और उन से पहले ही वहाँ पहुँच गये।</span> <sup>34</sup><span class='v-txt'>ईसा ने नाव से उतर कर एक विशाल जनसमूह देखा। उन्हें उन लोगों पर तरस आया, क्योंकि वे बिना चरवाहे की भेड़ों की तरह थे और वह उन्हें बहुत-सी बातों की शिक्षा देने लगे।</span> <sup>35</sup><span class='v-txt'>जब दिन ढलने लगा, तो उनके शिष्यों ने उनके पास आ कर कहा, &quot;यह स्थान निर्जन है और दिन ढल चुका है।</span> <sup>36</sup><span class='v-txt'>लोगों को विदा कीजिए, जिससे वे आसपास की बस्तियों और गाँवों में जा कर खाने के लिए कुछ खरीद लें।&quot;</span> <sup>37</sup><span class='v-txt'>ईसा ने उन्हें उत्तर दिया, &quot;तुम लोग ही उन्हें खाना दे दो&quot;।  शिष्यों ने कहा, &quot;क्या हम जा कर दो सौ दीनार की रोटियाँ ख़रीद लें और उन्हें लोगों को खिला दें?&quot;</span> <sup>38</sup><span class='v-txt'>ईसा ने पूछा, &quot;तुम्हारे पास कितनी रोटियाँ है?  जा कर देखो।&quot;  उन्होंने पता लगा कर कहा, &quot;पाँच रोटियाँ और दो मछलियाँ&quot;।</span> <sup>39</sup><span class='v-txt'>इस पर ईसा ने सब को अलग-अलग टोलियों में हरी घास पर बैठाने का आदेश दिया।</span> <sup>40</sup><span class='v-txt'>लोग सौ-सौ और पचास-पचास की टोलियों में बैठ गये।</span> <sup>41</sup><span class='v-txt'>ईसा ने वे पाँच रोटियाँ और दो मछलियाँ ले ली और स्वर्ग की ओर आँखें उठा कर आशिष की प्रार्थना पढ़ी।  वे रोटियाँ तोड-तोड कर अपने शिष्यों को देते गये, ताकि वे लोगों को परोसते जायें।  उन्होंने उन दो मछलियों को भी सब में बाँट दिया।</span> <sup>42</sup><span class='v-txt'>सबों ने खाया और खा कर तृप्त हो गये।</span> <sup>43</sup><span class='v-txt'>रोटियों और मछलियों के बचे हुए टुकड़ों से बारह टोकरे भर गये।</span> <sup>44</sup><span class='v-txt'>रोटी खाने वाले पुरुषों की संख्या पाँच हज़ार थी।</span> <sup>45</sup><span class='v-txt'>इसके तुरन्त बाद ईसा ने अपने शिष्यों को इसके लिए बाध्य किया कि वे नाव पर चढ़ कर उन से पहले उस पार, बेथसाइदा चले जायें; इतने में वे स्वयं लोगों को विदा कर देंगे।</span> <sup>46</sup><span class='v-txt'>ईसा लोगों को विदा कर पहाड़ी पर प्रार्थना करने गये।</span> <sup>47</sup><span class='v-txt'>सन्ध्या हो गयी थी।  नाव समुद्र के बीच में थी और ईसा अकेले स्थल पर थे।</span> <sup>48</sup><span class='v-txt'>ईसा ने देखा कि शिष्य बड़े परिश्रम से नाव खे रहे हैं, क्योंकि वायु प्रतिकूल थी; इसलिए वे रात के लगभग चैथे पहर समुद्र पर चलते हुए उनकी ओर आये और उन से कतरा कर आगे बढ़ना चाहते थे।</span> <sup>49</sup><span class='v-txt'>शिष्यों ने उन्हें समुद्र पर चलते देखा।  वे उन्हें प्रेत समझ कर चिल्ला उठे,</span> <sup>50</sup><span class='v-txt'>क्योंकि सब-के-सब उन्हें देख कर घबरा गये।  ईसा ने तुरन्त उन से कहा, &quot;ढ़ारस रखो, मैं ही हूँ।  डरो मत।&quot;</span> <sup>51</sup><span class='v-txt'>तब वे उनके पास आ कर नाव पर चढ़े और वायु थम गयी।  शिष्य आश्चर्यचकित रह गये,</span> <sup>52</sup><span class='v-txt'>क्योंकि वे अपनी बुद्धि की जड़ता के कारण रोटियों के चमत्कार का अर्थ नहीं समझ पाये थे।</span> <sup>53</sup><span class='v-txt'>समुद्र के उस पार गेनेसरेत पहुँच कर उन्होंने नाव किनारे लगा दी।</span> <sup>54</sup><span class='v-txt'>ज्यों ही वे भूमि पर उतरे, लोगों ने ईसा को पहचान लिया और वे उस सारे प्रदेश से दौड़ते हुए आये।</span> <sup>55</sup><span class='v-txt'>जहाँ कहीं ईसा का पता चलता था, वहाँ वे चारपाइयों पर पड़े रोगियों को उनके पास ले आते थे।</span> <sup>56</sup><span class='v-txt'>गाँव, नगर या बस्ती, जहाँ कहीं भी ईसा आते थे, वहाँ लोग रोगियों को चैकों पर रख कर अनुनय-विनय करते थे कि वे उन्हें अपने कपड़े का पल्ला भर छूने दें।  जितनों ने उनका स्पर्श किया, वे सब-के-सब अच्छे हो गये।</span> </p>
+        <div class='nav'><a href='048005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='048007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>इसायाह - अध्याय 42</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>इसायाह</h1>
+        <h2>अध्याय 42</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>“यह मेरा सेवक है।  मैं इसे सँभालता हूँ।  मैंने इसे चुना है।  मैं इस पर अत्यन्त प्रसन्न हूँ।  मैंने इसे अपना आत्मा प्रदान किया है, जिससे यह राष्ट्रों में धार्मिकता का प्रचार करे।</span> <sup>2</sup><span class='v-txt'>यह न तो चिल्लायेगा और न शोर मचायेगा, बाजारों में कोई भी इसकी आवाज नहीं सुनेगा।</span> <sup>3</sup><span class='v-txt'>यह न तो कुचला हुआ सरकण्डा ही तोड़ेगा और न धुआँती हुई बत्ती ही बुझायेगा।  यह ईमानदारी से धार्मिकता का प्रचार करेगा।</span> <sup>4</sup><span class='v-txt'>यह न तो थकेगा और न हिम्मत हारेगा, जब तक यह पृथ्वी पर धार्मिकता की स्थापना न करे; क्योंकि समस्त द्वीप इसी शिक्षा की प्रतीक्षा करेंगे।“</span> <sup>5</sup><span class='v-txt'>जिसने आकाश बना कर फैलाया और पृथ्वी और उसकी हरियाली उत्पन्न की है, वही प्रभु-ईश्वर यह कहता है-</span> <sup>6</sup><span class='v-txt'>“मैं प्रभु, ने तुम को न्याय के लिए बुलाया और तुम्हारा हाथ पकड़ कर तुम को सँभाला है।  मैंने तुम्हारे द्वारा अपनी प्रजा को एक विधान दिया और तुम्हें राष्ट्रों की ज्योति बनाया है,</span> <sup>7</sup><span class='v-txt'>जिससे तुम अन्धों की दृष्टि दो, बन्दियों को मुक्त करो। और अन्धकार में रहने वालों को ज्योति प्रदान करो।</span> <sup>8</sup><span class='v-txt'>“मैं प्रभु हूँ, यही मेरा नाम है।  मैं न तो दूसरे को अपनी महिमा दूँगा और न मूर्तियों को अपना स्तुतिगान।</span> <sup>9</sup><span class='v-txt'>देखो, पुरानी बातें पूरी हो चुकी हैं; अब नयी बातों की घोषणा करता हूँ।  घटित होने के पूर्व, मैं उन्हें सुनाता हूँ।“</span> <sup>10</sup><span class='v-txt'>महासागर और जलचरो! द्वीपो! और उनके सब निवासियो! प्रभु के आदर में नया गीत गाओ, पृथ्वी के सीमान्तों तक उसकी स्तुति करो।</span> <sup>11</sup><span class='v-txt'>मरुभूमि और उसके नगर, केदार के ग्रामवासी ऊँचे स्वर में गायें; चट्टान के निवासी उल्लसित हो कर गायें और पर्वतों के शिखर से जयघोष करें।</span> <sup>12</sup><span class='v-txt'>वे प्रभु की महिमा गा कर सुनायें और द्वीपों में उसकी स्तुति करें।</span> <sup>13</sup><span class='v-txt'>प्रभु शूरवीर की तरह प्रस्थान करेगा, योद्धा की तरह अपना उत्साह बढ़ायेगा; वह चिल्ला कर युद्ध का आह्वान करेगा और अपने शत्रुओं पर विजयी होगा।</span> <sup>14</sup><span class='v-txt'>“मैं बहुत समय तक निष्क्रिय रहा, मैं मौन रहा और अपने को रोकता रहा; किन्तु अब मैं प्रसव-पीड़ित स्त्री की तरह आह भरता हूँ और हाँफते हुए चिल्लाता हूँ।</span> <sup>15</sup><span class='v-txt'>मैं पर्वतों और पहाड़ियों को उजाडूँगा और उनकी हरियाली सुखा दूँगा।  मैं नदियों को टापू बनाऊँगा और तालाबों को सुखा दूँगा।</span> <sup>16</sup><span class='v-txt'>मैं अन्धों को अपरिचित पथ पर ले चलूँगा, मैं अपरिचित मार्गों पर उनका पथप्रदर्शन करूँगा।  मैं उनके लिए अन्धकार को प्रकाश में बदलूँगा और घुमावदार पथ सीधे बनाऊँगा।  मैं ये योजनाएँ पूरी करूँगा और इन्हें किसी भी प्रकार नहीं छोडूँगा।</span> <sup>17</sup><span class='v-txt'>जो देवमूर्तियों पर भरोसा रखते हैं, जो ढली हुई धातु से कहते हैं: ’आप ही हमारे देवता हैं’, उन्हें लज्जित हो कर पीछे हटना पड़ेगा।</span> <sup>18</sup><span class='v-txt'>“बहरो! कान लगा कर सुनो! अन्धो! आँख उठा कर देखो!</span> <sup>19</sup><span class='v-txt'>मेरे सेवक की तरह कौन बहरा है?  जो सन्देशवाहक मैं भेजूँगा, उसकी तरह कौन बहरा है?  मेरे सेवक, प्रभु के सेवक की तरह कौन अन्धा है?</span> <sup>20</sup><span class='v-txt'>तुमने बहुत कुछ देखा है, किन्तु ध्यान नहीं दिया; तुम्हारे कान खुले थे, किन्तु तुमने नहीं सुना।“</span> <sup>21</sup><span class='v-txt'>प्रभु अपनी सत्यप्रतिज्ञता के अनुरूप अपनी संहिता को महान् और महिमामय बनाना चाहता था।</span> <sup>22</sup><span class='v-txt'>किन्तु यह प्रजा लुटी हुई और अकिंचन है।  वे सब खाइयों में फँसाये गये और बन्दीगृहों में छिपाये गये हैं।  वे लुट गये और उन्हें कोई नहीं छुड़ाता; वे ऐसी लूट हैं कि कोई नहीं कहता: “उन्हें वापस कर दो“।</span> <sup>23</sup><span class='v-txt'>तुम लोगों में कौन यह बात सुनेगा?  कौन भविय में इस पर ध्यान देगा?</span> <sup>24</sup><span class='v-txt'>किसने याकूब को लूटने वालों के हाथ कर दिया, इस्राएल को लुटेरों के हाथ?  क्या वह प्रभु ही नहीं था, जिसके विरुद्ध हमने पाप किया है?  उन्होंने उसके मार्गों पर चलना नहीं चाहा और उसकी संहिता पर ध्यान नहीं दिया।</span> <sup>25</sup><span class='v-txt'>इसलिए इस्राएल पर उसका क्रोध भड़क उठा और उसकी प्रजा पर युद्ध का आतंक फैल गया।  इस्राएल के चारों ओर आग लगी, फिर भी उसने ध्यान नहीं दिया।  वह आग में भस्म हो गया, फिर भी उस में सद्बुद्धि नहीं आयी।</span> </p>
+        <div class='nav'><a href='029041.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='029043.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

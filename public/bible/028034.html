@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 34</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 34</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>व्यर्थ आशा नासमझ व्यक्ति को धोखा देती है और स्वप्नों के कारण मूर्खों का सिर फिर जाता है।</span> <sup>2</sup><span class='v-txt'>जो स्वप्नों का ध्यान रखता, वह मानो छाया पकड़ता या हवा का पीछा करता है।</span> <sup>3</sup><span class='v-txt'>स्वप्न में छाया मात्र दिखाई देता है, जैसे मुख के सामने दर्पण में उसका प्रतिबिम्ब।</span> <sup>4</sup><span class='v-txt'>क्या दूषण से पवित्रता और झूठ से सत्य निकल सकता है?</span> <sup>5</sup><span class='v-txt'>भविष्य-फल, शकुन और स्वप्न- ये सब व्यर्थ</span> <sup>6</sup><span class='v-txt'>और प्रसव-पीड़िता की कल्पनाएँ मात्र है।  यदि स्वप्न सर्वोच्च प्रभु द्वारा न भेजा गया हो, तो उस पर कोई ध्यान मत दो।</span> <sup>7</sup><span class='v-txt'>स्वप्नों के कारण बहुत-से लोग भटक गये और उन पर भरोसा रख कर निराश हुए।</span> <sup>8</sup><span class='v-txt'>इन झूठी बातों के बिना संहिता प्रमाणित है और ईमानदार व्यक्ति के मुख में प्रज्ञा की परिपूर्णता है।</span> <sup>9</sup><span class='v-txt'>जिसने दूर की यात्रा की है, उसने बहुत सीख लिया ओैर जो अनुभवी है, वह ज्ञान की बातें कहता है।</span> <sup>10</sup><span class='v-txt'>(10-11) जिसे अनुभव नहीं, वह कम जानता है, किन्तु जिसने यात्रा की है, वह व्यवहार कुशल है।</span> <sup>12</sup><span class='v-txt'>मैंने अपनी यात्राओें में बहुत कुछ देखा और बहुत-सी बातोें का ज्ञान प्राप्त किया है।</span> <sup>13</sup><span class='v-txt'>मुझे कई बार जीवन की जोखिम का सामना करना पड़ा, किन्तु मैं अपने अनुभव के कारण बच गया।</span> <sup>14</sup><span class='v-txt'>जो प्रभु पर श्रद्धा रखते हैं, उनकी आयु लम्बी होगी और उन्हें प्रभु का आशीर्वाद प्राप्त होगा;</span> <sup>15</sup><span class='v-txt'>क्योंकि उन्हें उसका भरोसा है, जो उनकी रक्षा करने में समर्थ है।  प्रभु की आँखें अपने भक्तों पर टिकी रहती है।</span> <sup>16</sup><span class='v-txt'>जो प्रभु पर श्रद्धा रखता, वह किसी से नहीं डरता।  वह कभी नहीं घबराता, क्योंकि उसे प्रभु का भरोसा है।</span> <sup>17</sup><span class='v-txt'>जो प्रभु पर श्रद्धा रखता, उसकी आत्मा धन्य है।</span> <sup>18</sup><span class='v-txt'>वह किस पर निर्भर रहता है?  उसे कौन सँभालता है?</span> <sup>19</sup><span class='v-txt'>जो लोग प्रभु पर श्रद्धा रखते हैं, उन पर प्रभु की आँखे टिकी रहती है।  प्रभु पक्की ढाल, सुदृढ़ आधार, लू से आश्रय, दोपहर की धूप से छाया है।</span> <sup>20</sup><span class='v-txt'>वह ठोकर खाने से बचाता और गिरने वालों की सहायता करता है।  वह आत्मा को ऊपर उठता और आँखों को ज्योति प्रदान करता है।</span> <sup>21</sup><span class='v-txt'>जो प्रभु पर भरोसा रखते हैं, वह उन्हें सत्य और धर्म के मार्ग पर ले चलता है।</span> <sup>22</sup><span class='v-txt'>अन्याय की कमाई का चढ़ावा दूषित है।  पापियों की भेटें प्रभु को ग्राह्य नहीं होती।</span> <sup>23</sup><span class='v-txt'>सर्वोच्च प्रभु को पापियों के चढ़ावे प्रिय नहीं होते, वह बलिदानों की बहुलता के कारण पाप क्षमा नहीं करता।</span> <sup>24</sup><span class='v-txt'>जो दरिद्रों की सम्पत्ति से बलिदान चढ़ाता है, वह उस व्यक्ति-जैसा है, जो पिता की आँखों के सामने उसके पुत्र का वध करता है।</span> <sup>25</sup><span class='v-txt'>भीख की रोटी से दरिद्र का निर्वाह होता है।  जो उसे छीनता है, वह रक्तपात करता है।</span> <sup>26</sup><span class='v-txt'>जो अपने पड़ोसी की जीविका छीनता है, वह मानो उसका वध करता है,</span> <sup>27</sup><span class='v-txt'>जो मजदूर का वेतन दबाता है, वह हत्यारे के बराबर है।</span> <sup>28</sup><span class='v-txt'>एक निर्माण करता और दूसरा ढा देता है।  उस से क्या लाभ?  दोनों ने व्यर्थ परिश्रम किया।</span> <sup>29</sup><span class='v-txt'>एक आशीर्वाद और दूसरा अभिशाप देता है।  ईश्वर को किसकी बात माननी चाहिए?</span> <sup>30</sup><span class='v-txt'>कोई शव स्पर्श कर नहाता और फिर शव स्पर्श करता है, तो उसे नहाने से क्या लाभ?</span> <sup>31</sup><span class='v-txt'>यही उस व्यक्ति की दशा है, जो अपने पापों के लिए अनषन करता है और उसके बाद जा कर फिर वहीं पाप करता है।</span> </p>
+        <div class='nav'><a href='028033.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028035.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

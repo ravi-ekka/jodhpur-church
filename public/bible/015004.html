@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़्रा - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़्रा</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब यूदा और बेनयामीन के विरोधियों ने यह सुना कि लोग निर्वासन से लौट कर प्रभु, इस्राएल के ईश्वर के नाम पर मन्दिर बना रहे हैं,</span> <sup>2</sup><span class='v-txt'>तो उन्होंने ज़रूबबाबेल और घरानों के मुखियाओं के पास जा कर उन से यह कहा, &quot;आपके मन्दिर-निर्माण में हम लोग भी योग देना चाहते हैं; क्योंकि हम लोग भी आपकी तरह आपके ईश्वर की उपासना करते हैं और अस्सूर के राजा एसर-हद्दोन के समय से, जो हमें यहाँ लाया था, उसे बलिदान चढ़ाते आ र हे हैं&quot;।</span> <sup>3</sup><span class='v-txt'>परन्तु ज़रूबबाबेल, येशूआ और शेष इस्राएली घरानों के मुखियाओं ने उन्हें उत्तर दिया, &quot;यह नहीं हो सकता कि हम तुम्हारे सहयोग से अपने ईश्वर का मन्दिर बनायें।  हम अकेले ही प्रभु, इस्राएल के ईश्वर का यह मन्दिर बनायेंगे; क्योंकि फारस के राजा सीरूस ने हमें यह आदेश दिया है।&quot;</span> <sup>4</sup><span class='v-txt'>तब देश के निवासी यूदा के लोगों को निराश करने और निर्माण-कार्य आगे बढ़ाने से डराते थे।</span> <sup>5</sup><span class='v-txt'>वे प्रतिष्ठित लोगों को घूस देते थे, जिससे वे उनका विरोध करें और उनके निर्माण-कार्य में बाधाएँ डालें। फ़ारस के राजा सीरूस के पूरे शासनकाल से ले कर फ़ारस के राजा दारा के शासनकाल तक यही स्थिति रही।</span> <sup>6</sup><span class='v-txt'>ज़र्कसीस के शासनकाल में, उसके शासन के प्रारम्भ में ही, उन्होंने यूदा और येरूसालेम के निवासियों के विरुद्ध एक अभियोग-पत्र लिखा।</span> <sup>7</sup><span class='v-txt'>अर्तज़र्कसीस के शासनकाल में बिशलाम, मित्रदात, टाबएल और उसके अन्य साथी पदाधिकारियों ने फ़ारस के राजा अर्तज़र्कसीस को पत्र लिखा, जो अरामी भाषा और लिपि में लिखा था।</span> <sup>8</sup><span class='v-txt'>राज्यपाल रहूम और सचिव शिमशय ने येरूसालेम के विरुद्ध अर्तज़र्कसीस को यह पत्र लिखाः</span> <sup>9</sup><span class='v-txt'>&quot;राज्यपाल रहूम, सचिव शिमशय और उनके साथी, जो दीन, अफ़रसथ, तरपेल, अफ़रस, एरेक, बाबुल, सूसा, देहा और एलाम में रहते हैं,</span> <sup>10</sup><span class='v-txt'>तथा वे अन्य लोग, जिन्हें महान् और गौरवशाली ओसनप्पर ने निर्वासित किया और समारिया के नगरों में और नदी के उस पार के देशों में बसाया&quot;-</span> <sup>11</sup><span class='v-txt'>उन्होंने जो पत्र भेजा, इसकी प्रतिलिपि इस प्रकार है:  &quot;अर्तज़र्कसीस राजा के नाम-नदी के उस पार के लोगों, आपके दासों का प्रणाम।</span> <sup>12</sup><span class='v-txt'>राजा को विदित हो कि जो यहूदी आपके यहाँ से आये हैं, वे हमारे पास येरूसालेम में इस उद्देश्य से आये हैं, कि वे उस विद्रोही और दुष्ट नगर का पुनर्निर्माण करें।  वे नींव डाल चुके हैं और दीवारें भी पूरी होने को हैं।</span> <sup>13</sup><span class='v-txt'>अब राजा को यह मालूम हो कि यदि इस नगर का पुनर्निर्माण हुआ और इसकी चार-दीवारी फिर से उठायी गयी, तो वे लोग उपहार, कर या चुंगी नहीं देंगे और इस से राजस्व की हानि होगी।</span> <sup>14</sup><span class='v-txt'>हम, जो राजा का नमक खाते हैं, राजा का अपमान नहीं देख सकते।  इसलिए हम राजा को इसकी सूचना दे रहे हैं।</span> <sup>15</sup><span class='v-txt'>आपके पूर्वजों के इतिहास-ग्रन्थ में खोज करने पर आप को पता चलेगा कि यह नगर एक विद्रोही नगर रहा है, जिसने राजाओं और प्रान्तों को हानि पहुँचायी है।  प्राचीन काल से ही इस में विद्रोह होते आ रहे हैं।  इसलिए इस नगर का विनाश किया जा चुका है।</span> <sup>16</sup><span class='v-txt'>हम राजा को यह सूचना दे रहे हैं कि यदि इस नगर का पुनर्निर्माण किया गया और उसकी चारदीवारी फिर से उठायी गयी, तो आपके हाथ में नदी के उस पार का कोई भाग नहीं रह जायेगा।&quot;</span> <sup>17</sup><span class='v-txt'>राजा ने उत्तर भेजा, &quot;राज्यपाल रहूम, सचिव शिमशय, समारिया और नदी के उस पार रहने वाले उनके अन्य साथी पदाधिकारियों को मेरा नमस्कार।</span> <sup>18</sup><span class='v-txt'>आप लोगों ने हमारे पास जो पत्र भेजा है, वह मेरे सामने पढ़ कर सुनाया गया।</span> <sup>19</sup><span class='v-txt'>मेरे आदेश पर जाँच करने से पता लगा कि यह नगर प्राचीन काल से ही राजाओं से विद्रोह करता आ रहा है और वहाँ विद्रोह और राजद्रोह पनपता रहा है।</span> <sup>20</sup><span class='v-txt'>बड़े-बड़े राजाओं ने येरूसालेम पर शासन किया और नदी के उस पार के सारे प्रदेश पर उनका अधिकार रहा और उन्हें उपहार, कर और चुँगी प्राप्त होती रही।</span> <sup>21</sup><span class='v-txt'>अब आप लोग उन लोगों को काम बन्द करने का आदेश दें और जब तक मेरी आज्ञा न हो, तब तक नगर का पुनर्निर्माण न हो।</span> <sup>22</sup><span class='v-txt'>आप इस मामले में असावधानी नहीं करें, जिससे राजा को हानि न हो।&quot;</span> <sup>23</sup><span class='v-txt'>जैसे ही राजा अर्तज़र्कसीस के पत्र की प्रतिलिपि रहूम, सचिव शिमशय और उनके साथियों को पढ़ कर सुनायी गयी, उन्होंने तुरन्त येरूसालेम के यहूदियों के पास जा कर उन को काम बन्द करने को बाध्य किया।</span> <sup>24</sup><span class='v-txt'>इस प्रकार ईश्वर के मन्दिर का निर्माण कार्य बन्द कर दिया गया और वह फ़ारस के राजा दारा के शासनकाल के दूसरे वर्ष तक बन्द पड़ा रहा।</span> </p>
+        <div class='nav'><a href='015003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='015005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

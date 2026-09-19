@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लेवी - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लेवी</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>हारून और उसके पुत्रों को यह आदेश दो : यह होम-बलि की विधि है। होम-बलि रात भर, प्रातःकाल तक, वेदी की आग पर रहेगी और वह आग वेदी पर प्रज्वलित रखी जायेगी।</span> <sup>3</sup><span class='v-txt'>याजक छालटी का वस्त्र और छालटी का जाँघिया पहने वेदी पर जलायी होम-बलि की राख एकत्र कर उसे वेदी की बगल में रखेगा।</span> <sup>4</sup><span class='v-txt'>इसके बाद वह कपड़े बदल कर राख शिविर के बाहर किसी शुद्ध स्थान पर ले जायेगा।</span> <sup>5</sup><span class='v-txt'>(५-६) वेदी की आग को प्रज्वलित रखना है। उसे कभी बुझने नहीं देना चाहिए। याजक प्रतिदिन सबेरे उस पर लकड़ी रखेगा, आग पर होम बलि सजायेगा और उस में शान्ति-बलियों की चरबी जलायेगा।</span> <sup>7</sup><span class='v-txt'>अन्न-बलि की विधि इस प्रकार है। हारून का कोई पुत्र उसे वेदी के सामने प्रभु को चढ़ाये।</span> <sup>8</sup><span class='v-txt'>याजक अन्न-बलि में से मुट्ठी भर तेल-मिश्रित मैदा निकाल कर उसे सारे चढ़ावे के प्रतीक के रूप में लोबान के साथ वेदी पर जलाये। यह सुगन्धयुक्त चढ़ावा है, जो प्रभु को प्रिय है।</span> <sup>9</sup><span class='v-txt'>शेष भाग हारून और उसके पुत्र खा सकते हैं, किन्तु वह एक पवित्र स्थान पर - दर्शन कक्ष के आँगन में, खमीर के बिना खाया जाये।</span> <sup>10</sup><span class='v-txt'>वह खमीर के साथ नहीं पकाया जा सकता है। मैं अपने चढ़ावों में से उन्हें यह भाग देता हूँ। यह प्रायश्चित बलि और क्षतिपूर्ति-बलि के समान परमपवित्र है।</span> <sup>11</sup><span class='v-txt'>हारून के सब पुरुष वंशज इसे खा सकते हैं। प्रभु के चढ़ावों के इस अंश पर पीढ़ी-दर-पीढ़ी उनका चिरस्थायी अधिकार है। जो इसका स्पर्श करता है, वह पवित्र हो जाता है।</span> <sup>12</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>13</sup><span class='v-txt'>हारून के अभ्यंजन के दिन हारून और उसके पुत्र यह चढ़ावा अर्पित करेंगे - अन्न-बलि के रूप में प्रतिदिन एक सेर मैदा, आधा भाग प्रात : और आधा भाग सायंकाल।</span> <sup>14</sup><span class='v-txt'>उस में तेल डाला जाये और वह तवे पर पकाया जाये। उसे टुकड़े-टुकड़े कर अन्न-बलि के रूप में चढ़ाया जाये। यह सुगन्धयुक्त चढ़ावा है, जो प्रभु को प्रिय है।</span> <sup>15</sup><span class='v-txt'>हारून का वंशज जो अभ्यंजित याजक के रूप में उसका उत्तराधिकारी होगा, ऐसा ही करेगा। यह एक स्थ्रिस्थायी विधि है। यह चढ़ावा प्रभु के आदर में पूरा-का-पूरा भस्म कर दिया जायेगा।</span> <sup>16</sup><span class='v-txt'>यह नियम याजक द्वारा अर्पित हर अन्न-बलि पर लागू है। वह नहीं खाया जा सकता।</span> <sup>17</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>18</sup><span class='v-txt'>हारून और उसके पुत्रों से कहो : प्रायश्चित-बलि की विधि इस प्रकार है। जिस स्थान पर होम बलि के पशु का वध किया जाता है, वहीं प्रभु के सामने प्रायश्चित-बलि के प्शु का वध किया जाये। वह परमपवित्र है।</span> <sup>19</sup><span class='v-txt'>जो याजक प्रायश्चित-बलि चढ़ाता है, वही उसे खाये। वह पवित्र स्थान पर, दर्शन-कक्ष के आँगन में उसे खाये।</span> <sup>20</sup><span class='v-txt'>जो उसके मांस का स्पर्श करता है, वह पवित्र हो जाता है। यदि उसका रक्त किसी के वस्त्र पर लग जाये, तो उसे पवित्र स्थान पर ही धो दिया जाये।</span> <sup>21</sup><span class='v-txt'>मिट्टी का वह बरतन तोड़ डाला जाये, जिस में उसे पकाया गया है। यदि वह किसी काँसे के बरतन में पकाया गया हो, तो उसे माँज कर पानी से धो देना चाहिए।</span> <sup>22</sup><span class='v-txt'>याजकों के परिवारों में कोई भी पुरुष उसे खा सकता है। वह परमपवित्र है।</span> <sup>23</sup><span class='v-txt'>परन्तु वह प्रायश्चित-बलि नहीं खायी जा सकती है, जिसका रक्त पवित्र-स्थान में प्रायश्चित-विधि सम्पन्न करने के लिए दर्शन कक्ष में लाया जाता है। वह अग्नि में जला दी जाये।</span> </p>
+        <div class='nav'><a href='003005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='003007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>निर्गमन - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>निर्गमन</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मूसा अपने ससुर, मिदयान के याजक, यित्रों की भेडें  चराया करता था। वह उन्हें बहुत दूर तक उजाड़ प्रदेश में ले जा कर ईश्वर के पर्वत होरेब के पास पहुँचा।</span> <sup>2</sup><span class='v-txt'>वहाँ उसे झाड़ी के बीच में से निकलती हुई आग की लपट के रूप में प्रभु का दूत दिखाई दिया। उसने देखा कि झाड़ी में तो आग लगी है, किन्तु वह भस्म नहीं हो रही है।</span> <sup>3</sup><span class='v-txt'>मूसा ने मन में कहा कि यह अनोखी बात निकट से देखने जाऊँगा और यह पता लगाऊँगा कि झाड़ी भस्म क्यों नहीं हो रही है।</span> <sup>4</sup><span class='v-txt'>निरीक्षण करने के लिए उसे निकट आते देख कर ईश्वर ने झाड़ी के बीच में से पुकार कर उससे कहा, &#039;&#039;मूसा! मूसा!&#039;&#039; उसने उत्तर दिया, &#039;&#039;प्रस्तुत हूँ।&#039;&#039;</span> <sup>5</sup><span class='v-txt'>ईश्वर ने कहा, &#039;&#039;पास मत आओ। पैरों से जूते उतार दो, क्योंकि तुम जहाँ खड़े हो, वह पवित्र भूमि है।&#039;&#039;</span> <sup>6</sup><span class='v-txt'>ईश्वर ने फिर उस से कहा, &#039;&#039;मैं तुम्हारे पिता का ईश्वर हूँ, इब्राहीम, इसहाक तथा याकूब का ईश्वर।&#039;&#039; इस पर मूसा ने अपना मुख ढक लिया; कहीं ऐसा न हो कि वह ईश्वर को देख ले।</span> <sup>7</sup><span class='v-txt'>प्रभु ने कहा, &#039;&#039;मैंने मिस्र में रहने वाली अपनी प्रजा की दयनीय दशा देखी और अत्याचारियों से मुक्ति के लिए उसकी पुकार सुनी है। मैं उसका दुःख अच्छी तरह जानता हूँ।</span> <sup>8</sup><span class='v-txt'>मैं उसे मिस्रियों के हाथ से छुड़ा कर और इस देश से निकाल कर, एक समृद्ध तथा विशाल देश ले जाऊँगा, जहॉँ दूध तथा मधु की नदियाँ बहती हैं, जहाँ कनानी, हित्ती, अमोरी, परिज्जी, हिव्वी और यबूसी बसते हैं।</span> <sup>9</sup><span class='v-txt'>मैंने इस्राएलियों की पुकार सुनी और उन पर मिस्रियों का अत्याचार देखा, इसलिए मैं तुम्हें फिराउन के पास भेजता हूँ।</span> <sup>10</sup><span class='v-txt'>तुम मेरी प्रजा इस्राएल को मिस्र देश से बाहर निकाल लाओ।</span> <sup>11</sup><span class='v-txt'>मूसा ने ईश्वर से कहा, &#039;&#039;मैं कौन हूँ जो फिराउन के पास जाऊॅँ और इस्राएलियों को मिस्र देश से बाहर निकाल ले जाऊॅँ?</span> <sup>12</sup><span class='v-txt'>ईश्वर ने उत्तर दिया, &#039;&#039;मैं तुम्हारे साथ रहूँगा। मैंने तुम को भेजा है, तुम्हारे लिए इसका प्रमाण यह होगा कि जब तुम इस्राएल को मिस्र से निकाल लाओगें, तो तुम लोग इस पर्वत पर प्रभु की आराधना करोगें।&#039;&#039;</span> <sup>13</sup><span class='v-txt'>मूसा ने झाड़ी में से प्रभु की वाणी सुन कर उस से कहा, &#039;&#039;जब मैं इस्राएलियों के पास पहुँच कर उन से यह कहॅूँगा - तुम्हारें पूर्वजों के ईश्वर ने मुझे तुम्हारे पास भेजा है, और वे मुझ से पूछेंगे कि उसका नाम क्या है, तो मैं उन्हें क्या उत्तर दूँगा?&#039;&#039;</span> <sup>14</sup><span class='v-txt'>ईश्वर ने मूसा से कहा, &#039;&#039;मेरा नाम सत् है। उसने फिर कहा, &#039;&#039;तुम इस्राएलियों को यह उत्तर दोगे जिसका नाम &quot;सत्&quot; है, उसी ने मुझे भेजा है।&#039;&#039;</span> <sup>15</sup><span class='v-txt'>इसके बाद ईश्वर मूसा से कहा, &#039;&#039;तुम इस्राएलियों से यह कहोगे - प्रभु तुम्हारे पूर्वजों के ईश्वर, इब्राहीम, इसहाक तथा याकूब के ईश्वर ने मुझे तुम लोगों के पास भेजा है। यह सदा के लिए मेरा नाम रहेगा और यही नाम ले कर सब पीढ़ियॉँ मुझ से प्रार्थना करेंगी।</span> <sup>16</sup><span class='v-txt'>अब जा कर इस्राएल के नेताओं को एकत्र करो और उन से यह कहो, &quot;प्रभु तुम्हारे पूर्वजों का ईश्वर, इब्राहीम, इसहाक और याकूब का ईश्वर, मुझे दिखाई दिया और उसने मुझ से कहा - मैंने तुम लोगों की सुध ली है और मैं जानता हॅूँ कि मिस्र देश में तुम पर क्या बीत रही है।</span> <sup>17</sup><span class='v-txt'>मैंने यह निर्णय किया है : मैं तुम्हें मिस्र की दीनता से निकाल कर कनानियों, हित्तियों, अमोरियों, परिज्जियों, हिव्वियों और यबूसियों के देश ले जाऊँगा। जहाँ दूध और मधु की नदियाँ बहती हैं।</span> <sup>18</sup><span class='v-txt'>&#039;&#039;वे तुम्हारी बात मानेंगे और तुम इस्राएल के नेताओं के साथ मिस्र के राजा के पास जाओगे और उस से यह कहोगे, &quot;प्रभु इब्रानियों का ईश्वर, हमें दिखाई दिया। हमें मरुभूमि में तीन दिन की यात्रा करने दीजिए, जिससे हम अपने प्रभु-ईश्वर को बलि चढ़ायें।&quot;</span> <sup>19</sup><span class='v-txt'>मैं जानता हॅूँ कि जब तक मिस्र के राजा को विवश नहीं किया जायेगा, वह तुम लोगों को नहीं जाने देगा।</span> <sup>20</sup><span class='v-txt'>इसलिए मैं अपना भुजबल प्रदर्शित करूँगा और विविध चमत्कार दिखाकर मिस्रियों को सन्तप्त करूँगा। इसके बाद वह तुम लोगों को जाने देगा।</span> <sup>21</sup><span class='v-txt'>मैं तुम लोगों को मिस्री जनता का कृपापात्र बना दूँगा, इसलिए तुम लोगों को खाली हाथ नहीं जाना पड़ेगा।</span> <sup>22</sup><span class='v-txt'>प्रत्येक स्त्री अपनी पड़ोसिन से और अपने ही घर की मालकिन से चाँदी, सोने के आभूषण और वस्त्र मॉँग लेगी। तुम उन्हें अपने पुत्र-पुत्रियों को पहनाओंगे। इस प्रकार तुम मिस्रियों को लूटोगे।&#039;&#039;</span> </p>
+        <div class='nav'><a href='002002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='002004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

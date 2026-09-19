@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>समूएल का पहला ग्रन्थ - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>समूएल का पहला ग्रन्थ</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>बेनयामीन प्रान्त में कीश नामक एक धनी मनुष्य रहता था।  वह अबीएल का पुत्र था।  अबीएल सरोर का, सरोर बकोरत का और बकोरत अफ़ीअह का पुत्र था।</span> <sup>2</sup><span class='v-txt'>कीश के साऊल नामक एक नौजवान और सुन्दर पुत्र था। इस्राएलियों में साऊल से सुन्दर कोई सुन्दर नहीं था।  वह इतना लम्बा था कि उसका सिर और उसके कन्धे दूसरे लोगों के ऊपर हो जाते थे।</span> <sup>3</sup><span class='v-txt'>किसी दिन साऊल के पिता कीश की गदहियाँ भटक गयी थीं।  उसने अपने पुत्र साऊल से कहा, &quot;किसी नौकर के साथ गदहियों को खोजने जाओ।&quot;</span> <sup>4</sup><span class='v-txt'>साऊल ने एफ्ऱईम का पहाड़ी प्रदेश और शालिषा प्रान्त पार किया, किन्तु गदहियों का पता नहीं चला।  इसके बाद वे शआलीम प्रदेश और बेनयामीन प्रदेश पार कर गये, किन्तु वहाँ भी गदहियाँ का पता नहीं चला।</span> <sup>5</sup><span class='v-txt'>जब वे सूफ़ प्रान्त आये, तब साऊल ने अपने साथ के नौकर से कहा, &quot;चलो, अब हम वापस चलें।  हो सकता है कि अब हमारे पिता गदहियों की चिन्ता छोड़ कर हमारी ही चिन्ता कर रहे हों।&quot;</span> <sup>6</sup><span class='v-txt'>परन्तु उसने उत्तर दिया, &quot;देखिए, इस नगर में एक ईश्वर-भक्त रहते हैं वह लोगों में परमश्रद्धेय हैं।  वह जो कुछ कहते हैं, वह हो कर रहता है।  चलिये, हम वहाँ जायें।  शायद वह हमें बतायेंगे कि हमें किधर जाना है।&quot;</span> <sup>7</sup><span class='v-txt'>साऊल ने अपने नौकर से कहा, &quot;लेकिन हम उनके पास जा कर उन्हें क्यादेंगे?  हमारी गठरी की रोटियाँ तो ख़तम हो चुकी हैं और हमारे पास कोई ऐसी भेंट नहीं है, जो हम उन ईश्वर-भक्त को दे सकें।  हमारे पास है ही क्या?&quot;</span> <sup>8</sup><span class='v-txt'>नौकर ने साऊल को उत्तर दिया, &quot;देखिए, मेरे पास चाँदी का एक चैथाई शेकेल है।  मैं यह उन ईश्वर-भक्त को दे दूँगा, तो वह हमें बतायेंगे कि हमें किधर जाना है।&quot;</span> <sup>9</sup><span class='v-txt'>(प्राचीन काल में इस्राएल में जब-जब कोई ईश्वर से पूछने जाता था, तो वह कहता था, &quot;चलो, हम दृष्टा के पास जायें&quot;; क्योंकि जिसे आजकल नबी कहते हैं, वह प्राचीन काल में दृष्टा कहलाता था।)</span> <sup>10</sup><span class='v-txt'>साऊल ने अपने नौकर से कहा, &quot;तुम्हारा कहना ठीक है आओ चलें,।&quot;  अतः वे उस नगर को चल दिया, जहाँ वह ईश्वर-भक्त रहता था।</span> <sup>11</sup><span class='v-txt'>वे नगर के टीले चढ़ रहे थे कि उन्हें पानी भरने जाती हुई कन्याएँ मिली और उन्होंने उन से पूछा, &quot;क्या दृष्टा यहीं रहते हैं?&quot;</span> <sup>12</sup><span class='v-txt'>उन्होनें उत्तर दिया, &quot;हाँ, &quot;हाँ, देखो न, वह तुम्हारे सामने हैं।  लेकिन जल्दी करो, क्योंकि वह अभी-अभी नगर में इसलिए आये हैं कि लोग आज टीले पर एक बलि चढ़ा रहे हैं।</span> <sup>13</sup><span class='v-txt'>नगर में पहुँचने पर बलि-भोज करने के लिए उनके टीले पर ऊपर जाने के पहले ही तुम उन से मिल सकते हो। उनके पहुँचने के पहले लोग बलि-भोज प्रारम्भ नहीं करते, क्योंकि पहले बलि को उनका आशीर्वाद मिलना आवश्यक है।  इसके बाद ही निमन्त्रित लोग भोजन करते हैं। अच्छा अब ऊपर जाओ। पहुँचते ही वह तुम्हें मिलेंगे।&quot;</span> <sup>14</sup><span class='v-txt'>वे नगर की ओर चढ़े।  वे नगर के फाटक में प्रवेश कर ही रहे थे कि समूएल उनके आगे टीले पर चढ़ रहा था।</span> <sup>15</sup><span class='v-txt'>साऊल के आने के एक दिन पहले ही प्रभु ने समूएल पर यह प्रकट किया था,</span> <sup>16</sup><span class='v-txt'>&quot;कल इसी समय मैं बेनयामीन देश के एक पुरुष को तुम्हारे पास भेजूँगा।  तुम मेरी प्रजा इस्राएल के शासक के रूप में उसका अभिषेक करोगे।  मेरी प्रजा की दुहाई मेरे पास पहुँची है, इसलिए मैं अपनी प्रजा पर दया करूँगा और वह मेरी प्रजा को फ़िलिस्तियों के हाथों से मुक्त करेगा।&quot;</span> <sup>17</sup><span class='v-txt'>समूएल ने जैसे ही साऊल को देखा, प्रभु ने उसे यह सूचना दी, &quot;यह वही है, जिसके विषय में मैं तुमसे कह चुका हूँ।  यही मेरी प्रजा का शासन करेगा।&quot;</span> <sup>18</sup><span class='v-txt'>साऊल ने फाटक पर समूएल के पास आ कर कहा, &quot;कृपया मुझे यह बता दें कि दृष्टा का घर कहाँ है?&quot;</span> <sup>19</sup><span class='v-txt'>समूएल ने साऊल को उत्तर दिया, &quot;मैं ही दृष्टा हूँ।  मेरे आगे पहाड़ी पर चढों - तुम आज मेरे साथ भोजन करोगे मैं कल सबेरे तुम्हें विदा करूँगा और तुम जिसके बारे में चिन्ता कर रहे हो, वह भी तुम्हें बताऊँगा।</span> <sup>20</sup><span class='v-txt'>उन गदहियों के लिए चिन्ता मत करो, जो तीन दिन पहले तुम्हारे यहाँ से भाग गयी हैं।  वे मिल गयी हैं। इस्राएल की समस्त सम्पत्ति किसकी है?  क्या वह तुम्हारी और तुम्हारे पिता के घराने की नहीं है?&quot;</span> <sup>21</sup><span class='v-txt'>साऊल ने उत्तर दिया, &quot;परन्तु मैं बेनयामीन वंश का हूँ, जो इस्राएल के वंशों में सब से छोटा है और मेरा कुल तो बेनयामीन वंश के सारे कुलो में सब से छोटा है।  फिर आप मुझ से ऐसी बात क्यों कहते हैं?&quot;</span> <sup>22</sup><span class='v-txt'>इसके बाद समूएल ने साऊल और उसके नौकर को भवन में ले जा कर आमंत्रित लोगों में सब से पहला स्थान दिया।  वहाँ लगभग बीस आमन्त्रित लोग थे।</span> <sup>23</sup><span class='v-txt'>समूएल ने रसोइये से कहा, &quot;जाओ, वह व्यंजन ले आओ, जिसे मैंने तुम्हे अलग रखने को कहा था।&quot;</span> <sup>24</sup><span class='v-txt'>तब रसोइये ने जाँघ और उसके आसपास का भाग ला कर साऊल को परोस दिया।  समूएल ने कहा, &quot;यह अलग रखा हुआ भाग तुम्हारे सामने है।  इसे खाओ; क्योंकि यह तुम्हारे लिए उस समय अलग रखा गया, जब मैंने लोगों को आमन्त्रित किया।&quot;  साऊल ने उस दिन समूएल के साथ भोजन किया।</span> <sup>25</sup><span class='v-txt'>वे टीले से उतर कर नगर आये और समूएल ने घर की छत पर साऊल के साथ बातचीत की।</span> <sup>26</sup><span class='v-txt'>वे बडे़ सबेरे उठे।  समूएल ने पौ फटने पर छत पर साऊल को पुकारा, &quot;उठो, चलो,  मैं तुम्हें पहुँचा आऊँ।&quot; साऊल ने प्रस्थान किया।  वह और समूएल, दोनों बाहर चल दिये।</span> <sup>27</sup><span class='v-txt'>नगर की सीमा पर पहुँचने पर समूएल ने साऊल से कहा, &quot;नौकर से कहो कि वह हम से कुछ दूरी पर आगे बढ़े। जब वह आगे बढ़ जाये, तो तुम कुछ देर के लिए रुक जाओ, जिससे मैं तुम्हें ईश्वर का संदेश सुनाऊँ।&quot;</span> </p>
+        <div class='nav'><a href='009008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='009010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

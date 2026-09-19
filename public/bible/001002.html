@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>उत्पत्ति - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>उत्पत्ति</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इस प्रकार आकाश तथा पृथ्वी और, जो कुछ उन में है, सब की सृष्टि पूरी हुई।</span> <sup>2</sup><span class='v-txt'>सातवें दिन ईश्वर का किया हुआ कार्य समाप्त हुआ। उसने अपना समस्त कार्य समाप्त कर, सातवें दिन विश्राम किया।</span> <sup>3</sup><span class='v-txt'>ईश्वर ने सातवें दिन को आशीर्वाद दिया और उसे पवित्र माना; क्योंकि उस दिन उसने सृष्टि का समस्त कार्य समाप्त कर विश्राम किया था।</span> <sup>4</sup><span class='v-txt'>यह है आकाश और पृथ्वी की उत्पत्ति का वृत्तांत। जिस प्रकार प्रभु-ईश्वर ने पृथ्वी और आकाश बनाया,</span> <sup>5</sup><span class='v-txt'>उस समय पृथ्वी पर न तो जंगली पौधे थे और न खेतों में घास उगी थी; क्योंकि प्रभु-ईश्वर ने पृथ्वी पर पानी नहीं बरसाया था और कोई मनुष्य भी नहीं था, जो खेती-बारी करें;</span> <sup>6</sup><span class='v-txt'>किन्तु भूमि में से जलप्रवाह निकले और समस्त धरती सींचने लगे।</span> <sup>7</sup><span class='v-txt'>प्रभु ने धरती की मिट्ठी से मनुष्य को गढ़ा और उसके नथनों में प्राणवायु फूँक दी। इस प्रकार मनुष्य एक सजीव सत्व बन गया।</span> <sup>8</sup><span class='v-txt'>इसके बाद ईश्वर ने पूर्व की ओर, अदन में एक वाटिका लगायी और उस में अपने द्वारा गढ़े मनुष्य को रखा।</span> <sup>9</sup><span class='v-txt'>प्रभु-ईश्वर ने धरती से सब प्रकार के वृक्ष उगायें, जो देखने में सुन्दर थे और जिनके फल स्वादिष्ट थे। वाटिका के बीचोंबीच जीवन-वृक्ष था और भले-बुरे के ज्ञान का वृक्ष भी।</span> <sup>10</sup><span class='v-txt'>अदन से वाटिका को सींचने वाली एक नदी निकलती थी और वहाँ वह चार धाराओं में विभाजित हो जाती थी। पहली धारा का नाम पीशोन है।</span> <sup>11</sup><span class='v-txt'>यह वह धारा है, जो पूरे हवीला देश के चारों ओर बहती है। वहाँ सोना पाया जाता है।</span> <sup>12</sup><span class='v-txt'>उस देश का सोना अच्छा होता है। वहाँ गुग्गुल और गोमेद भी मिलते है।</span> <sup>13</sup><span class='v-txt'>दूसरी धारा का नाम गीहोन है। यह कुश देश के चारों ओर बहती है।</span> <sup>14</sup><span class='v-txt'>तीसरी धारा का नाम दजला है। यह अस्सूर के पूर्व में बहती है। चौथी धारा का नाम फ़रात है।</span> <sup>15</sup><span class='v-txt'>प्रभु-ईश्वर ने मनुष्य को अदन की वाटिका में रख दिया, जिससे वह उसकी खेती-बारी और देखरेख करता रहे।</span> <sup>16</sup><span class='v-txt'>प्रभु-ईश्वर ने मनुष्य को यह आदेश दिया, &#039;&#039;तुम वाटिका के सभी वृक्षों के फल खा सकते हो,</span> <sup>17</sup><span class='v-txt'>किन्तु भले-बुरे के ज्ञान के वृक्ष का फल नहीं खाना; क्योंकि जिस दिन तुम उसका फल खाओगे, तुम अवश्य मर जाओगे&#039;&#039;।</span> <sup>18</sup><span class='v-txt'>प्रभु ने कहा, &#039;&#039;अकेला रहना मनुष्य के लिए अच्छा नहीं। इसलिए मैं उसके लिए एक उपयुक्त सहयोगी बनाऊँगा।&#039;&#039;</span> <sup>19</sup><span class='v-txt'>तब प्रभु ने मिट्ठी से पृथ्वी पर के सभी पशुओं और आकाश के सभी पक्षियों को गढ़ा और यह देखने के लिए कि मनुष्य उन्हें क्या नाम देगा, वह उन्हें मनुष्य के पास ले चला; क्योंकि मनुष्य ने प्रत्येक को जो नाम दिया होगा, वही उसका नाम रहेगा।</span> <sup>20</sup><span class='v-txt'>मनुष्य ने सभी घरेलू पशुओं, आकाश के पक्षियों और सभी जंगली जीव-जन्तुओं का नाम रखा। किन्तु उसे अपने लिए उपयुक्त सहयोगी नहीं मिला।</span> <sup>21</sup><span class='v-txt'>तब प्रभु-ईश्वर ने मनुष्य को गहरी नींद में सुला दिया और जब वह सो गया, तो प्रभु ने उसकी एक पसली निकाल ली और उसकी जगह को मांस से भर दिया।</span> <sup>22</sup><span class='v-txt'>इसके बाद प्रभु ने मनुष्य से निकाली हुई पसली से एक स्त्री को गढ़ा और उसे मनुष्य के पास ले गया।</span> <sup>23</sup><span class='v-txt'>इस पर मनुष्य बोल उठा, &#039;&#039;यह तो मेरी हड्डियों की हड्डी है और मेरे मांस का मांस। इसका नाम &#039;नारी&#039; होगा, क्योंकि यह तो नर से निकाली गयी है।</span> <sup>24</sup><span class='v-txt'>इस कारण पुरुष अपने माता-पिता को छोड़ेगा और अपनी पत्नी के साथ रहेगा और वे दोनों एक शरीर हो जायेंगे।</span> <sup>25</sup><span class='v-txt'>वह मनुष्य और उसकी पत्नी, दोनों नंगे थे, फिर भी उन्हें एक दूसरे के सामने लज्जा का अनुभव नहीं होता था।</span> </p>
+        <div class='nav'><a href='001001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='001003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

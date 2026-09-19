@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मक्काबियों का पहला ग्रन्थ - अध्याय 12</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मक्काबियों का पहला ग्रन्थ</h1>
+        <h2>अध्याय 12</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>योनातान ने देखा कि स्थिति उसके अनुकूल है; इसलिए उसने कुछ लोगों को चुन कर रोम भेजा, जिससे वह रोमियों के साथ मित्रता का संबंध फिर स्थापित करे।</span> <sup>2</sup><span class='v-txt'>उसने स्पार्तावासियों और अन्य स्थानों के लोगों को इस आशय से पत्र भेजे।</span> <sup>3</sup><span class='v-txt'>वे रोम आये और वहाँ उन्होंने परिषद् में यह कहा, &quot;प्रधानयाजक योनातान और यहूदी लोगों ने हमें आपके पास भेजा हैं, जिससे हम आपके साथ मित्रता का संबन्ध फिर स्थापित करें और सन्धि करें&quot;।</span> <sup>4</sup><span class='v-txt'>परिषद् ने उन्हें हर प्रदेश के अधिकारियों के नाम पत्र दिये, जिससे वे सकुशल यूदा पहुँचने में उसकी सहायता करें।</span> <sup>5</sup><span class='v-txt'>योनातान ने स्पार्तावासियों के नाम जो पत्र लिखा, उसकी प्रतिलिप इस प्रकार है:</span> <sup>6</sup><span class='v-txt'>&quot;प्रधानयाजक योनातान, यहूदी परिषद, याजकों और यहूदी प्रजा का स्पार्ता के भाइयों को नमस्कार।</span> <sup>7</sup><span class='v-txt'>आज से पहले भी आप लोगों के राजा अरीयस ने प्रधानयाजक ओनियस को पत्र भेजा, जिसकी प्रतिलिपि इस पत्र के साथ-साथ भेजी जा रही है।</span> <sup>8</sup><span class='v-txt'>ओनियस ने उस दूत का सादर स्वागत किया था।  उस से वह पत्र मिला था, जिस में संधि और मित्रता का प्रस्ताव किया गया था।</span> <sup>9</sup><span class='v-txt'>यह सच है कि हमें इस प्रकार के संबंध की आवश्यकता नहीं हैं, क्योंकि हमारे हाथ में जो धर्मग्रंथ विद्यमान हैं, उस में हमें सान्त्वा मिलती है।</span> <sup>10</sup><span class='v-txt'>फिर भी हमने दूत भेज कर संधि और मित्रता फिर स्थापित करने का प्रयत्न किया, जिससे हम आपकी दृष्टि में पराये न हो जायें; क्योंकि आपके पिछले पत्र के बाद बहुत समय बीत गया है।</span> <sup>11</sup><span class='v-txt'>हम महापर्वों और अन्य निश्चित दिवसों पर अपने बलिदानों और प्रार्थनाओं में सदा आप लोगों को याद करते हैं, जैसे अपने भाइयों का स्मरण करना उचित और आवश्यक है।</span> <sup>12</sup><span class='v-txt'>हमें आपकी महिमा का गर्व है।</span> <sup>13</sup><span class='v-txt'>इस बीच हमारे बुरे दिन आये; हम पर अनेक आक्रमण हुए और हमारे पड़ोसी राजाओं ने हम से युद्ध किया।</span> <sup>14</sup><span class='v-txt'>लेकिन इन लडाइयों में हमने अपने संधिबद्ध मित्रों को कष्ट नहीं देना चाहा;</span> <sup>15</sup><span class='v-txt'>क्योंकि हमारी सहायता का स्रोत ईश्वर था, वहीं से हमें सहायता मिलती रही।  अब हम अपने शत्रुओं से मुक्त हो गये।  हमारे शत्रुओं को नीचा दिखाया गया।</span> <sup>16</sup><span class='v-txt'>इसलिए हम अंतियोख के पुत्र नूमेनियस और यासोन के पुत्र अंतीपातेर को चुन कर रोमियों के यहाँ भेज रहे हैं, जिससे वे वहाँ जा कर उनके साथ संधि और मित्रता का संबंध पहले की तरह स्थापित करें।</span> <sup>17</sup><span class='v-txt'>हमने उन्हें आदेश दिया है कि वे आप लोगों के पास भी जायें, आप को नमस्कार करें और हमारा पत्र आप को दें, जिस में सन्धि के नवीनीकरण और मित्रता का संबंध फिर स्थापित करने का प्रस्ताव हैं।</span> <sup>18</sup><span class='v-txt'>आप इसका उत्तर देने की कृपा करें।&quot;</span> <sup>19</sup><span class='v-txt'>उन्होंने जो पत्र ओनियस को भेजा, उसकी प्रतिलिपि इस प्रकार है:</span> <sup>20</sup><span class='v-txt'>&quot;स्पार्तावासियों के राजा अरीयस का महायजक ओनियस को प्रमाण।</span> <sup>21</sup><span class='v-txt'>स्पार्तावासियों और यहूदियों के संबंध में एक अभिलेख से मालूम होता हैं कि दोनों भाई हैं और दोनों इब्राहीम के वंशज हैं।</span> <sup>22</sup><span class='v-txt'>जब हम लोग यह जानते हैं, तो आपकी हम पर बड़ी कृपा होगी, यदि आप अपने कुशल-क्षेम के विषय में हमें पत्र देंगे।</span> <sup>23</sup><span class='v-txt'>हम आप से यह कहते है कि आपके पशु और आपकी संपत्ति हमारी है और जो कुछ हमारा है, वह आपका है। हम यह आदेश देते हैं कि आप को इसकी सूचना दी जाये।&quot;</span> <sup>24</sup><span class='v-txt'>योनातान ने सुना कि देमेत्रियस के सेनापति पहले से भी बड़ी सेना ले कर उस से लडने आ रहे हैं।</span> <sup>25</sup><span class='v-txt'>इस पर वह येरूसालेम से चल पड़ा और हमात प्रदेश में उनका सामना करने गया।  वह उन्हें अपने देश में पैर रखने का अवसर नहीं देना चाहता था।</span> <sup>26</sup><span class='v-txt'>उसने उनके पड़ाव में गुप्तचर भेजा, जिन्होंने लौट कर बताया कि वे यहूदियों पर इसी रात आक्रमण करने की तैयारियाँ कर रहे हैं।</span> <sup>27</sup><span class='v-txt'>योनातान ने सूर्यास्त के बाद अपने आदमियों को आदेश दिया कि वे जगे रहें और सारी रात अस्त्र-शस्त्र से लैस लडने को तैयार बैठे रहें।  उसने पड़ाव के आसपास पहरे बिठा दिये।</span> <sup>28</sup><span class='v-txt'>जब शत्रुओं ने देखा कि योनातान और उसके आदमी युद्ध के लिए तैयार हैं, तो वे भयभीत और निरुत्साह हो गये और उन्होंने अपने पड़ाव में जगह-जगह आग जलायी।</span> <sup>29</sup><span class='v-txt'>योनातान और उसके आदमियों को सबेरे तक यह पता नहीं चला कि शत्रु खिसक गये हैं; क्योंकि वे आग जलते देखते रहें।</span> <sup>30</sup><span class='v-txt'>योनातान ने उनका पीछा किया, किंतु वह उन्हें पकड नहीं पाया; क्योंकि वे एलूथरस नदी के पार जा चुके थे।</span> <sup>31</sup><span class='v-txt'>इसलिए योनातान उन अरबों की ओर चल पडा, जो ज़बादी कहलाते हैं।  उसने उन्हें हरा दिया और लूटा।</span> <sup>32</sup><span class='v-txt'>वह पड़ाव उठा कर दमिश्क पहुँचा और उसने उस समस्त प्रदेश का भ्रमण किया।</span> <sup>33</sup><span class='v-txt'>उधर सिमोन भी चल कर अशकलोन और उसके आसपास के गढों तक आ पहुँचा था।  फिर उसने याफ़ा की ओर मुड कर उस पर अधिकार कर लिया;</span> <sup>34</sup><span class='v-txt'>क्योंकि उसने यह सुना था कि वहाँ के निवासी वह गढ देमेत्रियस के लोगों को देना चाहते हैं।  इसलिए उसने उसकी रक्षा करने के लिए वहाँ एक सेना-दल रख दिया।</span> <sup>35</sup><span class='v-txt'>योनातान ने लौट कर जनता के नेताओं की एक सभा बुलायी और यह निश्चय किया कि यहूदिया के गढ़ों का पुनर्निर्माण किया जाये,</span> <sup>36</sup><span class='v-txt'>येरूसालेम की दीवार और ऊँची कर दी जाये तथा गढ़ और नगर के बीच एक बड़ी ऊँची दीवार उठायी जाये, जिससे गढ़ नगर से एकदम अलग हो जाये, और वहाँ बसने वाले लोग नगर में न कुछ खरीद सकें और न बेच सकें।</span> <sup>37</sup><span class='v-txt'>उन्होंने मिल कर नगर का पुनर्निर्माण किया, क्योंकि नाले वाली दीवार का, जो पूर्व की ओर थी, एक भाग गिर गया था।  उसने खफेनाथा नाम के मुहल्ले की भी मरम्मत करायी।</span> <sup>38</sup><span class='v-txt'>सिमोन ने भी निचले प्रदेश के अदीदा का निर्माण किया और उस सुदृढ़ बनाया उसने उस में फाटक और अर्गलाएँ लगायीं।</span> <sup>39</sup><span class='v-txt'>त्रीफ़ोन एशिया का राजा बनना, अपने सिर पर मुकुट पहनना और राजा अन्तियोख का वध करना चाहता था।</span> <sup>40</sup><span class='v-txt'>किन्तु यह सोच कर कि योनातान उसे ऐसा नहीं करने देगा और सम्भवतः उसके विरुद्ध युद्ध करेगा उसने उसे बन्दी बनाने और उसे मार डालने की योजना बनायी। इसलिए वह चल कर बेत-शान आ पहुँचा।</span> <sup>41</sup><span class='v-txt'>योनातान उसका सामना करने के लिए चालीस हज़ार चुने हुए योद्धा ले कर बेत-शान गया।</span> <sup>42</sup><span class='v-txt'>त्रीफोन ने जब देखा कि वह इतनी बड़ी सेना ले कर उस से मिलने आया है, तो उसे उस पर आक्रमण करने का संकोच हुआ।</span> <sup>43</sup><span class='v-txt'>त्रीफ़ोन ने उसका आदरपूर्वक स्वागत किया, अपने मित्रों से उसका परिचय कराया, उसे उपहार दिये और अपने सभी मित्रों एवं अपनी सेना को आदेश दिया, “तुम लोग मेरी बात की तरह योनातान की बात भी मानो।“</span> <sup>44</sup><span class='v-txt'>उसने योनातान से कहा, “आपने इतने लोगों को क्यों कष्ट दिया, जब कि हम दोनों में कोई युद्ध नहीं है?</span> <sup>45</sup><span class='v-txt'>लोगों को अपने-अपने घर भेज दें।  अपना साथ देने के लिए कुछ आदमी चुन लें और मेरे साथ पतोलेमाइस चले। मैं वह नगर और अन्य गढ़, शेष सैनिक और सभी पदाधिकारी आपके हाथ दूँगा और इसके बाद मैं घर लौट जाऊँगा।  मैं तो इसलिए यहाँ आया ही हूँ।“</span> <sup>46</sup><span class='v-txt'>योनातान ने उस पर विश्वास कर लिया और जैसा उसने कहा था, वैसा ही किया।   उसने अपने सैनिकों को चले जाने का आदेश दिया कि वे यूदा देश लौट जायें</span> <sup>47</sup><span class='v-txt'>उसने केवल तीन हजार आदमियों को अपने पास रखा। उसने उन मे दो हजार को गलीलिया में रखने का निश्चिय किया और एक हजार को अपने साथ ले जाने का।</span> <sup>48</sup><span class='v-txt'>योनातान ने जैसे ही पतोलेमाइस में प्रवेश किया, पतोलेमाइसवासियों ने फाटक बंद कर दिये।  उन्होंने उसे पकड़ लिया और उन सब को तलवार के घाट उतार दिया, जो उसके साथ अंदर आये थे।</span> <sup>49</sup><span class='v-txt'>इसके बाद त्रीफोन ने सैनिकों और घुडसवारों को गलीलिया और बड़े मैदान की ओर भेजा, जिससे वे वहाँ योनातान के सब आदमियों का विनाश कर दें</span> <sup>50</sup><span class='v-txt'>उधर उन लोगों ने यह सुना कि योनातान बंदी बना लिया गया हैं और अपने आदमियों के साथ उसका वध कर दिया गया है।  तब वे एक दूसरे को प्रोत्साहन देते हुए शत्रु का सामना करने के लिए पंक्तिबद्ध खडे़ हो गये।</span> <sup>51</sup><span class='v-txt'>जिन्होंने उनका पीछा किया, वे यह देख कर लौट गये कि यहूदी अपनी प्राण-रक्षा के लिए लड़ने के लिए तैयार हैं।</span> <sup>52</sup><span class='v-txt'>इस प्रकार सभी यहूदी सकुशल यूदा लौट आये।  उन्होंने योनातान और उसके आदमियों के लिए विलाप किया।  वे बहुत भयभीत थे।  समस्त इस्राएल ने महान् शोक मनाया।</span> <sup>53</sup><span class='v-txt'>आसपास जितनी अन्य जातियाँ थीं, वे सब यहूदियों का विनाश करना चाहती थीं।</span> <sup>54</sup><span class='v-txt'>वे कहती थीं &quot;उसका न तो कोई नेता हैं और न कोई सहायक।  अब हम उन से लडेंगी और मनुष्यों बीच से उनका नाम तक मिटा देंगी।&quot;</span> </p>
+        <div class='nav'><a href='020011.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='020013.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

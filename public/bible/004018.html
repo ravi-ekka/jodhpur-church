@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 18</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 18</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने हारून से कहा, &#039;&#039;पवित्र स्थान की सेवा में किये हुए, दोषों की जिम्मेदारी तुम्हारी, तुम्हारे पुत्रों और तुम्हारे परिवार की होगी। याजकीय सेवा में किये हुए दोषों की जिम्मेदारी तुम्हारी और तुम्हारे पुत्रों की होगी।</span> <sup>2</sup><span class='v-txt'>तुम अपने पिता के वंश, अर्थात् लेवी वंश के अपने भाइयों को भी अपने पास आने दो और विधान पत्र के तम्बू की सेवा में अपनी और अपने पुत्रों की सहायता करने दो।</span> <sup>3</sup><span class='v-txt'>वे तम्बू में सेवा करते हुए तुम्हारी सहायता करेंगे, किन्तु वे पवित्र-स्थान के पात्रों और वेदी के पास नहीं जायें। नहीं तो उनकी और तुम्हारी मृत्यु हो जायेगी।</span> <sup>4</sup><span class='v-txt'>वे तुम्हारे सहायक बनें और दर्शन-कक्ष की देखभाल करें। कोई अनधिकारी व्यक्ति तुम्हारे पास नहीं आ सकता।</span> <sup>5</sup><span class='v-txt'>पवित्र स्थान और वेदी की देखभाल की जिम्मेदारी तुम्हारी होगी। इस प्रकार इस्राएलियों पर फिर क्रोध नहीं भड़केगा।</span> <sup>6</sup><span class='v-txt'>मैंने तुम्हारे भाइयों को, लेवियों को इस्राएलियों में से चुन लिया। वे प्रभु को अर्पित हैं, जिससे वे दर्शन-कक्ष में सेवा कार्य करें और तुम्हारी सहायता करें।</span> <sup>7</sup><span class='v-txt'>तुम और तुम्हारे पुत्र वेदी और अन्तरपट के पीछे याजक की सब क्रियाएं सम्पन्न करेंगे। यह तुम्हारा कार्य है। मैं तुम को वरदान के रूप में याजक का सेवा-कार्य सौंपता हूँ। यदि कोई अनधिकारी व्यक्ति समीप आयेगा, तो उसे मृत्युदण्ड दिया जायेगा।&#039;&#039;</span> <sup>8</sup><span class='v-txt'>प्रभु ने हारून से कहा, &#039;&#039;इस्राएली मुझे जो चढ़ावे र्अपित करते हैं, मैं उनकी देख-रेख तुम्हें सौंपता हूँ और उन्हें तुम को और तुम्हारे पुत्रों को देता हूँ। यह एक अपरिवर्तनीय नियम है।</span> <sup>9</sup><span class='v-txt'>जो परम्परागत चढ़ावे नहीं जलाये जाते हैं, उनका एक भाग तुम्हारा होगा, अर्थात् सब अन्न बलियाँ प्रायश्चित और क्षतिपूर्ति-बलियाँ। यह तुम्हारा और तुम्हारे पुत्रों का भाग है।</span> <sup>10</sup><span class='v-txt'>तुम उन्हें एक पवित्र स्थान पर खाओगे। उन्हें सभी पुरुष खा सकते हैं। तुम उन्हें पवित्र मानोगे।</span> <sup>11</sup><span class='v-txt'>यह भी तुम्हारा भाग होगा इस्राएलियों के जो चढ़ावे हिला-हिला कर अर्पित किये जाते हैं, उनका एक भाग मैं तुम्हें देता हूँ। यह एक चिरस्थायी नियम के अनुसार तुम्हारा, तुम्हारे पुत्रों और पुत्रियों का भाग है। तुम्हारे परिवार का प्रत्येक सदस्य उसे खा सकता है, बषर्ते वह शुद्ध हो।</span> <sup>12</sup><span class='v-txt'>तेल का सब सर्वोत्तम भाग और नयी अंगूरी और अन्न का सर्वोत्तम भाग, प्रभु को अर्पित प्रथम फल - मैं यह सब तुम को देता हूँ।</span> <sup>13</sup><span class='v-txt'>लोगों द्वारा अर्पित अपने खेतों के प्रथम फल तुम्हारे हैं। तुम्हारे परिवार का प्रत्येक सदस्य उन्हें खा सकता है, बषर्ते वह शुद्ध हो।</span> <sup>14</sup><span class='v-txt'>इस्राएल में प्रत्येक पूर्ण-समर्पित वस्तु तुम्हारी है।</span> <sup>15</sup><span class='v-txt'>प्रभु को अर्पित शरीरधारियों के पहलौठे तुम्हारे हैं - चाहे वे मनुष्यों के हों, चाहे पशुओं के। तुम मनुष्यों और आशुद्ध पशुओं के पहलौठों को छुड़ाने का प्रबन्ध करोगे।</span> <sup>16</sup><span class='v-txt'>छुड़ाये जाने वाले बच्चे एक महीने की अवस्था में निर्धारित मूल्य पर छुड़ाये जायें। उनका मूल्य पवित्र-स्थान के शेकेलों की तौल के अनुसार पाँच शेकेल हैं - प्रत्येक शेकेल में बीस गेरा।</span> <sup>17</sup><span class='v-txt'>गायों, भेड़ों और बकरियों के पहलौठे बच्चे नहीं छुड़ाये जायें। वे पवित्र हैं। उनका रक्त वेदी पर छिड़कोगे और उनकी चरबी होम-बलि के रूप में अर्पित करोगे। यह एक सुगन्धयुक्त चढ़ावा है, जो प्रभु को प्रिय है।</span> <sup>18</sup><span class='v-txt'>उनका मांस तुम्हारा भाग होगा। हिला-हिला कर अर्पित छाती और दाहिनी जाँघ भी तुम्हारी है।</span> <sup>19</sup><span class='v-txt'>मैं इस्राएलियों द्वारा प्रभु को अर्पित सब पवित्र चढ़ावों का एक निर्धारित भाग तुम्हें, तुम्हारे पुत्रों और पुत्रियों को देता हूँ। यह प्रभु की दृष्टि में तुम्हारे और तुम्हारे वंशजों के लिए एक चिरस्थायी विधान है।</span> <sup>20</sup><span class='v-txt'>प्रभु ने हारून से कहा - &#039;&#039;तुम्हें विरासत के रूप में इस्राएलियों की तरह कोई ज़मीन नहीं मिलेगी। उनके साथ तुम्हारा कोई अपना भाग नहीं होगा। इस्राएलियों के बीच मैं ही तुम्हारा भाग और तुम्हारी विरासत हूँ।</span> <sup>21</sup><span class='v-txt'>मैं लेवियों को दर्शन-कक्ष में उनकी सेवा के पुरस्कार में इस्राएलियों द्वारा अर्पित दशमांश देता हूँ।</span> <sup>22</sup><span class='v-txt'>इस्राएली दर्शन-कक्ष के निकट कभी नहीं आयें। नहीं तो इस पाप के कारण उनकी मृत्यु हो जायेगी।</span> <sup>23</sup><span class='v-txt'>लेवी ही दर्शन-कक्ष का सेवा-कार्य करेंगे। उस में किये हुए दोषों की जिम्मेवारी उनकी होगी। यह पीढ़ी-दर-पीढ़ी एक चरस्थायी विधान है। लेवियों को इस्राएलियों के यहाँ कोई ज़मीन नहीं मिलेगी।</span> <sup>24</sup><span class='v-txt'>इस्राएली प्रभु को जो दशमांश अर्पित करते हैं, मैं इसे लेवियों को देता हूँ। इसलिए मैंने निष्चय किया कि उन्हें अन्य इस्राएलियों के साथ विरासत नहीं मिलेगी।&#039;&#039;</span> <sup>25</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>26</sup><span class='v-txt'>लेवियों से यह कहो - जब तुम इस्राएलियों से मेरे द्वारा अपने को दिये दायभाग के रूप में दशमांश पाते हो, तब तुम उसका एक निश्चित अंष, दशमांश का दशमांश प्रभु को अर्पित करोगे।</span> <sup>27</sup><span class='v-txt'>तुम्हारा यह चढ़ावा दूसरों द्वारा अर्पित खलिहान के अन्न और अंगूर के रस-कुण्ड का दशमांश समझा जायेगा।</span> <sup>28</sup><span class='v-txt'>इस प्रकार तुम भी इस्राएलियों से प्राप्त दशमांश का एक भाग प्रभु को अर्पित करोगे। तुम प्रभु का यह भाग याजक हारून को दोगे।</span> <sup>29</sup><span class='v-txt'>तुम को जो कुछ भी मिलेगा, उसका सर्वोत्तम और सब से पवित्र भाग प्रभु को अर्पित करोगे।</span> <sup>30</sup><span class='v-txt'>उन से यह कहो - यदि तुम उसका सर्वोत्तम भाग चढ़ाते हो, तो वह खलिहान और अंगूर के रस-कुण्ड का सर्वोत्तम भाग समझा जायेगा।</span> <sup>31</sup><span class='v-txt'>तुम और तुम्हारे कुटुम्बी उसे हर जगह खा सकते हैं, क्योंकि वह दर्शन-कक्ष में तुम्हारे सेवा-कार्य का पुरस्कार है।</span> <sup>32</sup><span class='v-txt'>यदि तुम उन में सर्वोत्तम भाग चढ़ाते हो, तो इस संबंध में तुम्हारा कोई दोष नहीं होगा। इस प्रकार तुम इस्राएलियों के पवित्र चढ़ावे अपवित्र नहीं करोगें और तुम्हारी मृत्यु नहीं होगी।&#039;&#039;</span> </p>
+        <div class='nav'><a href='004017.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004019.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

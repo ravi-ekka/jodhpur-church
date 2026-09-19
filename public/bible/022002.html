@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>एक दिन फिर ऐसा ही हुआ कि स्वर्ग-दूत प्रभु के सामने उपस्थित हुए।  शैतान भी उनके साथ आया।</span> <sup>2</sup><span class='v-txt'>प्रभु ने शैतान से कहा, &quot;तुम कहाँ से आये हो?&quot; शैतान ने प्रभु को उत्तर दिया, &quot;मैंने पृथ्वी का पूरा चक्कर लगाया&quot;।</span> <sup>3</sup><span class='v-txt'>प्रभु ने शैतान से कहा, &quot;क्या तुमने मेरे सेवक अय्यूब पर ध्यान दिया है?  पृथ्वी भर में उसके समान कोई नहीं; वह निर्दोष और निष्कपट है, वह ईश्वर पर श्रद्धा रखता और बुराई से दूर रहता हैं।  तुमने अकारण ही उसकी तबाही करने के लिए मुझे उकसाया हैं, फिर भी वह पहले की तरह निर्दोष है।&#039;&#039;</span> <sup>4</sup><span class='v-txt'>शैतान ने प्रभु को उत्तर दिया, &quot;चमड़ी के बदले चमड़ी। मनुष्य अपने प्राण बचाने के लिए अपना सर्वस्व दे देगा।</span> <sup>5</sup><span class='v-txt'>आप हाथ बढ़ा कर उसके शरीर पर प्रहार कीजिए, तो वह निश्चित ही आपके मुँह पर आपकी निंदा करेगा।</span> <sup>6</sup><span class='v-txt'>प्रभु ने शैतान से कहा, &quot;अच्छा!  मैं उसे तुम्हारे हवाले करता हूँ; किंतु तुम उसे जीवित रहने दो&quot;।</span> <sup>7</sup><span class='v-txt'>इसके बाद शैतान प्रभु के सामने से चला गया और उसने अय्यूब को सिर से पैर तक दर्दनाक फोड़ों से भर दिया।</span> <sup>8</sup><span class='v-txt'>अय्यूब राख के ढेर पर बैठ कर एक ठीकरे से फोड़े साफ करने लगा।</span> <sup>9</sup><span class='v-txt'>उसकी पत्नी ने उस से कहा, &quot;क्या तुम अब तक अपने को निर्दोष मानते हो?  ईश्वर की निंदा करो और मर जाओ।&quot;</span> <sup>10</sup><span class='v-txt'>अय्यूब ने उत्तर दिया, &quot;तुम मूर्ख स्त्री की तरह बकती हो।  हम ईश्वर से सुख स्वीकार करते हैं, तो दुःख क्यों न स्वीकार करें?&quot;  इतना होने पर भी अय्यूब ने अपने मुँह से कोई पाप नहीं किया।</span> <sup>11</sup><span class='v-txt'>जब अय्यूब के तीन मित्रों ने उसकी समस्त विपत्तिों के बारे में सुना, तो वे अपने-अपने यहाँ से उसके पास आयेः तेमा से एफीफ़ज़, शुअह से बिलदद और नामात में सोफ़र।  उन्होंने मिल कर संवेदना प्रकट करने और सान्त्वना देने के लिए उसके पास जाने का निश्चय किया।</span> <sup>12</sup><span class='v-txt'>जब वे उसे दूर से देख कर पहचान तक न पाये, तो ज़ोरों से रोने लगे।  उन्होंने अपने-अपने वस्त्र फाडे़ और आसमान की ओर राख फेंक कर उसे अपने सिर पर डाल लिया।</span> <sup>13</sup><span class='v-txt'>वे उसके पास सात दिन और सात रात जमीन पर बैठे रहे।  उन में कोई भी एक शब्द न बोल सका; क्योंकि उन्होंने अनुभव किया कि उसका दुःख अपार है।</span> </p>
+        <div class='nav'><a href='022001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

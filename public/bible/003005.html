@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लेवी - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लेवी</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यदि कोई व्यक्ति पाप करता है, क्योंकि उस से शपथपूर्वक निवेदन किया जाता है कि उसने जो देखा या सुना है, उसके विषय में साक्ष्य दे और वह चुप रहता है, तो वह दोषी समझा जायेगा।</span> <sup>2</sup><span class='v-txt'>यदि कोई व्यक्ति एक अशुद्ध वस्तु का - चाहे वह किसी अशुद्ध जंगली जानवर की लाश हो, चाहे किसी अशुद्ध घरेलू जानवर की लाश हो, चाहे किसी अशुद्व रेंगने वाले जानवर की लाश हो - स्पर्श करे, तो वह अशुद्व हो जाता है और दोषी है, यद्यपि उसने अनजाने ऐसा किया है।</span> <sup>3</sup><span class='v-txt'>अथवा यदि कोई व्यक्ति अनजाने किसी भी प्रकार की मानवीय अशुद्धता का स्पर्श करे, तो इसका पता लगते ही वह दोषी हो जाता है।</span> <sup>4</sup><span class='v-txt'>अथवा यदि कोई बिना विचारे बुरा-भला करने की या किसी भी प्रकार की शपथ खाये, तो इसका पता लगते ही वह दोषी हो जायेगा।</span> <sup>5</sup><span class='v-txt'>यदि कोई व्यक्ति ऐसी बातों में किसी एक का दोषी हो, तो उसे स्वीकार करना है कि उसने क्या किया है</span> <sup>6</sup><span class='v-txt'>और वह प्रायश्चित-बलि के रूप में अपने झुण्ड से भेड़ या बकरी प्रभु के पास ले आये और याजक उसके पाप के लिए प्रायश्चित-विधि सम्पन्न करेगा।</span> <sup>7</sup><span class='v-txt'>यदि कोई व्यक्ति भेड़ या बकरी, न चढ़ा सके, तो वह अपने पाप के प्रायश्चित के लिए प्रभु को दो पण्डुक या दो कबूतर चढ़ाये - एक को प्रायश्चित-बलि के रूप में और दूसरे को होम-बलि के रूप में।</span> <sup>8</sup><span class='v-txt'>वह उन्हें याजक के पास ले जाये, जो एक पक्षी प्रायश्चित-बलि के रूप में पहले चढ़ाये। वह उसका सिर गर्दन के पास मरोड़ दे, लेकिन उसे अलग न करे।</span> <sup>9</sup><span class='v-txt'>तब वह प्रायश्चित-बलि का कुछ रक्त वेदी की बगल में छिड़के और शेष रक्त वेदी के निचले भाग पर निचोड़े। यह प्रायश्चित-बलि है।</span> <sup>10</sup><span class='v-txt'>दूसरा पक्षी वह होम-बलि के रूप में निर्धारित विधि के अनुसार चढ़ाये। इस प्रकार याजक उसके पाप के लिए प्रायश्चित-विधि सम्पन्न करता है और उसे क्षमा दी जाती है।</span> <sup>11</sup><span class='v-txt'>यदि वह दो पण्डुक या दो कबूतर न चढ़ा सके, तो वह अपने पाप के प्रायश्चित के रूप में एक सेर मैदा चढ़ाये। वह उस पर कुछ तेल न डाले और न उसके साथ लोबान रखे, क्योंकि यह प्रायश्चित-बलि है।</span> <sup>12</sup><span class='v-txt'>वह उसे याजक के पास लाये। याजक उस में से पूरे चढ़ावे के प्रतीक के रूप में मुट्ठी भर निकाल ले और उसे प्रभु को अर्पित अन्य चढ़ावों के साथ भस्म करे। यह प्रायश्चित-बलि है।</span> <sup>13</sup><span class='v-txt'>इस प्रकार याजक उसके किये हुए उपर्युक्त पापों की प्रायश्चित-विधि सम्पन्न करता है और उसे क्षमा दी जाती है।</span> <sup>14</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>15</sup><span class='v-txt'>&#039;&#039;यदि कोई व्यक्ति अपराध करता है, क्योंकि वह प्रभु को अर्पित पवित्र वस्तुओं के विषय में अनजाने पाप करता है, तो उसे क्षतिपूर्ति के रूप में अपने झुण्ड से एक अदोष मेढ़ा प्रभु को चढ़ाना होगा। यह क्षतिपूर्ति-बलि है। पशु का निर्धारित मूल्य चाँदी के पवित्र शेकेलों के अनुसार होगा।</span> <sup>16</sup><span class='v-txt'>उसे पवित्र वस्तुओं में की गयी कमी की क्षतिपूर्ति करनी है और उस में उसका पाँचवाँ भाग जोड़ कर पूरा-का-पूरा याजक को देना है। याजक क्षतिपूर्ति-बलि के रूप में मेढ़ा चढ़ा कर उसके लिए प्रायश्चित करता है और उसे क्षमा दी जाती है।</span> <sup>17</sup><span class='v-txt'>यदि कोई व्यक्ति अनजाने में प्रभु की किसी आज्ञा का उल्लंघन करता है और वह काम करता है, जिसे प्रभु ने मना किया है, तो वह दोषी है और उसे प्रायश्चित करना है।</span> <sup>18</sup><span class='v-txt'>उसे क्षतिपूर्ति के रूप में अपने झुण्ड से निर्धारित मूल्य का एक अदोष मेढ़ा याजक के पास ले आना है। याजक उसके लिए उस पाप का प्रायश्चित्त करता है, जिसे उसने असावधानी से अनजाने किया है और उसे क्षमा दी जाती है।</span> <sup>19</sup><span class='v-txt'>उसने प्रभु के प्रति जो पाप किया था, वह उसकी क्षतिपूर्ति-बलि है।</span> <sup>20</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>21</sup><span class='v-txt'>&#039;&#039;यदि कोई व्यक्ति पाप और प्रभु के साथ विश्वासघात करता है, क्योंकि वह किसी देश-भाई द्वारा धरोहर के रूप में या यों ही सौंपी हुई या चोरी में प्राप्त वस्तु के विषय में झूठ बोलता हैः यदि वह अपने देश-भाई पर अत्याचार करता है या</span> <sup>22</sup><span class='v-txt'>झूठी शपथ खाकर अस्वीकार करता है कि उसे कोई खोयी हूई वस्तु मिल गयी है, या इस प्रकार कोई अपराध करता है,</span> <sup>23</sup><span class='v-txt'>तो जो इस प्रकार का पाप करता और दोषी बनता है, उसे चोरी में या अत्याचार द्वारा या धरोहर के रूप में प्राप्त या खोयी हूई वस्तु लौटानी है।</span> <sup>24</sup><span class='v-txt'>और जिसके विषय में उसने झूठी शपथ खायी, उसे भी लौटाना है। उन सब वस्तुओं के मूल्य का पाँचवाँ भाग जोड़ कर उसे क्षतिपूर्ति-बलि के दिन उसके स्वामी को लौटाना है।</span> <sup>25</sup><span class='v-txt'>इसके अतिरिक्त उसे क्षतिपूर्ति के रूप में अपने झुण्ड से निर्धारित मूल्य का एक अदोष मेढ़ा प्रभु को चढ़ाना होगा।</span> <sup>26</sup><span class='v-txt'>वह पशु को याजक के सामने उसके किये अपराध की प्रायश्चित-विधि सम्पन्न करेगा।&#039;&#039;</span> </p>
+        <div class='nav'><a href='003004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='003006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

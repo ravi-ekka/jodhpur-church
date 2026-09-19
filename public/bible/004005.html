@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;इस्राएलियों को आदेश दो कि वे प्रत्येक चर्मरोगी और प्रत्येक व्यक्ति को, जो स्राव से पीड़ित अथवा जो शव का स्पर्ष करने के कारण अपवित्र हो गया है, शिविर से बाहर कर दें।</span> <sup>3</sup><span class='v-txt'>ऐसे लोगों को - चाहे पुरुष हों या स्त्रियाँ - बाहर कर दो। उन्हें शिविर से बाहर कर दो, जिससे शिविर अपवित्र न हो जाये, जिस में मैं तुम लोगों के बीच निवास करता हूँ।&#039;&#039;</span> <sup>4</sup><span class='v-txt'>इस्राएलियों ने ऐसा ही किया और उन्हें शिविर से बाहर कर दिया। प्रभु ने मूसा को जैसा कह दिया था, इस्राएलियों ने वैसा ही किया।</span> <sup>5</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>6</sup><span class='v-txt'>&#039;&#039;इस्राएलियों से कहो कि यदि कोई पुरुष या स्त्री किसी के साथ अन्याय करता है और इस प्रकार ईश्वर के साथ विश्वासघात करता है, तो वह दोषी है।</span> <sup>7</sup><span class='v-txt'>वह अपना पाप स्वीकार करे और अपने द्वारा की गयी हानि की पूरी क्षतिर्पूति करे और उस में पाँचवाँ हिस्सा जोड़ कर उस व्यक्ति को दे, जिसके साथ उसने अन्याय किया।</span> <sup>8</sup><span class='v-txt'>यदि उस व्यक्ति का कोई निकट सम्बन्धी न हो, जिसे क्षतिर्पूति का द्रव्य दिया जा सके, तो वह द्रव्य प्रभु का है और वह याजक को क्षतिपूर्ति-यज्ञ के साथ दे दिया जाये।</span> <sup>9</sup><span class='v-txt'>&#039;&#039;जो चढ़ावे इस्राएली याजक के पास ले जाते हैं, उन सब का एक भाग याजक का होगा।</span> <sup>10</sup><span class='v-txt'>हर एक का चढ़ावा चढ़ाने वाले का है, किन्तु वह याजक को जो देता है, वह याजक का होगा।&#039;&#039;</span> <sup>11</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>12</sup><span class='v-txt'>&#039;&#039;इस्राएलियों से कहो कि यदि किसी पुरुष की पत्नी पथभ्रष्ट हो कर उसके साथ विश्वासघात करते हुए</span> <sup>13</sup><span class='v-txt'>परपुरुष के साथ प्रसंग करे और उसके पति को इसकी जानकारी न हो, क्योंकि दोष लगाने वाले साक्षी के अभाव के कारण उसका व्यभिचार छिपा रह गया</span> <sup>14</sup><span class='v-txt'>और यदि पति को ईर्ष्या के कारण अपनी पत्नी पर सन्देह हो गया और वह पथभ्रष्ट हो- अथवा यदि वह ईर्ष्या के कारण अपनी पत्नी पर संदेह और वह निर्दोष हो-</span> <sup>15</sup><span class='v-txt'>तो वह अपनी पत्नी को याजक के पास ले आये और उसके लिए चढ़ावे के रूप में दो सेर जौ का मैदा भी ले आये। वह उस चढ़ावे पर न तो तेल डाले और न लोबान ही रखे; क्योंकि वह ईर्ष्या की अन्न-बलि, पाप का स्मरण दिलाने वाला चढ़ावा है।</span> <sup>16</sup><span class='v-txt'>&#039;&#039;याजक स्त्री को प्रभु के सामने उपस्थित करने के लिए ले आये।</span> <sup>17</sup><span class='v-txt'>वह मिट्टी के एक पात्र में आशिष का जल भरे और तम्बू के फ़र्ष की थोड़ी-सी धूल जल में डाल दे।</span> <sup>18</sup><span class='v-txt'>इसके बाद याजक उस स्त्री को प्रभु के सामने खड़ा करे, उसके सिर के बाल खोल दे और उसके हाथ में पाप का स्मरण दिलाने वाला चढ़ावा, ईर्ष्या की अन्न-बलि रख दे और अपने हाथ में कड़वा शाप लाने वाला जल लिये रहे।</span> <sup>19</sup><span class='v-txt'>तब याजक स्त्री को शपथ खिलाते हुए उस से कहे, यदि तुम्हारे साथ किसी परपुरुष का प्रसंग नहीं हुआ, यदि तुम पति के रहते पथभ्रष्ट और अपवित्र नहीं हुई हो, तो यह शाप लाने वाला कड़वा जल तुम्हारी कोई हानि नहीं करे।</span> <sup>20</sup><span class='v-txt'>परन्तु यदि तुम पति के रहते हुए पथभ्रष्ट और अपवित्र हो गयी हो, क्योंकि परपुरुष का तुम्हारे साथ प्रसंग हुआ है-</span> <sup>21</sup><span class='v-txt'>अब याजक यह कहते हुए स्त्री को अभिशाप की शपथ खिलाये - &#039;तो प्रभु तुम्हारा नाम अपने लोगों में घृणास्पद और अभिशप्त बना दे; वह तुम्हारी जाँघे धुलाये और तुम्हारा पेट फुला दे।</span> <sup>22</sup><span class='v-txt'>यह शाप लाने वाला जल तुम्हारे अन्दर जा कर तुम्हारा पेट फुलाये और तुम्हारी जाँघें धुला दे। इस पर स्त्री कहे, &#039;ऐसा ही हो।&#039;</span> <sup>23</sup><span class='v-txt'>इसके बाद याजक एक काग़ज पर अभिशाप के ये शब्द लिख कर उन्हें कड़वे जल से धोये</span> <sup>24</sup><span class='v-txt'>और वह अभिशाप लाने वाला कड़वा जल स्त्री को पिलायें, जिससे वह जल उसके शरीर में जा कर असह्य पीड़ा उत्पन्न करे।</span> <sup>25</sup><span class='v-txt'>तब याजक ईर्ष्या की अन्न-बलि स्त्री के हाथ से ले ले और वेदी के पास जा कर उसे हिला-हिला कर प्रभु को अर्पित करे।</span> <sup>26</sup><span class='v-txt'>वह उस में से समूची अन्न-बलि के प्रतीक के रूप में मुट्ठी-भर ले कर उसे वेदी पर जलाये। इसके बाद वह स्त्री को वह जल पिला दे।</span> <sup>27</sup><span class='v-txt'>यदि उसने अपराध किया और अपने पति के साथ विश्वासघात किया, तो वह शाप लाने वाला जल, जो याजक उसे पिलाता है, उस में असह्य पीड़ा उत्पन्न करेगा। स्त्री का पेट फूल जायेगा, उसकी जाँघें धुल जोयेंगी और उसका नाम उसके लोगों में अभिशप्त हो जायेगा।</span> <sup>28</sup><span class='v-txt'>यदि उस स्त्री ने अपराध नहीं किया और उसका आचरण निर्दोष रहा, तब उसे कुछ नहीं होगा और वह गर्भ धारण कर सकेगी।</span> <sup>29</sup><span class='v-txt'>&#039;&#039;यह ईर्ष्या की विधि है, जब कोई स्त्री पथभ्रष्ट और पति के रहते अपवित्र हो जाती है</span> <sup>30</sup><span class='v-txt'>अथवा यदि पति के मन में ईर्ष्या उत्पन्न हो जाती है, क्योंकि वह अपनी पत्नी पर सन्देह करता हैं। वह उसे प्रभु के सामने उपस्थित करेगा और याजक उसके साथ वही करेगा, जो यहाँ लिखा है।</span> <sup>31</sup><span class='v-txt'>पुरुष को अपराध नहीं लगता, पर स्त्री अपने अपराध का फल भोगेगी।&#039;&#039;</span> </p>
+        <div class='nav'><a href='004004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

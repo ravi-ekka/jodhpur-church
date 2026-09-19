@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>दानिएल - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>दानिएल</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>राजा बेलशस्सर ने अपने एक हज़ार सामन्तों को एक बड़ा भोज दिया।</span> <sup>2</sup><span class='v-txt'>वह उन हजार अतिथियों के साथ अंगूरी पी रहा था और उसकी अंगूरी के नशे में सोने और चांदी के वे पात्र ले आने का आदेश दिया, जिन्हें उसके पिता नबूकदनेज़र ने येरूसालेम के मंदिर से चुरा लिया था।  वह अपने सामन्तों, आपनी पत्नियों और उपपत्नियों के साथ उन में पीना चाहता था।</span> <sup>3</sup><span class='v-txt'>इसलिए येरूसालेम के मंदिर से चुराये हुए सोने और चाँदी के पात्र लाये गये और राजा अपने सामन्तों, अपनी पत्नियों और उपपत्नियों के साथ उन में पीने लगा।</span> <sup>4</sup><span class='v-txt'>अंगूरी पीते समय वे सोने, चाँदी, पीतल, लोहे, लकड़ी और पत्थर के देवताओं की प्रशंसा करते जाते थे।</span> <sup>5</sup><span class='v-txt'>उस समय एक मनुष्य के हाथ की ऊँगलियाँ दिखाई पड़ी और वे दीपाधार के सामने, राजभवन की पुती हुई दीवार पर कुछ लिखने लगी।  राजा ने लिखने वाला हाथ देखा।</span> <sup>6</sup><span class='v-txt'>उसका रंग उड़ गया, वह बहुत घबराया, उसके पैर काँपने और उसके घुटने एक दूसरे से टकराने लगे।</span> <sup>7</sup><span class='v-txt'>राजा तान्त्रिकों, खल्दैयियों और ज्योतिशियों को बुला लाने के लिए जोर से चिल्ला उठा।  बाबुल के विद्वानों को सम्बोधिक करते हुए कहा उसने कहा, &quot;जो यह लेख पढ़ लेगा और उसका अर्थ बता सकेगा, मैं उसे राजसी वस्त्रों से सम्मानित करूँगा, उसके गले में सोने  का हार पहनाऊँगा और राज्य में तृतीय स्थान प्रदान करूँगा।&#039;&#039;</span> <sup>8</sup><span class='v-txt'>तब राज्य के सभी विद्वान उपस्थित हुए, किन्तु वे न तो लेख पढ़ सके और न उसका अर्थ बता सके।</span> <sup>9</sup><span class='v-txt'>इस पर राजा बेलशस्सर और अधिक घबरा गया और उसका चेहरा पीला पड़ गया।  उसके सामन्त भी किंकर्तव्यविमूढ़ हो गये।</span> <sup>10</sup><span class='v-txt'>राजा और सामन्त आपस में बातचीत कर ही रहे थे राजमाता भोजन-कक्ष में पहुँची।  वह बोली, ’महाराज चिरायु हो! आप क्यों घबरा रहे हैं?  आपके चेहरे का रंग इतना फीका क्यों है?</span> <sup>11</sup><span class='v-txt'>आपके राज्य में एक मनुष्य ऐसा है, जिस में सर्वोच्य ईश्वर का आत्मा विद्यमान है।  आपके पिता के समय वह अपनी प्रखर बुद्धि और देवताओं-जैसी विवेक-शक्ति के कारण प्रसिद्ध था।  आपके पिता, राजा नबूकदनेज़र ने उसे जादूगरों, ओझाओं, खल्दैयियों और ज्योतिशियों का अध्यक्ष बना दिया था।</span> <sup>12</sup><span class='v-txt'>आपके पिता ने उसके दिव्य ज्ञान के कारण उसे बेल्टशस्सर नाम दे दिया था।  उसे विद्या और विवेक, स्वप्नों का अर्थ बताने की कला, पहेलियों को समझने की शक्ति और समस्याओं का समाधान करने का सामर्थ्य प्राप्त हैं।  दानिएल को बुलाया जाये, जिससे वह लेख का अर्थ बताये।’</span> <sup>13</sup><span class='v-txt'>जब दानिएल राजा के सामने लाया गया, तो राजा ने उस से कहा, &quot;क्या तुम दानिएल हो, यूदा के उस निर्वासितों में से एक, जिन्हें राजा, मेरे पिता, यूदा से ले आये थे?</span> <sup>14</sup><span class='v-txt'>मैंने तुम्हारे विषय में सुना है कि देवताओं का आत्मा तुम में विद्यमान है और यह कि तुम अंर्तज्योति, विवेक और असाधारण प्रज्ञा से सम्पन्न हो।</span> <sup>15</sup><span class='v-txt'>देखो, विद्वान, ओझा यह लेख पढ़ने और इसका अर्थ बताने के लिए मेरे सामने बुलाये गये हैं, किन्तु वे उसकी विषय-वस्तु का अर्थ बताने में असफल रहे।</span> <sup>16</sup><span class='v-txt'>लोगों ने तुम्हारे विषय में मुझे बताया है कि तुम स्वप्नों की व्याख्या कर सकते और समस्याओं को सुलझा सकते हो।  यदि तुम यह लेख पढ़ कर इसका अर्थ समझाा सकते हो, तो तुम बैंगनी वस्त्र पहनोगे, गले में सोने का हार धारण करोगे और राज्य के तीसरे स्थान पर विराजमान होगे।&#039;&#039;</span> <sup>17</sup><span class='v-txt'>दानिएल ने राजा को यह उत्तर दिया, &quot;आप अपने उपहार अपने ही पास रखें और दूसरों को अपने पुरस्कार प्रदान करें।  फिर भी मैं राजा के लिए यह लेख पढूँगा और उन्हें इसका अर्थ समझाऊँगा।</span> <sup>18</sup><span class='v-txt'>राजा! सर्वोच्य ईश्वर ने आपके पिता नबूकदनेज़र को राजत्व, महानता, कीर्ति और वैभव प्रदान किये थे।</span> <sup>19</sup><span class='v-txt'>ईश्वरप्रदत्त महानता के कारण सब भाषा-भाषी जातियाँ और राष्ट्र उस से थरथर काँपते और डरते थे।  वह जिसे चाहता उसका वध करता और जिसे चाहता, उसे जीवित रहने देता।  वह जिसे चाहता, उसे ऊपर उठाता और जिसे चाहता, उसे नीचे गिराता।</span> <sup>20</sup><span class='v-txt'>किन्तु उसका मन अहंकार से फूल उठा और उसका हृदय कठोर हो गया तथा उसका व्यवहार उद्धत हो गया।  तब वह राजसिंहासन से उतार दिया गया और उसका ऐश्वर्य उस से छीन लिया गया।</span> <sup>21</sup><span class='v-txt'>वह मानव-समाज से बहिष्कृत हो कर पशु की तरह व्यवहार करने लगा।  वह जंगली गधों के साथ रहता और बैल की तरह घास खाता तथा उसका शरीर ओस से भीगा रहता था।  यह सब तब तक होता रहा, जब तक उसे अनुभव नहीं हुआ कि सर्वोच्य ईश्वर का मनुष्यों के राज्य पर अधिकार  है और वह जिसे चाहे उस पर नियुक्त कर सकता है।</span> <sup>22</sup><span class='v-txt'>किंतु आप, उसके पुत्र बेलशस्सर ने यह सब जानते हुए भी अपना हृदय विनम्र नहीं बनाया,</span> <sup>23</sup><span class='v-txt'>बल्कि आपने स्वर्ग के प्रभु का विरोध किया।  आपने उसके मंदिर के पात्र लाने का आदेश दिया; आपने अपने सामन्तों, अपनी पत्नियों और उपपत्नियों के साथ उन में अंगूरी का पान किया; आपने सोने, चांदी, पीतल, लोहे, लकड़ी और पत्थर के उन देवताओं की प्रशंसा की, जो न तो देखते हैं, न सुनते और न समझते हैं&#039;। आपने इस ईश्वर की स्तुति नहीं की, जिसके हाथ में आपके प्राण और समस्त जीवन निहित हैं।</span> <sup>24</sup><span class='v-txt'>इसलिए उसने यह हाथ भेज कर यह लेख लिखवाया।</span> <sup>25</sup><span class='v-txt'>यह लेख इस प्रकार है- मने, मने, तकेल, और फरसीन।</span> <sup>26</sup><span class='v-txt'>इन शब्दों का अर्थ इस प्रकार है।  मनेः ईश्वर ने आपके राज्य के दिनों की गिनती की और उसे सामप्त कर दिया।</span> <sup>27</sup><span class='v-txt'>तकेलः आप तराजू प तौले गये और आपका वजन कम पाया गया।</span> <sup>28</sup><span class='v-txt'>फरसीनः आपका राज्य विभाजित हो कर मेदियों और फारसियों को दे दिया गया है।&quot;</span> <sup>29</sup><span class='v-txt'>तब बेलशस्सर की आज्ञा से दानिएल पर राजसी वस्त्री पहनाये गये, उसके गले में सोने का हार डाला गया और उसके विषय में यह घोषणा करायी गयी कि उसका पद राज्य में तीसरे शासक का होगा।</span> <sup>30</sup><span class='v-txt'>(30-31) उसी राज को खल्दैयियों के राजा बेलशस्सर की हत्या हो गयी</span> </p>
+        <div class='nav'><a href='034004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='034006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

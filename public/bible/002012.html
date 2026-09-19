@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>निर्गमन - अध्याय 12</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>निर्गमन</h1>
+        <h2>अध्याय 12</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मिस्र देश में मूसा और हारून से कहा,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;यह तुम्हारे लिए आदिमास होगा; तुम इसे वर्ष का पहला महीना मान लो।</span> <sup>3</sup><span class='v-txt'>इस्राएल के सारे समुदाय को यह आदेश दो - इस महीने के दसवें दिन हर एक परिवार एक एक मेमना तैयार रखेगा।</span> <sup>4</sup><span class='v-txt'>यदि मेमना खाने के लिए किसी परिवार में कम लोग हों, तो जरूरत के अनुसार पास वाले घर से लोगों को बुलाओ। खाने वालों की संख्या निश्चित करने में हर एक की खाने की रुचि का ध्यान रखो।</span> <sup>5</sup><span class='v-txt'>उस मेमने में कोई दोष न हो। वह नर हो और एक साल का। वह भेड़ा हो अथवा बकरा।</span> <sup>6</sup><span class='v-txt'>महीने के दसवें दिन तक उसे रख लो। शाम को सब इस्राएली उसका वध करेंगे।</span> <sup>7</sup><span class='v-txt'>जिन घरों में मेमना खाया जायेगा, दरवाजों की चौखट पर उसका लोहू पोत दिया जाये।</span> <sup>8</sup><span class='v-txt'>उसी रात बेखमीर रोटी और कड़वे साग के साथ मेमने का भूना हुआ मांस खाया जायेगा।</span> <sup>9</sup><span class='v-txt'>इस में से कच्चा या उबला हुआ कुछ मत खाओं, बल्कि सिर, पैरों और अँतड़ियों के साथ पूरे को आग में भून कर खाओं।</span> <sup>10</sup><span class='v-txt'>अगले दिन के लिए कुछ भी नहीं रखा जायेगा। जो कुछ बच गया हो, उसे भोर के पहले ही जला दोगे।</span> <sup>11</sup><span class='v-txt'>तुम लोग चप्पल पहन कर, कमर कस कर तथा हाथ में डण्डा लिये खाओगे। तुम जल्दी-जल्दी खाओगे, क्योंकि यह प्रभु का पास्का है।</span> <sup>12</sup><span class='v-txt'>उसी रात मैं, प्रभु मिस्र देश का परिभ्रमण करूँगा, मिस्र देश में मनुष्यों और पशुओं के सभी पहलौठे बच्चों को मार डालूँगा और मिस्र के सभी देवताओं को भी दण्ड दूँगा।</span> <sup>13</sup><span class='v-txt'>तुम लोहू पोत कर दिखा दोगे कि तुम किन घरों में रहते हो। वह लोहू देख कर मैं तुम लोगों को छोड़ दूँगा, इस तरह जब मैं मिस्र देश को दण्ड दूँगा, तुम विपत्ति से बच जाओगे।</span> <sup>14</sup><span class='v-txt'>तुम उस दिन का स्मरण रखोगे और उसे प्रभु के आदर में पर्व के रूप में मनाओगे। तुम उसे सभी पीढ़ियों के लिए अनन्त काल तक पर्व घोषित करोगे।</span> <sup>15</sup><span class='v-txt'>तुम्हें सात दिन बेखमीर रोटी खानी होगी। तुम पहले दिन अपने घरों से ख़मीर बाहर कर दो यदि कोई पहले और सातवें दिन के बीच ख़मीरी रोटी खायेगा, तो वह इस्राएली समुदाय से बहिष्कृत कर दिया जायेगा।</span> <sup>16</sup><span class='v-txt'>पहले और सातवें दिन तुम धर्म-सभा करोगे। अपने लिए भोजन के प्रबन्ध के सिवा इन दिनों कोई दूसरा काम नहीं करोगे।</span> <sup>17</sup><span class='v-txt'>तुम्हें बेख़मीर रोटियों का पर्व मनाना होगा, क्योंकि वह वही दिन होगा, जिस दिन मैं तुम्हारे सारे समुदाय को मिस्र देश से निकाल लाया हूँ। इसीलिए तुम यह दिन चिरस्थायी आदेश के रूप में पीढ़ी-दर-पीढ़ी मनाना।</span> <sup>18</sup><span class='v-txt'>पहले महीने के चौदहवें दिन की शाम से इस महीने के इक्कीसवें दिन की शाम तक तुम्हें बेखमीर रोटी खानी होगी।</span> <sup>19</sup><span class='v-txt'>सात दिन तक तुम्हारे घरों में कोई ख़मीर न हो। यदि कोई ख़मीरी रोटी खायेगा, तो वह इस्राएली समुदाय से बहिष्कृत किया जायेगा - चाहे वह प्रवासी हो, चाहे इस्राएली।</span> <sup>20</sup><span class='v-txt'>तुम कोई ख़मीरी रोटी मत खाना। अपने सब निवासस्थानों में तुम बेख़मीर रोटी ही खाना।&#039;&#039;</span> <sup>21</sup><span class='v-txt'>मूसा ने सभी इस्राएली नेताओं को बुला कर उन से कहा, &#039;&#039;अपने-अपने परिवारों के लिए मेमनों का प्रबन्ध करने जाओं और पास्का-मेमने का वध करो।</span> <sup>22</sup><span class='v-txt'>तब तुम जूफ़ा का गुच्छा बरतन में रखे हुए रक्त में डुबाओं और बरतन का रक्त चौखट और द्वार के दोनों बाजुओं पर लगाओं। तुम लोगों में कोई सबेरे तक अपने घर के द्वार से बाहर न निकले।</span> <sup>23</sup><span class='v-txt'>प्रभु देश का परिभ्रमण करते हुए मिस्रियों को मार डालेगा। जब वह चौखट और द्वार के दोनों बाजुओं पर वह रक्त देखेगा, तो वह उस द्वार के सामने से आगे निकल जायेगा और तुम्हें मारने के लिए विनाशक को तुम्हारे घर के अन्दर जाने नहीं देगा।</span> <sup>24</sup><span class='v-txt'>तुम और तुम्हारी सन्तान एक चिरस्थायी प्रथा के रूप में इस आदेश का पालन करती रहेगी।</span> <sup>25</sup><span class='v-txt'>जब तुम उस देश में प्रवेश करोगे, जिसे प्रभु अपनी प्रतिज्ञा के अनुसार तुम्हें प्रदान करेगा, तो तुम इस प्रथा का पालन करते रहो।</span> <sup>26</sup><span class='v-txt'>यदि तुम्हारी सन्तान तुम से पूछेगी कि आपकी इस प्रथा का क्या अर्थ है,</span> <sup>27</sup><span class='v-txt'>तो तुम उस से कहोगे : यह प्रभु के आदर में पास्का का बलिदान है। जब प्रभु ने मिस्रियों को मारा था, तो वह मिस्र में रहने वाले इस्राएलियों के घरों के सामने से आगे निकल गया था और उसने हमारे घरों को छोड़ दिया था।&#039;&#039; यह सुन कर लोगों ने घुटने टेक कर दण्डवत् किया।</span> <sup>28</sup><span class='v-txt'>इसके बाद इस्राएली लोग ऐसा ही करने लगे। प्रभु ने मूसा और हारून को जैसी आज्ञा दी थी, उन्होंने वैसा ही किया।</span> <sup>29</sup><span class='v-txt'>प्रभु ने आधी रात को मिस्र देश के सब पहलौठों-सिंहासन पर विराजमान फिराउन के पहलौठे से ले कर बन्दीगृह में पड़े हुए कैदी के पहलौठे और पशुओं के पहलौठे बच्चों तक को मार डाला।</span> <sup>30</sup><span class='v-txt'>रात में फिराउन, उसके सब पदाधिकारी और सब मिस्री जाग गये। मिस्र में बड़ा हाहाकार मच गया, क्योंकि ऐसा एक भी घर नहीं था, जिस में कोई न मरा हो।</span> <sup>31</sup><span class='v-txt'>तब रात में ही फिराउन ने मूसा और हारून को बुलवा कर कहा, &#039;&#039;उठो, तुम दोनों इस्राएलियों को ले कर मेरी प्रजा के यहाँ से चले जाओ। जाओ, तुमने जैसा कहा था, वैसे ही प्रभु की पूजा करो।</span> <sup>32</sup><span class='v-txt'>जैसा तुमने कहा, अपनी भेड़-बकरियों, अपने गाय-बैलों को भी लेते जाओ। अब जाओ और मुझे आशीर्वाद दो।&#039;&#039;</span> <sup>33</sup><span class='v-txt'>इस समय मिस्री उन लोगों को जल्द से जल्द देश से बाहर निकाल देना चाहते थे, क्योंकि वे सोचते थे कि कहीं ऐसा न हो कि हम सब भी मर जायें।</span> <sup>34</sup><span class='v-txt'>इसलिए लोगों ने अपना आटा, खमीरी होने के पहले सिर्फ गूँध हुये रूप में, ले लिया और गूँधने के बरतनों को भी उपनी-अपनी चादरों में बाँध कर कन्धों पर रख लिया।</span> <sup>35</sup><span class='v-txt'>मूसा के कहने के अनुसार इस्राएलियों ने मिस्रियों से चाँदी, सोने के आभूषण और कपड़े भी माँग लिये।</span> <sup>36</sup><span class='v-txt'>प्रभु ने मिस्रियों की दृष्टि में इस्राएलियों को कृपापात्र बना दिया; इसलिए उन्होंने जो कुछ माँगा, मिस्रियों ने उन्हें दे दिया। इस तरह उन्होंने मिस्रियों को लूट लिया।</span> <sup>37</sup><span class='v-txt'>इस्राएलियों ने रामसेस से सुक्कोत की ओर प्रस्थान किया। बच्चों और स्त्रियों के अतिरिक्त पैदल चलने वाले पुरुषों की संख्या लगभग छः लाख थी।</span> <sup>38</sup><span class='v-txt'>बहुत से परदेशी उनके साथ हो लिये और भेड़-बकरियों तथा बैल-गायों के बहुत भारी झुण्ड भी।</span> <sup>39</sup><span class='v-txt'>वे मिस्र से जो गूँधा हुआ आटा अपने साथ ले गये थे, उन्होंने उसकी बेखमीर रोटियाँ पकायी। उनके पास खमीर नहीं था, क्योंकि वे इतनी जल्दी में मिस्र से निकाल दिये गये थे कि उन्हें रास्ते के लिए भोजन तैयार करने का समय तक नहीं मिला था।</span> <sup>40</sup><span class='v-txt'>इस्राएली चार सौ तीस वर्ष तक मिस्र में रहे थे।</span> <sup>41</sup><span class='v-txt'>जिस दिन ये चार सौ तीस वर्ष समाप्त हुए, उसी दिन प्रभु की समस्त प्रजा मिस्र से निकल गयी।</span> <sup>42</sup><span class='v-txt'>प्रभु उस रात जागरण करता रहा, जिससे वह इस्राएलियों को मिस्र से बाहर ले जाये। इसलिए समस्त इस्राएली पीढ़ी दर पीढ़ी उसी रात को प्रभु के आदर में जागरण करते है।</span> <sup>43</sup><span class='v-txt'>प्रभु ने मूसा और हारून को यह आज्ञा दी, &#039;&#039;पास्का भोज-सम्बन्धी आदेश यह है कि कोई भी विदेशी उस में सम्मिलित न हो;</span> <sup>44</sup><span class='v-txt'>लेकिन तुम्हारे द्वारा ख़तना किये जाने के बाद तुम्हारा कोई भी दास उस में सम्मिलित हो सकता है।</span> <sup>45</sup><span class='v-txt'>कोई भी विदेशी या मज़दूरी करने वाला नौकर उस में सम्मिलित नहीं होगा।</span> <sup>46</sup><span class='v-txt'>वह एक ही घर के अन्दर खाया जायेगा। तुम उसके मांस का कुछ भी घर के बाहर नहीं ले जाओगे। तुम उसकी एक भी हड्डी नहीं तोड़ोगे।</span> <sup>47</sup><span class='v-txt'>इस्राएलियों का सारा समुदाय यह पर्व मनायेगा।</span> <sup>48</sup><span class='v-txt'>यदि तुम्हारे साथ प्रवासी के समान रहते हुए कोई विदेशी प्रभु के लिए पास्का मनाना चाहता हो, तो उसके यहाँ प्रत्येक पुरुष का ख़तना किया जाये। इसके बाद ही वह उस में सम्मिलित हो सकेगा, क्योंकि तब वह देश का निवासी समझा जायेगा। कोई बेख़तना व्यक्ति उसे नहीं खा सकेगा।</span> <sup>49</sup><span class='v-txt'>मूल निवासी और तुम्हारे साथ रहने वाले विदेशी, दोनों के लिए यह नियम लागू होगा।</span> <sup>50</sup><span class='v-txt'>सब इस्राएलियों ने ऐसा ही किया। प्रभु ने मूसा और हारून को जैसी आज्ञा दी थी, लोगों ने भी वैसा ही किया।</span> <sup>51</sup><span class='v-txt'>उसी दिन प्रभु इस्राएलियों को, उनके पूरे समुदाय को, मिस्र देश से बाहर निकाल लाया।</span> </p>
+        <div class='nav'><a href='002011.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='002013.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

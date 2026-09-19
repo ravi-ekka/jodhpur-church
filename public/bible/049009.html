@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ईसा ने बारहों को बुला कर उन्हें सब अपदूतों पर सामर्थ्य तथा अधिकार दिया और रोगों को दूर करने की शक्ति प्रदान की।</span> <sup>2</sup><span class='v-txt'>तब ईसा ने उन्हें ईश्वर के राज्य का सुसमाचार सुनाने और बीमारों को चंगा करने भेजा।</span> <sup>3</sup><span class='v-txt'>उन्होंने उन से कहा, &quot;रास्ते के लिए कुछ भी न ले जाओ-न लाठी, न झोली, न रोटी, न रुपया।  अपने लिए दो कुरते भी न रखो।</span> <sup>4</sup><span class='v-txt'>जिस घर में ठहरने जाओ, नगर से विदा होने तक वहीं रहो।</span> <sup>5</sup><span class='v-txt'>यदि लोग तुम्हारा स्वागत न करें, तो उनके नगर से निकलने पर उन्हें चेतावनी देने के लिए अपने पैरों की धूल झाड़ दो।&quot;</span> <sup>6</sup><span class='v-txt'>वे चले गये और सुसमाचार सुनाते तथा लोगों को चंगा करते हुए गाँव-गाँव घूमते रहे।</span> <sup>7</sup><span class='v-txt'>राजा हेरोद उन सब बातों की चर्चा सुन कर असमंजस में पड़ गया, क्योंकि कुछ लोग कहते थे कि योहन मृतकों में से जी उठा है।</span> <sup>8</sup><span class='v-txt'>कुछ कहते थे कि एलियस प्रकट हुआ है और कुछ लोग कहते थे कि पुराने नबियों में से कोई जी उठा है।</span> <sup>9</sup><span class='v-txt'>हरोद ने कहा, &quot;योहन का तो मैंने सिर कटवा दिया।  फिर यह कौन है, जिसके विषय में ऐसी बातें सुनता हूँ?&quot; और वह ईसा को देखने के लिए उत्सुक था।</span> <sup>10</sup><span class='v-txt'>प्रेरितों ने लौट कर ईसा को बताया कि हम लोगों ने क्या-क्या किया है।  वे उन्हें अपने साथ ले कर बेथसाइदा नगर की ओर एक निर्जन स्थान गये,</span> <sup>11</sup><span class='v-txt'>किन्तु लोगों को इसका पता चल गया और वे भी उनके पीछे हो लिये।  ईसा ने उनका स्वागत किया, ईश्वर के राज्य के विषय में उन को शिक्षा दी और बीमारों को अच्छा किया।</span> <sup>12</sup><span class='v-txt'>अब दिन ढलने लगा था।  बारहों ने उनके पास आ कर कहा, &quot;लोगों को विदा कीजिए, जिससे वे आसपास के गाँवों और बस्तियों में जा कर रहने और खाने का प्रबन्ध कर सकें।  यहाँ तो हम लोग निर्जन स्थान में हैं।&quot;</span> <sup>13</sup><span class='v-txt'>ईसा ने उन्हें उत्तर दिया, &quot;तुम लोग ही उन्हें खाना दो&quot;। उन्होंने कहा, &quot;हमारे पास तो केवल पाँच रोटियाँ और दो मछलियाँ हैं।  क्या आप चाहते हैं कि हम स्वयं जा कर उन सब के लिए खाना ख़रीदें?&quot;</span> <sup>14</sup><span class='v-txt'>वहाँ लगभग पाँच हज़ार पुरुष थे।  ईसा ने अपने शिष्यों से कहा, &quot;पचास-पचास कर उन्हें बैठा दो&quot;।</span> <sup>15</sup><span class='v-txt'>उन्होंने ऐसा ही किया और सब को बैठा दिया।</span> <sup>16</sup><span class='v-txt'>तब ईसा ने वे पाँच रोटियाँ और दो मछलियाँ ले लीं, स्वर्ग की ओर आँखें उठा कर उन पर आशिष की प्रार्थना पढ़ी और उन्हें तोड़-तोड़ कर वे अपने शिष्यों को देते गये ताकि वे उन्हें लोगों में बाँट दें।</span> <sup>17</sup><span class='v-txt'>सबों ने खाया और खा कर तृप्त हो गये, और बचे हुए टुकड़ों से बारह टोकरे भर गये।</span> <sup>18</sup><span class='v-txt'>ईसा किसी दिन एकान्त में प्रार्थना कर रहे थे और उनके शिष्य उनके साथ थे।  ईसा ने उन से पूछा, &quot;मैं कौन हूँ, इस विषय में लोग क्या कहते हैं?&quot;</span> <sup>19</sup><span class='v-txt'>उन्होंने उत्तर दिया, &quot;योहन बपतिस्ता; कुछ लोग कहतें-एलियस; और कुछ लोग कहते हैं-प्राचीन नबियों में से कोई पुनर्जीवित हो गया है&quot;।</span> <sup>20</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;और तुम क्या कहते हो कि मैं कौन हूँ?&quot; पेत्रुस ने उत्तर दिया, &quot;ईश्वर के मसीह&quot;।</span> <sup>21</sup><span class='v-txt'>उन्होंने अपने शिष्यों को कड़ी चेतावनी दी कि वे यह बात किसी को भी नहीं बतायें।</span> <sup>22</sup><span class='v-txt'>उन्होंने अपने शिष्यों से कहा, &quot;मानव पुत्र को बहुत दुःख उठाना होगा; नेताओं, महायाजकों और शास्त्रियों द्वारा ठुकराया जाना, मार डाला जाना और तीसरे दिन जी उठना होगा&quot;।</span> <sup>23</sup><span class='v-txt'>इसके बाद ईसा ने सबों से कहा, &quot;जो मेरा अनुसरण करना चाहता है, वह आत्मत्याग करे और प्रतिदिन अपना क्रूस उठा कर मेरे पीछे हो ले;</span> <sup>24</sup><span class='v-txt'>क्योंकि जो अपना जीवन सुरक्षित रखना चाहता है, वह उसे खो देता है, और जो मेरे कारण अपना जीवन खो देता है, वह उसे सुरक्षित रखेगा।</span> <sup>25</sup><span class='v-txt'>मनुष्य को इस से क्या लाभ, यदि वह सारा संसार तो प्राप्त कर ले, लेकिन अपना जीवन ही गँवा दे या अपना सर्वनाश कर ले?</span> <sup>26</sup><span class='v-txt'>जो मुझे तथा मेरी शिक्षा को स्वीकार करने में लज्जा अनुभव करेगा, मानव पुत्र भी उसे स्वीकार करने में लज्जा अनुभव करेगा, जब वह अपनी, अपने पिता तथा पवित्र स्वर्गदूतों की महिमा के साथ आयेगा।</span> <sup>27</sup><span class='v-txt'>मैं तुम लोगों से यह कहता हूँ - यहाँ कुछ ऐसे लोग विद्यमान हैं, जो तब तक नहीं मरेंगे, जब तक वे ईश्वर का राज्य न देख लें।&quot;</span> <sup>28</sup><span class='v-txt'>इन बातों के करीब आठ दिन बाद ईसा पेत्रुस, योहन और याकूब को अपने साथ ले गये और प्रार्थना करने के लिए एक पहाड़ पर चढ़े।</span> <sup>29</sup><span class='v-txt'>प्रार्थना करते समय ईसा के मुखमण्डल का रूपान्तरण हो गया और उनके वस्त्र उज्जवल हो कर जगमगा उठे।</span> <sup>30</sup><span class='v-txt'>दो पुरुष उनके साथ बातचीत कर रहे थे।  वे मूसा और एलियस थे,</span> <sup>31</sup><span class='v-txt'>जो महिमा-सहित प्रकट हो कर येरूसालेम में होने वाली उनकी मृत्यु के विषय में बातें कर रहे थे।</span> <sup>32</sup><span class='v-txt'>पेत्रुस और उसके साथी, जो ऊँघ रहे थे, अब पूरी तरह जाग गये।  उन्होंने ईसा की महिमा को और उनके साथ उन दो पुरुषों को देखा।</span> <sup>33</sup><span class='v-txt'>वे विदा हो ही रहे थे कि पेत्रुस ने ईसा से कहा, &quot;गुरूवर! यहाँ होना हमारे लिए कितना अच्छा है! हम तीन तम्बू खड़ा कर दें- एक आपके लिए, एक मूसा और एक एलियस के लिए।&quot; उसे पता नहीं था कि वह क्या कह रहा है।</span> <sup>34</sup><span class='v-txt'>वह बोल ही रहा था कि बादल आ कर उन पर छा गया और वे बादल से घिर जाने के कारण भयभीत हो गये।</span> <sup>35</sup><span class='v-txt'>बादल में से यह वाणी सुनाई पड़ी, &quot;यह मेरा परमप्रिय पुत्र है।  इसकी सुनो।&quot;</span> <sup>36</sup><span class='v-txt'>वाणी समाप्त होने पर ईसा अकेले ही रह गये।  शिष्य इस सम्बन्ध में चुप रहे और उन्होंने जो देखा था, उस विषय पर वे उन दिनों किसी से कुछ नहीं बोले।</span> <sup>37</sup><span class='v-txt'>दूसरे दिन जब वे पहाड़ से उतरे, तो एक विशाल जनसमूह ईसा से मिलने आया।</span> <sup>38</sup><span class='v-txt'>उस में एक मनुष्य ने पुकार कर कहा, &quot;गुरूवर! आप से मेरी यह प्रार्थना है कि आप मेरे पुत्र पर कृपादृष्टि करें। वह मेरा इकलौता है।</span> <sup>39</sup><span class='v-txt'>उसे अपदूत लग जाया करता है, जिससे वह अचानक चिल्ला उठता और फेन उगलता है, और उसका शरीर ऐंठने लगता है।  वह उसकी नस-नस तोड़ कर बड़ी मुश्किल से उस से निकलता है।</span> <sup>40</sup><span class='v-txt'>मैंने आपके शिष्यों से उसे निकालने की प्रार्थना की, परन्तु वे ऐसा नहीं कर सके।&quot;</span> <sup>41</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;अविश्वासी और दुष्ट पीढ़ी! मैं कब तक तुम्हारे साथ रहूँ? कब तक तुम्हें सहता रहूँ? अपने पुत्र को यहाँ ले आओ।&quot;</span> <sup>42</sup><span class='v-txt'>लड़का पास आ ही रहा था कि अपदूत ने उसे भूमि पर पटक कर मरोड़ दिया, किन्तु ईसा ने अशुद्ध आत्मा को डाँटा और लड़के को चंगा कर उसके पिता को सौंप दिया।</span> <sup>43</sup><span class='v-txt'>ईश्वर का यह प्रताप देख कर सब-के-सब विस्मय-विमुग्ध हो गये।  सब लोग ईसा के कार्यों को देख कर अचम्भे में पड़ जाते थे; किन्तु उन्होंने अपने शिष्यों से कहा,</span> <sup>44</sup><span class='v-txt'>&quot;तुम लोग मेरे इस कथन को भली भाँति स्मरण रखो-मानव पुत्र मनुष्यों के हवाले कर दिया जायेगा&quot;।</span> <sup>45</sup><span class='v-txt'>परन्तु यह बात उनकी समझ में नहीं आ सकी।  इसका अर्थ उन से छिपा रह गया और वे इसे नहीं समझ पाते थे।  इसके विषय में ईसा से प्रश्न करने में उन्हें संकोच होता था।</span> <sup>46</sup><span class='v-txt'>शिष्यों में यह विवाद छिड़ गया कि हम में सब से बड़ा कौन है।</span> <sup>47</sup><span class='v-txt'>ईसा ने उनके विचार जान कर एक बालक को बुलाया और उसे अपने पास खड़ा कर</span> <sup>48</sup><span class='v-txt'>उन से कहा, &quot;जो मेरे नाम पर इस बालक का स्वागत करता है, वह मेरा स्वागत करता है और जो मेरा स्वागत करता है, वह उसका स्वागत करता है, जिसने मुझे भेजा है; क्योंकि तुम सब में जो छोटा है, वही बड़ा है।&quot;</span> <sup>49</sup><span class='v-txt'>योहन ने कहा, “गुरूवर! हमने किसी को आपका नाम ले कर अपदूतों को निकालते देखा है और हमने उसे रोकने की चेष्टा की, क्योंकि वह हमारी तरह आपका अनुसरण नहीं करता“।</span> <sup>50</sup><span class='v-txt'>ईसा ने कहा, “उसे मत रोको।  जो तुम्हारे विरुद्ध नहीं है, वह तुम्हारे साथ हैं।“</span> <sup>51</sup><span class='v-txt'>अपने स्वर्गारोहण का समय निकट आने पर ईसा ने येरूसालेम जाने का निश्चय किया</span> <sup>52</sup><span class='v-txt'>और सन्देश देने वालों को अपने आगे भेजा।  वे चले गये और उन्होंने ईसा के रहने का प्रबन्ध करने समारियों के एक गाँव में प्रवेश किया।</span> <sup>53</sup><span class='v-txt'>लोगों ने ईसा का स्वागत करने से इनकार किया, क्योंकि वे येरूसालेम जा रहे थे।</span> <sup>54</sup><span class='v-txt'>उनके शिष्य याकूब और योहन यह सुन कर बोल उठे, &quot;प्रभु! आप चाहें, तो हम यह कह दें कि आकाश से आग बरसे और उन्हें भस्म कर दे&quot;।</span> <sup>55</sup><span class='v-txt'>पर ईसा ने मुड़ कर उन्हें डाँटा</span> <sup>56</sup><span class='v-txt'>और वे दूसरी बस्ती चले गये।</span> <sup>57</sup><span class='v-txt'>ईसा अपने शिष्यों के साथ यात्रा कर रहे थे कि रास्ते में ही किसी ने उन से कहा, &quot;आप जहाँ कहीं भी जायेंगे, मैं आपके पीछे-पीछे चलूँगा&quot;।</span> <sup>58</sup><span class='v-txt'>ईसा ने उसे उत्तर दिया, &quot;लोमडि़यों की अपनी माँदें हैं और आकाश के पक्षियों के अपने घोंसले, परन्तु मानव पुत्र के लिए सिर रखने को भी अपनी जगह नहीं है&quot;।</span> <sup>59</sup><span class='v-txt'>उन्होंने किसी दूसरे से कहा, &quot;मेरे पीछे चले आओ&quot;। परन्तु उसने उत्तर दिया, &quot;प्रभु! मुझे पहले अपने पिता को दफ़नाने के लिए जाने दीजिए&quot;।</span> <sup>60</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;मुरदों को अपने मुरदे दफनाने दो। तुम जा कर ईश्वर के राज्य का प्रचार करो।&quot;</span> <sup>61</sup><span class='v-txt'>फिर कोई दूसरा बोला, &quot;प्रभु! मैं आपका अनुसरण करूँगा, परन्तु मुझे अपने घर वालों से विदा लेने दीजिए&quot;।</span> <sup>62</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;हल की मूठ पकड़ने के बाद जो मुड़ कर पीछे देखता है, वह ईश्वर के राज्य के योग्य नहीं&quot;।</span> </p>
+        <div class='nav'><a href='049008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

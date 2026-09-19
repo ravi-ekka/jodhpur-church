@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>नहेम्या - अध्याय 11</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>नहेम्या</h1>
+        <h2>अध्याय 11</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जनता के नेता येरूसालेम में बस गये।  अन्य लोगों ने चिट्ठी डाल कर निश्चित किया कि प्रत्येक दसवाँ व्यक्ति पवित्र नगर येरूसालेम में बसेगा और शेष नौ अपने-अपने नगरों में।</span> <sup>2</sup><span class='v-txt'>लोगों ने उन सब को आशीर्वाद दिया, जिन्हें स्वेच्छापूर्वक येरूसालेम में बसना स्वीकार था।</span> <sup>3</sup><span class='v-txt'>प्रान्त के मुखिया, जो येरूसालेम में बस गये, ये हैं। (कुछ इस्राएली, याजक, लेवी और सुलेमान के सेवकों के वंशज अपने-अपने नगरों में, अपनी-अपनी भूमि पर निवास करते थे।)</span> <sup>4</sup><span class='v-txt'>यूदा और बेनयामीन के अन्य लोग येरूसालेम में निवास करते थे।) यूदावंशियों में: अताया था, जो उज़्ज़ीया का पुत्र था।  यह उज़्ज़ीया ज़कार्या का पुत्र था।  ज़कर्या अमर्या का, अमर्या शफ़ट्या का और शफ़ट्या महललएल का, जो पेरेस के वंशज थे।</span> <sup>5</sup><span class='v-txt'>फिर मासेया, जो बारूक का पुत्र था।  वह बारूक कोलहोजे़ का, होलहोजे़ हज़ाया का, हज़ाया अदाया का, अदाया योयारीब का और योयारीब ज़कर्या का पुत्र था, जो शेला का वंशज था।</span> <sup>6</sup><span class='v-txt'>येरूसालेम में रहने वाले पेरेस के वंशजों की कुल संख्या चार सौ अड़सठ योद्धा थी।</span> <sup>7</sup><span class='v-txt'>बेनयामीन के वंशजों में ये थेः  मशुल्लाम का पुत्र सल्लू। यह मशुल्लाम योएद का पुत्र था।  योएद पदाया का, पदाया कोलाया का, कोलाया मासेया का, मासेया इत्तीएल का औैर इत्तीएल यशाया का पुत्र था।</span> <sup>8</sup><span class='v-txt'>फिर गब्बय और सल्लयसब मिला कर नौ सौ अट्ठाईस।</span> <sup>9</sup><span class='v-txt'>ज़िक्री का पुत्र योएल उनका अध्यक्ष था और हस्सनुआ का पुत्र यूदा नगर की देखरेख करने वालों में उनका सहायक था।</span> <sup>10</sup><span class='v-txt'>याजकों में ये थेः योयारीब का पुत्र यदाया, फिर याकीन</span> <sup>11</sup><span class='v-txt'>और ईश्वर के भवन का अध्यक्ष और हिलकीया का पुत्र सराया।  यह मशुल्लाम का पुत्र था, मशुल्लाम सादोक का, सादोक मरायोत का और मरायोत अहीटूब का पुत्र था।</span> <sup>12</sup><span class='v-txt'>उनके साथ मन्दिर में सेवा करने वाले उनके भाई-बन्धु भी थे।  इस प्रकार कुल आठ सौ बाईस पुरुष थे।  फिर यदाया, जो यरोहाम का पुत्र था।  यह यरोहाम पलल्या का पुत्र था, पलल्या असमी का, असमी ज़कर्या का, ज़कर्या पशहूर का</span> <sup>13</sup><span class='v-txt'>और पशहूर मलकीया का तथा उसके भाई-बन्धु-ये कुल दो सौ बयालीस घरानों के मुखिया थे।  फिर अमशसय, जो अज़रएल का पुत्र था।  यह अज़रएल अहज़य का, अहज़य मशिल्लेमोत का, मशिल्लेमोत इम्मेर का।</span> <sup>14</sup><span class='v-txt'>और उनके भाई-बन्धु, जो एक सौ अट्ठाईस वीर योद्धा थे। उनका निरीक्षक हग्गदोलीम का पुत्र ज़ब्दीएल था।</span> <sup>15</sup><span class='v-txt'>लेवियों में ये थेः शमाया, जो हशूब का पुत्र था।  यह हशूब अज़्रीकाम का पुत्र था, अज्ऱीकाम हशब्या का और हशब्या बुन्नी का।</span> <sup>16</sup><span class='v-txt'>फिर शब्बतय और योज़ाबाद, जो उन लेवियों के मुखियाओं में थे, जो ईश्वर के मन्दिर के कार्यों का निरीक्षण करते थे।</span> <sup>17</sup><span class='v-txt'>फिर मीका का पुत्र, ज़ब्दी का पौत्र और आसफ़ का प्रपौत्र मत्तन्या था, जो प्रार्थना में अगुआ था।  बकबुक्या का स्थान अपने भाई-बन्धुओं में दूसरा था।  उसके साथ शम्मूआ का पुत्र अबदा था।  शम्मूआ यदूतून का और यदूतून गालाल का पुत्र था।</span> <sup>18</sup><span class='v-txt'>पवित्र नगर में कुल दो सौ चैरासी लेवी थे।</span> <sup>19</sup><span class='v-txt'>ये द्वारपाल थे: अक्कूब, टलमोन और इनके भाई-बन्धु, जो द्वारों पर पहरा देते थे-कुल एक सौ बहत्तर।</span> <sup>20</sup><span class='v-txt'>अन्य इस्राएली याजक और लेवी यूदा के सभी नगरों में अपने-अपने दायभाग की भूमि पर बसे थे।</span> <sup>21</sup><span class='v-txt'>मन्दिर के सेवक ओफ़ेल पर रहा करते थे।  मन्दिर के सेवकों के अध्यक्ष सीहा और गिशपा थे।</span> <sup>22</sup><span class='v-txt'>बानी का पुत्र उज़्ज़ीया येरूसालेम में रहने वाले लेवियों का निरीक्षक था।  बानी हशब्ब का पुत्र था।  हशब्या मत्तन्या का और मत्तन्या मीका का पुत्र था।  वह आसाफ़ के वंशजों में एक था, जो ईश्वर के मन्दिर में गायकों का काम करते थे।</span> <sup>23</sup><span class='v-txt'>उनके विषय में एक राजाज्ञा मिली, जिस में निर्धारित किया गया था कि उन्हें प्रतिदिन क्या गाना चाहिए।</span> <sup>24</sup><span class='v-txt'>यूदा के पुत्र सेरह के वंशज, मशेज़बएल का पुुत्र पतह्या राजा की सेवा में नियुक्त जनता का प्रतिनिधि था।</span> <sup>25</sup><span class='v-txt'>कुछ यूदावंशी किर्यत-अरबा और उसके गाँवों में कुछ दीबोन और उसके गाँवों में, कुछ यकबसएल और उसके गाँवों में,</span> <sup>26</sup><span class='v-txt'>कुछ येशूआ, मोलादा, बेत-पेलेट,</span> <sup>27</sup><span class='v-txt'>हसर-शुआल, बएर-शेबा और उसके गाँवों में,</span> <sup>28</sup><span class='v-txt'>कुछ सिकलग, मकोना और उसके गाँवों में,</span> <sup>29</sup><span class='v-txt'>एनरिम्मोन, सोरआ, यरमूल,</span> <sup>30</sup><span class='v-txt'>ज़ानोअह, अदुल्लाम और उसके गाँवों में, लाकीश और उसके खेतों में, कुछ अजे़का और उसके गाँवों में बस गये।  वे बएर-शेबा से ले कर हिन्नोम घाटी तक फैले थे।</span> <sup>31</sup><span class='v-txt'>कुछ बेनयामीनवंशी गेबा में, मिकमास, अय्या, बेतेल और उसके गाँवों में,</span> <sup>32</sup><span class='v-txt'>अनातोत, नोब, अनन्या,</span> <sup>33</sup><span class='v-txt'>हासोर, रामा, गित्ताईम,</span> <sup>34</sup><span class='v-txt'>हादीद, सबोईम, नबल्लाट,</span> <sup>35</sup><span class='v-txt'>लोद, ओनो और कारीगरों की घाटी में रहते थे।</span> <sup>36</sup><span class='v-txt'>यूदावंशी लेवियों के कुछ दल बेनयामीन में बस गये थे।</span> </p>
+        <div class='nav'><a href='016010.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='016012.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

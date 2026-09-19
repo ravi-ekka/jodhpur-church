@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 48</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 48</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&quot;कुलों के नाम इस प्रकार हैं: उत्तरी सीमा पर, समुद्र की ओर से हेतलोन हो कर हमात के प्रवेश-मार्ग तक, हसर-एनान तक (जो हमात के सामने दमिश्क की उत्तरी सीमा पर है) तथा पूर्व दिशा से ले कर पश्चिमी तकः दान, एक भाग।</span> <sup>2</sup><span class='v-txt'>दान के सीमान्त पर पूर्व दिशा से पश्चिम तक: आशेर, एक भाग।</span> <sup>3</sup><span class='v-txt'>आशेर के सीमान्त पर पूर्व दिशा में पश्चिम तक: नफ्ताली, एक भाग।</span> <sup>4</sup><span class='v-txt'>नफ्ताली के सीमान्त पर पूर्व दिशा में पश्चिम तक: मनस्से, एक भाग।</span> <sup>5</sup><span class='v-txt'>मनस्से के सीमान्त पर पूर्व दिशा से पश्चिम तक: एफ्राईम, एक भाग।</span> <sup>6</sup><span class='v-txt'>एफ्राईम के सीमान्त पर पूर्व दिशा से पश्चिम तक: रूबेन, एक भाग।</span> <sup>7</sup><span class='v-txt'>रूबेन के सीमान्त पर पूर्व दिशा से पश्चिम तक: यूदा, एक भग।</span> <sup>8</sup><span class='v-txt'>&quot;यूदा के सीमान्त पर पूर्व की ओर से पश्चिम तक पच्चीस हज़ार हाथ चैड़ा और एक कुल की पूर्वी से पश्चिमी सीमा तक के भाग के बराबर लम्बा एक भूभाग, जिसके बीचोबीच पवित्र-स्थान होगा, तुम अलग कर दोगे।</span> <sup>9</sup><span class='v-txt'>तुम प्रभु के लिए जो भूभााग अलग करोगे, वह पच्चीस हज़ार हाथ लम्बा और बीस हज़ार हाथ चैड़ा होगा।</span> <sup>10</sup><span class='v-txt'>इस पवित्र भूभाग का विभाजन इस प्रकार किया जायेगा: उत्तर में पच्चीस हज़ार हाथ लम्बा, पश्चिम में दस हज़ार हाथ चैड़ा, पूर्व में दस हज़ार हाथ चैड़ा और दक्षिण में पच्चीस हज़ार हाथ लम्बा भाग याजकों का होगा; प्रभु का पवित्र स्थान इसके बीचोबीच होगा।</span> <sup>11</sup><span class='v-txt'>यह भाग उन, सादोकवंशी अभिषिक्त याजकों के लिए होगा, जो मेरी सेवा करते रहे और जो उस समय, जब इस्राएली लोग भटक गये थे, तो लेवियों की तरह नहीं भटके थे।</span> <sup>12</sup><span class='v-txt'>यह ठीक लेवियों के भूमिक्षेत्र के पास देश के पवित्र भाग- एक अत्यंत पवित्र स्थान- के विशेष भाग के रूप में उन को मिलेगा</span> <sup>13</sup><span class='v-txt'>और याजकों के भूमिक्षेत्र के पास लेवियों को पच्चीस हज़ार हाथ लंबा और दस हज़ार हाथ चैड़ा एक भाग दिया जायेगा।  उसकी कुल लम्बाई पच्चीस हज़ार हाथ और चैडाई पच्चीस हज़ार हाथ होगी।</span> <sup>14</sup><span class='v-txt'>वे न तो इसका कोई हिस्सा बेचेंगे और न इसकी अदला-बदली करेंगे।  देश के इस उत्तम भाग को वे हस्तान्तरित नहीं करेंगे; क्योंकि यह प्रभु की दष्टि में पवित्र है।</span> <sup>15</sup><span class='v-txt'>&quot;पाँच हज़ार हाथ चैड़ा और पच्चीस हज़ार हाथ लम्बा शेष भाग नगर के सामान्य उपयोग, घर बनाने और खुले स्थान के लिए होगा।  नगर उसके ठीक मध्य में होगा।</span> <sup>16</sup><span class='v-txt'>उसकी लम्बाई-चैडाई इस प्रकार होगी- उत्तरी भाग साढे चार हज़ार हाथ, दक्षिणी भाग साढे चार हज़ार हाथ, पूर्वी भाग साढे चार हज़ार तथा पश्चिमी भाग साढे चार हज़ार हाथ।</span> <sup>17</sup><span class='v-txt'>नगर में एक खुला स्थान रहेगा- उत्तर में ढाई सौ हाथ; दक्षिण में ढाई सौ हाथ। पूर्व में ढाई सौ हाथ और पश्चिम में ढाई सौ हाथ।</span> <sup>18</sup><span class='v-txt'>पवित्र भूभाग में संलग्न लम्बाई का शेष भाग पूर्व की ओर दस हज़ार हाथ होगी और पश्चिम की ओर दस हज़ार हाथ।  यह पवित्र भाग से संलग्न होगा।  इसकी उपज से नगर के मजदूरों को भोजन प्राप्त होगा।</span> <sup>19</sup><span class='v-txt'>नगर के मज़दूर, जो इस्राएल के सभी कुलों के होंगे, इसे जोतेंगे।</span> <sup>20</sup><span class='v-txt'>तुम्हारे द्वारा अलग किया हुआ समस्त भूभाग पच्चीस हज़ार वर्ग अर्थात् नगर की भूसंपत्ति-संहित पवित्र भूभाग होगा।</span> <sup>21</sup><span class='v-txt'>&quot;पवित्र भूभाग और नगर की भूसंपत्ति के दोनों ओर का अवशिष्ट भाग शासक का होगा।  पवित्र भूभाग की पच्चीस हज़ार हाथ भूमि से ले कर पूर्वी सीमा तक और पश्चिमी में पच्चीस हज़ार हाथ भूमि से लेकर पश्चिमी सीमा तक, कुलों के भागों के समानान्तर यह क्षेत्र शासक  का होगा। इसके बीच पवित्र भूभाग और मन्दिर का पवित्र-स्थान होगा।</span> <sup>22</sup><span class='v-txt'>लेवियों की भूसंपत्ति तथा नगर की भू-संपत्ति शासक के भाग के बीचोंबीच रहेगी शासक का भाग यूदा के भूमिक्षेत्र और बेनयामीन के भूमिक्षेत्र के बीचोंबीच अवस्थित होगा।</span> <sup>23</sup><span class='v-txt'>&quot;जहाँ तक शेष कुलों का सम्बन्ध है, पूर्व की ओर से पश्चिम तकः बेनयामीन, एक भाग।</span> <sup>24</sup><span class='v-txt'>बेनयामीन के सीमांत पर पूर्व की ओर से पश्चिम तक: सिमओन, एक भाग।</span> <sup>25</sup><span class='v-txt'>सिमओन के सीमांत से पूर्व की ओर से पश्चिम तक: इस्साकार, एक भाग।</span> <sup>26</sup><span class='v-txt'>इस्साकार के सीमांत से पूर्व की ओर से पश्चिम तक: ज़बुलोन, एक भाग।</span> <sup>27</sup><span class='v-txt'>ज़बुलोन के सीमांत से पूर्व की ओर से पश्चिम तक: गाद, एक भाग</span> <sup>28</sup><span class='v-txt'>और गाद के सीमांत से दक्षिण की ओर सीमा तामार से मरीबा कादेश के जलाशयों तक और वहाँ से मिस्र के नाले से महासमुद्र तक जायेगी।</span> <sup>29</sup><span class='v-txt'>यही वह देश है, जिसे तुम इस्राएल के विभिन्न कुलों के बीच दायभाग के रूप में विभाजित करोगे और यही उनके विभिन्न भाग हैं।  यह प्रभु-ईश्वर की वाणी है।</span> <sup>30</sup><span class='v-txt'>&quot;नगर के बाहर जाने के मार्ग ये होंगे: उत्तर की ओर, जिसकी माप चार हज़ार पाच सौ हाथ होगी,</span> <sup>31</sup><span class='v-txt'>तीन फाटक: रूबेन का फाटक, यूदा का फाटक और लेवी का फाटक- इस्राएल के कुलों के नामों के अनुसार नगर के फाटक होंगे।</span> <sup>32</sup><span class='v-txt'>पूर्व की ओर, जो चार हज़ार पांच सौ हाथ लंबा होगा, तीन फाटक: यूसुफ़ का फाटक, बेनयामीन का फाटक और दान का फाटक।</span> <sup>33</sup><span class='v-txt'>दक्षिण की ओर, जिसकी माप चार हज़ार पाँच सौ हाथ होगी, तीन फाटक: सिमओन का फाटक, इस्साकार का फाटक और ज़बुलोन का फाटक।</span> <sup>34</sup><span class='v-txt'>पश्चिम की ओर, जिसका विस्तार पाँच हजार पाँच सौ हाथ होगा, तीन फाटकः गाद का फाटक, आशेर का फाटक और नफ्ताली का फाटक।</span> <sup>35</sup><span class='v-txt'>नगर का घेरा अठारह हज़ार हाथ होगा और तब से नगर का नाम रहेगा-’प्रभु यहाँ है’।&quot;</span> </p>
+        <div class='nav'><a href='033047.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

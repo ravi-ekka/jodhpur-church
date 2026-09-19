@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>रोमियों - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>रोमियों</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>भाइयो! मेरी हार्दिक अभिलाषा और ईश्वर से मेरी प्रार्थना यह है कि इस्राएली मुक्ति प्राप्त करें।</span> <sup>2</sup><span class='v-txt'>मैं उनके विषय में यह साक्ष्य दे सकता हूँ कि उन में ईश्वर के प्रति उत्साह है, किन्तु यह उत्साह विवेकपूर्ण नहीं है।</span> <sup>3</sup><span class='v-txt'>वे वह धार्मिकता नहीं जानते, जिसे ईश्वर चाहता है, और अपनी धार्मिकता की स्थापना करने में लगे रहते हैं, इसलिए उन्होंने ईश्वर द्वारा निर्धारित धार्मिकता के अधीन रहना अस्वीकार किया;</span> <sup>4</sup><span class='v-txt'>क्योंकि मसीह संहिता को परिपूर्णता तक पहुँचाते हैं और प्रत्येक विश्वास करने वाले को धार्मिकता प्रदान करते है।</span> <sup>5</sup><span class='v-txt'>मूसा संहिता की धार्मिकता के विषय में लिखते हैं- जो इन बातों का पालन करेगा, उसे इनके द्वारा जीवन प्राप्त होगा।</span> <sup>6</sup><span class='v-txt'>किन्तु जो धार्मिकता विश्वास पर आधारित है, उसके विषय में वह कहते हैं-तुम अपने मन में यह मत कहो कि ’कौन स्वर्ग जायेगा?’, अर्थात् मसीह को नीचे ले आने के लिए,</span> <sup>7</sup><span class='v-txt'>अथवा &quot;कौन अधोलोक में उतरेगा?&quot;, अर्थात मसीह को मृतकों से ऊपर ले आने के लिए।</span> <sup>8</sup><span class='v-txt'>किन्तु धर्मग्रन्थ क्या कहता है?- वचन तुम्हारे पास ही हैं, वह तुम्हारे मुख में और तुम्हारे हृदय में है।  यह विश्वास का वह वचन है जिसका हम प्रचार करते हैं।</span> <sup>9</sup><span class='v-txt'>क्योंकि यदि आप लोग मुख से स्वीकार करते हैं कि ईसा प्रभु हैं और हृदय से विश्वास करते हैं कि ईश्वर ने उन्हें मृतकों में से जिलाया, तो आप को मुक्ति प्राप्त होगी।</span> <sup>10</sup><span class='v-txt'>हृदय से विश्वास करने पर मनुष्य धर्मी बनता है और मुख से स्वीकार करने पर उसे मुक्ति प्राप्त होती है।</span> <sup>11</sup><span class='v-txt'>धर्मग्रन्थ कहता है, &quot;जो उस पर विश्वास करता है, उसे लज्जित नहीं होना पड़ेगा&quot;।</span> <sup>12</sup><span class='v-txt'>इसलिए यहूदी और यूनानी और यूनानी में कोई भेद नहीं है- सबों का प्रभु एक ही है। वह उन सबों के प्रति उदार है, जो उसकी दुहाई देते है;</span> <sup>13</sup><span class='v-txt'>क्योंकि जो प्रभु के नाम की दुहाई देगा, उसे मुक्ति प्राप्त होगी।</span> <sup>14</sup><span class='v-txt'>परन्तु यदि लोगों को उस में विश्वास नहीं, तो वे उसकी दुहाई कैसे दे सकते हैं?  यदि उन्होंने उसके विषय में कभी सुना नहीं, तो उस में विश्वास कैसे कर सकते हैं? यदि कोई प्रचारक न हो, तो वे उसके विषय में कैसे सुन सकते है?</span> <sup>15</sup><span class='v-txt'>और यदि वह भेजा नहीं जाये, तो कोई प्रचारक कैसे बन सकता है?  धर्मग्रन्थ में लिखा है - शुभ सन्देश सुनाने वालों के चरण कितने सुन्दर लगते हैं !</span> <sup>16</sup><span class='v-txt'>किन्तु सबों ने सुसमाचार का स्वागत नहीं किया।  इसायस कहते हैं- प्रभु! किसने हमारे सन्देश पर विश्वास किया है?</span> <sup>17</sup><span class='v-txt'>इस प्रकार हम देखते हैं कि सुनने से विश्वास उत्पन्न होता है और जो सुना जाता है, वह मसीह का वचन है।</span> <sup>18</sup><span class='v-txt'>अब मैं यह पूछता हूँ - &quot;क्या उन्होंने सुना नहीं?&quot;  उन्होंने सुना है, क्योंकि उनकी वाणी समस्त संसार में फैल गयी है और उनके शब्द पृथ्वी के सीमान्तों तक।</span> <sup>19</sup><span class='v-txt'>मैं फिर पूछता हूँ - क्या इस्राएल ने वह सन्देश नहीं समझा?  मैं पहले मूसा के ये शब्द दोहराता हूँ- मैं एक ऐसे राष्ट्र के प्रति, जो राष्ट्र नहीं है, तुम में ईर्ष्या उत्पन्न करूँगा और एक मूर्ख राष्ट्र के प्रति तुम में क्रोध उत्पन्न करूँगा।</span> <sup>20</sup><span class='v-txt'>इसायस निर्भीकता से यह कहते हैं - जो मुझे नहीं खोजते थे, उन्होंने मुझे पाया और जो मेरे विषय में प्रश्न नहीं पूछते थे, उन पर मैंने अपने को प्रकट किया।</span> <sup>21</sup><span class='v-txt'>और वह इस्राएल से यह कहते हैं- आज्ञा न मानने वाली एवं विद्रोही प्रजा की ओर मैं दिन भर अपने हाथ फैलाये रहा।</span> </p>
+        <div class='nav'><a href='052009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='052011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

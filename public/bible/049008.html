@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 8</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 8</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इसके बाद ईसा नगर-नगर और गाँव-गाँव घूम कर उपदेश देते और ईश्वर के राज्य का सुसमाचार सुनाते रहे।  बारह प्रेरित उनके साथ थे</span> <sup>2</sup><span class='v-txt'>और कुछ नारियाँ भी, जो दुष्ट आत्माओं और रोगों से मुक्त की गयी थीं-मरियम, जिसका उपनाम मगदलेना था और जिस से सात अपदूत निकले थे,</span> <sup>3</sup><span class='v-txt'>हेरोद के कारिन्दा खूसा की पत्नी योहन्ना; सुसन्ना और अनेक अन्य नारियाँ भी, जो अपनी सम्पत्ति से ईसा और उनके शिष्यों की सेवा-परिचर्या करती थीं।</span> <sup>4</sup><span class='v-txt'>एक विशाल जनसमूह एकत्र हो रहा था और नगर-नगर से लोग ईसा के पास आ रहे थे।  उस समय उन्होंने यह दृष्टान्त सुनाया,</span> <sup>5</sup><span class='v-txt'>&quot;कोई बोने वाला बीज बोने निकला।  बोते-बोते कुछ बीज रास्ते के किनारे गिरे।  वे पैरों से रौंदे गये और आकाश के पक्षियों ने उन्हें चुग लिया।</span> <sup>6</sup><span class='v-txt'>कुछ बीज पथरीली भूमि पर गिरे।  वे उग कर नमी के अभाव में झुलस गये।</span> <sup>7</sup><span class='v-txt'>कुछ बीज काँटों में गिरे।  साथ-साथ बढ़ने वाले काँटों ने उन्हें दबा दिया।</span> <sup>8</sup><span class='v-txt'>कुछ बीज अच्छी भूमि पर गिरे।  वे उग कर सौ गुना फल लाये।&quot;  इतना कहने के बाद वह पुकार कर बोले, &quot;जिसके सुनने के कान हों, वह सुन ले&quot;।</span> <sup>9</sup><span class='v-txt'>शिष्यों ने उन से इस दृष्टान्त का अर्थ पूछा।</span> <sup>10</sup><span class='v-txt'>उन्होंने उन से कहा, &quot;तुम लोगों को ईश्वर के राज्य का भेद जानने का वरदान मिला है।  दूसरों को केवल दृष्टान्त मिले, जिससे वे देखते हुए भी नहीं देखें और सुनते हुए भी नहीं समझें।</span> <sup>11</sup><span class='v-txt'>&quot;दृष्टान्त का अर्थ इस प्रकार है। ईश्वर का वचन बीज है।</span> <sup>12</sup><span class='v-txt'>रास्ते के किनारे गिरे हुए बीज वे लोग हैं, जो सुनते हैं, परन्तु कहीं ऐसा न हो कि वे विश्वास करें और मुक्ति प्राप्त कर लें, इसलिए शैतान आ कर उनके हृदय से वचन ले जाता है।</span> <sup>13</sup><span class='v-txt'>चट्टान पर गिरे हुए बीज वे लोग हैं, जो वचन सुनते ही प्रसन्नता से ग्रहण करते हैं, किन्तु जिन में जड़ नहीं है। वे कुछ ही समय तक विश्वास करते हैं और संकट के समय विचलित हो जाते हैं।</span> <sup>14</sup><span class='v-txt'>काँटों में गिरे हुए बीज वे लोग हैं, जो सुनते हैं, परन्तु आगे चल कर वे चिन्ता, धन-सम्पत्ति और जीवन का भोग-विलास से दब जाते हैं और परिपक्वता तक नहीं पहुँच पाते।</span> <sup>15</sup><span class='v-txt'>अच्छी भूमि पर गिरे हुए बीज वे लोग हैं, जो सच्चे और निष्कपट हृदय से वचन सुन कर सुरक्षित रखते और अपने धैर्य के कारण फल लाते हैं।</span> <sup>16</sup><span class='v-txt'>&quot;कोई दीपक जला कर बरतन से नहीं ढकता या पलंग के नीचे नहीं रखता, बल्कि वह उसे दीवट पर रख देता है, जिससे भीतर आने वाले उसका प्रकाश देख सकें।</span> <sup>17</sup><span class='v-txt'>&quot;ऐसा कुछ भी छिपा हुआ नहीं है, जो प्रकट नहीं होगा और ऐसा कुछ भी गुप्त नहीं है, जो नहीं फैलेगा और प्रकाश में नहीं आयेगा।</span> <sup>18</sup><span class='v-txt'>तो इसके सम्बन्ध में सावधान रहो कि तुम किस तरह सुनते हो; क्योंकि जिसके पास कुछ है, उसी को और दिया जायेगा और जिसके पास कुछ नहीं है, उस से वह भी ले लिया जायेगा, जिसे वह अपना समझता है।</span> <sup>19</sup><span class='v-txt'>ईसा की माता और भाई उन से मिलने आये, किन्तु भीड़ के कारण उनके पास नहीं पहुँच सके।</span> <sup>20</sup><span class='v-txt'>लोगों ने उन से कहा, &quot;आपकी माता और आपके भाई बाहर हैं।  वे आप से मिलना चाहते हैं।&quot;</span> <sup>21</sup><span class='v-txt'>उन्होंने उत्तर दिया, &quot;मेरी माता और मेरे भाई वहीं हैं, जो ईश्वर का वचन सुनते और उसका पालन करते हैं&quot;।</span> <sup>22</sup><span class='v-txt'>ईसा एक दिन अपने शिष्यों के साथ नाव में बैठ गये और उन से बोले, &quot;हम झील के उस पार चलें।&quot; वे चल पड़े।</span> <sup>23</sup><span class='v-txt'>नाव चल रही थी और ईसा सो गये।  तब झील में झंझावात उठा, नाव पानी से भरी जा रही थी और वे संकट में पड़ गये।</span> <sup>24</sup><span class='v-txt'>शिष्यों ने ईसा के पास आ कर उन्हें जगाया और कहा, &quot;गुरूवर! गुरूवर! हम डूब रहे हैं!&quot; वे जाग गये और  उन्होंने वायु तथा लहरों को डाँटा।  वे थम गयीं और शान्ति छा गयी।</span> <sup>25</sup><span class='v-txt'>तब उन्होंने अपने शिष्यों से कहा, &quot;तुम लोगों का विश्वास कहाँ है?&quot; उन पर भय छा गया और वे अचम्भे में पड़ कर आपस में यह कहते रहे, &quot;आखिर यह कौन है?&quot; ये वायु और लहरों को भी आज्ञा देते हैं और वे इनकी आज्ञा मानती हैं।&quot;</span> <sup>26</sup><span class='v-txt'>वे नाव से उतर कर गेरासेनियों के प्रदेश पहुँचे, जो झील के उस पार गलीलिया के सामने है।</span> <sup>27</sup><span class='v-txt'>ईसा ज्यों ही भूमि पर उतरे, उस नगर का एक अपदूतग्रस्त मनुष्य उनके पास आया।  वह बहुत दिनों से कपड़े नहीं पहनता था और घर में नहीं, मक़बरों में रहा करता था।</span> <sup>28</sup><span class='v-txt'>वह ईसा को देख कर चिल्ला उठा और दण्डवत् कर ऊँचे स्वर से बोला, &quot;ईसा! सर्वोच्च ईश्वर के पुत्र! मुझ से आप को क्या? मैं आप से विनती करता हूँ, मुझे न सताइए&quot;;</span> <sup>29</sup><span class='v-txt'>क्योंकि ईसा अशुद्ध; आत्मा को उस मनुष्य से निकल जाने का आदेश दे रहे थे।  अशुद्ध आत्मा उसे बार-बार लग जाता था और वश में रखने के लिए लोग उसे जंजीरों और बेडि़यों से जकड़ देते थे; किन्तु वह अपने बन्धनों को तोड़ देता था और अशुद्ध आत्मा उसे निर्जन स्थानों में ले जाया करता था।</span> <sup>30</sup><span class='v-txt'>ईसा ने अपदूत से पूछा, &quot;तेरा नाम क्या है?&quot; उसने कहा, &quot;सेना,&quot;, क्योंकि उस मनुष्य में बहुत-से अपदूत घुस आये थे।</span> <sup>31</sup><span class='v-txt'>वे ईसा से अनुनय-विनय करते रहे कि वे उन को अथाह गर्त में जाने का आदेश न दें।</span> <sup>32</sup><span class='v-txt'>वहाँ पहाड़ी पर सूअरों का एक बड़ा झुण्ड चर रहा था। उन्होंने ईसा से विनती की कि वह उन्हें सूअरों में घुसने की अनुमति दें।  ईसा ने अनुमति दे दी।</span> <sup>33</sup><span class='v-txt'>तब अपदूत उस मनुष्य से निकल कर सूअरों में जा घुसे और वह झुण्ड तेजी से ढाल पर से झील में कूद पड़ा और डूब कर मर गया।</span> <sup>34</sup><span class='v-txt'>यह देख कर सूअर चराने वाले भाग गये और उन्होंने नगर तथा बस्तियों में इसकी ख़बर फैला दी।</span> <sup>35</sup><span class='v-txt'>लोग यह सब देखने निकले।  वे ईसा के पास आये और यह देखकर भयभीत हो गये कि वह मनुष्य, जिस से अपदूत निकले थे, कपड़े पहने शान्त भाव से ईसा के चरणों में बैठा हुआ है।</span> <sup>36</sup><span class='v-txt'>जिन्होंने यह सब अपनी आँखों से देखा था, उन्होंने लोगों को बताया कि किस तरह अपदूतग्रस्त का उद्धार हुआ।</span> <sup>37</sup><span class='v-txt'>तब गेरासेनी प्रदेश की सारी जनता ने अत्यन्त भयभीत हो कर ईसा से यह निवेदन किया कि वे उनके यहाँ से चले जायें।  ईसा नाव पर चढ़ कर लौट गये।</span> <sup>38</sup><span class='v-txt'>जिस मनुष्य से अपदूत निकले थे, वह ईसा से यह विनती करता रहा कि मुझे अपने साथ रहने दीजिए; पर ईसा ने उसे विदा करते हुए कहा,</span> <sup>39</sup><span class='v-txt'>&quot;अपने यहाँ लौट जाओ और लोगों को यह बताओं कि ईश्वर ने तुम्हारे लिए क्या-क्या किया है&quot;।  वह जा कर सारे नगर में यह सुनाता फिरता रहा कि ईसा ने मेरे लिए क्या-क्या किया है।</span> <sup>40</sup><span class='v-txt'>जब ईसा लौटे, तो लोगों ने उनका स्वागत किया, क्योंकि सभी उनकी प्रतीक्षा कर रहे थे।</span> <sup>41</sup><span class='v-txt'>उस समय सभागृह का जैरूस नामक अधिकारी आया और ईसा को दण्डवत् कर उन से अनुनय-विनय करता रहा कि वह उसके यहाँ चलने की कृपा करें,</span> <sup>42</sup><span class='v-txt'>क्योंकि उसकी लगभग बारह बरस की इकलौती बेटी मरने पर थी।  वे उसके साथ चले।  रास्ते में भीड़ चारों ओर से उन पर गिरी पड़ती थी।</span> <sup>43</sup><span class='v-txt'>एक स्त्री बारह बरस से रक्तस्राव से पीड़ित थी।  कोई भी उसे स्वस्थ नहीं कर सका था।</span> <sup>44</sup><span class='v-txt'>उसने पीछे से आ कर ईसा की चादर का पल्लू छू लिया और उसका रक्तस्राव उसी क्षण बन्द हो गया।</span> <sup>45</sup><span class='v-txt'>ईसा ने कहा, &quot;किसने मेरा स्पर्श किया?&quot; सबों के इनकार करने पर पेत्रुस बोला, &quot;गुरूवर! चारों ओर से लोग आप को घेर लेते और आप पर गिरे पड़ते हैं&quot;।</span> <sup>46</sup><span class='v-txt'>ईसा ने कहा, &quot;किसी ने अवश्य मेरा स्पर्श किया।  मैंने अनुभव किया कि मुझ से शक्ति निकली है।&quot;</span> <sup>47</sup><span class='v-txt'>यह समझ कर कि मैं छिप नहीं सकती, वह स्त्री डरती-काँपती हुई आयी और उन्हें दण्डवत् कर उसने सबों के सामने बताया कि मैंने क्यों उनका स्पर्श किया और मैं कैसे उसी क्षण स्वस्थ हो गयी।</span> <sup>48</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;बेटी, तुम्हारे विश्वास ने तुम्हें चंगा कर दिया है।  शान्ति प्राप्त कर जाओ।&quot;</span> <sup>49</sup><span class='v-txt'>ईसा यह कह ही रहे थे कि सभागृह के अधिकारी के यहाँ से कोई यह कहने आया, &quot;आपकी बेटी मर गयी है।  अब आप गुरूवर को कष्ट न दीजिए।&quot;</span> <sup>50</sup><span class='v-txt'>किन्तु यह सुन कर ईसा ने उस से कहा, &quot;डरिए नहीं। बस, विश्वास कीजिए और वह चंगी हो जायेगी।&quot;</span> <sup>51</sup><span class='v-txt'>उन्होंने घर पहुँच कर पेत्रुस, योहन तथा याकूब और लड़की के माता-पिता के सिवा किसी को अपने साथ अन्दर नहीं जाने दिया।</span> <sup>52</sup><span class='v-txt'>सब रो रहे थे और उसके लिए विलाप कर रहे थे।  ईसा ने कहा, &quot;मत रोओ! वह नहीं मरी सो रही है&quot;।</span> <sup>53</sup><span class='v-txt'>वे उनकी हँसी उड़ाते रहे, क्योंकि वे भली-भाँति यह जानते थे कि वह मर गयी है।</span> <sup>54</sup><span class='v-txt'>ईसा ने उसका हाथ पकड़ कर पुकारा, &quot;ओ लड़की! उठो!&quot;</span> <sup>55</sup><span class='v-txt'>उसके प्राण लौट आये और वह उसी क्षण उठ खड़ी हो गयी।  ईसा ने उसे कुछ खिलाने को कहा।</span> <sup>56</sup><span class='v-txt'>उसके मात-पिता दंग रह गये, किन्तु ईसा ने आदेश दिया कि वे इस घटना की चर्चा किसी से नहीं करें।</span> </p>
+        <div class='nav'><a href='049007.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049009.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

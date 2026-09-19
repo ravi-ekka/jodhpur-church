@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>इसायाह - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>इसायाह</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मोआब के विषय में दिव्य वाणी।  एक ही रात में अर-मोआब उजाड़ा और नष्ट किया गया!  एक ही रात में किर-मोआब उजाड़ा और नष्ट किया गया!</span> <sup>2</sup><span class='v-txt'>लोग विलाप करने के लिए पहाड़ पर अवस्थित दीबोन के मन्दिर जाते हैं; नेबों पर और मेदेबा में मोआब शोक मानाता है।  सबों के सिर मूँड़े गये, सबों की दाढ़ी कट गयी।</span> <sup>3</sup><span class='v-txt'>सड़कों पर सब शोक के वस्त्र पहने हैं।  लोग छतों पर और चैकों में विलाप करते और आँसू बहाते हैं।</span> <sup>4</sup><span class='v-txt'>हेशबोन और एलआले दुहाई देते हैं, उनकी आवाज़ यहज़ तक सुनाई पड़ती है।  मोआब के सैनिक चिल्लाते हैं, उनका साहस टूट गया है।</span> <sup>5</sup><span class='v-txt'>मेरा हृदय मोआब के लिए रोता है: उसके शरणार्थी सोअर तक, एगलत-शलिशीया तक भागते हैं।  वे रोते हुए लूहीत की ओर चढ़ रहे हैं।  वे होरोनईम के मार्ग पर अपने विनाश पर विलाप करते हैं।</span> <sup>6</sup><span class='v-txt'>निम्रीम के जलाशय सूख गये हैं।  घास जल गयी और पेड़-पौधे कुम्हला गये।  कुछ भी हरियाली शेष नहीं।</span> <sup>7</sup><span class='v-txt'>इसलिए वे अपनी बची हुई सम्पत्ति मजनूँ नाले के उस पार ले जा रहे हैं।</span> <sup>8</sup><span class='v-txt'>मोआब भर में उनकी पुकार सुनाई पड़ती है।  उनके विलाप की आवाज एगलैम तक, बएर-एलीम तक सुनाई पड़ती है।</span> <sup>9</sup><span class='v-txt'>दीमोन के जलाशय रक्त से भर गये हैं, किन्तु मैं दीमोन पर और विपत्तियाँ भेजूँगा।  मैं मोआब के शरणार्थियों पर और देश में बचे हुए लोगों पर एक सिंह छोडूँगा।</span> </p>
+        <div class='nav'><a href='029014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='029016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

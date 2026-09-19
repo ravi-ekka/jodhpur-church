@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>2 तिमथी - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>2 तिमथी</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यह पत्र प्रिय पुत्र तिमथी के नाम पौलुस की ओर से है, जिसे ईश्वर ने इस बात का प्रचार करने के लिए ईसा मसीह का प्रेरित चुना है कि उसने हमें जीवन प्रदान करने की जो प्रतिज्ञा की थी, वह ईसा में पूरी हो गयी है।</span> <sup>2</sup><span class='v-txt'>पिता-परमेश्वर और हमारे प्रभु ईसा मसीह तुम्हें कृपा, दया तथा शान्ति प्रदान करें!</span> <sup>3</sup><span class='v-txt'>मैं अपने पूर्वजों की तरह शुद्ध अन्तःकरण से ईश्वर की सेवा करता हूँ और उसे धन्यवाद देता हुआ निरन्तर दिन-रात तुम्हें अपनी प्रार्थनाओं में याद करता हूँ।</span> <sup>4</sup><span class='v-txt'>जब मुझे तुम्हारे आँसुओं का स्मरण आता है, तो तुम से फिर मिलने की तीव्र अभिलाषा होती है, जिससे मेरा आनन्द परिपूर्ण हो जाये।</span> <sup>5</sup><span class='v-txt'>तब मुझे तुम्हारा निष्कपट विश्वास सहज ही याद आता है।  वह विश्वास पहले तुम्हारी नानी लोइस तथा तुम्हारी माता यूनीके में विद्यमान था और मुझे विश्वास है, अब तुम में भी विद्यमान है।</span> <sup>6</sup><span class='v-txt'>मैं तुम से अनुरोध करता हूँ कि तुम ईश्वरीय वरदान की वह ज्वाला प्रज्वलित बनाये रखो, जो मेरे हाथों के आरोपण से तुम में विद्यमान है।</span> <sup>7</sup><span class='v-txt'>ईश्वर ने हमें भीरुता का नहीं, बल्कि सामर्थ्य, प्रेम तथा आत्मसंयम का मनोभाव प्रदान किया।</span> <sup>8</sup><span class='v-txt'>तुम न तो हमारे प्रभु का साक्ष्य देने में लज्जा अनुभव करो और न मुझ से, जो उनके लिए बन्दी हूँ, बल्कि ईश्वर के सामर्थ्य पर भरोसा रख कर तुम मेरे साथ सुसमाचार के लिए कष्ट सहते रहो।</span> <sup>9</sup><span class='v-txt'>ईश्वर ने हमारा उद्धार किया और हमें पवित्र जीवन बिताने के लिए बुलाया।  उसने हमारे किसी पुण्य के कारण नहीं, बल्कि अपने उद्देश्य तथा अपनी कृपा के कारण ही ऐसा किया।  वह कृपा अनादिकाल से ईसा मसीह द्वारा हमें प्राप्त थी,</span> <sup>10</sup><span class='v-txt'>किन्तु अब वह हमारे मुक्तिदासा ईसा मसीह के आगमन से प्रकट हुई है।  ईसा ने मृत्यु का विनाश किया और अपने सुसमाचार द्वारा अमर जीवन को आलोकित किया है।</span> <sup>11</sup><span class='v-txt'>मैं उस सुसमाचार का प्रचारक, प्रेरित तथा शिक्षक नियुक्त किया गया हूँ।</span> <sup>12</sup><span class='v-txt'>इस कारण मैं यहाँ यह कष्ट सह रहा हूँ, किन्तु मैं  इस से लज्जित नहीं हूँ; क्योंकि मैं जानता हूँ कि मैंने किस पर भरोसा रखा है।  मुझे निश्चय है कि वह मुझे सौंपी हुई निधि को उस दिन तक सुरक्षित रखने में समर्थ है।</span> <sup>13</sup><span class='v-txt'>जो प्रामाणिक शिक्षा तुम को मुझ से मिली, उसे अपना मापदण्ड मान लो और ईसा मसीह के प्रति विश्वास तथा प्रेम से दृढ़ बने रहो।</span> <sup>14</sup><span class='v-txt'>जो निधि तुम्हें सौंपी गयी, उसे हम में निवास करने वाले पवित्र आत्मा की सहायता से सुरक्षित रखो।</span> <sup>15</sup><span class='v-txt'>तुम जानते हो कि एशिया में सब ने मुझे छोड़ दिया।  उस में फुगेलुस और हेरमोगेनेस हैं।</span> <sup>16</sup><span class='v-txt'>प्रभु की दया ओनेसिफोरूस के परिवार पर बनी रहे, क्योंकि ओनेसिफोरूस ने मुझे अक्सर ढारस बँधाया।  वह मेरे बेडि़यों से लज्जित नहीं हुआ,</span> <sup>17</sup><span class='v-txt'>बल्कि उसने रोम पहुँच कर मेरा पता लगाने का कष्ट किया और वह मुझ से मिलने आया।</span> <sup>18</sup><span class='v-txt'>प्रभु उसे यह वरदान दे कि वह उस दिन प्रभु की दया प्राप्त करे।  उसने एफे़सुस में मेरे लिए जो कुछ किया, वह तुम अच्छी तरह जानते हो।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='062002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

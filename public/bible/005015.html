@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&quot;तुम हर सातवें वर्ष ऋण माफ़ करोगे।</span> <sup>2</sup><span class='v-txt'>ऋण से मुक्ति का नियम इस प्रकार होगा: हर ऋणदाता अपने पड़ोसी को दिया हुआ ऋण माफ करेगा।  वह अपने पड़ोसी या अपने भाई को ऋण चुकाने के लिए बाध्य नहीं करेगा, क्योंकि प्रभु के नाम पर ऋण-मुक्ति की घोषणा की गयी है।</span> <sup>3</sup><span class='v-txt'>तुम परदेशी को ऋण चुकाने के लिए बाध्य कर सकते हो, किन्तु अपने भाई को दिया हुआ ऋण माफ़ करोगे।</span> <sup>4</sup><span class='v-txt'>उस देश में, जिसे प्रभु, तुम्हारा ईश्वर तुम्हें अपने अधिकार में देगा, प्रभु तुम्हें इतना आशीर्वाद देगा कि वहाँ गरीब नहीं होगे।</span> <sup>5</sup><span class='v-txt'>यह तभी होगा जब तुम प्रभु, अपने ईश्वर की वाणी पर ध्यान दोगे और उन सभी आज्ञाओं का सावधानी से पालन करोगे, जिन्हें मैं आज तुम्हें सुना रहा हूँ।</span> <sup>6</sup><span class='v-txt'>प्रभु का आशीर्वाद तुम पर बना रहेगा, जैसी कि उसने प्रतिज्ञा की हैं।  तुम अनेक राष्ट्रों को उधार दे सकोगे और तुम्हें उधार लेने की आवश्यकता नहीं होगी; तुम अनेक राष्ट्रों पर शासन करोगे और तुम किसी के द्वारा शासित नहीं होगे।</span> <sup>7</sup><span class='v-txt'>&quot;जब उस देश के तुम्हारे किसी नगर में जो प्रभु, तुम्हारा ईश्वर तुम्हें देने वाला है, तुम्हारा कोई भाई कंगाल हो जाये, तो तुम उसके प्रति निर्दय न बनो और उसकी सहायता करने के लिए अपना हाथ बन्द मत रखो,</span> <sup>8</sup><span class='v-txt'>बल्कि ज़रूरत हो, तो उसे खुले हाथ उधार दो।</span> <sup>9</sup><span class='v-txt'>अपने मन में ऐसा तुच्छ विचार न आने दो कि अब सातवाँ वर्ष, ऋण मुक्ति वर्ष, आने वाला है और इसलिए तुम निर्दय बन कर अपने कंगाल भाई को कुछ न दो; क्योंकि यदि वह तुम्हारे विरुद्ध प्रभु से दुहाई करेगा, तो तुम दोषी ठहरोगे।</span> <sup>10</sup><span class='v-txt'>तुम उसे अनिच्छा से नहीं, बल्कि, खुले हाथ दो।  इसके लिए प्रभु, तुम्हारा ईश्वर तुम्हें अपने सब काम में आशीर्वाद देगा।</span> <sup>11</sup><span class='v-txt'>कंगाल तो बराबर देश में रहेंगे।  इसलिए मैं तुम्हें यह आदेश देता हूँ कि अपने देश में रहने वाले अपने कंगाल और ग़रीब देश-भाई के लिए अपना हाथ खुला रखो।</span> <sup>12</sup><span class='v-txt'>&quot;यदि तुम्हारा कोई जाति-भाई, कोई इब्रानी या इब्रानिन अपने को तुम्हारे हाथ बेचे, तो वह छः वर्ष तक तुम्हारे यहाँ सेवा करेगी।  परन्तु तुम उसे सातवें वर्ष सेवा से मुक्त कर दोगे।</span> <sup>13</sup><span class='v-txt'>जब वह सेवा से मुक्त हो कर तुम्हारे यहाँ से जाने लगे, तो उसे ख़ाली हाथ नहीं जाने दोगे।</span> <sup>14</sup><span class='v-txt'>तुम अपनी भेड़-बकरियों में से, अपने खलिहान और अपने अंगूरी के कुण्ड़ से उदार दान दो।  तुम प्रभु, अपने ईश्वर से प्राप्त आशीर्वाद के अनुसार उसे दे दो।</span> <sup>15</sup><span class='v-txt'>याद रखो कि तुम भी मिस्र देश में दास के रूप में रहते थे और प्रभु, तुम्हारे ईश्वर ने तुम्हारा उद्धार किया था। इसीलिए मैं आज तुम्हें ऐसा करने का आदेश देता हूँ।</span> <sup>16</sup><span class='v-txt'>&quot;यदि वह तुम से कहे कि मैं तुम्हारी सेवा सेे मुक्ति नहीं चाहता हूँ ,क्योंकि वह तुम से और तुम्हारे परिवार से प्रेम करने लगा है - क्योंकि वहाँ से उसे सुख मिल रहा है -</span> <sup>17</sup><span class='v-txt'>तो तुम उसका कान किवाड़ पर लगाकर सूए से छेद दोगे और वह हमेशा के लिए तुम्हारा दास हो जायेगा।  तुम अपनी दासी के साथ भी यही करोगे।</span> <sup>18</sup><span class='v-txt'>दास को मुक्त करते समय तुम्हें दुःख नहीं होना चाहिए, क्योंकि उसने छह वर्षों तक मज़दूरी से दुगुने मूल्य की सेवा की है।  ऐसा करने पर प्रभु, तुम्हारा ईश्वर तुम्हें अपने सब कामों में आशीर्वाद देगा।</span> <sup>19</sup><span class='v-txt'>&quot;तुम अपनी गायों और भेड़-बकरियों के हर पहलौठे बच्चे को प्रभु, अपने ईश्वर को अर्पित करोगे।  पहलौठे बच्चे से तुम कोई काम नहीं करवाओगे।  भेड़ो के पहलौठे बच्चे का ऊन नहीं कतरोगे।</span> <sup>20</sup><span class='v-txt'>तुम उसे प्रति वर्ष प्रभु के सामने अपने परिवार के साथ उस स्थान पर खाओगे, जिसे प्रभु चुनता है।</span> <sup>21</sup><span class='v-txt'>यदि कोई पशु सदोष है, यदि वह लँगड़ा या अन्धा है या उस में किसी प्रकार का बड़ा दोष है, तो तुम उसे बलि के रूप में प्रभु, अपने ईश्वर को मत चढ़ाओ।</span> <sup>22</sup><span class='v-txt'>तुम चाहे शुद्ध हो या अशुद्ध, उसे अपने यहाँ खा सकते हो, मानो वह कोई चिकारा या हरिण हो।</span> <sup>23</sup><span class='v-txt'>किन्तु तुम रक्त का उपभोग नहीं करोगे।  तुम उसे निकाल कर पानी की तरह बहा दोगे।</span> </p>
+        <div class='nav'><a href='005014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

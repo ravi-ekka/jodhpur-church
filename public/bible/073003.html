@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रकाशना - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रकाशना</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&quot;सारदैस की कलीसिया के स्वर्गदूत को यह लिखो- &quot;जो ईश्वर के सातों आत्माओं और सातों तारों को धारण किये है, उसका सन्देश इस प्रकार है: मैं तुम्हारे आचरण से परिचित हूँ।  लोग तुम्हें जीवित मानते हैं, किन्तु तुम तो मर चुके हो।</span> <sup>2</sup><span class='v-txt'>जागो!  तुम में जो जीवन शेष है और बुझने-बुझने को है, उस में प्राण डालो।  मैंने तुम्हारे आचरण को अपने ईश्वर की दृष्टि में अपूर्ण पाया है।</span> <sup>3</sup><span class='v-txt'>तुमने जो शिक्षा स्वीकार की और सुनी, उसे याद रखो, उसका पालन करो और पश्चात्ताप करो।  यदि तुम नहीं जागोगे, तो मैं चोर की तरह आऊँगा और तुम्हें मालूम नहीं हैं कि मैं किस घड़ी तुम्हारे पास आ जाऊँगा।</span> <sup>4</sup><span class='v-txt'>सारदैस में तुम्हारे यहाँ कुछ ऐसे व्यक्ति भी है, जिन्होंने अपने वस्त्र दूषित नहीं किये हैं।  वे उजले वस्त्र पहन कर मेरे साथ टहलेंगे, क्योंकि वे इसके योग्य हैं।</span> <sup>5</sup><span class='v-txt'>&quot;विजयी इस प्रकार उजले वस्त्र पहनेगा।  मैं जीवन-ग्रन्थ में से उसका नाम नहीं मिटाऊँगा, बल्कि अपने पिता और उसके स्वर्गदूतों के सामने उसे स्वीकार करूँगा।</span> <sup>6</sup><span class='v-txt'>जिसके कान हों, वह सुन ले कि आत्मा कलीसियाओं से क्या कहता है।</span> <sup>7</sup><span class='v-txt'>&quot;फिलादेलफिया की कलीसिया के स्वर्गदूत को यह लिखो-&quot;जो सच्चा है, जिसके पास दाऊद की कुंजी है, जिसके खोलने पर कोई नहीं बन्द कर सकता और जिसके बन्द करने पर कोई नहीं खोल सकता, उसका सन्देश इस प्रकार है:</span> <sup>8</sup><span class='v-txt'>&quot;मैं तुम्हारे आचरण से परिचित हूँ।  मैंने तुम्हारे लिए एक द्वार खोला, जिसे कोई नहीं बन्द कर सकता।  तुम्हारी शक्ति सीमित है, फिर भी तुमने मेरी आज्ञाओं का पालन किया और मेरा नाम अस्वीकार नहीं किया है।</span> <sup>9</sup><span class='v-txt'>देखो, मैं शैतान के उन अनुयायियों को, जो अपने को यहूदी कहते हैं, किन्तु यहूदी नहीं हैं और झूठ बोलते हैं, इसके लिए बाध्य करूँगा कि वे आ कर तुम्हारे चरणों में दण्डवत् करें और यह जानें कि मैं तुम को प्यार करता हूँ।</span> <sup>10</sup><span class='v-txt'>तुम मेरे आदेशानुसार दृढ़ बने रहे, इसलिए मैं भी तुम्हें इस विपत्ति के समय सुरक्षित रखूँगा, जो समस्त पृथ्वी पर आने वाली है और उसके निवासियों की परीक्षा लेगी।</span> <sup>11</sup><span class='v-txt'>मैं शीघ्र ही आने वाला हूँ।  जो शिक्षा तुम्हारे पास है, उस पर दृढ़ बने रहो, जिससे कोई तुम को तुम्हारे मुकुट से वंचित न करे।</span> <sup>12</sup><span class='v-txt'>&quot;मैं विजयी को अपने ईश्वर के मन्दिर का खम्भा बनाऊँगा।  वह फिर कभी उसके बाहर नहीं जायेगा।  मैं अपने ईश्वर का नाम, अपने ईश्वर के नगर, उस नवीन येरूसालेम का नाम, जो मेरे ईश्वर के यहाँ से स्वर्ग से उतरने वाला है और अपना नया नाम उस पर अंकित करूँगा।</span> <sup>13</sup><span class='v-txt'>जिसके कान हों, वह सुन ले कि आत्मा कलीसियाओं से क्या कहता है।</span> <sup>14</sup><span class='v-txt'>लौदीकिया की कलीसिया के स्वर्गदूत को यह लिखो- &quot;आमेन, विश्वसनीय तथा सच्चे साक्षी, ईश्वर की सृष्टि के मूलस्रोत का सन्देश इस प्रकार हैः</span> <sup>15</sup><span class='v-txt'>मैं तुम्हारे आचरण से परिचित हूँ।  तुम न तो ठंडे हो और न गर्म।  कितना अच्छा होता कि तुम ठंडे या गर्म होते!</span> <sup>16</sup><span class='v-txt'>लेकिन न तो तुम गर्म हो और न ठंडे, बल्कि कुनकुने हो, इसलिए मैं तुम को अपने मुख से उगल दूँगा।</span> <sup>17</sup><span class='v-txt'>तुम यह कहते हौ- मैं धनी हूँ, मैं समृद्ध हो गया, मुझे किसी बात की कमी नहीं, और तुम यह नहीं समझते कि तुम अभागे हो, दयनीय हो, दरिद्र, अन्धे और नंगे हो।</span> <sup>18</sup><span class='v-txt'>मेरी बात मानो।  मुझ से आग में तपाया हुआ सोना खरीद कर धनी हो जाओ; उजले वस्त्र खरीद कर पहन लो और अपने नंगेपन की लज्जा ढँक लो; अंजन खरीद कर आँखों पर लगाओं, जिससे तुम देख सको।</span> <sup>19</sup><span class='v-txt'>मैं जिन सबों को प्यार करता हूँ, उन्हें डाँटता और दण्डित करता हूँ।  इसलिए उत्साही बनो और पश्चात्ताप करो।</span> <sup>20</sup><span class='v-txt'>मैं द्वार के सामने खड़ा हो कर खटखटाता हूँ।  यदि कोई मेरी वाणी सुन कर द्वार खोलेगा, तो मैं उसके यहाँ आ कर उसके साथ भोजन करूँगा और वह मेरे साथ।</span> <sup>21</sup><span class='v-txt'>मैं विजयी को अपने साथ उसी तरह अपने सिंहासन पर विराजमान होने का अधिकार दूँगा, जिस तरह मैं विजयी हो कर अपने पिता के साथ उसके सिंहासन पर विराजमान हूँ।</span> <sup>22</sup><span class='v-txt'>जिसके कान हों, वह सुन ले कि आत्मा कलीसियाओं से क्या कहता है।</span> </p>
+        <div class='nav'><a href='073002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='073004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

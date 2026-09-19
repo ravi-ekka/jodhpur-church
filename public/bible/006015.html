@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योशुआ - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योशुआ</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यूदावंशियों के विभिन्न कुलों को जो भाग मिला, उसका विस्तार दक्षिण की ओर एदोम की सीमा तक, सिन के उजाड़खण्ड तक था।</span> <sup>2</sup><span class='v-txt'>उसकी दक्षिणी सीमा लवण सागर की दक्षिणी खाड़ी से आरम्भ हो कर</span> <sup>3</sup><span class='v-txt'>अक्रब्बीम की घाटी के दक्षिण से हो कर सिन तक पहुँचती थी।  फिर वह कादेश बरनेअ के दक्षिण में हेस्रोन के पास से निकलती हुई अद्दार तक जाती थी और करका की ओर मुड़ती हुई</span> <sup>4</sup><span class='v-txt'>असमोन तक जा कर मिस्री नाले से मिल कर समुद्र तक पहुँचती थी।  &quot;यही तुम्हारी दक्षिण सीमा होगी&quot;।</span> <sup>5</sup><span class='v-txt'>पूर्व में यर्दन के मुहाने तक लवण सागर उसकी सीमा था।  उत्तरी सीमा यर्दन के मुहाने के पास की खाड़ी से आरम्भ होती थी।</span> <sup>6</sup><span class='v-txt'>वहाँ से यह सीमा बेत-होगला तथा बेत-अराबा के उत्तर से होती हुई रूबेन के पुत्र बोहन की शिला तक जाती थी।</span> <sup>7</sup><span class='v-txt'>वहाँ से यह आकोर की घाटी से दबीर की ओर जा कर गिलगाल की दिशा में उत्तर की ओर मुड़ती थी, जो नदी के दक्षिण में अदुम्मीम की घाटी के सामने है।  वहाँ से यह सीमा एनशेमेश के जलाशय से हो कर एन-रोगेल तक पहुँचती थी।</span> <sup>8</sup><span class='v-txt'>फिर यह सीमा बेन हिन्नोम घाटी के पास से हो कर यबूसियों के दक्षिणीय पर्वत की ढाल अर्थात येरूसालेम से होती हुई उस पर्वत के शिखर तक पहुँचती थी, जो हिन्नम घाटी के सामने पश्चिम में, रफ़ाईम की घाटी के उत्तरी किनारे पर स्थित है।</span> <sup>9</sup><span class='v-txt'>यह सीमा पर्वत के शिखर से नेफतोआ के जलाशय के स्रोत के पास से एफ्रोन पर्वतश्रेणी के नगरों तक जाती थी।  फिर यह सीमा अबला, अर्थात किर्यत-यआरीम की ओर मुड़ती थी।</span> <sup>10</sup><span class='v-txt'>यह सीमा बअला के पश्चिम में मुड़ कर सेईर पर्वत तक जाती थी फिर यआरीम पर्वत, अर्थात कसालोन की उत्तरी ढाल से होती हुई बेत-शेमेश तक उतरती और तिमना तक पहुँचती थी।</span> <sup>11</sup><span class='v-txt'>फिर यह सीमा एक्रोन के उत्तर में पर्वत की ढाल से होती हुई शिक्रोन की ओर मुड़ती और बअला के पर्वत के पास से हो कर यबनेएल तक जाती थी।  फिर यह सीमा समुद्र तक पहुँच कर समाप्त हो जाती थी।</span> <sup>12</sup><span class='v-txt'>महासमुद्र का तटीय भाग पश्चिमी सीमा था।  यूदावंशियों के विभिन्न कुलों को जो भाग प्राप्त हुआ, उसके चारों ओर की सीमा इसी प्रकार थी।</span> <sup>13</sup><span class='v-txt'>प्रभु से प्राप्त आदेश के अनुसार योशुआ ने यफुन्ने के पुत्र कालेब को यूदा का एक भाग, अर्थात अनाक के पिता अरबा का नगर हेब्रोन दे दिया।</span> <sup>14</sup><span class='v-txt'>वहाँ से कालेब ने अनाक के वंशजों को अर्थात अनाक के तीनों पुत्र शेशय, अहीमान और तलयम को भगा दिया।</span> <sup>15</sup><span class='v-txt'>वहाँ से उसने दबीर के निवासियों पर आक्रमण किया। (दबीर पहले किर्यतसेफेर कहलाता था।)</span> <sup>16</sup><span class='v-txt'>कालेब ने कहा, &quot;जो किर्यत सेफेर को पराजित कर अधिकार में लेगा, मैं उसके साथ अपनी पुत्री अक्सा का विवाह कर दूँगा&quot;।</span> <sup>17</sup><span class='v-txt'>कालेब के भाई केनज़ के पुत्र ओतनीएल ने उसे अधिकार में कर लिया, इसलिए कालेब ने अपनी पुत्री अक्सा का विवाह उसके साथ कर दिया।</span> <sup>18</sup><span class='v-txt'>ओतनीएल ने किसी दिन उसके पास आ कर अपने पिता से एक खेत माँगने का आग्रह किया।  जैसे ही वह अपने गधे पर से उतरी, कालेब ने उस से पूछा, &quot;तुम्हें क्या चाहिए?</span> <sup>19</sup><span class='v-txt'>उसने उसे उत्तर दिया, &quot;मेरा एक विशेष उपकार कीजिए। आपने मुझे नेगेब में एक खेत दिया, तो मुझे झरने भी दीजिए।&quot;  इस पर कालेब ने उसे ऊपरी और निचले झरने दे दिये।</span> <sup>20</sup><span class='v-txt'>यूदा वंश के विभिन्न कुलों का दायभाग यह था।</span> <sup>21</sup><span class='v-txt'>नेगेब में एदोम की सीमा की ओर यूदावंशियों के दक्षिणी नगर ये थे, कबसएल, एदेर, यागूर,</span> <sup>22</sup><span class='v-txt'>कीना, दीमोना, अदआदा,</span> <sup>23</sup><span class='v-txt'>केदेश, हासोर, यितनान,</span> <sup>24</sup><span class='v-txt'>जीफ़, टेलेम, बआलोत,</span> <sup>25</sup><span class='v-txt'>हासोर-हदत्ता, करिय्योत हेस्रोन अर्थात हासोर,</span> <sup>26</sup><span class='v-txt'>अमाम, शमा, मोलादा,</span> <sup>27</sup><span class='v-txt'>हसरगद्दा, हेशमोन, बेत-पेलेट,</span> <sup>28</sup><span class='v-txt'>हसर-शूआल, बएर-शेबा, बि़ज्योत्या,</span> <sup>29</sup><span class='v-txt'>बाला, इय्यीम, एसेम,</span> <sup>30</sup><span class='v-txt'>एलतोलत, कसील, होरमा,</span> <sup>31</sup><span class='v-txt'>सिकलग, मदमन्ना, सनसन्ना,</span> <sup>32</sup><span class='v-txt'>लबाओत, शिलहीम, अयीन और रिम्मोन कुल उनतीस नगर और साथ के गाँव भी।</span> <sup>33</sup><span class='v-txt'>पश्चिमी निचले प्रदेश में: एश्ताओल, सोरआ, अशना,</span> <sup>34</sup><span class='v-txt'>जानोअह, एन-गन्नीम, तप्पूअह, एनाम,</span> <sup>35</sup><span class='v-txt'>यर्मूत, अदुल्लाम, सोको, अजेका,</span> <sup>36</sup><span class='v-txt'>शआरईम, अदीतईम और गदेरा (या गदेरोताईम) कुल चैदह नगर और साथ के गाँव भी।</span> <sup>37</sup><span class='v-txt'>सनान, हदाशा, मिगदल-गाद,</span> <sup>38</sup><span class='v-txt'>दिलआन, मिस्पे, योकतेएल,</span> <sup>39</sup><span class='v-txt'>लाकीश, बोसकत, एगलोन,</span> <sup>40</sup><span class='v-txt'>कब्बोन, लहमास, कितलीश,</span> <sup>41</sup><span class='v-txt'>गदेरोत, बेत-दागोन, नामा और मक्केदा कुल सोलह नगर और साथ के गाँव भी।</span> <sup>42</sup><span class='v-txt'>लिबना, एतेर, आशान,</span> <sup>43</sup><span class='v-txt'>यिफ्ताह, अशना, नसीब,</span> <sup>44</sup><span class='v-txt'>कईला, अकज़ीब और मारेश - कुल नौ नगर और साथ के गाँव भी।</span> <sup>45</sup><span class='v-txt'>एक्रोन और उसके साथ के नगर और गाँव भी;</span> <sup>46</sup><span class='v-txt'>एक्रोन से समुद्र तक के सारे नगर, जो अशदोद के पाश्र्व में हैं और साथ के गाँव भी।</span> <sup>47</sup><span class='v-txt'>अशदोद और उसके नगर और गाँव, गाज़ा और मिस्र के नाले तक उसके नगर और गाँव, और महासमुद्र तक का तटीय प्रान्त भी।</span> <sup>48</sup><span class='v-txt'>पहाड़ी प्रदेश में: शामीर, यत्तरी, सोको,</span> <sup>49</sup><span class='v-txt'>दन्ना, किर्यात-सन्ना, अर्थात दबीर,</span> <sup>50</sup><span class='v-txt'>अनाब, एश्तमो, आनीम,</span> <sup>51</sup><span class='v-txt'>गोशेन, होलोन और गिलो - कुल ग्यारह नगर और साथ के गाँव भी।</span> <sup>52</sup><span class='v-txt'>अराब, दूमा, एशआन,</span> <sup>53</sup><span class='v-txt'>यानूम, बेत-तप्पूअह, अफे़का,</span> <sup>54</sup><span class='v-txt'>हुम्टा, किर्यत-अरबा, अर्थात हेब्रोन और सीओर - कुल नौ नगर और साथ के गाँव भी।</span> <sup>55</sup><span class='v-txt'>माओन, करमेल, ज़ीफ़ यूट्टा,</span> <sup>56</sup><span class='v-txt'>यिज्रएल, योकदआम, ज़ानोअह,</span> <sup>57</sup><span class='v-txt'>कयिन, गिबआ और तिमना - कुल दस नगर और आसपास के गाँव भी।</span> <sup>58</sup><span class='v-txt'>हलहूल, बेत-सूर, गादोर,</span> <sup>59</sup><span class='v-txt'>मारात, बेत अनोत और एलतेकोन कुल छः नगर और साथ के गाँव भी।</span> <sup>60</sup><span class='v-txt'>किर्यत-बाल, अर्थात किर्यत-यआरीम और रब्बा - कुल दो नगर और साथ के गाँव भी।</span> <sup>61</sup><span class='v-txt'>उजाड़खण्ड में, बेत-अराबा, मिद्दीन, सकाका,</span> <sup>62</sup><span class='v-txt'>निबशान, ईस्मेलह और एनगेदी - कुल छः नगर और आसपास के गाँव भी।</span> <sup>63</sup><span class='v-txt'>लेकिन यूदा के वंशज येरूसालेम में रहने वाले यबूसियों को भगा नहीं पाये।  इसलिए यबूसी लोग आज तक यूदा के वंशजों के साथ येरूसालेम में रहते आ रहे हैं।</span> </p>
+        <div class='nav'><a href='006014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='006016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

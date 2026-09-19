@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 21</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 21</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मुझे प्रभु की वाणी यह कहते हुए सुनाई दी,</span> <sup>2</sup><span class='v-txt'>“मानवपुत्र! अपना मुँह दक्षिण की ओर करो; दक्षिण की ओर हो कर बोलो और नेगेब की वनभूमि के विरुद्ध भवियवाणी करो।</span> <sup>3</sup><span class='v-txt'>नेगेब के वन से कहो- ’प्रभु की यह वाणी सुनो। प्रभु-ईश्वर यह कहता हैः मैं तुम में ऐसी आग लगाऊँगा, जो तुम्हारे प्रत्येक हरे वृक्ष और हर सूखे पेड़े को भस्म कर देगी।  उसकी प्रचण्ड ज्वाला नहीं बुझ पायेगी और नेगेब से उत्तर तक के सभी चेहरे उस से झुलस जायेंगे।</span> <sup>4</sup><span class='v-txt'>सभी शरीरधारी यह देखेंगे कि मैं, प्रभु, ने ही यह आग प्रज्वलित की है और यह अब नहीं बुझ पायेगी’।&quot;</span> <sup>5</sup><span class='v-txt'>और मैं यह बोला, “प्रभु-ईश्वर! मेरे विषय में सब लोग यह कहत हैं, ’यह तो दृष्टान्त गढ़ता रहता है’।“</span> <sup>6</sup><span class='v-txt'>तब मुझे प्रभु की यह वाणी सुनाई पड़ी,</span> <sup>7</sup><span class='v-txt'>“मानवपुत्र! येरूसालेम की ओर मुँह कर उसके मन्दिरों के विरुद्ध यह कहो; इस्राएल देश के विषय में भवियवाणी करो।</span> <sup>8</sup><span class='v-txt'>इस्राएल देश से यह बोलोः ’प्रभु-ईश्वर यह कहता है - मैं तुम्हारे विरुद्ध हो गया हूँ।  मैं म्यान से अपनी तलवार निकालूँगा और तुम से धार्मियों और अधर्मियों, दानों को अलग कर दूँगा,</span> <sup>9</sup><span class='v-txt'>इसलिए धर्मियों और अधर्मियों, दोनों को अलग करने मेरी तलवार दक्षिण से ले कर उत्तर तक के सभी शरीरधारियों के विरुद्ध म्यान से बाहर निकलेगी और नहीं लौटेगी।</span> <sup>10</sup><span class='v-txt'>तब सभी शरीरधारी यह समझ जायेंगे कि मैं, प्रभु ने म्यान से अपनी तलवार निकाली है और वह फिर म्यान में बन्द नहीं होगी।</span> <sup>11</sup><span class='v-txt'>“इसलिए मानवपुत्र! आह भरो।  उनके सामने भग्न हृदय और कटुता से आह भरो।</span> <sup>12</sup><span class='v-txt'>जब वे तुम से पूछें, ’तुम क्यों आह भरते हो?’, तो तुम यह कहो, ’समाचार के कारण।  जब वह मिल जायेगा, तो हर एक हृदय पसीज उठेगा और सबों के हाथ शक्तिहीन हो जायेंगे; हर एक का मन मुरझा जायेगा और सब के घुटने शिथिल हो जायेंगे।  वह आ रहा है।  वह आ गया है। यह प्रभु-ईश्वर की वाणी है।&#039;&#039;</span> <sup>13</sup><span class='v-txt'>मुझे प्रभु की यह वाणी सुनाई दी,</span> <sup>14</sup><span class='v-txt'>“मानवपुत्र! भवियवाणी करते हुए कहो, ’प्रभु-ईश्वर यह कहता हैः तलवार! तलवार पर सान चढ़ाया और उसे चमकाया जा रहा है;</span> <sup>15</sup><span class='v-txt'>वध करने के लिए उस पर सान चढ़ाया जा रहा है।  और बिजली की तरह दमकाने के लिए उसे चमकाया जा रहा है।</span> <sup>16</sup><span class='v-txt'>इसलिए तलवार को चमकाने के लिए दे दिया गया है, जिससे उसका उपयोग किया जा सके उसे वधिक के हाथ में देने के लिए उस पर सान चढ़ाया और चमकाया जा रहा है।</span> <sup>17</sup><span class='v-txt'>मानवपुत्र! रोओ और विलाप करो; क्योंकि वह मेरी प्रजा के विरुद्ध है, वह इस्राएल के सभी पदाधिकारियों के विरुद्ध है।  मेरी प्रजा के साथ वे सभी तलवार को सुपुर्द किये जा रहे हैं।  इसलिए छाती पीटो।</span> <sup>18</sup><span class='v-txt'>इसलिए......यह प्रभु-ईश्वर की वाणी है।’</span> <sup>19</sup><span class='v-txt'>“मानवपुत्र! भवियवाणी करो और तालियाँ बजाओ! तलवार को तिबारा चलने दो, उस तलवार को, जो शिकार का वध करती है, उस तलवार को, जो बड़े शिकार का वध करती है, जो उनके चारों ओर चल रही है।</span> <sup>20</sup><span class='v-txt'>जिससे उनके हृदय अशान्त हो जायें और उन सब के द्वार पर बहुत-से लोगों का वध हो, मैंने यह तलवार दे दी है।  यह वध करने के लिए बिजली की तरह चमकदार बनायी गयी है।</span> <sup>21</sup><span class='v-txt'>दायीं और तेज़ी से काटो, बायीं ओर खड़े हो जाओ, जहाँ कहीं भी तुम्हारा वार ज़रूरी हो।</span> <sup>22</sup><span class='v-txt'>मैं भी अपने हाथों से तालियाँ पीटूँगा।  और अपना क्रोध शान्त करूँगा।  यह मैं, प्रभु ने कहा है।“</span> <sup>23</sup><span class='v-txt'>मुझे प्रभु की वाणी फिर सुनाई पड़ीः</span> <sup>24</sup><span class='v-txt'>“मानवपुत्र! बाबुल के राजा की तलवार के आने के दो मार्ग चिन्हित करो।  दोनों मार्ग एक ही देश से निकले।  नगर की ओर जाने वाले मार्ग के सिरे पर एक मार्गपट्ट अंकित करो।</span> <sup>25</sup><span class='v-txt'>अम्मोनियों के रब्बा और यूदा के किलाबन्द नगर येरूसालेम तक तलवार के आने का मार्ग रेखांकित करो;</span> <sup>26</sup><span class='v-txt'>क्योंकि बाबुल का राजा चैराहे पर, दोनों मार्गों के फूटने के स्थान पर शकुन निकालने के लिए खड़ा है।  वह तीर हिला रहा है, तराफ़ीम से प्रश्न कर रहा है और कलेजे की परख कर रहा है।</span> <sup>27</sup><span class='v-txt'>वध का आदेश देने, युद्ध की ललकार देने, फाटकों तक युद्धयंत्र लगाने, टीले बनाने और मोरचा बन्दी करने का संकेत ’येरूसालेम’ उसके दाहिने हाथ में है।</span> <sup>28</sup><span class='v-txt'>उन लोगों के लिए यह शकुन झूठा है; उन्होंने खायी हुई शपथ पर विश्वास किया था, लेकिन वह उनके दोष याद कर रहा है, जिससे वे बन्दी बना लिये जायेंगे।</span> <sup>29</sup><span class='v-txt'>“इसलिए प्रभु-ईश्वर यह कहता है: अपने अपराध और अपने सभी कर्मों के पाप प्रकट कर तुम अपने दोषों की याद दिला रहे हो, अतः अपनी याद दिलाने के कारण बन्दी बना लिये जाओगे।</span> <sup>30</sup><span class='v-txt'>दुष्ट अपराधी! इस्राएल के शासक! तुम, जिसका वह दिन, अन्तिम निर्णय का समय आ गया है!</span> <sup>31</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता हैः पगड़ी हटा लो और मुकुट उतार दो।  अब पहले-जैसी बात नहीं रहेगी।  नीचे को ऊँचा किया जायेगा और ऊँचे को नीचा।</span> <sup>32</sup><span class='v-txt'>मैं इस को नष्ट, नष्ट, नष्ट, कर दूँगा.... जब तक इसका न्याय करने वाला अधिकारी नहीं आ जाता, जिसे मैं वह अधिकार प्रदान करूँगा।</span> <sup>33</sup><span class='v-txt'>“मानवपुत्र! भवियवाणी करते हुए कहोः प्रभु-ईश्वर यह कहता है।  तुम अम्मोनियों और उनके निन्दनीय व्यवहार के विषय में यह कहोगे: तलवार, तलवार, वध करने के लिए खींच ल गयी है; विनाश करने और बिजली की तरह दमकने के लिए, चमका दी गयी है!</span> <sup>34</sup><span class='v-txt'>जब कि तुम मिथ्यां दिव्य दृश्य देख रहे हो; झूठी भवियवाणियों पर, उन दुष्ट अपराधियों का गला घोंटने के लिए, विश्वास कर रहे हो, जिनके अन्तिम पापों के साथ उनके न्याय का दिन आ गया है।</span> <sup>35</sup><span class='v-txt'>उसे म्यान में बन्द करो।  मैं तुम्हारा न्याय तुम्हारी सृष्टि के स्थान, तुम्हारे जन्म के देश में करूँगा।</span> <sup>36</sup><span class='v-txt'>मैं तुम पर अपना कोप बरसाऊँगा।  मैं तुम पर अपनी क्रोधाग्नि फूँक दूँगा और तुम्हें विध्वंस में निपुण क्रूर लोगों के हाथ कर दूँगा।</span> <sup>37</sup><span class='v-txt'>तुम आग में ईन्धन बन जाओगे; तुम्हारा रक्त देश भर में बहाया जायेगाः तुम्हारी स्मृति सदा के लिए मिट जायेगी; क्योंकि यह मैं, प्रभु ने कहा है।“</span> </p>
+        <div class='nav'><a href='033020.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033022.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

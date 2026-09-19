@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 18</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 18</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जो सदा जीवित रहता है, उसने सब कुछ की सृष्टि की है।  वहीं न्यायी है और सदा ही अजेय राजा बना रहता है।</span> <sup>2</sup><span class='v-txt'>कौन उसके कार्यो का पूरा वर्णन कर सकता है?</span> <sup>3</sup><span class='v-txt'>कौन उसकी महिमा का अनुसन्धान कर सकता है?</span> <sup>4</sup><span class='v-txt'>कौन उसके महिमामय सामर्थ्य को घोषित करेगा?  कौन उसकी दयालुता का बखान करेगा?</span> <sup>5</sup><span class='v-txt'>उन में न तो कुछ घटाया और न कुछ बढ़ाया जा सकता है।  प्रभु के चमत्कारों की थाह कोई नहीं ले सकता।</span> <sup>6</sup><span class='v-txt'>जहाँ मनुष्य उनके वर्णन का अन्त करता है, वहाँ उनका प्रारम्भ मात्र है।  जब वह रूकता है, तो असमंजस में पड़ा रहता है।</span> <sup>7</sup><span class='v-txt'>मनुष्य क्या है?  वह किस काम का है?  उसके अच्छे और बुरे कामों का क्या अर्थ है?</span> <sup>8</sup><span class='v-txt'>यदि मनुष्य की आयु एक सौ वर्ष है, तो वह बहुत मानी जाती है; किन्तु अनन्त काल की तुलना में ये थोड़े वर्ष समुद्र में बूँद की तरह, रेतकण की तरह हैं।</span> <sup>9</sup><span class='v-txt'>इसलिए प्रभु मनुष्यों के प्रति सहिष्णु है और उन पर अपनी दया बरसाता है।</span> <sup>10</sup><span class='v-txt'>वह उनके हृदय के बुरे झुकाव देखता और उनका दुष्ट विरोध जानता है।</span> <sup>11</sup><span class='v-txt'>वह उन्हे क्षमा प्रदान करता और धर्ममार्ग दिखाता है।</span> <sup>12</sup><span class='v-txt'>मनुष्य अपने पड़ोसी पर ही दया दिखा सकता, किन्तु प्रभु की दया सब शरीरधारियों पर प्रकट होती है।</span> <sup>13</sup><span class='v-txt'>जिस तरह चरवाहा अपने झुण्ड का पथ-प्रदर्शन करता, उसी तरह वह मनुष्यों को डाँटता, दण्डित करता और शिक्षा देता है।</span> <sup>14</sup><span class='v-txt'>वह उन लोगों पर दया करता है, जो उसकी शिक्षा ग्रहण करते और उसकी आज्ञाओें को उत्सुकता से पालन करते हैं।</span> <sup>15</sup><span class='v-txt'>पुत्र! भलाई करते समय किसी को दोष मत दो और दान देते समय कटु शब्द मत बोलो।</span> <sup>16</sup><span class='v-txt'>क्या ओस शीतल नहीं करती?  इसी प्रकार उपहार से भी अच्छा एक शब्द हो सकता है।</span> <sup>17</sup><span class='v-txt'>एक मधुर शब्द महँगे उपहार से अच्छा है।  स्नेही मनुष्य एक साथ दोनों को देता है।</span> <sup>18</sup><span class='v-txt'>मूर्ख कटु शब्दों से डाँटता है और क्रोधी मनुष्य का उपहार दुःखदायी है।</span> <sup>19</sup><span class='v-txt'>निर्णय से पहले वकील का प्रबन्ध करो और बोलने से पहले जानकार बनो।</span> <sup>20</sup><span class='v-txt'>बीमारी से पहले दवा का सेवन करो, निर्णय से पहले अपनी ही जाँच करो और जाँच के समय तुम को क्षमा मिलेगी।</span> <sup>21</sup><span class='v-txt'>बीमारी से पहले विनम्र बनो और समय रहते अपने पापों पर पश्चात्ताप करो।</span> <sup>22</sup><span class='v-txt'>मन्नत पूरी करने में विलम्ब मत करो।  मृत्यु तक यह काम मत टालते रहो; क्योंकि ईश्वर का पुरस्कार सदा बना रहेगा।</span> <sup>23</sup><span class='v-txt'>मन्नत मानने से पहले सोच-विचार करो।  उस मनुष्य के समान मत बनो, जो प्रभु की परीक्षा लेता है।</span> <sup>24</sup><span class='v-txt'>अन्तिम समय भड़कने वाला क्रोध और दण्ड याद रखो, जब प्रभु अपना प्रभु मुँह फेर लेता है।</span> <sup>25</sup><span class='v-txt'>बहुतायत के दिनों में भुखमरी ओर समृद्धि के दिनों में दरिद्रता और अभाव याद रखो।</span> <sup>26</sup><span class='v-txt'>सुबह से शाम तक मौसम बदलता है, प्रभु की दृष्टि में यह सब क्षणभंगुर है।</span> <sup>27</sup><span class='v-txt'>बुद्धिमान् सब समय सावधान रहता है और जब पाप का बोलबाला हो, तो वह अपराध से बचता है।</span> <sup>28</sup><span class='v-txt'>हर विवेकशील व्यक्ति प्रज्ञा पहचानता और प्रज्ञासम्पन्न मनुष्य की प्रशंसा करता है।</span> <sup>29</sup><span class='v-txt'>नीति-वचन जानने वाले अपनी प्रज्ञा का प्रमाण देते हैं और वर्षा की तरह सूक्तियाँ बरसाते है।</span> <sup>30</sup><span class='v-txt'>अपनी वासनाओं का दास मत बनो और अपनी लालसाओें पर संयम रखो।</span> <sup>31</sup><span class='v-txt'>यदि तुम अपनी वासनाओें का दास बनोगे, तो तुम्हारे शत्रु तुम्हारा उपहास करेंगे।</span> <sup>32</sup><span class='v-txt'>दावतों में रुचि मत लो, इस से दुगुनी दरिद्रता आ जाती है।</span> <sup>33</sup><span class='v-txt'>यदि तुम्हारे पास धन न हो, तो न पेटू बनो और न मद्यप।  कहीं ऐसा न हो कि तुम अपनी हानि कर बैठो।</span> </p>
+        <div class='nav'><a href='028017.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028019.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योशुआ - अध्याय 13</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योशुआ</h1>
+        <h2>अध्याय 13</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब योशुआ वृद्ध हो गया और उसकी अवस्था बहुत अधिक को गयी, तो प्रभु ने उस से कहा, &quot;तुम्हारी अवस्था बहुत अधिक हो गयी है और देश के अनेक बड़े भाग अब तक तुम्हारे अधिकार में नहीं आये।</span> <sup>2</sup><span class='v-txt'>वे इस प्रकार हैं: फिलिस्तियों के सब प्रदेश; गशूूरियों का सारा देश,</span> <sup>3</sup><span class='v-txt'>मिस के पूर्व शीहोर से लेकर उत्तर दिशा के एक्रोन की सीमा तक, जो कनानी देश समझा जाता है (इस में फिलिस्तियों के पाँच शासक हैं: गाजा, अशदोद, अशकलोन, गत और एक्रोन के) ; अव्वियों के प्रान्त;</span> <sup>4</sup><span class='v-txt'>दक्षिण में कनानियों का सम्पूर्ण प्रदेश; सीदोनियों की गुफा से ले कर अफे़क तक अमोरियों का प्रदेश;</span> <sup>5</sup><span class='v-txt'>फिर गिबलियों का देश और सारा लेबानोन: पूर्व में हेरमोन की तलहटी पर स्थित बाल-गाद से ले कर उस स्थान तक, जहाँ से हमात का मार्ग शुरू होता है।</span> <sup>6</sup><span class='v-txt'>लेबानोन के पहाड़ी प्रान्त से मिस्रफोतमईम तक के सब निवासियों को, अर्थात सब सीदोनियों को मैं स्वयं इस्राएल के लोगों के सामने से भगा दूँगा।  मैंने तुम को जैसा आदेश दिया है, तुम वैसा ही चिट्टी डाल कर उसे इस्राएलियों को विरासत के रूप में दोगे</span> <sup>7</sup><span class='v-txt'>और उसे नौ वंशों और मनस्से के आधे वंश में विरासत के रूप में बाँट दोगे।&quot;</span> <sup>8</sup><span class='v-txt'>मनस्से के आधे वंश, रूबेन और गाद के वंशों ने अपना दायभाग प्राप्त किया था, जिसे मूसा ने उन्हें यर्दन के पूर्व में दिया था, अर्थात्-</span> <sup>9</sup><span class='v-txt'>अरनोन की घाटी के किनारे पर स्थित अरोएर से और घाटी के बीच के नगर से दीबोन तक मेदेबा की सारी पठार भूमि</span> <sup>10</sup><span class='v-txt'>और अम्मोनियों की सीमा तक हेशबोन में निवास करने वाले अमोरियों के राजा सीहोन के सब नगर।</span> <sup>11</sup><span class='v-txt'>फिर गिलआद और गशूरियों तथा माकातियों का प्रान्त, सारी हेरमोन पर्वतश्रेणी और सलका तक का सारा बाशान,</span> <sup>12</sup><span class='v-txt'>अर्थात बाशान में ओग का सारा राज्य।  ओग अश्तारोत और एद्रेई में निवास करता था और रफ़ाइयों का अन्तिम वंशज था।  मूसा ने उन को पराजित कर भगा दिया था।</span> <sup>13</sup><span class='v-txt'>परन्तु इस्राएली न तो गशूरियों को भगा पाये थे और न माकातियों को।  इसलिए गशूरी और माकाती अपने-अपने निवासस्थानों में आज तक इस्राएलियों के बीच रहते हैं।</span> <sup>14</sup><span class='v-txt'>केवल लेवी वंश को दायभाग नहीं मिला था।  प्रभु इस्राएल के ईश्वर की अर्पित होम बलियाँ ही उसे दायभाग में मिली थीं, जैसा कि उसने उस से कहा था।</span> <sup>15</sup><span class='v-txt'>मूसा ने रूबेन वंश के विभिन्न कुलों को दायभाग के रूप में यह दिया था:</span> <sup>16</sup><span class='v-txt'>अरनोन की घाटी के किनारे स्थित अरोएर से आगे वह नगर, जो घाटी के बीच में है, फिर मेदेबा के पास की सारी पठार भूमि,</span> <sup>17</sup><span class='v-txt'>हेशबोन और पठार भूमि पर स्थित उसके सब नगर, दीबोन, बामोत-बाल, बेत-बाल-मेओन,</span> <sup>18</sup><span class='v-txt'>यहसा, केदेमोत और मेफ़ात,</span> <sup>19</sup><span class='v-txt'>किर्याताईम, सिबमा और घाटी की पहाड़ी पर सेरेत-शहर,</span> <sup>20</sup><span class='v-txt'>फिर बेत-पओर, पिसगा की तराइयाँ और बेत-यशिमोत,</span> <sup>21</sup><span class='v-txt'>अर्थात पठार के सब नगर, हेशबोन में रहने वाले अमोरियों के राजा सीहोन का सारा राज्य, जिसे मूसा ने मिदयान के नेताओं के साथ पराजित किया था, अर्थात एवी, रेकेम, सूर, हूर और रेबा को, जो सीहोन प्रदेश में रहने वाले क्षेत्रपति थे।</span> <sup>22</sup><span class='v-txt'>इस्राएलियों ने युद्ध में मारे हुए लोगों के अतिरिक्त शकुन विचारने वाले बओर के पुत्र बिलआम को भी तलवार के घाट उतार दिया था।</span> <sup>23</sup><span class='v-txt'>रूबेन वंशियों की सीमा यर्दन थी।  यह प्रदेश उसके नगरों और उनके गाँवों के साथ रूबेन वंशी कुलों को विरासत के रूप में मिला था।</span> <sup>24</sup><span class='v-txt'>मूसा ने गादवंशियों के विभिन्न कुलों को यह प्रदेश दिया था:</span> <sup>25</sup><span class='v-txt'>यजेर और गिलआद के सब नगर, रब्बा के सामने स्थित अरोएर तक अम्मनियों का आधा देश,</span> <sup>26</sup><span class='v-txt'>हेशबोन के रामत-मिस्पे और बटोनीम तक और महनयीम से दबीर के प्रान्त तक,</span> <sup>27</sup><span class='v-txt'>तराई में बेत-हराम, बेत-निम्रा, सुक्कोत और साफ़ोन, अर्थात हेशबोन के राजा सीहोन का शेष राज्य, यर्दन और यर्दन के उस पार पूर्व में किन्नेरेत समुद्र तक का देश।</span> <sup>28</sup><span class='v-txt'>यही उनके नगरों और गाँवों के साथ गादवंशी कुलों को विरासत के रूप में मिला था।</span> <sup>29</sup><span class='v-txt'>मूसा ने मनस्से के आधे वंश के विभिन्न कुलों को यह प्रदेश दिया था:</span> <sup>30</sup><span class='v-txt'>महनयीम से ले कर सारा बशान, बाशान के राजा ओग का सारा राज्य और बाशान में याईर के सब नगर, कुल मिला कर साठ नगर।</span> <sup>31</sup><span class='v-txt'>फिर बाशान में ओग की राजधानियाँ अश्तारोत और एद्रेई के साथ गिलआद का आधा भाग।  यह मनस्से के पुत्र माकीर के वंशजों अर्थात् आधे माकीरियों के विभिन्न कुलों को मिला था।</span> <sup>32</sup><span class='v-txt'>ये वे भाग हैं, जिन्हें मूसा ने यर्दन के उस पार, येरीखों के पूर्व मोआब के मैदानों में दायभाग के रूप में विभाजित किया था।</span> <sup>33</sup><span class='v-txt'>लेकिन मूसा ने लेवी वंश को दायभाग के रूप में कुछ नहीं दिया था।  प्रभु इस्राएल का ईश्वर उसका दायभाग है, जैसा उसने उन से कहा था।</span> </p>
+        <div class='nav'><a href='006012.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='006014.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 32</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 32</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यदि तुम को अध्यक्ष बनाया गया, तो मत इतराओे; अतिथियों के साथ उन में एक-जैसे आचरण करो।</span> <sup>2</sup><span class='v-txt'>दूसरों को सुव्यवस्थित करने के बाद बैठ जाओ।  अपना कर्तव्य पूरा करने के बाद ही अपना आसन ग्रहण करो।</span> <sup>3</sup><span class='v-txt'>तुम उनके साथ आनन्द मनाओगे और अपने आतिथ्य-सत्कार के लिए तुम्हारा सम्मान होगा।</span> <sup>4</sup><span class='v-txt'>वयोवृद्ध! तुम उन को सम्बोधित करो, क्योंकि तुम उसके योग्य हो।</span> <sup>5</sup><span class='v-txt'>किन्तु सावधानी से अपने शब्दों का चयन करो और गायन-वादन में बाधा मत डालो।</span> <sup>6</sup><span class='v-txt'>दावत के समय देर तक भाषण मत करो और असमय अपनी प्रज्ञा का प्रदर्शन मत करो।</span> <sup>7</sup><span class='v-txt'>स्वर्ण आभूषण में जड़ी लाल मणि की तरह अंगूरी की दावत में वादन-गायन शोभा देता है।</span> <sup>8</sup><span class='v-txt'>मधुर अंगूरी के पान के समय सुरीला संगीत सोने के खाँचे में मरकत-मणि जैसा है।</span> <sup>9</sup><span class='v-txt'>मौन रह कर दूसरों की बात सुनो; तुम्हारे शिष्टाचार की प्रशंसा की जायेगी।</span> <sup>10</sup><span class='v-txt'>युवको! ज़रूरत पड़ने पर बोलो,</span> <sup>11</sup><span class='v-txt'>किन्तु दो बार पूछे जाने के बाद ही।</span> <sup>12</sup><span class='v-txt'>उस व्यक्ति की तरह, जो बहुत जानता, किन्तु कम बोलता है, तुम संक्षिप्त, बल्कि सारगर्भित भाषण दो।</span> <sup>13</sup><span class='v-txt'>बड़ों के बीच विनयी बनो और बूढ़ों के सामने कम बोलो।</span> <sup>14</sup><span class='v-txt'>मेघगर्जन से पहले बिजली चमकती है, इसी तरह विनम्र व्यक्ति के आगे सम्मान चलता है।</span> <sup>15</sup><span class='v-txt'>समय पर मेज़ से उठ कर वहाँ देर मत करो।  सीधे अपने घर जा कर मनोरंजन करो।</span> <sup>16</sup><span class='v-txt'>वहाँ अपनी इच्छा के अनुसार समय बिताओे।  और घमण्डपूर्वक बातों द्वारा पाप मत करो।</span> <sup>17</sup><span class='v-txt'>सब कुछ के लिए अपने सृष्टिकर्ता को धन्यवाद दो, जिसने तुम को इतने उपकार प्रदान किये।</span> <sup>18</sup><span class='v-txt'>जो ईश्वर पर श्रद्धा रखता है, वह उसकी शिक्षा स्वीकार करता है।  जो प्रातः उसकी खोज करता, वह उसकी कृपा प्राप्त करता है।</span> <sup>19</sup><span class='v-txt'>जो संहिता का अनुशीलन करता, उसे तृप्ति मिलेगी; किन्तु जो उसका विरोध करता, वह उसके जाल में फँसता है।</span> <sup>20</sup><span class='v-txt'>जो प्रभु पर श्रद्धा रखते हैं, वे धर्म का मर्म समझेंगे और उनके सत्कर्म प्रकाश की तरह चमकेंगे।</span> <sup>21</sup><span class='v-txt'>पापी चेतावनी स्वीकार नहीं करता और आज्ञाओें का मनमाना अर्थ लगाता है।</span> <sup>22</sup><span class='v-txt'>(22-23) समझदार व्यक्ति सोच-विचार करता, किन्तु मूर्ख और घमण्डी कभी नहीं डरते।</span> <sup>24</sup><span class='v-txt'>पुत्र! सोच-विचार किये बिना कुछ मत करो और तुम बाद में नहीं पछताओगे।</span> <sup>25</sup><span class='v-txt'>ऊबड-खाबड़ रास्ते पर मत चलो और तुम पत्थरों से ठोकर नहीं खाओगे।  अज्ञात मार्ग पर सँभल कर चलो और अपना जीवन जोखिम में मत डालो।</span> <sup>26</sup><span class='v-txt'>अपने पुत्रों से भी सावधान रहो और अपने नौकरों पर निगरानी रखो।</span> <sup>27</sup><span class='v-txt'>तुम सावधानी से अपने सभी कार्य करो।  इस प्रकार तुम आज्ञाओें का पालन कर लोगे।</span> <sup>28</sup><span class='v-txt'>जो संहिता का ध्यान रखता, वह आज्ञाओें का पालन करता है।  जो प्रभु पर भरोसा रखता, उसे कोई हानि नहीं होगी।</span> </p>
+        <div class='nav'><a href='028031.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028033.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रेरित-चरित - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रेरित-चरित</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>कुछ लोग यहूदिया से अन्ताखि़या आये और भाइयों को यह शिक्षा देते रहे कि यदि मूसा से चली आयी हुई प्रथा के अनुसार आप लोगों का ख़तना नहीं होगा, तो आप को मुक्ति नहीं मिलेगी।</span> <sup>2</sup><span class='v-txt'>इस विषय पर पौलुस और बरनाबस तथा उन लोगों के बीच तीव्र मतभेद और वाद-विवाद छिड़ गया, और यह निश्चय किया गया कि पौलुस तथा बरनाबस अन्ताखि़या के कुछ लोगों के साथ येरूसालेम जायेंगे और इस समस्या पर प्रेरितों तथा अध्यक्षों से परामर्श करेंगे।</span> <sup>3</sup><span class='v-txt'>अन्ताखि़या की कलीसिया ने उन्हें विदा किया।  वे फ़ेनिसिया तथा समरिया हो कर यात्रा करते हुए वहाँ के सब भाइयों को ग़ैर-यहूदियों के धर्म-परिवर्तन के विषय में बता कर बड़ा आनन्द प्रदान करते थे।</span> <sup>4</sup><span class='v-txt'>जब वे येरूसालेम पहुँचे, तो कलीसिया, प्रेरितों तथा अध्यक्षों ने उनका स्वागत किया और उन्होंने बताया कि ईश्वर ने उनके द्वारा क्या-क्या कर दिखाया है।</span> <sup>6</sup><span class='v-txt'>प्रेरित और अध्यक्ष इस समस्या पर विचार करने के लिए एकत्र हुए।</span> <sup>7</sup><span class='v-txt'>जब बहुत वाद-विवाद हो चुका था, तो पेत्रुस ने उठ कर यह कहा: &quot;भाइयो! आप जानते हैं कि ईश्वर ने प्रारम्भ से ही आप लोगों में से मुझे चुन कर निश्चय किया कि गै़र-यहूदी मेरे मुख से सुसमाचार का वचन सुनें और विश्वास करें।</span> <sup>8</sup><span class='v-txt'>ईश्वर मनुष्य का हृदय जानता है।  उसने उन लोगों को हमारे ही समान पवित्र आत्मा प्रदान किया।</span> <sup>9</sup><span class='v-txt'>इस प्रकार उसने उनके पक्ष में साक्ष्य दिया और विश्वास द्वारा उसका हृदय शुद्ध कर हम में और उन में कोई भेद नहीं किया।</span> <sup>10</sup><span class='v-txt'>जो जूआ न तो हमारे पूर्वज ढोने में समर्थ थे और न हम, उसे शिष्यों के कन्धों पर लाद कर आप लोग अब ईश्वर की परीक्षा क्यों लेते हैं?</span> <sup>11</sup><span class='v-txt'>हमारा विश्वास तो यह है कि हम, और वे भी, प्रभु ईसा की कृपा द्वारा ही मुक्ति प्राप्त करेंगे।&quot;</span> <sup>12</sup><span class='v-txt'>सब चुप हो गये और वे बरनाबास तथा पौलुस की बातें सुनते रहे, जो उन चिन्हों तथा चमत्कारों के विषय में बता रहे थे, जिन्हें ईश्वर ने उनके द्वारा ग़ैर-यहूदियों के बीच दिखाया था।</span> <sup>13</sup><span class='v-txt'>जब वे बोल चुके थे, तो याकूब ने कहा, &quot;भाइयो! मेरी बात सुनिए।</span> <sup>14</sup><span class='v-txt'>सिमोन ने हमें बताया कि प्रारम्भ से ही ईश्वर ने किस प्रकार ग़ैर-यहूदियों में अपने लिए एक प्रजा चुनने की कृपा की।</span> <sup>15</sup><span class='v-txt'>यह नबियों की शिक्षा के अनुसार ही है; क्योंकि लिखा है:</span> <sup>16</sup><span class='v-txt'>इसके बाद में लौट कर दाऊद का गिरा हुआ घर फिर ऊपर उठाऊँगा।  मैं उसके खँड़हरों का पुननिर्माण करूँगा और उसे फिर खडा़ करूँगा,</span> <sup>17</sup><span class='v-txt'>जिससे मानव जाति के अन्य लोग- अर्थात् सभी राष्ट्र, जिन्हें मैंने अपनाया है- प्रभु की खोज में लगे रहें।  यह कथन उस प्रभु का है, जो ये कार्य सम्पन्न करता है।</span> <sup>18</sup><span class='v-txt'>ये कार्य प्राचीन काल से ज्ञात हैं।</span> <sup>19</sup><span class='v-txt'>&quot;इसलिए मेरा विचार यह है कि जो ग़ैर-यहूदी ईश्वर की ओर अभिमुख होते हैं, उन पर अनावश्यक भार न डाला जाये,</span> <sup>20</sup><span class='v-txt'>बल्कि पत्र लिख कर उन्हें आदेश दिया जाये कि वे देवमूर्तियों पर चढ़ाये हुए माँस से, व्यभिचार, गला घोंटे हुए पशुओं के माँस और रक्त से परहेज़ करें;</span> <sup>21</sup><span class='v-txt'>क्योंकि प्राचीनकाल से नगर-नगर में मूसा के प्रचारक विद्यमान हैं और उनकी संहिता प्रत्येक विश्राम-दिवस को सभागृहों में पढ़ कर सुनायी जाती है।</span> <sup>22</sup><span class='v-txt'>तब सारी कलीसिया की सहमति से प्रेरितों तथा अध्यक्षों ने निश्चय किया कि हम में कुछ लोगों को चुन कर पौलुस तथा बरनाबस के साथ अन्ताखि़या भेजा जाये। उन्होंने दो व्यक्तियों को चुना, जो भाइयों में प्रमुख थे, अर्थात् यूदस को, जो बरसब्बास कहलाता था, तथा सीलस को,</span> <sup>23</sup><span class='v-txt'>और उनके हाथ यह पत्र भेजा: &quot;प्रेरित तथा अध्यक्ष, आप लोगों के भाई, अन्ताखि़या, सीरिया तथा किलिकिया के ग़ैर-यहूदी भाइयों को नमस्कार करते हैं।</span> <sup>24</sup><span class='v-txt'>हमने सुना है कि हमारे यहाँ के कुछ लोगों ने, जिन्हें हमने कोई अधिकार नहीं दिया था, अपनी बातों से आप लोगों में घबराहट उत्पन्न की और आपके मन को उलझन में डाल दिया है।</span> <sup>25</sup><span class='v-txt'>इसलिए हमने सर्वसम्मति से निर्णय किया है कि प्रतिनिधियों का चुनाव करें और उन को अपने प्रिय भाई बरनाबस और पौलुस के साथ,</span> <sup>26</sup><span class='v-txt'>जिन्होंने हमारे प्रभु ईसा मसीह के नाम पर अपना जीवन अर्पित किया है, आप लोगों के पास भेजें।</span> <sup>27</sup><span class='v-txt'>इसलिए हम यूदस तथा सीलस को भेज रहे हैं।  वे भी आप लोगों को यह सब मौखिक रूप से बता देंगे।</span> <sup>28</sup><span class='v-txt'>पवित्र आत्मा को और हमें यह उचित जान पड़ा कि इन आवश्यक बातों के सिवा आप लोगों पर कोई और भार न डाला जाये।</span> <sup>29</sup><span class='v-txt'>आप लोग देवमूर्तियों पर चढ़ाये हुए मांस से, रक्त, गला घोंटे हुए पशुओं के मांस और व्यभिचार से परहेज़ करें। इन से अपने को बचाये रखने में आप लोगों का कल्याण है। अलविदा!&quot;</span> <sup>30</sup><span class='v-txt'>वे विदा हो कर अन्ताखि़या चल दिये और वहाँ पहुँच कर उन्होंने भाइयों को एकत्र कर वह पत्र दिया।</span> <sup>31</sup><span class='v-txt'>पत्र की सान्त्वनापूर्ण बातें पढ़ने के बाद लोगों को बड़ा आनन्द हुआ।</span> <sup>32</sup><span class='v-txt'>यूदस और सीलस स्वयं नबी थे।  उन्होंने भाइयों को देर तक सम्बोधित कर सान्त्वना दी और उन को ढ़ारस बँधाया।</span> <sup>35</sup><span class='v-txt'>पौलुस और बरनाबस अन्ताखि़या में ही रह गये और बहुत-से अन्य लोगों के साथ वे शिक्षा देते और प्रभु के ेवचन का प्रचार करते रहे।</span> <sup>36</sup><span class='v-txt'>कुछ समय बाद पौलुस ने बरनाबस से कहा, &quot;आइए, हमने जिन-जिन नगरों में प्रभु के वचन का प्रचार किया, वहाँ फिर चल कर भाइयों से मिलें और यह देखें कि वे कैसे हैं&quot;।</span> <sup>37</sup><span class='v-txt'>बरनाबस चाहता था कि वे योहन को भी, जो मारकुस कहलाता था, अपने साथ ले जायें।</span> <sup>38</sup><span class='v-txt'>पौलुस का विचार यह था कि जिस व्यक्ति ने पम्फ़लिया में उन से अलग हो कर उनके काम में हाथ नहीं बँटाया था, उसे अपने साथ ले जाना उचित नहीं है।</span> <sup>39</sup><span class='v-txt'>इस पर दोनों में इतना तीव्र मतभेद हो गया कि वे एक दूसरे से अलग हो गये।  बरनाबस मारकुस को अपने साथ लेकर नाव से कुप्रुस चल दिया।</span> <sup>40</sup><span class='v-txt'>पौलुस ने सीलस को चुना।  भाइयों ने उसके लिए प्रभु की कृपा माँगी और वह चल पड़ा।</span> <sup>41</sup><span class='v-txt'>उसने सीरिया तथा किलिकिया का भ्रमण किया और कलीसियाओं को ढ़ारस बँधाया।</span> </p>
+        <div class='nav'><a href='051014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='051016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

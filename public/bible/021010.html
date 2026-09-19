@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मक्काबियों का दूसरा ग्रन्थ - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मक्काबियों का दूसरा ग्रन्थ</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मक्काबी और उसके आदमियों ने प्रभु की सहायता से मंदिर और नगर पर फिर अधिकार कर लिया।</span> <sup>2</sup><span class='v-txt'>गैर-यहूदियों ने चैराहे पर जो अन्य वेदियाँ बनवायी थी, उन्होंने उन्हें गिरा दिया और अन्य पूजास्थानों का भी विनाश कर दिया।</span> <sup>3</sup><span class='v-txt'>उन्होंने मंदिर के शुद्धीकरण के लिए एक नयी वेदी बनायी, चकमक पत्थरों से आग निकाली और उस से बलि जलायी, जिसे वे दो साल के अंतराल के बाद चढ़ा सके। उन्होंने धूप चढ़ायी, दीप जलाये और भेंट रोटियाँ रखी।</span> <sup>4</sup><span class='v-txt'>इसके बाद उन्होंने मुँह के बल गिर कर प्रभु से प्रार्थना की कि वह भविष्य में उन पद फिर कभी ऐसी विपत्तियाँ न पड़ने दे।  यदि वे फिर कभी पाप करें, तो वह उन्हें अपनी दया के अनुरूप दण्ड दिलाये, किन्तु विधर्मी और बर्बर गैर-यहूदियों के हाथ फिर कभी नहीं पड़ने दे।</span> <sup>5</sup><span class='v-txt'>जिस दिन मंदिर ग़ैर-यहूदियों द्वारा अपवित्र किया गया, ठीक उसी दिन मंदिर का शुद्धीकरण भी किया गया, अर्थात् किसलेव मास के पच्चीसवें दिन।</span> <sup>6</sup><span class='v-txt'>शिविर-पर्व की विधि के अनुसार वे आठ दिन उल्लास के साथ उत्सव मनाते रहे और यह याद करते रहे कि कैसे थोड़े ही समय पहले वे पहाड़ियों और गुफाओं में शिविर-पर्व मना रहे थे, मानो वे जंगली जानवर हों।</span> <sup>7</sup><span class='v-txt'>वे अपने हाथ में सजे हुए डण्डे, हरी टहनियाँ और खजूर की डालियाँ लिये रहते थे और उसके आदर में भजन गाते थे, जिसने अपने मंदिर का शुद्धीकरण सम्पन्न कराया था।</span> <sup>8</sup><span class='v-txt'>उन्होंने सर्वसम्मति से एक राजाज्ञा निकाली कि सारी यहूदी जाति प्रति वर्ष मंदिर के शुद्धीकरण का पर्व मनायेगी।</span> <sup>9</sup><span class='v-txt'>ये हैं अंतियोख एपीफानेस की मृत्यु के समय की घटनाएँ।</span> <sup>10</sup><span class='v-txt'>अब हम उन घटनाओं का वर्णन करेंगे, जो उस दुष्ट के पुत्र अंतियोख यूपातोर के राज्यकाल में हुई।  हम संक्षेप में उस समय के युद्धों की विपत्तियों का वर्णन करेंगे।</span> <sup>11</sup><span class='v-txt'>राजपद ग्रहण करते ही अंतियोख यूपातोर ने लीसियस को प्रमुख शासक के रूप में नियुक्त किया, जो केले-सीरिया और फे़नीके का राज्यपाल था।</span> <sup>12</sup><span class='v-txt'>पतोलेमेउस, जो माक्रोन कहलाता है, यहूदियों के साथ किये हुए अधर्म के कारण उनके प्रति न्याय-संगत और शांतिपूर्ण व्यवहार करना चाहता था।</span> <sup>13</sup><span class='v-txt'>इसलिए दरबारियों ने यूतापोत से उसकी शिकायत की।  इसके सिवा उसके सुनने में बार-बार आता था कि लोग उसे विश्वासघाती कहते हैं, क्योंकि उसने साइप्रस छोड़ दिया, जिसे फिलोमेतोर ने उसे सौपा था और वह अंतियोख एपीफानेस के पक्ष में चला गया था।  जब उसने देखा कि वह सम्मान के साथ अपना कार्य-भार नहीं संभाला सका, तो उसने विष पी कर आत्महत्या कर ली।</span> <sup>14</sup><span class='v-txt'>जब गोरगियस उन प्रांतों का शासक बना, तो उसने किराये के सैनिक इकट्ठे किये और वह सर्वत्र यहूदियों के विरुद्ध लड़ने का अवसर ढूँढता रहा।</span> <sup>15</sup><span class='v-txt'>उसी समय इदूमैयावासी भी, जिनके हाथ कई उपयुक्त स्थानों पर गढ थे, यहूदियों को तंग करते थे।  ये येरूसालेम से निर्वासित लोगों को शरण देते और युद्ध जारी रखने का प्रयत्न करते थे।</span> <sup>16</sup><span class='v-txt'>मक्काबी के आदमियों ने सामूहिक प्रार्थना में ईश्वर से निवेदन किया कि वह उनका सहायक बने और इसके बाद उन्होंने इदूमैया के गढ़ों पर आक्रमण कर दिया।</span> <sup>17</sup><span class='v-txt'>उन्होंने उन पर जोरदार चढ़ाई की और उन गढों को अधिकार में कर किया।  जो लोग दीवारों पर से उन से लड़ते थे, उन्होंने उन्हें भगा दिया और जिन लोगों को पकड़ा, उन्हें तलवार के घाट उतारा।  इस प्रकार उन्होंने कम-से-कम बीस हजार आदमियों का वध किया।</span> <sup>18</sup><span class='v-txt'>लगभग नौ हजार लोगों ने दो ऐसे बडे़ बुर्जों में शरण ली, जहाँ वह सब कुछ था, जिसके सहारे वे घेरे का सामना कर सकते थे।</span> <sup>19</sup><span class='v-txt'>मक्काबी ने वहाँ घेरा डालने सिमोन, युसूफ और जखेयस को बहुत-से आदमियों के साथ वहाँ छोड़ दिया।  वह खुद ऐसे स्थान पर चला गया, जहाँ उसकी अधिक आवश्यकता थी।</span> <sup>20</sup><span class='v-txt'>लेकिन सिमोन के आदमियों ने, जो पैसे के लालची थे, उन लोगों से घूस ली, जो बुर्जों में पडेे़ थे।  उन्होंने सत्तर हजार सिक्के ले कर कुछ लोगों को बाहर जाने दिया।</span> <sup>21</sup><span class='v-txt'>जैसे ही मक्काबी को इस बात का पता चला, उसने जनता के नेताओं को बुलाया और उन पर यह अभियोग लगाया कि उन्होंने पैसे के लोभ में अपने भाइयों को बेच दिया और उनके शत्रुओं को हाथ से निकल जाने दिया।</span> <sup>22</sup><span class='v-txt'>उसने उन विश्वासघातियों को प्राणदण्ड दिया और शीघ्र ही उन बुर्जों को अपने अधिकार में कर लिया।</span> <sup>23</sup><span class='v-txt'>उसे लडाई में अपूर्व सफलता मिली और उसने उन बुर्जों में बीस हजार से अधिक आदमियों का वध किया।</span> <sup>24</sup><span class='v-txt'>तिमोथेव ने, जो पहले यहूदियों से पराजित हो गया था, विदेशी सैनिकों की एक बड़ी सेना और एशिया से बहुत-से घोड़े एकत्रित किये।  वह शस्त्रों के बल पर यहूदिया को अपने अधिकार में करना चाहता था।</span> <sup>25</sup><span class='v-txt'>वह पास आ ही रहा था कि मक्काबी के आदमियों ने ईश्वर से सहायता की प्रार्थना की।  उन्होंने सिर पर राख डाली, टाट के वस्त्र ओढे़</span> <sup>26</sup><span class='v-txt'>और वेदी के सामने मुँह के बल गिर कर ईश्वर से प्रार्थना की कि वह उनके अनुकूल हो और संहिता के कथन के अनुसार उनके शत्रुओं का शत्रु और उनके विरोधियों का विरोधी प्र्रमाणित हों।</span> <sup>27</sup><span class='v-txt'>उन्होंने प्रार्थना समाप्त कर हथियार उठाये और नगर से काफी दूर निकल गये।  वे शत्रु के पास आ कर रुक गये।</span> <sup>28</sup><span class='v-txt'>पौ फटने पर दोनों सेनाएँ एक दूसरे से लड़ने लगीं। कुशल-क्षेम और विजय के लिए एक दल को अपनी वीरता के सिवा ईश्वर का भरोसा था, दूसरे दल को लड़ने के अपने उत्साह का!</span> <sup>29</sup><span class='v-txt'>जब लड़ाई का रूप विकट हो गया, जो शत्रुओं ने देखा कि भड़कीले वस्त्र पहने ऐसे पाँच घुड़सवार आकाश से उतरे, जिनके घोड़ों की लगामें सोने की थीं।  वे घुड़सवार यहूदी सेना के आगे-आगे चलने लगे।</span> <sup>30</sup><span class='v-txt'>वे मक्काबी को अपने बीच में ले चले और अपने शस्त्रों से उसकी रक्षा करते रहे, जिससे वह घायल न हो।  वे शत्रु पर तीर चलाते और वज्रपात करते रहे, जिससे उनके सैनिकों की आँखों चांैधिया गयीं और वे आतंकित हो कर पीछे हट गये।</span> <sup>31</sup><span class='v-txt'>उनके बीस हजार पाँच सौ पैदल सैनिक और छः सौ घुड़सवार मारे गये।</span> <sup>32</sup><span class='v-txt'>तिमोथेव ने गेजे़र नामक एक सुदृढ गढ़ में शरण ली, जिसका नायक खरैअस था।</span> <sup>33</sup><span class='v-txt'>मक्काबी के आदमी चार दिन तक बडे़ उत्साह से उस गढ को घेरे रहे।</span> <sup>34</sup><span class='v-txt'>जो लोग भीतर थे, उन्हें उस स्थान की किलाबंदी का भरोसा था और वे घोर ईशनिंदा और अशोभनीय शब्दों का प्रयोग करते रहे।</span> <sup>35</sup><span class='v-txt'>जब पाँचवा दिन आया, तो मक्काबी के दल के बीस नौजवान ईशनिंदा के कारण उत्तेजित हो कर अदम्य साहस और जंगली जानवरों-जैसे क्रोध के आवेश में दीवार पर टूट पडे और जो भी मिले, उन्हें मार गिराया।</span> <sup>36</sup><span class='v-txt'>एक दूसरे दल ने उसी प्रकार पीछे की ओर से आक्रमण किया, बुर्जों में आग लगायी और शत्रुओं को जीवित जला दिया।  एक तीसरे दल ने फाटक तोड़ दिये, जिससे शेष सेना घुस कर नगर को अपने अधिकार में कर सकी।</span> <sup>37</sup><span class='v-txt'>उन्होंने तिमोथेव को मार डाला, जो उस समय एक अंधे कुएँ में छिप गया था और उसके भाई खैरअस तथा अपल्लोफ़ानेस को भी।</span> <sup>38</sup><span class='v-txt'>इसके बाद उन्होंने भजन गाते और प्रार्थना करते हुए प्रभु को धन्यवाद दिया, जिसने इस्राएल के साथ इतना बड़ा उपकार किया और उन्हें विजय दिलायी थी।</span> </p>
+        <div class='nav'><a href='021009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='021011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

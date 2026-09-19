@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रज्ञा - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रज्ञा</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इसकी अपेक्षा सद्गुणी होकर निस्सन्तान रहना कहीं अच्छा है, क्योंकि सद्गुण की स्मृति बनी रहती है।  ईश्वर और मनुष्य, दोनों उसका सम्मान करते हैं।</span> <sup>2</sup><span class='v-txt'>जब तक सद्गुण विद्यमान है, लोग उसका अनुसरण करते हैं।  जब वह चला जाता है, तो लोग उसकी अभिलाषा करते हैं।  परलोक में उसकी शोभा-यात्रा मनायी जाती है, जिसमें वह विजय का मुकुट पहन कर चलता है; क्योंकि उसे अविनाशी पुरस्कारों की प्रतियोगिता में सफलता मिली है।</span> <sup>3</sup><span class='v-txt'>किन्तु दुष्टों की बहुसंख्यक सन्तति व्यर्थ होगी।  उनकी जारज सन्तान जड़ नहीं पकड़ेगी, उसे कोई सुदृढ़ आधार नहीं मिलेगा।</span> <sup>4</sup><span class='v-txt'>यदि उसकी शाखाओें में कुछ समय तक टहनियाँ फूटेगी, तो वे सुदृढ़ नहीं होंगी; हवा उन्हें झकझोर देगी और आँधी उन्हें उखाडे़गी।</span> <sup>5</sup><span class='v-txt'>उनकी अविकसित टहनियाँ टूट जायेगी, उनका फल बेकार होगा।  वह इतना कच्चा होगा कि खाया नहीं जा सकता।  वह किसी काम का नहीं होगा।</span> <sup>6</sup><span class='v-txt'>जाँच होने पर जारज सन्तान अपने माता-पिता की दुष्टता का साक्ष्य देती है।</span> <sup>7</sup><span class='v-txt'>यदि धर्मी मनुष्य असमय मर जाये, तो वह शान्ति पायेगा,</span> <sup>8</sup><span class='v-txt'>क्योंकि जो वृद्धावस्था आदरणीय है, वह न तो लम्बी आयु पर निर्भर करती है और न केवल वर्षों की संख्या पर।</span> <sup>9</sup><span class='v-txt'>जो मनुष्य बुद्धिमान् है, उसी के बाल सफेद समझो और जिसका जीवन निर्दोष है, उसी को वयोवृद्ध मान लो।</span> <sup>10</sup><span class='v-txt'>ईश्वर उस पर प्रसन्न था और उसे प्यार करता था, इसलिए ईश्वर ने उसे पापियों के बीच में से उठा लिया।</span> <sup>11</sup><span class='v-txt'>वह इसीलिए उठा लिया गया कि कहीं उसकी बुद्धि का विकार न हो जाये और कपट उसकी आत्मा को नहीं बहकायें;</span> <sup>12</sup><span class='v-txt'>क्योंकि बुराई का सम्मोहन भलाई को धुँधलाता है और लालच की तीव्रता सरल हृदय को दूषित करती है।</span> <sup>13</sup><span class='v-txt'>वह थोड़े समय में पूर्ण कर लम्बी आयु तक पहुँच गया है।</span> <sup>14</sup><span class='v-txt'>उसकी आत्मा प्रभु को प्रिय थी, इसलिए प्रभु ने उसे शीघ्र ही चारों ओर की बुराई में से निकाल लिया है।  लोग यह बात देख कर नहीं समझे।</span> <sup>15</sup><span class='v-txt'>वे यह नहीं जानते हैं, कि प्रभु अपने भक्तोंे की रक्षा करता है।</span> <sup>16</sup><span class='v-txt'>मरने वाला धर्मी जीवित रहने वाले दुष्ट को दोषी ठहराया है और शीघ्र पूर्णता प्राप्त करने वाला नवयुवक दुष्ट की लम्बी आयु पर दोष लगाता है।</span> <sup>17</sup><span class='v-txt'>लोग ज्ञानी की मृत्यु देखेंगे, किन्तु वे उसके विषय में ईश्वर का प्रयोजन नहीं समझेंगे और यह भी नहीं कि ईश्वर ने उसे क्यों सुरक्षित रखा।</span> <sup>18</sup><span class='v-txt'>वे यह देखेंगे और उसकी उपेक्षा करेंगे, किन्तु प्रभु उनका उपहास करेगा।</span> <sup>19</sup><span class='v-txt'>बाद में वे तिरस्कृत शव बनेंगे और मृतकों में सदा के लिए निन्दा के पात्र होंगे।  प्रभु उन्हें टुकड़े-टुकड़े कर देगा और वे एक शब्द भी नहीं बोल पायेंगे।  वह उन्हें उखाड़ कर फेंक देगा।  उनका सर्वनाश किया जायेगा, उन्हें दुःख भोगना पड़ेगा और उनकी स्मृति तक शेष नहीं रहेगी।</span> <sup>20</sup><span class='v-txt'>जब उनके पापों का लेखा लगाया जायेगा, तो वे डरते-काँपते आयेंगे।  उनके कुकर्म उनके सामने खड़े होकर उन पर दोष लगायेंगे।</span> </p>
+        <div class='nav'><a href='027003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='027005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

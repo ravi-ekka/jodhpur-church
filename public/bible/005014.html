@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 14</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 14</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&quot;तुम लोग प्रभु, अपने ईश्वर की सन्तान हो।  तुम किसी की मृत्यु के कारण न तो अपने शरीर में घाव करोगे और न अपने सिर के सामने के बाल कटवाओगे।</span> <sup>2</sup><span class='v-txt'>कारण, तुम प्रभु, अपने ईश्वर को अर्पित प्रजा हो।  प्रभु ने पृथ्वी भर के सब राष्ट्रों में से तुम को अपनी निजी प्रजा के रूप में चुना है।</span> <sup>3</sup><span class='v-txt'>&quot;तुम कोई घृणित वस्तु नहीं खाओगे।</span> <sup>4</sup><span class='v-txt'>वे पशु, जिन्हें तुम खा सकते हो, ये हैं: बैल, भेड़, बकरी,</span> <sup>5</sup><span class='v-txt'>हरिण, चिकारा, साँभर, जंगली बकरा, चीतल, कुरंग और पहाड़ी भेड़।</span> <sup>6</sup><span class='v-txt'>तुम उन सब पशुओं को खा सकते हो जिनके खुर फटे हैं और जो पागुर करते हैं।</span> <sup>7</sup><span class='v-txt'>परन्तु पागुर करने वालों और फटे खुर वालों में तुम इन को नहीं खा सकते हो: ऊँट, खरगोष और चट्टानी बिज्जू।  ये पागुर करने वाले है परन्तु इनके खुर फटे नहीं होते।  ये तुम्हारे लिए अशुद्ध हैं।</span> <sup>8</sup><span class='v-txt'>और सुअर भी, जो फटे खुर वाला है, लेकिन पागुर नहीं करता।  इसलिए वह तुम्हारे लिए अशुद्ध है।  तुम न तो इनका मांस खा सकते हो और इनकी लाष छू सकते हो।</span> <sup>9</sup><span class='v-txt'>&quot;सब जल-जन्तुओं में तुम उन्हें खा सकते हो जो पंख और शल्क वाले हैं;</span> <sup>10</sup><span class='v-txt'>परन्तु उन्हेंं, नहीं खा सकते, जिनके पंख और शल्क नहीं हैं।  वे तुम्हारे लिए अशुद्ध हैं।</span> <sup>11</sup><span class='v-txt'>&quot;तुम सभी पशु पक्षियों को खा सकते हो।</span> <sup>12</sup><span class='v-txt'>तुम जिन पक्षियों को नहीं खा सकते हो, वे हैं: गरुड़, हड़फोड़, कुरर,</span> <sup>13</sup><span class='v-txt'>चील सब प्रकार के बाज,</span> <sup>14</sup><span class='v-txt'>लग्घड़, सब प्रकार के कौए,</span> <sup>15</sup><span class='v-txt'>शुतुरमुर्ग, रात-शिकरा, जल-कुक्कुट, सब प्रकार के शिकरे,</span> <sup>16</sup><span class='v-txt'>घुग्घू, बड़ा उल्लू, उल्लू,</span> <sup>17</sup><span class='v-txt'>हवासील, गिद्ध, हड़-गीला,</span> <sup>18</sup><span class='v-txt'>लगलग, सब प्रकार के बगुले, हुदहुद और चमगादड़।</span> <sup>19</sup><span class='v-txt'>सब प्रकार के पंख वाले छोटे जीव-जन्तु तुम्हारे लिए अशुद्ध हैं।  तुम उन्हें नहीं खा सकते।</span> <sup>20</sup><span class='v-txt'>तुम पंख वाले सभी शुद्ध पक्षियों को खा सकते हो।</span> <sup>21</sup><span class='v-txt'>&quot;तुम किसी भी मृत पशु-पक्षी को नहीं खा सकते हो।  तुम उसे अपने गाँव में रहने वाले विदेशी द्वारा खाये जाने के लिए छोड़ सकते हो या वह किसी परदेशी को बेचा जा सकता है।  तुम एक ऐसी जाति के हो, जो प्रभु अपने ईश्वर के लिए पवित्र है, तुम किसी मेमने को उसकी माँ के दूध में नहीं उबालोगे।</span> <sup>22</sup><span class='v-txt'>&quot;तुम प्रति वर्ष अपनी भूमि में बोये हुए बीज की उपज का दशमांश अलग करोगे।</span> <sup>23</sup><span class='v-txt'>तुम अपने अनाज, अपनी अंगूरी, अपने तेल का दशमांश और अपने मवेशी और भेड़-बकरियों के पहलौठे का मांस प्रभु, अपने ईश्वर के सामने उसी स्थान पर खाओगे, जिसे वह अपना नाम स्थापित करने के लिए चुनेगा, जिससे तुम प्रभु, अपने ईश्वर पर सदा श्रद्धा रखना सीखोगे।</span> <sup>24</sup><span class='v-txt'>यदि वह स्थान तुम्हारे यहाँ से अधिक दूर हो, जिसे प्रभु तुम्हारा ईश्वर अपना नाम स्थापित करने के लिए चुनता है और तुम वहाँ सब कुछ नहीं ले जा सकते हो, क्योंकि प्रभु ने तुम को भरपूर आशीर्वाद दिया है।</span> <sup>25</sup><span class='v-txt'>तो तुम वह सब बेच सकते हो और उसका रूपया ले कर उसे वह स्थान ले जा सकते हो, जिसे प्रभु चुनता है।</span> <sup>26</sup><span class='v-txt'>फिर तुम वहाँ उस रूपये से अपनी इच्छा के अनुसार सब कुछ मोल ले सकते हो; जैसे बछड़ें, भेड़ें, अंगूरी, मंदिरा या जो वस्तु चाहते हो तुम वहाँ प्रभु, अपने ईश्वर के सामने अपने परिवार के साथ आनन्द मनाते हुए भोजन कर सकते हो।</span> <sup>27</sup><span class='v-txt'>उस समय अपने नगरों में रहने वाले लेवियों को मत भुलाओ, क्योंकि लेवियों की तुम्हारी तरह अपनी भूमि और दायभाग नहीं है।</span> <sup>28</sup><span class='v-txt'>&quot;तुम प्रति तीसरे वर्ष उस वर्ष की उपज का दशमांश अपने-अपने नगर में जमा करो,</span> <sup>29</sup><span class='v-txt'>जिससे लेवी (उनकी अपनी भूमि का दायभाग नहीं है।) और तुम्हारे नगर में रहने वाले परदेशी, अनाथ और विधवाएँ आ सकें और खा कर तृृप्त हो जायें और प्रभु, तुम्हारा ईश्वर तुम्हारे सब कार्यो में आशीर्वाद प्रदान करे।</span> </p>
+        <div class='nav'><a href='005013.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005015.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

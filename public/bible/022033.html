@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 33</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 33</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>अय्यूब!  अब मेरी बात सुनो।  जो कहता हूँ, उस पर ध्यान दो।</span> <sup>2</sup><span class='v-txt'>देखों, मैं अपना मुँह खोलने वाला हूँ मेरी जीभ बोलने को बेचैन है।</span> <sup>3</sup><span class='v-txt'>मैं निष्टकट हृदय से बोलूँगा, मेरे होंठ सत्य ही प्रकट करेंगे।</span> <sup>4</sup><span class='v-txt'>ईश्वर के आत्मा ने मुझे गढ़ा है, सर्वशक्तिमान मुझ में प्राणवायु फूँकता है।</span> <sup>5</sup><span class='v-txt'>यदि तुम उत्तर दे सकते हो, तो दे दो।  अपना पक्ष मेरे सामने प्रस्तुत करो।</span> <sup>6</sup><span class='v-txt'>मैं ईश्वर के सामने तुम्हारे बराबर हूँ, उसने मुझे भी मिट्ठी से गढ़ा है।</span> <sup>7</sup><span class='v-txt'>इसलिए तुम्हें मुझ से भयभीत नहीं होना चाहिए, मैं तुम को आतंकित नहीं करूँगा।</span> <sup>8</sup><span class='v-txt'>तुमने मेरे सामने अपना पक्ष प्रस्तुत किया।  मैंने तुम को यह कहते हुए सुना;</span> <sup>9</sup><span class='v-txt'>&quot;मैं पवित्र हूँ, निष्पाप हूँ।  मैं शुद्ध और निरपराध हूँ।</span> <sup>10</sup><span class='v-txt'>फिर भी ईश्वर मुझ में दोष ढूँढता और मुझे अपना शत्रु समझता है।</span> <sup>11</sup><span class='v-txt'>वह मेरे पैरों को बेड़ियाँ पहनाता और मेरे आचरण की कड़ी निगरानी करता है।&quot;</span> <sup>12</sup><span class='v-txt'>मैं तुम से कहता हूँ: तुम्हारी यह बात गलत है, क्योंकि ईश्वर मनुष्य से महान् है।</span> <sup>13</sup><span class='v-txt'>तुम उसकी शिकायत क्यों करते हो कि वह तुम्हारी किसी बात का उत्तर नहीं देता?</span> <sup>14</sup><span class='v-txt'>ईश्वर निश्चय ही बारम्बार बोलता है, किंतु कोई उसकी बात पर ध्यान नहीं देता।</span> <sup>15</sup><span class='v-txt'>जब मनुष्य बिस्तर पर लेटे हुए गहरी नींद में सोते हैं, तो ईश्वर स्वप्न में, रात के किसी दर्श में बोलता है।</span> <sup>16</sup><span class='v-txt'>उस समय वह अपने को मनुष्य पर प्रकट करता और दर्शन दे कर उसे डराता है,</span> <sup>17</sup><span class='v-txt'>जिससे वह उसे कुमार्ग से हटाये और उसका घमण्ड दूर कर दे।</span> <sup>18</sup><span class='v-txt'>इस प्रकार वह अधोलोक के द्वार से मनुष्य की रक्षा करता और भाले की मार से उसका जीवन बचाता है।</span> <sup>19</sup><span class='v-txt'>वह बिस्तर पर पड़े हुए मनुष्य को दर्द द्वारा सुधारता है, जब उनकी हड्डियाँ निरंतर काँपती रहती है।</span> <sup>20</sup><span class='v-txt'>मनुष्य को भोजन से घृणा हो जाती है, उसे स्वादिष्ट व्यंजन में रूचि नहीं होती।</span> <sup>21</sup><span class='v-txt'>उसका शरीर सब के देखते छीजता है, उसकी हड्डियाँ, जो नहीं दिखाई देती थी, अब निकल आती है।</span> <sup>22</sup><span class='v-txt'>उसकी आत्मा अधोलोक के पास पहुँचती है और उसका जीवन मृतकों के निवास के निकट।</span> <sup>23</sup><span class='v-txt'>किंतु यदि उसे एक स्वर्गदूत, हजारों में से एक मध्यस्थ मिल जाता है, जो उसे उसका कर्तव्य समझाता,</span> <sup>24</sup><span class='v-txt'>उस पर कृपा करता और ईश्वर से कहता है, &quot;इसे अधोलोक में उतरने से बचा, मुझे इसका रक्षा-शुल्क मिल गया&quot;,</span> <sup>25</sup><span class='v-txt'>तब उसका शरीर बालक के जैसा नया हो जाता है और उसकी जवानी के दिन लौटते हैं।</span> <sup>26</sup><span class='v-txt'>वह ईश्वर से प्रार्थना करता, जो उस पर प्रसन्न है।  वह उल्लसित हो कर उस ईश्वर के दर्शन करता है, जो उसे नयी धार्मिकता का वरदान देता है।</span> <sup>27</sup><span class='v-txt'>वह मनुष्यों के सामने यह कहता हैः &quot;मैंने पाप किया, मैं संमार्ग से भटक गया, किंतु उसने मुझे अधर्म का दण्ड नहीं दिया।</span> <sup>28</sup><span class='v-txt'>उसने मुझे अधोलोक में उतरने से बचा लिया।  मैं फिर ज्योति का सुख पाता हूँ।’</span> <sup>29</sup><span class='v-txt'>देखो, ईश्वर यह सब मनुष्य के लिए दो बार, तीन बार करता है।</span> <sup>30</sup><span class='v-txt'>वह उसे अधोलोक से वापस बुलाता और उसे जीवन की ज्योति प्रदान करता है।</span> <sup>31</sup><span class='v-txt'>अय्यूब!  तुम ध्यान से मेरी बात सुनो।  तुम चुप रहो!  मैं बोलूँगा।</span> <sup>32</sup><span class='v-txt'>यदि तुम उत्तर दे सकते हो, तो दे दो।  निस्संकोच उत्तर दो।  मैं चाहता हूँ कि तुम निर्दोष ठहरो।</span> <sup>33</sup><span class='v-txt'>नहीं तो, तुम मेरी बात सुनो।  चुप रहो, मैं तुम्हें प्रज्ञा की शिक्षा दूँगा।</span> </p>
+        <div class='nav'><a href='022032.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022034.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

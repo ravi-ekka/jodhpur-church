@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 23</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 23</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तब बिलआम ने बालाक से कहा, &#039;&#039;यहाँ मेरे लिए सात वेदियाँ बनायें और मेरे लिए सात बछड़े और सात मेढ़े तैयार रखें।&#039;&#039;</span> <sup>2</sup><span class='v-txt'>बालाक ने बिलआम की बात मान ली। बालाक और बिलआम ने प्रत्येक वेदी पर एक बछड़ा और एक मेढ़ा चढ़ाया।</span> <sup>3</sup><span class='v-txt'>इस पर बिलआम ने बालाक से कहा, &#039;&#039;आप अपनी होम-बलि के पास खड़े रहें। मैं थोड़ा आगे जाऊँगा। सम्भव है, प्रभु मुझ से मिलने आये। वह मुझ पर जो प्रकट करेगा, मैं उसे आप को बता दूँगा।&#039;&#039; इसके बाद वह एक एकान्त स्थान गया।</span> <sup>4</sup><span class='v-txt'>तब ईश्वर ने बिलआम को दर्शन दिये। बिलआम ने उस से कहा, &#039;&#039;मैंने सात वेदियाँ तैयार करवायी हैं और प्रत्येक वेदी पर एक बछड़ा और एक मेढ़ा चढ़ाया है।&#039;&#039;</span> <sup>5</sup><span class='v-txt'>तब प्रभु ने बिलआम को एक संदेश दिया और उसे आज्ञा दी कि वह बालाक के पास लौट कर वह संदेश दुहराये।</span> <sup>6</sup><span class='v-txt'>वह उसके पास लौट गया। बालाक अब तक मोआबी नेताओं के साथ अपनी होम-बलि के पास खड़ा था।</span> <sup>7</sup><span class='v-txt'>इस पर बिलआम ने यह गीत सुनायाः</span> <sup>8</sup><span class='v-txt'>जिसे प्रभु शाप नहीं देता,</span> <sup>9</sup><span class='v-txt'>चट्टानों के शिखर पर से मैं उसे देखता हूँ,</span> <sup>10</sup><span class='v-txt'>याकूब के धूलि-कणों को कौन गिन सकता है?</span> <sup>11</sup><span class='v-txt'>बालाक ने बिलआम से कहा, &#039;&#039;आपने मेरे साथ क्या किया? मैंने आप को अपने शत्रुओं को शाप देने के लिए बुलवाया और आप उन्हें आशीर्वाद दे रहे हैं?&#039;&#039;</span> <sup>12</sup><span class='v-txt'>उसने उत्तर दिया, &#039;&#039;प्रभु मेरे मुहँ में जो वाणी रखता है, क्या मैं उसे प्रकट न करूँ?&#039;&#039;</span> <sup>13</sup><span class='v-txt'>बालाक ने उस से कहा, &#039;&#039;मेरे साथ एक दूसरे स्थान पर आइए, जहाँ से आप उन लोगों को देख सकते हैं। यहाँ से तो आपने पूरा समुदाय नहीं, उसका केवल एक भाग देखा है। वहाँ चल कर आप मेरे लिए उन को शाप दीजिए।&#039;&#039;</span> <sup>14</sup><span class='v-txt'>तब वह उसे सोफीम के मैदान में पिसगा की चोटी पर ले गया। वहाँ उसने सात वेदियाँ बनवायीं और प्रत्येक वेदी पर एक बछड़ा और एक मेढ़ा चढ़वाया।</span> <sup>15</sup><span class='v-txt'>बिलआम ने बालाक से कहा, &#039;&#039;आप यहाँ अपनी होम-बलि के पास खड़े रहें। मैं वहाँ जा कर प्रभु के दर्शनों की प्रतीक्षा करूँगा।&#039;&#039;</span> <sup>16</sup><span class='v-txt'>प्रभु ने बिलआम को दर्शन दे कर एक संदेश दिया और आज्ञा दी कि वह बालाक के पास लौट कर वह सन्देश दुहराये।</span> <sup>17</sup><span class='v-txt'>वह बालाक के पास लौट आया। बालाक अब तक मोआबी नेताओं के साथ अपनी होम-बलि के पास खड़ा था। बालाक ने उस से पूछा, &#039;&#039;प्रभु ने क्या कहा?&#039;&#039;</span> <sup>18</sup><span class='v-txt'>तब बिलआम ने यह गीत सुनायाः  “बालाक!  सावधान हो कर सुनो!  सिप्पोर के पुत्र! मेरी बात पर कान दो!</span> <sup>19</sup><span class='v-txt'>ईश्वर मनुष्य नहीं है, वह झूठ नहीं बोलता;  मनुष्य की सन्तान नहीं है, वह अपनी बात वापस नहीं लेता।  क्या वह कहेगा और करेगा नहीं?  प्रतिज्ञा करेगा और उसे पूरा नहीं करेगा?</span> <sup>20</sup><span class='v-txt'>उसने मुझे आशीर्वाद देने का आदेश दिया।  उसने आशीर्वाद दिया, मैं उसे बदल नहीं सकता।</span> <sup>21</sup><span class='v-txt'>याकूब का कोई दुर्भाग्य नहीं दिखाई देता।  इस्राएल की कोई विपत्ति देखने में नहीं आती। प्रभु उसका ईश्वर उसके साथ है।  इस्राएल उसे अपना राजा मानता है।</span> <sup>22</sup><span class='v-txt'>ईश्वर उसे मिस्र से निकाल लाया।  उसने उसे जंगली साँड-जैसी शक्ति दी है।</span> <sup>23</sup><span class='v-txt'>याकूब के विरुध्द अभिचार व्यर्थ है।  इस्राएल के विरुध्द  कोई तंत्र-मंत्र नहीं चलता।  अब याकूब पर प्रकट किया जायेगा। अब इस्राएल जान जायेगा कि ईश्वर ने उसके लिए क्या किया है।</span> <sup>24</sup><span class='v-txt'>यह जाति सिंहनी की तरह उठती है,  सिंह की तरह  खड़ीं हो जाती है।’  जो शिकार फाड़े और उसका रक्त पिये बिना विश्राम करने का नाम नहीं लेता।“</span> <sup>25</sup><span class='v-txt'>यह सुन कर बालाक ने बिलआम से कहा, &#039;&#039;यदि आप उन्हें शाप देने में असमर्थ हों, तो आशीर्वाद भी नहीं दें&#039;&#039;।</span> <sup>26</sup><span class='v-txt'>बिलआम ने बालाक को उत्तर दिया, &#039;&#039;क्या मैंने आप से नहीं कहा था कि प्रभु मुझ से जो कहेगा, मैं वही करूँगा?&#039;&#039;</span> <sup>27</sup><span class='v-txt'>तब बालाक ने बिलआम से कहा, &#039;&#039;आइए, मैं आप को किसी और स्थान ले चलूँ। हो सकता है कि आप वहाँ से ईश्वर की प्रेरणा से मेरे लिए उन्हें शाप दे सकें।&#039;&#039;</span> <sup>28</sup><span class='v-txt'>इसलिए बालाक बिलआम को पओर की चोटी पर ले गया, जहाँ से रेगिस्तान दिखाई देता है।</span> <sup>29</sup><span class='v-txt'>वहाँ बिलआम ने बालाक से कहा, &#039;&#039;यहाँ मेरे लिए सात वेदियाँ बनवाइए और मेरे लिए सात बछड़े और सात मेढ़े तैयार रखिए।&#039;&#039;</span> <sup>30</sup><span class='v-txt'>बालाक ने बिलआम की बात मान ली और प्रत्येक वेदी पर एक बछड़ा और एक मेढ़ा चढ़ाया।</span> </p>
+        <div class='nav'><a href='004022.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004024.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

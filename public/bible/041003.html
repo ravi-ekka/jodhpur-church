@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>नहूम - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>नहूम</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>3</sup><span class='v-txt'>देखो-घोड़ों का सरपट, तलवारों की दमक और भालों की चमक। कितने ही घायल और कितने ही मारे हुए! असंख्य शव पडे हुए हैं- लोग उन पर ठोकर खा कर गिर रहे हैं।</span> <sup>4</sup><span class='v-txt'>यही हुआ उस वेश्या की करनी का फल। उस सुंदर वेश्या, उसकी कपटी जादुगरनी ने, राष्ट्रों को लुभा कर फँसा दिया था और उनेक जातियों पर मोहिनी डाली थी।</span> <sup>5</sup><span class='v-txt'>विश्वमण्डल का प्रभु-ईश्वर यह कता है : अब मैं ही तेरे विरुद्ध हूँ, मैं तेरी धोती खोल कर राष्ट्रों के सामने तेरी नग्नता उघाड दूँगा और जातियों के सामने तेरे मुँह पर कालिख पोत दूँगा।</span> <sup>6</sup><span class='v-txt'>मैं तझ पर कीचड उछालूँगा, तुझे अपमानित करूँगा और काठ में तरे पांव जकड दूँगा।</span> <sup>7</sup><span class='v-txt'>जो तुझ पर दृष्टि डालेगा, वह मुँह फेर कर कहेगा- &#039;&#039;निनीवे का सर्वनाश हो गया है। कौन उस पर दया करेगा? तुझे सान्त्वना देने वालों को में कहाँ से ले आऊँ?&#039;&#039;</span> <sup>8</sup><span class='v-txt'>क्या तेरी गति नो-आमोन की गति से बेहतर होगी, जो नील की जलधाराओं पर बसी थी और चारों ओर से घिरी थी? उसका घेरा समुद्र था और पानी उसकी चहरदीवारी।</span> <sup>9</sup><span class='v-txt'>कूश और मिस्र के समर्थन से वह उत्यन्त शक्तिशाली बन गयी थी; पूट और लीबिया भी उसके सहायक थे।</span> <sup>10</sup><span class='v-txt'>इसके होते हुए भी वह बन्दी हो कर निष्कासित हो गयी; गलियों के मेड़ों पर उसके शिशुओं को पटक-पटक कर मारा गया। उसके समान्तों पर चिट्ठिया डाली गयी और सारे कुलीन लोगों को बेडियाँ पहनायी गयीं।</span> <sup>11</sup><span class='v-txt'>तू भी प्रभु का कोप-भाजन बन कर सन्न रह जायेगा, और शत्रुओं से भाग कर तुझे आश्रय ढूँढना पडेगा।</span> <sup>12</sup><span class='v-txt'>तेरे सारे गढ़ अंजीर के पेड़ के पके फल के समान है- पेड हिला दो, तो फल खाने वाले के मुँह में गिरेगा!</span> <sup>13</sup><span class='v-txt'>तू अपने सैनिकों को देख, वे अबलाओं जैसे हैं। तेरे देश के द्वार शत्रुओं के लिए खुले पडे हैं; तेरी अर्गलाएँ जल कर गिर गयी हैं।</span> <sup>14</sup><span class='v-txt'>घेरेबन्दी के लिए पानी चाहे जितना संचित कर ले, परकोटा सुदृढ़ कर ले, मिट्टी गूँध, लसदार मिटटी गूँध ले, ईटों के साँचे ला।</span> <sup>15</sup><span class='v-txt'>सब व्यर्थ! तू आग से बचेगा भी, तो तू तलवार के घाट उतारा जायेगा। तू टिड्डी दल की तरह असंख्य क्यों न बने, संख्या और बढ़ा दे;</span> <sup>16</sup><span class='v-txt'>असंख्य तारों की तरह व्यापारी-के-व्यापरी को भेज दे कि वे टिड्डियों के समान उड कर फैल जायें।</span> <sup>17</sup><span class='v-txt'>तेरे शासक,तेरे सचिव भी टिड्डियों के झुण्झ के सामन हैं- ठंकड में वे दीवारों की आड में छिपे रहते हैं और धूप निकलते ही वे न जाने किधर फुर हो जाते हैं।</span> <sup>18</sup><span class='v-txt'>अस्सूर के राजा! क्या तेरे चरवाहे झपकियाँ ले रहे हैं, तेरे सामन्त ऊँघ रहे हैं? तेरी प्रजा पर्वतों के बीच तितर-बितर हो गयी है और उन्हें इकट्ठा करने वाला कोई नहीं है।</span> <sup>19</sup><span class='v-txt'>तेरी चोट लाइलाज, तेरे घाव के भरने का कोई उपाय नहीं, तेरी दुर्गति का समाचार पा कर, तेरे पतन पर सब-के-सब तालिया बजाते हैं; शायद ही कोई देश है, जो तेरी अविरत क्रूरता से अविक्षत रहा हो।</span> </p>
+        <div class='nav'><a href='041002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

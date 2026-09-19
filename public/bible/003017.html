@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लेवी - अध्याय 17</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लेवी</h1>
+        <h2>अध्याय 17</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;हारून उसक पुत्रों और सब इस्राएलियों से कहो - प्रभु का आदेश यह है।</span> <sup>3</sup><span class='v-txt'>यदि इस्राएलियों में कोई व्यक्ति शिविर के अन्दर या शिविर के बाहर किसी बछड़े, भेड़ या बकरी का वध करे</span> <sup>4</sup><span class='v-txt'>और उसे दर्शन-कक्ष के द्वार पर, प्रभु के निवास के सामने, प्रभु को अर्पित नहीं करे, तो वह रक्तपात का दोषी माना जायेगा। उसने रक्त बहाया और वह समुदाय से बहिष्कृत किया जायेगा।</span> <sup>5</sup><span class='v-txt'>अब से इस्राएली अपने बलि-पशुओं का किसी भी स्थान पर वध नहीं करेंगे। वे उन्हें याजक के पास, अर्थात् प्रभु के दर्शन-कक्ष के द्वार पर ले आयेंगे और उन्हें शान्ति-बलि के रूप में चढ़ायेंगे।</span> <sup>6</sup><span class='v-txt'>याजक बलि-पशु का रक्त दर्शन-कक्ष के द्वार पर छिड़केगा और उसकी चरबी वेदी पर जला देगा। यह एक सुगन्धयुक्त चढ़ावा है, जो प्रभु को प्रिय है।</span> <sup>7</sup><span class='v-txt'>वे अब से उन वन-देवताओं को बलि नहीं चढ़ायेंगे, जिनकी वे व्यभिचार करते हुए पूजा करते है। यह उनके लिए पीढ़ी-दर-पीढ़ी चिरस्थायी आदेश है।</span> <sup>8</sup><span class='v-txt'>तुम उन से यह कहो : यदि कोई - चाहे वह इस्राएली हो या तुम्हारे बीच रहने वाला प्रवासी होम-बलि या शान्ति-बलि चढ़ाये</span> <sup>9</sup><span class='v-txt'>और उसे प्रभु को अर्पित करने के लिए दर्शन-कक्ष के द्वार पर नहीं ले आये, तो वह समुदाय से बहिष्कृत किया जायेगा।</span> <sup>10</sup><span class='v-txt'>यदि कोई - चाहे वह इस्राएली हो या तुम्हारे बीच रहने वाला प्रवासी - रक्त का उपभोग करेगा, तो मैं उस पर अप्रसन्न हो जाऊँगा और उसका उसके समुदाय से बहिष्कार करूँगा,</span> <sup>11</sup><span class='v-txt'>क्योंकि रक्त में ही किसी प्राणी की जीवन-शक्ति है। मैंने उसे तुम्हें केवल इसलिए दे दिया कि तुम उस से वेदी पर अपने लिए प्रायश्चित करो, क्योंकि रक्त से इस कारण प्रायश्चित किया जाता है कि उस में जीवन-शक्ति है।</span> <sup>12</sup><span class='v-txt'>इसलिए मैंने इस्राएलियों को यह आदेश दिया : तुम में कोई रक्त का उपभोग नहीं करेगा, तुम्हारे बीच रहने वाला प्रवासी भी नहीं।</span> <sup>13</sup><span class='v-txt'>यदि कोई इस्राएली या तुम्हारे बीच रहने वाला कोई प्रवासी शिकार खेलते कोई जानवर या पक्षी पकड़े जिसे खाने की आज्ञा है, तो वह उस से रक्त निकाल दे और रक्त को बालू से ढ़क दें,</span> <sup>14</sup><span class='v-txt'>क्योंकि रक्त में ही मनुष्य और पशु की जीवन-शक्ति है। इसलिए मैंने इस्राएलियों से कहा : मनुष्य या पशु के रक्त में ही मनुष्य और पशु की जीवन-शक्ति है। जो रक्त का उपभोग करेगा, वह समुदाय से बहिष्कृत किया जायेगा।</span> <sup>15</sup><span class='v-txt'>जो इस्राएली या प्रवासी मरे हुए या फाडे हुए पशु का मांस खायेगा, वह अपने कपड़े धोयेगा और स्नान करेगा। वह शाम तक अशुद्ध रहेगा। इसके बाद वह फिर शुद्ध होगा।</span> <sup>16</sup><span class='v-txt'>जो अपने कपड़े नहीं धोयेगा और स्नान नहीं करेगा, वह दोषी माना जायेगा।&#039;&#039;</span> </p>
+        <div class='nav'><a href='003016.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='003018.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

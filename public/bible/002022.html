@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>निर्गमन - अध्याय 22</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>निर्गमन</h1>
+        <h2>अध्याय 22</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&#039;&#039;यदि कोई चोर सेंध मारते पकड़ा जाये और उसे कोई इतनी मार मारे कि वह मर जाये, तो उसे हत्या नहीं समझा जायेगा।</span> <sup>2</sup><span class='v-txt'>किन्तु यदि सूर्योदय हो गया हो, तो उसे हत्या का दोष लगेगा।</span> <sup>3</sup><span class='v-txt'>यदि चुराया हुआ पशु - चाहे वह बैल हो या गधा या भेड़ - उसके पास जीवित मिले, तो उसे उसका दूना दाम देना होगा।</span> <sup>4</sup><span class='v-txt'>यदि कोई अपने पशुओं से किसी का खेत या दाखबारी चरवा डाले या अपने ढ़ोरों को किसी दूसरे के खेत में चरने के लिए छोड़ दे, तो वह अपने सर्वोत्तम खेत या दाखबारी से उसकी क्षतिपूर्ति करे।</span> <sup>5</sup><span class='v-txt'>यदि आग झाड़झंखाड़ में इस प्रकार फैल जाये कि वह पूलों के ढेर, खेत में खड़ी फसल या सारा का सारा खेत जला दे, तो आग लगाने वाले को इसकी क्षतिपूर्ति करनी होगी।</span> <sup>6</sup><span class='v-txt'>यदि कोई किसी दूसरे के पास रुपये-पैसे या कोई दूसरी वस्तु धरोहर के रूप में रखे और यदि वह उसके घर से चोरी चली जाये, तथा चोर पकड़ा जाये, तो उसे उसका दूना मूल्य देना पड़ेगा।</span> <sup>7</sup><span class='v-txt'>यदि चोर पकड़ा नहीं जा सके, तो मकान मालिक न्यायाधीशों के सामने यह प्रमाणित करे कि उस में उसका हाथ नहीं था।</span> <sup>8</sup><span class='v-txt'>हर छल-कपट का ऐसा मामला - चाहे वह बैल, गधे, भेड़, वस्त्र या अन्य किसी चीज का हो - जिसके बारे में कोई व्यक्ति कहता है कि यह मेरा है, तो दोनों पक्ष न्यायाधीशों के पास जायेंगे और जिसे न्यायाधीश दोषी मानेंगे, उसे अपने पड़ोसी को उसका दुगुना दाम चुकाना पडेगा।</span> <sup>9</sup><span class='v-txt'>यदि कोई व्यक्ति अपने पड़ोसी के पास गधा, बैल, भेड़ या कोई दूसरा पशु अमानत रखता और वह मर जाता है, उसे चोट लग जाती या लोगों के अनजान मे चुराया जाता है,</span> <sup>10</sup><span class='v-txt'>तो उन दोनों का मामला इस प्रकार तय किया जाये - पड़ोसी ईश्वर के सामने शपथ खायेगा कि उसने दूसरे की सम्पति नहीं चुरायी। मालिक को उसकी शपथ स्वीकार करनी पड़ेगी और क्षतिपूर्ति नहीं की जायेगी।</span> <sup>11</sup><span class='v-txt'>लेकिन यदि उसके यहाँ से वह चुराया गया है, तो उसे उसके मालिक को क्षतिपूर्ति देनी होगी।</span> <sup>12</sup><span class='v-txt'>यदि वह जानवरों द्वारा फाड़ डाला जाता है, तो वह प्रमाण के रूप में फाड़ा हुआ पशु ले आये और उसे क्षतिपूर्ति नहीं करनी होगी।</span> <sup>13</sup><span class='v-txt'>यदि कोई मनुष्य अपने पड़ोसी से कोई पशु उधार ले और उसे चोट लग जाये या वह मर जाये जब पशु का स्वामी अनुपस्थित हो, तो उधार लेने वाले को उसकी क्षतिपूर्ति करनी होगी।</span> <sup>14</sup><span class='v-txt'>यदि पशु का स्वामी उपस्थित हो, तो उधार लेने वाले को क्षतिपूर्ति नहीं करनी होगी। यदि वह किराये पर लिया गया हो, तो किराये से ही क्षतिपूर्ति हो जायेगी।</span> <sup>15</sup><span class='v-txt'>यदि कोई किसी कुँवारी कन्या को, जिसकी सगाई नहीं हुर्ह है, प्रलोभन दे कर उस से संसर्ग करता है, तो उसे कन्या-शुल्क दे कर उस से विवाह करना पड़ेगा।</span> <sup>16</sup><span class='v-txt'>यदि उसका पिता उसे देना सर्वथा अस्वीकार करता है, तो भी कन्या शुल्क देना पडेगा।</span> <sup>17</sup><span class='v-txt'>तुम जादूगरनी को जीवित नहीं रहने दोगे।</span> <sup>18</sup><span class='v-txt'>जो कोई पशुगमन करेगा, वह मार डाला जायेगा।</span> <sup>19</sup><span class='v-txt'>जो कोई प्रभु को छोड़ कर किसी अन्य देवी-देवता को बलि चढ़ायेगा, उसका बहिष्कार किया जायेगा।</span> <sup>20</sup><span class='v-txt'>तुम लोग परदेशी के साथ अन्याय मत करो, उस पर अत्याचार मत करो, क्योंकि तुम भी मिस्र देश में परदेशी थे।</span> <sup>21</sup><span class='v-txt'>तुम विधवा अथवा अनाथ के साथ दुर्व्यवहार मत करो।</span> <sup>22</sup><span class='v-txt'>यदि तुम उनके साथ दुर्व्यवहार करोगे और वे मेरी दुहाई देंगे, तो मैं उनकी पुकार सुनूँगा</span> <sup>23</sup><span class='v-txt'>और मेरा क्रोध भड़क उठेगा। मैं तुम को तलवार के घाट उतरवा दूँगा और तुम्हारी पत्नियाँ विधवा और बच्चे अनाथ हो जायेंगे।</span> <sup>24</sup><span class='v-txt'>&#039;&#039;यदि तुम अपने बीच रहने वाले किसी दरिद्र देश-भाई को रुपया उधार देते हो, तो सूदखोर मत बनो - तुम उस से ब्याज मत लो।</span> <sup>25</sup><span class='v-txt'>यदि तुम रहने के तौर पर किसी की चादर लेते हो, तो सूर्यास्त से पहले उसे लौटा दो;</span> <sup>26</sup><span class='v-txt'>क्योंकि ओढ़ने के लिए उसके पास और कुछ नहीं है। वह उसी से अपना शरीर ढक कर सोता है। यदि वह मेरी दुहाई देगा, तो मैं उसकी सुनूँगा, क्योंकि मैं दयालु हूँ।</span> <sup>27</sup><span class='v-txt'>&#039;&#039;तुम न ईश्वर की निन्दा करोगे और न अपने लोगों के शासक को शाप दोगे।</span> <sup>28</sup><span class='v-txt'>अपने खेतों की पक्की फ़सल और फलों का रस अन्य देवताओं को नहीं चढ़ाओगे। अपने पुत्र में पहलौठे को मुझे अर्पित करोगे।</span> <sup>29</sup><span class='v-txt'>तुम अपनी गायों और भेड़ों के पहलौठे बच्चों को भी अर्पित करोगे। वह सात दिन तक अपनी माँ के साथ रहेगा; तुम आठवें दिन उसे मुझे अर्पित करोगे।</span> <sup>30</sup><span class='v-txt'>तुम लोग मेरी पवित्र प्रजा बनोगे; इसलिए जानवरों द्वारा मारे हुए पशुओं का खेत में पड़ा मांस नहीं खाओगे। उसे तुम कुत्तों के सामने फेंक दोगे।</span> </p>
+        <div class='nav'><a href='002021.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='002023.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

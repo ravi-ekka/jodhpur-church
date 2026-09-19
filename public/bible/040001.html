@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मीकाह - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मीकाह</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यूदा के राजा योताम, आहाज़ और हिज़कीया के दिनों में मोरेशेत के मीकाह को प्रभु की वाणी सुनाई पड़ी।  उसके दर्शन समारिया और येरूसालेम के विषय में हैं।</span> <sup>2</sup><span class='v-txt'>लोगो! तुम सब सुनो।  पृथ्वी के सब निवासियो! कान दो।  प्रभु-ईश्वर तुम्हारे विरुद्ध साक्य देने के लिए अपने पवित्र मन्दिर से प्रस्थान करने वाला है।</span> <sup>3</sup><span class='v-txt'>देखो, प्रभु अपने स्थान से उतर रहा है, वह पर्वत-शिखरों पर कदम रखेगा।</span> <sup>4</sup><span class='v-txt'>उसके गुज़रने से पर्वत उसी तरह पिघलते हैं, जिस तरह आग के सामने मोम गलती है; और घाटियों में वैसे ही दरारें पड रही हैं, जैसे जलप्रापात का पानी ढाल को काटता है।</span> <sup>5</sup><span class='v-txt'>यह सब याकूब के अपराध और इस्राएल के पापों के कारण ही हुआ।  याकूब का अपराध क्या है?  क्या वह समारिया नहीं है?  यूदा के घराने का पाप क्या है?  क्या वह येरूसालेम नहीं है?</span> <sup>6</sup><span class='v-txt'>अतः मैं समारिया को खुले मैदान में मलबे के ढेर-जैसा बना दूँगा, उसे दाखबारी लगाने योग्य स्थान बना दूँगा।  मैं उसके पत्थरों को घाटी में ढाह दूँगा, उसकी नींवें तक दीखने लगेंगी।</span> <sup>7</sup><span class='v-txt'>उसकी सारी देवमूर्तियाँ टुकडे-टुकडे कर दी जायेंगी, उसकी वेश्यावृत्ति की सारी कमाई आग में भस्म हो जाएगी।  उसकी सब देव-प्रतिमाएँ चूर-चूर हो जायेंगी, वे तो वेश्याओं की कमाई से एकात्रित की गयी थीं, वे हराम की कमाई बनी रहेगी।</span> <sup>8</sup><span class='v-txt'>इसीलिए मैं शेक मना रहा हूँ और विलाप कर रहा हूँ; मैं नंगे पैर, नंगे बदन घूमता फिरूँगा; मैं सियार की तरह हुआँ-हुआँ करूँगा; मैं शुतुरमुर्ग के समान विलाप करूँगा।</span> <sup>9</sup><span class='v-txt'>प्रभु-ईश्वर ने उसे मारा है, जिससे असाध्य घाव उत्पन्न हो गया है, यूदा भी इस चोट से अछूता नहीं, वह मेरी प्रजा की ड्योढ़ी, हाँ, येरूसालेम तक पहुँच गयी है।</span> <sup>10</sup><span class='v-txt'>गत में इसकी चर्चा न करना, रोना एकदम नहीं।  बेत-ल-लफ्रा में धूल में लोटते रहना।</span> <sup>11</sup><span class='v-txt'>शाफीर के निवासियो! नंगे हो और लज्जा से भरे अपने मार्ग पर चले जाओ; सानान के निवासियो! बाहर मत निकालो; मज़बूत नींव के होते हुए भी बेत-एसेल उखाड़ा गया है।</span> <sup>12</sup><span class='v-txt'>मारोत के निवासी रक्षा की प्रतीक्षा कर रहे हैं, क्योंकि प्रभु से आयी हुई विपत्ति येरूसालेम के द्वार तक पहुँच गयी है।</span> <sup>13</sup><span class='v-txt'>लाकीश के निवासियो! रथों में घोड़े जोतो, तुम ही तो पहले-पहले सियोन की पुत्री के पाप के कारण रहे; क्योंकि तुम में से ही इस्राएल के अपराधों की शुरुआत हुई।</span> <sup>14</sup><span class='v-txt'>इसलिए तुम मोरेशेत-गत को दहेज दे कर विदा करो।  इस्राएल के राजाओं को अकज़ीब के घरों से धोखा होगा।</span> <sup>15</sup><span class='v-txt'>मारेशा के निवासियो! मैं तुम्हारे ऊपर फिर विजेता भेज दूँगा; अदुल्लाम से इस्राएल की शक्ति सदा तक जाती रहेगी।</span> <sup>16</sup><span class='v-txt'>अपने प्रिय पुत्रों के लिए अपने सिर गिद्ध की तरह मुडवा लो, क्योंकि उनको देश-निकाले का दण्ड मिला है।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='040002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

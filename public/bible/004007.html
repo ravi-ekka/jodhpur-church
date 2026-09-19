@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब मूसा ने निवास का निर्माण पूरा किया, तो उसने उस पर तथा उसकी समस्त आवश्यक वस्तुओं पर तेल लगा कर उनकी प्रतिष्ठा की। उसने वेदी तथा उसकी सारी आवश्यक सामग्री पर तेल लगा कर उनकी प्रतिष्ठा की।</span> <sup>2</sup><span class='v-txt'>इसके बाद इस्राएली नेता, विभिन्न घरानों के मुखिया, जो नामांकित पुरुषों के प्रधान थे, अपने-अपने चढ़ावे देने आये।</span> <sup>3</sup><span class='v-txt'>वे चढ़ावे के रूप में प्रभु के सामने छत वाली छः गाडियाँ और बारह बैल ले आये, अर्थात् दो-दो नेताओं की ओर से एक-एक गाड़ी और एक-एक नेता की ओर से एक-एक बैल।</span> <sup>4</sup><span class='v-txt'>तब प्रभु ने मूसा से कहा,</span> <sup>5</sup><span class='v-txt'>&#039;&#039;उन से ये उपहार स्वीकार करो। ये दर्शन-कक्ष के काम आयेंगे। इन्हें लेवियों को उनके कार्य की आवश्यकता के अनुसार दे दो।</span> <sup>6</sup><span class='v-txt'>इस पर मूसा ने गाड़ियों और बैलों को उन से ले लिया और उन्हें लेवियों को दे दिया।</span> <sup>7</sup><span class='v-txt'>उसने गेरशोनियों को, उनके कार्य की आवश्यकता के अनुसार, दो गाड़ियाँ और चार बैल दिये</span> <sup>8</sup><span class='v-txt'>और मरारियों को चार गाड़ियाँ और आठ बैल दिये, उनके उस कार्य की आवश्यकता के अनुसार, जिसे वे याजक हारून के पुत्र ईतामार के निर्देशन में करते थे।</span> <sup>9</sup><span class='v-txt'>उसने कहातियों को कुछ नहीं दिया, क्योंकि उनके जिम्मे कन्धों पर उठायी जाने वाली पवित्र वस्तुएँ थीं।</span> <sup>10</sup><span class='v-txt'>जिस दिन वेदी का विलेपन किया गया, उस दिन नेताओं ने उसके प्रतिष्ठान के लिए अपने उपहार चढ़ाये और उन्हें वेदी के सामने रखा।</span> <sup>11</sup><span class='v-txt'>प्रभु ने मूसा से कहा, &#039;&#039;प्रतिदिन एक ही नेता वेदी के प्रतिष्ठान के लिए अपना चढ़ावा ले आये।</span> <sup>12</sup><span class='v-txt'>पहले दिन यूदा वंश के अम्मीनादाब के पुत्र नहषेन ने अपनी भेंट चढ़ायी।</span> <sup>13</sup><span class='v-txt'>वह भेंट-स्वरूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी का एक पात्र। दोनों अन्न-बलि के लिए तेल-मिश्रित मैदे से भरे थे।</span> <sup>14</sup><span class='v-txt'>फिर वह लोबान से भरा दस शेकेल का सोने का एक पात्र, होम बलि के लिए बछड़ा,</span> <sup>15</sup><span class='v-txt'>एक मेढ़ा और एक वर्ष का एक ममना लाया।</span> <sup>16</sup><span class='v-txt'>प्रायश्चित्त-बलि के लिए एक बकरा</span> <sup>17</sup><span class='v-txt'>तथा शान्ति-बलि के लिए दो बछड़े, पाँच मेढ़े, पाँच बकरे और एक-एक वर्ष के पाँच मेमने। अम्मीनादब के पुत्र नहशोन की भेंट यही थी।</span> <sup>18</sup><span class='v-txt'>दूसरे दिन इस्साकार के नेता, सूआर के पुत्र नतनएल ने भेंट चढ़ायी।</span> <sup>19</sup><span class='v-txt'>वह भेंट-स्वरूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी का एक पात्र। दोनों अन्न-बलि के लिए तेल मिश्रित मैदे से भरे थे।</span> <sup>20</sup><span class='v-txt'>फिर लोबान से भरा दस शेकेल का सोने का एक पात्र,</span> <sup>21</sup><span class='v-txt'>होम-बलि के लिए एक बछड़ा, एक मेढ़ा और एक वर्ष का एक मेमना।</span> <sup>22</sup><span class='v-txt'>प्रायश्चित बलि के लिए एक बकरा</span> <sup>23</sup><span class='v-txt'>तथा शान्ति बलि के लिए दो बछड़े, पाँच मेढ़े, पाँच बकरे और एक-एक वर्ष के पाँच मेमने। सूआर के पुत्र नतनएल की भेंट यही थी।</span> <sup>24</sup><span class='v-txt'>तीसरे दिन ज़बुलोन वंश का नेता, हेलोन के पुत्र एलीआब</span> <sup>25</sup><span class='v-txt'>भेंट-स्वरूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी का एक पात्र। दोनों अन्न-बलि के लिए तेल मिश्रित मैदे से भरे थे।</span> <sup>26</sup><span class='v-txt'>फिर लोबान से भरा दस शेकेल का सोने का एक पात्र,</span> <sup>27</sup><span class='v-txt'>होम-बलि के लिए एक बछड़ा, एक मढ़ा, और एक मेमना।</span> <sup>28</sup><span class='v-txt'>प्रायश्चित-बलि के लिए एक बकरा तथा</span> <sup>29</sup><span class='v-txt'>शान्ति-बलि के लिए दो बछड़े, पाँच मेढ़े, पाँच बकरे और एक-एक वर्ष के पाँच मेमने। हेलोन के पुत्र एलीआब की भेंट यही थी।</span> <sup>30</sup><span class='v-txt'>चौथे दिन रूबेन वंश का नेता, शदेऊर का पुत्र एलीसूर</span> <sup>31</sup><span class='v-txt'>भेंट-स्वरूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी की एक पात्र।</span> <sup>32</sup><span class='v-txt'>दोनों अन्न-बलि के लिए तेल-मिश्रित मैदे से भरे थे। फिर लोबान से भरा दस शेकेल का सोने का एक पात्र,</span> <sup>33</sup><span class='v-txt'>होम-बलि के लिए एक बछड़ा, एक मेढ़ा और एक वर्ष का एक मेमना।</span> <sup>34</sup><span class='v-txt'>प्रायश्चित्त-बलि के लिए एक बकरा</span> <sup>35</sup><span class='v-txt'>तथा शान्ति-बलि के लिए दो बछड़े, पाँच मेढे, पाँच बकरे और एक-एक वर्ष के पाँच मेमेने। शदेऊर के पुत्र एलीसूर की भेंट यही थी।</span> <sup>36</sup><span class='v-txt'>पाँचवें दिन सिमओन वंश का नेता, सूरीशद्दय का पुत्र शलुमीएल</span> <sup>37</sup><span class='v-txt'>भेंट-स्वरूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी का एक पात्र।</span> <sup>38</sup><span class='v-txt'>दोनों अन्न-बलि के लिए तेल-मिश्रित मैदे से भरे थे। फिर लोबान से भरा दस शेकेल का सोने का एक पात्र,</span> <sup>39</sup><span class='v-txt'>होम-बलि के लिए एक बछड़ा, एक मेढ़ा और एक वर्ष का एक मेमना।</span> <sup>40</sup><span class='v-txt'>प्रायश्चित्त-बलि के लिए एक बकरा</span> <sup>41</sup><span class='v-txt'>तथा शान्ति-बलि के लिए दो बछड़े पाँच मेढ़े, पाँच बकरे और एक-एक वर्ष के पाँच मेमने। सूरीशद्दय के पुत्र शुलमीएल की भेंट यही थी।</span> <sup>42</sup><span class='v-txt'>छठे दिन गाद वंश का नेता, दऊएल का पुत्र एल्यासाफ</span> <sup>43</sup><span class='v-txt'>भेंट-स्वरूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी का एक पात्र। दोनों अन्न-बलि के लिए तेल-मिश्रित मैदे से भरे थे।</span> <sup>44</sup><span class='v-txt'>फिर लोबान से भरा दस शेकेल का सोने का एक पात्र,</span> <sup>45</sup><span class='v-txt'>होम-बलि के लिए एक बछड़ा, एक मेढ़ा और एक वर्ष का एक मेमना।</span> <sup>46</sup><span class='v-txt'>प्रायश्चित्त-बलि के लिए एक बकरा तथा</span> <sup>47</sup><span class='v-txt'>शान्ति-बलि के लिए दो बछड़े, पाँच मेढ़े, पाँच बकरे और एक-एक वर्ष के पाँच मेमने। दऊएल के पुत्र एल्यासाफ की भेंट यही थी।</span> <sup>48</sup><span class='v-txt'>सातवें दिन एफ्रईम वंश वालों का नेता, अम्मीहूद का पुत्र एलीशामा</span> <sup>49</sup><span class='v-txt'>भेंट-रूवरूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी का एक पात्र। दोनों अन्न-बलि के लिए तेल-मिश्रित मैदे से भरे थे।</span> <sup>50</sup><span class='v-txt'>फिर लोबान से भरा दस शेकेल का सोने का एक पात्र,</span> <sup>51</sup><span class='v-txt'>होम-बलि के लिए एक बछड़ा, एक मेढ़ा और एक वर्ष का एक मेमना।</span> <sup>52</sup><span class='v-txt'>प्रायश्चित्त-बलि के लिए एक बकरा</span> <sup>53</sup><span class='v-txt'>तथा शान्ति-बलि के लिए दो बछड़े, पाँच मेढ़ा, पाँच बकरे और एक-एक वर्ष के पाँच मेमने। अम्मीहूद के पुत्र एलीशामा की भेंट यही थी।</span> <sup>54</sup><span class='v-txt'>आठवें दिन मनस्से वंश का नेता, पदाहसूर का पुत्र गमलीएल</span> <sup>55</sup><span class='v-txt'>भेंट-स्वरूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी का एक पात्र। दोनों अन्न-बलि के लिए तेल-मिश्रित मैदे से भरे थे।</span> <sup>56</sup><span class='v-txt'>फिर लोबान से भरा दस शेकेल का सोने का एक पात्र,</span> <sup>57</sup><span class='v-txt'>होम-बलि के लिए एक बछड़ा, एक मेढ़ा, और एक वर्ष का एक मेमना।</span> <sup>58</sup><span class='v-txt'>प्रायश्चित्त-बलि के लिए एक बकरा</span> <sup>59</sup><span class='v-txt'>तथा शान्ति-बलि के लिए दो बछड़े, पाँच मेढ़े, पाँच बकरे और एक-एक वर्ष के पाँच मेमने। पदाहसूर के पुत्र गमलीएल की भेंट यही थी।</span> <sup>60</sup><span class='v-txt'>नौवें दिन बेनयामीन वंश का नेता, गिदओनी का पुत्र अबीदान</span> <sup>61</sup><span class='v-txt'>भेंट-स्वरूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी का एक पात्र। दोनों अन्न-बलि के लिए तेल-मिश्रित मैदे से भरे थे।</span> <sup>62</sup><span class='v-txt'>फिर लोबान से भरा दस शेकेल का सोने का एक पात्र,</span> <sup>63</sup><span class='v-txt'>होम-बलि के लिए एक बछड़ा एक मेढ़ा और एक वर्ष का एक मेमना।</span> <sup>64</sup><span class='v-txt'>प्रायश्चित्त-बलि के लिए एक बकरा</span> <sup>65</sup><span class='v-txt'>तथा शान्ति-बलि के लिए दो बछड़े, पाँच मेढ़े, पाँच बकरे और एक-एक वर्ष के पाँच मेमने। गिदओनी के पुत्र अबीदान की भेंट यही थी।</span> <sup>66</sup><span class='v-txt'>दसवें दिन दान वंश का नेता, अम्मीशद्दय का पुत्र अहीएज़ेर</span> <sup>67</sup><span class='v-txt'>भेंट-स्परूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र-शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी का एक पात्र। दोनों अन्न-बलि के लिए तेल मिश्रित मैदे से भरे थे।</span> <sup>68</sup><span class='v-txt'>फिर लोबान से भरा दस शेकेल का सोने का वह पात्र,</span> <sup>69</sup><span class='v-txt'>होम-बलि के लिए एक बछड़ा, एक मेढ़ा और एक वर्ष का एक मेमना।</span> <sup>70</sup><span class='v-txt'>प्रायश्चित्त-बलि के लिए एक बकरा,</span> <sup>71</sup><span class='v-txt'>तथा शान्ति-बलि के लिए दो बछड़े, पाँच मेढ़े, पाँच बकरे और एक-एक वर्ष के पाँच मेमने। अम्मीशद्दय के पुत्र अहीएज़ेर की भेंट यही थी।</span> <sup>72</sup><span class='v-txt'>ग्यारहवें दिन आषेर वंश का नेता, ओक्रान का पुत्र पगीएल</span> <sup>73</sup><span class='v-txt'>भेंट-स्वरूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी का एक पात्र। दोनों अन्न-बलि के लिए तेल-मिश्रित मैदे से भरे थे।</span> <sup>74</sup><span class='v-txt'>फिर लोबान से भरा दस शेकेल का सोने का एक पात्र,</span> <sup>75</sup><span class='v-txt'>होम-बलि के लिए एक बछड़ा, एक मेढ़ा और एक वर्ष का एक मेमना</span> <sup>76</sup><span class='v-txt'>प्रायश्चित्त-बलि के लिए एक बकरा</span> <sup>77</sup><span class='v-txt'>तथा शान्ति-बलि के लिए दो बछड़े, पाँच मेढ़े, पाँच बकरे और एक-एक वर्ष के पाँच मेमनें। ओक्रान के पुत्र पगीएल की भेंट यही थी।</span> <sup>78</sup><span class='v-txt'>बारहवें दिन नफ़ताली वंश का नेता, एनान का पुत्र अहीरा</span> <sup>79</sup><span class='v-txt'>भेंट-स्वरूप एक सौ तीस शेकेल की चाँदी की एक थाली लाया और पवित्र शेकेल की तौल के अनुसार सत्तर शेकेल का चाँदी का एक पात्र। दोनों अन्न-बलि के लिए तेल-मिश्रित मैदे से भरे थे।</span> <sup>80</sup><span class='v-txt'>फिर लोबान से भरा दस शेकेल का सोने का एक पात्र,</span> <sup>81</sup><span class='v-txt'>होम-बलि के लिए एक बछड़ा, एक मेढ़ा और एक वर्ष का एक मेमना।</span> <sup>82</sup><span class='v-txt'>प्रायश्चित्त-बलि के लिए एक बकरा</span> <sup>83</sup><span class='v-txt'>तथा शान्ति-बलि के लिए दो बछड़े, पाँच मेढ़े, पाँच बकरे और एक-एक वर्ष के पाँच मेमने। एनान के पुत्र अहीरा की भेंट यही थी।</span> <sup>84</sup><span class='v-txt'>यही वे भेंटें थी, जिन्हें वेदी का प्रतिष्ठान करने के अवसर पर इस्राएल के नेताओं ने उस दिन चढ़ाया, जब उसका विलेपन किया गया था, अर्थात् चाँदी की बारह थालियाँ, चाँदी के बारह पात्र और सोने के बारह पात्र।</span> <sup>85</sup><span class='v-txt'>प्रत्येक थाली की चाँदी एक सौ तीस शेकेल और प्रत्येक पात्र की चाँदी सत्तर शेकेल थी। पवित्र शेकेल की तौल के अनुसार इन पात्रों की कुल तौल दो हजार चार सौ शेकेल थी।</span> <sup>86</sup><span class='v-txt'>लोबान से भरे सोने के पात्र कुल बारह थे। पवित्र शेकेल की तौल के अनुसार प्रत्येक पात्र की तौल दस शेकेल थी। इन पात्रों के सोने की कुल तौल एक सौ बीस शेकेल थी।</span> <sup>87</sup><span class='v-txt'>होम बलि के लिए चढ़ाये हुए पशुओं की संख्या थी - बारह बछड़े, बारह मेढ़े, एक-एक वर्ष के बारह मेमने तथा उसके लिए आवश्यक अन्न-बलि और प्रायश्चित-बलि के लिए बारह मेढ़े।</span> <sup>88</sup><span class='v-txt'>शान्ति-बलि के लिए कुल पशुओं की संख्या इस प्रकार थी चौबीस बछड़े, साठ मेढ़े, साठ बकरे और एक-एक वर्ष के साठ मेमने। जब विलेपन के बाद वेदी का प्रतिष्ठान किया गया, तब ये भेंटें चढ़ायी गयीं।</span> <sup>89</sup><span class='v-txt'>जब-जब प्रभु से बातें करने के लिए मूसा दर्शन-कक्ष में प्रवेश करता था, तब-तब वह अपने को संबोधित करने वाली उसकी वाणी सुनता था। वह वाणी विधान-मंजूषा पर लगे छादन-फलक के ऊपर से दोनों केरूबों के बीच से होकर आती थी। यह उसी तरह उस से बातें करता था।</span> </p>
+        <div class='nav'><a href='004006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उस देश में अय्यूब नामक मनुष्य रहता था, वह निर्दोष और निष्कपट था, ईश्वर पर श्रद्धा रखता और बुराई से दूर रहता था।</span> <sup>2</sup><span class='v-txt'>उसके सात पुत्र और तीन पुत्रियाँ थी।</span> <sup>3</sup><span class='v-txt'>उसके पास सात हजार भेड़े, तीन हजार ऊँट, पाँच सौ जोड़ी बैल, पाँच सौ गधियाँ और बहुत-से नौकर चाकर थे।  वह समस्त पूर्वी देशों के लोगों में सबसे बड़ा था।</span> <sup>4</sup><span class='v-txt'>उसके पुत्र बारी-बारी से अपने यहाँ भोज प्रबंध किया करते और अपनी तीनों बहनों को भी अपने साथ खाने-पीने के लिए निमन्त्रित किया करते थे।</span> <sup>5</sup><span class='v-txt'>जब भोजों के एक चक्र समाप्त हो जाता था, तो अय्यूब उन को बुला कर उनकी शुद्धि करवाता और वह स्वयं बड़े सबेरे उठ कर प्रत्येक के लिए होम चढ़ता था; क्योंकि अय्यूब यह सोचता थाः संभव है, मेरे लड़को ने कोई पाप किया हो और मन-ही-मन ईश्वर की निंदा की हो। इसलिए अय्यूब हर बार ऐसा किया करता था।</span> <sup>6</sup><span class='v-txt'>एक दिन ऐसा हुआ कि स्वर्गदूत प्रभु के सामने उपस्थित हुए और शैतान भी उन में सम्मिलित हो गया।</span> <sup>7</sup><span class='v-txt'>प्रभु ने शैतान से कहा, &quot;तुम कहाँ से आये हो?&quot; शैतान ने प्रभु को उत्तर दिया, &quot;मैंने पृथ्वी का पूरा चक्कर लगाया&quot;।</span> <sup>8</sup><span class='v-txt'>इस पर प्रभु ने कहा, &quot;क्या तुमने मेरे सेवक अय्यूब पर ध्यान दिया है?  पृथ्वी भर में उसके समान कोई नहीं; वह निर्दोष और निष्कपट है, वह ईश्वर पर श्रद्धा रखता और बुराई से दूर रहता है।&quot;</span> <sup>9</sup><span class='v-txt'>शैतान ने प्रभु से कहा, &quot;क्या अय्यूब यों ही ईश्वर पर श्रद्धा रखता है?</span> <sup>10</sup><span class='v-txt'>क्या आपने उसके, उसके परिवार और उसकी पूरी जायदाद के चारों ओर मानो घेरा लगा कर उसे सुरक्षित नहीं रखा?  आपने उसके सब कार्यों को आशीर्वाद दिया उसके झुण्ड देश भर मैं फैले हुए हैं।</span> <sup>11</sup><span class='v-txt'>आप हाथ बढ़ा कर उसकी सारी सम्पत्ति छीन लें, तो वह निश्चिय ही आपके मुँह पर आपकी निंदा करेगा।&quot;</span> <sup>12</sup><span class='v-txt'>प्रभु ने शैतान से कहा, &quot;अच्छा! उसका सब कुछ तुम्हारे हाथ में है, किंतु अय्यूब पर हाथ मत लगाना&quot;।  इसके बाद शैतान प्रभु के सामने से चला गया।</span> <sup>13</sup><span class='v-txt'>अय्यूब के पुत्र-पुत्रियाँ किसी दिन अपने बड़े भाई के यहाँ खा-पी रहे थे</span> <sup>14</sup><span class='v-txt'>कि एक सन्देशवाहक ने आ कर अय्यूब से कहा, &quot;बैल हल में जुते हुए थे और गधियोँ उनके आस-पास चर रही थीं।</span> <sup>15</sup><span class='v-txt'>उस समय शबाई उन पर टूट पड़े और आपके सेवकों को तलवार के घाट उतार कर सब पशुओं को ले गये।  केवल मैं बच गया और आप को यह समाचार सुनाने आया हूँ।&quot;</span> <sup>16</sup><span class='v-txt'>वह बोल ही रहा था कि कोई दूसरा आ कर कहने लगा, &quot;ईश्वर की आग आकाश से गिर गयी।  उसने भेड़ों और चहवाहों को जला कर भस्म कर दिया।  केवल मैं बच गया और आप को समाचार सुनाने आया हूँ&quot;</span> <sup>17</sup><span class='v-txt'>वह बोल ही रहा था कि एक और अंदर से आया और कहने लगा, &quot;खल्दैयी तीन दल बना कर ऊँटों पर टूट पड़े और आपके नौकरों को तलवार के घाट उतार कर पशुओं को ले गये।  केवल मैं बच गया और आप को यह समाचार सुनाने आया हूँ&quot;</span> <sup>18</sup><span class='v-txt'>वह बोल ही रहा था कि एक और आ कर कहने लगा, &quot;आपके पुत्र-पुत्रियाँ, अपने बड़े भाई के यहाँ खा-पी रहे थे</span> <sup>19</sup><span class='v-txt'>कि एक भीषण आँधी मरूभूमि की ओर से आयी और घर के चारों कोनो से इतने ज़ोर से टकरायी कि घर आपके पुत्र-पुत्रियों पर गिर गया और वह मर गये।  केवल मैं बचा गया हूँ और आप को यह समाचार सुनाने आया हूँ&quot;</span> <sup>20</sup><span class='v-txt'>अय्यूब ने उठ कर अपने वस्त्र फाड़ डाले।  उनसे सिर मुडाया और मुँह के बल भूमि पर गिर कर</span> <sup>21</sup><span class='v-txt'>यह कहा, &quot;मैं नंगा ही माता के गर्भ से निकला और नंगा ही पृथ्वी के गर्भ में लौट जाऊँगा!  प्रभु ने दिया था, प्रभु ने ले लिया।  धन्य है प्रभु का नाम!&quot;</span> <sup>22</sup><span class='v-txt'>इन सब विपत्तियों के होते हुए भी अय्यूब ने कोई पाप नहीं किया और उसने ईश्वर की निंदा नहीं की।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='022002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

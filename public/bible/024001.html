@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>सूक्ति - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>सूक्ति</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इस्राएल के राजा, दाऊद के पुत्र सुलेमान की सूक्तियाँ:</span> <sup>2</sup><span class='v-txt'>जिससे मनुष्य प्रज्ञा और अनुशासन ग्रहण करें, गम्भीर वचनों को अर्थ समझे,</span> <sup>3</sup><span class='v-txt'>संयमपूर्ण जीवन बिताने की शिक्षा, न्याय, कर्तव्यबोध और सच्चाई प्राप्त करें;</span> <sup>4</sup><span class='v-txt'>भोले-भाले लोगो की समझदारी और नवयुवकों को ज्ञान और विवेक मिले,</span> <sup>5</sup><span class='v-txt'>ज्ञानी इन्हें सुन कर अपना ज्ञान बढ़ाये और विवेकी व्यवहारकुशल बने।</span> <sup>6</sup><span class='v-txt'>वे कहावतों और दृष्टान्तों का, मनीशियों की उक्तियों और पहेलियों का अर्थ समझें।</span> <sup>7</sup><span class='v-txt'>प्रज्ञा का मूल स्त्रोत प्रभु पर श्रद्धा है, किन्तु मूर्ख लोग प्रज्ञा और अनुशासन का तिरस्कार करते हैं।</span> <sup>8</sup><span class='v-txt'>पुत्र! अपने पिता की शिक्षा पर ध्यान दो, अपनी माता की सीख अस्वीकार मत करो।</span> <sup>9</sup><span class='v-txt'>यह मानो तुम्हारे सिर का सुन्दर मुकुट होगा, तुम्हारे कण्ठ को सुशोभित करने वाली माला।</span> <sup>10</sup><span class='v-txt'>पुत्र! यदि पापी लोग तुम को लुभाना चाहें, तो उनकी बात मत मानो।</span> <sup>11</sup><span class='v-txt'>यदि वे कहें, &quot;आओ, हमारे साथ चलो, हम घात लगा कर किसी का वध करें, हम अकारण किसी निर्दोष व्यक्ति की ताक में रहें।</span> <sup>12</sup><span class='v-txt'>हम अघोलोक की तरह उन्हे जीवित ही निगल लें, कब्र में उतरने वालों की तरह उन्हे पूर्ण रूप से समाप्त करें।</span> <sup>13</sup><span class='v-txt'>हमें सब प्रकार की बहुमूल्य वस्तुएँ मिल जायेंगी।  हम लूट के माल से अपने घर भर लेंगे;</span> <sup>14</sup><span class='v-txt'>हम में से एक बनो, हम सब की एक ही पूँजी होगी।&quot;</span> <sup>15</sup><span class='v-txt'>पुत्र! ऐसे लोगों का साथ मत दो, उनके मार्ग पर पैर मत रखो;</span> <sup>16</sup><span class='v-txt'>क्योंकि उनके कदम बुराई की ओर बढ़ते हैं, वे रक्त बहाने को दौड़ते हैं।</span> <sup>17</sup><span class='v-txt'>जब पक्षी देख रहे हों, तो जाल बिछाना व्यर्थ है।</span> <sup>18</sup><span class='v-txt'>ये लोग अपने ही लोगों का वध करते और अपने ही जीवन की घात में बैठते हैं।</span> <sup>19</sup><span class='v-txt'>यह उन लोगों की गति है, जो पाप की कमाई एकत्र करते, ऐसी कमाई मनुष्यों की जान लेती है।</span> <sup>20</sup><span class='v-txt'>प्रज्ञा सड़कों पर उच्च स्वर से पुकार रही है, उसकी आवाज़ चौकों में गूँज रही है।</span> <sup>21</sup><span class='v-txt'>वह भीड़-भरी सड़कों पर पुकार लगा रही है, वह नगर के फाटकों पर अपना सन्देश सुनाती है।</span> <sup>22</sup><span class='v-txt'>&quot;अज्ञानियों!  तुम कब तक मूर्खता पसन्द करोगे? उपहासक कब तक उपहास करते रहेंगे, मूर्ख कब तक ज्ञान से बैर रखेंगे?</span> <sup>23</sup><span class='v-txt'>यदि तुम मेरी चेतावनी पर ध्यान दोगे, तो मैं तुम को अपना आत्मा प्रदान करूँगी और तुम पर अपना सन्देश प्रकट करूँगी।</span> <sup>24</sup><span class='v-txt'>मैंने पुकारा और तुमने मुझे अस्वीकार किया, मैंने अपना हाथ पसारा और तुमने ध्यान नहीं दिया,</span> <sup>25</sup><span class='v-txt'>तुमने मेरे परामर्श का तिरस्कार किया और मेरी चेतावनी ठुकरायी,</span> <sup>26</sup><span class='v-txt'>इसलिए मैं तुम्हारी विपत्ति पर हँसूँगी, तुम पर आने वाले आतंक का उपहास करूँगी।</span> <sup>27</sup><span class='v-txt'>अब आतंक तुम पर आँधी की तरह छा जायेगा, जब विपत्ति बवण्डर की तरह तुम पर टूट पड़ेगी, जब दुःख और संकट तुम को अभिभूत करेंगे,</span> <sup>28</sup><span class='v-txt'>&quot;तब वे मेरी दुहाई देंगे, किन्तु मैं उत्तर नहीं दूँगी।  वे मुझे खोजेंगे, किन्तु मुझे नहीं पायेंगे।</span> <sup>29</sup><span class='v-txt'>उन्होंने ज्ञान से बैर रखा और प्रभु की श्रद्धा नहीं चाही,</span> <sup>30</sup><span class='v-txt'>उन्हें मेरा परामर्श पसन्द नहीं आया, उन्होंने मेरी चेतावनी का तिरस्कार किया,</span> <sup>31</sup><span class='v-txt'>इसलिए वे अपने आचरण का फल भोगेंगे, वे अपनी योजनाओं के परिणाम से तृत्त किये जायेंगे।</span> <sup>32</sup><span class='v-txt'>अज्ञानियों की अवज्ञा उन्हीं को मारती है, मूर्खों का अविवेक उनका ही सर्वनाश करता है।</span> <sup>33</sup><span class='v-txt'>किन्तु जो मेरी बातों पर ध्यान देता है, वह सुरक्षा में जीवन बितायेगा, वह शान्ति में रह कर विपत्ति से नहीं डरेगा।&quot;</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='024002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

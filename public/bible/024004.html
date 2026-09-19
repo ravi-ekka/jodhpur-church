@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>सूक्ति - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>सूक्ति</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>पुत्रों! पिता की शिक्षा पर ध्यान दो।  समझदार बनने का प्रयत्न करो।</span> <sup>2</sup><span class='v-txt'>मैं तुम लोगो को ज्ञान की बातें बता रहा हूँ।  मेरी शिक्षा का तिरस्कार मत करो।</span> <sup>3</sup><span class='v-txt'>मैं भी अपने पिता का आज्ञाकारी पुत्र था।  मेरी माता मुझे इकलौते पुत्र की तरह प्यार करती थी।</span> <sup>4</sup><span class='v-txt'>मेरे पिता ने यह कहते हुए मुझे शिक्षा दी: &quot;सारे हृदय से मेरी शिक्षा अपनाओ।  मेरी आज्ञाओं का पालन करो और तुम्हें जीवन प्राप्त होगा।</span> <sup>5</sup><span class='v-txt'>प्रज्ञा और समझदारी प्राप्त करो।  मेरे शब्द याद रखो और उन से नहीं भटको</span> <sup>6</sup><span class='v-txt'>&quot;प्रज्ञा का परित्याग मत करो और वह तुम्हारी रक्षा करेगी।  उसको प्यार करो और वह तुम्हारी देख-रेख करेगी।</span> <sup>7</sup><span class='v-txt'>सब से पहले प्रज्ञा प्राप्त करो, किसी भी कीमत पर सद्बुद्धि प्राप्त करो।</span> <sup>8</sup><span class='v-txt'>इसे सँजोये रखो और यह तुम्हें सम्मान दिलायेगी।</span> <sup>9</sup><span class='v-txt'>यह तुम्हारे कण्ठ में एक मनोहर माला डाल देगी और तुम्हें महिमा का किरीट प्रदान करेगी।&quot;</span> <sup>10</sup><span class='v-txt'>पुत्र!  सुनो, मेरी बातों पर ध्यान दो और तुम्हारी आयु लम्बी होगी।</span> <sup>11</sup><span class='v-txt'>मै तुम्हें प्रज्ञा का मार्ग दिखाता और सन्मार्ग पर ले चलता हूँ।</span> <sup>12</sup><span class='v-txt'>तुम आगे बढ़ोगे, तो बाधा नहीं होगी; तुम दौड़ने लगोगे, तो ठोकर नहीं खाओगे।</span> <sup>13</sup><span class='v-txt'>इस शिक्षा को ग्रहण करो, इसे कभी मत छोड़ो, इसे सँजोये रखो, क्योंकि यह तुम्हारा जीवन है।</span> <sup>14</sup><span class='v-txt'>दुष्टों के मार्ग में प्रवेश मत करो; कुकर्मियों के पथ पर मत चलो।</span> <sup>15</sup><span class='v-txt'>उस से दूर रहो, उस पर पैर मत रखो; उस से कतरा कर आगे बढ़ो।</span> <sup>16</sup><span class='v-txt'>वे पाप किये बिना सोने नहीं जाते।  यदि उन्होंने किसी को पथभ्रष्ट नहीं किया, तो उन्हे नींद नहीं आती।</span> <sup>17</sup><span class='v-txt'>वे अधर्म की रोटी खाते और हिंसा की मदिरा पीते हैं।</span> <sup>18</sup><span class='v-txt'>धर्मियों का मार्ग प्रभात के प्रकाश-जैसा है, जो दोपहर तक क्रमश: बढ़ता जाता है;</span> <sup>19</sup><span class='v-txt'>किन्तु विधर्मियों का मार्ग अन्धकारमय है।  उन्हें पता नहीं कि वे किस चीज से ठोकर खायेंगे।</span> <sup>20</sup><span class='v-txt'>पुत्र!  मेरी बातों पर ध्यान दो; कान लगा कर मेरी शिक्षा सुनो।</span> <sup>21</sup><span class='v-txt'>उसे अपनी आँखों से ओझल न होने दो; उसे अपने हृदय में सँजोये रखो।</span> <sup>22</sup><span class='v-txt'>वह तुम में नवजीवन का संचार करेगी और तुम्हारे शरीर को स्वस्थ रखेगी।</span> <sup>23</sup><span class='v-txt'>तुम बड़ी सावधानी से अपने हृदय की रक्षा करो, क्योंकि जीवन का स्त्रोत उस से फूटा करता है।</span> <sup>24</sup><span class='v-txt'>अपने मुख को असत्य न बोलने दो, अपने होंठो से हर प्रकार का कपट दूर रखो।</span> <sup>25</sup><span class='v-txt'>तुम्हारी आँखे सीधे, सामने की ओर देखा करें।  तुम्हारी दृष्टि ठीक आगे की ओर टिकी रहे।</span> <sup>26</sup><span class='v-txt'>जिस पथ पर चलते हो, उसे ध्यान से देखो; तुम्हारे सभी मार्ग निरापद हों।</span> <sup>27</sup><span class='v-txt'>तुम न तो बायें भटकों और न दायें; बुराई के पथ पर पैर मत रखो।</span> </p>
+        <div class='nav'><a href='024003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='024005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

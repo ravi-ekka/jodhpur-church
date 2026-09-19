@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>इसायाह - अध्याय 35</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>इसायाह</h1>
+        <h2>अध्याय 35</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मरुस्थल और निर्जल प्रदेश आनन्द मनायें।  उजाड़ भूमि  हर्शित हो कर फले-फूले,</span> <sup>2</sup><span class='v-txt'>वह कुमुदिनी की तरह खिल उठे, वह उल्लास और आनन्द के गीत गाये।  उसे लेबानोन का गौरब दिया गया है, करमेल तथा शारोन की शोभा।  लोग प्रभु की महिमा तथा हमारे ईश्वर के प्रताप के दर्शन करेंगे।</span> <sup>4</sup><span class='v-txt'>घबराये हुए लोगों से कहो- “ढारस रखों डरो मत! देखो, तुम्हारा ईश्वर आ रहा है।  वह बदला चुकाने आता है, वह प्रतिशोध लेने आता है, वह स्वयं तुम्हें बचाने आ रहा है।“</span> <sup>5</sup><span class='v-txt'>तब अन्धों की आँखें देखने और बहरों के कान सुनने लगेंगे।  लँगड़ा हरिण की तरह छलाँग भरेगा।  और गूँगे की जीभ आनन्द का गीत गायेगी।</span> <sup>6</sup><span class='v-txt'>मरुस्थल में जल की धाराएँ फूट निकलेंगी, रेतीले मैदानों में नदियाँ बह जायेंगी,</span> <sup>7</sup><span class='v-txt'>सूखी धरती झील बन जायेगी और प्यासी धरती में झरने  निकलेंगे।  जहाँ पहले सियारों की माँद थी, वहाँ सरकण्डे  और बेंत उपजेंगे।</span> <sup>8</sup><span class='v-txt'>वहाँ एक राजमार्ग बिछा दिया जायेगा, जो ‘पवित्र मार्ग’ कहलायेगा।  कोई भी पापी उस पर नहीं चलेगा।  प्रभु स्वयं यह मार्ग तैयार करेगा- नास्तिक भूल कर भी उस पर पैर नहीं रखेंगे।</span> <sup>9</sup><span class='v-txt'>वहाँ न तो कोई सिंह विचरेगा और न कोई हिंसक पशु मिलेगा।  प्रभु की प्रजा उस पर चलेगी।</span> <sup>10</sup><span class='v-txt'>प्रभु ने जिन्हें मुक्त कर दिया है, वे ही उस पर लौटेंगे।  वे गाते-बजाते हुए सियोन लौटेंगे, उनके मुख पर अपार आनन्द खिल उठेगा।  वे हर्ष और उल्लास के साथ लौटेंगे।  दुःख और विलाप का अन्त हो जायेगा।</span> </p>
+        <div class='nav'><a href='029034.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='029036.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

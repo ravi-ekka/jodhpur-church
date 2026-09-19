@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 25</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 25</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैं तीन बातें पसन्द करता हूँ; वे प्रभु और मनुष्यों को प्रिय हैं:</span> <sup>2</sup><span class='v-txt'>भाइयों का मित्रभाव, पड़ोसी का प्रेम और पति-पत्नी का सामंजस्य।</span> <sup>3</sup><span class='v-txt'>मेरा हृदय तीन प्रकार के लोगों से घृणा करता है और मुझे उनके आचरण से चिढ़ है:</span> <sup>4</sup><span class='v-txt'>घमण्डी दरिद्र, मिथ्यावादी धनी और मूर्ख एवं व्यभिचारी बूढ़ा।</span> <sup>5</sup><span class='v-txt'>तुमने युवावस्था में जो इकट्ठा नहीं किया, उसे वृद्धावस्था में कैसे पाओेगे?</span> <sup>6</sup><span class='v-txt'>कितना अच्छा लगता है, जब पके बाल न्याय करते और बूढ़े परामर्श देते हैं!</span> <sup>7</sup><span class='v-txt'>कितना अच्छा लगता है, जब बूढ़ों में प्रज्ञा हेाती है और प्रतिष्ठित लोगों में विवेक और सत्यपरामर्श!</span> <sup>8</sup><span class='v-txt'>प्रचुर अनुभव वृद्धों का मुकुट है और प्रभु पर श्रद्धा उनका गौरव।</span> <sup>9</sup><span class='v-txt'>मैं अपने मन में नौ बातों की प्रशंसा करता हूँ और दसवीं की भी चरचा करूँगा:</span> <sup>10</sup><span class='v-txt'>वह मनुष्य, जिसे अपने बच्चों में आनन्द आता है; वह, जो अपने जीवनकाल में अपने शत्रुओें का पतन देखता है;</span> <sup>11</sup><span class='v-txt'>धन्य है वह, जिसके एक समझदार पत्नी है, वह, जो बैल और गधे के जोड़े से नहीं जोतता, वह, जो अपनी जीभ से पाप नहीं करता, वह, जिसे अपने से छोटे मनुष्य की नौकरी नहीं करनी पड़ती!</span> <sup>12</sup><span class='v-txt'>धन्य है वह, जिसे सच्चा मित्र प्राप्त है और वह, जो ध्यान से सुनने वालों को सम्बोधित करता है!</span> <sup>13</sup><span class='v-txt'>वह कितन महान् है, जिसे प्रज्ञा और ज्ञान प्राप्त है!  किन्तु जो प्रभु पर श्रद्धा रखता, उस से महान् कोई नहीं!</span> <sup>14</sup><span class='v-txt'>प्रभु पर श्रद्धा सर्वश्रेष्ठ है।</span> <sup>15</sup><span class='v-txt'>जिसे वह प्राप्त है, उसकी तुलना किसी से नहीं हो सकती।</span> <sup>16</sup><span class='v-txt'>भक्ति प्रभु पर श्रद्धा से प्रारम्भ होती है, किन्तु मनुष्य विश्वास द्वारा प्रभु से संयुक्त हो जाता है।</span> <sup>17</sup><span class='v-txt'>हृदय के दुःख के बराबर कोई दुःख नहीं।  स्त्री की बुराई के बराबर कोई बुराई नहीं।</span> <sup>18</sup><span class='v-txt'>हृदय के घाव के बराबर कोई घाव नहीं।</span> <sup>19</sup><span class='v-txt'>स्त्री की दुष्टता के बराबर कोई दुष्टता नहीं।</span> <sup>20</sup><span class='v-txt'>बैरियों द्वारा दिये गये कष्ट के बराबर कोई कष्ट नहीं।</span> <sup>21</sup><span class='v-txt'>शत्रुओं के प्रतिशोध के बराबर कोई प्रतिशोध नहीं।</span> <sup>22</sup><span class='v-txt'>साँप के विष के बराबर कोई विष नहीं।</span> <sup>23</sup><span class='v-txt'>स्त्री के क्रोध के बराबर कोई क्रोध नहीं।  दुष्ट पत्नी के साथ रहने की अपेक्षा मैं सिंह और पंखदार सर्प के साथ रहना अधिक पसन्द करूँगा।</span> <sup>24</sup><span class='v-txt'>स्त्री की दुष्टता उसकी आकृति बदल देती और उसका चेहरा रीछनी की तरह काला बना देती है।</span> <sup>25</sup><span class='v-txt'>उसका पति पड़ोसियों के बीच बैठ कर अनजान में आह भरता है।</span> <sup>26</sup><span class='v-txt'>स्त्री की दुष्टता की तुलना में हर दुष्टता छोटी है।  उसे पापियों की गति प्राप्त हो!</span> <sup>27</sup><span class='v-txt'>शान्तिप्रिय पति के लिए बकवादी पत्नी बूढे़ के पैरों के लिए रेत के चढ़ाव के समान है।</span> <sup>28</sup><span class='v-txt'>स्त्री के सौन्दर्य के जाल में मत फँसो और स्त्री का लालच मत करो।</span> <sup>29</sup><span class='v-txt'>यदि पत्नी पति का भरण-पोषण करती है,</span> <sup>30</sup><span class='v-txt'>तो यह पति के लिए कठोर दासता और कलंक है।</span> <sup>32</sup><span class='v-txt'>पति के निष्क्रिय हाथ और काँपते पैर यह उस पत्नी का कार्य है, जो अपने पति को सुख नहीं देती।</span> <sup>33</sup><span class='v-txt'>स्त्री के द्वारा पाप का प्रारम्भ हुआ था, हम सब उसी के कारण मर जाते हैं।</span> <sup>34</sup><span class='v-txt'>पानी नहीं बहने दो और दुष्ट पत्नी को बोलने की छूट मत दो।</span> <sup>35</sup><span class='v-txt'>यदि वह तुम्हारे हाथ के संकेत पर नहीं चलती, तो तुम को अपने शत्रुओं के सामने लज्जित होना पड़ेगा।</span> <sup>36</sup><span class='v-txt'>तुम उस से अलग हो जाओ और उसे उसके अपने घर भेज दो।</span> </p>
+        <div class='nav'><a href='028024.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028026.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

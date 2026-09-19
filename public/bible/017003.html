@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>टोबीत - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>टोबीत</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैं बड़ा दुःखी हो कर कराहते और आँसू बहाते हुए इस प्रकार प्रार्थना करने लगा,</span> <sup>2</sup><span class='v-txt'>&quot;प्रभु! तू न्यायी है और तेरे समस्त कार्य न्यायपूर्ण हैं।  तेरे सभी मार्ग दया और सच्चाई के हैं।  तू संसार का न्याय करता है।</span> <sup>3</sup><span class='v-txt'>प्रभु! अब मुझे याद कर।  मुझे मेरे पापों का दण्ड न दे। मेरे और मेरे पूर्वजों के अपराध भुला।</span> <sup>4</sup><span class='v-txt'>हम लोगों ने तेरी आज्ञाओं का पालन नहीं किया, इसलिए हम लूट, निर्वासन एवं मृत्यु के शिकार बने हुए हैं और तूने हमें जिन राष्ट्रों में बिखेरा, वहाँ हम अपमानित हुए हैं।</span> <sup>5</sup><span class='v-txt'>प्रभु!  तेरा दण्ड सही है; क्योंकि हमने तेरी आज्ञाओं का पालन नहीं किया और हम तेरे प्रति ईमानदार नहीं रहे।</span> <sup>6</sup><span class='v-txt'>इसलिए, प्रभु! जैसी तेरी इच्छा हो, मेरे साथ वैसा ही व्यवहार कर।  मुझे उठा लेने की कृपा कर, क्योंकि मेरे लिए जीवन की अपेक्षा मरण अच्छा है।  मैं झूठी निन्दा सुनते-सुनते तंग आ गया हूँ।  मैं बड़ा दुःखी हूँ।  प्रभु! मुझ से यह कष्ट दूर कर।  मुझे अपने शाश्वत निवास  में प्रवेश करने दे।  प्रभु!  मुझ से अपना मुख न छिपा।  जीवन भर इस प्रकार का कष्ट सहते और निन्दा सुनते रहने की अपेक्षा मेरे लिए मरण अच्छा है।&quot;</span> <sup>7</sup><span class='v-txt'>उसी दिन, मेदिया के एकबतना नामक नगर में, रागुएल की पुत्री सारा को भी अपने पिता की एक नौकरानी की फटकार सुननी पड़ी।</span> <sup>8</sup><span class='v-txt'>सारा का विवाह सात बार हुआ था और सारा के पति का संसर्ग होने के पहले ही अस्मादेव नामक पिशाच ने क्रमशः सातों को उसके पास आते ही मार डाला था।  नौकरानी ने सारा से कहा, &quot;पतियों की हत्यारिन!  तुम को सात पति मिल चुके हैं और तुम किसी की नहीं बन सकी।</span> <sup>9</sup><span class='v-txt'>अपने मरे हुए पतियों के कारण हम को क्यों डाँटती हो? उनके पास चली जाओ।  अच्छा हो कि हम तुम्हारे पुत्र या तुम्हारी पुत्री को कभी नहीं देखें।&quot;</span> <sup>10</sup><span class='v-txt'>उस दिन सारा को बड़ा दुःख हुआ।  वह रोते हुए पिता के घर की छत पर जा कर अपने को फाँसी लगाना चाहती थी।  फिर वह सोचने लगी-कहीं ऐसा न हो कि लोग यह कहते हुए मेरे पिता का अपमान करें: &quot;तुम्हारी एक ही प्यारी पुत्री थी और उसने अपने दुःख के कारण फाँसी लगा ली&quot; और इस तरह मैं अपने बूढ़े पिता की मृत्यु का कारण बनूँगी।  मेरे लिएक अच्छा यह है कि मैं अपने को फ़ाँसी न लगाऊँ, बल्कि ईश्वर से प्रार्थना करूँ कि मैं मर जाऊँ, जिससे मुझे अपने जीवन में मर जाऊँ, जिससे मुझे अपने जीवन में और अपमान नहीं सुनना पड़े।</span> <sup>11</sup><span class='v-txt'>इसके बाद वह खिड़की के पास हाथ पसारे इस प्रकार प्रार्थना करने लगीः &quot;दयालु प्रभु-ईश्वर!  तू धन्य है।  तेरा पवित्र और सम्मान्य नाम सदा-सर्वदा धन्य है।  तेरे सभी कार्य सदा-सर्वदा तुझे धन्य कहें।</span> <sup>12</sup><span class='v-txt'>प्रभु! अब मैं तेरी ओर अभिमुख हो कर तुझ पर अपनी आँखें लगाती हूँ।</span> <sup>13</sup><span class='v-txt'>मुझे इस पृथ्वी पर से उठाने की कृपा कर, जिससे मुझे अपनी निन्दा और न सुननी पड़े।</span> <sup>14</sup><span class='v-txt'>प्रभु!  तू जानता है कि मैंने किसी पुरुष के अपवित्र संसर्ग द्वारा कभी पाप नहीं किया।</span> <sup>15</sup><span class='v-txt'>मैंने अपने निर्वासन के देश में न अपना और न अपने पिता का नाम कलंकित किया है।  मैं अपने पिता की एक मात्र सन्तान हूँ।  उसके कोई पुत्र नहीं है, जो उत्तराधिकारी बने।  उसका कोई सम्बन्धी नहीं है और न सम्बन्धी का कोई ऐसा पुत्र, जिसके साथ मैं विवाह कर सकूँ।    मेरे सातों पतियों की मृत्यु हो चुकी।  मैं क्यों जीवित रहूँ? प्रभु!  यदि तू मुझे उठाना नहीं चाहता, तो ऐसा कर कि लोग मेरा आदर करें और मुझे अपनी निन्दा और न सुननी पड़े।&quot;</span> <sup>16</sup><span class='v-txt'>प्रभु-ईश्वर ने उन दोनों की प्रार्थनाएँ सुनीं।</span> <sup>17</sup><span class='v-txt'>स्वर्गदूत रफ़ाएल उनके पास भेजा गया, जिससे वह उन दोनों को स्वस्थ करे-वह टोबीत का मोतियाबिन्द दूर करे और रागुएल की बेटी सारा का विवाह टोबीत के पुत्र टोबीयाह से कराये।  साथ ही अस्मादेव पिशाच को बन्दी बना ले; क्योंकि सारा टोबीयाह की होने जा रही थी। इधर टोबीत घर लौटा और उधर रागुएल की पुत्री सारा छत से नीचे उतरी।</span> </p>
+        <div class='nav'><a href='017002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='017004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

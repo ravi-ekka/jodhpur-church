@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>रोमियों - अध्याय 16</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>रोमियों</h1>
+        <h2>अध्याय 16</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैं केंखे़यै की कलीसिया की धर्मसेविका, अपनी बहन फ़ेबे के लिए आप लोगों से निवेदन करता हूँ।</span> <sup>2</sup><span class='v-txt'>आप प्रभु में उनका सन्तों के योग्य स्वागत करें, और यदि उन्हें आपकी आवश्यकता हो, तो हर प्रकार से उनकी सहायता करें; क्योंकि उन्होंने बुतों की और मेरी भी बड़ी सहायता की है।</span> <sup>3</sup><span class='v-txt'>ईसा मसीह में अपने सहयोगी प्रिस्का और आक्विला को नमस्कार,</span> <sup>4</sup><span class='v-txt'>जिन्होंने मेरे प्राण बचाने के लिए अपना सिर दाँव पर रख दिया।  मैं ही नहीं, बल्कि गैर-यहूदियों की सब कलीसियाएं उनका आभार मानती हैं।</span> <sup>5</sup><span class='v-txt'>उनके घर में एकत्र होने वाली कलीसिया को नमस्कार। एशिया में मसीह के प्रथम शिष्य अपने प्रिय एपैनेतुस को नमस्कार</span> <sup>6</sup><span class='v-txt'>और मरियम को भी जिसने आप लोगों के लिए इतना कठिन परिश्रम किया।</span> <sup>7</sup><span class='v-txt'>अपने सम्बन्धियों और बन्दीगृह में अपने साथियों अन्द्रोनिकुसा और यूनियास को नमस्कार।  ये धर्मप्रचारकों में प्रतिष्ठित हैं और मुझ से पहले मसीह के शिष्य बने थे।</span> <sup>8</sup><span class='v-txt'>प्रभु में अपने प्रिय अमप्लिआतुस को नमस्कार।</span> <sup>9</sup><span class='v-txt'>मसीह में अपने सहयोगी उर्बानुस और अपने प्रिय स्ताखुस को नमस्कार।</span> <sup>10</sup><span class='v-txt'>मसीह के सुयोग्य सेवक अपेल्लेस को और अरिस्तोबूलुस के परिवार को नमस्कार।</span> <sup>11</sup><span class='v-txt'>अपने सम्बन्धी हेरोदियोन को और नरकिस्सुस के परिवार के मसीही सदस्यों को नमस्कार।</span> <sup>12</sup><span class='v-txt'>प्रभु की सेवा में परिश्रम करने वाली त्रुफै़ना और त्रुफ़ोसा को नमस्कार।  अपनी प्रिय पेरसिस को नमस्कार, जिसने प्रभु की सेवा में बहुत परिश्रम किया है।</span> <sup>13</sup><span class='v-txt'>प्रभु के कृपापात्र रूफुस और उसकी माता को, जो मेरी भी माता है, नमस्कार।</span> <sup>14</sup><span class='v-txt'>असुनऋितुम, फ्लेगोन, हेरमेस, पत्रोबास, हेरमास और उनके साथ रहने वाले भाइयों को नमस्कार।</span> <sup>15</sup><span class='v-txt'>फिलोलोगुस और युलिया, नेरउस और उनकी बहन, ओलुम्पास और उनके साथ रहने वाले सभी सन्तों को नमस्कार।</span> <sup>16</sup><span class='v-txt'>शान्ति के चुम्बन से एक दूसरे का अभिवादन करें।  मसीह की सब कलीसियाएँ आप लोगों को नमस्कार कहती हैं।</span> <sup>17</sup><span class='v-txt'>भाइयो! मैं आप लोगों से अनुरोध करता हूँ कि आप उन लोगों से सावधान रहें जो फूट डालते और दूसरों के लिए पाप का कारण बनते हैं।</span> <sup>18</sup><span class='v-txt'>इस प्रकार का व्यवहार उस शिक्षा से मेल नहीं खाता, जो आप को मिली है।  आप ऐसे लोगों से दूर रहें।  वे हमारे प्रभु मसीह की सेवा नहीं बल्कि अपने पेट की पूजा करते हैं।  वे चिकनी-चुपड़ी और खुशामद-भरी बातों से भोले लोगों को भुलावे में डालते हैं।</span> <sup>19</sup><span class='v-txt'>आप लोगों की आज्ञाकारिता की चरचा सर्वत्र फैल गयी है - यह मेरे लिए आनन्द का विषय है।  मैं चाहता हूँ कि आप भलाई में निपुण और बुराई के विषय में अनजान रहें।</span> <sup>20</sup><span class='v-txt'>शान्ति का ईश्वर शीघ्र ही शैतान को आपके पैरों तले कुचल देगा।  हमारे प्रभु ईसा की कृपा आप लोगों पर बनी रहे।</span> <sup>21</sup><span class='v-txt'>मेरा सहयोगी तिमथी और मेरे सम्बन्धी लूकियुस, यासोन और सोसिपत्रुस आप को नमस्कार कहते हैं।</span> <sup>22</sup><span class='v-txt'>मैं, तेरतियुस, जिसने यह पत्र लिपिबद्ध किया, प्रभु मैं आप लोगों को नमस्कार करता हूँ</span> <sup>23</sup><span class='v-txt'>मेरा और समस्त कलीसिया का आतिथ्य-सत्कार करने वाला गायुस, इस नगर का कोषाध्यक्ष एरास्तुस और भाई क्वार्तस आप लोगों को नमस्कार कहते हैं।</span> <sup>25</sup><span class='v-txt'>(25-26) सभी राष्ट्र विश्वास की अधीनता स्वीकार करें - उसी उद्देश्य से शाश्वत ईश्वर ने चाहा कि शताब्दियों से गुप्त रखा हुआ रहस्य प्रकट किया जाये और उसने आदेश दिया कि वह रहस्य नबियों के लेखों द्वारा सबों को बता दिया जाये।  उसके अनुसार मैं ईसा मसीह का सुसमाचार में सुदृढ़ बना सकता है।</span> <sup>27</sup><span class='v-txt'>उसी एकमात्र सर्वज्ञ ईश्वर की, अनन्त काल तक, ईसा मसीह द्वारा महिमा हो! आमेन!</span> </p>
+        <div class='nav'><a href='052015.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

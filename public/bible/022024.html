@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 24</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 24</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>सर्वशाक्तिमान् न्याय का दिन क्यों नहीं निर्धारित करता? उसके भक्त उसके दिन क्यों नहीं देखते?</span> <sup>2</sup><span class='v-txt'>दुर्जन खेतों के सीमा-पत्थर खिसकाते हैं और चुराये हए झुण्ड चराते हैं।</span> <sup>3</sup><span class='v-txt'>वे अनाथों का गधा हाँक कर ले जाते हैं और विधवा के बैल को बंधक के रूप में रखते हैं।</span> <sup>4</sup><span class='v-txt'>वे गरीब को मार्गों से भगाते हैं, देश के सभी दरिद्र छिपने को बाध्य हो जाते हैं,</span> <sup>5</sup><span class='v-txt'>जिससे वे मुँह अंधेरे निकल कर भोजन की खोज में जंगली गधों की तरह उजाड़खण्ड में भटकते-फिरते हैं। उस से उनके बच्चों का निर्वाह होता है।</span> <sup>6</sup><span class='v-txt'>वे रात को लुने हुए खेतों में सिल्ला बीनते और दुष्ट की दाखबारी में बचे हुए अंगूर तोड़ते हैं।</span> <sup>7</sup><span class='v-txt'>वे कपड़ों के अभाव में रात को नंगे पड़े रहते हैं।  जाडें में भी उनके पास ओढ़ने को कुछ नहीं।</span> <sup>8</sup><span class='v-txt'>वे पर्वतों की वर्षा से भीगते और आश्रय के अभाव में चट्टान पर पड़े रहते हैं।</span> <sup>9</sup><span class='v-txt'>दुर्जन पितृहीन बच्चों को उनकी माता की गोद से छीनते हैं और दरिद्र की संतान को बंधक के रूप में रखते हैं।</span> <sup>10</sup><span class='v-txt'>गरीब कपड़ों के अभाव में नंगे घूमा करते हैं।  वे दूसरों के पूले ढोते और स्वयं भूखे रहते हैं।</span> <sup>11</sup><span class='v-txt'>वे दूसरों के यहाँ तेल पेरते और अंगूर रौंदते हुए भी प्यासे रहते हैं।</span> <sup>12</sup><span class='v-txt'>शहरों में मरने वाले विलाप करते और घायल सहायता के लिए पुकारते हैं, किन्तु ईश्वर इस बात पर ध्यान नहीं देता।</span> <sup>13</sup><span class='v-txt'>दुर्जन ज्योति के विरुद्ध विद्रोह करते, उसे पीठ दिखाते और उसकी उपेक्षा करते हैं।</span> <sup>14</sup><span class='v-txt'>हत्यारा मुँह अँधेरे उठ कर दरिद्र का वध करता और रात को चारी करने जाता है।</span> <sup>15</sup><span class='v-txt'>व्यभिचारी की आँखें झुटपुटे की राह देखती हैं।  वह सोचता हैं, &quot;मुझे कोई नहीं देख पायेगा&quot; और वह अपने चेहरे पर परदा डालता है।</span> <sup>16</sup><span class='v-txt'>वे अँधेरे में घरों में सेंध मारते और दिन में छिपे रहते हैं। वे प्रकाश में किनारा काटते हैं।</span> <sup>17</sup><span class='v-txt'>भोर उनके लिए मृत्यु ही छाया-जैसा है।  घोर अंधेरा उनका सखा है।</span> <sup>18</sup><span class='v-txt'>वे पानी पर बहते तिनके के सदृश हैं।  उनकी भूमि लोगों द्वारा अभिशप्त है और उनकी दाखबारी में कोई नहीं जाता।</span> <sup>19</sup><span class='v-txt'>जिस तरह सूखी भूमि पर गरमी पिघली बर्फ सोख लेती है, उसी तरह अधोलोक पापी को निगलता है।</span> <sup>20</sup><span class='v-txt'>उसकी माता उसे भुला देती है, उसे कीडे खा जाते हैं, उसे कोई नहीं याद करता।  दुष्ट पेड़ की तरह काट दिया जाता है।</span> <sup>21</sup><span class='v-txt'>उसने बांझ का शोषण किया और विधवा के साथ अच्छा व्यवहार नहीं किया।</span> <sup>22</sup><span class='v-txt'>किंतु जब ईश्वर उठता है, जो शक्तिशालियों को भी ले जाता है, तो उसे जीवित रहने की आशा नहीं।</span> <sup>23</sup><span class='v-txt'>फिर भी ईश्वर उसे सुरक्षा में रहने देता, किंतु उसकी आँखों उसके आचरण का निरीक्षण करती रहती हैं।</span> <sup>24</sup><span class='v-txt'>वह थोड़े समय तक फलता-फूलता और समाप्त हो जाता है।  वह कटे हुए पौधे की तरह अचानक ढेर हो जाता है।  वह अनाज की बाल की तरह कट जाता है।</span> <sup>25</sup><span class='v-txt'>यदि ऐसा नहीं, तो कौन मुझे झूठा प्रभामिण करेगा और मेरे तर्कों का खण्डन करेगा?</span> </p>
+        <div class='nav'><a href='022023.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022025.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

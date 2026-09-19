@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>दुसरा इतिहास ग्रन्थ - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>दुसरा इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>सुलेमान ने सत्तर हज़ार बोझा ढोने वालों और पहाड़ी  प्रदेश में अस्सी हज़ार संगतराषों को काम पर लगाया था।  उनके निरीक्षकों की संख्या तीन हज़ार छह सौ थी।</span> <sup>2</sup><span class='v-txt'>तब सुलेमान ने तीरुस के राजा हीराम के पास यह कहला भेजाः &quot;आपने मेरे पिता दाऊद के लिए प्रबन्ध किया था और उनके पास देवदार की लकड़ी भेजी थी, जिससे वह अपना निवास बनवा सकें।</span> <sup>3</sup><span class='v-txt'>मैं भी प्रभु, अपने ईश्वर के नाम की प्रतिष्ठा के लिए एक मन्दिर बनवाना चाहता हूँ।  मैं उसे इसलिए प्रतिष्ठित करूँगा कि उस में उसके लिए सुगन्धित द्रव्यों कीभेंट चढ़ायी जाये, निरन्तर भेंट की रोटियाँ रखी जायें और प्रातः और सन्ध्या समय, विश्राम-दिवसों, अमावस के दिनों तथा प्रभु हमारे ईश्वर के निर्धारित उत्सवों पर होम-बलियाँ चढ़ायी जायें।  यह इस्राएल के लिए सदा बना रहने वाला आदेश है।</span> <sup>4</sup><span class='v-txt'>जो मन्दिर मैं बनवा रहा हूँ, वह भव्य होगा; क्योंकि हमारा ईश्वर सब अन्य देवताओं से महान् है।</span> <sup>5</sup><span class='v-txt'>प्रभु के लिए मन्दिर बनवाने का सामर्थ्य किस में है, जब कि वह आकाश और सारे ब्रह्माण्ड में नहीं समा सकता? मैं कौन हूूँ, जो उसके लिए मन्दिर बनवाऊँ?  वह मात्र एक स्थान हो, जहाँ उसके सामने चढ़ावे जलाये जायें।</span> <sup>6</sup><span class='v-txt'>इसलिए अब मेरे पास एक ऐसा व्यक्ति भेजिए, जो सोने, चाँदी, काँसे और लोहे के काम करने में निपुण हो; जो बैंगनी, किरमिजी और नीले कपड़ों पर कढ़ाई और नक़्क़ाषी का काम भी जानता हो।  वह उन कलाकारों के साथ काम करेगा, जो मेरे साथ सदा यूदा और येरूसालेम में हैं औए जिन्हें मेरे पिता दाऊद ने नियुक्त कर रखा है।</span> <sup>7</sup><span class='v-txt'>मुझे लेबानोन से देवदार, सनोवर और चन्दन की लकड़ी भी भेजिए; क्योंकि मैं जानता हूँ कि आपके आदमी लेबानोन के वृक्ष काटने में निपुण हैं।</span> <sup>8</sup><span class='v-txt'>मेरे आदमी आपके आदमियों के साथ रह कर मेरे लिए बहुत-सी लकड़ी तैयार करेंगे; क्योंकि मैं जो मन्दिर बनवाने जा रहा हूँ, वह महान् और भव्य होगा।</span> <sup>9</sup><span class='v-txt'>मैं आपके लकड़ी काटने वाले आदमियों के लिए बीस लाख मन गेहूँ, बीस लाख मन जौ, नौ लाख लिटर अंगूरी और नौ लाख लिटर तेल दे रहा हूँ।&quot;</span> <sup>10</sup><span class='v-txt'>तीरुस के राजा हीराम ने सुलेमान को भेजी हुई एक चिट्ठी में लिखा थाः &quot;प्रभु अपनी प्रजा से प्रेम करता है, इसलिए उसने आप को उसका राजा बनाया है।&quot;  हीराम ने यह भी कहा, &quot;धन्य है प्रभु, इस्राएल का ईश्वर, जिसने स्वर्ग और पृथ्वी को बनाया है!</span> <sup>11</sup><span class='v-txt'>उसने राजा दाऊद को एक ऐसा बुद्धिमान, समझदार और विवेकी पुत्र दिया, जो प्रभु के लिए मन्दिर और अपने लिए राजमहल बनवायेगा।</span> <sup>12</sup><span class='v-txt'>मैं आपके पास एक निपुण और समझदार शिल्पकार, हूराम- अबी को भेज रहा हूँ, जो किसी दानवंशी स्त्री का पुत्र है और जिसका पिता तीरुस-निवासी है।</span> <sup>13</sup><span class='v-txt'>वह सोने, चाँदी, काँसे, लोहे, पत्थर और लकड़ी, लाल और बैंगनी कपड़ों, छालटी और किरमिजी कपड़ों पर कढ़ाई और सब प्रकार के नक़्क़ाषी के काम और अपने को सौंपे हुए सब प्रकार का कार्य सम्पन्न कर सकता है। वह आपके और आपके पिता, मेरे स्वामी दाऊद के शिल्पकारों के साथ काम करेगा।</span> <sup>14</sup><span class='v-txt'>आप गेहूँ, जौ, तेल और अंगूरी, जिनके बारे में मेरे स्वामी ने कहा है अपने दासों को भेज दें।</span> <sup>15</sup><span class='v-txt'>हम आपकी आवश्यकता के अनुसार लेबानोन जा कर वृक्ष काटेंगे और बेड़ा बना कर समुद्री मार्ग से याफ़ो तक पहुँचा देंगे?  जिससे वहाँ से आप उन्हें येरूसालेम ले जा सकें।&quot;</span> <sup>16</sup><span class='v-txt'>अपने पिता द्वारा की गयी लोगों की जनगणना के बाद सुलेमान ने इस्राएल देश भर के सब परदेशियों की गणना की।  उनकी संख्या एक लाख तिरपन हज़ार छः सौ थी।</span> <sup>17</sup><span class='v-txt'>उसने उन में सत्तर हज़ार को बोझा ढोने, अस्सी हज़ार को पहाड़ी प्रदेश में पत्थर काटने ओर तीन हज़ार छः सौ को निगरानी करने के लिए नियुक्त किया, जो उन लोगों से काम लेते थे।</span> </p>
+        <div class='nav'><a href='014001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='014003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

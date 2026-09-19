@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>बुराई मत करो और बुराई तुम पर हावी नहीं होगी।</span> <sup>2</sup><span class='v-txt'>अन्याय से दूर रहो और वह तुम्हारे पास नहीं फटकेगा।</span> <sup>3</sup><span class='v-txt'>पुत्र! अधर्म के कूँड़ों में बीज न बोओ, तो उसकी सात गुनी फसल नहीं लुनोगे।</span> <sup>4</sup><span class='v-txt'>तुम न तो प्रभु से अधिकार माँगो और न राजा से सम्मान का आसन।</span> <sup>5</sup><span class='v-txt'>तुम न तो प्रभु के सामने धार्मिकता का और न राजा के सामने प्रज्ञा का स्वाँग भरो।</span> <sup>6</sup><span class='v-txt'>न्यायाधीश बनने का प्रयत्न मत करो।  कहीं ऐसा न हो कि तुम अन्याय नहीं दूर कर सको या डर के मारे शासक का पक्ष लो और अपने ईमान पर कलंक लगाओ।</span> <sup>7</sup><span class='v-txt'>नगर-सभा के विरुद्ध पाप मत करो और भीड़ की दृष्टि में कलंकित मत बनो।</span> <sup>8</sup><span class='v-txt'>एक ही पाप में दो बार मत फॅसो, क्योंकि एक के दण्ड से भी नहीं बचोगे।</span> <sup>9</sup><span class='v-txt'>प्रार्थना करते समय माँगने में संकोच मत करो।</span> <sup>10</sup><span class='v-txt'>याचना और भिक्षादान की उपेक्षा मत करो।</span> <sup>11</sup><span class='v-txt'>यह मत कहो, &quot;ईश्वर मेरे बहुसंख्यक चढ़ावों पर ध्यान देगा।  जब मैं प्रभु को चढ़ावे अर्पित करूँगा, तो वह उन्हें स्वीकार करेगा।&quot;</span> <sup>12</sup><span class='v-txt'>दुःखी मनुष्य का उपहास मत करो, क्योंकि ईश्वर नीचा भी दिखाता और ऊपर भी उठाता है।</span> <sup>13</sup><span class='v-txt'>अपने भाई के विरुद्ध झूठी बातों का प्रचार मत करो और अपने मित्र के साथ भी ऐसा मत करो।</span> <sup>14</sup><span class='v-txt'>हर समय झूठ मत बोलो, इस से कोई लाभ नहीं होता।</span> <sup>15</sup><span class='v-txt'>बड़े-बूढ़ों की सभा में बकवास मत करो और प्रार्थना करते समय रट मत लगाओे।</span> <sup>16</sup><span class='v-txt'>कठोर परिश्रम से घृणा मत करो और न खेती-बारी से, जो सर्वोच्च प्रभु द्वारा निर्धारित है।</span> <sup>17</sup><span class='v-txt'>पापियों की संगति मत करो।</span> <sup>18</sup><span class='v-txt'>याद रखो कि क्रोध में देर नहीं होगी।</span> <sup>19</sup><span class='v-txt'>अपने को बहुत विनम्र बनाये रखो; क्योंकि विधर्मी को आग और कीड़ों से दण्डित किया जायेगा।</span> <sup>20</sup><span class='v-txt'>रुपये-पैसे के लिए अपने मित्र को न बेचो और न ओफ़िर के सोने के लिए सच्चे भाई को।</span> <sup>21</sup><span class='v-txt'>समझदार और साध्वी पत्नी का परित्याग मत करो, क्येांकि वह स्वर्ण से भी अधिक वांछनीय है।</span> <sup>22</sup><span class='v-txt'>ईमानदार नौकर के साथ दुव्र्यवहार मत करो और न उस मजदूर के साथ, जो पूरी लगन से काम करता है।</span> <sup>23</sup><span class='v-txt'>तुम बुद्धिमान् दास को अपने समान प्यार करो और उसे मुक्त करना अस्वीकार मत करो।</span> <sup>24</sup><span class='v-txt'>यदि तुम्हारे पशु हो, तो उनकी देखरेख करो।  यदि उन से लाभ है, तो उन्हें अपने पास रखो।</span> <sup>25</sup><span class='v-txt'>यदि तुम्हारे पुत्र हों, तो उन्हें शिक्षा दिलाओ और बचपन से ही उन्हें अनुशासन में रखो।</span> <sup>26</sup><span class='v-txt'>यदि तुम्हारी पुत्रियाँ हों, तो उनकी रक्षा करो और उनके साथ ढिलाई मत करो।</span> <sup>27</sup><span class='v-txt'>अपनी पुत्री के विवाह का प्रबन्ध करो यह एक महत्वपूर्ण कार्य है।  किन्तु उसे एक समझदार व्यक्ति को सौंपो।</span> <sup>28</sup><span class='v-txt'>यदि तुम्हारी पत्नी मनपसन्द है, तो उसका परित्याग मत करो।  यदि वह तुम को पसन्द नहीं है, तो उस पर विश्वास मत करो।</span> <sup>29</sup><span class='v-txt'>सारे हृदय से अपने पिता का आदर करो और अपनी माता का दुःख मत भुलाओ।</span> <sup>30</sup><span class='v-txt'>याद रखो कि तुम्हें उन से जन्म मिला; उनके उपकार का बदला कैसे दे सकते हो ?</span> <sup>31</sup><span class='v-txt'>सारे हृदय से प्रभु पर श्रद्धा रखो और उसके याजकों का आदर करो।</span> <sup>32</sup><span class='v-txt'>अपने सृष्टिकर्ता को अपनी सारी शक्ति से प्यार करो। और उसके सेवकों को निराश मत करो।</span> <sup>33</sup><span class='v-txt'>सारे हृदय से ईश्वर का आदर करो और याजको का सम्मान करो।</span> <sup>34</sup><span class='v-txt'>प्रज्ञा के अनुसार उन्हें उनका भाग दो: प्रथम फल, प्रायश्चित-बलि, स्कन्धभाग,</span> <sup>35</sup><span class='v-txt'>समर्पण-बलि और पवित्र चढ़ावों के प्रथम फल।</span> <sup>36</sup><span class='v-txt'>हाथ बढ़ा कर दरिद्र को दान दो, जिससे तुम्हें अशीर्वाद प्राप्त हो।</span> <sup>37</sup><span class='v-txt'>सब जीवितों के प्रति उदार बनो, मृतकों को अपने दान से वंचित मत करो।</span> <sup>38</sup><span class='v-txt'>रोने वालों को सान्त्वना दो और शोक मनाने वालों के साथ शोक मनाओ।</span> <sup>39</sup><span class='v-txt'>बीमारों से मिलने में लापरवाही मत करो।  इससे तुम लोकप्रिय बनोगे।</span> <sup>40</sup><span class='v-txt'>सब बातों में अपनी अन्तगति याद रखो और तुम जीवन भर पाप नहीं करोगे।</span> </p>
+        <div class='nav'><a href='028006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

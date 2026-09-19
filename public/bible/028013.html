@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 13</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 13</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जो अलकतरा छूता, वह मैला हो जाता है और जो घमण्डी की संगति करता, वह उसके सदृश बन जाता है।</span> <sup>2</sup><span class='v-txt'>ऐसा बोझ मत उठाओें, जो तुम्हारे लिए अधिक भारी है। ऐसे व्यक्ति की संगति मत करो, जो तुम से शक्तिशाली या धनी है।</span> <sup>3</sup><span class='v-txt'>मिट्टी के बरतन और धातु-पात्र का क्या मेल?  टकराने पर मिट्टी का बरतन टूट जायेगा।</span> <sup>4</sup><span class='v-txt'>जब धनी अन्याय करता, तो वह शेखी मारता है।  जब दरिद्र के साथ अन्याय होता है, तो उसे क्षमा भी माँगनी पड़ती है।</span> <sup>5</sup><span class='v-txt'>यदि तुम धनी के लिए उपयोगी हो, तो वह तुमसे काम लेगा।  यदि तुम्हारी दुर्गति हो जायेगी, तो वह तुमको छोड़ देगा।</span> <sup>6</sup><span class='v-txt'>जब तक तुम समृद्ध हो, वह तुम्हारे साथ खा-पी कर तुम्हारी सम्पत्ति उड़ायेगा और उसे तुम्हारी दुर्गति पर कोई दुःख नहीं होगा।</span> <sup>7</sup><span class='v-txt'>यदि उसे तुम्हारी ज़रूरत होगी, तो वह तुम को मूर्ख बनायेगा।  वह मुस्कराते हुए तुम्हें आशा दिलाता रहेगा और चिकनी-चुपड़ी बातें करते हुए पूछेगा: &quot;मैं आपकी क्या सेवा कर सकता हूँ? &quot;</span> <sup>8</sup><span class='v-txt'>वह तुम्हें अपनी दावत में बुला कर तुम्हारा अपमान करेगा।  वह दो-तीन बार तुम्हारी सम्पत्ति उड़ायेगा और अन्त में तुम्हारा उपहास करेगा यदि वह बाद मेंं तुम को देखेगा, तो कन्नी काट कर सिर हिलाते हुए आगे बढ़ जायेगा।</span> <sup>9</sup><span class='v-txt'>ईश्वर के सामने विनम्र बनो और उस पर भरोसा रखो।</span> <sup>10</sup><span class='v-txt'>सावधान रहो कि कहीं धोखा न खाओ और बाद में मूर्खता के कारण तुम को नीचा न दिखाया जाये।</span> <sup>11</sup><span class='v-txt'>समझदार बनो और दूसरों से मत दबो।  कहीं ऐसा न हो कि अधिक दीनता के कारण तुम मूर्ख बन जाओ।</span> <sup>12</sup><span class='v-txt'>शक्तिशाली व्यक्ति का निमन्त्रण आसानी से स्वीकार मत करो; तब वह तुम से अधिक आग्रह करेगा।</span> <sup>14</sup><span class='v-txt'>उस से बराबरी के स्तर पर बात मत करो और उसकी अनेकानेक बातों पर विश्वास मत करो; क्योंकि वह देर तक बात कर तुम्हारी परीक्षा लेता और मुस्कुराते हुए तुम्हारा भेद जान जाता है।</span> <sup>15</sup><span class='v-txt'>शक्तिशाली व्यक्ति निर्दय होता है और बहुतों की जान जोखिम में डालता है।</span> <sup>16</sup><span class='v-txt'>इसलिए अधिक मत बोलो, सावधान रहो और उग्र व्यक्तियों की संगति मत करो।</span> <sup>17</sup><span class='v-txt'>यह शिक्षा सुन कर जागो।</span> <sup>18</sup><span class='v-txt'>अपनी सारी शक्ति से प्रभु को प्यार करो और अपने कल्याण के लिए उसकी दुहाई दो।</span> <sup>19</sup><span class='v-txt'>हर प्राणी अपनी जाति को प्यार करता है और हर मनुष्य अपने पड़ोसी को।</span> <sup>20</sup><span class='v-txt'>हर प्राणी अपनी जाति की ओर खिंचता है और हर मनुष्य अपने-जैसे व्यक्ति की संगति करता है।</span> <sup>21</sup><span class='v-txt'>क्या भेड़िया मेमने के साथ रह सकता है?  ऐसे ही भक्त के साथ पापी नहीं रह सकता।</span> <sup>22</sup><span class='v-txt'>क्या लकड़बग्घे और कुत्ते का मेल सम्भव है?  उसी तरह धनी और दरिद्र का मेल नहीं हो सकता।</span> <sup>23</sup><span class='v-txt'>उजाड़खण्ड के गधे सिंहो के शिकार बनते हैं, इसी तरह दरिद्र धनियों के चरागाह हैं।</span> <sup>24</sup><span class='v-txt'>घमण्डी को विनम्रता से घृणा होती है, इसी तरह धनी को दरिद्र से घृणा होती है।</span> <sup>25</sup><span class='v-txt'>जब धनी ठोकर खाता, तो उसके मित्र उसे सँभालते हैं; किन्तु जब दरिद्र गिरता, तो उसके मित्र उसे लात मारते हैं।</span> <sup>26</sup><span class='v-txt'>जब धनी लड़खड़ाता, तो बहुत लोग उसे सँभालते हैं;  जब वह अशोभनीय बातें कहता, तो लोग उसकी सफाई देते हैं।</span> <sup>27</sup><span class='v-txt'>जब दरिद्र लड़खड़ाता तो लोग उसे दोष देते हैं; जब वह पते की बात कहता, तो कोई ध्यान नहीं देता।</span> <sup>28</sup><span class='v-txt'>जब धनी बोलता, तो सब चुप रहते और उसकी बातों की अत्यधिक प्रशंसा करते हैं।</span> <sup>29</sup><span class='v-txt'>जब दरिद्र बोलता, तो लोग पूछते हैं यह कौन है? जब वह लड़खड़ाता, तो लोग उसे धक्का देते हैं।</span> <sup>30</sup><span class='v-txt'>वह धन अच्छा है, जो पाप की कमाई नहीं हो।  दुष्ट मानता है कि दरिद्रता बुरी है।</span> <sup>31</sup><span class='v-txt'>मनुष्य का हृदय उसका चेहरा बदल देता है- या तो अच्छाई की ओर, या बुराई की ओर।</span> <sup>32</sup><span class='v-txt'>प्रसन्न मुख अच्छे हृदय का लक्षण है।  सूक्तियों की रचना के लिए गम्भीर चिन्तन की अपेक्षा है।</span> </p>
+        <div class='nav'><a href='028012.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028014.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

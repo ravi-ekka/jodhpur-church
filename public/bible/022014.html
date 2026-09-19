@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 14</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 14</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>स्त्री से उत्पन्न मानव थोड़े दिनों का है और कष्टों से घिरा है।</span> <sup>2</sup><span class='v-txt'>वह फूल की तरह खिल का मुरझाता, छाया की तरह शीघ्र ही विलीन हो जाता है।</span> <sup>3</sup><span class='v-txt'>क्या तू ऐसे मनुष्य पर ध्यान देता और उसे न्याय के लिए अपने सामने बुलाता है?</span> <sup>4</sup><span class='v-txt'>क्या कोई अशुद्ध से शुद्ध निकाल सकता है?  नहीं! कोई नहीं!</span> <sup>5</sup><span class='v-txt'>तूने उनके जीवन के दिनों और महीनों की संख्या निश्चित की है।  वह तेरे द्वारा निर्धारित सीमा पार नहीं कर सकता।</span> <sup>6</sup><span class='v-txt'>इसलिए उस से अपनी दृष्टि हटा ले, उसे रहने दे, जिससे वह किराये के मज़दूर की तरह अपना समय पूरा करे।</span> <sup>7</sup><span class='v-txt'>वृक्ष के लिए आशा रहती हैं वह कट जाने पर फिर हरा होता और उस में से अंकुर निकलते हैं।</span> <sup>8</sup><span class='v-txt'>उसकी जड़े भले ही जीर्ण हो गयी हों, उसका ठूँठ मिट्टी में सूख गया हो,</span> <sup>9</sup><span class='v-txt'>फिर भी वह पानी की गंध मिलते ही पनप उठेगा और उस में नये पौधे की तरह अंकुर फूटेंगे।</span> <sup>10</sup><span class='v-txt'>किंतु मनुष्य मर कर पड़ा रहता है, वह प्राण निकलते ही समाप्त हो जाता है।</span> <sup>11</sup><span class='v-txt'>भले ही समुद्र से पानी लुप्त हो जाये और नदी तप कर सूख जाये,</span> <sup>12</sup><span class='v-txt'>फिर भी मृतक पडे़ रहेंगे और नहीं उठ पायेंगे।  जब तक आकाश का अंत नहीं होगा, वे नहीं जागेंगे; उनकी नींद नहीं टूटेगी।</span> <sup>13</sup><span class='v-txt'>ओह! यदि तू मुझे अधोलोक में छिपाता!  अपना क्रोध शांत हो जाने तक ही आश्रय देता!  यदि तू एक अवधि निश्चित करता, जब तू मुझे फिर याद करता!</span> <sup>14</sup><span class='v-txt'>यदि मनुष्य मर कर पुनर्जीवित होता, तो मैं अपने पूरे सेवाकाल में तब तक प्रतीक्षा करता रहता, जब तक उस से मेरी मुक्ति का समय नहीं आ जाता।</span> <sup>15</sup><span class='v-txt'>तू मुझे बुलाता और मैं उत्तर देता; तू अपने हाथों की कृति की प्रतीक्षा करता।</span> <sup>16</sup><span class='v-txt'>तब तू मेरा एक-एक कदम नहीं गिनता, बल्कि मेरा पाप अनदेखा करता।</span> <sup>17</sup><span class='v-txt'>तू मेरा अपराध थैली में मुहरबंद करता और मेरा अधर्म ढक देता!</span> <sup>18</sup><span class='v-txt'>जिस तरह पहाड़ टूट कर टुकडे-टुकड़े हो जाता और चट्टान अपने स्थान से हट जाती है;</span> <sup>19</sup><span class='v-txt'>जिस तरह वर्षा पत्थर को घिस देती और जलधाराएँ मिट्टी बहा ले जाती हैं, उसी तरह तू मनुष्य की आशा चकनाचूर कर देता है।</span> <sup>20</sup><span class='v-txt'>तू उसे मारता और वह सदा के लिए चला जाता है।  तू उनका चेहरा बिगाड़ कर उसे भगा देता है।</span> <sup>21</sup><span class='v-txt'>उसके पुत्र सम्मानित है, तो इसे इसका पता नहीं चलता। वे तिरस्कृत हो जाते हैं, किंतु उसे इसकी जानकारी नहीं होती।</span> <sup>22</sup><span class='v-txt'>उसे केवल अपने ही शरीर की पीड़ा का अनुभव होता है। वह अपने लिए ही शोक मनाता है।</span> </p>
+        <div class='nav'><a href='022013.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022015.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

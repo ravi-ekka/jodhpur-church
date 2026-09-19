@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रेरित-चरित - अध्याय 20</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रेरित-चरित</h1>
+        <h2>अध्याय 20</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>दंगा शान्त होने पर पौलुस ने शिष्यों को बुला भेजा और उन को ढारस बँधाया।  तब वह उन से विदा ले कर मकेदूनिया चल दिया।</span> <sup>2</sup><span class='v-txt'>उस ने समस्त प्रान्त का दौरा किया और वह बहुत-से उपदेशों द्वारा विश्वासियों को ढारस बँधाते हुए यूनान देश पहुँचा।</span> <sup>3</sup><span class='v-txt'>वहाँ तीन महीने बिताने के बाद वह नाव से सीरिया जाना चाहता था, किन्तु उस समय कुछ यहूदी उसके विरुद्ध षड्यन्त्र रच रहे थे।  इसलिए उसने मकेदूनिया हो कर लौटने का निश्चय किया।</span> <sup>4</sup><span class='v-txt'>पुर्रुस का पुत्र सोपत्रुस, जो बेरैया का निवासी था; थेसलनीके के आरिस्तार्खुस तथा सेकुन्दुस;  देरबे का गायुस; तिमथी, और एशिया के तुखिकुस और त्रोफिमुस-ये पौलुस के साथ एशिया जाने वाले थे।</span> <sup>5</sup><span class='v-txt'>वे हमसे पहले चल कर त्रोआस में हमारी प्रतीक्षा में थे।</span> <sup>6</sup><span class='v-txt'>ज्यों ही बेख़मीर रोटियों का पर्व समाप्त हुआ, हम नाव द्वारा फिलिप्पी से चले गये और पाँच दिन बाद त्रोआस में। उनके पास पहुँचे, जहाँ हम सात दिन रहे।</span> <sup>7</sup><span class='v-txt'>हम सप्ताह के प्रथम दिन प्रभु-भोज के लिए एकत्र हुए। पौलुस, जो दूसरे दिन जाने वाला था, भाइयों का उपदेश दे रहा था।  वह आधी रात तक बोलता रहा।</span> <sup>8</sup><span class='v-txt'>हम ऊपरी मंजि़ल के कमरे में एकत्र थे और वहाँ बहुत-से दीपक जल रहे थे।</span> <sup>9</sup><span class='v-txt'>युतुखुस नामक युवक खिड़की की चैखट पर बैठा हुआ था।  तब पौलुस बहुत देर तक उपदेश देता रहा, तो उसे नींद आ गयी।  वह नींद के झोंके में तीसरी मंजिल पर से नीचे गिर गया।  वह उठाया गया, तो मरा हुआ था।</span> <sup>10</sup><span class='v-txt'>पौलुस उतरा, उस पर लेट गया और उसे गले लगा कर बोला, &quot;आप लोग घबरायें नहीं।  यह अब भी जीवित है।&quot;</span> <sup>11</sup><span class='v-txt'>फिर ऊपर जाकर उसने प्रभु-भोज की रोटी तोड़ी और भोजन किया।  तब वह देर तक दिन निकलने तक-बातचीत करता रहा और इसके बाद चल दिया।</span> <sup>12</sup><span class='v-txt'>वे उस नवयुवक को जीवित ही ले आये।  इस से लोगों को बड़ी सान्त्वना मिली।</span> <sup>13</sup><span class='v-txt'>हम लोग पहले ही नाव से अस्सोस के लिए चल दिये थे। वहाँ हमें पौलुस को भी चढ़ा लेना था।  उसने इसलिए ऐसा प्रबन्ध किया था कि वह स्थल मार्ग से जाना चाहता था।</span> <sup>14</sup><span class='v-txt'>पौलुस अस्सोस में हम से मिला और हम उसे चढ़ा कर मितुलेने आये।</span> <sup>15</sup><span class='v-txt'>वहाँ से हम नाव से चले और दूसरे दिन खियुस के सामने पहुँचे।  हम अगले दिन समुद्र पार कर सामोस उसके दूसरे दिन मिलेतुस आये;</span> <sup>16</sup><span class='v-txt'>क्योंकि पौलुस ने एफेसुस के सामने से हो कर आगे बढ़ने का निश्चय किया था, जिससे एशिया में समय बिताना न पड़े।  वह इसलिए जल्दी में था कि यदि किसी प्रकार हो सके, तो वह पेंतेकोस्त पर्व से पहले येरूसालेम पहुँच जाये।</span> <sup>17</sup><span class='v-txt'>पौलुस ने मिलेतुस से एफ़ेसुस की कलीसिया के अध्यक्षों को बुला भेजा</span> <sup>18</sup><span class='v-txt'>और उनके पर उन से यह कहा, &quot;आप लोग जानते हैं कि जब मैं पहले एहल एशिया पहुँचा, तो उस दिन से मेरा आचरण आपके बीच कैसा था।</span> <sup>19</sup><span class='v-txt'>यहूदियों के षड्यन्त्रों के कारण मुझ पर अनेक संकट आये, किन्तु मैं आँसू बहा कर बड़ी विनम्रता से प्रभु की करता रहा।</span> <sup>20</sup><span class='v-txt'>जो बातें आप लोगों के लिए हितकर थीं, उन्हें बताने में मैंने कभी संकोच नहीं किया, बल्कि मैं सब के सामने और घर-घर जा कर उनके सम्बन्ध में शिक्षा देता रहा।</span> <sup>21</sup><span class='v-txt'>मैं यहूदियों तथा यूनानियों, दोनों से अनुरोध करता रहा है कि वे ईश्वर की ओर अभिमुख हो जायें और हमारे प्रभु ईसा में विश्वास करें।</span> <sup>22</sup><span class='v-txt'>अब में आत्मा की प्रेरणा से विवश हो कर येरूसालेम जा रहा हूँ।  वहाँ मुझ पर क्या बीतेगी, मैं यह नहीं जानता;</span> <sup>23</sup><span class='v-txt'>किन्तु पवित्र आत्मा नगर-नगर में मुझे विश्वास दिलाता है कि वहाँ बेडि़याँ और कष्ट मेरी प्रतीक्षा कर रहे हैं।</span> <sup>24</sup><span class='v-txt'>किन्तु मेरी दृष्टि में मेरे जीवन का कोई मूल्य नहीं।  मैं तो केवल अपनी दौड़ समाप्त करना और ईश्वर की कृपा का सुसमाचार सुनाने का वह कार्य पूरा करना चाहता हूँ, जिसे प्रभु ईसा ने मुझे सौंपा।</span> <sup>25</sup><span class='v-txt'>&quot;मैं आप लोगों के बीच राज्य का सन्देश सुनाता रहा। अब, मैं जानता हूँ कि आप में कोई भी मुझे फिर कभी नहीं देख पायेगा।</span> <sup>26</sup><span class='v-txt'>इसलिए मैं आज आप लोगों को विश्वास दिलाता हूँ कि मैं किसी के दुर्भाग्य का उत्तरदायी नहीं हूँ;</span> <sup>27</sup><span class='v-txt'>क्योंकि मैंने आप लोगों के लिए ईश्वर का विधान पूर्ण रूप से स्पष्ट करने में कुछ भी उठा नहीं रखा।</span> <sup>28</sup><span class='v-txt'>आप लोग अपने लिए और अपने सारे झुण्ड के लिए सावधान रहें।  पवित्र आत्मा ने आप को झुण्ड की रखवाली का भार सौंपा है।  आप प्रभु की कलीसिया के सच्चे चरवाहे बने रहें, जिसे उन्होंने अपना रक्त दे कर प्राप्त किया।</span> <sup>29</sup><span class='v-txt'>मैं जानता हूँ कि मेरे चले जाने के बाद खूंखार भेडि़ये आप लागों के बीच घुस आयेंगे, जो झुण्ड पर दया नहीं करेंगे।</span> <sup>30</sup><span class='v-txt'>आप लोगों में भी ऐसे लोग निकल आयेंगे, जो शिष्यों को भटका कर अपने अनुयायी बनाने के लिए भ्रान्तिपूर्ण बातों का प्रचार करेंगे।</span> <sup>31</sup><span class='v-txt'>इसलिए जागते रहें और याद रखें कि मैं आँसू बहा-बहा कर तीन वर्षों तक दिन-रात आप लागों में हर एक को सावधान करता रहा।</span> <sup>32</sup><span class='v-txt'>अब मैं आप लोगों को ईश्वर को सौंपता हूँ तथा उसकी अनुग्रहपूर्ण शिक्षा को, जो आपका निर्माण करने तथा सब सन्तों के साथ आप को विरासत दिलाने में समर्थ है।</span> <sup>33</sup><span class='v-txt'>मैंने कभी किसी की चाँदी, सोना अथवा वस्त्र नहीं चाहा।</span> <sup>34</sup><span class='v-txt'>आप लोग जानते हैं कि मैंने अपनी और अपने साथियों की आवश्यकताएँ पूरी करने के लिए अपने इन हाथों से काम किया।</span> <sup>35</sup><span class='v-txt'>मैंने आप को दिखाया कि इस प्रकार परिश्रम करते हुए,  हमें दुर्बलों की सहायता करनी और प्रभु ईसा का कथन स्मरण रखना चाहिए कि लेने की उपेक्षा देना अधिक सुखद है।&quot;</span> <sup>36</sup><span class='v-txt'>इतना कह कर पौलुस ने उन सबों के साथ घुटने टेक कर प्रार्थना की।</span> <sup>37</sup><span class='v-txt'>सब फूट-फूट कर रोते और पौलुस को गले लगा कर चुम्बन करते थे।</span> <sup>38</sup><span class='v-txt'>उसने उन से यह कहा था कि वे फिर कभी उसे नहीं देखेंगे।  इस से उन्हें सब से अधिक दुःख हुआ।  इसके बाद वे उसे नाव तक छोड़ने आये।</span> </p>
+        <div class='nav'><a href='051019.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='051021.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

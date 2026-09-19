@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 34</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 34</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तब एलीहू ने यह कहा:</span> <sup>2</sup><span class='v-txt'>बुद्धिमान् लोगों - मेरा भाषण सुनो।  ज्ञानियो!  मेरी सब बातों पर ध्यान दो;</span> <sup>3</sup><span class='v-txt'>क्योंकि जिस प्रकार जीभ स्वाद लेती है, उसी तरह कान शब्दों को परखता है।</span> <sup>4</sup><span class='v-txt'>हम स्वयं देखें कि सही बात क्या है, हम मिल कर जान ले कि उचित क्या है;</span> <sup>5</sup><span class='v-txt'>क्योंकि अय्यूब ने कहा, &quot;मैं निर्दोष हूँ, किंतु ईश्वर मुझे न्याय नहीं दिलाता।</span> <sup>6</sup><span class='v-txt'>न्याय की माँग करने पर मैं झूठा माना जाता हूँ, मैं निष्पाप हूँ, फिर भी मेरा घाव असाध्य है।&quot;</span> <sup>7</sup><span class='v-txt'>अय्यूब के समान और कौन शूरवीर है?  वह पानी की तरह निंदा पीता है।</span> <sup>8</sup><span class='v-txt'>वह कुकर्मियों के साथ बैठता और दुष्टों से मेल-जोल रखता है;</span> <sup>9</sup><span class='v-txt'>क्योंकि उसने कहा, &quot;ईश्वर की इच्छा पूरी करने से मनुष्य को कोई लाभ नहीं&quot;।</span> <sup>10</sup><span class='v-txt'>ज्ञानियो!  मेरी बात सुनो।  ईश्वर में कोई अधर्म नहीं; सर्वशक्तिमान में कोई अन्याय नहीं!</span> <sup>11</sup><span class='v-txt'>वह मनुष्य को उसके कर्मों का फल देता और उसके आचरण के अनुसार उसके साथ व्यवहार करता है।</span> <sup>12</sup><span class='v-txt'>नहीं, ईश्वर दुष्ट-जैसा व्यवहार नहीं करता, सर्वशक्तिमान् न्याय को भ्रष्ट नहीं करता।</span> <sup>13</sup><span class='v-txt'>किसने ईश्वर को पृथ्वी सौंपी?  किसने समस्त संसार को उसके अधिकार में दिया?</span> <sup>14</sup><span class='v-txt'>यदि ईश्वर हमारा ध्यान नहीं रखता, यदि वह अपना आत्मा वापस लेता,</span> <sup>15</sup><span class='v-txt'>तो सभी पाणी नष्ट हो जाते और मनुष्य मिट्टी में मिल जाता।</span> <sup>16</sup><span class='v-txt'>अय्यूब! तुम बुद्धिमान हो, मेरी बात सुनो!  मेरे भाषण पर ध्यान दो।</span> <sup>17</sup><span class='v-txt'>क्या विधि से बैर रखने वाला शासन कर सकता है?  क्या तुम परमन्यायी को दोषी ठहराते हो?</span> <sup>18</sup><span class='v-txt'>क्या वह राजाओं से यह नहीं कहता- &quot;तुम निकम्मे हो&quot; और कुलीन से-&quot;तुम दुष्ट हो&quot;?</span> <sup>19</sup><span class='v-txt'>वह शासकों के साथ पक्षपात नहीं करता।  वह अमीर और कंगाल में भेद नहीं मानता; क्योंकि सभी उनके हाथ की कृतियाँ है।</span> <sup>20</sup><span class='v-txt'>आधी रात को क्षण भर में उनकी मृत्यु हो जाती है।  वे घबराते हैं और मिट जाते हैं।  वह बिना किसी की सहायता के शक्तिशाली को हटाता है;</span> <sup>21</sup><span class='v-txt'>क्योंकि ईश्वर मनुष्यों का आचरण देखता रहता और सभी मार्गों का निरीक्षण करता है।</span> <sup>22</sup><span class='v-txt'>कहीं भी ऐसा अंधकार या मृत्यु की छाया नहीं है, जहाँ कुकर्म ईश्वर की दृष्टि से छिप सकते हैं।</span> <sup>23</sup><span class='v-txt'>ईश्वर मनुष्य को पूर्वसूचना नहीं देता कि किस दिन उसका न्याय किया जायेगा।</span> <sup>24</sup><span class='v-txt'>ईश्वर अचानक शक्तिशालियों को छिन्न भिन्न करता और दूसरों को उनके स्थान पर नियुक्त करता है।</span> <sup>25</sup><span class='v-txt'>वह उनके सभी कार्यों का निरीक्षण करता और रात में उन को गिरा कर समाप्त कर देता है।</span> <sup>26</sup><span class='v-txt'>सब के देखते वह उन्हें कुकर्मियों की तरह कोड़े लगाता है;</span> <sup>27</sup><span class='v-txt'>क्योंकि उन्होंने उसका अनुसरण नहीं किया और मार्ग पर चलना नहीं चाहा।</span> <sup>28</sup><span class='v-txt'>उनके विरुद्ध पददलितों की दुहाई ईश्वर के पास पहुँचती हैं, ईश्वर उनकी पुकार पर ध्यान देता है।</span> <sup>29</sup><span class='v-txt'>किंतु यदि ईश्वर मौन रहता है, तो उसे कौन दोष देगा? यदि वह अपना मुख छिपाता है, तो उसे कौन देख सकेगा?</span> <sup>30</sup><span class='v-txt'>फिर भी वह मनुष्यों और राष्ट्रों की निगरानी करता है। वह नहीं चाहता कि विधर्मी राज्य करे और प्रजा के लिए जाल बिछाया जाये।</span> <sup>31</sup><span class='v-txt'>यदि कोई ईश्वर से यह कहता हैः &quot;मैंने प्रायश्चित्त किया; मैं फिर पाप नहीं करूँगा।</span> <sup>32</sup><span class='v-txt'>जो मैं नही समझाता, उसे मुझे समझा।  यदि मैंने अधर्म किया, तो मैं फिर वैसा नहीं करूँगा।&quot;</span> <sup>33</sup><span class='v-txt'>तो, क्या तुम मानते हो कि ईश्वर को उसे दण्ड देना चाहिए।  तुम पश्चात्ताप करना नहीं चाहते।  उन्हें निर्णय करना चाहिए, मुझे नहीं।  तुम जो जानते हो, उसे मुझे बता दो।</span> <sup>34</sup><span class='v-txt'>जो ज्ञानी मेरी बात सुनते हैं, जो समझदार हैं, वे मुझ से यह कहेंगे:</span> <sup>35</sup><span class='v-txt'>&quot;यह बकवारी अय्यूब कुछ नहीं जानता, यह निरर्थक बातें कहता है&quot;।</span> <sup>36</sup><span class='v-txt'>अय्यूब विधर्मी की तरह बोलता है, उसकी पूरी-पूरी परीक्षा की जानी चाहिए;</span> <sup>37</sup><span class='v-txt'>क्योंकि पाप करने के बाद वह विद्रोह भी करता, हमारे मन में संदेह उत्पन्न करता और ईश्वर के सामने डींग मारता है।</span> </p>
+        <div class='nav'><a href='022033.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022035.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

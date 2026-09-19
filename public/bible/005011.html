@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 11</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 11</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>“तुम अपने प्रभु-ईश्वर को प्यार करो और उसकी आज्ञाओं, नियमोंं, विधि निषेधों और आदेशों का सदा पालन करो।</span> <sup>2</sup><span class='v-txt'>आज अपने प्रभु-ईश्वर की शिक्षा याद रखो - मैं तुम्हारे बच्चों से यह नहीं कह रहा हूँ; उन्होंने तो प्रभु का अनुशासन नहीं देखा और इसका अनुभव नहीं किया -</span> <sup>3</sup><span class='v-txt'>लेकिन तुमने उसकी महिमा, उसका सामर्थ्य और उसका बाहुबल देखा।  तुमने मिस्र में मिस्र के राजा फ़िराउन और उसके समस्त देश के विरुद्ध प्रभु के किये हुए चमत्कार और कार्य देखे।</span> <sup>4</sup><span class='v-txt'>उसने तुम्हारा पीछा करती हुई मिस्र की सेना का विनाश किया, उसने उसके घोड़े और रथ लाल समुद्र की लहरों में बहा दिये।</span> <sup>5</sup><span class='v-txt'>तुमने देखा कि यहाँ तक पहुँचने से पहले उसने उजाड़खण्ड में तुम्हारे लिये क्या-क्या किया।</span> <sup>6</sup><span class='v-txt'>तुमने देखा कि उसने रूबेनवंशी एलीआब के पुत्र दातान और अबीरान के साथ क्या किया, जब पृथ्वी फट गई थी और उसने अपने परिवारों को, उनके तम्बुओं और उनके सर्वस्व को इस्राएलियों के देखते-देखते निगल लिया।</span> <sup>7</sup><span class='v-txt'>तुमने अपनी आँखो से प्रभु द्वारा किये गये इन सारे महान् कार्यों को देखा।</span> <sup>8</sup><span class='v-txt'>“इसलिए तुम्हें उन सब आज्ञाओं का पालन करना चाहिए, जिन्हें मैं आज तुम्हें सुना रहा हूँ, जिससे तुम शक्तिशाली बनो और उस देश को जीत सको, जिसे तुम अपने अधिकार में लेने के लिए यर्दन पार कर रहे हो।</span> <sup>9</sup><span class='v-txt'>और उस देश में दीर्घ काल तक बस सको, जहाँ दूध और मधु की नदियाँ बहती हैं।  प्रभु ने उसे तुम्हारे पूर्वजों और उनके वंशजों को देने का शपथपूर्वक वचन दिया।</span> <sup>10</sup><span class='v-txt'>तुम अपने अधिकार में करने के लिए जिस देश में प्रवेश करने जा रहे हो, वह मिस्र के समान नहीं हैं, जिस से तुम निकल आये हो।  वहाँ तुम बीज़ बोने के बाद पैरों से रहट चलाकर सिंचाई करते थे, जैसे सब्ज़ी की क्यारियों में की जाती है।</span> <sup>11</sup><span class='v-txt'>जो देश तुम उस पार अपने अधिकार में करोगे, पहाड़ियों और तराइयों का देश है और वह बादलों के जल से सींचा जाता है।</span> <sup>12</sup><span class='v-txt'>वह एक ऐसा देश है, जिसकी देखरेख प्रभु, तुम्हारा ईश्वर करता है और जिस पर वर्ष के प्रारम्भ से अन्त तक प्रभु का ध्यान रहता है।</span> <sup>13</sup><span class='v-txt'>“यदि तुम मेरी इन सब आज्ञाओं का, जिन्हें मैं आज तुम्हें सुना रहा हूँ, पालन करोगे और प्रभु, अपने ईश्वर को प्यार करोगे तथा सारे हृदय और सारी आत्मा से उसकी सेवा करोगे,</span> <sup>14</sup><span class='v-txt'>तो मैं तुम्हारे देश को शरत् और वसन्त में, ठीक समय पर वर्षा प्रदान करूँगा, जिससे तुम अनाज, अंगूरी और तेल की फ़सल बटोर सकोगे।</span> <sup>15</sup><span class='v-txt'>मैं तुम्हारे खेतों पर तुम्हारे पशुओं के लिए चारा उगाऊँगा। तुम भी खाकर तृप्त हो जाओगे।</span> <sup>16</sup><span class='v-txt'>सावधान रहो, तुम्हारा हृदय बहके नहीं और तुम पथभ्रष्ट हो कर पराये देवताओं की सेवा मत करो और उन्हें दण्ड़वत् मत करो।</span> <sup>17</sup><span class='v-txt'>ऐसा करोगे, तो तुम्हारे विरुद्ध प्रभु का कोप भड़क उठेगा और वह आकाश के द्वार बंद करेगा और तुम्हारे लिए वर्षा नहीं होगी।  भूमि फ़सल पैदा नहीं करेगी और इस प्रकार वह रमणीय देश नष्ट हो जायेगा, जिसे प्रभु तुमको देने वाला है।</span> <sup>18</sup><span class='v-txt'>तुम लोग मेरे ये शब्द हृदय और आत्मा में रख लो।  इन्हें निशानी के तौर पर अपने हाथ में और शिरोबन्द तरह अपने मस्तक पर बाँधे रखो।</span> <sup>19</sup><span class='v-txt'>इन्हें अपने बाल-बच्चों को सिखाते रहो और तुम चाहे घर में रहो, चाहे यात्रा करो - सोते-जागते समय इनका मनन करते रहो।</span> <sup>20</sup><span class='v-txt'>तुम इन्हें अपने घरों की चैखटों और फाटकों पर लिख दो,</span> <sup>21</sup><span class='v-txt'>जिससे तुम और तुम्हारे वंशज उस देश में रह सकें, जिसके विषय में प्रभु ने तुम्हारे पूर्वजों को शपथपूर्वक वचन दिया था कि जब तक आकाश और पृथ्वी बने रहेंगे वह तब तक के लिए उसे तुम्हें दे देगा।</span> <sup>22</sup><span class='v-txt'>&quot;यदि तुम इन सब आदेशों का सावधानी से पालन करोगे, जिन्हें मैं आज तुम्हें सुना रहा हूँ, प्रभु, अपने ईश्वर को प्यार करोगे, उसके मार्गों पर चलते रहोगे और उसके अनुगामी बने रहोगे,</span> <sup>23</sup><span class='v-txt'>तो प्रभु उन सब राष्ट्रों को तुम्हारे सामने से भगा देगा और तुम अपने से अधिक महान् और शक्तिशाली राष्ट्रों का देश अपने अधिकार में करोगे।</span> <sup>24</sup><span class='v-txt'>प्रत्येक स्थान, जिस पर तुम पैर रखोगे, तुम्हारा हो जायेगा।  तुम्हारे देश का विस्तार उजाड़खण्ड़ से लेबानोन तक और फ़रात नदी से ले कर पश्चिमी समुद्र तक होगा।</span> <sup>25</sup><span class='v-txt'>तुम्हारा सामना कोई भी नहीं कर सकेगा।  तुम जिस भूमि पर अपने पाँव रखोगे, उस समस्त देश में प्रभु तुम्हारा ईश्वर तुम्हारे प्रति भय और आतंक उत्पन्न करेगा, जैसी उसने तुम से प्रतिज्ञा की थी।</span> <sup>26</sup><span class='v-txt'>देखो!  आज मैं तुम लोगों के सामने आशीर्वाद तथा अभिशाप, दोनों रख रहा हूँ।</span> <sup>27</sup><span class='v-txt'>प्रभु की जो आज्ञाएँ मैं आज तुम्हारे सामने रख रहा हूँ उनका पालन करोगे, तो तुम्हें आशीर्वाद प्राप्त होगा।</span> <sup>28</sup><span class='v-txt'>यदि तुम अपने प्रभु-ईश्वर की आज्ञाओं का पालन नहीं करोगे और जो मार्ग मैं आज तुम्हें बता रहा हूँ, उसे छोड़ कर उन अन्य देवताओं के अनुयायी बन जाओगे, जिन्हें तुम अब तक नहीं जानते तो तुम्हें अभिशाप दिया जायेगा।</span> <sup>29</sup><span class='v-txt'>यदि प्रभु, तुम्हारा ईश्वर तुम्हें उस देश में ले जायेगा, जिस पर तुम अधिकार करने जा रहे हो, तो तुम गरिज़्ज़ीम पर्वत पर आशीर्वाद और एलाब पर्वत पर अभिशाप दोगे।</span> <sup>30</sup><span class='v-txt'>ये दोनों पर्वत यर्दन के उस पार, पश्चिम के मार्ग में अराबा में रहने वाले कनानियों के देश में, गिलआद के सामने, मोरे के बलूत के पास स्थित हैं।</span> <sup>31</sup><span class='v-txt'>अब तुम उस देश में प्रवेश करने के लिए यर्दन पार करने वाले हो, जिसे प्रभु, तुम्हारा ईश्वर तुम्हें दे रहा है।  जब उस पर तुम्हारा अधिकार हो जाये और तुम वहाँ बस जाओ,</span> <sup>32</sup><span class='v-txt'>तो मैं जो आदेश और नियम आज तुम्हें दे रहा हूँ उनका सावधानी से पालन करो।</span> </p>
+        <div class='nav'><a href='005010.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005012.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

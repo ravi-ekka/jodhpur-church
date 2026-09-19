@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>इसायाह - अध्याय 26</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>इसायाह</h1>
+        <h2>अध्याय 26</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उस दिन यूदा देश में यह गीत गाया जायेगाः हमारा नगर सुदृढ़ है।  प्रभु ने हमारी रक्षा के लिए प्राचीर और चारदीवारी बनायी है।</span> <sup>3</sup><span class='v-txt'>तू दृढ़तापूर्वक शान्ति बनाये रखता हैं, क्योंकि इस राष्ट्र को तुझ पर भरोसा है।</span> <sup>4</sup><span class='v-txt'>प्रभु पर सदा भरोसा रखो, क्योंकि वही चिरस्थायी चट्टान है।</span> <sup>5</sup><span class='v-txt'>वह ऊँचाई पर निवास करने वालों को नीचा दिखाता है। वह उनका दुर्गम गढ़ तोड़ कर गिराता और धूल में मिला देता है।</span> <sup>6</sup><span class='v-txt'>अब दीन-हीन और दरिद्र उसे पैरों तले रौंदेंगे।</span> <sup>7</sup><span class='v-txt'>धर्मी का मार्ग समतल है।  तू धर्मी का पथ बराबर करता है।</span> <sup>8</sup><span class='v-txt'>प्रभु! हम भी तेरे नियमों के मार्ग पर चलते हुए तुझ पर भरोसा रखते हैं।  हम तेरे नाम की स्तुति करना चाहते हैं।</span> <sup>9</sup><span class='v-txt'>मैं रात को तेरे लिए तरसता हूँ।  मैं अपनी सारी आत्मा से तुझे खोजता रहता हूँ।  जब पृथ्वी पर तेरे नियमों का पालन होता है, तब उसके निवासियों को पता चलता है कि न्याय क्या है।</span> <sup>10</sup><span class='v-txt'>यदि दुष्ट पर दया की जाती है, तो वह धार्मिक नहीं बनता।  जहाँ धार्मिकता का राज्य है, वहाँ वह अधर्म करता जाता है और प्रभु की महिमा का ध्यान नहीं रखता।</span> <sup>11</sup><span class='v-txt'>प्रभु! वे तेरा उठा हुआ हाथ नहीं देखते, किन्तु वे तेरी प्रजा के लिए तेरा उत्साह अवश्य देखेंगे और उन्हें लज्जित होना पड़ेगा, जब वे तेरे शत्रुओं के लिए जलायी अग्नि में भस्म हो जायेंगे।</span> <sup>12</sup><span class='v-txt'>प्रभु! तू ही हमें शान्ति प्रदान करता और हमारे सभी कार्यों में हमें सफलता दिलाता है।</span> <sup>13</sup><span class='v-txt'>हमारे प्रभु ईश्वर! तेरे सिवा अन्य राजाओं ने हम पर शासन किया, किन्तु हम तेरे ही नाम का स्मरण करते हैं।</span> <sup>14</sup><span class='v-txt'>जो मर गये हैं, उन्हें फिर जीवन प्राप्त नहीं होगा; जो चले गये हैं, वे फिर नहीं दिखाई देंगे।  तूने उनका विनाश किया और उनका नाम तक मिटा दिया है।</span> <sup>15</sup><span class='v-txt'>प्रभु! तूने अपनी प्रजा को महान् बना दिया है, तूने अपने नाम के कारण उसे महान् बना दिया है।  तूने उसका अधिकार-क्षेत्र चारों ओर बढ़ा दिया है।</span> <sup>16</sup><span class='v-txt'>प्रभु! तेरी प्रजा संकट में तेरी शरण आती है।  जब तू उसे दण्ड देता है, तो वह तेरी दुहाई देती है।</span> <sup>17</sup><span class='v-txt'>प्रभु! हम तेरे सामने उस गर्भवती स्त्री के सदृश थे, जो प्रसव के समय तड़पती है और अपनी पीड़ा में चिल्लाती है।</span> <sup>18</sup><span class='v-txt'>हम गर्भवति की तरह पीड़ा से तड़पते थे, किन्तु हमने वायु प्रसव की।  हमने देश का उद्वार नहीं किया और पृथ्वी पर नेय निवासियों का जन्म नहीं हुआ।</span> <sup>19</sup><span class='v-txt'>किन्तु तेरे मृतक फिर जीवित होंगे, उनके शरीर फिर खड़े हो जायेंगे।  तुम, जो मिट्टी में सो रहे हो, जाग कर आनन्द के गीत गाओगे; क्योंकि तेरी ओस ज्योतिर्मय है और पृथ्वी मृतकों को पुनर्जीवित कर देगी।</span> <sup>20</sup><span class='v-txt'>मेरी प्रजा! अपने यहाँ जाओ और अपने द्वार के दोनों पल्ले बन्द कर लो।  जब तक क्रोध शान्त न हो, थोड़े समय तक छिपे रहो;</span> <sup>21</sup><span class='v-txt'>क्योंकि प्रभु अपने यहाँ से आ रहा है और पृथ्वी के निवासियों को उनके कुकर्मों का दण्ड देगा।  पृथ्वी बहाया हुआ रक्त प्रकट करेगी, वह किसी का वध छिपाये नहीं रखेगी।</span> </p>
+        <div class='nav'><a href='029025.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='029027.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मारकुस - अध्याय 14</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मारकुस</h1>
+        <h2>अध्याय 14</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>पास्का तथा बेख़मीर रोटी के पर्व में दो दिन रह गये थे। महायाजक और शास्त्री ईसा को छल से गिरफ़्तार करने और मरवा देने का उपाय ढूँढ़ रहे थे।</span> <sup>2</sup><span class='v-txt'>फिर भी वे कहते थे, &quot;पर्व के दिनों में नहीं।  कहीं ऐसा न हो कि जनता में हंगामा हो जाये।&quot;</span> <sup>3</sup><span class='v-txt'>जब ईसा बेथानिया में सिमाने कोढ़ी के यहाँ भोजन कर रहे थे, तो एक महिला संगमरमर के पात्र में असली जटामांसी का बहुमूल्य इत्र ले कर आयी।  उसने पात्र तोड़ कर ईसा के सिर पर इत्र ऊँढ़ेल दिया।</span> <sup>4</sup><span class='v-txt'>इस पर कुछ लोग झुंझला कर एक दूसरे से बोले, &quot;इत्र का यह अपव्यय क्यों?</span> <sup>5</sup><span class='v-txt'>यह इत्र तीन सौ दीनार से अधिक में बिक सकता था और इसकी कीमत ग़रीबों में बाँटी जा सकती थी&quot; और वे उसे झिड़कते रहे।</span> <sup>6</sup><span class='v-txt'>ईसा ने कहा, &quot;इसको छोड़ दो।  इसे क्यों तंग करते हो? इसने मेरे लिए भला काम किया।</span> <sup>7</sup><span class='v-txt'>ग़रीब तो बराबर तुम लोगों के साथ रहेंगे।  तुम जब चाहो, उनका उपकार कर सकते हो; किन्तु मैं हमेशा तुम्हारे साथ नहीं रहूँगा।</span> <sup>8</sup><span class='v-txt'>यह जो कुछ कर सकती थी, इसने कर दिया।  इसने दफ़न की तैयारी में पहले ही से मेरे शरीर पर इत्र लगाया।</span> <sup>9</sup><span class='v-txt'>मैं तुम लोंगों से यह कहता हूँ -  सारे संसार में जहाँ कहीं सुसमाचार का प्रचार किया जायेगा, वहाँ इसकी स्मृति में इसके इस कार्य की भी चर्चा होगी।&quot;</span> <sup>10</sup><span class='v-txt'>बारहों में से एक, यूदस इसकारियोती, महायाजकों के पास गया और उसने ईसा को उनके हवाले करने का प्रस्ताव किया।</span> <sup>11</sup><span class='v-txt'>वे यह सुन कर बहुत प्रसन्न हुए।  उन्होंने उसे रुपया देने का वादा किया और यूदस ईसा को पकड़वाने का अवसर ढूँढ़ता रहा।</span> <sup>12</sup><span class='v-txt'>बेख़मीर रोटी के पहले दिन, जब पास्का के मेमने की बलि चढ़ायी जाती है, शिष्यों ने ईसा से कहा, &quot;आप क्या चाहते हैं?  हम कहाँ जा कर आपके लिए पास्का भोज की तैयारी करें?&quot;</span> <sup>13</sup><span class='v-txt'>ईसा ने दो शिष्यों को यह कहते हुए भेजा, &quot;शहर जाओ।  तुम्हें पानी का घड़ा लिये एक पुरुष मिलेगा।  उसके पीछे-पीछे चलो।</span> <sup>14</sup><span class='v-txt'>और जिस घर में वह प्रवेश करे, उस घर के स्वामी से यह कहो, ’गुरुवर कहते हैं- मेरे लिए अतिथिशाला कहाँ हैं, जहाँ मैं अपने शिष्यों के साथ पास्का का भोजन करूँ?’</span> <sup>15</sup><span class='v-txt'>और वह तुम्हें ऊपर सजा-सजाया बड़ा कमरा दिखा देगा वहीं हम लोगों के लिए तैयार करो।&quot;</span> <sup>16</sup><span class='v-txt'>शिष्य चल पड़े।  ईसा ने जैसा कहा था, उन्होंने शहर पहुँच कर सब कुछ वैसा ही पाया और पास्का-भोज की तैयारी कर ली।</span> <sup>17</sup><span class='v-txt'>सन्ध्या हो जाने पर ईसा बारहों के साथ आये।</span> <sup>18</sup><span class='v-txt'>जब वे बैठ कर भोजन कर रहे थे, तो ईसा ने कहा, &quot;मैं तुम लोगों से यह कहता हूँ -  तुम में से ही एक, जो मेरे साथ भोजन कर रहा है, मुझे पकड़वा देगा&quot;।</span> <sup>19</sup><span class='v-txt'>वे बहुत उदास हो गये और एक-एक कर उन से पूछने लगे, &quot;कहीं वह मैं तो नहीं हूँ?&quot;</span> <sup>20</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;वह बारहों में से ही एक है, जो मेरे साथ थाली में खा रहा है।</span> <sup>21</sup><span class='v-txt'>मानव पुत्र तो चला जाता है, जैसा कि उसके विषय में लिखा है; परन्तु धिक्कार उस मनुष्य को, जो मानव पुत्र को पकड़वाता है! उस मनुष्य के लिए अच्छा यही होता कि वह पैदा ही नहीं हुआ होता।&quot;</span> <sup>22</sup><span class='v-txt'>उनके भोजन करते समय ईसा ने रोटी ले ली, और आशिष की प्रार्थना पढ़ने के बाद उसे तोड़ा और यह कहते हुए शिष्यों को दिया, &quot;ले लो, यह मेरा शरीर है&quot;।</span> <sup>23</sup><span class='v-txt'>तब उन्होंने प्याला ले कर धन्यवाद की प्रार्थना पढ़ी और उसे शिष्यों को दिया और सब ने उस में से पीया।</span> <sup>24</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;यह मेरा रक्त है, विधान का रक्त, जो बहुतों के लिए बहाया जा रहा है।</span> <sup>25</sup><span class='v-txt'>मैं तुम से यह कहता हूँ -  जब तक मैं ईश्वर के राज्य में नवीन रस न पी लूँ, तब तक मैं दाख का रस फिर नहीं पिऊँगा।&quot;</span> <sup>26</sup><span class='v-txt'>भजन गाने के बाद वे जैतून पहाड़ चल दिये।</span> <sup>27</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;तुम सब विचलित हो जाओगे; क्योंकि यह लिखा है- मैं चरवाहे को मारूँगा और भेडें़ तितर-बितर हो जायेंगी।</span> <sup>28</sup><span class='v-txt'>किन्तु अपने पुनरुत्थान के बाद मैं तुम लोगों से पहले गलीलिया जाऊँगा।&quot;</span> <sup>29</sup><span class='v-txt'>इस पर पेत्रुस ने कहा, &quot;चाहे सभी विचलित हो जायें, किन्तु मैं विचलित नहीं होऊँगा&quot;।</span> <sup>30</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;मैं तुम से यह कहता हूँ -  आज, इसी रात को, मुर्गे के दो बार बाँग देने से पहले ही तुम मुझे तीन बार अस्वीकार करोगे&quot;।</span> <sup>31</sup><span class='v-txt'>किन्तु वह और भी ज़ोर से यह कहता जाता था, &quot;मुझे आपके साथ चाहे मरना ही क्यों न पड़े, मैं आप को कभी अस्वीकार नहीं करूँगा&quot; और सभी शिष्य यही कहते थे।</span> <sup>32</sup><span class='v-txt'>वे गेथसेमनी नामक बारी पहुँचे।  ईसा ने अपने शिष्यों से कहा &quot;तुम लोग यहाँ बैठे रहो।  मैं तब तक प्रार्थना करूँगा।&quot;</span> <sup>33</sup><span class='v-txt'>वे पेत्रुस, याकूब और योहन को अपने साथ ले गये।  वे भयभीत तथा व्याकुल होने लगे</span> <sup>34</sup><span class='v-txt'>और उनसे बोले, &quot;मेरी आत्मा इतनी उदास है कि मैं मरने-मरने को हूँ।  यहाँ ठहर जाओ और जागते रहो।&quot;</span> <sup>35</sup><span class='v-txt'>वे कुछ आगे बढ़ कर मुँह के बल गिर पड़े और यह प्रार्थना करते रहे कि यदि हो सके, तो यह घड़ी उन से टल जाये।</span> <sup>36</sup><span class='v-txt'>उन्होंने कहा, &quot;अब्बा! पिता!  तेरे लिए सब कुछ सम्भव है। यह प्याला मुझ से हटा ले।  फिर भी मेरी नहीं, बल्कि तेरी ही इच्छा पूरी हो।&quot;</span> <sup>37</sup><span class='v-txt'>तब वे अपने शिष्यों के पास गये और उन्हें सोया हुआ देख कर पेत्रुस से बोले, &quot;सिमोन! सोते हो?  क्या तुम घण्टे भर भी मेरे साथ नहीं जाग सके?</span> <sup>38</sup><span class='v-txt'>जागते रहो और प्रार्थना करते रहो, जिससे तुम परीक्षा में न पड़ो।  आत्मा तो तत्पर है, परन्तु शरीर दुर्बल&quot;</span> <sup>39</sup><span class='v-txt'>और उन्होंने फिर जा कर उन्हीं शब्दों को दुहराते हुए प्रार्थना की।</span> <sup>40</sup><span class='v-txt'>लौटने पर उन्होंने अपने शिष्यों को फिर सोया हुआ पाया, क्योंकि उनकी आंखें भारी थीं।  वे नहीं जानते थे कि क्या उत्तर दें।</span> <sup>41</sup><span class='v-txt'>ईसा जब तीसरी बार अपने शिष्यों के पास आये, तो उन्होंने उन से कहा, &quot;अब तक सो रहे हो?  अब तक आराम कर रहे हो?  बस! वह घड़ी आ गयी है।  देखो! मानव पुत्र पापियों के हवाले कर दिया जायेगा।</span> <sup>42</sup><span class='v-txt'>उठो! हम चलें।  मेरा विश्वासघाती निकट आ गया है।&quot;</span> <sup>43</sup><span class='v-txt'>ईसा यह कह ही रहे थे कि बारहों में से एक यूदस आ गया।  उसके साथ तलवारें और लाठियाँ लिये एक बड़ी भीड़ थीं, जिसे महायाजकों, शास्त्रियाँ और नेताओं ने भेजा था।</span> <sup>44</sup><span class='v-txt'>विश्वासघाती ने उन्हें यह कहते हुए संकेत दिया था, &quot;मैं जिसका चुम्बन करूँगा, वही हैं।  उसी को पकड़ना और सावधानी से ले जाना।&quot;</span> <sup>45</sup><span class='v-txt'>उसने सीधे ईसा के पास आ कर कहा, &quot;गुरुवर!&quot; और उनका चुम्बन किया।</span> <sup>46</sup><span class='v-txt'>तब लोगों ने ईसा को पकड़ कर गिरफ़्तार कर लिया।</span> <sup>47</sup><span class='v-txt'>इस पर ईसा के साथियों में एक ने अपनी तलवार खींच ली और प्रधानयाजक के नौकर पर चला कर उसका कान उड़ा दिया।</span> <sup>48</sup><span class='v-txt'>ईसा ने भीड़ से कहा, &quot;क्या तुम लोग मुझे डाकू समझते हो, जो तलवारें और लाठियाँ ले कर मुझे पकड़ने आये हो?</span> <sup>49</sup><span class='v-txt'>मैं तो प्रतिदिन तुम्हारे सामने मन्दिर में शिक्षा दिया करता था, फिर भी तुमने मुझे गिरफ़्तार नहीं किया।  यह इसलिए हो रहा है कि धर्मग्रन्थ में जो लिखा है, वह पूरा हो जाये।&quot;</span> <sup>50</sup><span class='v-txt'>तब सभी शिष्य ईसा को छोड़ कर भाग गये।</span> <sup>51</sup><span class='v-txt'>एक युवक, अपने नंगे बदन पर चादर ओढ़े, ईसा के पीछे हो लिया।  भीड़ ने उसे पकड़ लिया,</span> <sup>52</sup><span class='v-txt'>किन्तु वह चादर छोड़ कर नंगा ही भाग गया।</span> <sup>53</sup><span class='v-txt'>वे ईसा को प्रधानयाजक के यहाँ ले गये।  सभी महायाजक नेता और शास्त्री इकट्ठे हो गये थे।</span> <sup>54</sup><span class='v-txt'>पेत्रुस कुछ दूरी पर ईसा के पीछे-पीछे चला।  वह प्रधानयाजक के महल पहुँच कर अन्दर गया और नौकरों के साथ बैठा हुआ आग तापता रहा।</span> <sup>55</sup><span class='v-txt'>महायाजक और सारी महासभा ईसा को मरवा डालने के उद्देश्य से उनके विरुद्ध गवाही खोज रही थी, परन्तु वह मिली नहीं।</span> <sup>56</sup><span class='v-txt'>बहुत-से लोगों ने तो उनके विरुद्ध झूठी गवाही खोज दी, किन्तु उनके बयान मेल नहीं खाते थे।</span> <sup>57</sup><span class='v-txt'>तब कुछ लोग उठ खड़े हो गये और उन्होंने यह कहते हुए उनके विरुद्ध झूठी गवाही दी,</span> <sup>58</sup><span class='v-txt'>&quot;हमने इस व्यक्ति को ऐसा कहते सुना- मैं हाथ का बनाया हुआ यह मन्दिर ढ़ा दूँगा और तीन दिनों के अन्दर एक दूसरा खड़ा करूँगा, जो हाथ का बनाया हुआ नहीं होगा&quot;।</span> <sup>59</sup><span class='v-txt'>किन्तु इसके विषय में भी उनके बयान मेल नहीं खाते थे।</span> <sup>60</sup><span class='v-txt'>तब प्रधानयाजक ने सभा के बीच में खड़ा हो कर ईसा से पूछा, &quot;ये लोग तुम्हारे विरुद्ध जो गवाही दे रहे हैं, क्या इसका कोई उत्तर तुम्हारे पास नहीं है&quot;</span> <sup>61</sup><span class='v-txt'>परन्तु ईसा मौन रहे और उत्तर में एक शब्द भी नहीं बोले।  इसके बाद प्रधानयाजक ने ईसा से पूछा, &quot;क्या तुम मसीह, परमस्तुत्य के पुत्र हो?&quot;</span> <sup>62</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;मैं वही हूँ।  आप लोग मानव पुत्र को सर्वशक्तिमान् ईश्वर के दाहिने बैठा हुआ और आकाश के बादलों पर आता हुआ देखेंगे।&quot;</span> <sup>63</sup><span class='v-txt'>इस पर महायाजक ने अपने वस्त्र फाड़ कर कहा, &quot;अब हमें गवाहों की ज़रूरत ही क्या है?</span> <sup>64</sup><span class='v-txt'>आप लोगों ने तो ईश-निन्छा सुनी है।  आप लोगों का क्या विचार है?&quot; और सब का निर्णय यह हुआ कि ईसा प्राणदण्ड के योग्य हैं।</span> <sup>65</sup><span class='v-txt'>तब कुछ लोग उन पर थूकने लगे और उनकी आंखों पर पट्टी बाँध कर यह कहते हुए उन्हें घूँसे मारने लगे, &quot;यदि तू नबी है, तो बता- तुझे किसने मारा?&quot; नौकर भी उन्हें थप्पड़ मारते थे।</span> <sup>66</sup><span class='v-txt'>&quot;पेत्रुस उस समय नीचे प्रांगण में था।  प्रधानयाजक की एक नौकरानी ने पास आ कर</span> <sup>67</sup><span class='v-txt'>पेत्रुस को आग तापते हुए देखा और उस पर दृष्टि गड़ा कर कहा, &quot;तुम भी ईसा नाज़री के साथ थे&quot;</span> <sup>68</sup><span class='v-txt'>किन्तु उसने अस्वीकार करते हुए कहा, &quot;मैं न तो जानता हूँ और न समझता ही कि तुम क्या कह रही हो&quot;।  इसके बाद पेत्रुस फाटक की ओर निकल गया और मुर्गे ने बाँग दी।</span> <sup>69</sup><span class='v-txt'>नौकरानी उसे देख कर पास खड़े लोगों से फिर कहने लगी, &quot;यह व्यक्ति उन्हीं लोगों में एक है&quot;।</span> <sup>70</sup><span class='v-txt'>किन्तु उसने फिर अस्वीकार किया। इसके थोड़ी देर बाद वहाँ खड़े हुए लोग बोले, &quot;निश्चय ही तुम उन्हीं लोगों में एक हो- तुम तो गलीली हो&quot;।</span> <sup>71</sup><span class='v-txt'>इस पर पेत्रुस कोसने और शपथ खा कर कहने लगा कि तुम जिस मनुष्य की चर्चा कर रहे हो, मैं उसे जानता भी नहीं।</span> <sup>72</sup><span class='v-txt'>ठीक उसी समय मुर्गे ने दूसरी बार बाँग दी और पेत्रुस को ईसा का यह कहना याद आया- मुर्गे के दो बार बाँग देने से पहले ही तुम मुझे तीन बार अस्वीकार करोगे, और वह फूट-फूट कर रोता रहा।</span> </p>
+        <div class='nav'><a href='048013.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='048015.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>होशेआ - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>होशेआ</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यूदा के राजा उज्जीया, योताम और हिजकीया तथा इस्राएल में राजा योआश के पुत्र यरोबआम के दिनों में बएरी के पुत्र होशेआ को प्रभु की वाणी सुनाई पड़ी।</span> <sup>2</sup><span class='v-txt'>जब प्रभु पहले-पहल होशेआ से बोला, उसने उस से यह कहा, &quot;जाओ किसी वेश्या से विवाह कर जारज संतान पैदा करो, क्योंकि देश भी प्रभु को त्याग कर वेश्यावृत्ति कर रहा है&quot;।</span> <sup>3</sup><span class='v-txt'>अतः उसने जा कर दिब्लाइम की पुत्री गोमेर से विवाह किया, जिसने गर्भवती हो कर पुत्र को जन्म दिया।</span> <sup>4</sup><span class='v-txt'>प्रभु ने उस से कहा, &quot;उसका नाम यिज्रएल रखना: क्योंकि थोड़े समय के बाद मैं यिज्रएल के रक्तपात का येहू के घराने में बदला चुकाऊँगा और इस्राएल वंश की प्रभुसत्ता समाप्त कर दूँगा।</span> <sup>5</sup><span class='v-txt'>उसी दिन मैं यिज्रएल की घाटी में उसके धनुष को तोड डालूँगा।&quot;</span> <sup>6</sup><span class='v-txt'>उसने फिर गर्भवती हो कर एक पुत्री को जन्म दिया।  प्रभु ने होशेआ से कहा, &quot;उसका नाम लो-रूहामाह रखना; क्योंकि मैं फिर कभी इस्राएल को प्रेम नहीं करूँगा, न उसे क्षमा करूँगा।</span> <sup>7</sup><span class='v-txt'>किन्तु मैं यूदा के घराने को प्रेम करूँगा और प्रभु-ईश्वर ही उसका उद्धार होगा, न ही धनुष, या तलवार, या युद्ध या घोडे या घुडसवार</span> <sup>8</sup><span class='v-txt'>लो-रूहामाह का दूध छुडाने के बाद गोमेर ने फिर गर्भवती हो कर पुत्र को जन्म दिया।</span> <sup>9</sup><span class='v-txt'>प्रभु ने कहा, &quot;उसका नाम लोअम्मी रखना; क्योंकि अब तुम लोग मेरी प्रजा नहीं रहे और न मैं तुम्हारा रह गया&quot;।</span> <sup>10</sup><span class='v-txt'>समुद्रतट के रेतकणों की तरह इस्राएली असंख्य बन जायेंगे, जिनका पारावार नहीं।  और जहाँ कहा गया था, &quot;तुम लोग मेरी प्रजा नहीं रहे&quot;, वहाँ वे जीवन्त ईश्वर की संतान कहलायेंगे।</span> <sup>11</sup><span class='v-txt'>यूदा और इस्राएल के लोग मिल कर एक हो जायेंगे और अपना ही नेता चुनेंगें तथा वे देश-विदेश में फैल जायेंगे। यिज्रएल का वह दन तो महान् दिवस होगा।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='035002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

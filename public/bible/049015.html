@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ईसा का उपदेश सुनने के लिए नाकेदार और पापी उनके पास आया करते थे।</span> <sup>3</sup><span class='v-txt'>इस पर ईसा ने उन को यह दृष्टान्त सुनाया,</span> <sup>4</sup><span class='v-txt'>&quot;यदि तुम्हारे एक सौ भेड़ें हों और उन में एक भी भटक जाये, तो तुम लोगों में कौन ऐसा होगा, जो निन्यानबे भेड़ों को निर्जन प्रदेश में छोड़ कर न जाये और उस भटकी हुई को तब तक न खोजता रहे, जब तक वह उसे नहीं पाये?</span> <sup>5</sup><span class='v-txt'>पाने पर वह आनन्दित हो कर उसे अपने कन्धों पर रख लेता है</span> <sup>6</sup><span class='v-txt'>और घर आ कर अपने मित्रों और पड़ोसियों को बुलाता है और उन से कहता है, ’मेरे साथ आनन्द मनाओ, क्योंकि मैंने अपनी भटकी हुई भेड़़ को पा लिया है’।</span> <sup>7</sup><span class='v-txt'>मैं तुम से कहता हूँ, इसी प्रकार निन्यानबे धर्मियों की अपेक्षा, जिन्हें पश्चात्ताप की आवश्यकता नहीं है, एक पश्चात्तापी पापी के लिए स्वर्ग में अधिक आनन्द मनाया जायेगा।</span> <sup>8</sup><span class='v-txt'>&quot;अथवा कौन ऐसी स्त्री होगी, जिसके पास दस सिक्के हों और उन में एक भी खो जाये, तो बत्ती जला कर और घर बुहार कर सावधानी से तब तक न खोजती रहे, जब तक वह उसे नहीं पाये?</span> <sup>9</sup><span class='v-txt'>पाने पर वह अपनी सखियों और पड़ोसिनों को बुला कर कहती है, ’मेरे साथ आनन्द मनाओ, क्योंकि मैंने जो सिक्का खोया था, उसे पा लिया है’।</span> <sup>10</sup><span class='v-txt'>मैं तुम से कहता हूँ, इसी प्रकार ईश्वर के दूत एक पश्चात्तापी पापी के लिए आनन्द मनाते हैं।&quot;</span> <sup>11</sup><span class='v-txt'>ईसा ने कहा, &quot;किसी मनुष्य के दो पुत्र थे।</span> <sup>12</sup><span class='v-txt'>छोटे ने अपने पिता से कहा, ’पिता जी! सम्पत्ति का जो भाग मेरा है, मुझे दे दीजिए’, और पिता ने उन में अपनी सम्पत्ति बाँट दी।</span> <sup>14</sup><span class='v-txt'>जब वह सब कुछ ख़र्च कर चुका, तो उस देश में भारी अकाल पड़ा और उसकी हालत तंग हो गयी।</span> <sup>15</sup><span class='v-txt'>इसलिए वह उस देश के एक निवासी का नौकर बन गया, जिसने उसे अपने खेतों में सूअर चराने भेजा।</span> <sup>16</sup><span class='v-txt'>जो फलियाँ सूअर खाते थे, उन्हीं से वह अपना पेट भरना चाहता था, लेकिन कोई उसे उन में से कुछ नहीं देता था।</span> <sup>17</sup><span class='v-txt'>तब वह होश में आया और यह सोचता रहा-मेरे पिता के घर कितने ही मज़दूरों को ज़रूरत से ज़्यादा रोटी मिलती है और मैं यहाँ भूखों मर रहा हूँ।</span> <sup>18</sup><span class='v-txt'>मैं उठ कर अपने पिता के पास जाऊँगा और उन से कहूँगा, ’पिता जी! मैंने स्वर्ग के विरुद्ध और आपके प्रति पाप किया है।</span> <sup>19</sup><span class='v-txt'>मैं आपका पुत्र कहलाने योग्य नहीं रहा।  मुझे अपने मज़दूरों में से एक जैसा रख लीजिए।’</span> <sup>20</sup><span class='v-txt'>तब वह उठ कर अपने पिता के घर की ओर चल पड़ा। वह दूर ही था कि उसके पिता ने उसे देख लिया और दया से द्रवित हो उठा।  उसने दौड़ कर उसे गले लगा लिया और उसका चुम्बन किया।</span> <sup>21</sup><span class='v-txt'>तब पुत्र ने उस से कहा, ’पिता जी! मैने स्वर्ग के विरुद्ध और आपके प्रति पाप किया है।  मैं आपका पुत्र कहलाने योग्य नहीं रहा।’</span> <sup>22</sup><span class='v-txt'>परन्तु पिता ने अपने नौकरों से कहा, ’जल्दी अच्छे-से-अच्छे कपड़े ला कर इस को पहनाओ और इसकी उँगली में अँगूठी और इसके पैरों में जूते पहना  दो।</span> <sup>23</sup><span class='v-txt'>मोटा बछड़ा भी ला कर मारो।  हम खायें और आनन्द मनायें;</span> <sup>24</sup><span class='v-txt'>क्योंकि मेरा यह बेटा मर गया था और फिर जी गया है, यह खो गया था और फिर मिल गया है।’ और वे आनन्द मनाने लगे।</span> <sup>25</sup><span class='v-txt'>&quot;उसका जेठा लड़का खेत में था।  जब वह लौट कर घर के निकट पहुँचा, तो उसे गाने-बजाने और नाचने की आवाज़ सुनाई पड़ी।</span> <sup>26</sup><span class='v-txt'>उसने एक नौकर को बुलाया और इसके विषय में पूछा।</span> <sup>27</sup><span class='v-txt'>इसने कहा, ’आपका भाई आया है और आपके पिता ने मोटा बछड़ा मारा है, क्योंकि उन्होंने उसे भला-चंगा वापस पाया है’।</span> <sup>28</sup><span class='v-txt'>इस पर वह क्रुद्ध हो गया और उसने घर के अन्दर जाना नहीं चाहा।  तब उसका पिता उसे मनाने के लिए बाहर आया।</span> <sup>29</sup><span class='v-txt'>परन्तु उसने अपने पिता को उत्तर दिया, ’देखिए, मैं इतने बरसों से आपकी सेवा करता आया हूँ।  मैंने कभी आपकी आज्ञा का उल्लंघन नहीं किया।  फिर भी आपने कभी मुझे बकरी का बच्चा तक नहीं दिया, ताकि मैं अपने मित्रों के साथ आनन्द मनाऊँ।</span> <sup>30</sup><span class='v-txt'>पर जैसे ही आपका यह बेटा आया, जिसने वेश्याओं के पीछे आपकी सम्पत्ति उड़ा दी है, आपने उसके लिए मोटा बछड़ा मार डाला है।’</span> <sup>31</sup><span class='v-txt'>इस पर पिता ने उस से कहा, ’बेटा, तुम तो सदा मेरे साथ रहते हो और जो कुछ मेरा है, वह तुम्हारा है।</span> <sup>32</sup><span class='v-txt'>परन्तु आनन्द मनाना और उल्लसित होना उचित ही था; क्योंकि तुम्हारा यह भाई मर गया था और फिर जी गया है, यह खो गया था और मिल गया है’।&quot;</span> </p>
+        <div class='nav'><a href='049014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

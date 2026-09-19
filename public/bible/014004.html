@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>दुसरा इतिहास ग्रन्थ - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>दुसरा इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उसने काँसे की एक वेदी बनवायी।  वह बीस हाथ लम्बी, बीस हाथ चैड़ी और दस हाथ ऊँची थी।</span> <sup>2</sup><span class='v-txt'>फिर उसने काँसे का एक हौज़ ढलवाया।  वह वृत्ताकार था।  वह एक किनारे से दूसरे किनारे तक दस हाथ चैड़ा था।  वह पाँच हाथ ऊँचा था और उसकी परिधि तीस हाथ थी।</span> <sup>3</sup><span class='v-txt'>उसके नीचे दो पंक्तियों में चारों तरफ़ बैलों की आकृतियाँ थीं, जो उसकी ढलाई के समय ही उसके साथ-साथ ढाली गयी थीं।</span> <sup>4</sup><span class='v-txt'>वह बारह बैलों पर स्थित था।  बैलों में से तीन उत्तर की ओर मुँह किये हुये थे, तीन पश्चिम की ओर, तीन दक्षिण की ओर और तीन पूर्व की ओर।  उनके ऊपर हौज़ आधारित था।  बैलों का पिछला भाग भीतर की ओर था।</span> <sup>5</sup><span class='v-txt'>हौज़ की धातु की मोटाई चार अंगुल थी।  उसका किनारा प्याले के किनारे के समान सोसन-पुष्प के आकार का था।  उस में पैंतीस हज़ार लिटर समाता था</span> <sup>6</sup><span class='v-txt'>उसने शुद्धीकरण के लिए दस चिलमचियाँ बनवायीं और उन में से पाँच दाहिनी ओर रखवायीं और पाँच बायीं ओर, जिससे जो कुछ होम-बलि में चढ़ाया जाये, वह पहले उन में धोया जाये।  हौज़ याजकों के शुद्धीकरण के लिए था।</span> <sup>7</sup><span class='v-txt'>उसने निर्धारित नियम के अनुसार सोने के दस दीपवृक्ष बनवाये और उन्हें मन्दिर में रखा-पाँच को दाहिनी ओर और पाँच को बायीं ओर।</span> <sup>8</sup><span class='v-txt'>उसने दस मेज़ें बनवायीं और मन्दिर में रखीं-पाँच दाहिनी ओर और पाँच बायीं ओर।  इनके अतिरिक्त उसने सोने के सौ बरतन बनवाये।</span> <sup>9</sup><span class='v-txt'>उसने याजकों का प्रांगण और बड़ा प्रांगण बनवाया और प्रांगण के लिए फाटक बनवाये।  उसने उन फाटकों को काँसे से मढ़वाया</span> <sup>10</sup><span class='v-txt'>और हौज़ को मन्दिर के दक्षिण-पूर्व में रखवाया।</span> <sup>11</sup><span class='v-txt'>अन्त में हूराम ने पात्र, फावड़ियाँ और कटोरे बनाये।  इस प्रकार हूराम ने वह काम पूरा किया, जिसकी आज्ञा उसे राज सुलेमान ने ईश्वर के मन्दिर के लिए दी थीः</span> <sup>12</sup><span class='v-txt'>दो खम्बे, खम्भों के ऊपर के दो गोलाकार स्तम्भषीर्ष और खम्भों के सिरों पर दोनों गोलाकार स्तम्भशीर्षों को सजाने के लिए दो जालियाँ,</span> <sup>13</sup><span class='v-txt'>दोनों जालियों के लिए चार सौ अनार-खम्भों के दोनों गोलाकार स्तम्भषीर्षों को ढकने के लिए प्रत्येक जाली की दो-दो पंक्तियों में अनार लटके थे।</span> <sup>14</sup><span class='v-txt'>उसने ठेले बनाये और उन ठेलों पर चिलमचियाँ,</span> <sup>15</sup><span class='v-txt'>हौज़ और हौज़ के नीचे बारह बैल।</span> <sup>16</sup><span class='v-txt'>पात्र, फावड़ियाँ, काँटे और उनके साथ अन्य सब सामान, जो हूराम-अबी ने राजा सुलेमान की आज्ञा से प्रभु के मन्दिर के लिए बनाये, परिष्कृत काँसे के थे।</span> <sup>17</sup><span class='v-txt'>राजा ने सुक्कोत और सरेदा के बीच, चिकनी मिट्टी वाली भूमि में, यर्दन के मैदान में उन को ढलवाया।</span> <sup>18</sup><span class='v-txt'>सुलेमान ने उन सब चीज़ों को इतनी अधिक मात्रा में बनवाया कि उनके काँसे की तौल नहीं की जा सकी।</span> <sup>19</sup><span class='v-txt'>सुलेमान ने ईश्वर के मन्दिर के लिए ये सब सामान भी बनवायेः सोने की वेदी, भेंट की रोटियों के लिए मेजें,</span> <sup>20</sup><span class='v-txt'>शुद्ध सोने के दीपवृक्ष और उनके दीये, जो नियमानुसार भीतरी पवित्र-स्थान में जलाये जायें;</span> <sup>21</sup><span class='v-txt'>शुद्ध सोने की बौंड़ियाँ, दीये और चिमटे,</span> <sup>22</sup><span class='v-txt'>शुद्ध सोने की कैंचियाँ, बरतन, लोबान के पात्र और कलछियाँ, मन्दिर के फाटक, परमपवित्र स्थान के भीतरी दरवाजे और मध्य भाग के दरवाजे, जो सभी सोने के थे।</span> </p>
+        <div class='nav'><a href='014003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='014005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

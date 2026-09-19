@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इस्राएलियों मैं जिन नियमों तथा आदेशों की शिक्षा तुम लोगों को आज दे रहा हूँ, उन पर ध्यान दो और उनका पालन करो, जिससे तुम जीवित रह सको और उस देश में प्रवेश कर उसे अपने अधिकार में कर सको, जिसे प्रभु, तुम्हारे पूर्वजों का ईश्वर तुम लोगों को देने वाला है।</span> <sup>2</sup><span class='v-txt'>मैं जो आदेश तुम लोगों को दे रहा हूँ, तुम उन में न तो कुछ बढ़ाओ और न कुछ घटाओ।  तुम अपने प्रभु-ईश्वर के आदेशों का पालन वैसे ही करो, जैसे मैं तुम लोगों को देता हूँ।</span> <sup>3</sup><span class='v-txt'>तुमने तो अपनी आँखों से वह सब देखा, जो प्रभु ने बाल-पओर में किया था, अर्थात् प्रभु, तुम्हारे ईश्वर ने बाल-पओर में उन सब को तुम्हारे बीच से नष्ट कर दिया, जो पओर के बाल-देवता के अनुयायी बन गये थे।</span> <sup>4</sup><span class='v-txt'>परन्तु तुम, जो अपने प्रभु-ईश्वर के प्रति ईमानदार बने रहे, तुम सब-के-सब आज तक जीवित हो।</span> <sup>5</sup><span class='v-txt'>देखो, मैं अपने प्रभु-ईश्वर के आदेश के अनुसार तुम लोगों को नियमों तथा आदेशों की शिक्षा दे चुका हूँ।  तुम जो देश अपने अधिकार में करने जा रहे हो, वहाँ उनके अनुसार आचरण करो।</span> <sup>6</sup><span class='v-txt'>उनका अक्षरश: पालन करो और इस तरह तुम अन्य राष्ट्रों की दृष्टि में समझदार और बुद्धिमान समझे जाओगे।  जब वे उन सब आदेशों की चर्चा सुनेंगे, तो बोल उठेंगे ’उस महान् राष्ट्र के समान समझदार तथा बुद्धिमान और कोई राष्ट्र नहीं है’।</span> <sup>7</sup><span class='v-txt'>क्योंकि ऐसा महान राष्ट्र कहाँ है, जिसके देवता उसके इतने निकट हैं, जितना हमारा प्रभु-ईश्वर हमारे निकट तब होता है जब-जब हम उसकी दुहाई देते हैं?</span> <sup>8</sup><span class='v-txt'>और ऐसा महान् राष्ट्र कहाँ है, जिसके नियम और रीतियाँ इतनी न्यायपूर्ण है, जितनी यह सम्पूर्ण संहिता, जिसे मैं आज तुम लोगों को दे रहा हूँ?</span> <sup>9</sup><span class='v-txt'>&quot;सावधान रहो।  जो कुछ तुमने अपनी आँखों से देखा है, उसे मत भुलाओ।  उसे जीवन भर याद रखो और अपने पुत्र पौत्रों को सिखाओ।</span> <sup>10</sup><span class='v-txt'>जब तुम होरेब पर्वत के पास प्रभु, अपने ईश्वर के सामने खड़े थे और जब ईश्वर ने मुझे यह आज्ञा दी थी, ‘मेरे सामने लोगों को एकत्रित करो मैं स्वयं उन्हें संबोधित करना चाहता हूँ, जिससे वे जीवन भर मुझ पर श्रद्धा रखें और अपनी सन्तति को भी ऐसी शिक्षा दें’,</span> <sup>11</sup><span class='v-txt'>तब तुम लोग नीचे, पर्वत की तलहटी में खड़े थे, जब पर्वत पर आकाश तक अग्नि प्रज्वलित हो उठी थी और उसे काले मेघखण्ड ने घेर लिया था।</span> <sup>12</sup><span class='v-txt'>तब अग्नि में से प्रभु ने तुम से बात की थी।  तुमने उसकी वाणी तो सुनी थी, परन्तु कोई आकृति नहीं देखी थी।  वहाँ केवल वाणी ही सुनाई पड़ी थी।</span> <sup>13</sup><span class='v-txt'>इस प्रकार उसने तुम्हारे सामने अपना विधान घोषित किया था और उसके पालन का आदेश दिया था अर्थात् वे दस आज्ञाएँ, जिन्हें उसने पत्थर की दो पाटियों पर अंकित किया।</span> <sup>14</sup><span class='v-txt'>उस समय प्रभु ने मुझे तुम लोगों को वे नियम और आदेश सिखाने की आज्ञा दी, जिनका पालन उन्हें देश में करना है, जिसे तुम यर्दन पार कर अपने अधिकार में कर लोगे।</span> <sup>15</sup><span class='v-txt'>जिस समय प्रभु ने होरेब पर्वत पर अग्नि के भीतर से तुम्हारे साथ बात की, तुमने कोेई आकृति नहीं देखी।  इसलिए सावधान रहो।</span> <sup>16</sup><span class='v-txt'>तुम भ्रष्ट न हो जाओ और अपने लिए किसी प्रकार की मूर्ति नहीं बनाओ - न किसी पुरुष, न किसी स्त्री,</span> <sup>17</sup><span class='v-txt'>न पृथ्वी पर किसी पशु, न आकाश में उड़ने वाली पंख धारी किसी पक्षी,</span> <sup>18</sup><span class='v-txt'>न पृथ्वी पर रेंगने वाले किसी जन्तु और न पृथ्वी के जलाशयों के किसी जीव-जन्तु की।</span> <sup>19</sup><span class='v-txt'>यदि तुम आकाश की ओर अपनी आँखें उठाकर सूर्य, चन्द्रमा, नक्षत्रों और आकाश मण्डल के समस्त तारागण को देखो, तो उन से प्रभावित होकर न तो उन्हें दण्डवत् करो और न उनकी पूजा करो।  प्रभु तुम्हारे ईश्वर ने उन्हें पृथ्वी भर की सब जातियों में बाँट दिया है।</span> <sup>20</sup><span class='v-txt'>प्रभु मिस्र के लोहे के भट्टे से तुम्हें इसलिए निकाल लाया है कि तुम उसकी अपनी प्रजा हो जाओ, जैसे तुम आज हो।</span> <sup>21</sup><span class='v-txt'>तुम्हारे कारण प्रभु ने मुझ पर क्रुद्ध होकर शपथ खा कर कहा था कि मैं यर्दन पार नहीं कर सकूँगा और उस रमणीय देश में नहीं पहुँच सकूँगा, जिसे प्रभु, तुम्हारा ईश्वर तुम्हें दायभाग के रूप में देने वाला है।</span> <sup>22</sup><span class='v-txt'>इसी देश मे मेरी मृत्यु हो जाएगी, मैं यर्दन पार नहीं कर पाऊँगा।  हाँ, तुम उसे पार कर सकोगे और उस रमणीय देश को अपने अधिकार में कर लोगे।</span> <sup>23</sup><span class='v-txt'>सावधान रहो - प्रभु, तुम्हारे ईश्वर ने तुम लोगों के लिए जो विधान निर्धारित किया है, उसे कभी नहीं भुलाओ और किसी प्रकार की मूर्ति बनाकर उसके आदेश का उल्लंघन नहीं करो;</span> <sup>24</sup><span class='v-txt'>क्योंकि प्रभु, तुम्हारा ईश्वर भस्म करने वाली अग्नि है; वह असहनशील ईश्वर है।</span> <sup>25</sup><span class='v-txt'>जब तुम्हारे पुत्र-पौत्र पैदा हो जायेंगे और तुम उस देश में काफी समय तक रह चुक होंगे और तुम किसी प्रकार की मूर्ति बनाकर भ्रष्ट हो जाओगे और ऐसे कर्म करोगे, जो प्रभु की दृष्टि मे बुरे होंगे और इस प्रकार उसका क्रोध भड़का दोगे,</span> <sup>26</sup><span class='v-txt'>तो मैं आज आकाश और पृथ्वी को साक्षी बनाकर कहता हूँ कि तुम शीघ्र ही उस देश से लुप्त हो जाओगे, जिसे प्राप्त करने के लिए तुम अभी-अभी यर्दन पार करने जा रहे हो।  तुम अधिक समय तक वहाँ नहीं रह पाओगे , बल्कि तुम्हारा सर्वनाश हो जाएगा।</span> <sup>27</sup><span class='v-txt'>तब प्रभु तुम्हें अन्य जातियों में तितर-बितर कर देगा और उन अन्य जातियों के बीच भी, जिन में प्रभु तुम्हें ले जाएगा, तुम में से कुछ ही शेष बचेंगे।</span> <sup>28</sup><span class='v-txt'>तब तुम वहाँ ऐेसे देवताओं की पूजा करने लगोगे, जो मनुष्य द्वारा लकड़ी और पत्थरों से निर्मित होते हैं, जो न देख सकते, न सुन सकते, न खा सकते और न सूँघ सकते हैं।</span> <sup>29</sup><span class='v-txt'>यदि तुम वहाँ प्रभु, अपने ईश्वर से फिर मिलना चाहोगे तो वह तुम्हें तभी मिलेगा, जब तुम उसे सारे मन और सारी आत्मा से ढूँढ़ोगे।</span> <sup>30</sup><span class='v-txt'>जब तुम कष्ट से पीड़ित होगे और जब भविष्य में ये सब विपत्तियाँ तुम को अक्रान्त करेगी, तब तुम फिर प्रभु, अपने ईश्वर की ओर अभिमुख हो जाओगे और उसकी आज्ञा का पालन करने लगोगे।</span> <sup>31</sup><span class='v-txt'>इसका कारण यह है कि प्रभु, तुम्हारा ईश्वर एक करूणामय ईश्वर है।  वह न तो तुम को त्यागेगा, न तुम्हारा विनाश करेगा और न वह विधान भूलेगा, जिसे उसने शपथ खा कर तुम्हारे पूर्वजों के लिए निर्धारित किया है।</span> <sup>32</sup><span class='v-txt'>ईश्वर ने जब पृथ्वी पर मनुष्य की सृष्टि की थी, तुम सब से ले कर अपने पहले के प्राचीन युगों का हाल पूछो। क्या पृथ्वी के एक छोर से दूसरे छोर तक कभी इतनी अद्भुत घटना हुई है?</span> <sup>33</sup><span class='v-txt'>क्या इस प्रकार की बात कभी सुनने में आयी है?  क्या और कोई ऐसा राष्ट्र है, जिसने तुम लोगों की तरह अग्नि में से बोलते हुए ईश्वर की वाणी सुनी और जीवित बच गया हो?</span> <sup>34</sup><span class='v-txt'>ईश्वर ने आतंक दिखाकर, विपत्तियों, चिन्हों, चमत्कारों और युद्धों के माध्यम से, अपने सामर्थ्य तथा बाहुबल द्वारा तुम लोगों को मिस्र देश से निकाल लिया है - यह सब तुमने अपनी आँखों से देखा है।  क्या और कोई ऐसा ईश्वर है, जिसने इस तरह किसी दूसरे राष्ट्र म</span> <sup>35</sup><span class='v-txt'>यह सब तुम लोगों को इसलिए देखने को मिला कि तुम जान जाओ कि प्रभु ही ईश्वर है।  उसके सिवा और कोई ईश्वर नहीं है।</span> <sup>36</sup><span class='v-txt'>तुम्हें शिक्षा देने के लिए उसने आकाश से तुम को अपनी वाणी सुनायी और पृथ्वी पर तुम को वह महान् अग्नि दिखायी, जिस में से तुमने उसे बातें करते सुना है।</span> <sup>37</sup><span class='v-txt'>उसने तुम्हारे पूर्वजों को प्यार किया और उनके वंशजों को चुन लिया, इसलिए उसने अपना सामर्थ्य प्रकट किया और वह स्वयं तुम लोगों को मिस्र से निकाल लाया।</span> <sup>38</sup><span class='v-txt'>उसने तुम्हारे सामने से ऐसे राष्ट्रों को भगा दिया जो, तुम से अधिक महान और शक्तिशाली थे।  उसने तुम को उनके देश में पहुँचा दिया और अब उसे विरासत के रूप में तुम्हें प्रदान किया।</span> <sup>39</sup><span class='v-txt'>आज यह जान लो और इस पर मन-ही-मन विचार करो कि ऊपर आकाश में तथा नीचे पृथ्वी पर प्रभु ही ईश्वर है; उसके सिवा कोई और ईश्वर नहीं है।</span> <sup>40</sup><span class='v-txt'>मैं तुम लोगों को आज उसके नियम और आदेश सुनाता हूँ।  तुम उनका पालन किया करो, जिससे जो देश तुम्हारा प्रभु-ईश्वर तुम्हें सदा के लिए देने वाला है, उस में तुम को और तुम्हारे पुत्रों को सुख-शांति तथा लम्बी आयु मिल सकें।“</span> <sup>41</sup><span class='v-txt'>उस समय मूसा ने पूर्व में, यर्दन के उस पार, तीन नगर अलग कर दिये,</span> <sup>42</sup><span class='v-txt'>जिन में ऐसा व्यक्ति भाग कर शरण ले सकेगा, जिसने अनजाने, बिना किसी पूर्व शत्रुता के किसी की हत्या की है।  इन नगरो में से किसी भी नगर में शरण लेने वाला जीवित रहेगा।</span> <sup>43</sup><span class='v-txt'>वे थे: रूबेनवंशियों के लिए उजाड़खण्ड में पठार पर स्थित बेसेर, गादवंशियों के लिए गिलआद मे स्थित रामोत और मनस्से वंशियों के लिए बाशान में स्थित गोलान।</span> <sup>44</sup><span class='v-txt'>मूसा ने जो संहिता प्रस्तुत की, वह इस प्रकार है।</span> <sup>45</sup><span class='v-txt'>यही वे नियम, आदेश और विधि-निषेध हैं, जिन्हें मूसा ने मिस्र से बाहर जाते समय इस्राएलियों को सुनाया था।</span> <sup>46</sup><span class='v-txt'>यह यर्दन के उस पार की घाटी में हुआ, जो बेत-पओर  के सामने, हेषबोन में रहने वाले अमोरियों के राजा सीहोन के देश में है।  मिस्र देश से बाहर आ कर मूसा और इस्राएलियों ने उसे पराजित किया था।</span> <sup>47</sup><span class='v-txt'>और उसके देश को तथा बाशान के राजा ओग के देश को अपने अधिकार में ले लिया था।  ये दोनों यर्दन के उस पार, पूर्व दिशा में, अमोरियों के राजा थे।</span> <sup>48</sup><span class='v-txt'>इनका राज्य-विस्तार अरनोन तट पर स्थित अरोएर से ले कर सिर्योन (या हेरमोन की पर्वत-श्रेणी तक था</span> <sup>49</sup><span class='v-txt'>और पूर्व की ओर यर्दन के उस पार का सम्पूर्ण अराबा, जो पिसगा की ढालों पर लगे अराबा के समुद्र तक फैला है।</span> </p>
+        <div class='nav'><a href='005003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>होशेआ - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>होशेआ</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>अब मैं अपनी प्रजा की सुख-समृद्धि पुनः स्थापित करना चाहता हूँ और इस्राएल को चंगा करूँगा।  तब मैं एफ्राईम के भ्रष्टाचार का और समारिया के दुराचार का पदाफाश करूँगा।  वे तो अविश्वासी रहे हैं, चोर हैं, घरों में सेंघ मारते हैं और बाहर डाका डालते हैं।</span> <sup>2</sup><span class='v-txt'>वे इस पर ध्यान तक नहीं देते कि मैं उनके सब दुष्कर्मों को स्मरण करता हूँ।  अब वे अपने ही अपराधों से घिरे हुए हैं और मेरी आंखों का काँटा बन गये हैं।</span> <sup>3</sup><span class='v-txt'>वे राजा को अपने छल-कपट से फुसला लेते हैं और अपने विश्वसाघात से शासकों को भी।</span> <sup>4</sup><span class='v-txt'>वे सब-के-सब लम्पट हैं; तपे तुए तन्दूर में राख के नीचे जलते अंगारों के समान, जिन्हें नानबाई तब तक नही फूँकता, जब तक खमीर के साथ गूँथा हुआ आटा न फूल गया हो।</span> <sup>5</sup><span class='v-txt'>अपने पर्व-दिवस पर राजा इन धूर्तों से मिलता-जुलता है और वे अंगूरी पिला-पिला कर उसे भरमा देते हैं।</span> <sup>6</sup><span class='v-txt'>षड्यंत्र रचने की उत्तेजना में तन्दूर में अंगार की तरह उनके हृदय जलते हैं; रात भर उनका क्रोध सुलगता रहता है और भोर को धधकती ज्वाला बन कर भभक उठाता है।</span> <sup>7</sup><span class='v-txt'>तब वे धधकती भट्ठी बन कर अपने शासकों को भस्म कर देते हैं।  इस प्रकार उनके सभी राजाओं का पतन हो गया है और उन में से किसी ने भी मुझ को नहीं पुकारा है।</span> <sup>8</sup><span class='v-txt'>एफ्राईम अन्य जातियों के साथ धुलमिल गया है; एफ्राईम अधपकी रोटी है।</span> <sup>9</sup><span class='v-txt'>विदेशी उसकी शक्ति खा रहे हैं, किन्तु उसे उसका कुछ पता नहीं।  अनजाने ही उसके बाल पक गये हैं।</span> <sup>10</sup><span class='v-txt'>इस्राएल का घमण्ड उसी के अपने मुँह पर कालिख लगा रहा है।  यह होते हुए भी वे न अपने प्रभु-ईश्वर की ओर उन्मुख होते, न ही उसे ढूँढते हैं।</span> <sup>11</sup><span class='v-txt'>एफ्राइम नादान और नासम कबूतर हैं; वे मिस्र की सहायता माँगते और अस्सूर की शरण दौडते हैं।</span> <sup>12</sup><span class='v-txt'>जब वे वहाँ जायेंगे, तो मैं उन पर जाल फेंक कर उन्हें पक्षियों की तरह गिरा दूँगा; मैं उनके कुकर्मों के लिए उन्हें दण्ड दूँगा।</span> <sup>13</sup><span class='v-txt'>धिक्कार है उन को कि वे मुझ से विमुख हो कर पथभ्रष्ट हो गये हैं! नाश हो उनका क्योंकि उन्होंने मेरे विरुद्ध विद्रोह किया है!  मैं उनका क्या उद्धार करूँ, जब कि वे मेरे विरुद्ध झूठ बोलते हैं?</span> <sup>14</sup><span class='v-txt'>वे अपनी चटाइयों पर पड़-पडे़ जब हाय-हाय करते हुए मुझे पुकारते हैं, तब उनकी पुकार हृदय की पुकार नहीं होती।  अन्न और अंगूरी के लिए वे अपने को ही घायल करते हैं, और इस तरह मेरे विरुद्ध विद्रोह करते हैं।</span> <sup>15</sup><span class='v-txt'>यद्यपि मैंने ही उनकी भुजाओं को बल प्रदान किया, तथापि वे मेरे विरुद्ध कुचक्र रचते रहते हैं।</span> <sup>16</sup><span class='v-txt'>वे बिना डोरी के धनुष-जैसे  ढीले हैं; वे तो बालदेवता के पास लौट कर उसकी दुहाई देते हैं।  बात करने में गुस्ताखी के कारण ही उनके शासक तलवार से मरेंगे।  मिस्र में लोग उनकी बड़ी हँसी उडायेंगे।</span> </p>
+        <div class='nav'><a href='035006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='035008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मलआकी - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मलआकी</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>याजको! मैं तुम्हें चेतावनी देता हूँ</span> <sup>2</sup><span class='v-txt'>यदि तुम नहीं सुनोगे, यदि तुम मेरे नाम का आदर करने का ध्यान नहीं रखोगे, तो - विश्वमण्डल का प्रभु यह कहाता है - मैं तुम्हें और तुम्हारी धन-सम्पत्ति को अभिशाप दूँगा।  सच पूछो, तो मैं उन को अभिशप्त कर ही चुका हूँ, क्योंकि तुम मेरे नाम का आदर करने का ध्यान नहीं रख्ते हो।</span> <sup>3</sup><span class='v-txt'>देखो मैं तुम्हारी सन्तान को डाँटूँगा और तुम्हारे मुँह पर तुम्हारे बलि-पशुओं की अँतड़ियाँ फेंकूँगा।  मैं तुम को अपने से दूर कर दूँगा।</span> <sup>4</sup><span class='v-txt'>विश्वमण्डल का प्रभु यह कहता है: तुम तब समझोगे कि मैंने ही लेवी के साथ व्यवस्थान बनाये रखने का अपना निश्चय व्यक्त किया है।</span> <sup>5</sup><span class='v-txt'>मेरा व्यवस्थान उसी के साथ था: जीवन और शान्ति का व्यवस्थान, और मैंने उसे ये वरदान दिये भी, जिससे वह मेरे प्रति श्रद्धाभक्ति रखे; उसने अपना कर्तव्य पूरा भी किया और मेरे नाम का आदर भी रखा।</span> <sup>6</sup><span class='v-txt'>वह सच्ची शिक्षा देता था और कुटिल बातें कभी नहीं करता था; वह शान्ति और धर्मनिष्ठा से मेरे पथ पर चलता रहा और बहुत लोगों को अधर्म से लौटा लाया।</span> <sup>7</sup><span class='v-txt'>याजक का मुँह सच्चाई का गढ़ है, जहाँ से मनुष्य शिक्षा की अपेक्षा करें, क्योंकि वह विश्वमण्डल के प्रभु का सन्देशवाहक है।</span> <sup>8</sup><span class='v-txt'>तुम लोग भटक गये हो और अपनी शिक्षा द्वारा तुमने बहुत-से लोगों को विचलित कर दिया।  विश्वमण्डल के प्रभु कहता है कि तुम लोगों ने लेवी का विधान भंग किया है।</span> <sup>9</sup><span class='v-txt'>तुमने मेरा मार्ग छोड़ दिया और अपनी शिक्षा में भेदभाव रखा है, इसलिए मैंने सारी जनता की दृष्टि में तुम्हें घृणित और तुच्छ बना दिया है।“</span> <sup>10</sup><span class='v-txt'>क्या हम सबों का एक ही पिता नहीं?  क्या एक ही ईश्वर ने हमारी सृष्टि नहीं की?  तो, अपने पूर्वजों का विधान अपवित्र करते हुए हम एक दूसरे के साथ विश्वासघात क्यों करते हैं?</span> <sup>11</sup><span class='v-txt'>यूदा ने विश्वासघात किया है: येरूसलेम और इस्राएल में घृणास्पद कार्य किये गये हैं।  हाँ, यूदा ने प्रभु-ईश्वर के प्रिय मन्दिर को अपवित्र किया है, उसने पराये देवता की पुत्रियों से विवाह किया है।</span> <sup>12</sup><span class='v-txt'>जो कोई ऐसा करे, वह चाहे कोई भी हो, प्रभु-ईश्वर उसे याकूब के खेमे से निष्कासित करे और विश्वमण्डल के प्रभु को भेटें चढ़ाने वालों की संगति से बहिष्कृत करे।</span> <sup>13</sup><span class='v-txt'>तुम एक दूसरी बात भी करते हो।  तुम रोते हुए विलाप करते हुए प्रभु की वेदी पर आँसू बहाते हो, क्योंकि वह तुम्हारे हाथों से चढ़ायी हुई भेंटें अस्वीकार कर ग्रहण नहीं करता।</span> <sup>14</sup><span class='v-txt'>तुम पूछोगे, “ऐसा क्यों?“  कारण यह है कि प्रभु-ईश्वर तुम्हारे और तुम्हारी युवावस्था में ब्याही पत्नी के बीच विवाह का साक्षी है; तुमने तो उस धर्मपत्नी के साथ विश्वासघात किया है, जिस को अर्धांगिनी बनाने के लिए तुमने उसका पाणिग्रहण किया था।</span> <sup>15</sup><span class='v-txt'>क्या उसने उन्हें एक नहीं बनाया, एक तन, एक प्राण? और उस एक प्राणी से वह क्या चाहता?  धर्मी सन्तति।  अतः तुम अपने ही जीवन की रक्षा किया करो और युवावस्था में ब्याही पत्नी के प्रति विश्वासी बने रहो।</span> <sup>16</sup><span class='v-txt'>प्रभु इस्राएल को ईश्वर यह कहता है, “मैं तलाक़ से घृणा करता हूँ।  विश्वमण्डल का प्रभु यह कहता है: मुझे उस से घृणा है, जो एक पत्नी से अन्याय करके दूसरी के साथ गाँठ जोड़ता है।  अतः अपने ही जीवन की सुरक्षा करने के लिए इस तरह विश्वासघात न करो।“</span> <sup>17</sup><span class='v-txt'>तुमने बकवाद से प्रभु-ईश्वर को उकता दिया है।  तुम पूछोगे, “हम उसे कैसे उकता देते हैं?“  तब न, जब तुम यह कहते हो, “प्रभु-ईश्वर की दृष्टि में अधर्मी अच्छे हैं; वह तो उन को अधिक पसन्द करता है“; अथवा जब तुम यह कहते हो, “अब तो न्यायी ईश्वर कहाँ है?“</span> </p>
+        <div class='nav'><a href='046001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='046003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

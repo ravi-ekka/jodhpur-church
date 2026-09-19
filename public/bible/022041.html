@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 41</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 41</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उसे वश में करने की आशा व्यर्थ है।  उसे देखते ही मनुष्य के हाथ-पैर फूल जाते हैं।</span> <sup>2</sup><span class='v-txt'>उसे छेड़ने का साहस कौन करेगा?  उसके सामने कौन टिक सकता है?</span> <sup>3</sup><span class='v-txt'>आकाश के नीचे ऐसा कोई मनुष्य नहीं, उसका सामना करने के बाद कोई भी सुरक्षित नहीं रहा।</span> <sup>4</sup><span class='v-txt'>मैंने अब तक उसके अंगो के विषय में कुछ नहीं कहा और न उसके शरीर की रचना और उसकी शक्ति के विषय में।</span> <sup>5</sup><span class='v-txt'>कौन उसका चमडा उतार सकता, कौन उसके शरीर का दोहरा कवच भेद सकता है?</span> <sup>6</sup><span class='v-txt'>कौन उसके जबडे खोलने का साहस करेगा? उसके डरावने दाँत आतंकित करते हैं।</span> <sup>7</sup><span class='v-txt'>उसकी पीठ पर ढालो-जैसे शल्क हैं, जो एक-दूसरे से सटे हुए हैं।</span> <sup>8</sup><span class='v-txt'>वे इस प्रकार एक-दूसरे से जुडे हुए हैं कि हवा भी उनके बीच से हो कर नहीं जा सकती।</span> <sup>9</sup><span class='v-txt'>वे एक-दूसरे से इस प्रकार चिपक गये हैं कि उन्हें कोई भी अलग नहीं कर सकता।</span> <sup>10</sup><span class='v-txt'>उसके छींकने पर ज्योति फूट निकलती है और उसकी आँखे प्रभात की पुतलियों जैसी हैं।</span> <sup>11</sup><span class='v-txt'>उसके मुँह से बिजली चमकती है और आग की चिनगारियाँ छूटती हैं।</span> <sup>12</sup><span class='v-txt'>जलते अंगारों पर उबलती हुए हाँडी की तरह उसके नथनों से धुँआ निकलता है।</span> <sup>13</sup><span class='v-txt'>उसकी साँस लड़की जला देती है और उसके मुँह से ज्वालाएँ निकलती हैं।</span> <sup>14</sup><span class='v-txt'>उसकी ताकत उसकी गरदन में बसती है उसके चारों ओर आतंक छाया रहता है।</span> <sup>15</sup><span class='v-txt'>उसके मांस की भारी परतें सुदृढ़़ है; वे उसके शरीर पर ढाली जान पडती हैं।</span> <sup>16</sup><span class='v-txt'>उसका हृदय पत्थर-जैसा है, चक्की के पाट की तरह कठोर।</span> <sup>17</sup><span class='v-txt'>उसके खडे़ हो जाने पर देवता आतंकित हो कर उसके सामने से हड़बड़ा कर हट जाते हैं।</span> <sup>18</sup><span class='v-txt'>न तो तलवार, न भाला, न बरछी और न बाण उस पर कोई असर कर पाता है।</span> <sup>19</sup><span class='v-txt'>वह लोहे को तिनका और काँसे को सड़ी लकड़ी समझता है।</span> <sup>20</sup><span class='v-txt'>वह बाण के सामने से नहीं भागता और गोफन के चलाये हुए पत्थर को भूसा समझता है।</span> <sup>21</sup><span class='v-txt'>गदा उसे पुआल-जैसी लगती है; वह बरछी के वार पर हँसता है।</span> <sup>22</sup><span class='v-txt'>उसके पेट का निचला भाग ठीकरों के समूह-जैसा है, जो कीचड पर मानो हेंगा फेरता है।</span> <sup>23</sup><span class='v-txt'>वह गहराइयों में बरतन-जैसा उबाल पैदा करता है; वह समुद्र को उबलती हुई हांडी में बदल देता है।</span> <sup>24</sup><span class='v-txt'>वह अपने पीछे एक चमकीली लीक छोड जाता है,  ऐसा लगता है कि गहराई के बाल पक गये हैं।</span> <sup>25</sup><span class='v-txt'>पृथ्वी पर उसकी बराबरी करने वाला कोई नहीं।  वह नितांत निर्भीक है।</span> <sup>26</sup><span class='v-txt'>वह बड़े-से बड़े प्राणियेों का सामना करता है।  वह सभी जंगली पशुओं का राजा है!</span> </p>
+        <div class='nav'><a href='022040.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022042.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

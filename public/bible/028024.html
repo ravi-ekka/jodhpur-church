@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 24</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 24</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रज्ञा अपनी ही प्रशंसा कर रही है, वह अपने लोगों के बीच अपना ही गुणगान करती है,</span> <sup>2</sup><span class='v-txt'>वह सर्वोच्च की सभा में बोलती है और उसके सामर्थ्य के सामने अपना यश गाती है।</span> <sup>3</sup><span class='v-txt'>वह उसकी प्रजा के बीच गौरवान्वित और सन्तों की सभा में प्रशंसित है।</span> <sup>4</sup><span class='v-txt'>वह चुने हुए लोगों के बीच अपनी स्तुति करती और यह कहते हुए अपने को धन्य कहती है:</span> <sup>5</sup><span class='v-txt'>मैं प्रभु के मुख से निकली, सब से पहले मेरी सृष्टि हुई।</span> <sup>6</sup><span class='v-txt'>मैं अखण्ड ज्योति के रूप मे आकाश में प्रकट हुई और मैंने कुहरे की तरह समस्त पृथ्वी को ढक लिया।</span> <sup>7</sup><span class='v-txt'>मैंने ऊँचे आकाश में डेरा डाला।  मेरा सिंहासन बादल का खम्भा था।</span> <sup>8</sup><span class='v-txt'>मैंने अकेले ही आकाशमण्डल का चक्कर लगाया और महागत्र्त की गहराई का भ्रमण किया।</span> <sup>9</sup><span class='v-txt'>मुझे समुद्र की लहरों पर, समस्त पृथ्वी पर,</span> <sup>10</sup><span class='v-txt'>सभी प्रजातियों और राष्ट्रों पर अधिकार मिला।</span> <sup>11</sup><span class='v-txt'>मैं उन सबों में विश्राम का स्थान ढूँढ़ती रहीं: मैं किसके यहाँ निवास करूँ?</span> <sup>12</sup><span class='v-txt'>तब विश्व के सृष्टा ने मुझे आदेश दिया, मेरे सृष्टिकर्ता ने मेरे रहने का स्थान निश्चित किया।</span> <sup>13</sup><span class='v-txt'>उसने मुझ से कहा &quot;याकूब में डेरा डालो, इस्राएल में निवास करो और मेरी प्रजा में जड़ पकड़ो&quot;।</span> <sup>14</sup><span class='v-txt'>उसने आदि में, युगों से पहले मेरी सृष्टि की थी और मैं अन्त काल तक बनी रहूँगी।</span> <sup>15</sup><span class='v-txt'>मैं उसके सामने, पवित्र मन्दिर में सेवा करती रही और इस प्रकार सियोन मेरा निवास बन गया है।  मुझे परमप्रिय नगर में विश्राम मिला।  येरूसालेम मेरा अधिकारक्षेत्र बन गया है।</span> <sup>16</sup><span class='v-txt'>एक गौरवाशाली राष्ट्र में, प्रभु की भूमि में, उसकी अपनी प्रजा में मेरी जड़ जम गयी है।</span> <sup>17</sup><span class='v-txt'>मैं लेबानोन के देवदार की तरह बढ़ती रही, हेरमोन की पर्वत-श्रेणियों पर सनोवर की तरह।</span> <sup>18</sup><span class='v-txt'>मैं एन-गेदी के खजूर की तरह बढ़ती रहीं, येरीखों के गुलाब के पौधों की तरह।</span> <sup>19</sup><span class='v-txt'>मैं मैदान में सुन्दर जैतून वृक्ष की तरह, चैकों में चिनार वृक्ष की तरह बढ़ती रही।</span> <sup>20</sup><span class='v-txt'>मैं दारचीनी, गुलमेहँदी और उत्कृष्ट गन्धरस की तरह अपनी सुगन्ध फैलाती रही,</span> <sup>21</sup><span class='v-txt'>गन्धराल, लौंग, अगरू और मन्दिर के लोबान के बादल की तरह।</span> <sup>22</sup><span class='v-txt'>मैंने बलूत वृक्ष की तरह अपनी शाखाएँ फैलायी, मेरी शाखाएँ सुन्दर और मनोहर हैं।</span> <sup>23</sup><span class='v-txt'>मुझ में दाखलता की तरह सुन्दर बेलें फूट निकलीं, मेरी बौड़ियों ने मनोहर और रसदार फल उत्पन्न किये।</span> <sup>24</sup><span class='v-txt'>मैं मंगलमय प्रेम, श्रद्धा, ज्ञान और पावन आशा की जननी हूँ।</span> <sup>25</sup><span class='v-txt'>मुझ में सन्मार्ग और सत्य का अनुग्रह, जीवन और सामर्थ्य की सम्पूर्ण आशा विद्यमान है।</span> <sup>26</sup><span class='v-txt'>तुम सब, जो मेरे लिए तरसते हो, मेरे पास आओ और मेरे फल खा कर तृप्त हो जाओ।</span> <sup>27</sup><span class='v-txt'>मेरी स्मृति मधु से भी मधुर है, मैं छत्ते से टपकने वाले मधु से भी वांछनीय हूँ।</span> <sup>28</sup><span class='v-txt'>मेरी स्मृति मनुष्यों में सदा बनी रहेगी।</span> <sup>29</sup><span class='v-txt'>जो मुझे खाते हैं, उन्हें और खाने की इच्छा होगी; जो मेरा पान करते हैं, वे और पीना चाहेंगे।</span> <sup>30</sup><span class='v-txt'>जो मेरी आज्ञा का पालन करते, उन्हें लज्जित नहीं होना पड़ेगा और जो मेरे निर्देशानुसार चलते, वे नहीं भटकेंगे।</span> <sup>31</sup><span class='v-txt'>जो मुझे आलोकित करते, उन्हें अनन्त जीवन प्राप्त होगा।</span> <sup>32</sup><span class='v-txt'>यह सब सर्वोच्च ईश्वर के विधान के ग्रन्थ में लिपिबद्ध है,</span> <sup>33</sup><span class='v-txt'>उस संहिता में, जिसे मूसा ने याकूब की विरासत के रूप में हमें प्रदान किया है।</span> <sup>34</sup><span class='v-txt'>उसने अपने सेवक दाऊद को राजा बना दिया और उसे सदा के लिए सम्मान के सिंहासन पर बिठाया।</span> <sup>35</sup><span class='v-txt'>संहिता पीषोन नदी की तरह प्रज्ञा से परिपूर्ण है, नये फलोंं के समय दज़ला नदी की तरह।</span> <sup>36</sup><span class='v-txt'>वह फ़रात नदी की तरह मन को आप्लावित करती, फसल के समय यर्दन नदी की तरह।</span> <sup>37</sup><span class='v-txt'>वह नील नदी की तरह शिक्षा की बाढ़ बहाती है, दाख की फसल के समय गीहोन नदी की तरह।</span> <sup>38</sup><span class='v-txt'>प्रथम मनुष्य उसका सम्पूर्ण ज्ञान प्राप्त नहंीं कर सका और अन्तिम मनुष्य उसकी थाह नहीं ले सकेगा;</span> <sup>39</sup><span class='v-txt'>क्योंकि उसका भाव-भण्डार समुद्र से विस्तृत और उसके अभिप्राय महागत्र्त से गम्भीर हैं।</span> <sup>40</sup><span class='v-txt'>मैं तो नदी से निकली नहर के सदृश् हूँ,</span> <sup>41</sup><span class='v-txt'>वाटिका सींचने वाली नाली के सदृश।</span> <sup>42</sup><span class='v-txt'>मैंने कहा, &quot;मैं अपनी वाटिका सीचूँगी, मैं अपनी क्यारियाँ पानी से भर दूँगी&quot;।</span> <sup>43</sup><span class='v-txt'>और देखो: मेरी नाली नदी के रूप में, मेरी नदी समुद्र के रूप में बदल गयी।</span> <sup>44</sup><span class='v-txt'>मैं अपनी शिक्षा उषा की तरह चमकाऊँगी और उसका प्रकाश दूर-दूर तक प्रसारित करूँगी।</span> <sup>45</sup><span class='v-txt'>मैं समस्त पृथ्वी में फैल जाऊँगी, सब सोने वालों का निरीक्षण करूँगी और सब प्रभु पर भरोसा रखने वालों को आलोकित करूँगी।</span> <sup>46</sup><span class='v-txt'>मैं भविष्यवाणी की तरह अपनी शिक्षा प्रसारित करूँगी, उसे आने वाली पीढ़ियों को प्रदान करूँगी और उनके वंशजों में सदा बनी रहूँगी।</span> <sup>47</sup><span class='v-txt'>तुम देखते हो कि मैंने न केवल अपने लिए परिश्रम किया, बल्कि उन सब के लिए, जो प्रज्ञा की खोज में लगे रहते हैं।</span> </p>
+        <div class='nav'><a href='028023.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028025.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

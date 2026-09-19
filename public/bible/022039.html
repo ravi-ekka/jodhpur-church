@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 39</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 39</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>क्या तुम जानते हो कि पहाड़ी बकरिया कब बच्चा देती हैं?  क्या तुमने हरिणियों को प्रसव करते देखा?</span> <sup>2</sup><span class='v-txt'>क्या तुमने उनके गर्भकाल के महीनों की गिनती की?  क्या तुमने उसके ब्याने का समय निर्धारित किया,</span> <sup>3</sup><span class='v-txt'>जब वे झुक कर अपने बच्चे ब्याती हैं और प्रसव-पीड़ा से मुक्त हो जाती है?</span> <sup>4</sup><span class='v-txt'>उनके बच्चे मोटे होते और जंगल में बढ़ते हैं।  वे चले जाते और फिर उनके पास नहीं लौटते।</span> <sup>5</sup><span class='v-txt'>किसने जंगली गधे को स्वच्छन्द विचरने दिया, किसने गोरखर के बंधन खोले?</span> <sup>6</sup><span class='v-txt'>मैं रहने के लिए उसे घास का मैदान दिया, निवास के लिए उसे खारी भूमि प्रदान की है।</span> <sup>7</sup><span class='v-txt'>वह नगरों के कोलाहल की हँसी उड़ाता और हाँकने वाले की आवाज कभी नहीं सुनता।</span> <sup>8</sup><span class='v-txt'>पर्वतमाला उसका चरागाह है, वह हरियाली की खोज में भटकता है।</span> <sup>9</sup><span class='v-txt'>क्या जंगली भैंसा तुम्हरी सेवा करना चाहता है?  क्या वह तुम्हारी गोशाला में रात बिताता है?</span> <sup>10</sup><span class='v-txt'>क्या तुम उसे जोत सकते हो?  क्या वह तुम्हारे लिए घाटियों में हल खींचेगा?</span> <sup>11</sup><span class='v-txt'>क्या तुम उसकी बड़ी ताकत का भरोसा करते हुए उसे काम में लगाने का साहस कर सकते हो?</span> <sup>12</sup><span class='v-txt'>क्या तुम्हें विश्वास है कि वह तुम्हारा अनाज घर पहुँचा कर तुम्हारे खलिहान पर इकट्ठा करेगा?</span> <sup>13</sup><span class='v-txt'>शुतुरमुर्ग प्रसन्न हो कर अपने पंख फड़फड़ाता है, किंतु वह जाँघिल के पंखों और पिच्छों की बराबरी नहीं कर सकता।</span> <sup>14</sup><span class='v-txt'>जब वह अपने अण्डे सेने के लिए गरम बालू में भूमि पर छोड़ देता,</span> <sup>15</sup><span class='v-txt'>तो वह भूल जाता है कि वे किसी के पैर द्वारा कुचले या किसी जंगली पशु द्वारा रौंदे जा सकते हैं।</span> <sup>16</sup><span class='v-txt'>वह अपने बच्चों के साथ ऐसा व्यवहार करता, मानों वे उसके अपने न हों।  उसे इस बात की कोई चिंता नहीं कि उसका परिश्रम निष्फल जा सकता है;</span> <sup>17</sup><span class='v-txt'>क्योंकि ईश्वर ने उसे मूर्ख बनाया, उसे समझदारी प्रदान नहीं की।</span> <sup>18</sup><span class='v-txt'>किंतु जब वह दौड़ने के लिए अपने पंख फैलाता, तो वह घोडे़ के घुड़सवार को मात कर देता है।</span> <sup>19</sup><span class='v-txt'>क्या तुम घोडे़ को शक्ति देते और उसकी गरदन को अयाल से सुशोभित करते हो?</span> <sup>20</sup><span class='v-txt'>क्या तुम उसे टिड्डी की तरह कुदाते हो?  उसकी भारी हिनहिनाहट आतंकित करती है।</span> <sup>21</sup><span class='v-txt'>वह अपनी शक्ति की उमंग में टाप मारता और सेना के आगे-आगे चल कर शत्रु का सामना करने जाता है।</span> <sup>22</sup><span class='v-txt'>वह निर्भीक हो कर डर को तुच्छ समझता और तलवार के सामने पीछे नहीं हटता।</span> <sup>23</sup><span class='v-txt'>जब उसकी बगल पर तरकश खड़खड़ाता है, चमकते भाले और सांग की ध्वनि सुनाई देती है,</span> <sup>24</sup><span class='v-txt'>तो वह उत्तेजित को कर तीर-जैसा निकलता है, रणभेरी सुन कर उससे रहा नहीं जाता।</span> <sup>25</sup><span class='v-txt'>हर तूर्यनाद पर वह हिनहिनता है।  दूर से ही उसे लड़ाई की गंध, सेनापतियों की चिल्लाहट और युद्ध की ललकार का पता चलता है।</span> <sup>26</sup><span class='v-txt'>क्या बाज़ तुम्हारे समझाने पर ऊपर उठता और पंख फैला कर दक्षिण की ओर उड़ता है?</span> <sup>27</sup><span class='v-txt'>क्या गरुड़ तुम्हारे कहने पर उड़ान भरता और ऊँचाई पर अपना नीड बनाता हैं?</span> <sup>28</sup><span class='v-txt'>वह पहाड पर रहता और वहाँ रात बिताता है।  उसका गढ खडी चट्टान के शिखर पर है।</span> <sup>29</sup><span class='v-txt'>वह वहाँ से अपने शिकार की ताक में रहता और दूर-दूर तक दृष्टि दौड़ता है।</span> <sup>30</sup><span class='v-txt'>गरूढ़ के बच्चे रक्त लप-लप पीते हैं जहाँ कहीं लाशें हैं, वहाँ गरूढ़ भी है।</span> </p>
+        <div class='nav'><a href='022038.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022040.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

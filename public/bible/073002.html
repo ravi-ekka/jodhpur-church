@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रकाशना - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रकाशना</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&quot;एफेसुस की कलीसिया के स्वर्गदूत को यह लिखो-&quot;जो अपने दाहिने हाथ में सातों तारों को धारण किये है और सोने के सात दीपाधारों के बीच घूम रहा है, उसका सन्देश इस प्रकार है:</span> <sup>2</sup><span class='v-txt'>मैं तुम्हारे आचरण, तुम्हारे परिश्रम और धैर्य से परिचित हूँ।  मैं जानता हूँ कि तुम दुष्टों को सह नहीं सकते।  जो अपने को प्रेरित कहते हैं, किन्तु हैं नहीं, तुमने उनकी परीक्षा ली है और उन्हें झूठा पाया है।</span> <sup>3</sup><span class='v-txt'>तुम्हारे पास धैर्य है।  तुमने मेरे नाम के कारण कष्ट सहा है और हार नहीं मानी।</span> <sup>4</sup><span class='v-txt'>किन्तु मुझे तुम से शिकायत यह है कि तुमने अपना पहला धर्मोत्साह छोड़ दिया है।</span> <sup>5</sup><span class='v-txt'>इस पर विचार करो कि तुम कितने ऊँचे स्थान से गिरे हो।  पश्चाताप करो और पहले जैसा आचरण करो।  नहीं तो मैं तुम्हारे पास आ कर तुम्हारा दीपाधार उसके स्थान पर से हटा दूँगा।</span> <sup>6</sup><span class='v-txt'>फिर भी तुम में यह अच्छाई है कि तुम मेरी तरह निकोलाईयों के कर्मों से घृणा करते हो।</span> <sup>7</sup><span class='v-txt'>जिसके कान हो, वह सुन ले कि आत्मा कलीसियाओं से क्या कहता है।  मैं विजयी को उस जीवन-वृक्ष का फल खिलाऊँगा, जो ईश्वर की स्वर्ग-वाटिका के बीच है।</span> <sup>8</sup><span class='v-txt'>&quot;स्मुरना की कलीसिया के स्वर्गदूत को यह लिखो- &quot;जो प्रथम और अन्तिम है, जो मर गया था और पुनर्जीवित हो गया है, उसका सन्देश इस प्रकार है:</span> <sup>9</sup><span class='v-txt'>मैं तुम्हारे संकट और दरिद्रता से परिचित हूँ - फिर भी तुम धनी हो- और मैं यह भी जानता हूँ कि वे लोग तुम्हारी कितनी बदनामी करते हैं, जो अपने को यहूदी कहते है।  किन्तु जो यहूदी नहीं, बल्कि शैतान के अनुयायी हैं।</span> <sup>10</sup><span class='v-txt'>तुम्हें जो कष्ट भोगना होगा, उस से मत डरो।  शैतान तुम्हारी परीक्षा लेने के लिए तुम लोगों में कुछ को कैद में डाल देगा और तुम लोग दस दिनों तक संकट में पड़े रहोगे।  तुम मृत्यु तक ईमानदार बने रहो और मैं तुम्हें जीवन का मुकुट प्रदान करूँगा।</span> <sup>11</sup><span class='v-txt'>&quot;जिसके कान हों, वह सुन ले कि आत्मा कलीसियाओं से क्या कहता है।  विजयी को द्वितीय मृत्यु से कोई हानि नहीं होगी।</span> <sup>12</sup><span class='v-txt'>&quot;पेरगामोन की कलीसिया के स्वर्गदूत को यह लिखो-&quot;जिसके पास तेज दुधारी तलवार है, उसका सन्देश इस प्रकार हैः</span> <sup>13</sup><span class='v-txt'>मैं जानता हूँ कि तुम्हारा निवास कहाँ है- वह वहाँ है, जहाँ शैतान की गद्दी है।  फिर  भी तुम मेरा नाम दृढ़ बनाये रखते हो और तुमने उन दिनों भी मुझ में अपना विश्वास नहीं त्यागा, जब मेरा ईमानदार साक्षी अन्तिपस, तुम्हारे शहर में - जो शैतान का निवास स्थान है-</span> <sup>14</sup><span class='v-txt'>किन्तु मुझे तुम से कुछ शिकायतें हैं।  तुम्हारे बीच कुछ ऐसे लोग रहते हैं, जो बलआम की शिक्षा को मानते हैं। बलआम ने बालाक को इस्राएलियों के मार्ग पर ठोकर डालने का परामर्श दिया, जिससे वे देवताओं को अर्पित मांस खायें और व्यभिचार करें।</span> <sup>15</sup><span class='v-txt'>तुम्हारे बीच कुछ ऐसे लोग भी हैं, जो निकोलाइयों की शिक्षा मानते हैं।</span> <sup>16</sup><span class='v-txt'>इसलिए पश्चात्तप करो; नहीं तो मैं शीघ्र ही तुम्हारे पास आऊँगा और अपने मुख की तलवार से उन लोगों से युद्ध करूँगा।</span> <sup>17</sup><span class='v-txt'>जिसके कान हों, वह सुन ले कि आत्मा कलीसियाओं से क्या कहता है।  मैं विजयी को छिपा हुआ मन्ना और एक सफेद पत्थर प्रदान करूँगा।  उस पत्थर पर नया नाम अंकित होगा, जिस को पाने वाले के अतिरिक्त और कोई नहीं जानता।</span> <sup>18</sup><span class='v-txt'>&quot;थुआतिरा की कलीसिया के स्वर्गदूत को यह लिखो- &quot;जिसकी आँखें अग्नि की तरह धधकती हैं और जिसके पैर भट्टी में तपाये हुए कासे की तरह चमकते हैं, उस ईश्वर के पुत्र का सन्देश इस प्रकार है:</span> <sup>19</sup><span class='v-txt'>मैं तुम्हारे आचरण, तुम्हारे भ्रातृप्रेम, तुम्हारे विश्वास, तुम्हारी धर्म-सेवा, तुम्हारे धैर्य से परिचित हूँ।  मैं जानता हूँ कि तुमने इधर पहले से भी अधिक परिश्रम किया है।</span> <sup>20</sup><span class='v-txt'>किन्तु मुझे तुम से यह शिकायत है कि उस स्त्री ईज़बेल को अपने बीच रहने दे रही हो।  वह अपने को नबिया कहती है और अपनी शिक्षा द्वारा मेरे सेवकों को व्यभिचार करने और देवताओं को अर्पित मांस खाने के लिए बहकाती है।</span> <sup>21</sup><span class='v-txt'>मैंने उसे पश्चात्ताप करने का समय दिया, किन्तु वह अपने व्यभिचार के लिए पश्चात्ताप करना नहीं चाहती।</span> <sup>22</sup><span class='v-txt'>देखो, मैं उसे रोग-शय्या पर पटक दूँगा और यदि उसके साथ व्यभिचार करने वाले उसके कर्मों से विमुख नहीं होंगे, तो मैं उन पर घोर विपत्ति ढाऊँगा।</span> <sup>23</sup><span class='v-txt'>मैं उसकी सन्तति को मार डालूँगा और सब कलीसियाएँ यह जान जायेंगी कि मैं वह हूँ, जो हृदयों की थाह लेता है और मैं हर एक को उसके कर्मों का फल दूँगा।</span> <sup>24</sup><span class='v-txt'>थुआतिरा के जो लोग इस शिक्षा को नहीं मानते और शैतान के तथाकथित गहरे भेद नहीं जानते, उन सबों से मैं यह कहता हूँ -  मैं तुम लोगों पर कोई नया बोझ नहीं डालूँगा।</span> <sup>25</sup><span class='v-txt'>जो शिक्षा तुम्हारे पास है, मेरे आने तक उस पर दृढ़ बने रहो।</span> <sup>26</sup><span class='v-txt'>जो विजयी होगा, जो अन्त तक मेरी इच्छा पूरी करता रहेगा, मैं उसे राष्ट्रों पर वह अधिकार प्रदान करूँगा, जिसे मेरे पिता ने मुझे प्रदान किया।</span> <sup>27</sup><span class='v-txt'>वह लौह-दण्ड से राष्टों पर शासन करेगा और उन्हें मिट्टी के पात्रों की तरह चुकनाचूर कर देगा</span> <sup>28</sup><span class='v-txt'>और मैं उसे प्रभात का तारा प्रदान करूँगा।</span> <sup>29</sup><span class='v-txt'>जिसके कान हों, वह सुन ले कि आत्मा कलीसियाओं से क्या कहता है।</span> </p>
+        <div class='nav'><a href='073001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='073003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

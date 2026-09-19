@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योएल - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योएल</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>सियोन में तुरही बजाओ।  मेरे पवित्र पर्वत्र पर खतरे का घण्टा बजा दो।  देश के सभी निवास काँप उठें, क्योंकि प्रभु का दिन आ रहा है, वह निकट आ गया है।</span> <sup>2</sup><span class='v-txt'>वह अंधकार और विषाद का दिन है।  वह बादलों और अन्धेरे का दिन है।  एक बहुसंख्यक और शक्तिशाली सेना काले बादल की तरह पर्वतों पर फैल रही है।  इस प्रकार की सेना न पहले कभी थी और न अनन्त काल तक फिर कभी होगी।</span> <sup>3</sup><span class='v-txt'>उसकी सेना के हरावल में आग भसम करती जा रही है, उसके चन्दावल में ज्वाला धधकती आ रही है।  उसके आने के पहले अदन-वाटिका की तरह देश हरा-भरा था, किन्तु उसके पार होने के बाद उजाडखण्ड हो गया।  टिड्डियों ने कुछ छोड़ा नहीं।</span> <sup>4</sup><span class='v-txt'>वे घोड़ों की तरह दिखाई देती हैं, युद्धाश्वों के समान सरपट दौड़ती हैं।</span> <sup>5</sup><span class='v-txt'>रथों की खडखडाहट-जैसी आवाज से या खूँटियों के जलने की चटचटाहट से वे पर्वत-शिखरों को फाँदती है।  टिड्डी दल मानों युद्ध में तैनात विशाल सेना हैं।</span> <sup>6</sup><span class='v-txt'>उन्हें आते देख कर लोग काँपने लगते हैं, सब के मुख मलिीन हो गये हैं।</span> <sup>7</sup><span class='v-txt'>वे योद्धाओं की तरह टूट पडती हैं, सनिकों की तरह वे दीवारों पर चढती हैं।  वे सब अपने-अपने रास्ते पर बढती आ रही हैं, अपने रास्ते से भटकती नहीं।</span> <sup>8</sup><span class='v-txt'>वे एक दूसरे से टकराती नहीं, वे सीधे चली आती हैं; वे अस्त्र-शस्त्रों की पंक्ति को भेदती हैं और रुकने का नाम तक नहीं लेतीं।</span> <sup>9</sup><span class='v-txt'>वे नगर पर टूट पडती हैं, दीवारों पर चढ जाती हैं।  वे मकानों के ऊपर चढती हैं और चोर की तरह खिडकियों से अन्दर घुस जाती हैं।</span> <sup>10</sup><span class='v-txt'>उनके सामने पृथ्वी भी थरथर काँपती है और आकाश हिलता है।  सूर्य और चन्द्रमा पर अन्धेरा छा जाता है और तारे बुझ गये हैं।</span> <sup>11</sup><span class='v-txt'>प्रभु बुलन्द आवाज़ से अपनी सेना को आज्ञा देता है; उसकी सेना अपार समूह है और अपने महाबल द्वारा आज्ञा पूरी करती है।  प्रभु का दिन अत्यधिक भयंकर है; उस दिन कौन टिक पायेगा?</span> <sup>12</sup><span class='v-txt'>प्रभु यह कहता है, &quot;अब तुम लोग उपवास करो और रोते तथा शोक मनाते हुए, पूरे हृदय से मेरे पास आओ&quot;।</span> <sup>13</sup><span class='v-txt'>अपने वस्त्र फाड कर नहीं, बल्कि हृदय से पश्चात्ताप करो और अपने प्रभु-ईश्वर के पास लौट जाओ; क्योंकि वह करूणामय, दयालु, अत्यन्त सहनशील और दयासागर है और वह सहज की द्रवित हो जाता है।</span> <sup>14</sup><span class='v-txt'>क्या जाने, वह द्रवित हो जाये और तुम्हें आशीर्वाद प्रदान करे।  तब तुम लोग अपने प्रभु-ईश्वर को बलि और तर्पण चढाओगे।</span> <sup>15</sup><span class='v-txt'>सियोन पर्वत पर तुरही बजाओ।  उपवास घोषित करो।</span> <sup>16</sup><span class='v-txt'>सभा की बैठक बुलाओ जनता की इकट्ठा करो; बूढ़ों बालकों और दुधमुँहे बच्चों को भी बुला लो।  दुलहा और दुलहिन अपना कमरा छोड कर चले आयें।</span> <sup>17</sup><span class='v-txt'>प्रभु-ईश्वर की सेवा करने वाले याजक मन्दिर में वेदी के सामने रोते हुए इस प्रकार प्रार्थना करे, &quot;प्रभु! अपनी प्रजा पर दया कर।  अपने लोगों का अपमान न होने दे, राष्टों में उनका उपहास न होने दे गैर-यहूदी यह न कहने पायें कि उनका ईश्वर कहा रह गया&quot;।</span> <sup>18</sup><span class='v-txt'>तब प्रभु ने अपने देश की सुध ली और अपनी प्रजा को बचा लिया।</span> <sup>19</sup><span class='v-txt'>प्रभु ने अपने लोगों की प्रार्थना का यह उत्तर दिया, &quot;देखो, अब मैं तुम्हें अनाज, अंगूरी और तेल प्रदान करूँगा, जिससे तुम तृप्त हो जाओगे; मैं तुम्हें अन्य राष्ट्रों के सामने उपहास का पात्र फिर कभी न बनने दूँगा।</span> <sup>20</sup><span class='v-txt'>मैं उत्तर से आये शत्रु को तुम्हारे यहाँ से हटा कर सूखे उजाडखण्ड में भगा दूँगा; उसके हरावल को पूर्वी समुद्र में और चद्रावल को पश्चिमी समुद्र में डुबा दूँगा।  उस से दुर्गन्ध और सडांध उठेगी; अन्होंने तो महाविनाश किया था।</span> <sup>21</sup><span class='v-txt'>&quot;भूमि; मत डरो; उल्लसित हो कर आनन्द मनाओ; क्योंकि प्रभु ने महान् कार्य किये हैं,</span> <sup>22</sup><span class='v-txt'>खेत के पशुओ; मत डरो; क्योंकि चरागाह हरे हो गये हैं, पेड़ों में फल लग चुके हैं, अंजीर का वृक्ष और दाखलता पूरी-पूरी उपज दे रहे हैं।</span> <sup>23</sup><span class='v-txt'>&quot;सियोन की सन्तान; अपने प्रभ-ईश्वर में आनन्द मनाओ; उसके कृपापूर्वक तुम्हें शरत् की वर्षा प्रदान की, उसने प्रचुर मात्रा में पानी बरसाया, उसने पहले की तरह शरत् और वसन्त की वर्षा भेजी है।</span> <sup>24</sup><span class='v-txt'>खलिहान में अनाज के ढेर लग जायेंगे मटके नयी अंगूरी और तेल से लबालब भर जायेंगे।</span> <sup>25</sup><span class='v-txt'>उडने वाली और फुदकने वाल टिड्डियों, सूँडी और कुतरने वाली टिड्डियों, मेरी विशाल सेना-दल से, जो वर्ष नष्ट हो गये थे, उनके लिए मैं क्षतिपूर्ति कर दूँगा।</span> <sup>26</sup><span class='v-txt'>तुम खा कर तृप्त हो जाओगे और अपने ईश्वर का नाम धन्य कहोगे।  उसने तुम्हारे लिए महान् चमत्कार दिखाये हैं।  मेरी प्रजा फिर कभी निराश नहीं होगी।</span> <sup>27</sup><span class='v-txt'>तुम जान जाओगे कि मैं इस्राएलियों के बीच हूँ, कि मैं तुम्हारा प्रभु-ईश्वर हूँ।  मेरे सदृश कोई ईश्वर नहीं।  मेरी प्रजा फिर कभी निराश नहीं होगी।</span> </p>
+        <div class='nav'><a href='036001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='036003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>1 तिमथी - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>1 तिमथी</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>आत्मा स्पष्ट शब्दों में कहता है कि अन्तिम समय में कुछ लोग विश्वास अस्वीकार करेंगे; क्योंकि वे बहकाने वाले आत्माओं पर और अपदूतों की शिक्षा पर ध्यान देंगे।</span> <sup>2</sup><span class='v-txt'>वे उन कपटी लोगों के पाखण्ड द्वारा भटकाये जायेंगे, जिनके अन्तःकरण पर शैतान की मुहर लग चुकी है,</span> <sup>3</sup><span class='v-txt'>जो विवाह का निषेध करते हैं और कुछ भोज्य वस्तुओं से परहेज़ करने का आदेश देते हैं, यद्यपि ईश्वर ने उन वस्तुओं की सृष्टि इसलिए की कि सत्य जानने वाले विश्वासी धन्यवाद देते हुए उन्हें ग्रहण करें।</span> <sup>4</sup><span class='v-txt'>क्योंकि ईश्वर ने जो कुछ बनाया, वह सब अच्छा है और ऐसा कुछ भी त्याज्य नहीं है, जो धन्यवाद के साथ ग्रहण किया जाता है।</span> <sup>5</sup><span class='v-txt'>वह ईश्वर के वचन और प्रार्थना द्वारा पवित्र हो जाता है।</span> <sup>6</sup><span class='v-txt'>तुम ये सब बातें भाइयो को समझाओ।  इस प्रकार तुम ईसा मसीह के उत्तम सेवक बने रहोगे, और विश्वास के सिद्धान्तों से एवं उस प्रामाणिक शिक्षा से बल ग्रहण करते रहोगे, जिसका तुम ईमानदारी से पालन करते आ रहे हो।</span> <sup>7</sup><span class='v-txt'>लौकिक एवं निस्सार कल्पित कथाओं से दूर रहो और भक्ति की साधना में लगे रहो।</span> <sup>8</sup><span class='v-txt'>शरीर के व्यायाम से कुछ लाभ तो होता है, किन्तु भक्ति से जो लाभ मिलता है वह असीम है; क्योंकि वह जीवन का आश्वासन देती है- इहलोक में भी और परलोक में भी।</span> <sup>9</sup><span class='v-txt'>यह कथन सुनिश्चित और नितान्त विश्वसनीय है।</span> <sup>10</sup><span class='v-txt'>यही कारण है कि हम परिश्रम करते रहते और संघर्ष में लगे रहते हैं; क्योंकि हमने जीवन्त ईश्वर पर भरोसा रखा है, जो सब मनुष्यों का और विशेष रूप से विश्वासियों का मुक्तिदाता है।</span> <sup>11</sup><span class='v-txt'>तुम ये आदेश और यह शिक्षा दिया करो।</span> <sup>12</sup><span class='v-txt'>तुम्हारी कम उम्र के कारण कोई तुम्हारा तिरस्कार न करे। तुम वचन, कर्म, प्रेम, विश्वास और शुद्धता में विश्वासियों के आदर्श बनो।</span> <sup>13</sup><span class='v-txt'>मेरे आने तक धर्मग्रन्थ का पाठ करने और प्रवचन तथा शिक्षा देने में लगे रहो।</span> <sup>14</sup><span class='v-txt'>उस कृपादान की उपेक्षा मत करो, जो तुम में विद्यमान है और तुम्हें, भविष्यवाणी के अनुसार, अध्यक्ष-समुदाय के हस्तारोपण के समय प्राप्त हो गया है।</span> <sup>15</sup><span class='v-txt'>इन बातों का ध्यान रखों और इन में पूर्ण रूप से लीन रहो, जिससे सब लोग तुम्हारी उन्नति देख सकें।</span> <sup>16</sup><span class='v-txt'>तुम इन बातों में दृढ़ बने रहो।  अपने तथा अपनी शिक्षा के विषय में सावधान रहो।  ऐसा करने से तुम अपनी तथा अपने श्रोताओं की मुक्ति का कारण बनोगे।</span> </p>
+        <div class='nav'><a href='061003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='061005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

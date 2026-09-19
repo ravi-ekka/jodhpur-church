@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>पहला इतिहास ग्रन्थ - अध्याय 27</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>पहला इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 27</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यह उन इस्राएलियों की सूची है, जो घरानों के मुखिया, सहस्रपति और शतपति थे, जो वर्ष में एक महीने तक, अपने-अपने पदाधिकारियों के साथ, अपने-अपने विभागों का संचालन करते हुए, राजा की सेवा करते थे।  प्रत्येक विभाग में चैबीस हज़ार व्यक्ति थे।</span> <sup>2</sup><span class='v-txt'>पहले महीने के पहले विभाग का अध्यक्ष ज़ब्दीएल का पुत्र याषोबआम था। उसके विभाग में चैबीस हज़ार व्यक्ति थे।</span> <sup>3</sup><span class='v-txt'>वह पेरेस का वंशज था और पहले महीने में सब सेनाध्यक्षों का प्रधान था।</span> <sup>4</sup><span class='v-txt'>दूसरे महीने के विभाग का अध्यक्ष अहोही दोहय था। उसके विभाग में चैबीस हज़ार व्यक्ति थे।  इस विभाग में शासक मिकलोत निरीक्षक था।</span> <sup>5</sup><span class='v-txt'>तीसरे महीने में तीसरे विभाग का अध्यक्ष याजक यहोयादा का पुत्र बनाया था।  उसके विभाग में चैबीस हज़ार व्यक्ति थे।</span> <sup>6</sup><span class='v-txt'>यह वही बनाया है, जो तीस प्रमुख वीरों में एक था।  वह उनका अध्यक्ष था। उसके विभाग में उसका पुत्र अम्मीज़ाबाद सम्मिलित था।</span> <sup>7</sup><span class='v-txt'>चैथे महीने का चैथा अध्यक्ष योआब का भाई असाएल था।  उसके बाद उसका पुत्र ज़बघा अध्यक्ष हुआ।  उसके विभाग में चैबीस हज़ार व्यक्ति थे।</span> <sup>8</sup><span class='v-txt'>पाँचवें महीने का पाँचवाँ अध्यक्ष यिज्ऱाई शमहूत था।  उसके विभाग में चैबीस हज़ार व्यक्ति थे।</span> <sup>9</sup><span class='v-txt'>छठे महीने का छठा अध्यक्ष तकोआवासी इक्केष का पुत्र ईरा था।  उसके विभाग में चैबीस हजार व्यक्ति थे।</span> <sup>10</sup><span class='v-txt'>सातवें महीने का सातवाँ अध्यक्ष एफ्रईम वालों का पलोनी हेलेस था।  उसके विभाग में चैबीस हज़ार व्यक्ति थे।</span> <sup>11</sup><span class='v-txt'>आठवें महीने का आठवाँ अध्यक्ष ज़ेरहियों का हुषाती सिब्बकय था।  उसके विभाग में चैबीस हज़ार व्यक्ति थे।</span> <sup>12</sup><span class='v-txt'>नौवें महीने का नौवाँ अध्यक्ष बेनयामीन-वंशी अनातोती अबीएजे़र था।  उसके विभाग में चैबीस हज़ार व्यक्ति थे।</span> <sup>13</sup><span class='v-txt'>दसवें महीने का दसवाँ अध्यक्ष ज़ेरहवंशी नटोफ़ावासी महरय था।  उसके विभाग में चैबीस हज़ार व्यक्ति थे।</span> <sup>14</sup><span class='v-txt'>ग्यारहवें महीने का ग्यारहवाँ अध्यक्ष एफ्ऱईमवंशी पिरआतोनवासी बनाया था।  उसके विभाग में चैबीस हज़ार व्यक्ति थे।</span> <sup>15</sup><span class='v-txt'>बारहवें महीने का बारहवाँ अध्यक्ष ओतनीएलवंशी नटोफ़ाती हेलदय था।  उसके विभाग में चैबीस हज़ार व्यक्ति थे।</span> <sup>16</sup><span class='v-txt'>इस्राएली वंशों में ज़िक्री का पुत्र एलीएज़र रूबेन का अध्यक्ष था; माका का पुत्र शफ़ट्या सिमओन का;</span> <sup>17</sup><span class='v-txt'>कमूएल का पुत्र हषब्या लेवी का; सीदोक हारून का;</span> <sup>18</sup><span class='v-txt'>एलीहू, जो दाऊद के भाइयों में एक था, यूदा का; मीकाएल का पुत्र ओम्री इस्साकार का;</span> <sup>19</sup><span class='v-txt'>ओबद्या का पुत्र यिषमाया ज़बुलोन का; अज्ऱीएल का पुत्र यरीमोत नफ़्ताली का;</span> <sup>20</sup><span class='v-txt'>अज़ज़्या का पुत्र होषेआ एफ्ऱईम का; पदाया का पुत्र योएल मनस्से के आधे वंश का;</span> <sup>21</sup><span class='v-txt'>ज़कर्या का पुत्र यिद्दो गिलआदवासी मनस्से के आधे वंश का; अबनेर का पुत्र यासीएल बेनयामीन का;</span> <sup>22</sup><span class='v-txt'>यहोराम का पुत्र अज़रएल दान का।  इस्राएली वंशों के अध्यक्ष ये थे।</span> <sup>23</sup><span class='v-txt'>दाऊद ने उनकी गणना नहीं की, जो बीस वर्ष से कम के थे; क्योंकि प्रभु की प्रतिज्ञा थी कि वह इस्राएलियों को आकाश के तारों की तरह असंख्य बनायेगा।</span> <sup>24</sup><span class='v-txt'>सरूया के पुत्र योआब ने जनगणना प्रारम्भ की थी, परन्तु वह इसे पूरी नहीं कर पाया था - यह इसलिए कि इस्राएलियों को कोप का भागी बनना पड़ा था।  इसके कारण राजा दाऊद के इतिहास-ग्रन्थ में उनकी संख्या का उल्लेख नहीं किया गया।</span> <sup>25</sup><span class='v-txt'>अदीएल का पुत्र असमावेत राजकीय कोषों का अधिकारी था।  उज़्ज़ीया का पुत्र योनातान देहातों, नगरों, गाँवों और गढ़ों के भण्डारों का अधिकारी था।</span> <sup>26</sup><span class='v-txt'>कलूब का पुत्र एज्ऱी खेतों में काम करने वाले मज़दूरों का अधिकारी था।</span> <sup>27</sup><span class='v-txt'>रामावासी शिमई दाखबारियों का और शफ़ामवासी ज़ब्दी अंगूरी का संचय करने वालों का अधिकारी था।</span> <sup>28</sup><span class='v-txt'>गेदेरवासी बाल-हानान निचले प्रदेश में पाये जाने वाले जैतून और गूलर वृक्षों का अधिकारी था और योआश तेल भण्डारों का।</span> <sup>29</sup><span class='v-txt'>शरोनी शिट्रय शारोन के मैदान में चरने वाले ढोरों का और अदलय का पुत्र शाफ़ाट घाटियों के ढोरों का अधिकारी था।</span> <sup>30</sup><span class='v-txt'>इसमाएली ओबीस ऊँटों का और मेरोनोती येहदया गधियों का</span> <sup>31</sup><span class='v-txt'>और हगरी याज़ीज़ भेड़-बकरियों का अधिकारी था।  ये सब राजा दाऊद की धन-सम्पत्ति के कर्मचारी थे।</span> <sup>32</sup><span class='v-txt'>दाऊद का चाचा योनातान, जो मन्त्री था,  विवेकी और शास्त्र का विद्वान था।  हकमानी का पुत्र यहीएल राजपुत्रों का शिक्षक था।  अहीतोफ़ेल राजा का मन्त्री था।</span> <sup>33</sup><span class='v-txt'>अरकी हूषय राजा का मित्र था।</span> <sup>34</sup><span class='v-txt'>अहीतोफ़ेल के बाद बनाया का पुत्र यहोयादा और एबयातर मन्त्री थे।  योआब राजकीय सेना का अध्यक्ष था।</span> </p>
+        <div class='nav'><a href='013026.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='013028.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

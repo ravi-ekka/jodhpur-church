@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 31</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 31</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ग्याहरवें वर्ष के तीसरे महीने के पहले दिन मुझे प्रभु की यह वाणी सुनाई पड़ीः</span> <sup>2</sup><span class='v-txt'>“मानवपुत्र! मिस्र के राजा फ़िराउन और उसके जनसमुदाय से यह कहो- तुम अपनी महानता में किसके सदृश हो?</span> <sup>3</sup><span class='v-txt'>मैं तुम्हारी तुलना लेबानोन के देवदार से करूँगा, जिसकी शाखएँ सुन्दर और छाया जंगल जैसी थी, जो बहुत ऊँचा था, जिसकी चोटी बादलों का स्पर्श करती थी।</span> <sup>4</sup><span class='v-txt'>जलस्त्रोत उसे सींचते थे, अगाध गर्त ने अपनी नदियों को उसे लगाने के स्थान के चारों ओर प्रवाहित कर, अपनी जलधाराओं के वन के सभी वृक्षों के पास भेज कर, उसे ऊँचा बनाया था।</span> <sup>5</sup><span class='v-txt'>अपनी टहनियों को मिलने वाले प्रचुर जल के कारण वह वन के सभ वुक्षों से लम्बा हो गया उसकी शाखाएँ बड़ी और उसकी डालियाँ लंबी हो गयी।</span> <sup>6</sup><span class='v-txt'>आकाश से सभी पक्षियों ने उसकी शाखाओं में अपने घोंसले बनाये उसकी डालियों के नीचे मैदान के सभी पशुओं ने अपने बच्चों को जन्म दिया और उसकी छाया में सभी राष्ट्र निवास करते थे।</span> <sup>7</sup><span class='v-txt'>वह अपनी विशालता में, अपनी शाखाओं के विस्तार में सुन्दर दिखाई देता था; क्योंकि उसकी जडे़ं प्रचुर जलधाराओं तक नीचे चली गयी थीं।</span> <sup>8</sup><span class='v-txt'>ईश्वर की वाटिका के देवदार उसकी समता नहीं कर सकते थे; सनोवर वुक्ष उसकी शाखाओं की बराबरी करने में असमर्थ थे; उसकी शाखाओं की तुलना में चिनार वुक्ष तुच्छ थे।  ईश्वर की वाटिका का कोई भी वृक्ष उसके समान सुन्दर नहीं था।</span> <sup>9</sup><span class='v-txt'>मैंने उसे शाखाओं की विपुलता में सुन्दर बनाया था और अदन के वे सभी वुक्ष, जो ईश्वर की वटिका में थे, उस से ईर्या करते थे।</span> <sup>10</sup><span class='v-txt'>“इसलिए प्रभु-ईश्वर यह कहता है: उसकी ऊँचाई बहुत बढ़ गयी थी, उसकी चोटी बादलों तक पहुँच गयी थी और अपनी ऊचाई के कारण उसका हृदय घमण्ड से भर गया था;</span> <sup>11</sup><span class='v-txt'>इसलएि मैं उसे सब से शक्तिशाली राष्ट्र के हाथ कर दूँगा।  वह उसे निश्चय ही उसकी दुष्टता के अनुरूप दण्ड देगा; मैंने उसका परित्याग कर दिया है।</span> <sup>12</sup><span class='v-txt'>राष्ट्रों में सब से क्रूर विदेशी लोग उसे काट कर छोड़ देंगे।  उसकी शाखाएँ पर्वतों पर और सभी घाटियों में गिर जायेंगी और उसकी टहनियाँ टूट कर देश के सभी जलमार्गों पर पड़ी रहेंगी।  पृथ्वी की सभी जातियाँ उसकी छाया त्याग कर चली जायेंगी।</span> <sup>13</sup><span class='v-txt'>उसके ठूँठ पर आकाश के सभी पक्षी बसेरा करेंगे और उसकी शाखाओं पर मैदान के सभी पशु निवास करने लगेंगे।</span> <sup>14</sup><span class='v-txt'>यह सब इसलिए है कि जलस्रोत के निकट का कोई भी वुक्ष बहुत ऊँचाई तक न बढ़ सके, उसकी चोटी गगनचुम्बी न हो और जल से सिंचित कोई भी वृक्ष ऊँचाई में उसके पास तक न पहुँचे; क्योंकि वे सभी मृत्यु के अधीन कर दिये गये हैं - नश्वर मानवों के बीच अधोलोक के अधीन उन लोगों के साथ, जो गर्त में उतरते हैं।</span> <sup>15</sup><span class='v-txt'>“प्रभु-ईश्वर यह कहता है: जब वह अधोलोक में उतरेगा, तो मैं गर्त से उस पर विलाप कराऊँगा, उसकी नदियों को बहने से रोकूँगा और जलाशयों को सुखा दूँगा।  मैं उसके कारण लेबानोन पर शोक फैलाऊँगा और मैदान के सभी वृक्ष उसके कारण मुरझा जायेंगे।</span> <sup>16</sup><span class='v-txt'>जब मैं उसे उन लोगों के साथ, जो गर्त में उतरते हैं, अधोलोक में ढकेलूँगा, तो उसके गिरने की आवाज से राष्ट्रों को कँपा दूँगा।  अदन के सभी वृक्ष, लबानोन के चुने हुए और सर्वात्तम वृक्ष जो जल से सिंचित होते हैं, अधोलोक में प्रसन्न होंगे।</span> <sup>17</sup><span class='v-txt'>उसके साथ वे लोग भी उनके पास अधोलोक जायेंगे, जिन्हें तलवार के घाट उतारा गया है।  वे, जो राष्ट्रों के बीच उसकी छाया में निवास करते थे, नष्ट हो जायेंगे।</span> <sup>18</sup><span class='v-txt'>तो तुम महिमा और महानता में अदन के वृक्षों में किसके सदृश हो?  तुम अदन के वुक्षों के साथ अधोलोक में ढकेल दिये जाओगे।  तुम बेखतना और तलवार के घाट उतारे हुए लोगों के बीच पड़े रहोगे।  “फिराउन और उसकी विशाल प्रजा का हाल यही होगा। -यह प्रभु-ईश्वर की वाणी है।&#039;&#039;</span> </p>
+        <div class='nav'><a href='033030.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033032.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

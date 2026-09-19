@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>यूदीत - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>यूदीत</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>दूसरे दिन होलोफ़ेरनिस ने अपनी सारी सेना तथा अपने अन्य सब सहायक सैनिकों को बेतूलिया पर आक्रमण करने, पहाड़ी घाटों को जाने वाले मार्गों पर अधिकार करने और इस्राएलियों के विरुद्ध युद्ध छेड़ने की आज्ञा दी।</span> <sup>2</sup><span class='v-txt'>उसके सारे सैनिक उसी दिन चल पड़े।  उसकी सेना में एक लाख सत्तर हज़ार पैदल सैनिक और बारह हज़ार घुड़सवार थे।  उनके साथ बहुत सारा सामान और उनके साथ चलने वाले असैनिकों की बहुत बड़ी संख्या थी।</span> <sup>3</sup><span class='v-txt'>उन्होंने बेतूलिया के सामने के मैदान में जलस्रोत के पास, एक ऐसे क्षेत्र में पड़ाव डाला, तो दोतान की ओर बेलबैन तक चैड़ा और बेतूलिया से एस्द्रालोन के सामने क्यानमो तक लम्बा था।</span> <sup>4</sup><span class='v-txt'>इस्राएली उनकी भारी संख्या देख कर विस्मित हो गये और एक दूसरे से कहने लगे, &quot;अब ये पूरा देश चाट कर साफ़ कर देंगे।  इनका भार बड़े-बड़े पर्वत, घाटियाँ और पहाड़ियाँ भी वहन न कर सकेंगी।&quot;</span> <sup>5</sup><span class='v-txt'>प्रत्येक व्यक्ति ने अपने अस्त्र-शस्त्र हाथ में लिये।  उन्होंने बुर्जों पर आग सुलगायी और रात भर पहरा देते रहे।</span> <sup>6</sup><span class='v-txt'>दूसरे दिन होलोफ़ेरनिस बेतूलिया में रहने वाले इस्राएलियों के देखते-देखते अपने सारे घुड़सवार सैनिकों को बाहर ले गया।</span> <sup>7</sup><span class='v-txt'>उसने उनके नगर की ओर जाने वाले मार्गों का निरीक्षण किया, उनके जलस्रोतों को ढूँढ़-ढूँढ़ कर अपने अधिकार में ले लिया और पहरे के लिए उन पर सैनिक नियुक्त कर दिये।  तब वह स्वयं अपनी सेना के पास लौटा।</span> <sup>8</sup><span class='v-txt'>अब एसाववंशियों के सब मुखिया, मोआबी सेना के सब नेता और समुद्रतट के सेनाध्यक्ष उसके पास जा कर बोले,</span> <sup>9</sup><span class='v-txt'>&quot;हमारे स्वामी हमारी एक बात सुनें, जिससे आपकी सेना की क्षति न हो।</span> <sup>10</sup><span class='v-txt'>इस्राएली अपने भालों पर उतना भरोसा नहीं रखते, बल्कि उन शिखरों का भरोसा रखते हैं, जिन पर वे रहते हैं ; क्योंकि सच पूछिए, तो उनके पर्वत-शिखरों पर पहुँचना सरल नहीं है।</span> <sup>11</sup><span class='v-txt'>स्वामी! इसलिए इन से वैसी लड़ाई मत कीजिए, जैसी खुले युद्धक्षेत्र में होती है और आपकी सेना के एक भी आदमी की मृत्यु नहीं होगी।</span> <sup>12</sup><span class='v-txt'>आप अपनी सेना के प्रत्येक सैनिक को अपने पास सुरक्षित रखते हुए अपने पड़ाव में ही रहें और हम, आपके सेवक, उस स्रोत को अधिकार में कर लें, जो पहाड़ की तलहटी से निकलता है ;</span> <sup>13</sup><span class='v-txt'>क्योंकि बेतूलिया के सभी निवासी वहीं पानी भरते हैं।  इस प्रकार वे प्यासे मर जायेंगे और अपना नगर सौंप देंगे।  इस बीच हम अपने लोगों को ले कर पास वाले पर्वत-शिखरों पर चढ़ जायेंगे और वहाँ पहरा देते हुए पड़े रहेंगे।  नगर से एक भी आदमी नहीं भाग पाये</span> <sup>14</sup><span class='v-txt'>तब वे, उनकी पत्नियाँ और उनके बाल-बच्चे भूखों मर जायेंगे और तलवार के प्रहार से पहले ही अपने नगर की सड़कों पर पड़े रहेंगे।</span> <sup>15</sup><span class='v-txt'>इस प्रकार आप इन्हें इसलिए कठोर दण्ड देंगे कि उन्होंने आपके विरुद्ध विद्रोह किया और आप से सन्धि नहीं की।&quot;</span> <sup>16</sup><span class='v-txt'>होजोफ़ेरनिस और उसके सब सेनापतियों को उनका यह परामर्श अच्छा लगा और उसने उसके अनुसार काम करने का आदेश दिया।</span> <sup>17</sup><span class='v-txt'>अम्मोनियों का एक दल पाँच हज़ार अस्सूरियों के साथ निकल पड़ा और मैदान में उतर कर उसने जलाशयों और इस्राएलियों के जलस्रोतों पर अधिकार कर लिया।</span> <sup>18</sup><span class='v-txt'>इधर एदोमी और अम्मोनी सैनिक ऊपर चढ़ कर दोतान के सामने की पर्वतश्रेणी पर जम गये और अपने आदमियों में से कुछ को दक्षिण और पूर्व की ओर एग्रेबेल के पास भेज दिया, जो मोखमूर नाले पर अवस्थित खुस के पास हैं।  अस्सूरियों की शेष सेना मैदान में पड़ाव में ही रहें और हम, आपके सेवक, उस स्रोत को अधिकार में कर लें, जो पहाड़ की तलहटी से निकलता है;</span> <sup>19</sup><span class='v-txt'>उधर इस्राएली प्रभु, अपने ईश्वर की दुहाई दे रहे थे। उनका साहस घटता जा रहा था; क्योंकि उनके सभी शत्रु उन्हें घेरे थे और उन से बचना असम्भव लग रहा था।</span> <sup>20</sup><span class='v-txt'>अस्सूरियों की समस्त सेना, उनके पैदल सैनिक, रथ और घुड़सवार उन्हें चैतीस दिन तक घेरे पड़े रहे।  बेतूलिया के निवासियों के सारे जलाशय सूखने लगे।</span> <sup>21</sup><span class='v-txt'>और कुण्ड खाली होने लगे। लोग एक दिन भी इच्छा भर पानी नहीं पी सकते थे, क्योंकि उन्हें जल नाप कर दिया जाता था।</span> <sup>22</sup><span class='v-txt'>उनके बाल-बच्चे निर्बल होते जा रहे थे, उनके युवक-युवतियाँ प्यास के मारे मूच्र्छित हो जाते थे।  वे नगर की सड़कों और दरवाज़ों पर निर्जीव पड़े थे ; क्योंकि उन्हें कोई आशा नहीं थी।</span> <sup>23</sup><span class='v-txt'>समस्त जनता उज़्ज़ीया और नगर के अध्यक्षों के पास एकत्रित हो गयी।  युवक, स्त्रियाँ और बच्चे चिल्ला-चिल्ला कर सब नेताओं से कहने लगे,</span> <sup>24</sup><span class='v-txt'>&quot;ईश्वर आपके और हमारे बीच न्याय करे।  आप लोगों ने हम पर बड़ी विपत्ति ढाही है, क्योंकि आपने अस्सूरियों से सन्धि नहीं की।</span> <sup>25</sup><span class='v-txt'>अब हमारा कोई सहायक नहीं रहा।  ईश्वर हमें उनके हाथ दे रहा है।  हम प्यास और घोर विपत्ति के शिकार बन कर उनके सामने निर्जीव पड़े हैं।</span> <sup>26</sup><span class='v-txt'>अब होलोफ़ेरनिस को बुला कर सारे नगर को उ़सकी सेना की लूट का शिकार होने दीजिए।</span> <sup>27</sup><span class='v-txt'>हमारे लिए अच्छा यही है कि हम उनके द्वारा लूटे जायें और उनके दास-दासियाँ भी बन जायें, बल्कि जीवित रहें और अपनी आँखों से अपनी सन्तान की मृत्यु और अपनी पत्नियों और पुत्रों की दयनीय दशा न देखें।</span> <sup>28</sup><span class='v-txt'>हम स्वर्ग एवं पृथ्वी को और अपने पूर्वजों के उस प्रभु ईश्वर को साक्षी बना कर, जो हमारे पूर्वजों के पापों के कारण हमें दण्ड दे रहा है, आप से निवेदन करते हैं कि आप आज हमारा कहना मान लीजिए।&quot;</span> <sup>29</sup><span class='v-txt'>इसके बाद सब विलाप करने लगे और उन्होंने ऊँचे स्वर में प्रभु-ईश्वर की दुहाई दी।</span> <sup>30</sup><span class='v-txt'>उज़्ज़ीया ने उन से कहा, ’भाइयो!  ढारस रखो।  हम पाँच दिन और ठहरेंगे।  इस बीच प्रभु, हमारा ईश्वर अवश्य ही हम पर दया करेगा; क्योंकि वह हमें अन्त तक नहीं छोड़ेगा।</span> <sup>31</sup><span class='v-txt'>यदि इस अवधि में हमें सहायता प्राप्त नहीं होगी, तो मैं तुम्हारा कहना मानूँगा।&quot;</span> <sup>32</sup><span class='v-txt'>तब उसने लोगों को विदा किया-पुरुष अपने नगर के प्राचीरों और बुर्जों पर चले गये; स्त्रियाँ और बच्चे अपने-अपने घर लौटे।  नगर में बड़ी निराशा छा गयी।</span> </p>
+        <div class='nav'><a href='018006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='018008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

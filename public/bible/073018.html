@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रकाशना - अध्याय 18</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रकाशना</h1>
+        <h2>अध्याय 18</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इसके बाद मैंने एक अन्य स्वर्गदूत को स्वर्ग से उतरते देखा।  वह महान् अधिकार से सम्पन्न था और पृथ्वी उसके तेज से प्रदीप्त हो उठी।</span> <sup>2</sup><span class='v-txt'>उसने उंचे स्वर से पुकार कर कहा, &quot;उसका सर्वनाशा हो गया है!  महान् बाबुल का सर्वनाश हो गया है!  वह अपदूतों का डेरा, हर प्रकार के अशुद्ध आत्माओं और हर प्रकार के अशुद्ध एवं घृणित पक्षियों का बसेरा बन गया है;</span> <sup>3</sup><span class='v-txt'>क्योंकि सभी राष्ट्रों ने उसके व्यभिचार की तीखी मदिरा पी ली है, पृथ्वी के राजाओं ने उसके साथ व्यभिचार किया है और पृथ्वी के व्यापारी उसके अपार वैभव से धनी हो गये हैं।&quot;</span> <sup>4</sup><span class='v-txt'>मुझे स्वर्ग से एक अन्य वाणी यह कहते सुनाई पड़ी, &quot;मेरी प्रजा! उस से निकल जाओ! कहीं ऐसा न हो कि तुम उसके पापों के भागी और उसकी विपत्तियों के शिकार बनो!</span> <sup>5</sup><span class='v-txt'>क्योंकि उसके पापों का अम्बार आकाश तक उंचा हो गया है और ईश्वर ने उसके अपराधों का स्मरण किया है।</span> <sup>6</sup><span class='v-txt'>उसने जैसा किया, तुम भी उसके साथ वैसा ही करो। उसके कुकर्मों का दुगुना बदला चुकाओ और उसने जो प्याला दूसरों के लिए भरा है, उस में उसके लिए दुगेना ढाल दो।</span> <sup>7</sup><span class='v-txt'>उसने जितनी डींग मारी और जितना भोग-विलास किया है, उसे उतनी यन्त्रणा और उतना शोक दो।  वह अपने मन में यह कहती है, मैं रानी की तरह सिंहासन पर विराजमान हूँ।  मैं विधवा नहीं हूँ और कभी शोक नहीं मनाउंगी।</span> <sup>8</sup><span class='v-txt'>इसलिए एक ही दिन में उस पर विपत्तियाँ आ पड़ेंगी- मृत्यु, शोक और अकाल।  वह आग में भस्म हो जायेगी; क्योंकि प्रभु-ईश्वर शक्तिशाली है और उसने उसे दोषी ठहराया है।&quot;</span> <sup>9</sup><span class='v-txt'>जब पृथ्वी के राजा, जिन्होंने उसके साथ व्यभिचार और भोग-विलास किया, उसके जलने का धुआं देखेंगे, तो वे रोयेंगे और उस पर विलाप करेंगे।</span> <sup>10</sup><span class='v-txt'>वे उसकी यन्त्रणा से भयभीत हो कर यह कहते हुए दूर ही खड़े रहेंगे, &quot;शोक! तेरे लिए शोक! महानगर! शक्तिशाली नगर बाबुल! तुझे घड़ी भर में ही दण्ड दिया गया है।&quot;</span> <sup>11</sup><span class='v-txt'>पृथ्वी के व्यापारी उस पर रोयेंगे और शोक मनायेंगे, क्योंकि कोई फिर कभी उनका माल नहीं खरीदेगा-</span> <sup>12</sup><span class='v-txt'>सोना, और चांदी, रत्न और मोती; मलमल, बैंगनी, रेशमी और लाल वस्त्र; हर प्रकार की सुगन्धित लकडि़याँ; हाथी-दाँत, बहुमूल्य लकड़ी, काँसे, लोहे और संगमरमर के हर प्रकार के पात्र;</span> <sup>13</sup><span class='v-txt'>दारचीनी, इलायची, धूप, अंगराग और लोबान; मदिरा, तेल, मैदा और गेहूँ; बैल और भेडें; घोड़े और रथ; दास और युद्धबन्दी।</span> <sup>14</sup><span class='v-txt'>तू जिस फल की कामना करती थी, वह तुझ से दूर से हो गया है।  तेरे सारे वैभव और तड़क-भड़क का सर्वनाश हो गया।  तू यह सब फिर नहीं देखेगी।</span> <sup>15</sup><span class='v-txt'>इन वस्तुओं के व्यापारी, जो बाबुल के वैभव से धनी हो गये, उसकी यन्त्रणा से भयभीत हो कर दूर ही खड़े रहेंगे।  वे यह कहते हुए रोयेंगे और शोक मनायेंगे,</span> <sup>16</sup><span class='v-txt'>&quot;शोक! शोक! यह महानगर मलमल, बैंगनी एवं लाल वस्त्र पहने था और स्वर्ण, मणियों एवं मोतियों से विभूषित था।</span> <sup>17</sup><span class='v-txt'>यह सारा वैभव घड़ी भर में ही उजाड़ हो गया।&quot;  सब कप्तान, जलयात्री, नाविक और समुद्र के व्यापारी दूर खड़े रहे</span> <sup>18</sup><span class='v-txt'>और उसके जलने का धुआं देख कर ऊँचे स्वर से बोल उठे, &quot;इस महानगर की बराबरी कौन नगर कर सका?&quot;</span> <sup>19</sup><span class='v-txt'>वे अपने सिर पर धूल डाल कर, रोते और विलाप करते हुए उँचे स्वर से कहते थे, &quot;शोक! शोक! इस नगर के वैभव से जहाज़ के सब मालिक धनी बनी गये।  यह घड़ी भर में ही उजाड़ हो गया।&quot;</span> <sup>20</sup><span class='v-txt'>स्वर्ग! सन्तो! प्रेरितो और नबियो! आनन्द मनाओ, क्योंकि ईश्वर ने उसके विरुद्ध तुम्हें न्याय दिलाया है।</span> <sup>21</sup><span class='v-txt'>तब तक बलवान् स्वर्गदूत ने चक्की के बड़े पाट-जैसा एक पत्थर उठाया और यह कहते हुए समुद्र में फेंका, &quot;महानगर बाबुल इसी वेग से गिरा दिया जायेगा और उसका फिर कभी पता नहीं चलेगा।</span> <sup>22</sup><span class='v-txt'>वीणावादकों और संगीतकारों की, मुरली और तुरही बजाने वालों की आवाज तुझ में फिर कभी सुनाई नहीं पड़ेगी; किसी भी व्यवसाय के कारीगर तुझ में फिर कभी नहीं मिलेंगे।  चक्की की आवाज़ तुझ में फिर कभी सुनाई नहीं पड़ेगी;</span> <sup>23</sup><span class='v-txt'>&quot;दीपक का प्रकाश तुझ में फिर कभी दिखाई नहीं देगा;&quot;वर और वधू का स्वर तुझ में फिर कभी सुनाई पड़ेगा; &quot;क्योंकि तेरे व्यापारी पृथ्वी के अधिपति थे और तूने अपने जादू द्वारा सभी राष्ष्ट्रों को बहकाया।</span> <sup>24</sup><span class='v-txt'>&quot;बाबुल में नबियों, सन्तों और उन सब लोगों का रक्त पाया गया, जिनका पृथ्वी पर वध किया गया था।&quot;</span> </p>
+        <div class='nav'><a href='073017.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='073019.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

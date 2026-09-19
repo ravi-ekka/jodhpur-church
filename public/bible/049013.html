@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 13</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 13</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उस समय कुछ लोग ईसा को उन गलीलियों के विषय में बताने आये, जिनका रक्त पिलातुस ने उनके बलि-पशुओं के रक्त में मिला दिया था।</span> <sup>2</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;क्या तुम समझते हो कि ये गलीली अन्य सब गलीलियों से अधिक पापी थे, क्योंकि उन पर ही ऐसी विपत्ति पड़ी?</span> <sup>3</sup><span class='v-txt'>मैं तुम से कहता हूँ, ऐसा नहीं है; लेकिन यदि तुम पश्चात्ताप नहीं करोगे, तो सब-के-सब उसी तरह नष्ट हो जाओगे।</span> <sup>4</sup><span class='v-txt'>अथवा क्या तुम समझते हो कि सिल़ोआम की मीनार के गिरने से जो अठारह व्यक्ति दब कऱ मर गये, वे येरूसालेम के सब निवासियों से अधिक अपराधी थे?</span> <sup>5</sup><span class='v-txt'>मैं तुम से कहता हूँ, ऐसा नहीं है; लेकिन यदि तुम पश्चात्ताप नहीं करोगे, तो सब-के-सब उसी तरह नष्ट हो जाओगे।&quot;</span> <sup>6</sup><span class='v-txt'>तब ईसा ने यह दृष्टान्त सुनाया, &quot;किसी मनुष्य की दाखबारी में एक अंजीर का पेड़ था।  वह उस में फल खोजने आया, परन्तु उसे एक भी नहीं मिला।</span> <sup>7</sup><span class='v-txt'>तब उसने दाखबारी के माली से कहा, ’देखो, मैं तीन वर्षों से अंजीर के इस पेड़ में फल खोजने आता हूँ, किन्तु मुझे एक भी नहीं मिलता।  इसे काट डालो।  यह भूमि को क्यों छेंके हुए हैं?’</span> <sup>8</sup><span class='v-txt'>परन्तु माली ने उत्तर दिया, ’मालिक! इस वर्ष भी इसे रहने दीजिए।  मैं इसके चारों ओर खोद कर खाद दूँगा।</span> <sup>9</sup><span class='v-txt'>यदि यह अगले वर्ष फल दे, तो अच्छा, नहीं तो इसे काट डालिएगा’।&quot;</span> <sup>10</sup><span class='v-txt'>ईसा विश्राम के दिन किसी सभागृह में शिक्षा दे रहे थे।</span> <sup>11</sup><span class='v-txt'>वहाँ एक स्त्री आयी, जो अपदूत लग जाने के कारण अठारह वर्षों से बीमार थी।  वह एकदम झुक गयी थी और किसी भी तरह सीधी नहीं हो पाती थी।</span> <sup>12</sup><span class='v-txt'>ईसा ने उसे देख कर अपने पास बुलाया और उस से कहा, &quot;नारी! तुम अपने रोग से मुक्त हो गयी हो&quot;</span> <sup>13</sup><span class='v-txt'>और उन्होंने उस पर हाथ रख दिये।  उसी क्षण वह सीधी हो गयी और ईश्वर की स्तुति करती रही।</span> <sup>14</sup><span class='v-txt'>सभागृह का अधिकारी चिढ़ गया, क्योंकि ईसा ने विश्राम के दिन उस स्त्री को चंगा किया था।  उसने लोगों से कहा, &quot;छः दिन हैं, जिन में काम करना उचित है। इसलिए उन्हीं दिनों चंगा होने के लिए आओ, विश्राम के दिन नहीं।&quot;</span> <sup>15</sup><span class='v-txt'>परन्तु प्रभु ने उसे उत्तर दिया, &quot;ढोंगियो! क्या तुम में से हर एक विश्राम के दिन अपना बैल या गधा थान से खोल कर पानी पिलाने नहीं ले जाता?</span> <sup>16</sup><span class='v-txt'>शैतान ने इस स्त्री, इब्राहीम की इस बेटी को इन अठारह वर्षों से बाँध रखा था, तो क्या इसे विश्राम के दिन उस बन्धन से छुड़ाना उचित नहीं था?&quot;</span> <sup>17</sup><span class='v-txt'>ईसा के इन शब्दों से उनके सब विरोधी लज्जित हो गये; लेकिन सारी जनता उनके चमत्कार देख कर आनन्दित होती थी।</span> <sup>18</sup><span class='v-txt'>ईसा ने कहा, &quot;ईश्वर का राज्य किसके सदृश है?  मैं इसकी तुलना किस से करूँ?</span> <sup>19</sup><span class='v-txt'>वह उस राई के दाने के सदृश है, जिसे ले कर किसी मनुष्य ने अपनी बारी में बोया।  वह बढ़ते-बढ़ते पेड़ हो गया और आकाश के पंछी उसकी डालियों में बसेरा करने आये।&quot;</span> <sup>20</sup><span class='v-txt'>उन्होंने फिर कहा, &quot;मैं ईश्वर के राज्य की तुलना किस से करूँ?</span> <sup>21</sup><span class='v-txt'>वह उस ख़मीर के सदृश है, जिसे ले कर किसी स्त्री ने तीन पंसेरी आटे में मिलाया और सारा आटा ख़मीर हो गया।&quot;</span> <sup>22</sup><span class='v-txt'>ईसा नगर-नगर, गाँव-गाँव, उपदेश देते हुए येरूसालेम के मार्ग पर आगे बढ़ रहे थे।</span> <sup>23</sup><span class='v-txt'>किसी ने उन से पूछा, &quot;प्रभु! क्या थोड़े ही लोग मुक्ति पाते हैं?’ इस पर ईसा ने उन से कहा,</span> <sup>24</sup><span class='v-txt'>&quot;सँकरे द्वार से प्रवेश करने का पूरा-पूरा प्रयत्न करो, क्योंकि मैं तुम से कहता हूँ - प्रयत्न करने पर भी बहुत-से लोग प्रवेश नहीं कर पायेंगे।</span> <sup>25</sup><span class='v-txt'>जब घर का स्वामी उठ कर द्वार बन्द कर चुका होगा और तुम बाहर रह कर द्वार खटखटाने और कहने लगोगे, ’प्रभु! हमारे लिए खोल दीजिए’, तो वह तुम्हें उत्तर देगा, ’मैं नहीं जानता कि तुम कहाँ के हो’।</span> <sup>26</sup><span class='v-txt'>तब तुम कहने लगोगे, ’हमने आपके सामने खाया-पीया और आपने हमारे बाज़ारों में उपदेश दिया’।</span> <sup>27</sup><span class='v-txt'>परन्तु वह तुम से कहेगा, ’मैं नहीं जानता कि तुम कहाँ के हो।  कुकर्मियो! तुम सब मुझ से दूर हटो।’</span> <sup>28</sup><span class='v-txt'>जब तुम इब्राहीम, इसहाक, याकूब और सभी नबियों को ईश्वर के राज्य में देखोगे, परन्तु अपने को बहिष्कृत पाओगे, तो तुम रोओगे और दाँत पीसते रहोगे।</span> <sup>29</sup><span class='v-txt'>पूर्व तथा पश्चिम से और उत्तर तथा दक्षिण से लोग आयेंगे और ईश्वर के राज्य में भोज में सम्मिलित होंगे।</span> <sup>30</sup><span class='v-txt'>देखो, कुछ जो पिछले हैं, अगले हो जायेंगे और कुछ जो अगले हैं, पिछले हो जायेंगे।&quot;</span> <sup>31</sup><span class='v-txt'>उसी समय कुछ फ़रीसियों ने आ कर उन से कहा, &quot;विदा लीजिए और यहाँ से चले जाइए, क्योंकि हेरोद आप को मार डालना चाहता है&quot;।</span> <sup>32</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;जा कर उस लोमड़ी से कहो-मैं आज और कल नरकदूतों को निकालता और रोगियों को चंगा करता हूँ और तीसरे दिन मेरा कार्य समापन तक पहुँचा दिया जायेगा।</span> <sup>33</sup><span class='v-txt'>आज, कल और परसों मुझे यात्रा करनी है, क्योंकि यह हो नहीं सकता कि कोई नबी येरूसालेम के बाहर मरे।</span> <sup>34</sup><span class='v-txt'>“येरूसालेम! येरूसालेम! तू नबियों की हत्या करता और अपने पास भेजे हुए लोगों को पत्थरों से मार देता है।  मैंने कितनी बार चाहा कि तेरी सन्तान को एकत्र कर लूँ, जैसे मुर्गी अपने चूज़ों को अपने डैनों के नीचे एकत्र कर लेती है, परन्तु तुम लोगों ने इनकार कर दिया।</span> <sup>35</sup><span class='v-txt'>देखो, तुम्हारा घर उजाड़ छोड़ दिया जायेगा।  मैं तुम से कहता हूँ, तुम मुझे तब तक नहीं देखोगे, जब तक तुम यह न कहोगे, ’धन्य हैं वह, जो प्रभु के नाम पर आते हैं’!“</span> </p>
+        <div class='nav'><a href='049012.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049014.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

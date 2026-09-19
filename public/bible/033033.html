@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 33</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 33</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मुझे प्रभु की यह वाणी सुनाई पड़ीः</span> <sup>2</sup><span class='v-txt'>“मानवपुत्र! अपने लोगों से बात कर यह कहो- यदि मैं किसी देश पर तलवार भेजता हूँ और उस देश के लोग अपने बीच से किसी व्यक्ति को चुन कर उसे अपना पहरेदार नियुक्त करते हैं:</span> <sup>3</sup><span class='v-txt'>यदि वह व्यक्ति देश पर तलवार आते देखता और तुरही बजा कर लोगों को चेतावनी देता है,</span> <sup>4</sup><span class='v-txt'>तो यदि तुरही की आवाज़ सुन कर कोई चेतावनी पर ध्यान नहीं देता और तलवार आ कर उसका वध कर देती हैं, तो अपनी मृत्यु के लिए वह स्वयं उत्तरदायी होगा;</span> <sup>5</sup><span class='v-txt'>उसने तुरही की आवाज़ सुनकर भी चेतावनी पर ध्यान नहीं दिया।  अपनी मृत्यु के लिए वह स्वयं उत्तरदायी होगा; किन्तु यदि उसने चेतावनी पर ध्यान दिया होता, तो उसका जीवन सुरक्षित रह जाता।</span> <sup>6</sup><span class='v-txt'>पर यदि वह पहरेदार तलवार आते देख कर भी तुरही नहीं बजाता, जिससे लोग सावधान हो जायें और तलवार आ कर किसी का वध कर देती है, तो भले ही वह अपने पाप के कारण मर जायेगा, किन्तु वह पहरेदार उनकी मृत्यु के लिए उत्तरदायी होगा।</span> <sup>7</sup><span class='v-txt'>“मानवपुत्र! मैंने तुम को इस्राएल के घराने का पहरेदार नियुक्त किया है।  तुम मेरी वाणी सुनोगे और इस्रएलियों को मेरी ओर से चेतावनी दोगे।</span> <sup>8</sup><span class='v-txt'>यदि मैं किसी दुष्ट से कहूँ, ’दुष्ट तू मर जायेगा’ और तुम कुमार्ग छोड़ने के लिए उसे चतावनी नहीं दोगे, तो वह अपने पाप के कारण मर जायेगा, किन्तु तुम उसकी मृत्यु के लिए उत्तरदायी होगे।</span> <sup>9</sup><span class='v-txt'>और यदि तुमने कुमार्ग छोड़ने के लिए उसे चेतावनी दी और उसने नहीं छोड़ा, तो वह अपने पाप के कारण मर जायेगा, किन्तु तुम्हारा जीवन सुरक्षित रह जायेगा।</span> <sup>10</sup><span class='v-txt'>“मानवपुत्र! इस्राएल के घराने से तुम यह कहोगे- तुम लोगों ने कहा हैः ’हम अपने अपराधों और पापों के बोझ से दब गये हैं और हम उनके कारण नष्ट हो रहे हैं, तो हम कैसे जीवित रह सकते हैं?“</span> <sup>11</sup><span class='v-txt'>उन से कहोगे-प्रभु-ईश्वर यह कहता हैं: अपने अस्तित्व की शपथ! मुझे दुष्ट की मृत्यु से प्रसन्नता नहीं होती, बल्कि इस से होती है कि दुष्ट अपना कुमार्ग छोड़ दे और जीवित रहे।  अपना दुराचरण छोड़ दो, छोड़ दो; क्योंकि इस्राएल के घराने! तुम क्यों मर जाते?</span> <sup>12</sup><span class='v-txt'>“मानवपुत्र! तुम अपने लोगों से यह कहोगे- धर्मी की धार्मिकता, उसके पाप करने पर, उसे नहीं बचा पायेगी और दुष्ट की दुष्टता, उसके दुष्टता छोड़ देने पर, उसके विनाश का कारण नहीं बनेगी और पाप करने पर धर्मी अपनी धर्मिकता के कारण जीवित नहीं रह सकेगा।</span> <sup>13</sup><span class='v-txt'>यद्यपि मैं धर्मी से कहता हूँ कि वह अवश्य जीवित रहेगा, फिर भी यदि वह अपनी धार्मिकता के भरोसे पाप करता है, तो उसका कोई भी सत्कर्म स्मरण नहीं रखा जायेगा, बल्कि उस पाप के कारण, जो उसने किया है, उसकी मृत्यु हो जायेगी।</span> <sup>14</sup><span class='v-txt'>यद्यपि मैं दुष्ट से यह कहता हूँ, ’तुम अवश्य मरोगे’, फिर भी यदि वह कुमार्ग छोड़ देता और न्याय और सत्य का आचरण करता है;</span> <sup>15</sup><span class='v-txt'>यदि दुष्ट बन्धक लौटा देता, लूटा हुआ सामान वापस कर देता, जीवन प्रदान करने वाले नियमों का पालन करता और पाप का परित्याग करता है, तो वह निश्चय ही जीवित रहेगा, वह नहीं मरेगा।</span> <sup>16</sup><span class='v-txt'>उसके द्वारा किये गये पापों में से किसी को भी याद नहीं रखा जायेगा।  उसने न्याय और सत्य का आचरण किया है; वह अवश्य जीवित रहेगा।</span> <sup>17</sup><span class='v-txt'>“तब भी तुम्हारे लोग यह कहते हैं, ’प्रभु का मार्ग न्यायसंगत नहीं है’ जब कि स्वयं उनका मार्ग न्यायसंगत नहीं है।</span> <sup>18</sup><span class='v-txt'>जब धर्मी धर्मिकता छोड़ कर पाप करता, तो इसके कारण उसकी मृत्यु हो जायेगी।</span> <sup>19</sup><span class='v-txt'>किन्तु यदि दुष्ट कुमार्ग छोड़ देता और न्याय और सत्य का आचरण करता है, तो वह इसके कारण जीवित रेहेगा।</span> <sup>20</sup><span class='v-txt'>तब भी तुम यह कहते हो, ’प्रभु का न्याय न्यायसंगत नहीं है’।  इस्राएल के घराने!  मैं तुम लोगों में से प्रत्येक का उसके आचरण के अनुसार न्याय करूँगा।“</span> <sup>21</sup><span class='v-txt'>हमारे निर्वासन के बारहवें वर्ष के दसवें महीने के पाँचवे दिन एक व्यक्ति, जो येरूसालेम से भाग निकला था, मेरे पास आया और यह बोला, “नगर का पतन हो गया है“।</span> <sup>22</sup><span class='v-txt'>उस भगोड़े के आने से पहले ही सन्ध्या समय प्रभु का हाथ मुझ पर पड़ चुका था और उसने उस आदमी के आने से पहले ही प्रातः काल मेरा मुँह खोल दिया और मेरा गूँगापन जाता रहा।</span> <sup>23</sup><span class='v-txt'>मुझे प्रभु की यह वाणी सुनाई पड़ीः</span> <sup>24</sup><span class='v-txt'>“मानवपुत्र! इस्राएल देश के इन उजाड़खण्डों के निवासी यह कहा करते है, ’इब्राहीम तो अकेले थे, तब भी उन्होंने इस देश पर अधिकार कर लिया।  किन्तु हमारी संख्या तो बहुत अधिक है; निश्चय ही यह देश हमें अधिकार में करने के लिए मिला है।’</span> <sup>25</sup><span class='v-txt'>इसलिए उन लोगों से यह कहो- प्रभु-ईश्वर यह कहता हैः तुम रक्त-सहित मांस खाते हो, अपनी देवमूर्तियों पर भरोसा करते और रक्त बहाते हो।  क्या तब भी तुम इस देश पर अधिकार करते?</span> <sup>26</sup><span class='v-txt'>तुम तलवार उठा लेते हो।  तुम घृणित कार्य करते हो और तुम में से प्रत्येक अपने पडोसी की पत्नी का शील भंग करता है।  क्या तब भी तुम इस देश पर अधिकार करते?</span> <sup>27</sup><span class='v-txt'>“उन से यह कहो- प्रभु-ईश्वर यह कहता हैः अपने अस्तित्व की शपथ!  वे लोग, जो इन उजाड़खण्डों में निवास करते हैं, निश्चित ही तलवार के घाट उतारे जायेंगे और मैं उस व्यक्ति को, जो खुले मैदान में निवास करता है, जानवरों का आहार बनने दूँगा और वे लोग, जो किलों और गुफाओं में निवास करते हैं, महामारी से मरेंगे।</span> <sup>28</sup><span class='v-txt'>मैं देश को निर्जन और उजाड़ बना दूँगा, उसकी शक्ति का गर्व समाप्त हो जायेगा और इस्राएल के पर्वत इतने उजाड़ हो जायेंगे कि उन से हो कर कोई नहीं गुजरेगा।</span> <sup>29</sup><span class='v-txt'>जब मैं उनके द्वारा किये हुए वीभत्स कर्मों के कारण देश को निर्जन और उजाड़ बना दूँगा, तब वे यह समझ जायेंगे कि मैं ही प्रभु हूँ।</span> <sup>30</sup><span class='v-txt'>“मानवपुत्र! तुम्हारे देशवासी घरों की दीवारों और दरवाजों के सामने तुम्हारी चर्चा करते हैं।  वे एक दूसरे से कहते हैं, ’चल कर सुनो कि प्रभु की वाणी कया है’।</span> <sup>31</sup><span class='v-txt'>इसके बाद वे तुम्हारे पास उसी प्रकार आते हैं, जिस प्रकार लोग आया करते हैं और वे मेरी प्रजा की तरह तुम्हारे सामने बैठते हैं तथा तुम्हारी वाणी सुनते, किन्तु उस पर नहीं चलतेः क्योंकि वे मुह से मीठी बातें करते हैं, लेकिन उनका हृदय स्वार्थ में लिप्त है।</span> <sup>32</sup><span class='v-txt'>देखो तुम उनकी दृष्टि में उस व्यक्ति की तरह हो, जो मधुर स्वर में प्रेमगीत गाता और निपुणता से वाद्ययंत्र बजाता है; क्योंकि वे तुम्हारी वाणी सुनते, किन्तु उस पर नहीं चलते।</span> <sup>33</sup><span class='v-txt'>जब यह पूरा होगा- और यह अवश्य पूरा होगा - तो वे यह समझ जायेंगे कि उनके बीच एक नबी विद्यमान था।</span> </p>
+        <div class='nav'><a href='033032.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033034.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>सफ़न्याह - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>सफ़न्याह</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यूदा के राजा, आमोन के पुत्र योशीया के दिनों में कूशी के पुत्र सफन्याह को प्रभु की वाणी प्राप्त हुई।  कूशी गदल्या का पुत्र था, गदल्या अमर्या का और अमर्या हिज़कीया का था।</span> <sup>2</sup><span class='v-txt'>यह प्रभु-ईश्वर की वाणी हैः मैं पृृथ्वीतल से सब कुछ नष्ट कर दूँगा।  क्या मनुष्य, क्या पशु सब को मैं नष्ट कर दूँगा, आकाश के पक्षियों और समुद्र की मछलियों को भी नष्ट कर दूँगा।</span> <sup>3</sup><span class='v-txt'>मैं दुर्जनों को चित करने वाला हूँ; और पृथ्वीतल पर मनुष्यजाति का नामोनिशान नहीं रहेगा।</span> <sup>4</sup><span class='v-txt'>मैं यूदा के विरुद्ध अपना हाथ उठाऊँगा और येरूसालेम के सभी निवासियों पर भी।  मैं यहाँ से बाल-देवता का सर्वथा उन्मूलन करूँगा; उसका कुछ भी शेष नहीं रहेगा।  मैं उसके पुजारियों को भी मिटा दूँगा।</span> <sup>5</sup><span class='v-txt'>वे तो छत पर जा कर तारामण्डल के सामने साष्टांग प्रमाण करते हैं या प्रभु-ईश्वर को दण्डवत् करके मिलकोम देव की शपथ खाते हैं।</span> <sup>6</sup><span class='v-txt'>वे प्रभु के भक्त नहीं हैं, वरन् उस से विमुख हो गये हैं और उसे स्मरण नहीं करते।</span> <sup>7</sup><span class='v-txt'>प्रभु-ईश्वर के सामने मौन रहो।  प्रभु का दिन आ रहा है।  प्रभु-ईश्वर बलि चढाने की तैयारी कर चुका है और उसने अपने अतिथियों का शुद्धीकरण कर लिया है।</span> <sup>8</sup><span class='v-txt'>प्रभु कहता हैः बलि के दिन मैं मंत्रियों, राजकुमारों और विदेशी ढंग से कपडे पहनने वालों को दण्ड दूँगा।</span> <sup>9</sup><span class='v-txt'>उस दिन मैं उन सब को दण्ड दूगा, जो ड्योढ़ी लाँघने की रीति संपन्न करते हैं और जो प्रभु के घर में हिंसा और छल-कपट करते हैं।</span> <sup>10</sup><span class='v-txt'>यह प्रभु-ईश्वर की वाणी हैः उस दिन मत्स्य-द्वार चीत्कार सुनाई देगा, नये मुहल्ले में रोना-धोना मच जायेगा, टीलों पर धमाका सुनाई देगा।</span> <sup>11</sup><span class='v-txt'>खरल मुहल्ले के निवासियो! चिल्लाओ।  सब व्यापारियों का विनाश हो गया है और चाँदी तोलने वालों का काम तमाम हो गया है।</span> <sup>12</sup><span class='v-txt'>उस समय मैं बत्तियाँ ले कर येरूसालेम की तलाशी ले लूँगा और उन को दण्ड दूँगा, जो अधिक आत्मविश्वास के कारण मन-ही-मन कहते हैं, &quot;प्रभु-ईश्वर न भला, न ही बुरा कर सकता है&quot;।</span> <sup>13</sup><span class='v-txt'>तभी उनकी सम्पत्ति लूट ली जायेगी और उनके घरबार नष्ट हो जायेंगे।  वे मकान बनायेंगे, किन्तु उनमें रह नहीं पायेंगे।  वे दाखबारियाँ लगा देंगे, किन्तु अंगूरी नहीं पी पायेंगे।</span> <sup>14</sup><span class='v-txt'>प्रभु का यह भयानक दिन निकट हैः वह निकट है और शीघ्र आ पहुँचेगा।  कितना निष्ठुर है प्रभु का दिन, वीर योद्धा भी भय से चिल्लायेंगे।</span> <sup>15</sup><span class='v-txt'>वह दिन प्रकोप का दिन है, कष्ट और पीडा का दिन, विध्वंस और विनाश का दिन, अन्धकार और विषाद का दिन।  काले-काले बादल उमडेंगे, और सभी किलाबन्द नगरों</span> <sup>16</sup><span class='v-txt'>तथा ऊँचे-ऊँचे बुर्जों के विरुद्ध रणभेरी और युद्ध के नारे सुनाई पडेंगे।</span> <sup>17</sup><span class='v-txt'>मैं मनुष्यों पर इतनी घोर विपत्ति ढा दूँगा कि वे अन्धों की तरह भटकते फिरेंगे- उन्होंने तो प्रभु-ईश्वर के विरुद्ध पाप किया था- उनका खून धूल की तरह छिडकाया जायेगा और उनकी लाशें खाद की तरह पडी रहेंगी।</span> <sup>18</sup><span class='v-txt'>न उनका सोना, न उनकी चाँदी उन्हें बचा सकेगी।  प्रभु-ईश्वर के प्रकोप के दिन समस्त पृथ्वी उसकी क्रोधाग्नि में जल कर भस्म हो जायेगी।  वह तो पृथ्वी के सब निवासियों का भीषण अन्त करने वाला है।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='043002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

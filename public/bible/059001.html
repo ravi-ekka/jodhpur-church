@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>1 थेसलनीकियों - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>1 थेसलनीकियों</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>पिता-परमेश्वर और प्रभु ईसा मसीह पर आधारित थेसलनीकियों की कलीसिया के नाम पौलुस, सिल्वानुस और तिमथी का पत्र।  आप लोगों को अनुग्रह तथा शान्ति!</span> <sup>2</sup><span class='v-txt'>(2-3) जब-जब हम आप लोगों को अपनी प्रार्थनाओं में याद करते हैं, तो हम हमेशा आप सब के कारण ईश्वर को धन्यवाद देते है।  आपका सक्रिय विश्वास, प्रेम से प्रेरित आपका परिश्रम तथा हमारे प्रभु ईसा मसीह पर आपका अटल भरोसा- यह सब हम अपने ईश्वर और पिता के सामने निरन्तर स्मरण करते हैं।</span> <sup>4</sup><span class='v-txt'>भाइयो!  ईश्वर आप को प्यार करता है।  हम जानते हैं कि ईश्वर ने आप को चुना है,</span> <sup>5</sup><span class='v-txt'>क्योंकि हमने निरे शब्दों द्वारा नहीं, बल्कि सामर्थ्य, पवित्र आत्मा तथा दृढ़ विश्वास के साथ आप लोगों के बीच सुसमाचार का प्रचार किया।  आप लोग जानते हैं कि आपके कल्याण के लिए हमारा आचरण आपके यहाँ कैसा था।</span> <sup>6</sup><span class='v-txt'>आप लोगों ने हमारा तथा प्रभु का अनुसरण किया और घोर कष्टों का सामना करते हुए पवित्र आत्मा की प्रेरणा से आनन्दपूर्वक सुसमाचार स्वीकार किया।</span> <sup>7</sup><span class='v-txt'>इस प्रकार आप मकेदूनिया तथा अखै़या के सब विश्वासियों के लिए आदर्श बन गये।</span> <sup>8</sup><span class='v-txt'>आप लोगों के यहाँ से प्रभु का सुसमाचार न केवल मकेदूनिया तथा अखैया में फैला, बल्कि ईश्वर में आपके विश्वास की चर्चा सर्वत्र हो रही है।  हमें कुछ नहीं कहना है।</span> <sup>9</sup><span class='v-txt'>लोग स्वयं हमें बताते है।  कि आपके यहाँ हमारा कैसा स्वागत हुआ और आप किस प्रकार देवमूर्तियाँ छोड़ कर ईश्वर की ओर अभिमुख हुए,</span> <sup>10</sup><span class='v-txt'>जिससे आप सच्चे तथा जीवन्त ईश्वर के सेवक बनें और उसके पुत्र ईसा की प्रतीक्षा करें, जिन्हें ईश्वर ने मृतकों में से जिलाया।  यही ईसा स्वर्ग से उतरेंगे और हमें आने वाले प्रकोप से बचायेंगे।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='059002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

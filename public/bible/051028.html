@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रेरित-चरित - अध्याय 28</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रेरित-चरित</h1>
+        <h2>अध्याय 28</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>बच जाने के बाद ही हमें पता चला कि टापू का नाम मेलीता है।</span> <sup>2</sup><span class='v-txt'>वहाँ के निवासियों ने हमारे साथ बड़ा अच्छा व्यवहार किया।  पानी बरसने लगा था और ठण्ड पड़ रही थी, इसलिए उन्होंने आग जला कर हम सबों का स्वागत किया।</span> <sup>3</sup><span class='v-txt'>पौलुस लकडि़यों का गट्ठा बटोर कर आग पर रख ही रहा था कि एक साँप ताप के कारण उस में से निकल कर उसके हाथ से लिपट गया।</span> <sup>5</sup><span class='v-txt'>पौलुस ने साँप को आग में झटका दिया और उसे कोई हानि नहीं हुई।</span> <sup>6</sup><span class='v-txt'>वे समझ रहे थे कि वह सूज जायेगा या अचानक ढेर हो जायेगा।  जब देर तक प्रतीक्षा करने के बाद वे यह देख रहे थे कि इसे कोई हानि नहीं हो रही है, तो वे अपना मन बदल कर कहने लगे कि यह देवता है।</span> <sup>7</sup><span class='v-txt'>उस स्थान के पास टापू के मुखिया पुब्लियुस की भूमि थी।  उसने हमारा स्वागत किया और तीन दिन तक अपने यहाँ हमारा आतिथ्य-सत्कार किया।</span> <sup>8</sup><span class='v-txt'>उसी समय पुब्लियुस का पिता बुख़ार और पेचिश से पीड़ित हो कर पलंग पर पड़ा हुआ था।  पौलुस ने उसके पास जा कर प्रार्थना की और उस पर हाथ रख कर उस को अच्छा कर दिया।</span> <sup>9</sup><span class='v-txt'>इसके बाद टापू के अन्य रोगी भी आये और अच्छे हो गये।</span> <sup>10</sup><span class='v-txt'>इसलिए लोगों ने हमारा बहुत सम्मान किया और जब हम वहाँ से चलने लगे, तो जो कुछ हमें जरूरी था, उन्होंने वह सब जहाज़ पर रख दिया।</span> <sup>11</sup><span class='v-txt'>हम तीन महीने बाद सिकन्दरिया के मिथुन नामक जहाज़ पर सवार हो कर चल पड़े।  वह जहाज़ जाड़े भर टापू में रूका रहा।</span> <sup>12</sup><span class='v-txt'>हम सुरकूसा में लंगर डाल कर तीन दिन वहाँ रहे।</span> <sup>13</sup><span class='v-txt'>हम वहाँ से किनारे-किनारे चल कर रेजियम आये।  दूसरे दिन दक्षिणी हवा चलने लगी, इसलिए हम एक दिन बाद पुतिओली पहुँचे।</span> <sup>14</sup><span class='v-txt'>वहाँ भाइयों से भेंट हुई और हम उनके अनुरोध पर सात दिन उसके साथ रहे।  इसके बाद हम रोम की ओर चल पड़े।</span> <sup>15</sup><span class='v-txt'>वहाँ के भाई, हमारे आगमन का समाचार सुन कर, अप्पियुस के चैक और ’तीन सराय’ नामक स्थान तक हमारा स्वागत करने आये।  उन्हें देख कर पौलुस ने ईश्वर को धन्यवाद दिया और उसकी हिम्मत बँध गयी।</span> <sup>16</sup><span class='v-txt'>जब हम रोम पहुँचे, तो पौलुस को यह अनुमति मिली की वह पहरा देने वाले सैनिक के साथ जहाँ चाहे, रह सकता है।</span> <sup>17</sup><span class='v-txt'>तीन दिन बाद पौलुस ने प्रमुख यहूदियों को अपने पास बुलाया और उनके एकत्र हो जाने पर उन से कहा, भाइयो! मैंने न तो राष्ट्र के विरुद्ध कोई अपराध किया और न पूर्वजों की प्रथाओं के विरुद्ध, फिर भी मुझे बन्दी बनाया और येरूसालेम में रोमियों के हवाले कर दिया गया है।</span> <sup>18</sup><span class='v-txt'>वे सुनवाई के बाद मुझे रिहा करना चाहते थे, क्योंकि मैंने प्राणदण्ड के योग्य कोई अपराध नहीं किया था।</span> <sup>19</sup><span class='v-txt'>किंतु जब यहूदी इसका विरोध करने लगे, तो मुझे कैसर से अपील करनी पड़ी, यद्यपि मुझे अपने राष्ट्र पर कोई अभियोग नहीं लगाना था।</span> <sup>20</sup><span class='v-txt'>इसलिए मैंने आप लोगों से मिलने और बातें करने का निवेदन किया, क्योंकि इस्राएल की आशा के कारण मैं जंजीर पहने हूँ।&quot;</span> <sup>21</sup><span class='v-txt'>उन्होंने पौलुस से कहा, &quot;हम लोगों को यहूदियों से आपके विषय में कोई पत्र नहीं मिला और न वहाँ से आये हुए किसी भाई ने आपका कोई परिचय दिया या आपकी बुराई की।</span> <sup>22</sup><span class='v-txt'>किन्तु हम आप से आपके विचार सुनना चाहते हैं, क्योंकि हमें मालूम है कि इस सम्प्रदाय का सर्वत्र विरोध होता है।</span> <sup>23</sup><span class='v-txt'>इसलिए वे, पौलुस के साथ एक दिन निश्चित कर, और बड़ी संख्या में उसके यहाँ एकत्र हुए।  पौलुस सुबह से शाम तक उन्हें समझाता तथा ईश्वर के राज्य के विषय में साक्ष्य देता रहा और मूसा-संहिता तथा नबियों के आधार पर उन में ईसा के प्रति विश्वास उत्पन्न करने का प्रयत्न करता रहा।</span> <sup>24</sup><span class='v-txt'>उन में कुछ पौलुस के तर्क मान गये और कुछ अविश्वासी बन रहे।</span> <sup>25</sup><span class='v-txt'>जब वे आपस में सहमत नहीं हुए और विदा होने लगे तो पौलुस ने उन से यह अन्तिम बात कही, &quot;पवित्र आत्मा ने नबी इसायस के मुख से आप लोगों के पूर्वजों से ठीक ही कहा:</span> <sup>26</sup><span class='v-txt'>इन लोगों के पास जा कर यह कहो- तुम सुनते रहोगे, परन्तु नहीं समझोगे।  तुम देखते रहोगे, परन्तु तुम्हें नही दीखेगा;</span> <sup>27</sup><span class='v-txt'>क्योंकि इन लोगों की बुद्धि मारी गयी है।  ये कानों से सुनना नहीं चाहते।  इन्होंने अपनी आँखे बन्द कर ली हैं।  कहीं ऐसा न हो कि ये आँखों से देख ले, कानों से सुन लें, बुद्धि से समझ लें, मेरी ओर लौट आयें और मैं इन्हें भला-चंगा कर दूँ।</span> <sup>28</sup><span class='v-txt'>इसलिए आप सबों को मालूम हो कि ईश्वर का यह मुक्ति-विधान गै़र-यहूदियों को सुनाया जा रहा है।</span> <sup>29</sup><span class='v-txt'>वे अवश्य ध्यान से सुनेंगे।&quot;</span> <sup>30</sup><span class='v-txt'>पौलुस पूरे दो वर्षों तक अपने किराये के मकान में रहा। वह सभी मिलने वालों का स्वागत करता था।</span> <sup>31</sup><span class='v-txt'>और आत्मविश्वास के साथ निर्विघ्न रूप से ईश्वर के राज्य का सन्देश सुनाता और प्रभु ईसा मसीह के विषय में शिक्षा देता था।</span> </p>
+        <div class='nav'><a href='051027.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>इब्रानियों - अध्याय 13</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>इब्रानियों</h1>
+        <h2>अध्याय 13</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>आप का भ्रातृप्रेम बना रहे।  आप लोग आतिथ्य-सत्कार नहीं भूलें,</span> <sup>2</sup><span class='v-txt'>क्योंकि इसी के कारण कुछ लोगों ने अनजाने ही अपने यहाँ स्वर्गदूतों का सत्कार किया है।</span> <sup>3</sup><span class='v-txt'>आप बन्दियों की इस तरह सुध लेते रहें, मानो आप उनके साथ बन्दी हों और जिन पर अत्याचार किया जाता है, उनकी भी याद करें; क्योंकि आप पर भी अत्याचार किया जा सकता है।</span> <sup>4</sup><span class='v-txt'>आप लोगों में विवाह सम्मानित और दाम्पत्य जीवन अदूषित हो; क्योंकि ईश्वर लम्पटों और व्यभिचारियों का न्याय करेगा।</span> <sup>5</sup><span class='v-txt'>आप लोग धन का लालच न करें।  जो आपके पास है, उस से सन्तुष्ट रहें; क्योंकि ईश्वर ने स्वयं कहा है - मैं तुम को नहीं छोडूँगा।  मैं तुम को कभी नहीं त्यागूँगा।</span> <sup>6</sup><span class='v-txt'>इसलिए हम विश्वस्त हो कर यह कह सकते हैं -प्रभु मेरी सहायता करता है।  मनुष्य मेरा क्या कर सकता है?</span> <sup>7</sup><span class='v-txt'>आप लोग उन नेताओं की स्मृति कायम रखें, जिन्होंने आप को ईश्वर का सन्देश सुनाया और उनके जीवन के परिणाम का मनन करते हुए उनके विश्वास का अनुसरण करें।</span> <sup>8</sup><span class='v-txt'>ईसा मसीह एकरूप रहते हैं- कल, आज और अनन्त काल तक।</span> <sup>9</sup><span class='v-txt'>नाना प्रकार के अनोखे सिद्धान्तों के फेर में नहीं पड़ें। उत्तम यह है कि हमारा मन भोजन से नहीं, बल्कि ईश्वर की कृपा से बल प्राप्त करे।  भोजन-सम्बन्धी नियमों का पालन करने वालों को इन से कभी कोई लाभ नहीं हुआ।</span> <sup>10</sup><span class='v-txt'>हमारी भी एक वेदी है।  जो तम्बू की धर्मसेवा करते हैं, उन्हें इस वेदी पर से खाने का अधिकार नहीं है।</span> <sup>11</sup><span class='v-txt'>प्र्रधानयाजक जिन बलिपशुओं का रक्त प्रायश्चित के रूप में मन्दिर-गर्भ में चढ़ाता है, उनके शरीर शिविर के बाहर जलाये जाते हैं,</span> <sup>12</sup><span class='v-txt'>ईसा ने फाटक के बाहर दुःख भोगा, जिससे वे अपने रक्त द्वारा जनता को पवित्र करें।</span> <sup>13</sup><span class='v-txt'>इसलिए हम उनके अपमान का भार ढोते हुए फाटक के बाहर उनके पास चलें;</span> <sup>14</sup><span class='v-txt'>क्योंकि इस पृथ्वी पर हमारा कोई स्थायी नगर नहीं।  हम तो भविष्य के नगर की खोज में लगे हुए हैं।</span> <sup>15</sup><span class='v-txt'>हम ईसा के द्वारा ईश्वर को स्तुति का बलिदान अर्थात् उसके नाम की महिमा करने वाले होंठों का फल-निरन्तर चढ़ाना चाहते हैं।</span> <sup>16</sup><span class='v-txt'>आप लोग परोपकार और एक दूसरे की सहायता करना कभी नहीं भूलें, क्योंकि इस प्रकार के बलिदान ईश्वर को प्रिय होते हैं</span> <sup>17</sup><span class='v-txt'>आपके नेताओं को दिन-रात आपकी आध्यात्मिक भलाई की चिन्ता रहती है, क्योंकि वे इसके लिए उत्तरदायी हैं। इसलिए आप लोग उनका आज्ञापालन करें और उनके अधीन रहें, जिससे वे अपना कर्तव्य आनन्द के साथ, न कि आहें भरते हुए, पूरा कर सकें; क्योंकि इस से आप को कोइ लाभ नहीं होगा।</span> <sup>18</sup><span class='v-txt'>आप हमारे लिए प्रार्थना करें। हमें विश्वास है कि हमारा अन्तःकरण शुद्ध है, क्योंकि हम हर परिस्थिति में सही आचरण करना चाहते हैं।</span> <sup>19</sup><span class='v-txt'>मैं विशेष रूप से इसलिए आप लोगों से प्रार्थना का आग्रह करता हूँ कि मैं शीघ्र ही आप लोगों के पास लौट सकूँ।</span> <sup>20</sup><span class='v-txt'>शान्ति का ईश्वर जिसने शाश्वत विधान के रक्त द्वारा भेड़ों के महान् चरवाहे हमारे प्रभु ईसा को मृतकों में से पुनर्जीवित किया, आप लोगों को समस्त गुणों से सम्पन्न करे, जिससे आप उसकी इच्छा पूरी करें।</span> <sup>21</sup><span class='v-txt'>वह ईसा मसीह द्वारा हम में वह कर दिखाये, जो उसे प्रिय है।  उन्हीं मसीह को अनन्त काल तक महिमा! आमेन!</span> <sup>22</sup><span class='v-txt'>भाइयो! आप से अनुरोध है कि आप मेरे इस उपदेश का धीरज के साथ स्वागत करें।  मैंने संक्षेप में ही आप को यह पत्र लिखा है।</span> <sup>23</sup><span class='v-txt'>मुझे आप लोगों को एक समाचार सुनाना है।  हमारे भाई तिमथी रिहा कर दिये गये हैं।  यदि वह समय पर पहुँचेंगे, तो मैं उनके साथ आप से मिलने आऊँगा।</span> <sup>24</sup><span class='v-txt'>आपके सभी नेताओं को और सभी सन्तों को नमस्कार: इटली के भाई आप लोगों को नमस्कार कहते हैं।</span> <sup>25</sup><span class='v-txt'>आप सबों पर कृपा बनी रहे।</span> </p>
+        <div class='nav'><a href='065012.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

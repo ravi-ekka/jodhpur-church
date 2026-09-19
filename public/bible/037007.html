@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>आमोस - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>आमोस</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु-ईश्वर ने मुझे यह दृश्य दिखाया: राजा के चारे की फसल कट गयी थी और रबी के अंकूर फूटने लगे थे कि टिड्डियों का दल पैदा हो गया।</span> <sup>2</sup><span class='v-txt'>जब वे देश की पूरी हरियाली चाट चुकी, तब मैंने कहा, &quot;प्रभु-ईश्वर! मैं गिडगिडाता हूँ, क्षमा कर; याकूब इतना छोटा है, वह कैसे बचेगा?&quot;</span> <sup>3</sup><span class='v-txt'>यह सुन कर प्रभु-ईश्वर मान गया और बोला, &quot;अब ऐसा नहीं होगा’।</span> <sup>4</sup><span class='v-txt'>प्रभु-ईश्वर ने मुझे यह दृश्य दिखाया: प्रभु-ईश्वर ने दण्ड देने के लिए आग को आज्ञा दी थी।</span> <sup>5</sup><span class='v-txt'>वह अतल समुद्र को सुखा चुकी थी और भूमि की ओर आगे बढ रही थी कि मैंने कहा, &quot;प्रभु-ईश्वर!  मैं गिडगिडाता हूँ इसे रोक दे; याकूब इतना छोटा है, वह कैसे बचेगा?</span> <sup>6</sup><span class='v-txt'>यह सुन कर प्रभु-ईश्वर मान गया और बोला, &quot;अब यह भी नहीं होगा&quot;।</span> <sup>7</sup><span class='v-txt'>प्रभु-ईश्वर ने मुझे यह दृश्य दिखायाः दीवार के पास, हाथ में साहूल लिए एक आदमी खड़ा था।</span> <sup>8</sup><span class='v-txt'>प्रभु-ईश्वर ने मुझ से पूछा, &quot;आमोस! तुम क्या देखते हो?&quot;  मैंने कहा, &quot;साहुल&quot;।  तब प्रभु ने मुझ से कहा, &quot;मैं अपनी प्रजा इस्राएल पर साहुल लगाता हूँ; अब मैं उनके अपराधों का दण्ड दिये बिना नहीं छोडूँगा।</span> <sup>9</sup><span class='v-txt'>इसहाक के पूजा-टीले उजाड दिये जायेंगे!  इस्राएल के पूजास्थान नष्ट कर दिये जायेंगे और अब यरोबआम के घराने के विरुद्ध मैं तलवार उठाऊँगा।&quot;</span> <sup>10</sup><span class='v-txt'>बेतेल के याजक अमस्या ने इस्राएल के राजा यरोबआम के पास यह सन्देश भेजा, &quot;इस्राएल में ही आमोस आपके विरुद्ध षडयन्त्र रच रहा है।  देश उसके भाषण सह नहीं सकता,</span> <sup>11</sup><span class='v-txt'>&quot;क्योंकि आमोस ने यह कहा है- यरोबआम तलवार के घाट उतारा जायेगा और इस्राएल अपने स्वदेश से निर्वासित किया जायेगा।&quot;</span> <sup>12</sup><span class='v-txt'>बेतेल के याजक अमस्या ने आमोस से कहा, &quot;नबी! यहाँ से चले जाओ।  यूदा  के देश भाग जाओ। वहाँ भवियवाणी करते हुए अपनी जीविका चलाओ।</span> <sup>13</sup><span class='v-txt'>बेतेल में भवियवाणी करना बन्द करो; क्योंकि यह तो राजकीय पुण्य-स्थान है, यह राज मन्दिर है।&quot;</span> <sup>14</sup><span class='v-txt'>आमेास ने अमस्या को यह उत्तर दिया, &quot;मैं न तो नबी था और न नबी की सन्तान।  मैं चरवाहा था और गूलर के पेड़ छाँटने वाला।</span> <sup>15</sup><span class='v-txt'>मैं झुण्ड चरा ही रहा था कि प्रभु ने मुझे बुलाया मुझ से यह कहा, ‘जाओ! मेरी प्रजा इस्राएल के लिए भवियवाणी करो’।</span> <sup>16</sup><span class='v-txt'>अब तुम प्रभु की वाणी सुनो।  तुम तो कहते हो-  इस्राएल के विरुद्ध भविष्यवाणी मत करो,  इसहाक के वंश के विरुद्ध बकवाद मत करो।</span> <sup>17</sup><span class='v-txt'>किन्तु प्रभु यह कहता है। तुम्हारी पत्नी यहाँ नगरवधू बन जायेगी, तुम्हारे पुत्र-पुत्रियाँ तलवार के घाट उतार दिये जायेंगे और तुम्हारी भूमि जरीब द्वारा बाँट दी जायेगी। तुम स्वयं एक अपवित्र देश में मरोगे  और इस्राएल अपने स्वदेश से निर्वासित किया जायेगा।&quot;</span> </p>
+        <div class='nav'><a href='037006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='037008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

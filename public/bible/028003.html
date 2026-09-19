@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रज्ञा की सन्तति धर्मियों की सभा है, उनका राष्ट्र आज्ञाकारी और प्रेममय है।</span> <sup>2</sup><span class='v-txt'>पुत्रों! पिता की शिक्षा ध्यान से सुनो; उसका पालन करने में तुम्हारा कल्याण है।</span> <sup>3</sup><span class='v-txt'>प्रभु का आदेश है कि सन्तान अपने पिता का आदर करें ; उसने माता केा अपने बच्चों पर अधिकार दिया है।</span> <sup>4</sup><span class='v-txt'>जो अपने पिता पर श्रद्धा रखता है, वह अपने पापों का प्रायश्चित करता है</span> <sup>5</sup><span class='v-txt'>और जो अपनी माता का आदर करता है, वह मानो धन का संचय करता है।</span> <sup>6</sup><span class='v-txt'>जो अपने पिता का सम्मान करता है, उसे अपनी ही सन्तान से सुख मिलेगा और जब वह प्रार्थना करता है, तो ईश्वर उसकी सुन लेगा।</span> <sup>7</sup><span class='v-txt'>जो अपने पिता का आदर करता है, वह दीर्घायु होगा। जो अपनी माता को सुख देता है, वह प्रभु का आज्ञाकारी है।</span> <sup>8</sup><span class='v-txt'>जो प्रभु पर श्रद्धा रखता है, वह अपने माता-पिता का आदर करता और उनकी सेवा वैसे ही करता है, जैसे दास अपने स्वामी की सेवा करता है।</span> <sup>9</sup><span class='v-txt'>वचन और कर्म से अपने पिता का आदर करो,</span> <sup>10</sup><span class='v-txt'>जिससे तुम को उसका आशीर्वाद प्राप्त हो।</span> <sup>11</sup><span class='v-txt'>पिता का आशीर्वाद उसके पुत्रों का घर सुदृढ़ बनाता है, किन्तु माता का अभिशाप उसकी नींव उखाड़ देता है।</span> <sup>12</sup><span class='v-txt'>अपने पिता के अपमान पर गौरव मत करो, उसका अपयश तुम को शोभा नहीं देता।</span> <sup>13</sup><span class='v-txt'>पिता का सम्मान मनुष्य का गौरव है और माता का अपयश पुत्र को शोभा नहीं देता।</span> <sup>14</sup><span class='v-txt'>पुत्र! अपने बूढ़े पिता की सेवा करो।  जब तक वह जीता रहता है, उसे उदास मत करो।</span> <sup>15</sup><span class='v-txt'>यदि उसका मन दुर्बल हो जाये, तो उस से सहानुभूति रखो।  अपने स्वास्थ्य की उमंग में उसका अनादर मत करो; क्योंकि पिता की सेवा-षुश्रूषा नहीं भुलायी जायेगी,</span> <sup>16</sup><span class='v-txt'>वह तुम्हारे पापों का प्रायश्चित्त</span> <sup>17</sup><span class='v-txt'>और तुम्हारी धार्मिकता समझी जायेगी।  लोग तुम्हारी विपत्ति के दिन तुम को याद करेंगे और तुम्हारे पाप धूप में पाले की तरह गल जायेगे।</span> <sup>18</sup><span class='v-txt'>जो अपने पिता का त्याग करता, वह ईष-निंदक के बराबर है।  जो अपनी माता को दुःख देता है, वह ईश्वर द्वारा अभिशप्त है।</span> <sup>19</sup><span class='v-txt'>पुत्र! नम्रता से अपना व्यवसाय करो और लोग तुम्हें दानशील व्यक्ति से भी अधिक प्यार करेंगे।</span> <sup>20</sup><span class='v-txt'>तुम जितने अधिक बड़े हो, उतने ही अधिक नम्र बनों इस प्रकार तुम प्रभु के कृपापात्र बन जाओगे।  बहुत लोग घमण्डी और गर्वीले हैं, किन्तु ईश्वर दीनों पर अपने रहस्य प्रकट करता है।</span> <sup>21</sup><span class='v-txt'>प्रभु का सामर्थ्य अत्यधिक महान् है, किन्तु वह विनम्र लोगों की श्रद्धांजलि स्वीकार करता है।</span> <sup>22</sup><span class='v-txt'>न तो अपनी बुद्धि के परे की बाते समझने का प्रयत्न करो और रहस्यमय बातों के फेर में मत पड़ो।</span> <sup>23</sup><span class='v-txt'>गुप्त रहस्यों को अपनी आॅखों से देखने की तुम्हें कोई आवश्यकता नहीं।</span> <sup>24</sup><span class='v-txt'>जो तुम्हारी समझ के परे है, उस में मत फॅसो।</span> <sup>25</sup><span class='v-txt'>जो शिक्षा तुम्हें मिली है, वह मानव बुद्धि से परे है।</span> <sup>26</sup><span class='v-txt'>बहुत लोग अपने-अपने विचारों के कारण भटक गये और निराधार कल्पनाओें ने उनकी बुद्धि भ्रष्ट कर दी।  यदि तुम्हें आँखें नहीं हैं, तो प्रकाश से वंचित रहोगे; यदि तुम्हें ज्ञान नहीं, तो तुम में प्रज्ञा का अभाव होगा।</span> <sup>27</sup><span class='v-txt'>कठोर हृदय अन्त में बुरे दिन देखेगा।  जो जोखिम से प्यार करता है, वह उस में नष्ट हो जायेगा।</span> <sup>28</sup><span class='v-txt'>कपटी हृदय अपने कार्यो में असफल होगा और दुष्ट हृदय पाप के जाल में फॅसेगा।</span> <sup>29</sup><span class='v-txt'>दुष्ट हृदय बहुत कष्ट पायेगा।  पापी पाप-पर-पाप करता रहेगा।</span> <sup>30</sup><span class='v-txt'>अहंकारी के रोग को कोई इलाज नहीं है, क्येांकि बुराई ने उस में जड़ पकड़ ली है।</span> <sup>31</sup><span class='v-txt'>समझदार मनुष्य दृष्टान्तों पर विचार करता है।  जो कान लगा कर सुनता है, वह प्रज्ञा की कामना करता है।</span> <sup>32</sup><span class='v-txt'>प्रज्ञासम्पन्न और समझदार हृदय पाप से दूर रहेगा और अपने कार्यो में सफल होगा।</span> <sup>33</sup><span class='v-txt'>पानी प्रज्वलित आग बुझाता और भिक्षादान पाप मिटाता है।</span> <sup>34</sup><span class='v-txt'>जो परोपकार के बदले में परोपकार करता, वह भविष्य का ध्यान रखता है।  गिरने पर उसे सहारा मिलेगा।</span> </p>
+        <div class='nav'><a href='028002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एस्तेर - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एस्तेर</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब मोरदकय को इन सब बातों का पता चला, तो उसने अपने वस्त्र फाड़ लिये, टाट ओढ़ा और अपने सिर पर राख डाली।  वह ऊँचे स्वर में विलाप करता हुआ नगर के मुख्य मार्ग से हो कर</span> <sup>2</sup><span class='v-txt'>राजमहल के प्रवेश-द्वार तक आया; क्योंकि टाट पहन कर राजमहन के भीतर आना मना था।</span> <sup>3</sup><span class='v-txt'>(प्रत्येक प्रदेश में जहाँ-जहाँ राजा की आज्ञा और आदेश की घोषणा हुई थी, वहाँ-वहाँ यहूदियों ने शोक मनाया। उन्होंने उपवास, क्रन्दन और विलाप किया।  उन में बहुतों ने टाट ओढ़े राख पर शयन किया।)</span> <sup>4</sup><span class='v-txt'>जब एस्तेर की दासियों और ख़ोजों ने उसे यह बताया, तो वह बहुत दुःखी हुई।  उसने मोरदकय को पहनने के वस्त्र भेजे, जिससे वह टाट उतार कर उन्हें पहन ले। परन्तु उसने उन्हें पहनना स्वीकार नहीं किया।</span> <sup>5</sup><span class='v-txt'>अब एस्तेर ने हताक नामक एक ख़ोजे को बुलाया, जिसे राजा ने उसकी सेवा में नियुक्त किया था।  उसने उसे मोरदकय के पास भेजा, जिससे वह पता लगाये कि मोरदकय ऐसा क्यों कर रहा है।</span> <sup>6</sup><span class='v-txt'>हताक मोरदकय के पास नगर के चैक गया, जो राजद्वार के सामने था।</span> <sup>7</sup><span class='v-txt'>मोरदकय ने उसे वह सब बताया, जो उसके साथ हुआ था और कि हामान ने यहूदियों का विनाश कर कितना धन राजकीय कोष में जमा कराने का वचन दिया है।</span> <sup>8</sup><span class='v-txt'>उसने उसे उस राजाज्ञा की प्रति-लिपि भी दी, जो सूसा नगर में उनके विनाश के लिए प्रसारित की गयी थी और यह कहा कि उसे एस्तेर को दिखलाये और उस से अनुरोध करे कि वह राजा के पास जा कर निवेदन और अपने लोगों के लिए प्रार्थना करे।</span> <sup>9</sup><span class='v-txt'>हताक ने आ कर एस्तेर को वह सब बताया, जो मोरदकय ने कहा था।</span> <sup>10</sup><span class='v-txt'>एस्तेर ने हताक द्वारा मोरदकय को कहला भेजा,</span> <sup>11</sup><span class='v-txt'>&quot;राजा के सब सेवक और राजा के प्रदेशों के सभी निवासी जानते हैं कि जो पुरुष या स्त्री बिना बुलाये राजा के भीतरी प्रांगण में प्रवेश करता है, उसके विषय में एक ही क़ानून हैं, अर्थात् तत्काल उसका वध किया जाये; किन्तु यदि राजा अपनी स्वर्ण राजदण्ड उसकी ओर बढ़ाये, जो वह जीवित रह सकता है। मैं तीस दिन से राजा के पास नहीं बुलायी गयी हूँ।&#039;&#039;</span> <sup>12</sup><span class='v-txt'>मोरदकय ने यह सुनकर</span> <sup>13</sup><span class='v-txt'>एस्तेर के पास यह उत्तर भिजवाया, &quot;यह नहीं सोचो कि राजमहल में रहने के कारण तुम सभी यहूदियों की अपेक्षा अपने प्राण बचा सकोगी।</span> <sup>14</sup><span class='v-txt'>यदि इस समय तुम चुप बैठी रहोगी, तो यहूदियों को कहीं-न-कहीं से मुक्ति और सुरक्षा प्र्राप्त हो जायेगी, किन्तु तुम्हारा और तुम्हारे पितृकुल का विनाश होगा।  क्या जानें, शायद इस प्रकार की विपत्ति से हमारी रक्षा करने के लिए तुम को रानी का पद प्राप्त हुआ हो?&quot;</span> <sup>15</sup><span class='v-txt'>एस्तेर ने मोरदकय को उत्तर भिजवाया,</span> <sup>16</sup><span class='v-txt'>&quot;जाइए; सूसा में रहने वाले सब यहूदियों को एकत्रित कर कहिए कि वे सभी मेरे लिए उपवास करें।  वे तीन दिन, तीन रात कुछ नहीं खायें-पियें।  मैं भी अपनी दासियों के साथ इसी प्रकार उपवास करूँगी।  फिर मैं आज्ञा का उल्लंघन करते हुए राजा के पास जाऊँगी और यदि मेरे भाग्य में मरना ही बदा होगा, तो मर मिटूँगी।&#039;&#039;</span> <sup>17</sup><span class='v-txt'>(a) मोरदकय अपने वस्त्र फाड़ कर और टाट ओढ़ कर जनता के नेताओं के साथ प्रातः से सन्ध्या तक मुँह के बल पड़ा  रहा।  (b) उसने कहा: &quot;इब्राहीम, इसहाक और याकूब के ईश्वर! तू धन्य है।  (c) प्रभु! प्रभु! सर्वशक्तिमान् अधिपति!  सब कुछ तेरे अधिकार में है।  यदि तू इस्राएल को बचाना चाहे, तो मेरे सामने कोई नहीं टिकेगा।  (d) तूने आकाश और पृथ्वी बनायी और आकाश के नीचे सब आश्चर्यों को  (e) प्रभु!  तू विश्व का अधिपति है।  तेरा सामना कोई नहीं कर सकता।  (f) प्रभु! तू जानता है कि मैं इस्राएल के कल्याण के लिए हामान के चरणों का तलवा सहर्ष चूमने को तैयार हूँ।  (g) किन्तु मैंने ऐसा नहीं किया; क्योंकि मैं ईश्वर की प्रतिष्ठा की अपेक्षा मनुष्य की प्रतिष्ठा को अधिक महत्व नहीं देना चाहता था।  प्रभु!  मेरे  ईश्वर!  मैं तुझ को छोड़ किसी अन्य को दण्डवत् नहीं करूँगा।  (h) मैंने न तो अभिमान से और न नाम कमाने की इच्छा से ऐसा किया।  प्रभु!  प्रकट हो कर हमारी सहायता कर।  (i) अधिपति!  इब्राहीम, इसहाक और याकूब के ईश्वर!  अब अपनी प्रजा की रक्षा कर, क्योंकि हमारे शत्रु हम को मिटाना और तेरी विरासत का विनाश करना चाहते हैं।  (k) उस प्रजा का तिरस्कार न कर, जिसने तूने मिस्र के उद्धार किया हैं।  (l) प्रभु! मेरी प्रर्थना सुन, अपनी विरासत पर दया कर, हमारा शोक आनन्द में बदलने की कृपा कर, जिससे हम जीते रहें और तेरे नाम के गीत गा सकें।  जो मुख तेरी स्तुति करते हैं, उनका विनाश न होने दे।&quot;  (m) सभी इस्राएली भी सारी शक्ति से प्रभु की दुहाई देते थे, क्योंकि वे अपनी मृत्यु निकट समझते थे।  (n) रानी एस्तेर ने भी मृत्यु के भय से पीड़ित हो कर प्रभु की शरण ली।  (o) उसने राजसी वस्त्र उतार कर शोक के वस्त्र धारण किये, बहुमूल्य विलेपन के बदले अपने सिर पर राख डाली और कठोर उपवास द्वारा अपना शरीर तपाया।  (p) वह अपनी दासियों के साथ प्रातः से सन्ध्या तक मुँह के बल पड़ी रही।  उसने कहा: 	(q) &quot;इब्राहीम, इसहाक और याकूब के ईश्वर!  तू धन्य है! मुझ एकाकिनी की सहायता कर।  प्रभु! तेरे सिवा मेरा कोई रक्षक नहीं।  (r) मैं हथेली पर जान रखने जा रही हूँ  (s) प्रभु!  मुझे अपने पूर्वजों के ग्रन्थों से यह पता चला कि तूने जलप्रलय में नूह की रक्षा की।  (t) प्रभु! मुझे अपनी पूर्वजों के ग्रन्थों से यह पता चला जब इब्राहीम तीन सौ अठारह वीरों के साथ युद्व करने निकले, तो तूने नौ राजाओं को उनके हाथ दिया।  (u) प्रभु!  मुझे अपने पूर्वजों के गं्रथों से यह पता चला कि कि तूने योना को मच्छ के पेट से निकाला।  (v) प्रभु! मुझे अपने पूर्वजों के ग्रंथों से यह पता चला कि तूने हनन्या, अज़र्या और मिशाएल को आग की भट्ठी से निकाला।  (x) प्रभु! तुझे अपने पूर्वजों के ग्रंथें से यह पता चला। कि तूने दानिएल को सिह के खड्ड से निकाला।  (y) प्रभु! मुझे अपने पूर्वजों के ग्रन्थों से यह पता चला कि जब यहूदियों के राजा हिज़कीया मरने पर थे और अपने जीवन के लिए प्रार्थना कर रहे थे, तो तूने उन पर दया की और उन्हें पन्द्रह वर्ष और जीवित रहने दिया।  (z) प्रभु! मुझे अपने पूर्वजों के ग्रन्थों से यह पता चला कि जब अन्ना ने सारे हृदय से प्रार्थना की, तो तूने उसे पुत्र प्रदान किया।  	(aa) प्रभु! तुझे अपने पूर्वजों के ग्रंथें से यह पता चला कि जिन लोगों पर तू प्रसन्न है, तू, प्रभु!  उन सब की सदा रक्षा  करता है।  (bb) प्रभु! मेरे ईश्वर मुझ एकाकिनी की सहायता कर; क्योंकि तेरे सिवा मेरा कोई नहीं।  (cc) प्रभु! तू जानता है कि तेरी इस दासी को बेखतना लोगों के प्रसंग से घृणा है।  (dd) ईश्वर तू जानता है कि मैंने बीभत्स मेज़ पर से नहीं खाया और उनकी गोष्ठियों की मदिरा नहीं पी।  (ee) प्रभु तू जानता है कि जिस दिन से मैं रानी बनी, उस दिन से तू ही मेरा आनन्द रहा।  (ff) ईश्वर तू जानता है कि मैं जो राजसी वस्त्र पहनती हूँ उससे रजस्वला के कपड़े की तरह घृणा करती हूँ।  मैंने उसे शुभ दिन में नहीं पहना।  (gg) अब मुझ अनाथ की सहायता कर।  सिंह के सामने मेरे मुख में उपयुक्त शब्द रख।  मुझे उसकी कृपा दृष्टि प्रदान कर, उसका हृदय बदल और उसमें हमारे शत्रु का बैर उत्पन्न कर, जिससे हमारे शत्रु और उसके समर्थकों का विनाश हो।  (hh) हमें हमारे शत्रुओं के हाथ से छुड़ा, हमारा शोक आनन्द में और हमारी विपत्ति कल्याण में बदलने की कृपा कर।  (ii) ईश्वर अपनी प्रजा की रक्षा कर!  अपनी शक्ति प्रदर्शित कर।  (kk) प्रभु प्रकट होकर हमारी सहायता कर।&quot;</span> </p>
+        <div class='nav'><a href='019003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='019005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

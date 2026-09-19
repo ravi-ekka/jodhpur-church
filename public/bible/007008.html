@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>न्यायकर्ता - अध्याय 8</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>न्यायकर्ता</h1>
+        <h2>अध्याय 8</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इसके बाद एफ़्रईम के लोगों ने गिदओन से कहा, &quot;आपने हमारे साथ ऐसा क्यों किया?  आपने मिदयानियों से लड़ने जाते समय हमें क्यों नहीं बुलाया?&quot; और वे उसकी कटु आलोचना करने लगे।</span> <sup>2</sup><span class='v-txt'>उसने उन्हें उत्तर दिया, &quot;मैंने तुम से अधिक किया ही क्या है?  क्या अबीएज़ेर की अंगूर की सारी फ़सल की अपेक्षा एफ्ऱईम के बीने हुए अंगूर कहीं अधिक अच्छे नहीं हैं?</span> <sup>3</sup><span class='v-txt'>ईश्वर ने तो तुम्हारे हाथ मिदयानियों के शासक ओरेब और ज़एब को दे दिया है।  मैंने तुम से अधिक किया ही क्या है?&quot;  यह सुन कर उस पर उनका क्रोध शान्त हो गया।</span> <sup>4</sup><span class='v-txt'>गिदओन यर्दन के तट पर आया और उसने अपने तीन सौ साथियों-सहित उसे पार किया।  थके-माँदे होने पर भी वे शत्रुओं का पीछा करते रहे।</span> <sup>5</sup><span class='v-txt'>उसने सुक्कोत के निवासियों से कहा, &quot;तुम कृपा कर मेरे इन साथियों को रोटियाँ दो, क्योंकि ये लोग एकदम थके-माँदे हैं और मैं मिदयानियों के राजा ज़बह और सलमुन्ना का पीछा कर रहा हूँ&quot;।</span> <sup>6</sup><span class='v-txt'>परन्तु सुक्कोत के अधिकारियों ने उसे उत्तर दिया, &quot;क्या ज़बह और सलमुन्ना तुम्हारे अधिकार में आये हैं, जो हम तुम्हारी सेना को रोटियाँ दें?&quot;</span> <sup>7</sup><span class='v-txt'>गिदओन ने उत्तर दिया, &quot;अच्छा, यदि प्रभु ने ज़बह और सलमुन्ना को मेरे हाथ दे दिया, तो मैं जगंली काँटों और कँटीली झाड़ियों से तुम्हारी ख़बर लूँगा&quot;।</span> <sup>8</sup><span class='v-txt'>वह वहाँ से चल कर पनूएल गया और उसने वहाँ के निवासियों से फिर वैसा ही निवेदन किया, परन्तु पनूएल के निवासियों ने भी वही उत्तर दिया, जो सुक्कोत के निवासियों ने दिया था।</span> <sup>9</sup><span class='v-txt'>इस पर उसने पनूएल के निवासियों को यह धमकी दी,  &quot;यदि मैं सकुशल लौटा, तो इस बुर्ज़ को ढाह दूँगा&quot;।</span> <sup>10</sup><span class='v-txt'>ज़बह और सलमुन्ना लगभग पन्द्रह हज़ार सैनिकों के साथ करकोर में पड़े थे।  ये वे थे, जो पूर्व के लोगों की सारी सेना में से बच गये थे।  जो मार डाले गये थे, वे संख्या में एक लाख बीस हज़ार सशस्त्र सैनिक थे।</span> <sup>11</sup><span class='v-txt'>गिदओन ने नोहब और योगबहा के पूर्व कारवाँ के रास्ते से होते हुए सेना पर आक्रमण किया।  वे लोग अपने को सुरक्षित समझते थे।</span> <sup>12</sup><span class='v-txt'>ज़बह और सलमुन्ना भाग निकले।  उसने उनका पीछा किया और सारी सेना तितर-बितर करने के बाद मिदयानियों के दोनों राजा ज़बह और सलमुन्ना को पकड़ लिया।</span> <sup>13</sup><span class='v-txt'>योआश के पुत्र गिदओन ने हेरेस की घाटी के युद्ध से लौट कर</span> <sup>14</sup><span class='v-txt'>सुक्कोत के एक नवयुवक को पकड़ा और उस से पूछताछ की।  नवयुवक ने उसके लिए सुक्कोत के सतहत्तर अधिकारियों और नेताओं के नाम लिखे।</span> <sup>15</sup><span class='v-txt'>गिदओन ने सुक्कोत के लोगों के पास आ कर कहा, &quot;देखो, यही हैं ज़बह और सलमुन्ना, जिसके विषय में तुमने यह कहते हुए मेरा उपहास किया था कि क्या ज़बह और सलमुन्ना तुम्हारे अधिकार में आये हैं, जो हम तुम्हारे थके-माँदे सैनिकों को रोटियाँ दें&quot;।</span> <sup>16</sup><span class='v-txt'>फिर उसने नगर के नेताओं को पकड़ा और जंगली काँटों तथा कँटीली झाड़ियों से सुक्कोत के निवासियों की ख़बर ली।</span> <sup>17</sup><span class='v-txt'>उसने पनूएल का गढ़ गिरा दिया और उस नगर के निवासियों का वध किया।</span> <sup>18</sup><span class='v-txt'>इसके बाद उसने ज़बह और सलमुन्ना से कहा, &quot;वे आदमी, जिन्हें तुमने ताबोर पर्वत पर मारा था, वे कैसे थे?&quot;  उन्होंने उत्तर दिया, &quot;वे आपके समान थे।  उन में प्रत्येक राजकुमार-जैसा था।&quot;</span> <sup>19</sup><span class='v-txt'>उसने कहा, &quot;वे मेरे भाई थे, मेरी माता के पुत्र थे।  प्रभु की शपथ!  यदि तुमनें उन्हें जीवित रहने दिया होता, तो मैं तुम्हारा वध न करता।&quot;</span> <sup>20</sup><span class='v-txt'>तब उसने अपने जेठे पुत्र येतेर से कहा, &quot;उनका वध करों&quot;।  लेकिन उस लड़के ने तलवार नहीं खींची।  वह डर रहा था, क्योंकि वह अभी किशोर था।</span> <sup>21</sup><span class='v-txt'>ज़बह और सलमुन्ना ने कहा, &quot;तुम स्वयं हमारा वध करो। आदमी जैसा होता है, उस में वैसी ही शक्ति होती है।&quot; इस पर गिदओन ने उठ कर ज़बह और सलमुन्ना का वध किया और उनके ऊँटों की गर्दनों के चन्द्रहार ले लिये।</span> <sup>22</sup><span class='v-txt'>इस्राएलियों ने गिदओन से कहा, &quot;आप हमारे शासक बन जाइए।  आप, आपका पुत्र और आपका पौत्र भी, क्योंकि आपने ही हमें मिदयानियों के हाथों से मुक्ति दिलायी है।&quot;</span> <sup>23</sup><span class='v-txt'>गिदओन ने उत्तर दिया, &quot;मैं तुम्हारा शासक नहीं बनूँगा और न मेरा पुत्र ही तुम्हारा शासक होगा।  प्रभु ही तुम्हारा शासक होगा।&quot;</span> <sup>24</sup><span class='v-txt'>गिदओन ने उन से कहा, &quot;तुम लोगों से मेरा निवेदन यह है कि प्रत्येक व्यक्ति अपनी लूट से कानों की बालियाँ मुझे दे दे&quot;।  (शत्रुओं के कान की बालियाँ सोने की थीं, क्योंकि वे इसमाएली थे।)</span> <sup>25</sup><span class='v-txt'>उन्होंने उत्तर दिया, &quot;हम आप को इन्हें सहर्ष देते हैं&quot;। तब उन्होंने एक चादर फैला दी और प्रत्येक व्यक्ति ने उस पर अपनी लूट की बालियाँ डाल दीं।</span> <sup>26</sup><span class='v-txt'>सोने की उन बालियों का वज़न, जिन्हें उसने माँग लिया था, सत्रह सौ षेकेल था।  इसके अतिरिक्त -चन्द्रहार, कर्णफूल, मिदयान के राजाओं के लाल वस्त्र और उनके ऊँटों के गले की जंजीरें।</span> <sup>27</sup><span class='v-txt'>इस से गिदओन ने एक एफ़ोद बनवाया और उसे अपने नगर ओफ्ऱा में रखा।  वहाँ सब इस्राएली उसकी पूजा करने लगे।  इस प्रकार वह एफ़ोद गिदओन और उसके परिवार के लिए फन्दा बना।</span> <sup>28</sup><span class='v-txt'>मिदयानी इस्राएलियों के अधीन हो गये और फिर सिर नहीं उठा पाये।  गिदओन के चालीस वर्ष के जीवनकाल में देश-भर में शान्ति छायी रही।</span> <sup>29</sup><span class='v-txt'>योआश का पुत्र यरूबबाल अपने घर जा कर वहाँ रहने लगा।</span> <sup>30</sup><span class='v-txt'>गिदओन के सत्तर पुत्र थे, क्योंकि उसके अनेक पत्नियाँ थीं।</span> <sup>31</sup><span class='v-txt'>सिखेम में रहने वाली किसी उपपत्नी से उसके एक पुत्र उत्पन्न हुआ।  उसने उसका नाम अबीमेलक रखा।</span> <sup>32</sup><span class='v-txt'>योआश के पुत्र गिदओन का अच्छी पक्की उम्र में देहान्त हुआ और वह अबीएजेरवंशियों के ओफ्ऱा के पास, अपने पिता योआश की क़ब्र में दफ़नाया गया।</span> <sup>33</sup><span class='v-txt'>गिदओन की मृत्यु के बाद इस्राएली फिर से बाल-देवताओं की पूजा करने लगे और उन्होंने बाल-बरीत को अपना ईश्वर बनाया।</span> <sup>34</sup><span class='v-txt'>इस्राएली अपने उस प्रभु-ईश्वर का स्मरण नहीं करते थे, जिसने उन्हें अपने चारों ओर से शत्रुओं के हाथों से बचाया था</span> <sup>35</sup><span class='v-txt'>और उन्होंने यरूबबाल, अर्थात, गिदओन के वंशजों के प्रति भी अच्छा व्यवहार नहीं किया, यद्यपि उसने इस्राएलियों का बहुत अधिक उपकार किया था।</span> </p>
+        <div class='nav'><a href='007007.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='007009.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

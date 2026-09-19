@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>नहेम्या - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>नहेम्या</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>दीवार का निर्माण हो चुका था और मैंने उस में फाटक भी लगवा दिये थे।  द्वारपालों, गायकों और लेवियों की भी नियुक्ति कर दी गयी थी।</span> <sup>2</sup><span class='v-txt'>अब मैंने येरूसालेम का सारा कार्यभार अपने भाई हनानी और क़िले के अध्यक्ष हनन्या को सौंप दिया; क्योंकि हनन्या दूसरों की अपेक्षा अधिक विश्वसनीय और ईश्वर पर श्रद्धा रखने वाला था।</span> <sup>3</sup><span class='v-txt'>मैंने उन को यह आज्ञा दी कि येरूसालेम के फाटक तब खोले जायें, जब सूर्य तेजी से चमकने लगे और पहरेदारों की उपस्थिति में ही उन्हें बन्द किया जाये और उनकी अर्गलाएँ लगायी जायें, पहरेदारों, की नियुक्ति येरूसालेम के निवासियों में की जाये और प्रत्येक व्यक्ति अपने घर के सामने पहरा दे।</span> <sup>4</sup><span class='v-txt'>नगर बड़ा विस्तृत था, परन्तु उस में निवास करने वाले लोगों की संख्या कम थी और वे अभी तक घर नहीं बना पाये थे।</span> <sup>5</sup><span class='v-txt'>तब ईश्वर ने मेरे मन में यह विचार उत्पन्न किया, कि वंशावली लिखवाने के लिए मैं कुलीनों, पदाधिकारियों और लोगों को एकत्रित करूँ।  मुझे उन लोगों की भी वंशावली मिल गयी, जो पहले आये थे।  उस में यह लिखा थाः</span> <sup>6</sup><span class='v-txt'>यूदा के जिन लोगों को बाबुल के राजा नबूकदनेज़र ने बन्दी बना कर निर्वासित किया और जो येरूसालेम और यूदा में अपने-अपने नगर वापस लौट आये थे, वे ये हैं।</span> <sup>7</sup><span class='v-txt'>वे ज़रूबबाबेल, येशूआ, नहेम्या, अज़र्या, रअम्या, नहमानी, मोरदकय, बिलशान, मिसपेरेत, बिगवय, नहूम और बाना के साथ आये थे।</span> <sup>8</sup><span class='v-txt'>इस्राएलियों के पुरुषों की संख्या इस प्रकार थी:</span> <sup>9</sup><span class='v-txt'>परओश के दो हज़ार एक सौ बहत्तर वंशज, शफ़ट्या के तीन सौ बहत्तर वंशज,</span> <sup>10</sup><span class='v-txt'>आरह के छः सौ बावन वंशज,</span> <sup>11</sup><span class='v-txt'>पहत-मोआब अर्थात् येशूआ और योआब के दो हज़ार दो सौ चैवन वंशज,</span> <sup>12</sup><span class='v-txt'>एलाम के एक हज़ार दो सौ चैवन वंशज,</span> <sup>13</sup><span class='v-txt'>ज़त्तू के आठ सौ पैंतालीस वंशज,</span> <sup>14</sup><span class='v-txt'>ज़क्कय के सात सौ साठ वंशज,</span> <sup>15</sup><span class='v-txt'>बिन्नूई के छः सौ अड़तालीस वंशज,</span> <sup>16</sup><span class='v-txt'>बेबय के छः सौ अट्ठाईस वंशज,</span> <sup>17</sup><span class='v-txt'>अज़गाद के दो हज़ार तीन सौ बाईस वंशज,</span> <sup>18</sup><span class='v-txt'>अदोनीकाम के छः सौ सड़सठ वंशज,</span> <sup>19</sup><span class='v-txt'>बिगवय के दो हज़ार सड़सठ वंशज,</span> <sup>20</sup><span class='v-txt'>आदीन के छः सौ पचपन वंशज,</span> <sup>21</sup><span class='v-txt'>हिज़कीया से उत्पन्न आटेर के अट्ठानबे वंशज,</span> <sup>22</sup><span class='v-txt'>हाशुम के तीन सौ अट्ठाईस वंशज,</span> <sup>23</sup><span class='v-txt'>बेसय के तीन सौ चैबीस वंशज,</span> <sup>24</sup><span class='v-txt'>हारीफ़ के एक सौ बारह वंशज,</span> <sup>25</sup><span class='v-txt'>गिबओन के पंचानबे वंशज,</span> <sup>26</sup><span class='v-txt'>बेथलेहेम और नटोफ़ा से एक सौ अठासी पुरुष,</span> <sup>27</sup><span class='v-txt'>अनातोत के एक सौ अट्ठाईस पुरुष,</span> <sup>28</sup><span class='v-txt'>बेत-अज़मावेत से बयालीस पुरुष,</span> <sup>29</sup><span class='v-txt'>किर्यत-यआरीम, कफ़ीरा और बएरोत से सात सौ तैंतालीस पुरुष,</span> <sup>30</sup><span class='v-txt'>रामा और गेबा से छः सौ इक्कीस पुरुष,</span> <sup>31</sup><span class='v-txt'>मिकमास से एक सौ बाईस पुरुष,</span> <sup>32</sup><span class='v-txt'>बेतेल और अय से एक सौ तेईस पुरुष,</span> <sup>33</sup><span class='v-txt'>दूसरे नेबो से बावन पुरुष,</span> <sup>34</sup><span class='v-txt'>किसी दूसरे एलाम के एक हज़ार दो सौ चैवन वंशज,</span> <sup>35</sup><span class='v-txt'>हारिम के तीन सौ बीस वंशज,</span> <sup>36</sup><span class='v-txt'>येरीख़ो से तीन सौ पैंतालीस पुरुष,</span> <sup>37</sup><span class='v-txt'>लोद, हादीद और ओनो के सात सौ इक्कीस पुरुष,</span> <sup>38</sup><span class='v-txt'>सनाआ के तीन हज़ार नौ सौ तीस वंशज।</span> <sup>39</sup><span class='v-txt'>याजकः येशूआ के घराने के यदाया के नौ सौ तिहत्तर वंशज,</span> <sup>40</sup><span class='v-txt'>इम्मेर के एक हज़ार बावन वंशज,</span> <sup>41</sup><span class='v-txt'>पशहूर के एक हज़ार दो सौ सैंतालीस वंशज,</span> <sup>42</sup><span class='v-txt'>और हारिम के एक हज़ार सत्रह वंशज।</span> <sup>43</sup><span class='v-txt'>लेवीः होदया के घराने के यशूआ और कदमीएल के चैहत्तर वंशज।</span> <sup>44</sup><span class='v-txt'>गायक: आसाफ़ के एक सौ अड़तालीस वंशज।</span> <sup>45</sup><span class='v-txt'>द्वारपाल: कुल एक सौ अड़तीस, जो शल्लूम, आटेर, टलमोन, अक्कूब, हटीटा और शोबाय के वंशज थे।</span> <sup>46</sup><span class='v-txt'>मन्दिर के सेवकः सीहा के वंशज, हसूफ़ा के वंशज, टब्बाओत के वंशज,</span> <sup>47</sup><span class='v-txt'>केरोस के वंशज, सीआ के वंशज, पादोन के वंशज,</span> <sup>48</sup><span class='v-txt'>लबाना के वंशज, हगाबा के वंशज, शलमय के वंशज,</span> <sup>49</sup><span class='v-txt'>हानान के वंशज, गिद्दोन के वंशज, गहर के वंशज,</span> <sup>50</sup><span class='v-txt'>रआया के वंशज, रसीन के वंशज, नकोदा के वंशज,</span> <sup>51</sup><span class='v-txt'>गज़्ज़ाम के वंशज, उज़्ज़ा के वंशज, पासेअह के वंशज,</span> <sup>52</sup><span class='v-txt'>बेसय के वंशज, मऊनियों के वंशज, नफ़ीसियों के वंशज,</span> <sup>53</sup><span class='v-txt'>बकबूक के वंशज, हकूफ़ा के वंशज, हरहुर के वंशज,</span> <sup>54</sup><span class='v-txt'>बसलोत के वंशज, महीदा के वंशज, हर्शा के वंशज,</span> <sup>55</sup><span class='v-txt'>बरकोस के वंशज, सीसरा के वंशज, तेमह के वंशज,</span> <sup>56</sup><span class='v-txt'>नसीअह के वंशज और हटीफ़ा के वंशज।</span> <sup>57</sup><span class='v-txt'>सुलेमान के सेवकों के वंशजः सोटय के वंशज, सोफ़ेरेत के वंशज, परीदा के वंशज,</span> <sup>58</sup><span class='v-txt'>याला के वंशज, दरकोन के वंशज, गिद्देल के वंशज,</span> <sup>59</sup><span class='v-txt'>शफ़ट्या के वंशज, हट्टील के वंशज, पोकेरेत-हस्सबायीम के वंशज और आमोन के वंशज।</span> <sup>60</sup><span class='v-txt'>मन्दिर के सेवकों और सुलेमान के सेवकों के वंशजों की कुल संख्या तीन सौ बानबे थी।</span> <sup>61</sup><span class='v-txt'>निम्नांकित लोग, जो तेल-मेलह, तेल-हर्शा, करूब, अद्दोन और इम्मेर के निवासी थे, यह नहीं बता सकते थे कि उनका घराना या उनका वंश इस्राएल का था या नहीं।</span> <sup>62</sup><span class='v-txt'>ये थे: दलाया के वंशज, टोबीया के वंशज, और नकोदा के वंशज, कुल छः सौ बयालीस।</span> <sup>63</sup><span class='v-txt'>फिर याजकों में: हबाया के वंशज, हक्कोस के वंशज और बरज़िल्ल के वंशज (उसने गिलआद के निवासी बरज़िल्लय की कन्या के साथ विवाह किया था और उसके पिता का नाम भी अपना लिया) ।</span> <sup>64</sup><span class='v-txt'>वे वंशावलियों में अपने-अपने नामों की खोज करते थे और उन्हें न पाने के कारण याजकपद के लिए अयोग्य करार कर दिये गये थे।</span> <sup>65</sup><span class='v-txt'>राज्यपाल ने उन से कहा कि जब तक ऊरीम और तुम्मीम के द्वारा जाँचने वाला कोई याज़क न मिले, तब तक तुम परमपवित्र भोजन नहीं खा सकोगे।</span> <sup>66</sup><span class='v-txt'>सारे समुदाय की सम्मिलित संख्या बयालीस हज़ार तीन सौ साठ थी।</span> <sup>67</sup><span class='v-txt'>इसके अतिरिक्त उनके दास-दासियाँ भी थे, जिनकी संख्या सात हज़ार तीन सौ सैंतीस थी।  उनके साथ दो सौ पैंतालीस गायक-गायिकाएँ भी थे</span> <sup>68</sup><span class='v-txt'>और चार सौ पैंतीस ऊँट और छः हज़ार सात सौ बीस गधे थे।</span> <sup>69</sup><span class='v-txt'>कुछ घरानों के मुखिया निर्माण-कार्य के लिए भेंट देने लगे।  राज्यपाल ने चन्दे में एक हज़ार सोने की अशर्फि़याँ, पचास पात्र और पाँच सौ तीस याजकी वस्त्र दिये।</span> <sup>70</sup><span class='v-txt'>घरानों के कुछ मुखियाओं ने निर्माण-कोष के लिए बीस हज़ार सोने की अशर्फि़याँ और दो हज़ार दो सौ चाँदी के सिक्के दिये।</span> <sup>71</sup><span class='v-txt'>अन्य लोगों ने बीस हज़ार सोने की अशर्फि़याँ, दो हज़ार चाँदी के सिक्के और सड़सठ याजकीय वस्त्र दिये।</span> <sup>72</sup><span class='v-txt'>याजक, लेवी और अन्य कुछ लोग येरूसालेम में बस गये। गायक, द्वारपाल मन्दिर के सेवक और अन्य सब इस्राएली, अपने-अपने नगर लौट गये।  सातवें महीने तक इस्राएली अपने-अपने नगर में बस गये।</span> </p>
+        <div class='nav'><a href='016006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='016008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

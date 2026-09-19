@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लेवी - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लेवी</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा और हारून से कहा इस्राएलियों से कहो-</span> <sup>2</sup><span class='v-txt'>&#039;&#039;यदि किसी पुरुष के शरीर से वीर्य का स्राव होता है तो वह इस कारण अशुद्ध है।</span> <sup>3</sup><span class='v-txt'>चाहे वह स्राव होता रहता हो या उसके शरीर में रुका रहता हो, वह उसे अशुद्ध बनाता है।</span> <sup>4</sup><span class='v-txt'>इस प्रकार के स्राव से पीड़ित व्यक्ति जिस बिछावन पर लेटता है या जिस वस्तु पर बैठता है, वह अशुद्ध है।</span> <sup>5</sup><span class='v-txt'>जो उस व्यक्ति के बिछावन का स्पर्श करेगा, वह अपने कपड़े धोयेगा और स्नान करेगा। वह शाम तक अशुद्ध रहेगा।</span> <sup>6</sup><span class='v-txt'>जिस वस्तु पर रोगी बैठता है, उस पर बैठने वाला व्यक्ति अपने कपड़े धोयेगा और स्नान करेगा। वह शाम तक अशुद्ध रहेगा।</span> <sup>7</sup><span class='v-txt'>जो रोगी व्यक्ति का स्पर्श करेगा, वह अपने कपड़े धोयेगा और स्नान करेगा। वह शाम तक अशुद्ध रहेगा।</span> <sup>8</sup><span class='v-txt'>यदि रोगी व्यक्ति का थूक किसी शुद्ध मनुष्य पर पड़े, तो वह अपने कपड़े धोयेगा और स्नान करेगा। वह शाम तक अशुद्ध रहेगा।</span> <sup>9</sup><span class='v-txt'>जिस जीन पर वह रोगी व्यक्ति बैठा है, वह अशुद्ध है।</span> <sup>10</sup><span class='v-txt'>यदि कोई ऐसी चीज़ का स्पर्श करेगा, जिस पर रोगी बैठा है, तो वह अशुद्ध है। जो ऐसी चीज़ उठायेगा, वह अपने कपड़े धोयेगा और स्नान करेगा। वह शाम तक अशुद्ध रहेगा।</span> <sup>11</sup><span class='v-txt'>यदि रोगी व्यक्ति बिना हाथ धोये किसी का स्पर्श करेगा, तो वह अपने कपड़े धोयेगा और स्नान करेगा। वह शाम तक अशुद्ध रहेगा।</span> <sup>12</sup><span class='v-txt'>मिट्टी का वह बरतन, जिसे रोगी ने स्पर्श किया, फोड़ दिया जायेगा और लकड़ी की बनी चीज़ पानी से धोयी जायेगी।</span> <sup>13</sup><span class='v-txt'>यदि किसी रोगी का स्राव अच्छा हो गया हो और वह शुद्धीकरण करना चाहे तो वह सात दिन तक प्रतीक्षा करे। वह कपड़े धोयेगा और बहते पानी में स्नान करेगा। इस पर वह शुद्ध हो जायेगा।</span> <sup>14</sup><span class='v-txt'>आठवें दिन वह दो पण्डुक या दो कबूतर लिये दर्शन-कक्ष के द्वार पर प्रभु के सामने आयेगा और उन्हें याजक को देगा।</span> <sup>15</sup><span class='v-txt'>याजक एक को पाप के प्रायश्चित के रूप में चढ़ायेगा और एक को होम-बलि के रूप में। इस प्रकार वह स्राव के कारण उसके लिए प्रभु के सामने प्रायश्चित-विधि सम्पन्न करेगा।</span> <sup>16</sup><span class='v-txt'>यदि किसी पुरुष का वीर्यपात हो जाये, तो वह पानी से स्नान करे। वह शाम तक अशुद्ध रहेगा।</span> <sup>17</sup><span class='v-txt'>ऐसे वस्त्र और चमड़े की वस्तुएँ जिन पर वीर्य गिरा हो, पानी से धोयी जायें। वे शाम तक अशुद्ध होंगी।</span> <sup>18</sup><span class='v-txt'>यदि कोई पुरुष किसी स्त्री से प्रसंग करता है और वीर्यपात हो जाता है, तो दोनों स्नान करेंगे। वे शाम तक अशुद्ध रहेंगे।</span> <sup>19</sup><span class='v-txt'>यदि किसी स्त्री का मासिक स्राव हो, तो वह सात दिन तक अशुद्ध रहेगी और जो उसका स्पर्श करेगा, वह शाम तक अशुद्ध रहेगा।</span> <sup>20</sup><span class='v-txt'>वह सब, जिस पर वह अपने मासिक धर्म के समय लेटती या बैठती है, अशुद्ध हो जायेगा।</span> <sup>21</sup><span class='v-txt'>जो उसके बिछावन का स्पर्श करेगा। वह अपने कपड़े धोयेगा और स्नान करेगा। वह शाम तक अशुद्ध रहेगा।</span> <sup>22</sup><span class='v-txt'>यदि कोई ऐसी चीज का स्पर्श करेगा, जिस पर वह बैठी है, तो वह अपने कपड़े धोयेगा और स्नान करेगा।</span> <sup>23</sup><span class='v-txt'>जो व्यक्ति किसी ऐसी चीज़ का स्पर्श करे, जो उस बिछावन या उस वस्तु पर पड़ी हो, जिस पर वह बैठी थी, वह शाम तक अशुद्ध रहेगा।</span> <sup>24</sup><span class='v-txt'>यदि कोई पुरुष ऐसी स्त्री से प्रसंग करे, तो वह भी सात दिन तक अशुद्ध रहेगा और वह जिस बिछावन पर लेटता है, वह अशुद्ध हो जायेगा।</span> <sup>25</sup><span class='v-txt'>यदि किसी स्त्री को उसके मासिक धर्म के दिनों के सिवा अन्य दिनों में अथवा मासिक धर्म पूरा होने के बाद रक्तस्राव होता रहे, तो वह उस समय ऋतुकाल की तरह अशुद्ध है।</span> <sup>26</sup><span class='v-txt'>रक्तस्राव के दिनों में बिछावन के लिए मासिक धर्म का नियम लागू है। जिस वस्तु पर वह बैठी है, उस पर यही नियम लागू है; वह मासिक धर्म के समय की तरह अशुद्ध है।</span> <sup>27</sup><span class='v-txt'>जो उन वस्तुओं का स्पर्श करेगा, वह अशुद्ध हो जायेगा। वह अपने कपड़े धोयेगा और स्नान करेगा। वह शाम तक अशुद्ध रहेगा।</span> <sup>28</sup><span class='v-txt'>जब वह अपने स्राव से मुक्त हो जायेगी, तो वह सात दिन तक प्रतीक्षा करेगी। इसके बाद वह शुद्ध होगी।</span> <sup>29</sup><span class='v-txt'>आठवें दिन वह दो पण्डुक या दो कबूतर प्रभु के सामने, दर्शन-कक्ष के द्वार पर, याजक के पास ले जाये।</span> <sup>30</sup><span class='v-txt'>याजक एक को प्रायश्चित-बलि के रूप में और दूसरें को होग-बलि के रूप में चढ़ाये। इस प्रकार याजक स्राव की अशुद्धता के कारण उसके लिए प्रभु के सामने प्रायश्चित-विधि सम्पन्न करेगा।</span> <sup>31</sup><span class='v-txt'>इस्राएलियों को उनकी अशुद्धता के परिणामों की चेतावनी दो। यदि वे उस अवस्था में मेरे निवास में प्रवेश करेंगे, तो उनकी मृत्यु हो जायेगी।</span> <sup>32</sup><span class='v-txt'>(३२-३३) जिस पुरुष के शरीर से वीर्य का स्राव होता है या वीर्य पात हुआ है, जिस स्त्री का मासिक धर्म होता है, जिस पुरुष या स्त्री का स्राव होता है, जिस पुरुष का किसी स्त्री से प्रसंग हुआ है, उन सब की अशुद्धता के विषय में यही नियम है।&#039;&#039;</span> </p>
+        <div class='nav'><a href='003014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='003016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

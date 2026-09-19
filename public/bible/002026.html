@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>निर्गमन - अध्याय 26</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>निर्गमन</h1>
+        <h2>अध्याय 26</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&#039;&#039;निवासस्थान को ऐसे दस परदों से बनवाओं, जो बटी हुई छालटी और नीले, बैंगनी और लाल रंग के कपड़ों से बने हों और जिन पर एक कुशल शिल्पकार द्वारा केरूबों के चित्र कढ़े हों।</span> <sup>2</sup><span class='v-txt'>हर परदें की लम्बाई अट्ठाइस हाथ और चौड़ाई चार हाथ हो। हर परदा एक ही नाप का हो।</span> <sup>3</sup><span class='v-txt'>पाँच परदे एक दूसरे से जुड़वाओं और इसी प्रकार दूसरे पाँच परदे भी।</span> <sup>4</sup><span class='v-txt'>दोनों सामने वाले परदों के किनारे पर नीले रंग के फन्दे लगवाओं;</span> <sup>5</sup><span class='v-txt'>एक परदे में पचास फन्दे और दूसरे में भी पचास फंदे। वे फन्दे एक दूसरे के आमने-सामने हों।</span> <sup>6</sup><span class='v-txt'>फिर, सोने के पचास अँकुड़े बनवाओं और उन अँकुड़ों से दोनों परदों को मिलाओ, जिससे निवासस्थान एक इकाई बन जाये।</span> <sup>7</sup><span class='v-txt'>&#039;&#039;निवासस्थान को ढकने के लिए तुम बकरी के बालों के परदे बनवाओ; ग्यारह परदे बनवाओ।</span> <sup>8</sup><span class='v-txt'>हर परदे की लम्बाई तीस हाथ और चौड़ाई चार हाथ हो। ग्यारह परदे एक ही नाप के हों।</span> <sup>9</sup><span class='v-txt'>उन परदों में पाँच को जोड़ कर एक परदा बनवाओं और शेष छः परदों को भी जोड़ कर एक दूसरा परदा बनवाओ। छठे परदे को तम्बू के सामने मोड़ कर दुहरा कर दो।</span> <sup>10</sup><span class='v-txt'>दोनों सामने वाले परदों के किनारे पर पचास फन्दे बनवाओं।</span> <sup>11</sup><span class='v-txt'>फिर काँसे के पचास अँकुड़े बनवाओं। उन अँकुड़ों में फन्दे लगवाओं और तम्बू के दोनों भाग इस प्रकार जोड़ दो कि वह एक इकाई बन जाये।</span> <sup>12</sup><span class='v-txt'>परदों का वह भाग जो बचा है, उसका आधा भाग निवास के पीछे लटकता रहने दो</span> <sup>13</sup><span class='v-txt'>और परदों की लम्बाई में बचा हुआ भाग निवास के अगल-बगल ढकने के लिए, एक-एक हाथ लटकता छोड़ दो।</span> <sup>14</sup><span class='v-txt'>तम्बू के लिए तुम मेढ़े के सीजे चमड़े का एक आवरण बनवाओ और फिर उसके ऊपर लगाने का सूस के चमड़े का एक और आवरण।</span> <sup>15</sup><span class='v-txt'>निवास के लिए बबूल की लकड़ी से चौखटें बनवा कर खड़ा कर दो।</span> <sup>16</sup><span class='v-txt'>हर एक की लम्बाई दस हाथ और चौड़ाई डेढ़ हाथ हो।</span> <sup>17</sup><span class='v-txt'>जोड़ने के लिए प्रत्येक चौखट में दो चूलें हों। निवास की सब चौखटें उसी तरह बनवाओ।</span> <sup>18</sup><span class='v-txt'>निवास के दक्षिणी किनारे के लिए बीस चौखटें बनवाओ और</span> <sup>19</sup><span class='v-txt'>उनके नीचे चाँदी की चालीस कुर्सियाँ, अर्थात् एक-एक चौखट के नीचे उसकी दोनों चूलों के लिऐ दो कुर्सियाँ।</span> <sup>20</sup><span class='v-txt'>निवास की दूसरी ओर, अर्थात् उत्तरी किनारे के लिए भी बीस चौखटें बनवाओ।</span> <sup>21</sup><span class='v-txt'>साथ-साथ चाँदी की चालीस कुर्सियाँ, प्रत्येक चौखट के नीचे दो कुर्सियाँ, बनवाओ।</span> <sup>22</sup><span class='v-txt'>निवास के पीछे, अर्थात् पश्चिमी ओर के लिए छह और चौखटें बनवाओ।</span> <sup>23</sup><span class='v-txt'>निवास के पीछे के भाग के कोनों के लिए दो चौखटें बनवाओ।</span> <sup>24</sup><span class='v-txt'>वे दुहरी हों, नीचे की ओर कुछ अलग हों और ऊपर एक कड़े पर जुड़ी हों दोनों कोनों पर ऐसा ही होगा।</span> <sup>25</sup><span class='v-txt'>इस तरह आठ चौखटें होगी, जिनके नीचे चाँदी की सोलह कुर्सियाँ होंगी, प्रत्येक चौखट के नीचे दो कुर्सियाँ।</span> <sup>26</sup><span class='v-txt'>&#039;&#039;बबूल की लकड़ी के छड़ बनवाओ। निवास की एक ओर की चौखटों के लिए पाँच छड़</span> <sup>27</sup><span class='v-txt'>और निवास की दूसरी ओर की चौखटों के लिए पाँच छड़; निवास के पिछले भाग, अर्थात् पश्चिमी किनारे की चौखटों के लिए भी पाँव छड़।</span> <sup>28</sup><span class='v-txt'>बीच वाला छड़ चौखटों के बीचों-बीच एक सिरे से दूसरे सिरे तक पहुँचता हो।</span> <sup>29</sup><span class='v-txt'>चौखटों को सोने से मढ़वाओ। छड़ों के घरों के लिए सोने के कड़े बनवा कर छड़ों को भी सोने से मढ़वाओ।</span> <sup>30</sup><span class='v-txt'>इस प्रकार निवास को ठीक उसी नमूने के अनुसार बनवाओ, जो तुम को पर्वत पर दिखाया गया है।</span> <sup>31</sup><span class='v-txt'>&#039;&#039;फिर नीले, बैंगनी और लाल रंग के कपड़ों से और बटी हुई छालटी से एक अन्तरपट बनवाओ, जिस में एक कुशल शिल्पकार द्वारा केरूबों के चित्र कढ़े हों।</span> <sup>32</sup><span class='v-txt'>उसे सोने के मढ़े बबूल की लकड़ी के चार खूँटों में लटकाओ। वे चाँदी की चार कुर्सियों पर लगे हों तथा सोने के अँकुड़ों में फँसे हों।</span> <sup>33</sup><span class='v-txt'>अन्तरपट को अँकुड़ों द्वारा लटकाओ और अन्तरपट के पीछे विधान की मंजूषा रखवाओ। वह अन्तरपट परम-पवित्र स्थान से पवित्र स्थान को अलग करेगा।</span> <sup>34</sup><span class='v-txt'>परमपवित्र स्थान में विधान की मंजूषा पर छादन-फलक को रखवाओ।</span> <sup>35</sup><span class='v-txt'>अन्तरपट के बाहर, निवासस्थान के उत्तरी भाग में मेज़ रखवाओं और मेज़ के सामने, निवास के दक्षिणी भाग में, दीपवृक्ष रखवाओ।</span> <sup>36</sup><span class='v-txt'>निवास के द्वार के लिए नीले, बैंगनी और लाल रंग के कपड़ों का तथा बटी हुई छालटी का एक परदा बनवाओ, जिस में बेलबूटे कढ़े हों।</span> <sup>37</sup><span class='v-txt'>इस परदे को लटकाने के लिए बबूल की लकड़ी के सोने से मढ़े पाँच खूँटे बनवाओं। उनके अँकुड़े सोने के हों और उनके लिए काँसे की पाँच कुर्सियाँ ढलवाओ।</span> </p>
+        <div class='nav'><a href='002025.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='002027.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

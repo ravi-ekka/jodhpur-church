@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>स्तोत्र - अध्याय 95</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>स्तोत्र</h1>
+        <h2>अध्याय 95</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>आओ!  हम आनन्द मनाते हुए प्रभु की स्तुति करें, अपने शक्तिशाली त्राणकर्ता का गुणगान करें।</span> <sup>2</sup><span class='v-txt'>हम धन्यवाद करते हुए उसके पास जायें, भजन गाते हुए उसे धन्य कहें;</span> <sup>3</sup><span class='v-txt'>क्योंकि हमारा प्रभु शक्तिशाली ईश्वर है, वह सभी देवताओं से महान् अधिपति है।</span> <sup>4</sup><span class='v-txt'>वह पृथ्वी की गहराइयों को अपने हाथ से संभालता है, पर्वतों के शिखर उसी के है।</span> <sup>5</sup><span class='v-txt'>समुद्र और पृथ्वी, जल और थल सब उसके बनाये हुए और उसी के हैं।</span> <sup>6</sup><span class='v-txt'>आओ!  हम दण्डवत् कर प्रभु की आराधना करें, अपने सृष्टिकर्ता के सामने घुटने टेकें;</span> <sup>7</sup><span class='v-txt'>क्योंकि वही हमारा ईश्वर है और हम हैं- उसके चरागाह की प्रजा, उसकी अपनी भेड़ें।  ओह! यदि तुम आज उसकी यह वाणी सुनो,</span> <sup>8</sup><span class='v-txt'>अपना हृदय कठोर न कर लो, जैसा कि पहले मरीबा में, जैसा कि मस्सा की मरुभूमि में हुआ था।</span> <sup>9</sup><span class='v-txt'>तुम्हारे पूर्वजों ने वहाँ मुझे चुनौती दी मेरा कार्य देख कर भी उन्होंने मेरी परीक्षा ली।</span> <sup>10</sup><span class='v-txt'>वह पीढ़ी मुझे चालीस वर्षों तक अप्रसन्न करती रही और मैंने कहा, &quot;उनका हृदय भटकता रहा है, वे मेरे मार्ग नहीं जानते&quot;।</span> <sup>11</sup><span class='v-txt'>तब मैंने क्रुद्ध होकर यह शपथ खायी: &quot;वे मेरे विश्राम-स्थान में प्रवेश नहीं करेंगे&quot;।</span> </p>
+        <div class='nav'><a href='023094.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='023096.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

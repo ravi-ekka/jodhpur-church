@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ईसा किसी विश्राम के दिन गेंहूँ के खेतों से हो कर जा रहे थे।  उनके शिष्य बालें तोड़ कर और हाथ से मसल कर खाते थे।</span> <sup>2</sup><span class='v-txt'>कुछ फ़रीसियों ने कहा, &quot;जो काम विश्राम के दिन मना है, तुम क्यों वही कर रहे हो?&quot;</span> <sup>3</sup><span class='v-txt'>ईसा ने उन्हें उत्तर दिया, &quot;क्या तुम लोगों ने यह नहीं पढ़ा कि जब दाऊद और उनके साथियो को भूख लगी, तो दाऊद ने क्या क्या किया था?</span> <sup>4</sup><span class='v-txt'>उन्होंने ईश-मन्दिर में जा कर भेंट की रोटियाँ उठा लीं, उन्हें स्वयं खाया तथा अपने साथियों को भी खिलाया। याजकों को छोड़ किसी और को उन्हें खाने की आज्ञा तो नहीं है।&quot;</span> <sup>5</sup><span class='v-txt'>और ईसा ने उन से कहा, &quot;मानव पुत्र विश्राम के दिन का स्वामी&quot;।</span> <sup>6</sup><span class='v-txt'>किसी दूसरे विश्राम के दिन ईसा सभागृह जा कर शिक्षा दे रहे थे।  वहाँ एक मनुष्य था, जिसका दायाँ हाथ सूख गया था।</span> <sup>7</sup><span class='v-txt'>शास्त्री और फ़रीसी इस बात की ताक में थे कि यदि ईसा विश्राम के दिन किसी को चंगा करें, तो हम उन पर दोष लगायें।</span> <sup>8</sup><span class='v-txt'>ईसा ने उनके विचार जान कर सूखे हाथ वाले से कहा, &quot;उठो और बीच में खड़े हो जाओ&quot;।  वह उठ खड़ा हो गया।</span> <sup>9</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;मैं तुम से पूछ़ता हूँ-विश्राम के दिन भलाई करना उचित है या बुराई, जान बचाना या नष्ट करना?&quot;</span> <sup>10</sup><span class='v-txt'>तब उन सबों पर दृष्टि दौड़ा कर उन्होंने उस मनुष्य से कहा, &quot;अपना हाथ बढ़ाओ&quot;।  उसने ऐसा किया और उसका हाथ अच्छा हो गया।</span> <sup>11</sup><span class='v-txt'>वे बहुत क्रुद्ध हो गये और आपस में परामर्श करते रहे कि हम ईसा के विरुद्ध क्या करें।</span> <sup>12</sup><span class='v-txt'>उन दिनों ईसा प्रार्थना करने एक पहाड़ी पर चढ़े और वे रात भर ईश्वर की प्रार्थना में लीन रहे।</span> <sup>13</sup><span class='v-txt'>दिन होने पर उन्होंने अपने शिष्यों को पास बुलाया और उन में से बारह को चुन कर उनका नाम ’प्रेरित’ रखा-</span> <sup>14</sup><span class='v-txt'>सिमोन जिसे उन्होंने पेत्रुस नाम दिया और उसके भाई अन्द्रेयस को; याकूब और योहन को; फि़लिप और बरथोलोमी को,</span> <sup>15</sup><span class='v-txt'>मत्ती और थोमस को; अलफाई के पुत्र याकूब और सिमोन को, जो ’उत्साही’ कहलाता है;</span> <sup>16</sup><span class='v-txt'>याकूब के पुत्र यूदस और यूदस इसकारियोती को, जो विश्वासघाती निकला।</span> <sup>17</sup><span class='v-txt'>ईसा उनके साथ उतर कर एक मैदान में खड़े हो गये। वहाँ उनके बहुत-से शिष्य थे और समस्त यहूदिया तथा येरूसालेम का और समुद्र के किनारे तीरूस तथा सिदोन का एक विशाल जनसमूह भी था, जो उनका उपदेश सुनने और अपने रोगों से मुक्त होने के लिए आया था।</span> <sup>18</sup><span class='v-txt'>ईसा ने अपदूतग्रस्त लोगों को चंगा किया।</span> <sup>19</sup><span class='v-txt'>सभी लोग ईसा को स्पर्श करने का प्रयत्न कर रहे थे, क्योंकि उन से शक्ति निकलती थी और सब को चंगा करती थी।</span> <sup>20</sup><span class='v-txt'>ईसा ने अपने शिष्यों की ओर देख कर कहा, &quot;धन्य हो तुम, जो दरिद्र हो! स्वर्गराज्य तुम लोगों का है।</span> <sup>21</sup><span class='v-txt'>धन्य हो तुम, जो अभी भूखे हो! तुम तृप्त किये जाओगे। धन्य हो तुम, जो अभी रोते हो! तुम हँसोगे।</span> <sup>22</sup><span class='v-txt'>धन्य हो तुम, जब मानव पुत्र के कारण लोग तुम से बैर करेंगे, तुम्हारा बहिष्कार और अपमान करेंगे और तुम्हारा नाम घृणित समझ कर निकाल देंगे!</span> <sup>23</sup><span class='v-txt'>उस दिन उल्लसित हो और आनन्द मनाओ, क्योंकि स्वर्ग में तुम्हें महान् पुरस्कार प्राप्त होगा।  उनके पूर्वज नबियों के साथ ऐसा ही किया करते थे।</span> <sup>24</sup><span class='v-txt'>&quot;धिक्कार तुम्हें, जो धनी हो! तुम अपना सुख-चैन पा चुके हो।</span> <sup>25</sup><span class='v-txt'>धिक्कार तुम्हें, जो अभी तृप्त हो! तुम भूखे रहोगे। धिक्कार तुम्हें, जो अभी हँसते हो! तुम शोक मनाओगे और रोओगे।</span> <sup>26</sup><span class='v-txt'>धिक्कार तुम्हें, जब सब लोग तुम्हारी प्रशंसा करते हैं! उनके पूर्वज झूठे नबियों के साथ ऐसा ही किया करते थे।</span> <sup>27</sup><span class='v-txt'>&quot;मैं तुम लोगों से, जो मेरी बात सुनते हो, कहता हूँ - अपने शत्रुओं से प्रेम करो।  जो तुम से बैर करते हैं, उनकी भलाई करो।</span> <sup>28</sup><span class='v-txt'>जो तुम्हें शाप देते है, उन को आशीर्वाद दो।  जो तुम्हारे साथ दुव्र्यवहार करते हैं, उनके लिए प्रार्थना करो।</span> <sup>29</sup><span class='v-txt'>जो तुम्हारे एक गाल पर थप्पड़ मारता है, दूसरा भी उसके सामने कर दो।  जो तुम्हारी चादर छीनता है, उसे अपना कुरता भी ले लेने दो।</span> <sup>30</sup><span class='v-txt'>जो तुम से माँगता है, उसे दे दो और जो तुम से तुम्हारा अपना छीनता है, उसे वापस मत माँगो।</span> <sup>31</sup><span class='v-txt'>दूसरों से अपने प्रति जैसा व्यवहार चाहते हो, तुम भी उनके प्रति वैसा ही किया करो।</span> <sup>32</sup><span class='v-txt'>यदि तुम उन्हीं को प्यार करते हो, जो तुम्हें प्यार करते हैं, तो इस में तुम्हारा पुण्य क्या है? पापी भी अपने प्रेम करने वालों से प्रेम करते हैं।</span> <sup>33</sup><span class='v-txt'>यदि तुम उन्हीं की भलाई करते हो, जो तुम्हारी भलाई करते हैं, तो इस में तुम्हारा पुण्य क्या है? पापी भी ऐसा करते हैं।</span> <sup>34</sup><span class='v-txt'>यदि तुम उन्हीं को उधार देते हो, जिन से वापस पाने की आशा करते हो, तो इस में तुम्हारा पुण्य क्या है? पूरा-पूरा वापस पाने की आशा में पापी भी पापियों को उधार देते हैं।</span> <sup>35</sup><span class='v-txt'>परन्तु अपने शत्रुओं से प्रेम करो, उनकी भलाई करो और वापस पाने की आशा न रख कर उधार दो।  तभी तुम्हारा पुरस्कार महान् होगा और तुम सर्वोच्च प्रभु के पुत्र बन जाओगे, क्योंकि वह भी कृतघ्नों और दुष्टों पर दया करता है।</span> <sup>36</sup><span class='v-txt'>&quot;अपने स्वर्गिक पिता-जैसे दयालु बनो।  दोष न लगाओ और तुम पर भी दोष नहीं लगाया जायेगा।</span> <sup>37</sup><span class='v-txt'>किसी के विरुद्ध निर्णय न दो और तुम्हारे विरुद्ध भी निर्णय नहीं दिया जायेगा।  क्षमा करो और तुम्हें भी क्षमा मिल जायेगी।</span> <sup>38</sup><span class='v-txt'>दो और तुम्हें भी दिया जायेगा। दबा-दबा कर, हिला-हिला कर भरी हुई, ऊपर उठी हुई, पूरी-की-पूरी नाप तुम्हारी गोद में डाली जायेगी; क्योंकि जिस नाप से तुम नापते हो, उसी से तुम्हारे लिए भी नापा जायेगा।&quot;</span> <sup>39</sup><span class='v-txt'>ईसा ने उन्हें एक दृष्टान्त सुनाया, &quot;क्या अन्धा अन्धे को राह दिखा सकता है? क्या दोनों ही गड्ढे में नहीं गिर पडेंगे?</span> <sup>40</sup><span class='v-txt'>शिष्य गुरू से बड़ा नहीं होता।  पूरी-पूरी शिक्षा प्राप्त करने के बाद वह अपने गुरू-जैसा बन सकता है।</span> <sup>41</sup><span class='v-txt'>&quot;जब तुम्हें अपनी ही आँख की धरन का पता नहीं, तो तुम अपने भाई की आँख का तिनका क्यों देखते हो?</span> <sup>42</sup><span class='v-txt'>जब तुम अपनी ही आँख की धरन नहीं देखते हो, तो अपने भाई से कैसे कह सकते हो, ’भाई! मैं तुम्हारी आँख का तिनका निकाल दूँ?’ ढोंगी! पहले अपनी ही आँख की धरन निकालो।  तभी तुम अपने भाई की आँख का तिनका निकालने के लिए अच्छी तरह देख सकोगे।</span> <sup>43</sup><span class='v-txt'>&quot;कोई अच्छा पेड़ बुरा फल नहीं देता और न कोई बुरा पेड़ अच्छा फल देता है।</span> <sup>44</sup><span class='v-txt'>हर पेड़ अपने फल से पहचाना जाता है।  लोग न तो कँटीली झाडि़यों से अंजीर तोड़ते हैं और न ऊँटकटारों से अंगूर।</span> <sup>45</sup><span class='v-txt'>अच्छा मनुष्य अपने हृदय के अच्छे भण्डार से अच्छी चीजे़ं निकालता है और जो बुरा है, वह अपने बुरे भण्डार से बुरी चीज़ें निकालता है; क्योंकि जो हृदय में भरा है, वहीं तो मुँह से बाहर आता है।</span> <sup>46</sup><span class='v-txt'>&quot;जब तुम मेरा कहना नहीं मानते, तो ’प्रभु! प्रभु!  कह कर मुझे क्यों पुकारते हो?</span> <sup>47</sup><span class='v-txt'>जो मेरे पास आ कर मेरी बातें सुनता और उन पर चलता है-जानते हो, वह किसके सदृश है?</span> <sup>48</sup><span class='v-txt'>वह उस मनुष्य के सदृश है, जो घर बनाते समय गहरा खोदता और उसकी नींव चट्टान पर डालता है।  बाढ़ आती है, और जलप्रवाह उस मकान से टकराता है, किन्तु वह उसे ढा नहीं पाता; क्योंकि वह घर बहुत मज़बूत बना है।</span> <sup>49</sup><span class='v-txt'>परन्तु जो मेरी बातें सुनता है और उन पर नहीं चलता, वह उस मनुष्य के सदृश है, जो बिना नींव डाले भूमितल पर अपना घर बनाता है।  जल-प्रवाह की टक्कर लगते ही वह घर ढह जाता है और उसका सर्वनाश हो जाता है।&quot;</span> </p>
+        <div class='nav'><a href='049005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

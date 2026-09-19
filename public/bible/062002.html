@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>2 तिमथी - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>2 तिमथी</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>पुत्र! तुम ईसा मसीह की कृपा से बल ग्रहण करते रहो।</span> <sup>2</sup><span class='v-txt'>तुम्हें अनेक साथियों के सामने मुझ से जो शिक्षा मिली, उसे तुम ऐसे विश्वस्त व्यक्तियों को सौंप दो, जो स्वयं दूसरों को शिक्षा देने योग्य हों।</span> <sup>3</sup><span class='v-txt'>ईसा मसीह के उत्तम सैनिक की तरह तुम मेरे साथ कष्ट सहते जाओं।</span> <sup>4</sup><span class='v-txt'>जो सेना में नाम लिखा चुका है, वह नागरिक जीवन की झंझटों में अपने को नहीं फँसाता, जिससे वे सेना के अधिकारी को प्रसन्न कर सके।</span> <sup>5</sup><span class='v-txt'>किसी भी खिलाड़ी को पुरस्कार नहीं मिल सकता, जब तक कि वह खेल-कूद के नियमों का पालन नहीं करता।</span> <sup>6</sup><span class='v-txt'>परिश्रम करने वाले किसान को सब से पहले फसल का हिस्सा मिलना चाहिए।</span> <sup>7</sup><span class='v-txt'>तुम मेरी बातों पर अच्छी तरह विचार करो, क्योंकि प्रभु सब बातें पूर्ण रूप से समझने में तुम्हारी सहायता करेगा।</span> <sup>8</sup><span class='v-txt'>दाऊद के वंश में उत्पन्न, मृतकों में से पुनर्जीवित ईसा मसीह को बराबर याद रखो- यह मेरे सुसमाचार का विषय है।</span> <sup>9</sup><span class='v-txt'>मैं इस सुसमाचार की सेवा में कष्ट पाता हूँ और अपराधी की तरह बन्दी हूँ;</span> <sup>10</sup><span class='v-txt'>मैं चुने हुए लोगों के लिए सब कुछ सहता हूँ, जिससे वे भी ईसा मसीह द्वारा मुक्ति तथा सदा बनी रहने वाली महिमा प्राप्त करें।</span> <sup>11</sup><span class='v-txt'>यह कथन सुनिश्चित है- यदि हम उनके साथ मर गये, तो हम उनके साथ जीवन भी प्राप्त करेंगे।</span> <sup>12</sup><span class='v-txt'>यदि हम दृढ़ रहे, तो उनके साथ राज्य करेंगे।  यदि हम उन्हें अस्वीकार करेंगे, तो वह भी हमें अस्वीकार करेंगे।</span> <sup>13</sup><span class='v-txt'>यदि हम मुकर जाते हैं, तो भी वह सत्य प्रतिज्ञ बने रहेंगे; क्योंकि वह अपने स्वभाव के विरुद्ध नहीं जा सकते।</span> <sup>14</sup><span class='v-txt'>लोगों को इन बातों का स्मरण दिलाते रहो और ईश्वर को साक्षी बना कर उन से अनुरोध करो कि निरे शब्दों के विषय में वाद-विवाद न करें।  इस से कोई लाभ नहीं होता, बल्कि यह सुनने वालों के विनाश का कारण हो सकता है।</span> <sup>15</sup><span class='v-txt'>अपने को ईश्वर के सामने सुग्राह्य और एक ऐसे कार्यकर्ता के रूप में प्रस्तुत करने का प्रयन्त करते रहो, जिसे लज्जित होने का कोई कारण न हो और जो निष्कपट रूप से सत्य का प्रचार करे।</span> <sup>16</sup><span class='v-txt'>लौकिक और व्यर्थ बकवाद से दूर रहो।  जो लोग उस में लगे रहते हैं, वे धर्म के मार्ग से और दूर भटकेंगे</span> <sup>17</sup><span class='v-txt'>और उनकी बातों का प्रभाव नासूर की तरह फैल जायेगा। ऐसे लोगों में हुमेनैयुस और फि़लेतुस हैं,</span> <sup>18</sup><span class='v-txt'>जो यह कह कर सच्चाई से दूर भटक गये हैं कि हमारा पुनरुत्थान हो चुका है।  इस प्रकार वे कुछ लोगों के विश्वास में बाधा पहुँचाते हैं।</span> <sup>19</sup><span class='v-txt'>किन्तु ईश्वर ने जो नींव डाली है, वह सुदृढ़ है और उस में ये शब्द अंकित हैं- प्रभु उन लोगों को जानता है, जो उसके अपने हैं, और जो प्रभु का नाम लेता है, वह अधर्म से दूर रहे।</span> <sup>20</sup><span class='v-txt'>किसी भी बड़े घर में न केवल सोने और चाँदी के, बल्कि लकड़ी और मिट्टी के पात्र भी पाये जाते हैं।  कुछ पात्र ऊँचे प्रयोजन के लिए हैं और कुछ साधारण प्रयोजन के लिए।</span> <sup>21</sup><span class='v-txt'>जो मनुष्य इस प्रकार का दूषण अपने से दूर करेगा, वह एक ऐसा पात्र बनेगा, जो ऊँचे प्रयोजन के लिए है, पवित्र, गृहस्वामी के योग्य और हर प्रकार के सत्कार्य के लिए उपयुक्त है।</span> <sup>22</sup><span class='v-txt'>तुम युवावस्था की वासनाओं से दूर रहो और उन सबों के साथ, जो निष्कपट हृदय से प्रभु का नाम लेते हैं, धार्मिकता, विश्वास, प्रेम तथा शान्ति की साधना करते रहो।</span> <sup>23</sup><span class='v-txt'>निरर्थक तथा ऊटपटाँग विवादों से अलग रहो।  तुम जानते हो कि इन से झगड़ा पैदा होता है</span> <sup>24</sup><span class='v-txt'>और प्रभु के दास को झगड़लालू नहीं, बल्कि मिलनसार और सहनशील होना चाहिए।  वह शिक्षा देने के लिए तैयार रहे।</span> <sup>25</sup><span class='v-txt'>और इस आशा से विरोधियों को नम्रता से समझाये कि वे ईश्वर की दया से पश्चाताप करें, सच्चाई पहचानें,</span> <sup>26</sup><span class='v-txt'>और इस प्रकार होश में आ कर शैतान के फन्दे से निकल जायें, जिस में फँस कर वे उसके दास बन गये हैं।</span> </p>
+        <div class='nav'><a href='062001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='062003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

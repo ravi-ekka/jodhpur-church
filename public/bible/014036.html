@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>दुसरा इतिहास ग्रन्थ - अध्याय 36</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>दुसरा इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 36</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>देश की जनता ने येरूसालेम में योशीया के पुत्र योआहाज़ को उसके पिता की जगह राजा बनाया।</span> <sup>2</sup><span class='v-txt'>योआहाज़ जब राजा बना, तो तेईस वर्ष का था।  उसने येरूसालेम में तीन महीने शासन किया।</span> <sup>3</sup><span class='v-txt'>मिस्र के राजा ने उसे येरूसालेम के राजपद से हटा दिया और देश पर एक सौ मन चाँदी और एक मन सोने का कर लगाया।</span> <sup>4</sup><span class='v-txt'>इसके बाद मिस्र के राजा ने उसके भाई एल्याकीम को यूदा और येरूसालेम का राजा नियुक्त किया और उसका नाम बदल कर यहोयाकीम कर दिया।  नको उसके भाई योआहाज़ को पकड़ कर मिस्र ले गया।</span> <sup>5</sup><span class='v-txt'>यहोयाकीम जब राजा बना, तो पच्चीस वर्ष का था।  उसने येरूसालेम में ग्यारह वर्ष शासन किया।  उसने भी वही किया, जो प्रभु, उसके ईश्वर की दृष्टि में बुरा है।</span> <sup>6</sup><span class='v-txt'>बाबुल के राजा नबूकदनेज़र ने उस पर आक्रमण किया और उसे काँसे की दो बेड़ियों से बाँध कर बाबुल ले गया।</span> <sup>7</sup><span class='v-txt'>नबूकदनेज़र प्रभु के मन्दिर की सामग्री का एक भाग भी बाबुल ले गया और बाबुल के अपने महल में रख दिया।</span> <sup>8</sup><span class='v-txt'>यहोयाकीम का शेष इतिहास, उसके घृणित कार्य और चरित-यह सब इस्राएल और यूदा के राजाओं के इतिहास ग्रन्थ में लिखा है।  उसका पुत्र यहोयाकीन उसकी जगह राजा बना।</span> <sup>9</sup><span class='v-txt'>यहोयाकीन जब राजा बना, तो अठारह वर्ष का था।  उसने येरूसालेम में तीन महीने और दस दिन शासन किया।  उसने वही किया, जो प्रभु की दृष्टि में बुरा है।</span> <sup>10</sup><span class='v-txt'>वसन्त के दिनों में राजा नबूकदनेज़र प्रभु के मन्दिर की बहुमूल्य वस्तुओं-सहित उसे बाबुल ले गया और उसके सम्बन्धी सिदकीया को यूदा और येरूसालेम का राजा नियुक्त किया।</span> <sup>11</sup><span class='v-txt'>सिदकीया जब राजा बना, तो इक्कीस वर्ष का था।  उसने येरूसालेम में ग्यारह वर्ष शासन किया।</span> <sup>12</sup><span class='v-txt'>उसने वही किया, जो प्रभु की दृष्टि में बुरा है।  वह यिरमियाह के सामने दीन नहीं बना, जो उसे प्रभु की ओर से समझाता था।</span> <sup>13</sup><span class='v-txt'>इसके अतिरिक्त उसने राजा नबूकदनेज़र से विद्रोह किया, यद्यपि उसने उसे ईश्वर की शपथ दिलायी थी।  वह हठी बना रहा, अपना हृदय कठोर बनाये रखा और प्रभु, इस्राएल के ईश्वर की ओर अभिमुख नहीं हुआ।</span> <sup>14</sup><span class='v-txt'>याजकों के नेताओं में और जनता में भी बहुत अधिक अधर्म फैल गया, क्योंकि उन्होंने गै़र-यहूदी राष्ट्रों के घृणित कार्यों का अनुकरण किया और प्रभु द्वारा प्रतिष्ठित येरूसालेम को मन्दिर अपवित्र कर दिया।</span> <sup>15</sup><span class='v-txt'>प्रभु, उनके पूर्वजों का ईश्वर उनके पास अपने दूतों को निरन्तर भेजता रहा; क्योंकि उसे अपने मन्दिर तथा अपनी प्रजा पर तरस आता था।</span> <sup>16</sup><span class='v-txt'>किन्तु उन्होंने ईश्वर के दूतों का उपहास किया, उसके उपदेशों का तिरस्कार किया और उसके नबियों की हँसी उड़ायी।  अन्त में ईश्वर का क्रोध अपनी प्रजा पर फूट पड़ा और उस से बचने का कोई उपाय नहीं रहा।</span> <sup>17</sup><span class='v-txt'>प्रभु ने खल्दैयियों के राजा को उनके विरुद्ध भेजा, जिसने उनके मन्दिर में ही उनके नौजवानों को तलवार के घाट उतार दिया और युवकों, युवतियों, वृद्धों और अतिवृद्धों पर भी दया नहीं की।  ईश्वर ने सब को नबूकदनेज़र के हाथ दिया था।</span> <sup>18</sup><span class='v-txt'>ईश्वर के मन्दिर की क्या छोटी क्या बड़ी, सब सामग्री-प्रभु के मन्दिर के कोष, राजा और उसके पदाधिकारियों के कोष-उन सब को वह बाबुल ले गया।</span> <sup>19</sup><span class='v-txt'>बाबुल के लोगों ने ईश्वर का मन्दिर जलाया, येरूसालेम की चारदीवारी गिरा दी, उसके सब महलों का आग लगा कर सर्वनाश किया और उसकी सब बहुमूल्य वस्तुएँ नष्ट कर दीं।</span> <sup>20</sup><span class='v-txt'>जो लोग तलवार से बच गये, उन्हें बन्दी बना कर बाबुल ले जाया गया।  वहाँ वे तब तक राजा और उसके वंशजों के दास बने रहे, जब तक फ़ारसी लोगों का राज्य स्थापित नहीं हुआ।</span> <sup>21</sup><span class='v-txt'>इस तरह यिरमियाह के मुख से प्रभु ने जो कहा था, वह पूरा हो गया- ‘विश्राम-दिवस अपवित्र करने के प्रायश्चित के रूप में यूदा की भूमि उजड़ कर सत्तर वर्षाें तक परती पड़ी रहेगी’।</span> <sup>22</sup><span class='v-txt'>यिरमियाह द्वारा घोषित अपनी वाणी पूरी करने के लिए प्रभु ने फ़ारस के राजा सीरुस को उसके शासनकाल के प्रथम वर्ष में प्रेरित किया कि वह अपने सम्पूर्ण राज्य में यह लिखित राजाज्ञा प्रसारित करेः</span> <sup>23</sup><span class='v-txt'>&quot;फ़ारस के राजा सीरुस कहते हैः प्रभु, स्वर्ग के ईश्वर ने मुझे पृथ्वी के सब राज्य प्रदान किये और उसने मुझे यहूदिया के येरूसालेम में एक मन्दिर बनवाने का आदेश दिया है।  ईश्वर उनके साथ रहे, जो तुम लोगों में उसकी प्रजा के सदस्य हैं।  वे लोग येरूसालेम की ओर  प्रस्थान करें।&quot;</span> </p>
+        <div class='nav'><a href='014035.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

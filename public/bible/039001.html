@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योना - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योना</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु की वाणी अमित्तय के पुत्र योना के यह कहते हुए सुनाई पड़ी,</span> <sup>2</sup><span class='v-txt'>&quot;उठों! महानगर निनीवे जा कर वहाँ के लोगों को डाँटो, क्योंकि मैं उनकी बुराई को अनदेखा नहीं कर सकता&quot;।</span> <sup>3</sup><span class='v-txt'>किन्तु योना ने प्रभु के सामने से भाग कर तरशीश के लिए प्रस्थान किया।  यह याफा पहुँख और उसे वहाँ तरशीश जाने वाला जहाज मिला।  उसने किराया दिया और प्रभु के सामने से तरशीश भागने के उद्देश्य से वह नाव पर सवार हो गया।</span> <sup>4</sup><span class='v-txt'>प्रभु ने समुद्र पर जोरों की आँधी भेजी और समुद्र में ऐसा भयंकर तूफान पैदा हुआ कि जहाज टूटने-टूटने को हो गया।</span> <sup>5</sup><span class='v-txt'>मल्लाहों पर भय छा गया और वे अपने-अपने देवता की दुहाई देने लगे।  उन्होंने जहाज का भार कम करने के लिए सामान समुद्र में फेंक दिया।  योना जहाज के भीतरी भाग में उतर कर लेट गया था और गहरी नींद सो रहा था।</span> <sup>6</sup><span class='v-txt'>कप्तान ने उसके पास आ कर कहा, &quot;सोते क्यों हो?  उठ कर अपने ईश्वर की दुहाई दो।  वह ईश्वर शायद हमारी सुध ले, जिससे हमारा विनाश न हो।&quot;</span> <sup>7</sup><span class='v-txt'>इसके बाद मल्लाह एक दूसरे से कहने लगे, &quot;आओ!  हम चिट्ठि डाल कर देखें कि किस व्यक्ति के कारण यह विपत्ति हम पर आयी है&quot;।  उन्होंने चिट्ठि डाली और योना का नाम निकला।</span> <sup>8</sup><span class='v-txt'>उन्होंने उस से कहा, &quot;हमें अपना परिचय दो।  तुम कहाँ से आये?  तुम किस देश के निवासी हो?  किस राष्ट्र के सदस्य हो?&quot;</span> <sup>9</sup><span class='v-txt'>उसने उन्हें उत्तर दिया, &quot;मैं इब्रानी हूँ।  मैं स्वर्ग के ईश्वर, प्रभु पर श्रद्धा रखता हूँ, जिससे समुद्र और पृथ्वी बनायी है।&quot;</span> <sup>10</sup><span class='v-txt'>महल्लाह यह सुन कर बहुत डर गये और उन्होंने उस से कहा, &quot;तुमने ऐसा क्यों किया?&quot; योना ने उन्हें बताया था कि वह प्रभु के सामने से भाग गया था।</span> <sup>11</sup><span class='v-txt'>तब उन्होंने उस से पूछा, &quot;हम तुम्हारे साथ क्या करें जिससे समुद्र हमारे लिए शांत हो जाये?&quot;  क्योंकि समुद्र में तूफान बढता जा रहा था।</span> <sup>12</sup><span class='v-txt'>उसने उन्हें उत्तर दिया, &quot;मुझे उठा कर समुद्र में फेंक दो और समुद्र तुम्हारे लिए शान्त हो जायेगा; क्योंकि मैं जानता हूँ कि मेरे ही कारण यह भयंकर तूफान तुम लोगों को सता रहा है।&quot;</span> <sup>13</sup><span class='v-txt'>इस पर मल्लाहों ने डाँड़ के सहारे जहाज़ को किनारे तक पहुँचाने का प्रयत्न किया, किन्तु वे ऐसा नहीं कर सके, क्योंकि समुद्र में उनके चारों ओर  ऊँची-ऊँची लहरें उठने लगीं।</span> <sup>14</sup><span class='v-txt'>तब उन्होंने यह कहते हुए प्रभु से प्रार्थना की, &quot;प्रभु! इस मनुष्य की हत्या से हमारा विनाश न हो।  तू हम पर निर्दोष रक्त बहाने का अभियोग नहीं लगा; क्योंकि, प्रभु! तूने चाहा कि ऐसा हो।&quot;</span> <sup>15</sup><span class='v-txt'>इस पर उन्होंने योना को उठा कर समुद्र में फेंक दिया और समुद्र शान्त हो गया।</span> <sup>16</sup><span class='v-txt'>मल्लाह प्रभु से बहुत डर गये।  उन्होंने प्रभु को बलि चढायी और मन्नतें मानीं।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='039002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>पहला इतिहास ग्रन्थ - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>पहला इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>फ़िलिस्ती इस्राएल के विरुद्ध लड़ रहे थे।  इस्राएली फ़िलिस्तियों के सामने से भाग खड़े हुए और उन में से बहुत लोग गिलबोआ के पर्वत पर मरे हुए पड़े थे।</span> <sup>2</sup><span class='v-txt'>फ़िलिस्तियों ने साऊल और उसके पुत्रों का पीछा कर साऊल के पुत्र योनातन, अबीनादाब और मलकीशूआ को मार डाला।</span> <sup>3</sup><span class='v-txt'>तब साऊल के निकट घमासान युद्ध हुआ।  तीरन्दाज़ उसकी ओर बढ़े।  साऊल तीरन्दाजों को देख कर थरथरा कर काँपने लगा।</span> <sup>4</sup><span class='v-txt'>साऊल ने अपने शस्त्रवाहक से कहा, &quot;अपनी तलवार खींच लो और मुझे मार डालो।  ऐसा न हो कि वे बेख़तना लोग आ कर मेरा अपमान करें।&quot;  लेकिन उसके शस्त्रवाहक ने अस्वीकार कर दिया, क्योंकि वह बहुत डर रहा था।  इस पर साऊल ने अपनी तलवार खींचकर अपने को उस पर गिरा दिया।</span> <sup>5</sup><span class='v-txt'>जब उसके शस्त्रवाहक ने देखा कि साऊल की मृत्यु हो गयी, तो उसने भी अपने को अपनी तलवार पर गिरा दिया और वह उसके साथ मर गया।</span> <sup>6</sup><span class='v-txt'>इस प्रकार साऊल और उसके तीन पुत्र मर गये।  उसका सारा घराना एक साथ मर गया।</span> <sup>7</sup><span class='v-txt'>जब इस्राएलियों ने देख कि इस्राएली सैनिक भाग गये हैं तब साऊल और उसके पुत्रों की मृत्यु हो गयी है, तो वे अपने-अपने नगर छोड़ कर भाग निकले।  इस पर फ़िलिस्ती आ कर उन में बस गये।</span> <sup>8</sup><span class='v-txt'>दूसरे दिन मरे हुए लोगों को लूटने के लिए फ़िलिस्ती लोग आ पहुँचे।  उन्होंने साऊल और उसके पुत्रों को देखा, जो गिलबोआ के पर्वत पर मारे गये थे।</span> <sup>9</sup><span class='v-txt'>उन्होंने उसके वस्त्र, उसका सिर और उसका कवच ले लिया और अपने देवताओं तथा लोगों को विजय की सूचना देने फ़िलिस्तियों के देश भर में दूत भेजे।</span> <sup>10</sup><span class='v-txt'>उन्होंने उसके अस्त्र-शस्त्र अपने देवता के मन्दिर में रख दिये और उसका सिर दागोन के मन्दिर में लटका दिया।</span> <sup>11</sup><span class='v-txt'>फ़िलिस्तियों ने साऊल के साथ जो किया था, जब गिलआद के याबेश के सब निवासियों ने वह सुना,</span> <sup>12</sup><span class='v-txt'>तब सब युद्ध-योग्य पुरुश प्रस्थान कर साऊल और उसके पुत्रों के शव याबेश ले आये।  फिर उनकी अस्थियाँ याबेश के झाऊ वृक्श के नीचे दफ़ना दीं और सात दिन तक उपवास किया।</span> <sup>13</sup><span class='v-txt'>(13-14) इस प्रकार साऊल प्रभु के साथ अपने विश्वासघात के कारण मरा; क्योंकि उसने प्रभु की आज्ञा नहीं मानी थी और वह प्रभु से नहीं, बल्कि प्रेत साधनेवाली स्त्री से परामर्श लेने गया था।  इसलिए प्रभु ने उसे मारा और राज्य यिशय के पुत्र दाऊद को दे दिया।</span> </p>
+        <div class='nav'><a href='013009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='013011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

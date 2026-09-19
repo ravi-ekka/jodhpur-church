@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>2 कुरिन्थियों - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>2 कुरिन्थियों</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>क्या हम फिर अपनी प्रशंसा करने लगे?  क्या कुछ अन्य लोगों की तरह यह हमारे लिए आवश्यक है कि हम आप को सिफारिशी पत्र दिखायें या आप से माँगे?</span> <sup>2</sup><span class='v-txt'>आप लोग तो हैं- हमारा पत्र, जो हमारे हृदय पर अंकित रहता है और जिसे सब लोग देख और पढ़ सकते हैं।</span> <sup>3</sup><span class='v-txt'>आप लोग निश्चय ही मसीह का वह पत्र हैं, जिसे उन्होंने हम से लिखवाया है।  वह पत्र स्याही से नहीं, बल्कि जीवन्त ईश्वर के आत्मा से, पत्थर की पाटियों पर नहीं, बल्कि मानव हृदय की पाटियों पर लिखा हुआ है।</span> <sup>4</sup><span class='v-txt'>हम यह दावा इसलिए कर सकते हैं कि हमें मसीह के कारण ईश्वर पर भरोसा है।</span> <sup>5</sup><span class='v-txt'>इसका अर्थ यह नहीं कि हमारी कोई अपनी योग्यता है। हम अपने को किसी बात का श्रेय नहीं दे सकते।  हमारी योग्यता का स्त्रोत ईश्वर है।  उसने हमें एक नये विधान के सेवक होने के योग्य बनाया है</span> <sup>6</sup><span class='v-txt'>और यह विधान अक्षरों का नहीं, बल्कि आत्मा का है; क्योंकि अक्षर तो घातक हैं, किन्तु आत्मा जीवनदायक हैं।</span> <sup>7</sup><span class='v-txt'>उस विधान के अक्षर पत्थर पर अंकित थे और उसके द्वारा प्राणदण्ड दिया जाता था।  फिर भी उसकी महिमामय घोषणा के फलस्वरूप मूसा का मुखमण्डल इतना दीप्तिमय हो गया था कि इस्राएली उस पर आँख जमाने में असमर्थ थे, यद्यपि मूसा के मुखमण्डल की दीप्ति अस्थायी थी।</span> <sup>8</sup><span class='v-txt'>यदि पुराना विधान इतना महिमामय था, तो आत्मा का विधान कहीं अधिक महिमामय होगा।</span> <sup>9</sup><span class='v-txt'>यदि दोषी ठहराने वाले विधान का सेवा-कार्य इतना महिमामय था, तो दोषमुक्त करने वाले विधान का सेवा-कार्य कहीं अधिक महिमामय होगा।</span> <sup>10</sup><span class='v-txt'>इस वर्तमान परमश्रेष्ठ महिमा के सामने वह पूर्ववर्ती महिमा अब निस्तेज हो गयी है।</span> <sup>11</sup><span class='v-txt'>यदि अस्थायी विधान इतना महिमामय था, तो चिरस्थायी विधान कहीं अधिक महिमामय होगा।</span> <sup>12</sup><span class='v-txt'>अपनी इस आशा के कारण हम बड़ी निर्भीकता से बोलते हैं।</span> <sup>13</sup><span class='v-txt'>हम मूसा के सदृश नहीं हैं।  वह अपने मुख पर परदा रखा करते थे, जिससे इस्राएली उनके मुखमण्डल की मन्द हो जाने वाली नश्वर महिमा न देख पायें।</span> <sup>14</sup><span class='v-txt'>इस्राएलियों की बुद्धि कुण्ठित हो गयी थी और आज भी जब प्राचीन विधान पढ़ कर सुनाया जाता है, तो वही परदा लगा रहता है।  वह लगा रहता है, क्योंकि उसे मसीह ही हटा सकते हैं।</span> <sup>15</sup><span class='v-txt'>जब मूसा का ग्रन्थ पढ़ कर सुनाया जाता है, तो उनके मन पर आज भी वह परदा पड़ा रहता है।</span> <sup>16</sup><span class='v-txt'>किन्तु जब कोई प्रभु की ओर अभिमुख हो जाता है, तो वह परदा हटा दिया जाता है;</span> <sup>17</sup><span class='v-txt'>क्योंकि प्रभु तो आत्मा है, और जहाँ प्रभु का आत्मा है, वहाँ स्वतन्त्रता है।</span> <sup>18</sup><span class='v-txt'>जहाँ तक हम सबों का प्रश्न है, हमारे मुख पर परदा नहीं है और हम सब दर्पण की तरह प्रभु की महिमा प्रतिबिम्बित करते हैं।  इस प्रकार हम धीरे-धीरे उसके महिमामय प्रतिरूप में रूपान्तरित हो जाते हैं और वह रूपान्तरण प्रभु अर्थात् आत्मा का कार्य है।</span> </p>
+        <div class='nav'><a href='054002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='054004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

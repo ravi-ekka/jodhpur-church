@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>राजाओं का दुसरा ग्रन्थ - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>राजाओं का दुसरा ग्रन्थ</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इस्राएल के राजा यरोबआम के सत्तईसवें वर्ष अमस्या का पुत्र अज़र्या यूदा का राजा बना।</span> <sup>2</sup><span class='v-txt'>जब वह शासन करने लगा, तो वह सोलह वर्ष का था।  उसने येरूसालेम में बावन वर्ष तक शासन किया।  उसकी माता का नाम यकोल्या था।  वह येरूसालेम की थी।</span> <sup>3</sup><span class='v-txt'>उसने अपने पिता अमस्या की तरह वही किया, जो प्रभु की दृष्टि में उचित है,</span> <sup>4</sup><span class='v-txt'>किन्तु पहाड़ी पूजास्थान नहीं हटाये गये।  लोग वहाँ बलिदान चढ़ाते और धूप देते रहे।</span> <sup>5</sup><span class='v-txt'>प्रभु ने अज़र्या को कोढ़ी बना दिया।  वह जीवन भर कोढ़ी रहा और उसे एक अलग मकान में रहना पड़ा।  इस समय राजा का पुत्र योताम राजभवन का प्रबन्ध करता और देश के लोगों पर शासन करता था।</span> <sup>6</sup><span class='v-txt'>अज़र्या का शेष इतिहास और उसका कार्यकलाप यूदा के राजाओं के इतिहास ग्रन्थ में लिखा है।</span> <sup>7</sup><span class='v-txt'>अज़र्या अपने पूर्वजों से जा मिला और उनके साथ दाऊदनगर में दफ़नाया गया।  उसका पुत्र योताम उसकी जगह राजा बना।</span> <sup>8</sup><span class='v-txt'>यूदा के राजा अज़र्या के अड़तीसवें वर्ष यरोबआम का पुत्र ज़कर्या इस्राएल का राजा बना।  उसने समारिया में छः महीने तक शासन किया।</span> <sup>9</sup><span class='v-txt'>उसने अपने पूर्वजों की तरह वही किया, जो प्रभु की दृष्टि में बुरा है।  नबाट के पुत्र यरोबअम ने इस्राएल से जो पाप करवाये थे, उन से ज़कर्या विमुख नहीं हुआ।</span> <sup>10</sup><span class='v-txt'>याबेश के पुत्र शल्लूम ने उसके विरुद्ध षड्यन्त्र रचा।  उसने लोगों के देखते-देखते उस पर आक्रमण कर उसका वध कर दिया और वह उसके स्थान पर स्वयं राजा बना।</span> <sup>11</sup><span class='v-txt'>ज़कर्या का शेष इतिहास इस्राएल के राजाओं के इतिहास-ग्रन्थ में लिखा है।</span> <sup>12</sup><span class='v-txt'>इस प्रकार येहू से कहा हुआ प्रभु का यह वचन पूरा हो गया।  &quot;तुम्हारे वंशज चैथी पीढ़ी तक इस्राएल पर शासन करेंगे&quot;।</span> <sup>13</sup><span class='v-txt'>यूदा के राजा उज़्ज़ीया के उनतालीसवें वर्ष याबेश का पुत्र शल्लूम राजा बना।  उसने समारिया में एक महीने तक शासन किया।</span> <sup>14</sup><span class='v-txt'>गादी का पुत्र मनहेम तिर्सा से समारिया आया और उसने याबेश के पुत्र शल्लूम को समारिया में मार डाला और वह उसके स्थान पर स्वयं राजा बना।</span> <sup>15</sup><span class='v-txt'>शल्लूम का शेष इतिहास और उसके षड्यन्त्र का वर्णन इस्राएल के राजाओं के इतिहास-ग्रन्थ में लिखा है।</span> <sup>16</sup><span class='v-txt'>उस समय मनहेम ने तप्पूअह, उसके सब निवासियों और तिर्सा से ले कर उसके सारे प्रदेश पर आक्रमण किया, क्योंकि लोगों ने उसके लिए नगर के फाटक नहीं खोले।  उसने तप्पूअह को उजाड़ा और सभी गर्भवती स्त्रियों के पेट फाड़ डाले।</span> <sup>17</sup><span class='v-txt'>यूदा के राजा अज़र्या के उनतालीसवें वर्ष गादी का पुत्र मनहेम इस्राएल का राजा बना।  उसने समारिया में दस वर्ष तक शासन किया।</span> <sup>18</sup><span class='v-txt'>उसने वहीे किया, जो प्रभु की दृष्टि में बुरा है।  नबाट के पुत्र यरोबआम ने इस्राएलियों से जो पाप करवाये थे, उन से मनहेम जीवन भर विमुख नहीं हुआ।</span> <sup>19</sup><span class='v-txt'>अस्सूर के राजा पूल ने देश पर आक्रमण किया।  मनहेम ने पूल को एक हज़ार मन चाँदी दी, जिससे वह उसका समर्थन करे ओर राज्य पर उसका अधिकार सुदृढ़ बना दे।</span> <sup>20</sup><span class='v-txt'>मनहेम ने यह द्रव्य इस्राएलियों से बसूल किया।  प्रत्येक धनी को अस्सूर के राजा के लिए पचास शेकेल देने पड़े।  इसलिए अस्सूर का राजा इस्राएल छोड़ कर अपने देश लौट गया।</span> <sup>21</sup><span class='v-txt'>मनहेम का शेष इतिहास और उसका कार्यकलाप इस्राएल के राजाओं के इतिहास-ग्रन्थ में लिखा है।</span> <sup>22</sup><span class='v-txt'>मनहेम अपने पूर्वजों से जा मिला और उसके स्थान पर उसका पुत्र पकह्या राजा बना।</span> <sup>23</sup><span class='v-txt'>यूदा के राजा अज़र्या के पचावें वर्ष मनहेम का पुत्र पकह्या समारिया में इस्राएल का राजा बना।  उसने दो वर्ष तक शासन किया।</span> <sup>24</sup><span class='v-txt'>उसने वही किया, जो प्रभु की दृष्टि में बुरा है।  नबाट के पुत्र यरोबआम ने इस्राएल से जो पाप करवाये थे,  उन से पकह्या विमुख नहीं हुआ।</span> <sup>25</sup><span class='v-txt'>रमल्या के पुत्र सेना-नायक पेकह ने पकह्या के विरुद्ध षड्यन्त्र रचा।  उसने गिलआद के पचास आदमी अपने साथ ले कर समारिया के महल के क़िले में पकह्या का वध किया और उसकी जगह वह स्वयं राजा बना।</span> <sup>26</sup><span class='v-txt'>पकह्या का शेष इतिहास और उसका कार्यकलाप इस्राएल के राजाओं के इतिहास ग्रन्थ में लिखा है।</span> <sup>27</sup><span class='v-txt'>यूदा के राजा अज़र्या के बावनवें वर्ष रमल्या का पुत्र पेकह समारिया में इस्राएल का राजा बना।  उसने बीस वर्ष तक शासन किया।</span> <sup>28</sup><span class='v-txt'>उसने वही किया, जो प्रभु की दृष्टि में बुरा है।  नबाट के पुत्र यरोबआम ने इस्राएल से जो पाप करवाये थे, उन से पेकह विमुख नहीं हुआ।</span> <sup>29</sup><span class='v-txt'>इस्राएल के राजा पेकह के शासनकाल में अस्सूर के राजा तिगलत-पिलएसेर ने आ कर इय्योन, आबेल-बेत-माका, यानोअह, केदेश, हासोर, गिलआद, गलीलिया-नफ़्ताली का पूरा प्रान्त-अपने अधिकार में कर लिया और उनके निवासियों को बन्दी बना कर अस्सूर ले गया।</span> <sup>30</sup><span class='v-txt'>जब एला के पुत्र होशेआ ने रमल्या के पुत्र पेकह के विरुद्ध षड्यन्त्र कर उसे मार डाला और उज़्ज़ीया के पुत्र योताम के तीसवें वर्ष वह उसके स्थान पर स्वयं राजा बना।</span> <sup>31</sup><span class='v-txt'>पेकह का शेष इतिहास और उसका कार्यकलाप इस्राएल के राजाओं के इतिहास-ग्रन्थ में लिखा है।</span> <sup>32</sup><span class='v-txt'>इस्राएल के राजा रमल्या के पुत्र पेकह के दूसरे वर्ष यूदा के राजा उज़्ज़ीया का पुत्र योताम शासन करने लगा।</span> <sup>33</sup><span class='v-txt'>जब वह शासन करने लगा, तो उसकी अवस्था पच्चीस वर्ष थी।  उसने येरूसालेम में सोलह वर्ष तक शासन किया।  उसकी माता का नाम यरूशा था, जो सादोक की पुत्री थी।</span> <sup>34</sup><span class='v-txt'>उसने अपने पिता उज़्ज़ीया की तरह वही किया जो प्रभु की दृष्टि में उचित है।</span> <sup>35</sup><span class='v-txt'>परन्तु पहाड़ी पूजास्थान नहीं हटाये गये।  लोग वहाँ बलियाँ चढ़ाते और धूप देते रहे।  उसने प्रभु के मन्दिर का ऊपरी फाटक बनवाया।</span> <sup>36</sup><span class='v-txt'>योताम का शेष इतिहास और उसका कार्यकलाप यूदा के राजाओं के इतिहास-ग्रन्थ में लिखा है।</span> <sup>37</sup><span class='v-txt'>प्रभु उसके शासनकाल में अराम के राजा रसीन को और रमल्या के पुत्र पेकह को यूदा पर आक्रमण करने भेजने लगा।</span> <sup>38</sup><span class='v-txt'>योताम अपने पितरों से जा मिला और अपने पूर्वज दाऊद के नगर में अपने पूर्वजों के पास दफ़नाया गया।  उसका पुत्र आहाज़ उसकी जगह राजा बना।</span> </p>
+        <div class='nav'><a href='012014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='012016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

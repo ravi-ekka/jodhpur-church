@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 21</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 21</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&quot;यदि उस देश में, जिसे प्रभु, तुम्हारा ईश्वर तुम्हारे अधिकार में देगा कोई मारा हुआ व्यक्ति खेत में पड़ा मिले और किसी को यह मालूम नहीं हो कि उसकी हत्या किसने की है,</span> <sup>2</sup><span class='v-txt'>तो तुम्हारे नेता और तुम्हारे न्यायाधीश वहाँ जाकर नापें की मारा हुआ व्यक्ति निकटवर्ती नगरों में कितनी दूरी पर पड़ा है।</span> <sup>3</sup><span class='v-txt'>उस नगर के नेता, जो मारे हुए व्यक्ति के सबसे निकट है, एक कलोर, जिस से अब तक काम नहीं लिया गया हो और जो अब तक जोती नहीं गयी हो,</span> <sup>4</sup><span class='v-txt'>एक ऐसी घाटी में ले जायेंगे जो कभी, न और बोयी गयी हो और जहाँ एक सदा बहने वाली जलधारा हो। वे उसी घाटी में कलोर का गर्दन तोडे़ंगे।</span> <sup>5</sup><span class='v-txt'>इसके बाद कुल के याजक आगे बढे़ंगे, क्योंकि प्रभु, तुम्हारे ईश्वर ने उन्हें इसलिये चुना है की वे उसकी सेवा करें, प्रभु के नाम पर आशीर्वाद दें और हर झगड़े तथा मार-पीट का निबटारा किया करें।</span> <sup>6</sup><span class='v-txt'>उस मारे हुए व्यक्ति के निकटस्थ नगर के सब नेता जलधारा के पास मारी हुई कलोर के ऊपर अपने हाथ धोयेंगे</span> <sup>7</sup><span class='v-txt'>और यह कहेंगे, हमारे हाथों ने न यह रक्त बहाया और न हमारी आँखों ने यह हत्या देखी है।</span> <sup>8</sup><span class='v-txt'>प्रभु! तुने इस्राएल का उद्धार किया है।  तू इस हत्या का दोष अपनी प्रजा इस्राएल पर नहीं लगा, निर्दोष व्यक्ति का रक्त अपनी प्रजा पर नहीं पड़ने दे।  इस प्रकार रक्तपात का प्रायश्चित किया जायेगा</span> <sup>9</sup><span class='v-txt'>और तुम निर्दोष का रक्त पात का अपराध अपने बीच से दूर करोगे; क्योंकि तुमने वहीं किया होगा, जो प्रभु की दृष्टि में उचित है।</span> <sup>10</sup><span class='v-txt'>&quot;यदि तुम अपने शत्रुओं के विरुद्ध लड़ने जाओ और प्रभु तुम्हारा ईश्वर उन्हेंं तुम्हारे हाथ दे दे और तुम उन्हें बंदी बनाकर ले जाओ,</span> <sup>11</sup><span class='v-txt'>तो यदि तुम उन बंदियों में किसी सुन्दर स्त्री को देखकर उसे चाहने लगो तथा उस से विवाह करना चाहो,</span> <sup>12</sup><span class='v-txt'>तो उसे अपने घर ले जाओ।  वह अपना सिर मूँड़, अपने नाखून काट डाले</span> <sup>13</sup><span class='v-txt'>और उन वस्त्रों को उतार दे, जिन में वह बंदी बनायी गई है।  फिर वह तुम्हारे घर में रहे और महीने भर अपने माता-पिता का शोक मनाये।  इसके बाद तुम उसके पास जा सकते हो और उसके साथ विवाह कर उसे अपनी पत्नी बना सकते हो।</span> <sup>14</sup><span class='v-txt'>किन्तु यदि तुम बाद में उसे नापसन्द करो, तो वह जहाँ चाहे, तुम उसे वहाँ जाने दोगे।  तुम उसे नहीं बेच सकते हो या उसके साथ दासी-जैसा व्यवहार नहीं कर सकते हो; क्योंकि तुमने उसके साथ प्रसंग किया है।</span> <sup>15</sup><span class='v-txt'>&quot;यदि किसी पुरुष की दो पत्नियाँ है; एक जिसे वह प्यार करता है और दूसरी वह, जिसे वह प्यार नहीं करता है और यदि उसकी प्रिय तथा अप्रिय, दोनों पत्नियों से पुत्र उत्पन्न हों, किन्तु पहला पुत्र अप्रिय पत्नी से उत्पन्न हो,</span> <sup>16</sup><span class='v-txt'>तो वह अपने पुत्रों में अपनी सम्पत्ति बाँटते समय अप्रिय पत्नी से उत्पन्न वास्तविक पहलौठे का अधिकार अपनी प्रिय पत्नी से उत्पन्न पुत्र को नहीं दे सकता है।</span> <sup>17</sup><span class='v-txt'>उसे उस अप्रिय पत्नी के जेठे पुत्र को ही अपना पहलौठा मानना होगा और उसे अपनी समस्त सम्पत्ति में दूसरे का दूना भाग देना होगा, क्योंकि वह उसके पुरुषत्व का प्रथम फल है।  पहलौठे का अधिकार उसी का है।</span> <sup>18</sup><span class='v-txt'>&quot;यदि किसी का पुत्र हठी और उद्दण्ड हो, जो न अपने पिता और न अपनी माता की बात सुनता हो और न उनके समझाने पर उनकी मानता हो,</span> <sup>19</sup><span class='v-txt'>तो उसके माता-पिता उसे नगर के नेताओं के पास अपने नगर के फाटक पर ले जा कर,</span> <sup>20</sup><span class='v-txt'>अपने नगर के नेताओं से कहें, ‘हमारा यह पुत्र हठी और उद्दण्ड है।  यह हमारी बात नहीं सुनता।  यह चरित्रहीन और पियक्कड़ हो गया है।’</span> <sup>21</sup><span class='v-txt'>तब नगर के सब लोग उसे पत्थरों से मार डालें।  इस प्रकार तुम अपने बीच से यह बुराई दूर कर दोगे।  सब इस्राएली यह सुन कर भयभीत होंगे।</span> <sup>22</sup><span class='v-txt'>यदि किसी ने मृत्युदण्ड़ पाने योग्य अपराध किया है और काठ पर लटका कर उसका वध किया गया है,</span> <sup>23</sup><span class='v-txt'>तो उसका शव रात भर काठ पर नहीं छोड़ा जा सकता है।  तुम उसी दिन उसका दफ़न करोगे; क्योंकि जो काठ पर लटकाया गया है, वह ईश्वर द्वारा अभिषप्त है।  प्रभु, तुम्हारा ईश्वर तुम्हें विरासत के रूप में जो देश देने वाला है, तुम उसे दूषित नहीं करोगे।</span> </p>
+        <div class='nav'><a href='005020.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005022.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

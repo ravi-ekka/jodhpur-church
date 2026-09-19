@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तब अय्यूब ने उत्तर देते हुए कहाः</span> <sup>2</sup><span class='v-txt'>यदि मेरी वेदना तौली जा सकती, यदि मेरी विपत्ति तराजू पर रखी जाती,</span> <sup>3</sup><span class='v-txt'>तो वह समुद्र के बालू से भी अधिक भारी होती!  यही कारण है कि मैं बिना सोचे-समझे बोला हूँ।</span> <sup>4</sup><span class='v-txt'>सर्वशक्तिमान् के बाण मुझे बेधते हैं, मेरी साँस उनका विष पीती है।  ईश्वर के आंतक मेरे विरुद्ध पंक्तिबद्ध खड़े हैं।</span> <sup>5</sup><span class='v-txt'>क्या जंगली गधा घास होने पर भी रेंकता हैं?  क्या बैल सानी के सामने रँभाता है?</span> <sup>6</sup><span class='v-txt'>क्या फीका भोजन बिना नमक के खाया जाता है?  क्या अण्डे की सफेदी में स्वाद होता है?</span> <sup>7</sup><span class='v-txt'>मुझे अपने भोजन से घृणा होती है; वह मुझ से नहीं खाया जाता।</span> <sup>8</sup><span class='v-txt'>ओह! यदि मेरी प्रार्थना सुनी जाती!  यदि ईश्वर मेरी आशा पूरी करता!</span> <sup>9</sup><span class='v-txt'>यदि ईश्वर मुझे रौंद डालता!  यदि वह अपना हाथ खींच कर मेरा विनाश करता!</span> <sup>10</sup><span class='v-txt'>तो मैं असह्य पीड़ा में भी आनन्दित होता मुझे यह सान्त्वना मिलती मैंने परमपावन की वाणी नहीं भुलायी है।</span> <sup>11</sup><span class='v-txt'>मेरा सामर्थ्य ही क्या है, जो मैं आशा रखूँ?  मेरा भविष्य क्या है, जो मैं जीवित रहना चाहूँ?</span> <sup>12</sup><span class='v-txt'>क्या मेरा बल चट्टान का बल हैं?  क्या मेरा शरीर काँसे का है?</span> <sup>13</sup><span class='v-txt'>मुझ में कोई बल शेष नहीं रहा और मेरा कोई सहायक नहीं।</span> <sup>14</sup><span class='v-txt'>निराशा में मनुष्य मित्रों की दया का अधिकारी है, नहीं तो वह सर्वशक्तिमान् पर श्रद्धा नहीं करेगा।</span> <sup>15</sup><span class='v-txt'>मेरे भाई नादियों की तरह अविश्वसनीय हैं, जलधाराओं की तरह, जो बह जाती हैं,</span> <sup>16</sup><span class='v-txt'>जो वर्षा के समय चारों ओर उमडती हैं।</span> <sup>17</sup><span class='v-txt'>किंतु बाद में सूखने लगतीं और ग्रीष्म-ऋतु में लुप्त हो जाती हैं।</span> <sup>18</sup><span class='v-txt'>उनकी खोज में कारवाँ अपना रास्ता छोड़ कर उजाड़खण्ड में भटक कर नष्ट हो जाते हैं।</span> <sup>19</sup><span class='v-txt'>तेमा के कारवाँ उनकी खोज में निकले, शबा के काफ़िलों को उन पर भरोसा था।</span> <sup>20</sup><span class='v-txt'>वे अपनी आशा व्यर्थ समझ कर दुःखी हैं, वहाँ पहुँच कर वे हैरान हो जाते हैं।</span> <sup>21</sup><span class='v-txt'>इसी तरह तुम भी मेरे किसी काम के नहीं, मेरी विपत्ति देख कर तुम डरते हो।</span> <sup>22</sup><span class='v-txt'>क्या मैंने कभी तुम से कहा- &quot;मेरी सहायता करो; अपनी संपत्ति से मुझे छुड़ा लो,</span> <sup>23</sup><span class='v-txt'>शत्रु के हाथ से मुझे मुक्त करो, शक्तिशालियों के हाथ से मेरा उद्धार करो&quot;?</span> <sup>24</sup><span class='v-txt'>मुझे शिक्षा दो और मैं मौन रहूँगा, मुझे समझा दो कि मेरा अपराध क्या है।</span> <sup>25</sup><span class='v-txt'>सच्ची बातों से कोई आपत्ति नहीं, किंतु तुम्हारे तर्काें का कोई आधार नहीं होता।</span> <sup>26</sup><span class='v-txt'>क्या तुम मेरे शब्दों में दोष निकालना चाहते हो?  क्या तुम नहीं समझते कि ये निराशा के उद्गार हैं?</span> <sup>27</sup><span class='v-txt'>हो सका, तो तुम अनाथ पर भी चिट्ठी डालते और अपने अंतरंग मित्र का सौदा करते।</span> <sup>28</sup><span class='v-txt'>मेरी बातों पर ध्यान देने की कृपा करो! क्या मैं तुम्हारे सामने झूठ बोलूँगा</span> <sup>29</sup><span class='v-txt'>अभियोग लगाना छोड दो, अन्याय न करो!  छोड़ दो।  मेरे साथ न्याय करो।</span> <sup>30</sup><span class='v-txt'>क्या मेरी जिह्वा झूठ बोलती हैं?  क्या मुझ में भले-बुरे की पहचान नहीं?</span> </p>
+        <div class='nav'><a href='022005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

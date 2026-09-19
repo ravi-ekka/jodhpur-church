@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रकाशना - अध्याय 16</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रकाशना</h1>
+        <h2>अध्याय 16</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मुझे मन्दिर में से एक गम्भीर वाणी सुनाई पड़ी, जो सात स्वर्गदूतों से यह कह रही थी, &quot;जाओ! ईश्वर के क्रोध के सात प्याले पृथ्वी पर उँढ़ेल दो&quot;।</span> <sup>2</sup><span class='v-txt'>पहला स्वर्गदूत गया और उसने पृथ्वी पर अपना प्याला उँढ़ेला।  जिन लोगों पर पशु की छाप लगी थी और जो उसकी प्रतिमा की आराधना करते थे, उनके शरीर पर घृणित और दुःखदायी फोड़े निकल आये।</span> <sup>3</sup><span class='v-txt'>दूसरे स्वर्गदूत ने समुद्र पर अपना प्याला उँढ़ेला।  समुद्र मृतक के रक्त-जैसा बन गया और समुद्र में रहने वाले सभी प्राणी मर गये।</span> <sup>4</sup><span class='v-txt'>तीसरे स्वर्गदूत ने नदियों और जलस्त्रोतों पर अपना प्याला उँढ़ेला।  वे रक्त बन गये।</span> <sup>5</sup><span class='v-txt'>तब मैंने जल के स्वर्गदूत को यह कहते सुना, &quot;परमपावन! जो है और जो था, तेरे ये निर्णय न्यायसंगत हैं;</span> <sup>6</sup><span class='v-txt'>क्योंकि उन्होंने सन्तों और नबियों का रक्त बहाया और तूने उन्हें रक्त पिलाया।  वे अपनी करनी का फल भोग रहे हैं।&quot;</span> <sup>7</sup><span class='v-txt'>और मैंने वेदी को यह कहते सुना, &quot;सर्वशक्तिमान् प्रभु-ईश्वर! तेरे निर्णय वास्तव में सच्चे और न्यायसंगत हैं!&quot;व</span> <sup>9</sup><span class='v-txt'>मनुष्य प्रचण्ड ताप से जल गये।  उन्होंने उन विपत्तियों पर अधिकार रखने वाले ईश्वर के नाम की निन्दा की, लेकिन उन्होंने पश्चाताप नहीं किया और ईश्वर की स्तुति करना नहीं चाहा।</span> <sup>10</sup><span class='v-txt'>पांचवें स्वर्गदूत ने पशु के सिंहासन पर अपना प्याला उंढ़ेला।  पशु के राज्य पर अन्धकार छा गया।  लोग पीड़ा से विकल हो कर अपनी जीभें चबाने लगे।</span> <sup>11</sup><span class='v-txt'>उन्होंने अपनी पीड़ाओं और फोड़ों के कारण स्वर्ग के ईश्वर की निन्दा की, लेकिन उन्होंने अपने कर्मों के लिए पश्चाताप नहीं किया।</span> <sup>12</sup><span class='v-txt'>छठे स्वर्गदूत ने महानदी फ़रात पर अपना प्याला उंढ़ेला।  फ़रात नदी का पानी सूख गया, जिससे पूर्व के राजाओं का मार्ग तैयार हो जाये।</span> <sup>13</sup><span class='v-txt'>तब मैंने पंखदार सर्प के मुंह से, पशु के मुंह से और झूठे नबी के मुंह से मेंढ़क-जैसी तीन अशुद्ध आत्माओं को निकलते देखा।</span> <sup>14</sup><span class='v-txt'>ये अपदूतों के आत्मा हैं, जो चमत्कार दिखाते और सर्वशक्तिमान् ईश्वर के महादिवस के युद्ध के लिए समस्त संसार के राजाओं को एकत्र करने जाते हैं।</span> <sup>15</sup><span class='v-txt'>&quot;सावधान! मैं चोर की तरह आ रहा हूँ।  धन्य है वह, जो जागता और वस्त्र पहने रहता है! कहीं ऐसा न हो कि वह नंगा फिरे और लोग उसकी नग्नता देखें!&quot;</span> <sup>16</sup><span class='v-txt'>उन्होंने राजाओं को उस स्थान पर एकत्र किया, जो इब्रानी में हरमागेदोन कहलाता है।</span> <sup>17</sup><span class='v-txt'>सातवें स्वर्गदूत ने हवा पर अपना प्याला उंढ़ेला और मन्दिर के सिंहासन में से एक गम्भीर वाणी यह कहते सुनाई पड़ी- &quot;समाप्त हो गया है&quot;।</span> <sup>18</sup><span class='v-txt'>इस पर बिजलियाँ, वाणियाँ एवं मेघगर्जन उत्पन्न हुए और भारी भूकम्प हुआ।  पृथ्वी पर मनुष्य के आने के समय से इतना भारी भूकम्प कभी नहीं हुआ था।</span> <sup>19</sup><span class='v-txt'>महानगर के तीन खण्ड हो गये और राष्ट्रों के नगरों का सर्वनाश हो गया।  ईश्वर ने महान् बाबुल को याद किया और उसे अपने क्रोध की तीखी मदिरा का प्याला पिलाया।</span> <sup>20</sup><span class='v-txt'>सभी द्वीप विलीन हो गये और पर्वत लुप्त हो गये।</span> <sup>21</sup><span class='v-txt'>आकाश से मन-मन भर के बड़े ओले मनुष्यों पर गिरे। ओला-वृष्टि के कारण मनुष्यों ने ईश्वर की निन्दा की, क्योंकि वह ओला-वृष्टि बहुत भारी थी।</span> </p>
+        <div class='nav'><a href='073015.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='073017.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

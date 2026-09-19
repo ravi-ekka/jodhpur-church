@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 43</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 43</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>स्वच्छ नक्षत्रमण्डल और महिमामय आकाश हमारी आँखों के सामने कितने रमणीय हैं!</span> <sup>2</sup><span class='v-txt'>सूर्य उदित होते ही मानो कहता है: सर्वोच्च प्रभु की सृष्टि कितनी श्रेष्ठ है!</span> <sup>3</sup><span class='v-txt'>दोपहर के समय वह पृथ्वी को झुलसाता है; उसका प्रखर ताप कौन सह सकता है?</span> <sup>4</sup><span class='v-txt'>धातु गलाने वाली भट्टी की आग तेज है; पर्वतों को जलाने वाला सूर्य उस से तीन गुना गर्म है।  वह भस्म करने वाला धूआँ उगलता है और उसकी प्रखर किरणें चकाचैंधउत्पन्न करती हैं।</span> <sup>5</sup><span class='v-txt'>वह प्रभु महान् है, जिसने उसकी सृष्टि की है और जिसके आदेश पर वह तेजी से परिक्रमा करता है।</span> <sup>6</sup><span class='v-txt'>चन्द्रमा निश्चित समय पर प्रकाश देता और काल और ऋतु निर्धारित करता है।</span> <sup>7</sup><span class='v-txt'>चन्द्रमा के आधार पर पर्व निर्धारित होते हैं।  उसका प्रकाश बढ़ता और घटता है।</span> <sup>8</sup><span class='v-txt'>चन्द्रमा के अनुसार महीने का नाम रखा जाता है।  उसकी वृद्धि और ह्रास अद्भुत हैं।</span> <sup>9</sup><span class='v-txt'>वह नभोमण्डल के नक्षत्रों की ध्वजा है और आकाश के शिखर पर शोभायमान है।</span> <sup>10</sup><span class='v-txt'>तारे आकाश की शोभा बढ़ाते हैं; वे प्रभु की ऊँचाईयों के चमकते अलंकार है।</span> <sup>11</sup><span class='v-txt'>वे परमपावन प्रभु की आज्ञा के अनुसार पंक्तिबद्ध है और अपने जागरण में कभी नहीं थकते।</span> <sup>12</sup><span class='v-txt'>इन्द्रधनुष को देख कर उसके सृष्टिकर्ता को धन्य कहो। उसकी भव्यता कितनी रमणीय है!</span> <sup>13</sup><span class='v-txt'>वह आकाश में प्रकाशमान् वृत्त खींचता है।  सर्वोच्च प्रभु के हाथों ने उसे ताना है।</span> <sup>14</sup><span class='v-txt'>वह अपने आदेश द्वारा हिम गिराता और अपने निर्णय के अनुसार बिजली चमकाता है।</span> <sup>15</sup><span class='v-txt'>वह अपने भण्डार खोलता और पक्षियों की तरह बादल उड़ जाते हैं।</span> <sup>16</sup><span class='v-txt'>वह अपने सामर्थ्य द्वारा बादलों को सघन करता और ओले नीचे गिरते हैं।  बिजली की कड़क पृथ्वी को कँपाती है।</span> <sup>17</sup><span class='v-txt'>पर्वत उसे देख कर थर्रा उठते हैं।  उसके आदेश पर दक्षिणी हवा,</span> <sup>18</sup><span class='v-txt'>उत्तर की आँधी और बवण्डर आता है।</span> <sup>19</sup><span class='v-txt'>वह उतरने वाले पक्षियों की तरह हिम गिराता और वह टिड्डी दल की तरह छा जाता है।</span> <sup>20</sup><span class='v-txt'>वह अपने श्वेत सौन्दर्य से आँख में चकाचैंध उत्पन्न करता और उतरने पर हृदय को मुग्ध कर देता है।</span> <sup>21</sup><span class='v-txt'>प्रभु नमक की तरह पृथ्वी पर पाला गिराता है, जो जम कर काँटों की तरह नुकीला हो जाता है।</span> <sup>23</sup><span class='v-txt'>लू पर्वतों को खा जाती, मरुभूमि को झुलसाती और हरियाली को आग की तरह जलाती है।</span> <sup>24</sup><span class='v-txt'>बादल शीघ्र ही सब में नवजीवन का संचार करते हैं और ओस ग्रीष्म के बाद सब को आनन्दित करती है।</span> <sup>25</sup><span class='v-txt'>प्रभु ने अपनी योजना के अनुसार महासागर को शान्त किया और उस में टापू लगा दिये।</span> <sup>26</sup><span class='v-txt'>समुद्र पर यात्रा करने वाले उसकी जोखिमों का वर्णन करते और हम सुनकर आश्चर्यचकित हो जाते हैं।</span> <sup>27</sup><span class='v-txt'>ये हैं प्रभु के महान् और अद्भुत कार्य, हर प्रकार के जीव-जन्तु और भीमकाय जलचर।</span> <sup>28</sup><span class='v-txt'>उसके सामर्थ्य से उसका दूत सकुशल विचरता है और उसके आदेश के अनुसार सब सुसंघटित हैं।</span> <sup>29</sup><span class='v-txt'>हम कहाँ तक कहें!  उसके महान् कार्यों का अन्त नहीं। हम अन्त में यह कहते हैं: &quot;वहीं सब कुछ है!&quot;</span> <sup>30</sup><span class='v-txt'>हम उसकी महिमा का वर्णन करने में असमर्थ हैं; क्योंकि वह अपने कार्यों से कहीं अधिक महान् है।</span> <sup>31</sup><span class='v-txt'>प्रभु भीषण और अत्यधिक महान् है, उसका सामर्थ्य आश्चर्यजनक है।</span> <sup>32</sup><span class='v-txt'>(32-33) शक्ति भर प्रभु की महत्ता गाओ, क्योंकि वह तुम्हारी स्तुति के परे है। उसकी महिमा श्लाघ्य हैं।</span> <sup>34</sup><span class='v-txt'>पूरी शक्ति लगा कर उसकी स्तुति करते जाओ।  तुम उसका पूरा-पूरा वर्णन नहीं कर पाओगे।</span> <sup>35</sup><span class='v-txt'>किसने उसे देखा, जो उसका वर्णन कर सके?  कौन उसके महत्व के अनुसार उसकी महिमा कर सकता है?</span> <sup>36</sup><span class='v-txt'>जो दिखता, उस से कहीं अधिक अप्रकट है; क्योंकि हमने उसके कार्यों में से कुछ को ही देखा है।</span> <sup>37</sup><span class='v-txt'>प्रभु ने सब कुछ बनाया है और भक्तों को प्रज्ञा का वरदान दिया है।</span> </p>
+        <div class='nav'><a href='028042.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028044.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

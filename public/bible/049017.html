@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 17</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 17</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ईसा ने अपने शिष्यों से कहा, &quot;प्रलोभन अनिवार्य है, किन्तु धिक्कार उस मनुष्य को, जो प्रलोभन का कारण बनता है!</span> <sup>2</sup><span class='v-txt'>उन नन्हों में एक के लिए भी पाप का कारण बनने की अपेक्षा उस मनुष्य के लिए अच्छा यही होता कि उसके गले में चक्की का पाटा बाँधा जाता और वह समुद्र में फेंक दिया जाता।</span> <sup>3</sup><span class='v-txt'>इसलिए सावधान रहो।   &quot;यदि तुम्हारा भाई कोई अपराध करता है, तो उसे डाँटो और यदि वह पश्चात्ताप करता है, तो उसे क्षमा कर दो।</span> <sup>4</sup><span class='v-txt'>यदि वह दिन में सात बार तुम्हारे विरुद्ध अपराध करता और सात बार आ कर कहता है कि मुझे खेद है, तो तुम उसे क्षमा करते जाओ।&quot;</span> <sup>5</sup><span class='v-txt'>प्रेरितों ने प्रभु से कहा, &quot;हमारा विश्वास बढ़ाइए&quot;।</span> <sup>6</sup><span class='v-txt'>प्रभु ने उत्तर दिया, &quot;यदि तुम्हारा विश्वास राई के दाने के बराबर भी होता और तुम शहतूत के इस पेड़ से कहते, ‘उखड़ कर समुद्र में लग जा’, तो वह तुम्हारी बात मान लेता।</span> <sup>7</sup><span class='v-txt'>&quot;यदि तुम्हारा सेवक हल जोत कर या ढोर चरा कर खेत से लौटता है, तो तुम में ऐसा कौन है, जो उससे कहेगा, &quot;आओ, तुरन्त भोजन करने बैठ जाओ’?</span> <sup>8</sup><span class='v-txt'>क्या वह उस से यह नहीं कहेगा, ‘मेरा भोजन तैयार करो।  जब तक मेरा खाना-पीना न हो जाये, कमर कस कर परोसते रहो।  बाद में तुम भी खा-पी लेना’?</span> <sup>9</sup><span class='v-txt'>क्या स्वामी को उस नौकर को इसीलिए धन्यवाद देना चाहिए कि उसने उसकी आज्ञा का पालन किया है?</span> <sup>10</sup><span class='v-txt'>तुम भी ऐसे ही हो।  सभी आज्ञाओं का पालन करने के बाद तुम को कहना चाहिए, ‘हम अयोग्य सेवक भर हैं, हमने अपना कर्तव्य मात्र पूरा किया है’।&quot;</span> <sup>11</sup><span class='v-txt'>ईसा येरूसालेम की यात्रा करते हुए समारिया और गलीलिया के सीमा-क्षेत्रों से हो कर जा रहे थे।</span> <sup>12</sup><span class='v-txt'>किसी गाँव में प्रवेश करने पर उन्हें दस कोढ़ी मिले,</span> <sup>13</sup><span class='v-txt'>जो दूर खड़े हो गये और ऊँचे स्वर से बोले, &quot;ईसा! गुरूवर! हम पर दया कीजिए&quot;।</span> <sup>14</sup><span class='v-txt'>ईसा ने उन्हें देख कर कहा, &quot;जाओ और अपने को याजकों को दिखलाओ&quot;, और ऐसा हुआ कि वे रास्ते में ही नीरोग हो गये।</span> <sup>15</sup><span class='v-txt'>तब उन में से एक यह देख कर कि वह नीरोग हो गया है, ऊँचे स्वर से ईश्वर की स्तुति करते हुए लौटा।</span> <sup>16</sup><span class='v-txt'>वह ईसा को धन्यवाद देते हुए उनके चरणों पर मुँह के बल गिर पड़ा, और वह समारी था।</span> <sup>17</sup><span class='v-txt'>ईसा ने कहा, &quot;क्या दसों नीरोग नहीं हुए? तो बाक़ी नौ कहाँ हैं?</span> <sup>18</sup><span class='v-txt'>क्या इस परदेशी को छोड़ और कोई नहीं मिला, जो लौट कर ईश्वर की स्तुति करे?&quot;</span> <sup>19</sup><span class='v-txt'>तब उन्होंने उस से कहा, &quot;उठो, जाओ।  तुम्हारे विश्वास ने तुम्हारा उद्धार किया है।&quot;</span> <sup>20</sup><span class='v-txt'>जब फ़रीसियों ने उन से पूछा कि ईश्वर का राज्य कब आयेगा, तो ईसा ने उन्हें उत्तर दिया, &quot;ईश्वर का राज्य प्रकट रूप से नहीं आता।</span> <sup>21</sup><span class='v-txt'>लोग नहीं कह सकेंगे, ‘देखो-वह यहाँ है’ अथवा, ‘देखो-वह वहाँ है’; क्योंकि ईश्वर का राज्य तुम्हारे ही बीच है।&quot;</span> <sup>22</sup><span class='v-txt'>ईसा ने अपने शिष्यों से कहा, &quot;ऐसा समय आयेगा, जब तुम मानव पुत्र का एक दिन भी देखना चाहोगे, किन्तु उसे नहीं देख पाओगे।</span> <sup>23</sup><span class='v-txt'>लोग तुम से कहेंगे, ’देखो-वह यहाँ है’, अथवा, ‘देखो-वह वहाँ है’, तो तुम उधर नहीं जाओगे, उनके पीछे नहीं दौड़ोगे;</span> <sup>24</sup><span class='v-txt'>क्योंकि जैसे बिजली आकाश के एक छोर से निकल कर दूसरे छोर तक चमकती है, वैसे ही मानव पुत्र अपने दिन प्रकट होगा।</span> <sup>25</sup><span class='v-txt'>परन्तु पहले उसे बहुत दुःख सहना और इस पीढ़ी द्वारा ठुकराया जाना है।</span> <sup>26</sup><span class='v-txt'>&quot;जो नूह के दिनों में हुआ था, वही मानव पुत्र के दिनों में भी होगा।</span> <sup>27</sup><span class='v-txt'>नूह के जहाज़ पर चढ़ने के दिन तक लोग खाते-पीते और शादी-ब्याह करते रहे।  तब जलप्रलय आया और उसने सब को नष्ट कर दिया।</span> <sup>28</sup><span class='v-txt'>लोट के दिनों में भी यही हुआ था।  लोग खाते-पीते, लेन-देन करते, पेड़ लगाते और घर बनाते रहे;</span> <sup>29</sup><span class='v-txt'>परन्तु जिस दिन लोट ने सोदोम छोड़ा, ईश्वर ने आकाश से आग और गंधक बरसायी और सब-के-सब नष्ट हो गये।</span> <sup>30</sup><span class='v-txt'>मानव पुत्र के प्रकट होने के दिन वैसा ही होगा।</span> <sup>31</sup><span class='v-txt'>&quot;उस दिन जो छत पर हो और उसका सामान घर में हो, वह उसे ले जाने नीचे न उतरे और जो खेत में हो, वह भी घर न लौटे।</span> <sup>32</sup><span class='v-txt'>लोट की पत्नी को याद करो।</span> <sup>33</sup><span class='v-txt'>जो अपना जीवन सुरक्षित रखने का प्रयत्न करेगा, वह उसे खो देगा, और जो उसे खो देगा, वह उसे सुरक्षित रखेगा।</span> <sup>34</sup><span class='v-txt'>&quot;मैं तुम से कहता हूँ, उस रात दो एक खाट पर होंगे-एक उठा लिया जायेगा और दूसरा छोड़ दिया जायेगा।</span> <sup>35</sup><span class='v-txt'>दो स्त्रियाँ साथ-साथ चक्की पीसती होंगी-एक उठा ली जायेगी और दूसरी छोड़ दी जायेगी।&quot;</span> <sup>36</sup><span class='v-txt'>&quot;मैं तुम से कहता हूँ, दो खेत में होंगे-एक उठा लिया जायेगा और दूसरा छोड़ दिया जायेगा।</span> <sup>37</sup><span class='v-txt'>इस पर उन्होंने ईसा से पूछा, &quot;प्र्रभु! यह कहाँ होगा?&quot; उन्होंने उत्तर दिया, &quot;जहाँ लाश होगी, वहाँ गीध भी इकट्ठे हो जायेंगे&quot;।</span> </p>
+        <div class='nav'><a href='049016.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049018.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

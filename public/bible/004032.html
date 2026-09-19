@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 32</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 32</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>रूबेन और गाद के वंशजों के पास बहुत-से पशु थे। उन्होंने यजेर और गिलआद के भूभाग देख कर उन्हें पशुपालन के लिए उपयुक्त समझा।</span> <sup>2</sup><span class='v-txt'>इसलिए गाद और रूबेन के वंशजों ने मूसा, याजक एलआज़ार और समुदाय के नेताओं के पास आ कर कहा,</span> <sup>3</sup><span class='v-txt'>&#039;&#039;अटारोत, दीबोन, यज़ेर, निम्रा, हेषबोन, एलआले, सबाम, नेबो और बओन के</span> <sup>4</sup><span class='v-txt'>ये भूभाग, जिन्हें प्रभु ने इस्राएलियों के सामने पराजित किया है, पशुपालन के लिए उपयुक्त हैं और हम, आपके सेवकों के पास बहुत-से पशु हैं।&#039;&#039;</span> <sup>5</sup><span class='v-txt'>फिर वे यह बोले, &#039;&#039;यदि हम आपके कृपापात्र हैं, तो यह देश आपके इन सेवकों को मिले। आप हमें यर्दन के उस पार न ले जायें।&#039;&#039;</span> <sup>6</sup><span class='v-txt'>मूसा ने गाद और रूबेन के वंशजों को उत्तर दिया, &#039;&#039;तुम्हारे भाई-बन्धु तो युद्ध करने जायें और तुम यहाँ बैठे रहोगे?</span> <sup>7</sup><span class='v-txt'>तुम इस्राएलियों को उस देश में जाने के लिए क्यों निरुत्साह करते हो, जिसे प्रभु ने उन्हें दिया है?</span> <sup>8</sup><span class='v-txt'>तुम्हारे पूर्वजों ने भी यही किया था, जब मैंने उन्हें उस देश का भेद लेने के लिए कादेश-बरनेअ से वहाँ भेजा था।</span> <sup>9</sup><span class='v-txt'>वे एषकोल घाटी तक गये थे और उन्होंने देश का निरीक्षण भी किया था, किन्तु उसके बाद उन्होंने इस्राएलियों को इतना निरुत्साह कर दिया था कि वे प्रभु के दिये उस देश में जाने से इन्कार करने लगे।</span> <sup>10</sup><span class='v-txt'>उस दिन प्रभु ने क्रोध में आकर यह शपथ ली थी कि</span> <sup>11</sup><span class='v-txt'>बीस साल और इस से ऊपर का कोई भी पुरुष, जो मिस्र से बाहर आया था, वह देश नहीं देख सकेगा, जिसे मैंने शपथपूर्वक इब्राहीम, इसहाक और याकूब को देने की प्रतिज्ञा की। यह इसलिए हुआ था कि उन्होंने सारे हृदय से मेरा अनुसरण नहीं किया था-</span> <sup>12</sup><span class='v-txt'>सिवा यफन्ने के पुत्र कनिज्जी कालेब और नून के पुत्र योशुआ के, जिन्होंने सारे हृदय से प्रभु का अनुसरण किया था।</span> <sup>13</sup><span class='v-txt'>इस पर प्रभु ने क्रोध में आकर इस्राएलियों को चालीस वर्ष तक उजाड़खण्ड में तब तक भटकने दिया था, जब तक वह पूरी पीढ़ी मर नहीं गयी, जिसने प्रभु को अप्रसन्न किया था।</span> <sup>14</sup><span class='v-txt'>अब तुम, पापियों की सन्तान, अपने पूर्वजों के बदले, इस्राएलियों के विरुद्ध प्रभु का क्रोध भड़काने आये हो।</span> <sup>15</sup><span class='v-txt'>यदि तुम उसकी ओर से मुँह मोड़ोगे, तो वह निष्चय ही इस प्रजा को उजाड़खण्ड में भटकने रहने देगा और तुम इन सब लोगों के विनाश के कारण बनोगे।&#039;&#039;</span> <sup>16</sup><span class='v-txt'>इस पर वे उसके और पास जा कर कहने लगे, &#039;&#039;हम यहाँ अपने पशुओं के लिए बाड़े और अपने बाल-बच्चों के लिए नगर बनायेंगे।</span> <sup>17</sup><span class='v-txt'>जब तक हम इस्राएलियों को उनके स्थानों तक नहीं पहुँचा देंगे, तब तक हम शस्त्रसज्जित हो कर उनके आगे-आगे चलते रहेंगे। इस बीच हमारे बाल-बच्चे देशवासियों से बचे रह कर क़िलेबन्द नगरों में निवास करते रहेंगे।</span> <sup>18</sup><span class='v-txt'>जब तक इस्राएली अपने-अपने दायभाग प्राप्त नहीं कर लेंगे, तब तक हम अपने घर नहीं लौटेगें।</span> <sup>19</sup><span class='v-txt'>हम यर्दन के उस पार की भूमि में कोई दायभाग नहीं चाहतें, क्योंकि हमारे दायभाग की जमीन हमें यर्दन के इस पार, पूर्वी भाग में प्राप्त हो चुकी है।&#039;&#039;</span> <sup>20</sup><span class='v-txt'>(२०-२२) इस पर मूसा ने उन्हें उत्तर दिया, &#039;&#039;यदि तुम ऐसा करोगे, यदि तुम शस्त्रसज्जित हो कर युद्ध करने आओगे और जब तक प्रभु अपने शत्रुओं को नहीं भगा देगा और देश अपने अधिकार में नहीं करेगा, तब तक नहीं लौटोगे, तो तुम प्रभु और इस्राएलियों के लिए अपने कर्तव्य से मुक्त हो कर वापस जाओगे और यह देश प्रभु की दृष्टि में तुम्हारा दायभाग होगा।</span> <sup>23</sup><span class='v-txt'>किन्तु यदि तुम ऐसा नहीं करोगे, तो तुम प्रभु की दृष्टि में निष्चय ही अपराधी ठहरोगे और तुम को अपने पाप का दण्ड भुगतना पड़ेगा।</span> <sup>24</sup><span class='v-txt'>तुम अपने बाल-बच्चों के लिए नगर बसाओ, और अपने गल्लों के लिए बाड़े बनाओ, किन्तु अपनी प्रतिज्ञा पूरी करो।</span> <sup>25</sup><span class='v-txt'>इस पर गाद और रूबेन के वंशजों ने कहा, &#039;&#039;हम आपके सेवक वैसा ही करेंगे, जैसा हमारे स्वामी का आदेश होगा।</span> <sup>26</sup><span class='v-txt'>हमारे बच्चे, हमारी पत्नियाँ हमारे गल्ले और सब पशु यहाँ गिलआद के नगरों में रहेंगे।</span> <sup>27</sup><span class='v-txt'>परन्तु हम, आपके सब सेवक शस्त्रसज्जित हो कर प्रभु के सामने युद्ध करने के लिए यर्दन पार करेंगे, जैसा कि हमारे स्वामी का आदेश है।&#039;&#039;</span> <sup>28</sup><span class='v-txt'>इस पर मूसा ने याजक एलआज़ार नून के पुत्र योशुआ और इस्राएली कुलों के घरानों के मुखियाओं को उनके विषय में आदेश दिया।</span> <sup>29</sup><span class='v-txt'>मूसा ने उन से कहा, &#039;&#039;यदि गाद और रूबेन के सब वंशज प्रभु के सामने शस्त्रसज्जित हो कर तुम्हारे साथ यर्दन पार करेंगे, तो जब वह देश तुम्हारे अधिकार में आ गया होगा, तब तुम्हें दायभाग के रूप में उन को गिलआद देना होगा।</span> <sup>30</sup><span class='v-txt'>परन्तु यदि वे शस्त्रसज्जित हो कर तुम्हारे साथ उस पार नहीं जायेंगे, तो उन्हें तुम्हारी ही तरह कनान देश में दायभाग प्राप्त होगा।&#039;&#039;</span> <sup>31</sup><span class='v-txt'>गाद और रूबेन के वंशजों ने उत्तर दिया, &#039;&#039;प्रभु ने आपके इन सेवकों को जैसी आज्ञा दी है, हम वैसा ही करेंगे।</span> <sup>32</sup><span class='v-txt'>हम प्रभु के सामने शस्त्रसज्जित हो कर कनान देश जायेंगे, किन्तु यर्दन के इस पार की भूमि ही दायभाग के रूप में हमारी होगी।&#039;&#039;</span> <sup>33</sup><span class='v-txt'>तब मूसा ने गाद और रूबेन के वंशजों और यूसुफ़ के पुत्र मनस्से के आधे कुल को अमोरियों के राजा सीहोन का राज्य और बाशान के राजा ओग का राज्य - नगरों और उनके आसपास की भूमि के साथ - दे दिया।</span> <sup>34</sup><span class='v-txt'>(३४-३६) गाद के वंशजों ने दीबोन, अटोरोत, अरोएर, अट्रोत-शोफ़ान, यज़ेर, योगबहा, बेतनिम्रा और बेत-हारान नामक किलाबन्द नगरों का पुनर्निर्माण किया तथा गल्लों के लिए बाड़े बनाये।</span> <sup>37</sup><span class='v-txt'>रूबेन के वंशजों ने हेषबोन, एलआले ओर किर्यातईम को फिर से बसाया</span> <sup>38</sup><span class='v-txt'>तथा नाम बदल कर नेबो और बाल-मओन को भी। उन्होंने जिन स्थानों का पुनर्निर्माण किया, उनका दूसरा नाम रखा।</span> <sup>39</sup><span class='v-txt'>मनस्से के पुत्र माकीर के वंशज गिलआद गये और उसे जीत कर वहाँ के निवासी अमोरियों को वहाँ से भगा दिया।</span> <sup>40</sup><span class='v-txt'>इसलिए, मूसा ने मनस्से के पुत्र माकीर को गिलआद दे दिया और वह वहाँ बस गया।</span> <sup>41</sup><span class='v-txt'>मनस्से के पुत्र याईर ने कुछ गाँवों को जीत कर उनका नाम हव्वोत-याईर (याईर के गाँव) रखा।</span> <sup>42</sup><span class='v-txt'>नोबह ने आसपास के गाँवों सहित कनान को जीत कर उसका नाम अपने नाम पर नोबह रख दिया।</span> </p>
+        <div class='nav'><a href='004031.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004033.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

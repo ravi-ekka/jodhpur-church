@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>फ़िलिप्पियों - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>फ़िलिप्पियों</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इसीलिए मेरे प्रिय भाइयो, प्रभु में इस तरह दृढ़ रहिए। प्रिय भाइयो! मुझे आप लोगों से मिलने की बड़ी इच्छा है। आप मेरे आनन्द और मेरे मुकुट हैं।</span> <sup>2</sup><span class='v-txt'>मैं युवोदिया और सुनतूखे़, दोनों से अनुरोध करता हूँ कि तुम प्रभु में समझौता कर लो।</span> <sup>3</sup><span class='v-txt'>सुजुगे!  मैं तुम से, अपने सच्चे साथी से, प्रार्थना करता हूँ कि तुम इन दोनों की सहायता करो।  इन्होंने क्लेमेन्ट और मेरे अन्य सहयोगियों-सहित, जिनके नाम जीवन-ग्रन्थ में हैं, सुसमाचार के प्रचार में मेरे साथ कठोर परिश्रम किया।</span> <sup>4</sup><span class='v-txt'>आप लोग प्रभु में हर समय प्रसन्न रहें।  मैं फिर कहता हूँ, प्रसन्न रहें।</span> <sup>5</sup><span class='v-txt'>सब लोग आपकी सौम्यता जान जायें।  प्रभु निकट हैं।</span> <sup>6</sup><span class='v-txt'>किसी बात की चिन्ता न करें।  हर जरू़रत में प्रार्थना करें और विनय तथा धन्यवाद के साथ ईश्वर के सामने अपने निवेदन प्रस्तुत करें</span> <sup>7</sup><span class='v-txt'>और ईश्वर की शान्ति, जो हमारी समझ से परे हैं, आपके हृदयों और विचारों को ईसा मसीह में सुरक्षित रखेगी।</span> <sup>8</sup><span class='v-txt'>भाइयो! अन्त में यह जो कुछ सच है, आदरणीय है; जो कुछ न्यायसंगत है, निर्दोष है; जो कुछ प्रीतिकर है, मनोहर है; जो कुछ उत्तम है, प्रशंसनीय है: ऐसी बातों का मनन किया करें।</span> <sup>9</sup><span class='v-txt'>आप लोगों ने मुझ से जो सीखा, ग्रहण किया, सुना और मुझ में देखा, उसके अनुसार आचरण करें और शान्ति का ईश्वर आप लोगों के साथ रहेगा।</span> <sup>10</sup><span class='v-txt'>मुझे प्रभु में इसलिए बड़ा आनन्द हुआ कि मेरे प्रति आप लोगों का प्रेम इतने दिनों के बाद फिर पल्लवित हुआ। इस से पहले भी आप को मेरी चिन्ता अवश्य थी, किन्तु उसे प्रकट करने का सुअवसर नहीं मिल रहा था।</span> <sup>11</sup><span class='v-txt'>मैं यह इसलिए नहीं कह रहा हूँ कि मुझे किसी बात की कमी है, क्योंकि मैंने हर परिस्थिति में स्वावलम्बी होना सीख लिया है।</span> <sup>12</sup><span class='v-txt'>मैं दरिद्रता तथा सम्पन्नता, दोनों से परिचित हूँ।  चाहे परितृप्ति हो या भूख, समृद्धि हो या अभाव -मुझे जीवन के उतार-चढ़ाव का पूरा अनुभव है।</span> <sup>13</sup><span class='v-txt'>जो मुझे बल प्रदान करते हैं, मैं उनकी सहायता से सब कुछ कर सकता हूँ।</span> <sup>14</sup><span class='v-txt'>फिर भी आप लोगों ने संकट में मेरा साथ देकर अच्छा किया।</span> <sup>15</sup><span class='v-txt'>फि़लिप्पियों! आप लोग जानते हैं कि अपने सुसमाचार प्रचार के प्रारम्भ में जब मैं मकेदूनिया से चला गया, तो आप लोगों को छोड़ कर किसी भी कलीसिया ने मेरे साथ लेन-देन का सम्बन्ध नहीं रखा।</span> <sup>16</sup><span class='v-txt'>जब मैं थेसलनीके में था, तो आप लोगों ने मेरी आवश्यकता पूरी करने के लिए एक बार नहीं, बल्कि दो बार कुछ भेजा था।</span> <sup>17</sup><span class='v-txt'>मैं दान पाने के लिए उत्सुक नहीं हूँ।  मैं इसलिए उत्सुक हूँ कि हिसाब में आपकी जमा-बाकी बढ़ती जाये।</span> <sup>18</sup><span class='v-txt'>अब मुझे किसी बात की कमी नहीं; मैं सम्पन्न हूँ। एपाफ्रोदितुस से आपकी भेजी हुई वस्तुएँ पाकर मैं समृद्ध हो गया हूँ।  आप लोगों की यह भेंट एक मधुर सुगन्ध है, एक सुग्राह्य बलिदान, जो ईश्वर को प्रिय है।</span> <sup>19</sup><span class='v-txt'>मेरा ईश्वर आप लोगों को ईसा मसीह द्वारा महिमान्वित कर उदारतापूर्वक आपकी सब आवश्यकताओं को पूरा करेगा।</span> <sup>20</sup><span class='v-txt'>हमारे पिता ईश्वर को अनन्त काल तक महिमा!  आमेन!</span> <sup>21</sup><span class='v-txt'>ईसा मसीह के सहभागी प्रत्येक सन्त को नमस्कार।  जो भाई मेरे साथ है</span> <sup>22</sup><span class='v-txt'>और सभी सन्त, विशेष कर कैसर के कर्मचारी आप लोगों को नमस्कार कहते हैं।</span> <sup>23</sup><span class='v-txt'>हमारे प्रभु ईसा मसीह की कृपा आप लोगों पर बनी रहे।</span> </p>
+        <div class='nav'><a href='057003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

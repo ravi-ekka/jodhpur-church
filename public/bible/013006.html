@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>पहला इतिहास ग्रन्थ - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>पहला इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>लेवी का पुत्रः गेरशोम, कहात और मरारी।</span> <sup>2</sup><span class='v-txt'>गेरशोम के पुत्रों के नाम ये हैं: लिबनी और शिमई।</span> <sup>3</sup><span class='v-txt'>कहात के पुत्रः अम्राम, यिसहार, हेब्रोन, और उज़्ज़ीएल।</span> <sup>4</sup><span class='v-txt'>मरारी के पुत्रः महली और मूशी।  ये अपने-अपने मूल पुरुशों के अनुसार लेवियों के कुल हैं।</span> <sup>5</sup><span class='v-txt'>गेरशोम से उत्पन्न हुएः उसका पुत्र लिबनी, लिबनी का पुत्र यहत, यहत का पुत्र ज़िम्मा,</span> <sup>6</sup><span class='v-txt'>ज़िम्मा का पुत्र योआह, योआह का पुत्र इद्दो, इद्दो का पुत्र जे़रह और जे़रह का पुत्र यआत्रय।</span> <sup>7</sup><span class='v-txt'>कहात के पुत्रः उसका पुत्र अम्मीनादाब, अम्मीनादाब का पुत्र कोरह, कोरह का पुत्र अस्सीर,</span> <sup>8</sup><span class='v-txt'>अस्सीर का पुत्र एल्काना, एल्काना का पुत्र एब्यासाफ़, एब्यासाफ़ का पुत्र अस्सीर,</span> <sup>9</sup><span class='v-txt'>अस्सीर का पुत्र तहत, तहत का पुत्र ऊरीएल, ऊरीएल का पुत्र उज़्ज़ीया और उज़्ज़ीया का पुत्र षौल।</span> <sup>10</sup><span class='v-txt'>एल्काना के पुत्रः अमासय और अहीमोत।</span> <sup>11</sup><span class='v-txt'>अहीमोत का पुत्र एल्काना, एल्काना का पुत्र सोफ़य, सोफ़य का पुत्र नहत,</span> <sup>12</sup><span class='v-txt'>नहत का पुत्र एलीआब, एलीआब का पुत्र यरोहाम और यरोहाम का पुत्र एल्काना।</span> <sup>13</sup><span class='v-txt'>समूएल का पुत्रः उसका पहला पुत्रः योएल और दूसरा अबीया।</span> <sup>14</sup><span class='v-txt'>मरारी के पुत्रः महली, महली का पुत्र लिबनी, लिबनी का पुत्र शिमई, शिमई का पुत्र उज़्ज़ा,</span> <sup>15</sup><span class='v-txt'>उज़्ज़ा का पुत्र शिमआ, शिमआ का पुत्र हग्गीया और हग्गीया का पुत्र असाया।</span> <sup>16</sup><span class='v-txt'>जब मंजूषा प्रभु के मन्दिर में रखी गयी, तो दाऊद ने निम्नलिखित व्यक्तियों को वहाँ गायन के लिए नियुक्त किया।</span> <sup>17</sup><span class='v-txt'>जब तक सुलेमान ने येरूसालेम में प्रभु के मन्दिर का निर्माण नहीं किया था, तब तक वे निवास, दर्शन-कक्ष के सामने गायन-वादन किया करते थे।  वे अपनी-अपनी पारी के अनुसार सेवा-कार्य किया करते थे।</span> <sup>18</sup><span class='v-txt'>सेवा करने वाले और उनके पुत्र ये थे।  कहाती वंशजों में सेः गायक हेमान, जो योएल का पुत्र था और योएल समूएल का पुत्र था।</span> <sup>19</sup><span class='v-txt'>समूएल एल्काना का, एल्काना यरोहाम का, यरोहाम एलीएल का, एलीएल तोअह का,</span> <sup>20</sup><span class='v-txt'>तोअह सूफ़ का, सूफ़ एल्काना का, एल्काना महत का, महत अमासय का,</span> <sup>21</sup><span class='v-txt'>अमासय एल्काना का, एल्काना योएल का, योएल अज़र्या का, अज़र्या सफ़न्या का,</span> <sup>22</sup><span class='v-txt'>सफ़न्या तहत का, तहत अस्सीर का, अस्सीर एब्यासाफ़ का,</span> <sup>23</sup><span class='v-txt'>एब्यासाफ़ कोरह का, कोरह यिसहार का, यिसहार कहात का, कहात लेवी का और लेवी इस्राएल का पुत्र था।</span> <sup>24</sup><span class='v-txt'>उसकी दाहिनी ओर उसका भाई आसाफ़ था।  आसाफ़ बेरेक्या का पुत्र था, बेरेक्या शिमआ का पुत्र था।</span> <sup>25</sup><span class='v-txt'>शिमआ मीकाएल का, मीकाएल बअसेया का, बअसेया मलकीया का,</span> <sup>26</sup><span class='v-txt'>मलकीया एतनी का, एतनी जेरह का, जे़रह अदाया का,</span> <sup>27</sup><span class='v-txt'>अदाया एतान का, एतान ज़िम्मा का, ज़िम्मा शिमई का,</span> <sup>28</sup><span class='v-txt'>शिमई यहत का, यहत गेरशोम का और गेरशोम लेवी का पुत्र था।</span> <sup>29</sup><span class='v-txt'>बायीं ओर उनके भाई, मरारी के वंशज थे।  कीशी का पुत्र एतान, कीशी अबदी का पुत्र था।  अबदी मल्लूक का,</span> <sup>30</sup><span class='v-txt'>मल्लूक हशब्या का, हशब्या अमस्या का, अमस्या हिलकीया का</span> <sup>31</sup><span class='v-txt'>हिलकीया अमसी का, अमसी बानी का, बानी शेमेर का,</span> <sup>32</sup><span class='v-txt'>शेमेर महली का, महली मूशी का, मूशी मरारी का और मरारी लेवी का पुत्र था।</span> <sup>33</sup><span class='v-txt'>उनके लेवीवंशी भाई तम्बू, ईश्वर के निवास की अन्य सेवाओ के लिए नियुक्त थे।</span> <sup>34</sup><span class='v-txt'>हारून और उसके पुत्र होम-वेदी की धूप-वेदी पर बलियाँ चढ़ाया करते थे।  वे परमपवित्र-स्थान के सब सेवा-कार्य करते और इस्राएलियों के लिए प्रायश्चित-विधि सम्पन्न करते थे, ठीक वैसे ही, जैसा ईश्वर के सेवक मूसा ने आदेश दिया था।</span> <sup>35</sup><span class='v-txt'>हारून के वंशज ये थे।  उसका पुत्र एलआज़ार था और उसका पुत्र पीनहास था।  पीनहास का पुत्र अबीशूआ,</span> <sup>36</sup><span class='v-txt'>अबीशूआ का बुक्की, बुक्की का उज़्ज़ी, उज़्ज़ी का जरह्î,</span> <sup>37</sup><span class='v-txt'>जरह्î का मरायोत, मरायोत का अमर्या, अमर्या का अहीटूब,</span> <sup>38</sup><span class='v-txt'>अहीटूब का सादोक और सादोक का पुत्र अहीमअस था।</span> <sup>39</sup><span class='v-txt'>(39-40) वे सब स्थान, जहाँ उनके अलग-अलग आवास थे, इस प्रकार हैं। हारूनवंशियों के कहाती कुलों को यूदा प्रदेश का हेब्रोन और उसके आसपास के चरागाह मिले (क्योंकि उनके नाम पहली चिट्ठी निकली थी) ।</span> <sup>41</sup><span class='v-txt'>नगर के खेत और गाँव यफुन्ने के पुत्र कालेब को प्राप्त हुए,</span> <sup>42</sup><span class='v-txt'>किन्तु हारून के वंशजों को शरण-नगर मिले, अर्थात् हेब्रोन, लिबना और उसके चरागाह, यत्तीर एश्तमोआ और उसके चरागाह,</span> <sup>43</sup><span class='v-txt'>हीलेन और उसके चरागाह, दबीर और उसके चरागाह,</span> <sup>44</sup><span class='v-txt'>आशान और उसके चरागाह, बेत-शेमेश और उसके चरागाह;</span> <sup>45</sup><span class='v-txt'>फिर बेनयामीन वंश से गेबा और उसके चरागाह, अलेमेत और उसके चरागाह तथा अनातोत और उसके चरागाह। इस प्रकार कहाती कुलों को कुल मिला कर तेरह नगर मिले।</span> <sup>46</sup><span class='v-txt'>शेष कहातियों को, चिट्ठी डालने पर, मनस्से के आधे वंश के कुलों से दस नगर मिले।</span> <sup>47</sup><span class='v-txt'>गेरशोमियों को अपने-अपने कुलों के अनुसार इस्साकार, आशेर, नफ़्ताली और बाशान प्रान्त में रहने वाले मनस्से के कुलों से तेरह नगर मिले।</span> <sup>48</sup><span class='v-txt'>मरारियों को अपने-अपने कुलों के अनुसार चिट्ठी द्वारा रूबेन, गाद और ज़बुलोन के वंशों से बारह नगर मिले।</span> <sup>49</sup><span class='v-txt'>इस प्रकार इस्राएलियों ने लेवियों को नगर और उनके साथ के चरागाह दिये।</span> <sup>50</sup><span class='v-txt'>उन को चिट्ठियों द्वारा यूदा, सिमओन और बेनयामीन के वंशों से उर्पयुक्त नगर मिले।</span> <sup>51</sup><span class='v-txt'>कहात वंश के कुछ कुलों को एफ्ऱईम वंश से नगर मिले।</span> <sup>52</sup><span class='v-txt'>उन को ये शरण-नगर दिये गयेः एफ्ऱईम के पहाड़ी प्रदेश का सिखेम और उसके चरागाह, गेज़ेर और उसके चरागाह,</span> <sup>53</sup><span class='v-txt'>योकमआम और उसके चरागाह, बेत-होरोन और उसके चरागाह,</span> <sup>54</sup><span class='v-txt'>अय्यालोन और उसके चरागाह, गत-रिम्मोन और उसके चरागाह</span> <sup>55</sup><span class='v-txt'>और मनस्से के आधे वंश से आनेर और उसके चरागाह तथा बिलआम और उसके चरागाह।  ये कहातियों के शेष कुलों के लिए थे।</span> <sup>56</sup><span class='v-txt'>गेरशोमियों को अपने-अपने कुलों के अनुसार यह मिला। मनस्से के आधे वंश सेः बाशान प्रान्त का गोलान और उसके चरागाह तथा अश्तारोत और उसके चरागाह;</span> <sup>57</sup><span class='v-txt'>इस्साकार के वंश सेः केदेश और उसके चरागाह, दाबरत और उसके चरागाह,</span> <sup>58</sup><span class='v-txt'>रामोत और उसके चरागाह तथा आनेम और उसके चरागाह;</span> <sup>59</sup><span class='v-txt'>अशेर के वंश सेः माशाल और उसके चरागाह, अबदोन और उसके चरागाह,</span> <sup>60</sup><span class='v-txt'>हुकोक और उसके चरागाह, रहोब और उसके चरागाह;</span> <sup>61</sup><span class='v-txt'>फिर नफ़्ताली वंश सेः गलीलिया का केदेश और उसके चरागाह, हम्मोन और उसके चरागाह तथा किर्यातईम और उसके चरागाह।</span> <sup>62</sup><span class='v-txt'>शेष मरारियो को यह मिलाः ज़बुलोन वंश से रिम्मोन और उसके चरागाह, ताबोर और उसके चरागाह;</span> <sup>63</sup><span class='v-txt'>रूबेन के वंश से यर्दन के पार येरीख़ो के पास, यर्दन के पूर्वी तट पर, मरुभूमि का बेसेर और उसके चरागाह, यहसा और उसके चरागाह,</span> <sup>64</sup><span class='v-txt'>कदेमोत और उसके चरागाह तथा मेफ़ाअत और उसके चरागाह;</span> <sup>65</sup><span class='v-txt'>गाद वंश से गिलआद का रामोत और उसके चरागाह, महनयीम और उसके चरागाह,</span> <sup>66</sup><span class='v-txt'>हेशबोन और उसके चरागाह तथा याजे़र और उसके चरागाह।</span> </p>
+        <div class='nav'><a href='013005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='013007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>“मानवपुत्र! तुम एक तेज़ लोहे की पत्ती लो।  उसका उपयोग नाई के उस्तरे के रूप में करो और उस से अपना सिर और दाढ़ी मूँड़ो।  फिर तराजू से तौल कर केशों के भाग करो।</span> <sup>2</sup><span class='v-txt'>तुम एक तिहाई भाग उस समय नगर के बीच जला दो, जब उसकी घेराबन्दी के दिन पूरे हो जायें।  तुम एक तिहाई भाग ले कर उस पर नगर के चारों ओर तलवार से प्रहार करो।  एक तिहाई भाग हवा में बिखेर दो और मैं तलवार से उनका पीछा करूँगा।</span> <sup>3</sup><span class='v-txt'>तुम उन में से कुछ को ले कर उन्हें अपने वस्त्र के खूँटों से बाँध लो।</span> <sup>4</sup><span class='v-txt'>फिर उन में से कुछ को आग में डाल कर जला दो और उन से एक ज्वाला निकल कर इस्राएल के समस्त घराने पर फैल जायेगी।“</span> <sup>5</sup><span class='v-txt'>प्रभु-ईश्वर कहता है, “यह येरूसालेम है! मैंने इसे राष्ट्रों के बीचों-बीच, चारों ओर देशों के साथ रखा है।</span> <sup>6</sup><span class='v-txt'>किन्तु उसने अपनी दुष्टता द्वारा अन्य राष्ट्रों से भी अधिक मेरे आदेशों का तिरस्कार किया और पड़़ोस के देशों से भी अधिक मेरे आदेशों का उल्लंघन किया; क्योंकि उसने मेरे नियमों की अवहेलना की है और मेरे आदेशों का अनुसरण नहीं किया।“</span> <sup>7</sup><span class='v-txt'>इसलिए प्रभु-ईश्वर यह कहता है, “तुम अपने पडोसी राष्ट्रों से भी अधिक विद्रोही हो और तुमने न तो मेरे विधानों का अनुसरण किया है और न ही मेरे आदेशों का पालन किया है, बल्कि अपने पड़ोस के राष्ट्रों के रीति-रिवाजों के अनुसार आचरण किया है।</span> <sup>8</sup><span class='v-txt'>इसलिए प्रभु-ईश्वर कहता हैः देखो, मैं यहाँ तक कि मैं भी तुम्हारे विरुद्ध हो गया हूँ और मैं राष्ट्रों के सामने तुम्हारे ही बीच अपने निर्णय पूरा करूँगा।</span> <sup>9</sup><span class='v-txt'>तुम्हारे घृणित कर्मों के कारण मैंं तुम्हारे साथ वैसा व्यवहार करूँगा, जैसा मैंने कभी नही किया और जैसा मैं कभी नहीं करूँगा।</span> <sup>10</sup><span class='v-txt'>इसलिए तुम्हारे यहाँ पिता अपने पुत्रों को खायेंगे और पुत्र अपने पिताओं को।  मैं तुम्हें दण्ड दूँगा और तुम में जो बच जायेंगे, उन को इधर-उधर बिखेर दूँगा।“</span> <sup>11</sup><span class='v-txt'>इसलिए प्रभु-ईश्वर कहता है, “अपनी शपथ! तुमने अपनी घृणित मूर्तियों और घृणित कार्यों द्वारा मेरे पवित्र-स्थान को अपवित्र किया है, इसलिए मैं तुम्हारा विनाश करूँगा।  तुम मेरी आँखों से बच नहीं सकोगे और मैं दया नहीं  दिखलाऊँगा।</span> <sup>12</sup><span class='v-txt'>तुम्हारा एक तिहाई भाग महामारी से मर जायेगा और तुम्हारे यहाँ अकाल से नष्ट हो जायेगा।  एक तिहाई भाग तुम्हारे तुम्हारे आसपास तलवार के घाट उतारा जायेगा और मैं एक तिहाई भाग को इधर-उधर बिखेर दूँगा और उसका पीछा तलवार से करूँगा।</span> <sup>13</sup><span class='v-txt'>“इस प्रकार मेरा क्रोध शान्त होगा और मैं उन पर अपना क्रोध उतार कर सन्तोष का अनुभव करूँगा।  जब मैं उन पर अपना क्रोध उतारूँगा तो वे यह जान जायेंगे कि मैं, प्रभु, ने ही उत्तेजित हो कर ऐसा कहा है।</span> <sup>14</sup><span class='v-txt'>यही नहीं, मैं तुम लोगों को उजाड़ दूँगा और तुम्हारे पड़ोस के राष्ट्रों के बीच और वहाँ से गुज़रने वाले लोगों के सामने उपहास का पात्र बना दूँगा।</span> <sup>15</sup><span class='v-txt'>तुम अपने आसपास के राष्ट्रों के लिए निन्दा और उपहास, चेतावनी और आतंक के पात्र बन जाओगे, जब मैं अपने क्रोध और आक्रोश में और घोर प्र्रताड़ना के साथ, तुम्हें दण्ड दूँगा- यह मैं, प्रभु ने कहा है;</span> <sup>16</sup><span class='v-txt'>जब मैं तुम पर अकाल के घातक बाण, विनाश के भीषण बाण छोडँूगा, जिन्हें मैं मिटा देने के लिए छोडूँगा और जब मैं तुम्हारे यहाँ अकाल-पर-अकाल भेजूँगा और तुम्हारी रोटी का आधार तोड़ दूँगा।</span> <sup>17</sup><span class='v-txt'>मैं तुम्हारे विरुद्ध अकाल और जंगली पशुओं को भेजूँगा और वे तुम्हें निस्सन्तान बना देंगे।  तुम्हारे यहाँ महामारी और रक्तपात विचरण करेंगें और मैं तुम पर तलवार भेजूँगा।  यह मैं, प्रभु, ने कहा है।“</span> </p>
+        <div class='nav'><a href='033004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

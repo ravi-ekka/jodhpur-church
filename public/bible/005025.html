@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 25</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 25</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&quot;यदि लोगों में कोई झगड़ा हो और वे न्यायालय जायें तो न्यायाधीश निर्णय करेगा।  वह निर्दोष को निर्दोष और दोषी को दोषी घोषित करे।</span> <sup>2</sup><span class='v-txt'>यदि दोषी मनुष्य को कोड़ांे का दण्ड़ दिया जाये, तो न्यायाधीश उसे अपने सामने पिटवाये और उसके दोष के अनुसार कोडों की संख्या निर्धारित करे।</span> <sup>3</sup><span class='v-txt'>वह चालीस कोड़े तक लगवा सकता है, अधिक नहीं। कहीं ऐसा न हो कि अधिक कोड़ों के कारण तुम्हारे भाई को तुम्हारे सामने नीचा दिखाया जाये।</span> <sup>4</sup><span class='v-txt'>&quot;तुम दँवरी करते बैल के मुँह पर मोहरा नहीं लगाओगे।</span> <sup>5</sup><span class='v-txt'>&quot;यदि कई भाई एक साथ रहते हों और उन में कोई निस्सन्तान मर जाये, तो मृतक की पत्नी का विवाह परिवार के बाहर के किसी पुरुष से न किया जाये।  उसके पति का भाई उसके पास जाये और नियोग की प्रथा के अनुसार उसके साथ विवाह करे।</span> <sup>6</sup><span class='v-txt'>उसका पहला पुत्र उसके मृत भाई का पुत्र माना जायेगा और इस प्रकार इस्राएल में उसका नाम लुप्त नहीं होगा।</span> <sup>7</sup><span class='v-txt'>यदि वह व्यक्ति अपनी भाभी से विवाह करना नहीं चाहता, तो उसकी भाभी नगर के फाटक पर नेताओं के पास जा कर यह कहे, ‘मेरा देवर अपने भाई का वंश इस्राएल में चलने नहीं देता।  वह नियोग की प्रथा के अनुसार मेरे साथ विवाह करना अस्वीकार करता है।’</span> <sup>8</sup><span class='v-txt'>नगर के नेता उसे बुला कर इस विषय में उस से पूछताछ करें।  यदि वह हठ करते हुए कहे, मैं उस से विवाह करना नहीं चाहता’,</span> <sup>9</sup><span class='v-txt'>तो उसकी भाभी नेताओं के सामने उसके पास जाये, उसके पैरों से जूते उतारे, उसके मुँह पर थूके और कहे, ’उस व्यक्ति के साथ ऐसा किया जाता है, जो अपने भाई का वंश चलने नहीं देता’।</span> <sup>10</sup><span class='v-txt'>इस्राएल में उसका यह नाम रखा जायेगा - वह व्यक्ति जिसके जूते उतारे गये।</span> <sup>11</sup><span class='v-txt'>&quot;यदि दो पुरुष आपस में मारपीट करें और किसी पुरुष की पत्नी अपने पति को मारने वाले के हाथों से छुड़ाने के लिए अपना हाथ बढ़ा कर उसका गुप्तांग पकड़ ले,</span> <sup>12</sup><span class='v-txt'>तो उसका हाथ काट डाला जाये।  तुम उस पर दया नहीं करोगे।</span> <sup>13</sup><span class='v-txt'>&quot;तुम अपनी थैली में दो प्रकार के बाट - एक हलका और एक भारी - नहीं रखोगे।</span> <sup>14</sup><span class='v-txt'>अपने घर में दो प्रकार के नाप नहीं रखोगे, अर्थात् घट-बढ़ नाप के।</span> <sup>15</sup><span class='v-txt'>तुम्हारे बाट-नाप आदि पूरे-पूरे, ठीक-ठीक तौल के और पूरे-पूरे, ठीक-ठीक नाप के हों, जिससे तुम उस देश में दीर्घायु हो सको, जिसे प्रभु, तुम्हारा ईश्वर तुम्हें देने वाला है।</span> <sup>16</sup><span class='v-txt'>प्रत्येक जो ऐसा करेगा, प्रत्येक जो अन्याय करेगा, वह प्रभु तुम्हारे ईश्वर की दृष्टि में घृणित होगा।</span> <sup>17</sup><span class='v-txt'>&quot;अमालेकियों ने तुम्हारे साथ मिस्र से निकलते समय जो कुछ किया था, उसे याद रखो।</span> <sup>18</sup><span class='v-txt'>उन्होंने तुम पर उस समय आक्रमण किया, जब तुम यात्रा करते-करते थके-माँदे थे और उन्होंने तुम में उन लोगों को, जो पीछे रह गये थे, तुम से अलग कर दिया।  वे ईश्वर पर श्रद्धा नहीं रखते थे।</span> <sup>19</sup><span class='v-txt'>इसलिए, जब प्रभु, तुम्हारा ईश्वर तुम्हें अपने आसपास के सब शत्रुओं से छुड़ा कर उस देश में शान्ति प्रदान करे, जिसे प्रभु तुम्हारा ईश्वर तुम्हें विरासत के रूप में देने वाला है, तो तुम आकाश के नीचे अमालेकियों की स्मृति मिटा दोगे।  तुम यह नहीं भूलोगे।</span> </p>
+        <div class='nav'><a href='005024.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005026.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

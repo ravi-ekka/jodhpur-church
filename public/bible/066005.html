@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>याकूब - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>याकूब</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>धनियो! मेरी बात सुनो।  आप लोगों को रोना और विलाप करना चाहिए, क्योंकि आप पर विपत्तियाँ पड़ने वाली हैं।</span> <sup>2</sup><span class='v-txt'>आपकी सम्पत्ति सड़ गयी है।  आपके कपड़ों में कीड़े लग गये हैं।</span> <sup>3</sup><span class='v-txt'>आपकी सोना-चांदी पर मोरचा जम गया है।  वह मोरचा आप को दोष देगा; वह आग की तरह आपका शरीर खा जायेगा।  यह युग का अन्त है और आप लोगों ने धन का ढेर लगा लिया है।</span> <sup>4</sup><span class='v-txt'>मजदूरों ने आपके खेतों की फसल लुनी और आपने उन्हें मजदूरी नहीं दी।  वह मजदूरी पुकार रही है और लुनने वालों की दुहाई विश्वमण्डल के प्रभु के कानों तक पहुँच गयी है।</span> <sup>5</sup><span class='v-txt'>आप लोगों ने पृथ्वी पर सुख और भोग-विलास का जीवन बिताया है और वध के दिन के लिए अपने को हष्ट-पुष्ट बना लिया है।</span> <sup>6</sup><span class='v-txt'>आपने धर्मी को दोषी ठहरा कर मार डाला है और उसने आपका कोई विरोध नहीं किया।</span> <sup>7</sup><span class='v-txt'>भाइयों।  प्रभु के आने तक धैर्य रखें।  किसान को देखें, जो खेत की कीमती फसल की बाट जोहता है।  उसे प्रथम और अन्तिम वर्षा के आने तक धैर्य रखना पड़ता है।</span> <sup>8</sup><span class='v-txt'>आप लोग भी धैर्य रखें।  हिम्मत न हारें, क्योंकि प्रभु का आगमन निकट है।</span> <sup>9</sup><span class='v-txt'>भाइयो!  एक दूसरे की शिकायत न करें, जिससे आप पर दोष न लगाया जाये।  देखिए, न्यायकर्ता द्वार पर खड़े हैं।</span> <sup>10</sup><span class='v-txt'>भाइयो! जो नबी प्रभु के नाम पर बोले हैं, उन्हें सहिष्णुता तथा धैर्य का अपना आदर्श समझें।</span> <sup>11</sup><span class='v-txt'>हम उन्हें धन्य समझते हैं जो दृढ़ बने रहे।  आप लोगों ने योब के धैर्य के विषय में सुना है और आप जानते हैं कि प्रभु ने अन्त में उसके साथ कैसा व्यवहार किया; क्योंकि प्रभु दया और अनुकम्पा से परिपूर्ण है।</span> <sup>12</sup><span class='v-txt'>मेरे भाइयो! सब से बड़ी बात यह है कि आप शपथ नहीं खायें- न तो स्वर्ग की, न पृथ्वी की ओर न किसी अन्य वस्तु की।  आपकी बात इतनी हो - हाँ की हाँ, नहीं की नहीं।  कहीं ऐसा न हो कि आप दण्ड के योग्य हो जायें।</span> <sup>13</sup><span class='v-txt'>यदि आप लोगों में कोई कष्ट में हो, तो वह प्रार्थना करे। कोई प्रसन्न हो, तो भजन गाये।</span> <sup>14</sup><span class='v-txt'>कोई अस्वस्थ हो, तो कलीसिया के अध्यक्षों को बुलाये और वे प्रभु के नाम पर उस पर तेल का विलेपन करने के बाद उसके लिए प्रार्थना करें।</span> <sup>15</sup><span class='v-txt'>वह विश्वासपूर्ण प्रार्थना रोगी को बचायेगी और प्रभु उसे स्वास्थ्य प्रदान करेगा।  यदि उसने पाप किया है, तो उसे क्षमा मिलेगी।</span> <sup>16</sup><span class='v-txt'>इसलिए आप लोग एक दूसरे के सामने अपने-अपने पाप स्वीकार करें और एक दूसरे के लिए प्रार्थना करें, जिससे आप स्वथ हो जायें।  धर्मात्मा की भक्तिमय प्रार्थना बहुत प्रभावशाली होती है।</span> <sup>17</sup><span class='v-txt'>एलियस हमारी ही तरह निरे मनुष्य थे।  उन्होंने आग्रह के साथ इसलिए प्रार्थना की कि पानी नहीं बरसे और साढ़े तीन वर्ष तक पृथ्वी पर पानी नहीं बरसा।</span> <sup>18</sup><span class='v-txt'>उन्होंने दुबारा प्रार्थना की।  स्वर्ग से पानी बरसा और पृथ्वी पर फसल उगने लगी।</span> <sup>19</sup><span class='v-txt'>मेरे भाइयो! यदि आप लोगों में कोई सच्चे मार्ग से भटके और कोई दूसरा उसे वापस ले आये,</span> <sup>20</sup><span class='v-txt'>तो यह समझें कि जो किसी पापी को कुमार्ग से वापस ले आता है, वह उसकी आत्मा को मृत्यु से बचाता है और बहुत-से पाप ढाँक देता है।</span> </p>
+        <div class='nav'><a href='066004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

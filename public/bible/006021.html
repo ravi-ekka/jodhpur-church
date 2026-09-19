@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योशुआ - अध्याय 21</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योशुआ</h1>
+        <h2>अध्याय 21</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तब लेवियों के घरानों के मुखिया और इस्राएली वंशों के नेताओं के पास आ कर</span> <sup>2</sup><span class='v-txt'>कनान देश के शिलों में उन से कहने लगे, &quot;प्रभु ने मूसा द्वारा यह आदेश दिया था कि हमारे रहने के लिए हमें नगर और हमारे पशुओं के लिए चरागाह दिये जाये।&quot;</span> <sup>3</sup><span class='v-txt'>इस पर प्रभु के आदेश के अनुसार इस्राएलियों ने अपने दायभाग में से लेवियों को निम्नलिखित नगर और चरागाह दिये।</span> <sup>4</sup><span class='v-txt'>कहात के कुलों के लिए पहली चिट्ठी निकली।  यूदा, सिमओन और बेनयामीन के वंशों से याजक हारून के वंशज लेवियों को तेरह नगर मिले।</span> <sup>5</sup><span class='v-txt'>कहात के अन्य वंशजों को एफ्रईम, दान और आधे मनस्से के वंशों के कुलों से दस नगर मिले।</span> <sup>6</sup><span class='v-txt'>गेरशोन के वंशजों को इस्साकार, आशेर, नफ्ताली और आधे मनस्से के वंशों के कुलों से बाशान में तेरह नगर मिले।</span> <sup>7</sup><span class='v-txt'>मरारी के वंशजों के विभिन्न कुलों को रूबेन, गाद और ज़बुलों के वंशों से बारह नगर मिले।</span> <sup>8</sup><span class='v-txt'>जैसी प्रभु द्वारा आज्ञा दी थी, इस्राएलियों ने चिट्ठी डाल कर लेवियों को चरागाहों के साथ ये नगर दे दिये।</span> <sup>9</sup><span class='v-txt'>उन्होंने यूदा और सिमओन वंश को ये नगर दे दिये।</span> <sup>10</sup><span class='v-txt'>ये हारून के वंशजों को लेवीवंशी कहाती कुलों को मिले, क्योंकि पहली चिट्ठी उनके नाम निकली थी।</span> <sup>11</sup><span class='v-txt'>उन्होंने उन को आसपास के चरागाहों के साथ यूदा के पहाड़ी प्रदेश का किर्यत-अरबा, अर्थात हेब्रोन दिया (अरबा अनाक का पिता था) ।</span> <sup>12</sup><span class='v-txt'>परन्तु उन्होंने उस नगर के खेत और उसके आसपास के गाँव यफुन्ने के पुत्र कालेब के अधिकार में दिये।</span> <sup>13</sup><span class='v-txt'>याजक हारून के वंशजों को उन्होंने ये नगर और इनके आसपास के चरागाह दिये: हेब्रोन (हत्या करने वालों का शरण नगर) , लिबना,</span> <sup>14</sup><span class='v-txt'>यत्तीर, एष्तमोआ,</span> <sup>15</sup><span class='v-txt'>होलोन, दबीर</span> <sup>16</sup><span class='v-txt'>ऐन, युट्टा और बेत-शेमेष, अर्थात यूदा और सिमओन वंश के भाग से नौ नगर।</span> <sup>17</sup><span class='v-txt'>बेनयामीन वंश से उन्होंने ये चार नगर और इनके आसपास के चरागाह दिये: गिबओन, गेबा,</span> <sup>18</sup><span class='v-txt'>अनातोत और अलमोन।</span> <sup>19</sup><span class='v-txt'>याजक हारून के वंशजों के नगरों की कुल संख्या तेरह थी; उनके साथ उनके आसपास के चरागाह।</span> <sup>20</sup><span class='v-txt'>लेवी वंशी के शेष कहाती कुलों को एफ्रईम वंश से नगर मिले।</span> <sup>21</sup><span class='v-txt'>एफ्रईम के पहाड़ी क्षेत्र में उन्हें ये चार नगर और इनके आसपास के चरागाह मिले: मिखेम (हत्या करने वालों का शरण नगर) , गेसेर,</span> <sup>22</sup><span class='v-txt'>किबसईम और बेत-होरोन।</span> <sup>23</sup><span class='v-txt'>फिर दान वंश से उन्हें ये चार नगर और इनके आसपास के चरागाह मिले: एलतके, गिब्बतोन,</span> <sup>24</sup><span class='v-txt'>अय्यालोन और गत-रिम्मोन।</span> <sup>25</sup><span class='v-txt'>आधे मनस्से के वंश से उन्हें ये दो नगर और इनके आसपास के चरागाह मिले: तानाक और गत-रिम्मोन।</span> <sup>26</sup><span class='v-txt'>शेष कहाती कुलों को ये दस नगर और इनके आसपास के चरागाह मिले।</span> <sup>27</sup><span class='v-txt'>लेवीवंशी गेरशोनियों को ये नगर मिले: आधे मनस्से वंश से दो नगर और उनके आसपास के चरागाह, अर्थात बाशान का गोलान (हत्या करने वालों का शरण नगर) और बएष्तरा।</span> <sup>28</sup><span class='v-txt'>इस्साकार वंश से ये चार नगर और इनके आसपास के चरागाह, किषयोन, दाबरत,</span> <sup>29</sup><span class='v-txt'>यर्मूत और एन-गन्नीम।</span> <sup>30</sup><span class='v-txt'>आशेर वंश से ये चार नगर और इनके आसपास के चरागाह: मिषआल, अबदोन,</span> <sup>31</sup><span class='v-txt'>हेलकत और रहोब।</span> <sup>32</sup><span class='v-txt'>नफ्ताली वंश से ये तीन नगर और इनके आसपास ये चरागाह: गलीलिया का केदेश (हत्या करने वालों का शरण नगर) , हम्मोत-दोर और कर्तान।</span> <sup>33</sup><span class='v-txt'>गेरशोनी कुलों को कुल मिला कर तेरह नगर और उनके आसपास के चरागाह मिले।</span> <sup>34</sup><span class='v-txt'>शेष लेवीवंशी मरारी कुलों को ये नगर मिले।  जबुलोन वंश से ये चार नगर और इनके आसपास चरागाह: योकनआम, कर्ता,</span> <sup>35</sup><span class='v-txt'>दिमना और नहलाल।</span> <sup>36</sup><span class='v-txt'>रूबेन वंश से ये चार नगर और इनके आसपास के चरागाह, बेसेर, यहस</span> <sup>37</sup><span class='v-txt'>केदेमोत ओर मेफाअत।</span> <sup>38</sup><span class='v-txt'>(38-39) गाद वंश से ये चार नगर और इनके आसपास के चरागाह, गिलआद का रामोत (हत्या करने वालों का शरण नगर) , महनयीम, हेशबोन और यजेर।</span> <sup>40</sup><span class='v-txt'>इस प्रकार लेवीवंशी मरारी कुलों को कुल मिला कर बारह नगर मिले।</span> <sup>41</sup><span class='v-txt'>इस्राएलियों की विरासत में लेवियों के नगरों की कुल संख्या, उनके चरागाहों सहित, अड़तालीस थी।</span> <sup>42</sup><span class='v-txt'>सब नगरों के आसपास चरागाह थे।</span> <sup>43</sup><span class='v-txt'>इस प्रकार प्रभु ने इस्राएलियों को वह सारा देश दे दिया, जिसे देने का उसने उनके पूर्वजों को शपथपूर्वक वचन दिया था वे उसे अधिकार में कर उस में बस गये।</span> <sup>44</sup><span class='v-txt'>प्रभु ने उनके समस्त देश में शान्ति स्थापित की, जैसा कि उसने उनके उनके पूर्वजों को शपथपूर्वक वचन दिया था। उनके सब शत्रुओं में एक भी उनके सामने नहीं टिक सका।  प्रभु ने उनके सब शत्रुओं को उनके हाथ दे दिया था।</span> <sup>45</sup><span class='v-txt'>प्रभु ने इस्राएल के घराने को जो जो आशीर्वाद दिये थे, उने में से एक भी व्यर्थ नहीं हुआ, सब के सब चरितार्थ हुए।</span> </p>
+        <div class='nav'><a href='006020.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='006022.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

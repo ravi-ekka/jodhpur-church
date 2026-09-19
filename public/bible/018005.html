@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>यूदीत - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>यूदीत</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>अस्सूरी सेना के प्रधान सेनापति होलोफे़रनिस को यह सूचना मिली कि इस्राएली लोग युद्ध की तैयारियाँ कर रहे हैं, पहाड़ी घाटियों में जाने वाले रास्ते बन्द कर रहे हैं, प्रत्येक पर्वत-शिखर की क़िलेबन्दी कर रहे है और मैदानों में घात लगाये बैठे हैं।</span> <sup>2</sup><span class='v-txt'>यह सुन कर वह आगबबूला हो उठा।  उसने मोआब के सब सामन्तों, अम्मोन के सेनाध्यक्षों और तटीय प्रान्त के सब क्षत्रपों को एकत्रित कर</span> <sup>3</sup><span class='v-txt'>उन से कहा, &quot;कनानियो! मुझे बताओ कि वह कौन-सी जाति है, जो पहाड़ों पर रहती है और वे कौन-से नगर हैं, जिन में वह निवास करती है।  उसकी सेना कितनी बड़ी है और उसका सामर्थ्य और शक्ति किस बात में है? उसकी सेना का नेता और राजा कौन है?</span> <sup>4</sup><span class='v-txt'>और पश्चिमी देशों के निवासियों में क्यों अकेले वही मुझ से मिलने नहीं आयी?&quot;</span> <sup>5</sup><span class='v-txt'>इस पर सारे अम्मोनियों के नेता अहीओर ने उस से कहा, &quot;यदि मेरे स्वामी मुझ, अपने दास से जानना चाहें, तो में इन पहाड़ों में आपके सामने रहने वाली इस जाति के विषय में आप को सच-सच बताऊँगा।  आपके दास के मुँह से कुछ भी झूठ नहीं निकलेगा।</span> <sup>6</sup><span class='v-txt'>यह जाति खल्दैयियों की एक शाखा है।</span> <sup>7</sup><span class='v-txt'>यह पहले मेसोपोतामिया में बस गयी थी।</span> <sup>8</sup><span class='v-txt'>यह अपने पुरखों का मार्ग छोड़ कर स्वर्ग के उस ईश्वर की आराधना करने लगी थी, जिसका ज्ञान इसे प्राप्त हुआ था।  इसलिए वहाँ के लोगों ने इसे अपने देवताओं के सामने से भगा दिया था।  इस पर यह मेसोपोतामिया जा कर बहुत दिनों तक वहाँ रही।</span> <sup>9</sup><span class='v-txt'>इसके ईश्वर ने इसे आदेश दिया कि यह अपना निवासस्थान छोड़ कर कनान देश जाये।  यह वहाँ बस गयी और इसने बहुत-सा सोना-चाँदी और पशुधन प्राप्त किया।</span> <sup>10</sup><span class='v-txt'>जब समस्त कनान में अकाल पड़ा, तो यह जाति मिस्र चली गयी।  वहाँ रहते समय इसे भरण-पोषण मिला और यह इस प्रकार फूलती-फलती रही कि इसकी संख्या की गिनती असम्भव हो गयी।</span> <sup>11</sup><span class='v-txt'>मिस्र के लोगों ने इस पर अत्याचार किया, इसे गारा और ईंट बनाने का काम दे कर इसे नीचा दिखाया और दास बना लिया।</span> <sup>12</sup><span class='v-txt'>इसने अपने ईश्वर की दुहाई दी और ईश्वर ने समस्त मिस्र पर ऐसी विपत्तियाँ ढाहीं, जिन से मिस्री अपनी रक्षा नहीं कर सके और उन्होंने इस जाति को अपने देश से भगा दिया।</span> <sup>13</sup><span class='v-txt'>ईश्वर इसके लिए लाल समुद्र सुखा कर</span> <sup>14</sup><span class='v-txt'>इसे सीनई और कादेश-बरनेअ के मार्ग पर ले गया।  इस जाति ने उजाड़खण्ड में रहने वाले सब लोगों को भगा दिया</span> <sup>15</sup><span class='v-txt'>और यह अमोरियों के देश में बस गयी; फिर इसने अपने बाहुबल से हेशबोन के सब निवासियों का विनाश किया। इसके बाद इसने यर्दन नदी पार कर समस्त पहाड़ी प्रान्त अपने अधिकार में कर लिया।</span> <sup>16</sup><span class='v-txt'>यह कनानी, परिज़्ज़ी, यबूसी, सिखेमी और सब गिरगाशी जातियों को अपने सामने से भगा कर बहुत समय तक वहीं बसी रही।</span> <sup>17</sup><span class='v-txt'>जब तक यह अपने ईश्वर के सामने पाप नहीं करती थी, तब तक यह सकुशल रही; क्योंकि इसका ईश्वर, जो अधर्म से घृणा करता है, इसके साथ था।</span> <sup>18</sup><span class='v-txt'>परन्तु जब यह निर्दिष्ट मार्ग से भटक गयी, तो यह बहुत-से युद्धों द्वारा निर्बल होती गयी, और अन्त में बन्दी बना कर अपने देश से निर्वासित की गयी।  इसके ईश्वर का मन्दिर ध्वस्त किया गया और इसके शत्रुओं ने इसके नगर अपने अधिकार में कर लिये।</span> <sup>19</sup><span class='v-txt'>अब यह फिर अपने ईश्वर की ओर अभिमुख हुई और जहाँ यह निर्वासित की गयी थी, वहाँ से लौटी।  इसने फिर येरूसालेम अपने अधिकार में कर लिया, जहाँ इसका मन्दिर है और यह पहाड़ी प्रान्त में बस गयी, जो उजाड़ था।</span> <sup>20</sup><span class='v-txt'>&quot;स्वामी और प्रभु! अब यदि यह जाति दोषी है और अपने ईश्वर के विरुद्ध पाप करती और हमें इसके अपराध का पता चल जाता है, तो हम ऊपर चढ़ कर इसे पराजित कर दें।</span> <sup>21</sup><span class='v-txt'>किन्तु यदि इस जाति में कोई अधर्म नहीं, तो मेरे स्वामी इस से दूर रहें।  कहीं ऐसा न हो कि इसका प्रभु-ईश्वर इसकी रक्षा करे और समस्त पृथ्वी की दृष्टि में हमारा अपमान हो।&quot;</span> <sup>22</sup><span class='v-txt'>अहीओर का कहना समाप्त होने पर तम्बू के आसपास खड़े सब लोगों ने इस पर आपत्ति उठायी।  होलोफ़ेरनिस के उच्च पदाधिकारी, समुद्रतट के निवासी और मोआबी उसका वध करना चाहते थे।</span> <sup>23</sup><span class='v-txt'>उन्होंने कहा, &quot;हम इन इस्राएलियो से नहीं डरेंगे।  इस जाति में न तो घमासान युद्ध करने का साहस है और न बल।</span> <sup>24</sup><span class='v-txt'>इसीलिए, स्वामी होलोफ़ेरनिस! हम आगे बढ़ें और आपकी सेना इसका भक्षण करेगी।&quot;</span> </p>
+        <div class='nav'><a href='018004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='018006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

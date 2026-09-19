@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>उपदेशक - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>उपदेशक</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैंने यह भी देखा कि पृथ्वी पर बहुत अत्याचार हो रहा है: मैंने दलितों के आँसू देखे; उन को कोई सान्त्वना नहीं देता।  उन पर अत्याचार करने वाले शक्तिशाली है और उन को कोई सान्त्वना नहीं देता।</span> <sup>2</sup><span class='v-txt'>मैं यह भी समझा कि मृतक, जो पहले मर चुके हैं, उन लोगों से सौभाग्यशाली हैं, जो अब तक जीवित हैं।</span> <sup>3</sup><span class='v-txt'>और उन दोनों से और सौभाग्यशाली वह है, जिसका अभी तक जन्म नहीं हुआ; जिसने वह बुराई नहीं देखी, जो सूर्य के नीचे की जाती है; जिसने वे कुकर्म नहीं देखे, जो पृथ्वी पर किये जाते हैं।</span> <sup>4</sup><span class='v-txt'>मैंने यह भी देखा है कि मनुष्य के परिश्रम की सारी सफलता अपने पड़ोसी से ईर्ष्या का परिणाम है।  यह भी व्यर्थ है और हवा पकड़ने के बराबर है।</span> <sup>5</sup><span class='v-txt'>मूर्ख हाथ-पर-हाथ रख कर बैठा हुआ अपना ही विनाश करता है।</span> <sup>6</sup><span class='v-txt'>मुट्ठी भर विश्राम अंजली भर परिश्रम से और हवा पकड़ने के प्रयत्न से अच्छा है।</span> <sup>7</sup><span class='v-txt'>मैंने पृथ्वी की एक और व्यर्थ बात देखी।</span> <sup>8</sup><span class='v-txt'>कोई व्यक्ति एकदम अकेला है।  उसके न तो कोई पुत्र है और न कोई भाई।  वह परिश्रम करता रहता है, उसकी आँखें उसकी सम्पत्ति से तृप्त नहीं है; वह मन-ही-मन पूछता है, &quot;मैं किसके लिए परिश्रम करता और क्यों अपने को सुख से वंचित करता हूँ?&quot; यह भी व्यर्थ और दुःखद है।</span> <sup>9</sup><span class='v-txt'>एक अकेले मनुष्य से दो अच्छे हैं, उन्हें अपने परिश्रम का अच्छा फल मिलता है।</span> <sup>10</sup><span class='v-txt'>यदि एक गिर जाता है, तो दूसरा उसे उठाता है; किन्तु अकेले मनुष्य पर शोक!  गिरने पर उसे कोई नहीं उठाता।</span> <sup>11</sup><span class='v-txt'>यदि दो साथ लेटते है, तो गर्म रहेंगे।  अकेला लेटने वाला कैसे गर्म रहेगा?</span> <sup>12</sup><span class='v-txt'>यदि अकेले व्यक्ति से कोई प्रबल हो जाता, तो दो व्यक्ति उसका सामना कर सकेंगे।  तीन लड़ों की बटी रस्सी आसानी से नहीं टूटती।</span> <sup>13</sup><span class='v-txt'>सलाह न मानने वाले बूढ़े मूर्ख राजा से दरिद्र, किन्तु बुद्धिमान् नवयुवक अच्छा है।</span> <sup>14</sup><span class='v-txt'>वह नवयुवक चाहे बन्दीगृह से निकल कर राजा बन गया हो या अपने राज्य में दरिद्रता में जन्मा हो,</span> <sup>15</sup><span class='v-txt'>किन्तु मैंने देखा कि पृथ्वी के सब निवासी राजा के उत्तराधिकारी नवयुवक का पक्ष लेते थे।</span> <sup>16</sup><span class='v-txt'>उसके अनुयायियों की संख्या अपार थी, किन्तु आने वाली पीढ़ी उस से भी असन्तुष्ट थी।  यह भी व्यर्थ और हवा पकड़ने का प्रयत्न है।</span> <sup>17</sup><span class='v-txt'>यदि तुम ईश्वर के मन्दिर जाते हो, तो सावधान रहो और पास आ कर ध्यान से सुनो।  यह मूर्खो की तरह बलिदान चढ़ाने से अच्छा है।  वे यह भी नहीं जानते कि वे कब बुराई करते हैं।</span> </p>
+        <div class='nav'><a href='025003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='025005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 12</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 12</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>अपने परोपकार का पात्र अच्छी तरह चुनो और तुम को अपने परोपकार का धन्यवाद दिया जायेगा।</span> <sup>2</sup><span class='v-txt'>यदि तुम भक्त मनुष्य का उपकार करोगे, तो तुम को उस से या सर्वोच्च प्रभु से पुरस्कार मिलेगा।</span> <sup>3</sup><span class='v-txt'>जो बुराई करता रहता और भिक्षादान करना नहीं चाहता, उसका कल्याण नहीं होगा; क्येांकि सर्वोच्च ईश्वर को उस से घृणा होती है और वह पश्चात्तापियों पर दया करता है।</span> <sup>4</sup><span class='v-txt'>दयालु मनुष्य को दान दो और पापी की सहायता कभी नहीं करो।</span> <sup>5</sup><span class='v-txt'>भले मनुष्य को दे दो और पापी को अपने यहाँ मत ठहराओे।</span> <sup>6</sup><span class='v-txt'>दीन का उपकार करो और विधर्मी को कुछ नहीं दो।  उसे हथियार मत दो; कहीं ऐसा न हो कि उनके बल पर वह तुम पर हावी हो जाये;</span> <sup>7</sup><span class='v-txt'>क्योंकि तुम उसका जो उपकार करोगे, उस से दुगुनी बुराई तुम को भोगनी पड़ेगी।  सर्वोच्च प्रभु को पापियों से घृणा है और वह दुष्टों को उचित दण्ड देता है।</span> <sup>8</sup><span class='v-txt'>सुख के दिनों में मित्र की पहचान नहीं होती और दुःख के दिनों में शत्रु छिपा नहीं रहता।</span> <sup>9</sup><span class='v-txt'>सुख के दिनों में मनुष्य के शत्रु भी उसके मित्र बनते हैं और दुःख के दिनों में उसके मित्र अलग हो जाते हैं।</span> <sup>10</sup><span class='v-txt'>अपने शत्रु पर कभी विश्वास मत करो; उसकी दुष्टता धातु पर जंग की तरह प्रकट होती है।</span> <sup>11</sup><span class='v-txt'>यदि वह नम्र बन कर तुम्हारे सामने झुक जाये, तो सतर्क हो कर उस से सावधान रहो और उस मनुष्य के समान बनो, जिसने दर्पण साफ किया, किन्तु जो जानता है, कि उस पर फिर जंग जम जायेगा।</span> <sup>12</sup><span class='v-txt'>उसे अपने पास खड़ा न होने दो।  कहीं ऐसा न हो कि वह तुम को गिरा दे और तुम्हारा स्थान ले ले।  उसे अपने दाहिने न बैठने दो।  कहीं ऐसा न हो कि वह तुम्हारे आसन पर बैठ जाये और तुम अन्त में समझो कि मैंने ठीक ही कहा और तुम को मेरी चेतावनी याद कर दुःख हो।</span> <sup>13</sup><span class='v-txt'>यदि साँप सँपेरे को काटे, तो उस से कौन सहानुभूति रखेगा, या उन लोगो से, जो हिंसक जानवरों के निकट जाते हैं?  यही दशा उसी की है, जो पापी की संगति करता और उसके पापों में फँस जाता है।</span> <sup>14</sup><span class='v-txt'>पापी थोड़े समय तक तुम्हारा साथ देगा, किन्तु यदि तुम्हारी स्थिति डाँवाडोल होगी, तो वह नहीं टिकेगा।</span> <sup>15</sup><span class='v-txt'>शत्रु के होंठो से मधु टपकता है, किन्तु उसके हृदय में तुम को गड्ढे में गिराने का भाव है।</span> <sup>16</sup><span class='v-txt'>भले ही उसकी आँखों से आँसू निकलते हों, अवसर मिलने पर वह रक्त बहाने में भी नहीं हिचकेगा।</span> <sup>17</sup><span class='v-txt'>यदि तुम पर विपत्ति आ पड़ी, तो उसे अपने पास पाओगे;</span> <sup>18</sup><span class='v-txt'>वह सहायता देने के बहाने तुम को लंगी मारेगा।</span> <sup>19</sup><span class='v-txt'>वह सिर हिलायेगा, ताली बजायेगा और सीटी बजाते हुए अपना असली रूप प्रकट करेगा।</span> </p>
+        <div class='nav'><a href='028011.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028013.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

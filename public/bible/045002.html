@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>ज़कारिया - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>ज़कारिया</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैंने अपनी आँखें उठा कर एक दिव्य दृश्य देखा।  मैंने चार सींग देखे।</span> <sup>2</sup><span class='v-txt'>मेरे साथ बातें कर रहे दूत से मैंने पूछा,  &quot;ये क्या हैं?&quot;  उसने उत्तर दिया,  &quot;इन्हीं सींगों ने युदा, इस्राएल और येरूसालेम को तितर-बितर कर दिया है&quot;।</span> <sup>3</sup><span class='v-txt'>उसके बाद प्रभु-ईश्वर ने मुझे चार लोहारों को दिखाया। यह देखकर मैंने पूछा, &quot;ये किस काम के लिए आये हैं?&quot;  उसनक उत्तर दिया, &quot;इन सींगों ने यहाँ तक यूदा को तितर-बितर किया था कि किसी को विराध करने का साहस नहीं रहा।  लोहार उनको डराने, धमकाने आये हैं।</span> <sup>4</sup><span class='v-txt'>जिन राष्ट्रों ने यूदा को तितर-बितर करने के लिए उसके विरुद्ध सींग चलाये हैं, लोहार उनके सींगों को तोड डालेंगे।</span> <sup>5</sup><span class='v-txt'>मैंने आँखें उठा कर एक दिव्य दृश्य देखा।  मैंने हाथ में नापने की डोरी लिये हुए एक मनुष्य को देखा</span> <sup>6</sup><span class='v-txt'>और मैंने पूछा, &quot;आप कहाँ जा रहे हैं?&quot;  उसने मुझे उत्तर दिया, &quot;मैं येरूसालेम को नापने और यह देखने जा रहा हूँ कि उसकी लम्बाई और चैडाई कितनी होगी&quot;।</span> <sup>7</sup><span class='v-txt'>जो स्वर्गदूत मुझ से बोल रहा था, वह आगे बढ़ा और</span> <sup>8</sup><span class='v-txt'>एक दूसरे स्वर्गदूत के उसके पास आ कर कहा, &quot;उस नवयुवक के पास दौड़ कर कहिएः येरूसालेम में मनुष्यों और पशुओं की इतनी भारी संख्या होगी कि उसके चारों ओर चारदीवारी नहीं बनायी जायेगी।</span> <sup>9</sup><span class='v-txt'>प्रभु यह कहता हैः मैं स्वयं उसके चारों ओर आग की दीवार बन कर रहूँगा और अपनी महिमा के साथ उसके बीच में निवास करूँगा’।&quot;</span> <sup>10</sup><span class='v-txt'>उठो चलो, उत्तर के देश से निकल भागो।  यह प्रभु-ईश्वर की आज्ञा है।  प्रभु-ईश्वर यह कहता हैः मैंने ही दुनिया की चारों दिशाओं में तुम को तितर-बितर कर दिया था।</span> <sup>11</sup><span class='v-txt'>बाबुल में निर्वासित सियोन के नागरिको! उठो, भागो!</span> <sup>12</sup><span class='v-txt'>विश्वमण्डल के प्रभु का यह कहना हैः (उसी महिमामय प्रभु ने मुझे यहा भेजा है) तुम मेरी आँख की पुतली, - सावधान, जो तुम पर हाथ उठाये!</span> <sup>13</sup><span class='v-txt'>तो, देखो, मैं उन पर हाथ उठाने वाला हूँ और उनके दास भी उन को लूट लेंगे।  (इस से तुम जान जाओगे कि प्रभु-ईश्वर ने ही मुझे भेजा है) ।</span> <sup>14</sup><span class='v-txt'>प्रभु कहता है, “सियोन की पुत्री! आनन्द का गीत गा, क्योंकि मैं तेरे यहाँ निवास करने आ रहा हूँ।</span> <sup>15</sup><span class='v-txt'>उस दिन बहुत-से राष्ट्र प्रभु के पास आयेंगे। वे उसकी प्रजा बनेंगे, किन्तु वह तेरे यहाँ निवास करेगा“ और तू जान जायेगी कि विश्वमण्डल के प्रभु ने मुझे तेरे पास भेजा है।</span> <sup>16</sup><span class='v-txt'>तब प्रभु पुण्य भूमि में यूदा को फिर अपनी प्रजा बनायेगा और येरूसालेम को फिर अपनायेगा।</span> <sup>17</sup><span class='v-txt'>समस्त मानवजाति प्रभु के सामने मौन रहे। वह जाग कर अपने पवित्र निवास से आ रहा है।</span> </p>
+        <div class='nav'><a href='045001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='045003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

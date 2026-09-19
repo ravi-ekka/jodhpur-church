@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>निर्गमन - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>निर्गमन</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>याकूब के साथ के इस्राएल के जो पुत्र अपने परिवारोंसहित मिस्र आये थे, उनके नाम ये हैं :</span> <sup>2</sup><span class='v-txt'>रूबेन, सिमओन, लेवी, यूदा,</span> <sup>3</sup><span class='v-txt'>इस्साकार, जबुलोन, बेनयामीन,</span> <sup>4</sup><span class='v-txt'>दान, नफ्ताली, गाद और अशेर।</span> <sup>5</sup><span class='v-txt'>याकूब के कुल वंशज सत्तर थे। यूसुफ़ मिस्र में पहले से ही था।</span> <sup>6</sup><span class='v-txt'>अब यूसुफ़, उसके सब भाई और उस पीढ़ी के सब लोग मर चुके थे;</span> <sup>7</sup><span class='v-txt'>परन्तु इस्राएल के वंशज फूलतेफलते रहे और उनकी संख्या में भारी वृद्वि हुई। वे बहुत शक्तिसंपन्न हो गये और उनकी संख्या इतनी बढ़ गयी थी कि देश उन से भर गया।</span> <sup>8</sup><span class='v-txt'>मिस्र देश में एक नये राजा का उदय हुआ, जो यूसुफ़ के विषय में कुछ नहीं जानता था।</span> <sup>9</sup><span class='v-txt'>उसने अपनी प्रजा से कहा, सुनो ये इस्राएली संख्या और शक्ति में हम से अधिक हो गये हैं।</span> <sup>10</sup><span class='v-txt'>हमें ऐसा उपाय सोच निकालना चाहिए, जिससे उनकी संख्या न बढ़ने पाये। कहीं ऐसा न हो कि युद्व छिड़ने पर ये हमारे शत्रुओं का साथ दें और हमारे विरुद्ध लड़ने के बाद देश से निकल भागें।</span> <sup>11</sup><span class='v-txt'>उन्होंने इस्राएलियों पर ऐसे अधिकारियों को नियुक्त किया, जो उन्हें बेगार में लगा कर उनका दमन करें। इस्राएलियों ने इस प्रकार फिराउन के लिए पितोम और रामसेस नामक गोदाम वाले नगर बनाये।</span> <sup>12</sup><span class='v-txt'>किन्तु उन पर जितना अधिक अत्याचार किया जाता था, उतना ही अधिक वे संख्या में बढ़ते और फैलते जाते थे। इस करण मिस्री उन से डरने लगे।</span> <sup>13</sup><span class='v-txt'>उन्होंने इस्राएलियों को बेगार में लगाया।</span> <sup>14</sup><span class='v-txt'>और उन से कठोर परिश्रम करा कर उनका जीवन कड़वा बना दिया। उन्होंने गारा और ईट बनाने और खेत में हर प्रकार का काम करने के लिए उन्हें बाध्य किया।</span> <sup>15</sup><span class='v-txt'>मिस्र के राजा ने इब्रानी दाइयों को, जिन में एक का नाम शिफ्रा और दूसरी का नाम पूआ था, आज्ञा दी कि</span> <sup>16</sup><span class='v-txt'>जब तुम इब्रानी स्त्रियों को प्रसव कराओ और देखों कि लड़का पैदा हुआ है, तो उसे मार डाला करो और यदि लड़की पैदा हुई हो, तो उसे जीवित छोड़ दो।</span> <sup>17</sup><span class='v-txt'>लेकिन वे दाइयाँ ईश्वर पर श्रद्धा रखती थी। उन्होंने मिस्र के राजा का आदेश नहीं माना। उन्होंने लड़कों को भी जीवित छोड़ दिया।</span> <sup>18</sup><span class='v-txt'>इसलिए मिस्र के राजा ने दाइयों को बुलवा कर उन से पूछा, तुम ऐसा क्यों करती हो? तुम लड़को को भी जीवित क्यों छोड़ देती हो?</span> <sup>19</sup><span class='v-txt'>दाइयों ने फिराउन से कहा, इब्रानी स्त्रियाँ मिस्री स्त्रियों के समान नहीं हैं। वे बड़ी हष्टपुष्ट हैं और दाई के अपने पास पहुँचने के पहले ही प्रसव करती हैं।</span> <sup>20</sup><span class='v-txt'>इसलिए ईश्वर ने दाइयों का भला किया। वे लोग बढ़ते और शक्तिसम्पन्ना होते गये।</span> <sup>21</sup><span class='v-txt'>दाइयाँ ईश्वर पर श्रद्धा रखती थीं, इसलिए उसने उन्हें भी सन्तति प्रदान की।</span> <sup>22</sup><span class='v-txt'>इसके बाद फिराउन ने अपनी समस्त प्रजा को यह आदेश दिया कि वह प्रत्येक नवजात इब्रानी लड़के को नील नदी में फेंक दे, किन्तु सब लड़कियों को जीवित रहने दे।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='002002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

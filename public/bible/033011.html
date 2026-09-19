@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 11</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 11</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>आत्मा मुझे उठा का ऊपर ले गया और मुझे प्रभु के मन्दिर के पूर्वी द्वार पर ले आया, जिसका मुख पूर्व की ओर है।  मैंने प्रवेशद्वार पर पच्चीस आदमी देखे।  मुझे उनके बीच जनता के पदाधिकारी अज़्जूर का पुत्र याजन्या और बनाया का पुत्र पलट्या दिखाई दिये।</span> <sup>2</sup><span class='v-txt'>उसने मुझ से यह कहा, “मानवपुत्र! ये वही लोग हैं, जो पाप की योजना बनाते और नगर में कुमन्त्रणा देते हैं,</span> <sup>3</sup><span class='v-txt'>जो यह बोलते हैं, ’अभी हमें घर बनाना नहीं है।  यह नगर कड़ाह है और हम लोग मांस हैं।’</span> <sup>4</sup><span class='v-txt'>इसलिए मानवपुत्र!  भवियवाणी करो, उनके विरुद्ध भवियवाणी करो।“</span> <sup>5</sup><span class='v-txt'>प्रभु का आत्मा मुझ पर उतरा और उसने मुझ से कहा, “यह कहोः प्रभु की यह वाणी है- इस्राएल के घराने! तुम ऐसा ही कहते हो।  मैं वे बातें जानता हूँ, जो तुम्हारे मन में आती हैं।</span> <sup>6</sup><span class='v-txt'>तुमने इस नगर में बहुतों का वध किया है और इसकी सड़कों को मृतकों से पाट दिया है।</span> <sup>7</sup><span class='v-txt'>इसलिए प्रभु-ईश्वर यह कहता हैः तुम्हारे द्वारा वध किये हुए लोग, जिन्हें तुमने यहाँ डाल दिया है, मांस हैं और यह नगर कड़ाह है; किन्तु तुम इस में से बाहर निकाल लिये जाओगे।</span> <sup>8</sup><span class='v-txt'>तुम तलवार से डरते हो, लेकिन मैं तुम पर तलवार भेजूँगा।  यह प्रभु-ईश्वर की वाणी है।</span> <sup>9</sup><span class='v-txt'>मैं तुम्हें इस में से बाहर ले आऊँगा, तुम्हें विदेशियों के हाथ कर दूँगा और तुम्हें दण्ड दूँगा।</span> <sup>10</sup><span class='v-txt'>तुम तलवार के घाट उतारे जाओगे।  मैं इस्राएल की सीमा पर तुम्हारा न्याय करूँगा और तुम यह समझ जाओगे कि मैं ही प्रभु हूँ।</span> <sup>11</sup><span class='v-txt'>यह नगर तुम्हारे लिए कड़ाह नहीं होगा और तुम इस में माँस नहीं बनोगे।  मैं इस्राएल की सीमा पर तुम्हारा न्याय करूँगा।</span> <sup>12</sup><span class='v-txt'>और तुम यह समझ जाओगे कि मैं ही प्रभु हूँ।  तुमने न तो मेरे आदेशों के अनुसरण किया है और न मेरे रीति-रिवाजों का पालन किया है, बल्कि तुमने अपने पड़ोस के राष्ट्रों के विधि-निषेधों के अनुसार कार्य किया है।“</span> <sup>13</sup><span class='v-txt'>मैं भवियवाणी कर ही रहा था कि बनाया के पुत्र पलट्या की मृत्यु हो गयी।  इस पर मैं अपने मुँह के बल गिर गया और ऊँचे स्वर से पुकारते हुए बोला, “प्रभु-ईश्वर! क्या तू इस्राएल के अवशेष को भी एकदम मिटा देगा?“</span> <sup>14</sup><span class='v-txt'>मुझे प्रभु-ईश्वर की यह वाणी सुनाई पड़ी,</span> <sup>15</sup><span class='v-txt'>“मानवपुत्र! तुम्हारे भाई-बन्धु इस्राएल का समस्त घराना, सब-के-सब वही हैं, जिनके विषय में येरूसालेम के निवासी यह कहते हैं, ’वे प्रभु से दूर भटक गये हैं और यह देश विरासत में हमें दिया गया है’।</span> <sup>16</sup><span class='v-txt'>इसलिए यह कहो, ’प्रभु-ईश्वर यह कहता हैः मैंने उन्हें राष्ट्रों में भगा दिया है और देशों में बिखेर दिया है।  वे जिन देशों में गये हैं, उन में मैं ही कुछ समय तक उनका आश्रय था’।</span> <sup>17</sup><span class='v-txt'>इसलिए यह कहो, ’प्रभु-ईश्वर कहता है- मैं तुम्हें राष्ट्रों में से एकत्र करूँगा, उन देशों से इकट्ठा करूँगा, जहाँ तुम बिखेर दिये गये हो और तुम्हें इस्राएल की भूमि प्रदान करूँगा’।</span> <sup>18</sup><span class='v-txt'>वे वहाँ लौटेंगे और वहाँ से सब वीभत्स मूर्तियों और वीभत्स कर्मों का बहिष्कर कर देंगे।</span> <sup>19</sup><span class='v-txt'>मैं उन्हें एक नया हृदय प्रदान करूँगा और उन में एक नयी आत्मा रख दूँगा।  मैं उनके शरीर से पत्थर का हृदय निकाल कर उन्हें रक्त मांस का हृदय प्रदान करूँगा,</span> <sup>20</sup><span class='v-txt'>जिससे वे मेरी संहिता पर चलें और ईमानदारी से मेरी आज्ञाओं का पालन करें।  इस से वे मेरी प्रजा होंगे और मैं उनका ईश्वर होऊँगा।</span> <sup>21</sup><span class='v-txt'>किन्तु जिन लोगों का हृदय अपनी घृणित मूर्तियों और अपने वीभत्स कर्मों में संलग्न है, मैं उनकी करनी का दोष उनके सिर पर डालूँगा।  यह प्रभु-ईश्वर की वाणी है।</span> <sup>22</sup><span class='v-txt'>इसके बाद केरूबों ने, अपने साथ के पहियों के साथ, अपने पंख ऊपर फैला दिये।  इस्राएल के ईश्वर की महिमा उनके ऊपर विराजमान थी।</span> <sup>23</sup><span class='v-txt'>प्रभु की महिमा नगर के बीच से ऊपर उठी और पर्वत पर टिक गयी, जो नगर के पूर्व में है।</span> <sup>24</sup><span class='v-txt'>आत्मा मुझे उठा कर ऊपर ले गया और ईश्वर के आत्मा की प्रेरणा से दिव्य दृश्य में मुझे निर्वासितों के पास खल्दैया ले गया।  तब वह दिव्य दृश्य, जो मैंने देखा था, लुप्त हो गया</span> <sup>25</sup><span class='v-txt'>और मैंने निर्वासितों से वे सभी बातें कही, जो प्रभु ने मुझे दिखायी थीं।</span> </p>
+        <div class='nav'><a href='033010.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033012.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

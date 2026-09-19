@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>समूएल का पहला ग्रन्थ - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>समूएल का पहला ग्रन्थ</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>एफ्ऱईम के पहाड़ी क्षेत्र के रामतईम में एल्काना नामक सूफ़वंशी मनुष्य रहता था।  एल्काना यरोहम का, यरोहम एलीहू का, एलीहू तोहू का ओर तोहू एफ्ऱईमवंशी सूफ़ का पुत्र था।</span> <sup>2</sup><span class='v-txt'>एल्काना के अन्ना और पेनिन्ना नामक दो पत्नियाँ थी। पेनिन्ना के सन्तान थी, किन्तु अन्ना के कोई सन्तान नहीं थी।</span> <sup>3</sup><span class='v-txt'>एल्काना प्रति वर्ष विश्वमण्डल के प्रभु की आराधना करने और उसे बलि चढ़ाने अपने नगर से शिलो जाया करता था।  वहाँ एली के दोनों पुत्रों होप़नी और पीनहास प्रभु के याजक थे।</span> <sup>4</sup><span class='v-txt'>एल्काना जिस दिन बलि चढ़ाता था, अपनी पत्नी पेनिन्ना और उसके सब पुत्र-पुत्रियों को मांस का एक-एक अंश दिया करता था;</span> <sup>5</sup><span class='v-txt'>किन्तु वह अन्ना को दो हिस्से देता था, क्योंकि वह अन्ना को प्यार करता था, यद्यपि प्रभु ने उसे बाँझ बनाया था,</span> <sup>6</sup><span class='v-txt'>अन्ना की सौत उसे चिढ़ाने के लिए उसकी निन्दा किया करती थी; क्योंकि प्रभु ने उसे बाँझ बनाया था।</span> <sup>7</sup><span class='v-txt'>प्रति वर्ष यही होता था।  जब अन्ना प्रभु के मन्दिर जाती, तो पेनिन्ना उसे उसी तरह चिढ़या करती थी और अन्ना रोती और भोजन करने से इनकार करती थी।</span> <sup>8</sup><span class='v-txt'>उसके पति एल्काना ने उस से कहा, &quot;अन्ना!  तुम क्यों रोती हो?  क्यों नहीं खाती हो?  तुम क्यों उदास हो? क्या मैं तुम्हारे लिए दस पुत्रों से बढ़ कर नहीं हूँ?</span> <sup>9</sup><span class='v-txt'>किसी दिन जब अन्ना का परिवार शिलो में भोजन कर चुका था, तो वह उठ कर प्रभु के मन्दिर गयी।  उस समय याजक एली मन्दिर के द्वार के पास अपने आसन पर बैठा हुआ था। ।</span> <sup>10</sup><span class='v-txt'>अन्ना दुःखी हो कर प्रभु से प्रार्थना करती थी और आँसू बहाती हुई</span> <sup>11</sup><span class='v-txt'>उसने यह प्रतिज्ञा की, &quot;विश्वमण्डल के प्रभु!  यदि तू अपनी दासी की दयनीय दशा देख कर उसकी सुधि लेगा, यदि तू अपनी दासी को नहीं भुलायेगा और उसे पुत्र प्रदान करेगा, तो मैं उसे जीवन भर के लिए प्रभु को अर्पित करूँगी और कभी उसके सिर पर उस्तरा नहीं चलाया जायेगा।</span> <sup>12</sup><span class='v-txt'>जब वह बहुत देर तक प्रभु से प्रार्थना करती रही, तो एली उसका मुख देखने लगा।</span> <sup>13</sup><span class='v-txt'>और धीमे स्वर से बोलती थी।  उसके होंठ तो हिल रहे थे, किन्तु उसकी आवाज नहीं सुनाई दे रही थी।  इसलिए एली को लगा कि वह नषे में है।</span> <sup>14</sup><span class='v-txt'>उसने उस से कहा, &quot;कब तक नषे में रहोगी!  जाओ और नषा उतरने दो।&quot;</span> <sup>15</sup><span class='v-txt'>अन्ना ने यह उत्तर दिया, &quot;महोदय!  ऐसी बात नहीं है।  मैं बहुत अधिक दुःखी हूँ।  मैंने न तो अंगूरी पी और न कोई दूसरी नशीली चीज़।  मैं प्रभु के सामने अपना हृदय खोल रही थी।</span> <sup>16</sup><span class='v-txt'>अपनी दासी को बदचलन न समझें- मैं दुःख और शोक से व्याकुल हो कर इतनी देर तक प्रार्थना करती रही।&quot;</span> <sup>17</sup><span class='v-txt'>एली ने उस से कहा, &quot;शान्ति ग्रहण कर जाओ।  इस्राएल का प्रभु तुम्हारी प्रार्थना स्वीकार करे!&quot;</span> <sup>18</sup><span class='v-txt'>इस पर अन्ना यह उत्तर दे कर चली गयी, &quot;आपकी कृपा- दृष्टि आपकी दासी पर बनी रहे।&quot;  उसने भोजन किया और उसकी उदासी दूर हो गयी।</span> <sup>19</sup><span class='v-txt'>दूसरे दिन वे सबेरे उठे और प्रभु की आराधना करने के बाद रामा में अपने घर लौट गये।  एल्काना का अपनी पत्नी अन्ना से संसर्ग हुआ और प्रभु ने उसे याद किया।</span> <sup>20</sup><span class='v-txt'>अन्ना गर्भवती हो गयी।  उसने पुत्र प्रसव किया और यह कह कर उसका नाम समूएल रखा, &quot;क्योंकि मैंने उस को प्रभु से माँगा है।&quot;</span> <sup>21</sup><span class='v-txt'>उसका पति एल्काना अपने सारे परिवार के साथ प्रभु को वार्षिक बलि चढ़ाने और अपनी मन्नत पूर्ण करने के लिए फिर गया।</span> <sup>22</sup><span class='v-txt'>इस बार अन्ना साथ नहीं गयी।  उसने अपने पति से कहा, &quot;जैसे ही मैं इस बालक का दूध छुड़ाऊँगी,  मैं इसे वहाँ ले जाऊँगी, जिससे वह प्रभु के सामने उपस्थित हो और सदा के लिए वहीं रह जाये।&quot;</span> <sup>23</sup><span class='v-txt'>उसके पति एल्काना ने उस से कहा, &quot;तुम जो ठीक समझो, वही करो।  जब तक तुम उसका दूध नहीं छुड़ा देती हो, तब तक रूको।  प्रभु अपनी प्रतिज्ञा पूरी करे।&quot; इसलिए वह स्त्री तब तक रूकी रही, जब तक उसने अपने बालक का दूध नहीं छुड़ाया।</span> <sup>24</sup><span class='v-txt'>जब अन्ना समूएल का दूध छुड़ा चुकी, तो उसने उसे अपने साथ कर लिया।  वह तीन वर्ष का बछड़ा, आधा मन आटा और एक मषक अंगूरी ले गयी और समूएल को शिलो में प्रभु के मन्दिर के भीतर लायी।  उस समय बालक छोटा था।</span> <sup>25</sup><span class='v-txt'>बछड़े की बलि चढ़ाने के बाद, वे बालक को एली के पास ले गये।</span> <sup>26</sup><span class='v-txt'>अन्ना ने कहा, &quot;महोदय!  क्षमा करें।  महोदय! आपकी शपथ! मैं वही स्त्री हूँ, जो यहीं प्रभु से प्रार्थना करती हुई आपके सामने खड़ी थी।</span> <sup>27</sup><span class='v-txt'>मैंने इस बालक के लिए प्रार्थना की और प्रभु ने मेरी प्रार्थना स्वीकार कर ली।</span> <sup>28</sup><span class='v-txt'>इसलिए मैं इसे प्रभु को अर्पित करती हूँ।  यह आजीवन प्रभु को अर्पित है।&quot;  और उन्होंने वहाँ प्रभु की आराधना की।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='009002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

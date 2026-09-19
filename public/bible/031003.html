@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>शोक गीत - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>शोक गीत</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैं वह व्यक्ति हूँ, जिसने उसके क्रोध के डण्डे की पीड़ा झेली है।</span> <sup>2</sup><span class='v-txt'>वह मुझ को ढकेल कर अँधेरे में ले आया है, जहाँ कोई प्रकाश नहीं।</span> <sup>3</sup><span class='v-txt'>वह दिन भर बारम्बार अपना हाथ अकेले मुझ पर उठाता है।</span> <sup>4</sup><span class='v-txt'>उसने मेरे मांस और मेरी चमड़ी को क्षीण कर दिया है और मेरी हड्डियाँ तोड़ डाली हैं।</span> <sup>5</sup><span class='v-txt'>उसने चारों ओर से मुझे बाधित किया है और कटुता तथा संकट से ढक दिया है।</span> <sup>6</sup><span class='v-txt'>उसने मुझे को बहुत पहले के मुरदों की तरह अन्धकार में निवास करने के लिए छोड़ दिया है।</span> <sup>7</sup><span class='v-txt'>उसने मुझे दीवारों से इस तरह घेर दिया है कि मैं नहीं भाग सकता।</span> <sup>8</sup><span class='v-txt'>उसने मुझे भारी जं़जीरों से जकड़ दिया है।  मैं पुकारता और दुहाई देता हूँ, लेकिन वह मेरी प्रार्थना नहीं सुनता।</span> <sup>9</sup><span class='v-txt'>उसने तराशे हुए पत्थरों से मेरे रास्ते बन्द कर दिये हैं; उसने मेरे मार्ग टेढ़े-मेढ़े कर दिये हैं।</span> <sup>10</sup><span class='v-txt'>वह मेरे लिए घात में बैठे हुए रीछ, छिप कर बैठे हुए सिंह के सदृश है।</span> <sup>11</sup><span class='v-txt'>उसने मुझ को अपने मार्ग से भटका कर मुझे टुकडे़-टुकड़े कर दिया है; उसने मुझ को विषादमग्न कर दिया है।</span> <sup>12</sup><span class='v-txt'>उसने अपना धनुष चढ़ा कर मुझ को अपने तीर का निशाना बना लिया है।</span> <sup>13</sup><span class='v-txt'>उसने अपने तरकश के तीरों से मेरा हृदय छेद डाला।</span> <sup>14</sup><span class='v-txt'>मैं अपने राष्ट्र के उपहास का पात्र, सारे दिन उनके गीतों की टेक बन गया हूँ।</span> <sup>15</sup><span class='v-txt'>उसने मुझे कटुता से भर दिया है; उसने मुझ को अफ़संतीन पिलाया है।</span> <sup>16</sup><span class='v-txt'>उसने मेरे दाँतों से कंकड़ियाँ चबवायीं।  उसने मुझ को राख खाने को विवश किया।</span> <sup>17</sup><span class='v-txt'>मेरी आत्मा शान्ति से वंचित है; सुख क्या है?  मैं यह भूल गया हूँ।</span> <sup>18</sup><span class='v-txt'>मैंने कहा, “मेरा आत्मविश्वास नष्ट हो गया और मुझे प्रभु पर भरोसा नहीं रहा।“</span> <sup>19</sup><span class='v-txt'>अपने कष्टों और भटकते रहने की याद मुझे पित्त तथा चिरायते-सी कड़वी लगती है।</span> <sup>20</sup><span class='v-txt'>मेरी आत्मा यह सब याद करती और बिसूरती रहती है।</span> <sup>21</sup><span class='v-txt'>किन्तु मैं आशा बाँधने के लिए यह भी याद करूँगा</span> <sup>22</sup><span class='v-txt'>कि प्रभु की कृपा बनी हुई है, उसकी अनुकम्पा समाप्त नहीं हुई है-</span> <sup>23</sup><span class='v-txt'>वह हर सबेरे नयी हो जाती है।  उसकी सत्यप्रतिज्ञा अपूर्व है।</span> <sup>24</sup><span class='v-txt'>मेरी आत्मा कहती है- “प्रभु मेरा भाग्य है।  मैं उस पर भरोसा रखूँगी।“</span> <sup>25</sup><span class='v-txt'>जो प्रभु पर भरोसा रखता है, जो प्रभु की खोज में लगा रहता है, उसके लिए प्रभु दयालु है।</span> <sup>26</sup><span class='v-txt'>मौन रह कर प्रभु की मुक्ति की प्रतीक्षा करना- यही सब से उत्तम है।</span> <sup>27</sup><span class='v-txt'>अपनी जवानी के समय से जुए का भार उठाना मनुष्य के लिए उत्तम है।</span> <sup>28</sup><span class='v-txt'>जब वह उस पर इसे डाल दे, तो वह मौन हो कर अलग बैठ जाये।</span> <sup>29</sup><span class='v-txt'>वह अपना मुख धूल में डाल ले- सम्भव है, अब भी कोई आशा हो।</span> <sup>30</sup><span class='v-txt'>वह अपना गाल थप्पड़ मारने वाले की ओर कर दे और अपमान से अघा जाये;</span> <sup>31</sup><span class='v-txt'>क्योंकि प्रभु सदा के लिए नहीं त्यागेगा,</span> <sup>32</sup><span class='v-txt'>बल्कि वह भले ही पीड़ित करे, वह अपनी अपार अनुकम्पा के अनुसार दया दिखलाता है;</span> <sup>33</sup><span class='v-txt'>क्योंकि वह मानव सन्तानों को सहर्ष विपत्ति और दुःख में नहीं डालता।</span> <sup>34</sup><span class='v-txt'>जब कोई व्यक्ति किसी देश के सभी बन्दियों को पैरों से कुचलता है,</span> <sup>35</sup><span class='v-txt'>जब वह उस सर्वोच्य की आँखों के सामने किसी को अपने अधिकार से वंचित करता है,</span> <sup>36</sup><span class='v-txt'>जब वह किसी का मामला बिगाड़ता है, तो क्या प्रभु इसे नहीं देखता?</span> <sup>37</sup><span class='v-txt'>यदि प्रभु ने निश्चित न किया हो, तो ऐसा कौन है, जो आदेश दे और वह पूरा हो जाये?</span> <sup>38</sup><span class='v-txt'>क्या शुभ और अशुभ सर्वोच्च की वाणी से उत्पन्न नहीं हैं?</span> <sup>39</sup><span class='v-txt'>मनुष्य क्यों शिकायत करे?  इस से कहीं अच्छा है कि वह अपने पापों पर नियन्त्रण रखे।</span> <sup>40</sup><span class='v-txt'>हम अपने आचरण की जाँच और परीक्षा करें और प्रभु की ओर अभिमुख हो जायें।</span> <sup>41</sup><span class='v-txt'>हम अपने हृदय और हाथ स्वर्ग के ईश्वर की ओर कर लें।</span> <sup>42</sup><span class='v-txt'>“हमने पाप और विद्रोह किया है और तूने हमें क्षमा नहीं किया।</span> <sup>43</sup><span class='v-txt'>“तूने क्रोध धारण कर हमारा पीछा किया और निर्दयता से हमारा वध किया।</span> <sup>44</sup><span class='v-txt'>तूने अपने को बादल में छिपा लिया, जिससे तेरे पास कोई दुहाई न पहुँचे।</span> <sup>45</sup><span class='v-txt'>तूने हमें राष्ट्रों के बीच कूड़ा-कचरा और रद्दी बना दिया।</span> <sup>46</sup><span class='v-txt'>“हमारे सभी शत्रु हमें अपशब्द कहते हैं।</span> <sup>47</sup><span class='v-txt'>हम पर आतंक और गर्त, विनाश और संहार हमारी नियति बन गये हैं।</span> <sup>48</sup><span class='v-txt'>अपने राष्ट्र की पुत्री की विनाश देख कर मेरी आँखों से आसुओं की नदी बहती है।</span> <sup>49</sup><span class='v-txt'>“मेरी आँखें अविराम बहती रहती हैं।  वे तब तक नहीं रुकेंगी,</span> <sup>50</sup><span class='v-txt'>जब तक प्रभु स्वर्ग से अपनी दृष्टि नीचे की ओर नहीं फेरता।</span> <sup>51</sup><span class='v-txt'>अपने नगर की सभी कुमारियों के कारण मेरी आँखें मुझे दुःखी बनाती है।</span> <sup>52</sup><span class='v-txt'>“जो लोग अकारण ही मेरे शत्रु हैं, उन्होंने पक्षी की तरह मेरा शिकार किया।</span> <sup>53</sup><span class='v-txt'>उन्होंने मुझे जीवित ही गर्त्त में फेंक दिया और तुझ पर पत्थर डाल दिये;</span> <sup>54</sup><span class='v-txt'>मेरा सिर पानी में डूब गया और मैं बोल उठा, ’लो, मैं गया!</span> <sup>55</sup><span class='v-txt'>“प्रभु! गहरे गर्त से मैंने तेरे नाम की दुहाई दी।</span> <sup>56</sup><span class='v-txt'>तूने मेरी यह विनती सुन ली, ’मेरी सहायता की पुकार अनसुनी न कर!</span> <sup>57</sup><span class='v-txt'>मैंने तुझे पुकारा, तो तू पास आ गया।  तूने कहा, ’भयभीत मत हो।’</span> <sup>58</sup><span class='v-txt'>“प्रभु! तूने मेरा पक्ष ग्रहण किया है, तूने मेरे प्राणों का उद्धार किया है।</span> <sup>59</sup><span class='v-txt'>प्रभु! तूने मेरे साथ किया गया अन्याय देखा है, तू मेरे साथ न्याय कर।</span> <sup>60</sup><span class='v-txt'>तूने उनके प्रतिशोध की प्यास, मेरे विरुद्ध उनके सभी षड्यन्त्र देखे हैं।</span> <sup>61</sup><span class='v-txt'>प्रभु! तूने उनके अपमान, मेरे विरुद्ध उनके सभी षड्यन्त्र सुने हैं</span> <sup>62</sup><span class='v-txt'>मरे शत्रुओं के वे वचन और विचार, जिन्हें वे सारा दिन कानों में फुसफुसाते हैं।</span> <sup>63</sup><span class='v-txt'>देख, चाहे बैठे हों, चाहे खड़े, मैं उनके गीतों का विषय बना रहता हूँ।</span> <sup>64</sup><span class='v-txt'>“प्रभु! तू उनके कर्मों के अनुसार उन को प्रतिफल देगा;</span> <sup>65</sup><span class='v-txt'>तू उनके हृदय को कठोर बना देगा; उन पर तेरा अभिशाप पड़ेगा;</span> <sup>66</sup><span class='v-txt'>प्रभु! अपने क्रोध के आवेश में तू उनका पीछा करेगा और अपने आकाश के नीचे से उन को मिटा देगा।“</span> </p>
+        <div class='nav'><a href='031002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='031004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

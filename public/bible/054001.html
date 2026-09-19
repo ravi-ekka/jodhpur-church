@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>2 कुरिन्थियों - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>2 कुरिन्थियों</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>कुरिन्थ में ईश्वर की कलीसिया तथा समस्त अख़ैया में रहने वाले सभी सन्तों के नाम पौलुस, जो ईश्वर द्वारा ईसा मसीह का प्रेरित नियुक्त हुआ है, और भाई तिमथी का पत्र।</span> <sup>2</sup><span class='v-txt'>हमारा पिता ईश्वर, और प्रभु ईसा मसीह आप लोगों को अनुग्रह तथा शान्ति प्रदान करें।</span> <sup>3</sup><span class='v-txt'>धन्य है ईश्वर, हमारे प्रभु ईसा मसीह का पिता, परमदयालु पिता और हर प्रकार की सान्त्वना का ईश्वर।</span> <sup>4</sup><span class='v-txt'>वह सारी दुःख तकलीफ़ में हम को सान्त्वना देता रहता है, जिसमें ईश्वर की ओर से हमें जो सान्त्वना मिलती है, उसके द्वारा हम दूसरों को भी, उनकी हर प्रकार की तकलीफ में सान्त्वना देने के लिए समर्थ हो जायें;</span> <sup>5</sup><span class='v-txt'>क्योंकि जिस प्रकार हम प्रचुर मात्रा में मसीह के दुःख-भोग के सहभागी हैं, उसी प्रकार मसीह द्वारा हम को प्रचुर मात्रा में सान्त्वना भी मिलती है।</span> <sup>6</sup><span class='v-txt'>यदि हमें दुःख भोगना पड़ता है, तो आप लोगों की सान्त्वना और मुक्ति के लिए, और यदि हमें सान्त्वना मिलती है, तो इसलिए की हम आप लोगों को सान्त्वना दे सकें, जिससे आप धैर्य के साथ वह दुःख सहने में समर्थ हों, जिसे हम भोगते हैं।</span> <sup>7</sup><span class='v-txt'>आप लोगों के विषय में हमारी आशा सुदृढ़ है; क्योंकि हम जानते हैं कि जिस प्रकार आप हमारे दुःख के भागी हैं, उसी प्रकार आप हमारी सान्त्वना के भी भागी होंगे।</span> <sup>8</sup><span class='v-txt'>भाइयो!  हम आप लोगों से यह नहीं छिपाना चाहते कि एशिया में जो कष्ट हमें सहना पड़ा, वह बहुत ही भारी और हमारी सहनशक्ति के परे था- यहाँ तक कि हमने जीवित रहने की आशा भी छोड़ दी थी</span> <sup>9</sup><span class='v-txt'>और हम यह समझ रहे थे कि हमें प्राणदण्ड मिल चुका है।  यह इसलिए हुआ कि हम अपने पर नहीं, बल्कि ईश्वर पर भरोसा रखें, जो मृतकों को पुनर्जीवित करता है।</span> <sup>10</sup><span class='v-txt'>उसने हमें उस महान् संकट से बचाया और वह ऐसा ही करता रहेगा।  उस पर हमारी यह आशा आधारित है कि वह भविष्य में भी हमें बचायेगा।</span> <sup>11</sup><span class='v-txt'>आप लोग प्रार्थना द्वारा हमारी सहायता करें।  इस प्रकार हमें जो वरदान मिलता है, उसके लिए बहुत-से लोग ईश्वर से प्रार्थना भी करेंगे और उसे धन्यवाद भी देंगे।</span> <sup>12</sup><span class='v-txt'>हमें एक बात का गर्व है - हमारा अन्तःकरण हमें विश्वास दिलाता है कि हम ने मनुष्यों के साथ और विशेष कर आप लोगों के साथ जो व्यवहार किया है, वह संसार की बुद्धिमानी के अनुसार नहीं, बल्कि उस सच्चाई और ईमानदारी के अनुसार था, जो ईश्वर की कृपा का वरदान है।</span> <sup>13</sup><span class='v-txt'>(13-14) हम आपके नाम जो पत्र लिखते हैं, उन में ऐसी कोई बात नहीं है, जिसे पढ़ कर आप नहीं समझ सकते।  मुझे आशा है कि आप जो बात अब आंशिक रूप में समझते हैं, उसे बाद में पूर्ण रूप में समझेंगे और वह बात यह है कि जिस तरह आप प्रभु ईसा के आगमन के दिन हम पर गर्व करेंगे, उसी तरह हम भी आप लोगों पर।</span> <sup>15</sup><span class='v-txt'>मुझे इसका पूरा भरोसा है, इसलिए मैंने आप लोगों को दो बार आध्यात्मिक लाभ का अवसर देने के विचार से पहले आपके पास आने का निश्चय किया था।</span> <sup>16</sup><span class='v-txt'>मैं आप के यहाँ हो कर मकेदूनिया जाना और वहाँ से आपके पास लौटना चाहता था जिससे आप मेरी यहूदिया-यात्रा का प्रबन्ध करें।</span> <sup>17</sup><span class='v-txt'>मेरा निश्चय यही था तो, क्या मैंने अकारण ही अपना विचार बदल लिया?  क्या मैं सांसारिक मनुष्यों की तरह निश्चय करता हूँ?  क्या मुझ में कभी ’हाँ’ और कभी ’नहीं’-जैसी बात है?</span> <sup>18</sup><span class='v-txt'>ईश्वर की सच्चाई की शपथ!  मैंने आप लोगों को जो सन्देश दिया, उस में कभी ’हाँ’ और कभी ’नहीं’-जैसी बात नहीं है;</span> <sup>19</sup><span class='v-txt'>क्योंकि सिल्वानुस, तिमथी और मैंने आपके बीच जिनका प्रचार किया, उन ईश्वर के पुत्र ईसा मसीह में कभी ’हाँ’ और कभी ’नहीं’-जैसी बात नहीं - उन में मात्र ’हाँ’ है।</span> <sup>20</sup><span class='v-txt'>उन्हीं में ईश्वर की समस्त प्रतिज्ञाओं की ’हाँ’ विद्यमान है, इसलिए हम ईश्वर की महिमा के लिए उन्हीं के द्वारा ’आमेन’ कहते हैं।</span> <sup>21</sup><span class='v-txt'>ईश्वर आप लोगों के साथ हम को मसीह में सुदृढ़ बनाये रखता है और उसी ने हमारा अभिषेक किया है।</span> <sup>22</sup><span class='v-txt'>उसी ने हम पर अपनी मुहर लगायी और अग्रिम के रूप में हमारे हृदयों को पवित्र आत्मा प्रदान किया है।</span> <sup>23</sup><span class='v-txt'>मैं ईश्वर को साक्षी बना कर अपने जीवन की शपथ खा कर कहता हूँ -  मैं इसलिए अब तक कुरिन्थ नहीं आया कि मैं आप लोगों को दुःख देना नहीं चाहता था।</span> <sup>24</sup><span class='v-txt'>आपके विश्वास पर मनमाना अधिकार जताना हमारा उद्देश्य नहीं है।  हम आप लोगों की सुख-शान्ति के लिए आपके सहयोगी हैं और आप लोग तो यों भी विश्वास में दृढ़ हैं।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='054002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

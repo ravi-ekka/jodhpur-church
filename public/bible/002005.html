@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>निर्गमन - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>निर्गमन</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इसके बाद मूसा और हारून ने फिराउन के पास जा कर कहा, &#039;&#039;इस्राएलियों का ईश्वर प्रभु यह कहता है : मेरे लोगों को जाने दो, जिससे वे निर्जन प्रदेश जा कर मेरा एक पर्व मना सकें।&#039;&#039;</span> <sup>2</sup><span class='v-txt'>फिराउन ने उत्तर दिया, &#039;&#039;वह कौन-सा प्रभु है, जिसकी मैं आज्ञा मानूँ और इस्राएलियों को जाने दें, मैं न तो उस प्रभु को जानता हूँ और न मैं इस्राएलियों को जाने दूँगा।</span> <sup>3</sup><span class='v-txt'>फिर उन्होंने कहा, &#039;&#039;इब्रानियों के ईश्वर ने हमें दर्शन दिये हैं; इसलिए हमें निर्जन प्रदेश जाने दे, जहाँ की यात्रा तीन दिन की है, जिससे हम अपने ईश्वर प्रभु को वहाँ बलि चढ़ा सकें; नहीं तो वह हम पर महामारी भेज देगा या हमें तलवार के घाट उतरवा देगा।&#039;&#039;</span> <sup>4</sup><span class='v-txt'>परन्तु मिस्र के राजा ने उन्हें उत्तर दिया, &#039;&#039;मूसा और हारून! तुम लोगों को उनके कामों से क्यों हटा रहे हो? जाओ, अपना बेगार का काम करो।&#039;&#039;</span> <sup>5</sup><span class='v-txt'>इसके बाद फिराउन ने कहा, &#039;&#039;देखो, अब देश में लोगों की संख्या बढ़ गयी है और तुम उन्हें उनके बेगार के काम से छुड़ाना चाहते हो!&#039;&#039;</span> <sup>6</sup><span class='v-txt'>उसी दिन फिराउन ने लोगों से बेगार करवाने वालों और मेटों को यह आदेश दिया,</span> <sup>7</sup><span class='v-txt'>&#039;&#039;तुम अब तक जिस प्रकार लोगों को बनाने के लिए घास-फूस दिया करते थे, वह आगे मत देना। वे खुद जायें और खुद घास-फूस इकट्ठा करें।</span> <sup>8</sup><span class='v-txt'>फिर भी उतनी ही ईटें उन से बनवाना, जितनी वे अब तक बनाते आये हैं। उनकी संख्या बिलकुल कम मत करना। वे आलसी हैं और इसलिए चिल्ला कर कहते हैं कि हमें अपने ईश्वर को बलि चढ़ाने के लिए जाने दीजिए।</span> <sup>9</sup><span class='v-txt'>उन लोगों का बेगार और भी कठिन बना देना, जिससे वे उस में ही इतने उलझे रहें कि झूठी बातों पर ध्यान न दे सकें।&#039;&#039;</span> <sup>10</sup><span class='v-txt'>तब लोगों पर नियुक्त अधिकारियों और मेटों ने उनके पास जा कर यह कहा, &#039;&#039;फिराउन का कहना है कि मैं तुम्हें घास-फूस नहीं दूँगा।</span> <sup>11</sup><span class='v-txt'>तुम खुद जा कर, जहाँ कहीं मिले, घास-फूस लाओ, किन्तु तुम लोगों को पहले जितना सामान तैयार करना है।</span> <sup>12</sup><span class='v-txt'>इसलिए वे मिस्र भर में इधर-उधर दूर-दूर तक भूसा बनाने के लिए डण्ठल बटोरने लगे।</span> <sup>13</sup><span class='v-txt'>अधिकारी यह कहते हुए उन्हें बाध्य करते थें, &#039;&#039;ठीक उसी प्रकार प्रतिदिन अपना निर्धारित काम पूरा करो, जिस प्रकार तब करते थें, जब तुम को भूसा दिया जाता था।&#039;&#039;</span> <sup>14</sup><span class='v-txt'>फिराउन द्वारा नियुक्त बेगार करवाने वाले इस्राएली मेटों को पीटते थे और उन से पूछते थे, &#039;&#039;तुमने पहले की तरह क्यों कल या आज ईटों की नियुक्ति की हुई संख्या का काम पूरा नहीं करवाया?&#039;&#039;</span> <sup>15</sup><span class='v-txt'>तब इस्राएली मेट फिराउन के पास जा कर यह शिकायत करने लगे कि &#039;&#039;आप अपने दासों के साथ ऐसा व्यवहार क्यों करते हैं</span> <sup>16</sup><span class='v-txt'>आपके दासों को घास-फूस तक नहीं दिया जाता है, तब भी वे हम से ईटें बनाने को कहते हैं। आपके दासों को पीटा जाता है, परन्तु दोष आपके अपने लोगों का होता है।&#039;&#039;</span> <sup>17</sup><span class='v-txt'>उसने उत्तर दिया, &#039;&#039;तुम लोग आलसी हो; हाँ तुम आलसी हो। इसलिए तुम कहते हो कि हमें प्रभु को बलि चढ़ाने के लिए जाने दीजिए।</span> <sup>18</sup><span class='v-txt'>जाओ, अपना काम करो। तुम्हें भूसा नहीं दिया जायेगा, लेकिन तुम्हें ईटों की निर्धारित संख्या देनी पड़ेगी।&#039;&#039;</span> <sup>19</sup><span class='v-txt'>जब इस्राएली मेटों से कहा गया कि तुम प्रतिदिन की ईटों की निर्धारित संख्या कम नहीं करोंगे, तो वे समझ गये कि अब उनकी हालत बहुत बुरी हो गयी है।</span> <sup>20</sup><span class='v-txt'>वे फिराउन के यहाँ से बाहर निकले और मूसा तथा हारून से मिले, जो उनकी प्रतिक्षा कर रहे थे।</span> <sup>21</sup><span class='v-txt'>उन लोगों ने कहा, &#039;&#039;आपने फिराउन और उनके सेवकों की दृष्टि में हमें घृणा का पात्र बना दिया है और आपने हमें मार डालने के लिये उनके हाथों में एक तलवार दे दी हैं। प्रभु आप को दर्शन दे कर आपका न्याय करें।&#039;&#039;</span> <sup>22</sup><span class='v-txt'>इस पर मूसा यह कहते हुए प्रभु से दुहाई करने लगा, &#039;&#039;प्रभु तूने इस प्रजा को इतना क्लेश क्यों दिया हैं? तूने मुझे क्यों भेजा है,</span> <sup>23</sup><span class='v-txt'>जिस समय से मैं तेरी आज्ञा से फिराउन के पास बात करने गया, तब से उसने इस प्रजा को और अधिक कष्ट दिया है; लेकिन तूने अपनी प्रजा का उद्धार करने के लिए कुछ भी नहीं किया।&#039;&#039;</span> </p>
+        <div class='nav'><a href='002004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='002006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

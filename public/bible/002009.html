@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>निर्गमन - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>निर्गमन</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा, &#039;&#039;फिराउन के यहाँ जा कर उस से कहो कि इब्रानियों का ईश्वर प्रभु कहता है कि मेरे लोगों को चले जाने दो, जिससे वे मेरी पूजा कर सकें।</span> <sup>2</sup><span class='v-txt'>यदि तुम उन्हें नहीं जाने दोगे और उन्हें रोके रखोगे,</span> <sup>3</sup><span class='v-txt'>तो समझ लो कि प्रभु का हाथ तुम्हारे खेतों में तुम्हारे पशुओं को - घोड़ों, गधों, ऊँटों, गायों और भेड़ों को मारेगा उन में एक भयंकर महामारी फैलेगी।</span> <sup>4</sup><span class='v-txt'>परन्तु प्रभु इस्राएलियों के ढोरों और मिस्रियों के ढोरों में भेद करेगा। इस्राएलियों के सभी पशुओं में एक भी नहीं मरेगा।</span> <sup>5</sup><span class='v-txt'>प्रभु ने यह कहते हुए समय निर्धारित किया, &#039;&#039;कल प्रभु इस देश में ऐसा करेगा।</span> <sup>6</sup><span class='v-txt'>दूसरे दिन प्रभु ने वही किया। मिस्रियों के सभी पशु मर गये, लेकिन इस्राएलियों के पशुओं में एक भी नहीं मरा।</span> <sup>7</sup><span class='v-txt'>जब फिराउन ने जाँच करायी, तो मालूम हुआ कि इस्राएलियों के पशुओं में एक भी नहीं मरा है। इस पर भी फिराउन का हृदय कठोर ही बना रहा और उसने लोगों को नहीं जाने दिया।</span> <sup>8</sup><span class='v-txt'>इस पर प्रभु ने मूसा और हारून से कहा, &#039;&#039;भट्ठी से मुट्ठी भर राख लो। मूसा फिराउन के सामने ही उसे आकाश की ओर उड़ा देगा।</span> <sup>9</sup><span class='v-txt'>वह मिस्र की सारी भूमि पर बारीक धूल बन कर फैल जायेगी। वह सारे मिस्र देश के मनुष्यों और पशुओं पर गिरेगी और इस से उनकी देह पर फोड़े निकल जायेंगे। फिर वे पक कर बहने लगेंगे।</span> <sup>10</sup><span class='v-txt'>इसलिए उन्होंने भट्ठी से राख ले ली और फिराउन के सामने ही खड़े हो कर मूसा ने उसे आकाश की ओर उड़ा दिया। इस से मनुष्यों और पशुओं को फोड़े निकल आये और वे पक कर बहने लगे।</span> <sup>11</sup><span class='v-txt'>फोड़ों के कारण मूसा के सामने जादूगर खड़े नहीं हो सके, क्योंकि जादूगरों और सब मिस्रियों के शरीर पर फोड़े निकल आये थे।</span> <sup>12</sup><span class='v-txt'>परन्तु प्रभु ने फिराउन के हृदय को कठोर बना दिया था; इसलिए जैसा प्रभु ने मूसा से कहा था, उसने मूसा और हारून की नहीं सुनी।</span> <sup>13</sup><span class='v-txt'>फिर प्रभु मूसा ने कहा, &#039;&#039;सबेरे जल्दी उठ कर फिराउन के पास जाओं और उस से कहो कि इब्रानियों का प्रभु-ईश्वर यह कहता है मेरे लोगों को जाने दो, जिससे वे मेरी पूजा कर सकें।</span> <sup>14</sup><span class='v-txt'>नहीं तो इस बार मैं तुम पर, तुम्हारे सेवकों और तुम्हारी प्रजा पर सब प्रकार की विपत्तियाँ ढाहूँगा, जिससे तुम समझोगे कि सारी पृथ्वी पर मेरी समता करने वाला कोई नहीं है।</span> <sup>15</sup><span class='v-txt'>मैं तुम पर और तुम्हारी प्रजा पर ऐसी भयंकर महामारी भेज सकता था, जिससे पृथ्वी से तुम्हारा सर्वनाश हो जाता,</span> <sup>16</sup><span class='v-txt'>परन्तु मैंने तुम को केवल इसलिए जीवित रखा है कि मैं तुम्हें अपनी शक्ति का परिचय दूँ, जिससे मेरा नाम समस्त पृथ्वी पर ज्ञात हो जाये।</span> <sup>17</sup><span class='v-txt'>फिर भी तुम अभी तक मेरे लोगों का विरोध करते चले जा रहे हो और उन्हें नहीं जाने दे रहे हों। यदि तुम आगे भी ऐसा ही करते रहोगे, तो</span> <sup>18</sup><span class='v-txt'>कल इसी समय मैं ओलों की ऐसी भीषण वर्षा करूँगा, जैसा मिस्र राष्ट्र की स्थापना से आज तक कभी नहीं हुई।</span> <sup>19</sup><span class='v-txt'>इसलिए अपने सब पशुओं को और खेतों में जो कुछ तुम्हारा है, उसे किसी सुरक्षित स्थान में पहुँचा दो, क्योंकि सब मनुष्य और पशु जो खेत में होगें और अन्दर नहीं लाये गये होगें, उन सब पर ओलों की वर्षा होगी और वे मर जायेंगे।</span> <sup>20</sup><span class='v-txt'>इसके बाद फिराउन के सेवकों में जो प्रभु की वाणी पर श्रद्धा रखते थे, उन्होंने अपने दासों और पशुओं को अपने घरों में आश्रय दिया।</span> <sup>21</sup><span class='v-txt'>परन्तु जिन्होंने प्रभु की वाणी की उपेक्षा की, उन्होंने अपने दासों और पशुओं को खेतों में ही छोड़ दिया।</span> <sup>22</sup><span class='v-txt'>तब प्रभु ने मूसा को आज्ञा दी, &#039;&#039;अपने हाथ आकाश की ओर फैलाओ। ऐसा करने पर मिस्र देश में ओलों की वर्षा होने लगेगी। वह सारे मिस्र के मनुष्यों, पशुओं और खेतों की प्रत्येक वनस्पति पर पड़ेगी।&#039;&#039;</span> <sup>23</sup><span class='v-txt'>जब मूसा ने अपना डण्डा आकाश की ओर उठाया, तो प्रभु ने बादलों की गरज के साथ ओलों की वर्षा शुरू कर दी। पृथ्वी पर बिजलियाँ गिरी और प्रभु ने मिस्र देश पर ओलों की वर्षा की।</span> <sup>24</sup><span class='v-txt'>ओलों की वर्षा हुई और ओलों के साथ लगातार बिजलियाँ भी चमकती रही। ओलों की ऐसी भीषण वर्षा हुई, जैसी मिस्र राष्ट्र की स्थापना के बाद देश में कहीं भी कभी नहीं हुई थी।</span> <sup>25</sup><span class='v-txt'>ओलों की वर्षा ने समस्त मिस्र देश में, सब कुछ जो बाहर पड़ा था, मनुष्यों और पशुओं को, नष्ट कर दिया। ओलों की वर्षा से खेतों की सारी वनस्पति और मैदान के सभी वृक्ष नष्ट हो गये।</span> <sup>26</sup><span class='v-txt'>किन्तु गोशेन प्रदेश में, जहाँ इस्राएली रहते थे, ओलों की वर्षा नहीं हुई।</span> <sup>27</sup><span class='v-txt'>तब फिराउन ने मूसा और हारून को बुलवा कर उन से कहा, &#039;&#039;इस बार मैंने अपराध किया है। प्रभु को ऐसा करने का अधिकार था, मैं और मेरी प्रजा अपराधी है।</span> <sup>28</sup><span class='v-txt'>प्रभु से प्रार्थना करो, क्योंकि अब हम बादलों के गर्जन ओर ओलों की वर्षा से बहुत तंग आ गये हैं। मैं लोगों को जाने दूँगा और अब तुम्हें यहाँ और अधिक रूकना नहीं होगा।</span> <sup>29</sup><span class='v-txt'>मूसा ने उस से कहा, &#039;&#039;नगर से बाहर पहुँचते ही मैं प्रभु की ओर अपने हाथ फैलाऊँगा। इस से बादलों का गरजन बन्द हो जाएगा और ओलों की वर्षा रुक जाएगी। जिससे आपको विश्वास हो जाएगा कि पृथ्वी प्रभु की है।</span> <sup>30</sup><span class='v-txt'>लेकिन मैं जानता हूँ कि आप और आपके पदाधिकारी अब भी प्रभु-ई्श्वर पर श्रद्धा नहीं रखते।&#039;&#039;</span> <sup>31</sup><span class='v-txt'>(अलसी और जौ तो नष्ट हो गये, क्योंकि जौ कि बालें निकल चुकी थी और अलसी कि बौड़ियाँ नहीं निकली थी।</span> <sup>32</sup><span class='v-txt'>पर गेहूँ और कठिया गेहूँ नष्ट नहीं हुए, क्योंकि उनके फूटने का अभी समय नहीं हुआ था।)</span> <sup>33</sup><span class='v-txt'>मूसा ने फिराउन के यहाँ से नगर के बाहर जाते ही अपने हाथ प्रभु की ओर फैलाये। इससे बादलों की गड़गडाहट और ओलों की वर्षा रुक गई और पृथ्वी पर वर्षा बन्द हो गई।</span> <sup>34</sup><span class='v-txt'>परन्तु जब फिराउन ने देखा कि पानी, ओलों की वर्षा और बादलों का गर्जन बन्द हो गया, तो उसने फिर पाप किया। उसने और उसकी पदाधिकारियों ने अपना हृदय कठोर कर लिया।</span> <sup>35</sup><span class='v-txt'>जैसा प्रभु ने मूसा द्वारा बताया था फिराउन का हृदय वैसा ही कठोर बना रहा और उसने इस्राएलियों को नहीं जाने दिया।</span> </p>
+        <div class='nav'><a href='002008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='002010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

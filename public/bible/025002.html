@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>उपदेशक - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>उपदेशक</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>फिर मैं अपने मन से बोला, &quot;चलो, मैं सुख द्वारा तुम्हारी परीक्षा करूँगा, तुम भोग-विलास करो&quot;, किन्तु मैंने अनुभव किया कि वह भी व्यर्थ है।</span> <sup>2</sup><span class='v-txt'>मैंने कहा, &quot;हँसी मूर्खता है और भोग-विलास से काई लाभ नहीं होता&quot;।</span> <sup>3</sup><span class='v-txt'>मैंने प्रज्ञा की प्रेरणा से मदिरा पी कर अपने शरीर को सुख देने का निश्चय किया।  मैं जानना चाहता था, कि कहीं मूर्खता में वह सुख तो नहीं है, जिसकी खोज में मनुष्य अपने जीवन के अल्पकाल में पृथ्वी पर लगे रहते हैं।</span> <sup>4</sup><span class='v-txt'>मैंने बड़ी-बड़ी येाजनाएँ पूरी की है; मैंने अपने लिए भवन बनवाये और दाखबारियाँ लगवायी;</span> <sup>5</sup><span class='v-txt'>मैंने अपने लिए बाग और बगीचें तैयार कराये और उन में सब प्रकार के फलदार वृक्ष लगवाये।</span> <sup>6</sup><span class='v-txt'>मैंने अपने लिये पोखर खुदवाये, जिनके पानी से नये वृक्षों के उपवन सींचे जा सके।</span> <sup>7</sup><span class='v-txt'>मैंने दास-दासियों को खरीदा ओैर मेरे यहाँ अन्य दासों का जन्म हुआ।  मेरे पास इतने गाये-बैलों और भेड़-बकरियों के झुण्ड थे, जितने मुझ से पहले येरूसालेम में किसी के पास नहीं थे।</span> <sup>8</sup><span class='v-txt'>मैंने अपने लिए चाँदी, और सोना, राजाओें और राष्ट्रों की सम्पत्ति प्राप्त की।  मैंने अपने यहाँ गायक-गायिकाओं को एकत्र किया और मनुष्य का हृदय आनन्दित करने वाली सुन्दरियों को भी।</span> <sup>9</sup><span class='v-txt'>मैं महान् बन गया और अपने पहले के येरूसालेम के सब शासकों से अधिक धनी।  इसके अतिरिक्त मेरी प्रज्ञा भी मेरे साथ रही।</span> <sup>10</sup><span class='v-txt'>मेरी आँखें जो कुछ चाहती थी, उस से मैंने परहेज नहीं किया।  मैंने अपने हृदय को किसी भी प्रकार के भोग-विलास से वंचित नहीं रखा।  मेरा मन मेरे सब कामों में आनन्द लेता था: यह मेरे लिए अपने सारे परिश्रम का पुरस्कार था।</span> <sup>11</sup><span class='v-txt'>तब मैंने अपने हाथों के सब कामों पर और उन्हें सम्पन्न करने के लिए अपने सारे परिश्रम पर विचार किया; मैंने देखा कि यह सब व्यर्थ और हवा पकड़ने के बराबर है। पृथ्वी पर उससे कोई लाभ नहीं होता।</span> <sup>12</sup><span class='v-txt'>इसके बाद मैंने प्रज्ञा, पागलपन और मूर्खता पर विचार किया।  राजा का उत्तरदायित्व क्या कर सकता, जो उस से पहले नहीं किया जा चुका है?</span> <sup>13</sup><span class='v-txt'>मैंने देखा कि मूर्खता की अपेक्षा प्रज्ञा से अधिक लाभ होता है, जैसा कि अन्धकार की अपेक्षा प्रकाश से अधिक लाभ होता है, जैसा कि अन्धकार की अपेक्षा प्रकाश से अधिक लाभ होता है।</span> <sup>14</sup><span class='v-txt'>बुद्धिमान् के सिर में आँखें होती है, और मूर्ख अन्धकार में चलता है, किन्तु मैं समझ गया कि दोनों को एक गति प्राप्त होती है।</span> <sup>15</sup><span class='v-txt'>मैं अपने मन से बोला: &quot;जो गति मूर्ख की है, वही मेरी होगी, तो मुझे प्रज्ञा से क्या लाभ होता है?&quot; इसलिए मैंने अपने मन में कहा, &quot;यह भी व्यर्थ है&quot;।</span> <sup>16</sup><span class='v-txt'>मूर्ख की तरह बुद्धिमान् की स्मृति भी नहीं रहेगी; कुछ समय के बाद दोनों भुला दिये जायेंगे।  मूर्ख की तरह बुद्धिमान् भी मरता है।</span> <sup>17</sup><span class='v-txt'>इसलिए मुझे जीवन नीरस और आकाश के नीचे का सारा कार्यकलाप दुःखद लगने लगा।  यह सब व्यर्थ और हवा पकड़ने के बराबर है।</span> <sup>18</sup><span class='v-txt'>मुझे पृथ्वी पर अपने सारे परिश्रम के फल से घृणा हो गयी है, क्योंकि मुझे सब कुछ अपने उत्तराधिकारी के लिए छोड़ना है।</span> <sup>19</sup><span class='v-txt'>कौन जानता है कि वह बुद्धिमान् होगा या मूर्ख?  फिर भी मैंने पृथ्वी पर अपनी बुद्धि और परिश्रम से जो कुछ किया, वह सब उसके नियन्त्रण में आयेगा।  यह भी व्यर्थ है।</span> <sup>20</sup><span class='v-txt'>इसलिए मैंने पृथ्वी पर अपना सारा परिश्रम व्यर्थ समझा।</span> <sup>21</sup><span class='v-txt'>मनुष्य समझदारी, कौशल और सफलता से काम करने के बाद जो कुछ एकत्र कर लेता है, उसे वह सब ऐसे व्यक्ति के लिए छोड़ देना पड़ता है, जिसने उसके लिए कोई परिश्रम नहीं किया है।  यह भी व्यर्थ और बड़े दुर्भाग्य की बात है;</span> <sup>22</sup><span class='v-txt'>क्योंकि मनुष्य को कड़ी धूप में कठिन परिश्रम करने के बदले क्या मिलता है ?</span> <sup>23</sup><span class='v-txt'>उसके सभी दिन सचमुच दुःखमय हैं और उसका सारा कार्यकलाप कष्टदायक।  रात को उसके मन को शान्ति नहीं मिलती।  यह भी व्यर्थ है।</span> <sup>24</sup><span class='v-txt'>मनुष्य के लिए सब से अच्छा यह है, कि वह खाये-पिये और परिश्रम करते हुए सन्तुष्ट रहे।  मैंने देखा कि यह भी ईश्वर के हाथ से प्राप्त होता है;</span> <sup>25</sup><span class='v-txt'>क्योंकि ईश्वर के अनजान में न तो कोई खा-पी सकता और न चिन्ता कर सकता है।</span> <sup>26</sup><span class='v-txt'>जिस मनुष्य पर ईश्वर प्रसन्न है, वह उसे प्रज्ञा, ज्ञान और आनन्द प्रदान करता है; किन्तु वह पापी मनुष्य से धन एकत्र करने और संचित रखने का काम करवाता, जिससे वह उसे उस मनुष्य को सौंप दे, जिस पर ईश्वर प्रसन्न है।  यह भी व्यर्थ और हवा पकड़ने के बराबर है।</span> </p>
+        <div class='nav'><a href='025001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='025003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 42</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 42</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>वह मुझे उत्तर की ओर भीतरी प्रांगण में ले गया और उन कमरों में ले आया, जो मंदिर के अहाते और उत्तर की ओर के भवन के सामने थे।</span> <sup>2</sup><span class='v-txt'>उत्तर की ओर के भवन की लंबाई सौ हाथ थी और चैड़ाई पचास हाथ।</span> <sup>3</sup><span class='v-txt'>भीतरी प्रांगण के दरवाजों के सामने और बाहरी प्रांगण के फर्श के सामने तीनों मंजिलों में दीर्घा बनी थी।</span> <sup>4</sup><span class='v-txt'>कमरों के सामने भीतर की ओर दस हाथ चैड़ा और सौ हाथ लंबा मार्ग था और कमरों में उत्तर की ओर दरवाजे थे।</span> <sup>5</sup><span class='v-txt'>ऊपरी कमरे अपेक्षाकृत कम चैड़े थे क्योंकि भवन के निचले और बीच के कमरों की अपेक्षा उन में दीर्घाएँ अधिक जगह घेरती थीं।</span> <sup>6</sup><span class='v-txt'>वे तीन मंजिलों में बने थे और बाहरी प्रांगण के खम्भों की तरह उन में खम्भे नहीं थे; इसलिए निचले और बीच के कमरों की तुलना में ऊपरी कमरे ज़मीन से कहीं अधिक पीछे हटे थे।</span> <sup>7</sup><span class='v-txt'>बाहरी प्रांगण की ओर, कमरों के ठीक सामने, उनके समान्तर बाहर पचास हाथ लम्बी दीवार थीं,</span> <sup>8</sup><span class='v-txt'>क्योंकि बाहरी प्रांगण के कमरे पचास हाथ लम्बे थे, जब कि मन्दिर के सामने के कमरे सौ हाथ लम्बे।</span> <sup>9</sup><span class='v-txt'>(9-10) बाहरी प्रांगण से, जहाँ, बाहर की दीवार शुरू होती है, जैसे ही कोई कमरों में प्रवेश करता है, वहाँ कमरों के ठीक नीचे पूर्व की ओर से भीतर का रास्ता था।  अहाते और भवन के सामने दक्षिण की ओर भी कमरे थे।</span> <sup>11</sup><span class='v-txt'>उनके सामने भी मार्ग था।  वे उत्तर की ओर के कमरे-जैसे थे- उन्हीं की लम्बाई-चैडाई के, वैसे ही बाहर निकलने के मार्ग वाले, वैसे ही दवाज़ों वाले।</span> <sup>12</sup><span class='v-txt'>दक्षिणी कमरों के नीचे पूर्व की ओर, जहाँ से कोई गलियारी में प्रवेश करता है, रास्था था और उनके सामने एक विभाजक दीवार थीं।</span> <sup>13</sup><span class='v-txt'>वह मुझ से बोला, ’अहाते के सामने की उत्तरी और दक्षिणी कमरे पवित्र कमरे हैं, जहाँ वे याजक, जो प्रभु के सामने उपस्थित हाते हैं, परमपवित्र बलियाँ खायेंगे।  वहाँ वे परमपवित्र बलिया - अन्न-बलि, प्रायश्ति-बलि और क्षतिपूर्ति-बलि- रखेंग; क्योंकि यह स्थान पवित्र है।</span> <sup>14</sup><span class='v-txt'>जब याजक पवित्र-स्थान में प्रवेश करेंगे, तो वह वहाँ उन वस्त्रों को, जिन्हें पहन कर वे सेवाकार्य करते हैं, उतार कर रखे बिना बाहरी प्रांगण में नहीं जायेंगे; क्योंकि वे वस्त्र पवित्र हैं।  वे उस स्थान के पास जाने से पहले, जो जनसामान्य के लिए है, दूसरे वस्त्र पहनेंगे।&quot;</span> <sup>15</sup><span class='v-txt'>मन्दिर क्षेत्र के भीतरी भाग को नापने के बाद वह मुझे पूर्वी फाटक से बाहर ले गया और उसने चारों ओर से मन्दिर का क्षेत्र नापा।</span> <sup>16</sup><span class='v-txt'>उसने माप-छड़ी से पूर्वी भाग नापा।  वह माप-छड़ी से पांच सौ हाथ था।</span> <sup>17</sup><span class='v-txt'>उसने मुड कर उत्तरी भाग नापा।  वह माप-छड़ी से पांच सौ हाथ निकला।</span> <sup>18</sup><span class='v-txt'>उसने मुड कर दक्षिणी भाग नापा।  वह माप-छड़ी से पांच सौ हाथ निकला।</span> <sup>19</sup><span class='v-txt'>उसने पश्चिमी भाग की ओर मुड कर उसे नापा।  वह माप-छड़ी से पांच सौ हाथ निकला।</span> <sup>20</sup><span class='v-txt'>उसने उसे चारों ओर से नापा।  उसके चारों ओर पवित्र और सामान्य स्थान को अलग करने वाली पांच सौ हाथ लम्बी और पाँच सौ हाथ चैड़ी दीवार थीं।</span> </p>
+        <div class='nav'><a href='033041.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033043.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

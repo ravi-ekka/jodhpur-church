@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>सुलेमान का सर्वश्रेष्ठ गीत - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>सुलेमान का सर्वश्रेष्ठ गीत</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मेरी बहन, मेरी वधू! मैं अपनी पुष्पवाटिका में आ रहा हूँ।  मैं अपना गन्धरस और मसाले चुनता हूँ।  मैं अपना छत्ता और मधू खाता हूँ।  मैं अपनी अंगूरी और दूध पीता हूँ। मित्रों! खाओ और पियो।  प्रेमियों! छक कर पिओ।</span> <sup>2</sup><span class='v-txt'>मैं सो रही थी, किन्तु अब जाग रही हूँ।  मैं अपने प्रियतम को सुनती हूँ;  वह खटखटा रहा है।  मेरी बहन, मेरी प्रियतमे!  मेरी कपोती, मेरी अनिन्द्य सुन्दरी!  द्वार खोल दो; क्योंकि मेरा सिर ओस से भींग गया है, मेरे केष रात की आर्द्रता से गीले हो गये हैं।</span> <sup>3</sup><span class='v-txt'>मैं अपनी कुरती उतार चुकी हूँ क्या मैं उसे फिर पहनूँ?  मैं अपने पैर घो चुकी हूँ क्या मैं उन्हें फिर मैला करूँ?</span> <sup>4</sup><span class='v-txt'>मेरा प्रियतम द्वार के छेद से हाथ बढ़ाता है।  मेरा हृदय धड़कने लगा है।</span> <sup>5</sup><span class='v-txt'>मैं अपने प्रियतम के लिए द्वार खोलने उठती हूँ।  मेरे हाथों में गन्धरस टपक रहा है, मेरी अँगुलियों से गीला गन्धरस सिटकिनी की मूठ पर टपक रहा है।</span> <sup>6</sup><span class='v-txt'>मैं अपने प्रियतम के लिए द्वार खोल देती हूँ।  लेकिन मेरा प्रिय चला गया है, वह जा चुका है।  मैं व्याकुल हो जाती हूँ और उसकी खोज में निकलती हूँ; मैं उसे ढूढ़ती हूँ, किन्तु नहीं पाती।  मैं उसे पुकारती हूँ, किन्तु वह उत्तर नहीं देता।</span> <sup>7</sup><span class='v-txt'>नगर का फेरा लगाते हुए पहरेदार मुझे मिलते हैं। चारदीवारी के वे पहरेदार मुझे पीटते हैं, मुझे घायल कर देते हैं।  वे मेरी ओढ़नी छीन लेते हैं।</span> <sup>8</sup><span class='v-txt'>येरूसालेम की पुत्रियों! मैं तुम से विनती करती हूँ: यदि तुम्हें मेरा प्रियतम मिल जाये, तो उसे बता दो कि मैं प्रेम से दुर्बल हो गयी हूँ।</span> <sup>9</sup><span class='v-txt'>सुन्दरी-शिरोमणि! तुम्हारा प्रियतम दूसरों से किन बातों में श्रेष्ठ है?  तुम्हारा प्रियतम दूसरों से किन बातों में श्रेष्ठ है, जो तुम हम से यह आग्रह करती हो?</span> <sup>10</sup><span class='v-txt'>मेरा प्रियतम देदीप्यमान है और उसका रंग गुलाबी है। वह दस हजार में एक है।</span> <sup>11</sup><span class='v-txt'>उसका मस्तक विशुद्ध सोने का है।  उसकी अलकें खजूर के गुच्छे-जैसी और कृष्णकाक के समान काली है।</span> <sup>12</sup><span class='v-txt'>उसकी आँखे जलस्रोतों के तट पर कुण्डों के किनारे पर दूध से धुली कपोतियों के सदृश हैं।</span> <sup>13</sup><span class='v-txt'>उसके कपोल गन्धवृक्षों की क्यारियों के सदृश हैं, जो सुगन्ध बरसाती हैं।  उसके अधर सोसन पुष्प के सदृश हैं, जिन से गन्धरस चूता है।</span> <sup>14</sup><span class='v-txt'>उसकी भुजाएँ स्वर्णमणि-जटिल सोने की छड़ है, उसकी देह नीलमणियों से अलंकृत चिकनाया हुआ हाथीदाँत है।</span> <sup>15</sup><span class='v-txt'>उसके पैर शुद्ध सोने के आधार पर खड़े संगमरमर के खम्भे हैं।  उसका आकार लेबानोन के सदृश, उसके देवदारों के सदृश भव्य है।</span> <sup>16</sup><span class='v-txt'>उसका मुख साक्षात् मधुरता है।  वह सर्वांगसुन्दर है। येरूसालेम की पुत्रियों!  ऐसा ही है मेरा प्रियतम, मेरा सखा ऐसा है।</span> </p>
+        <div class='nav'><a href='026004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='026006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

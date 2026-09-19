@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>राजाओं का दुसरा ग्रन्थ - अध्याय 21</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>राजाओं का दुसरा ग्रन्थ</h1>
+        <h2>अध्याय 21</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब मनस्से राजा बना, तो वह बारह वर्ष का था।  उसने येरूसालेम में पचपन वर्ष शासन किया।  उसकी माता का नाम हेफ़सी-बाह था।</span> <sup>2</sup><span class='v-txt'>मनस्से ने वही किया, जो प्रभु की दृष्टि में बुरा है।  उसने उन राष्ट्रों के घृणित रीति-रिवाजों का अनुकरण किया, जिन्हें प्रभु ने इस्राएलियों के सामने से भगा दिया था।</span> <sup>3</sup><span class='v-txt'>उसने उन पहाड़ी पूजास्थानों को फिर से बनवाया, जिन्हें उसके पिता हिज़कीया ने तुड़वा दिया था।  उसने इस्राएल के राजा अहाब की तरह बाल-देवता की वेदियाँ बनवायीं और अशेरा-देवी का खूँट खड़ा कर दिया।  वह आकाश के नक्षत्रों को दण्डवत् करता और उनकी उपासना करता था।</span> <sup>4</sup><span class='v-txt'>उसने प्रभु के उसी मन्दिर में वेदियाँ बनवायीं, जिसके विषय में प्रभु ने कहा था, &quot;मैं येरूसालेम में अपना नाम प्रतिष्ठित करूँगा&quot;।</span> <sup>5</sup><span class='v-txt'>उसने प्रभु के मन्दिर के दोनों प्रांगणों में नक्षत्रों की वेदियाँ बनवायीं।</span> <sup>6</sup><span class='v-txt'>उसने अपने पुत्र की होम-बलि चढ़ायी।  वह अभिचार और जादू-टोना करता और भूत-प्रेत साधने वालों तथा सगुन विचारने वालों से सम्बन्ध रखता था।  वह वही करता था, जो प्रभु की दृष्टि में बुरा है और उसने प्रभु का क्रोध भड़काया।</span> <sup>7</sup><span class='v-txt'>उसने अशेरा की मूर्ति बनवा कर उसे उस मन्दिर में रखवाया, जिसके विषय में प्रभु ने दाऊद और उसके पुत्र सुलेमान से कहा था, &quot;इस मन्दिर और येरूसालेम में, जिसे मैंने इस्राएल के सभी वंशों में से चुन लिया है, मैं अपना नाम सदा के लिए प्रतिष्ठित करूँगा।</span> <sup>8</sup><span class='v-txt'>और यदि वे मेरी सब आज्ञाओं का पालन करते रहेंगे और मेरे सेवक मूसा द्वारा उन्हें दी गयी सम्पूर्ण संहिता पर चलेंगे, तो मैं इस्राएलियों को उस देश से निर्वासित नहीं करूँगा, जिसे मैंने उनके पूर्वजों को दिया।&quot;</span> <sup>9</sup><span class='v-txt'>परन्तु उन्होंने नहीं सुना।  मनस्से ने उन्हें बहकाया, जिससे उन्होंने उन लोगों से भी अधिक कुकर्म किये, जिन्हें प्रभु ने उनके सामने से भगा दिया था।</span> <sup>10</sup><span class='v-txt'>प्रभु ने अपने सेवक नबियों द्वारा यह चेतावनी दी थी,</span> <sup>11</sup><span class='v-txt'>&quot;चूँकि यूदा के राजा मनस्से ने अत्यन्त घृणित कार्य किये, अपने पहले के सब अमोरियों से भी अधिक घृणित कार्य किये और अपनी देवमूर्तियों द्वारा भी यूदावंशियों से पाप करवाया,</span> <sup>12</sup><span class='v-txt'>इसलिए प्रभु इस्राएल का ईश्वर यह कहता हैः सुनो, मैं येरूसालेम और यूदा पर ऐसी-ऐसी विपत्तियाँ ढाहने वाला हूँ कि जो भी उनके विषय में सुनेगा, वह चकित रह जायेगा।</span> <sup>13</sup><span class='v-txt'>मै येरूसालेम के साथ वही करूँगा, जो मैंने समारिया और अहाब के घराने के साथ किया।  मैं येरूसालेम को वैसे ही रगडूँगा, जैसे कोई एक थाली माँजता है और उसके बाद उसे उलट कर रख देता है।</span> <sup>14</sup><span class='v-txt'>मैं अपने दायभाग के शेष लोगों का परित्याग करूँगा और उन्हें उनके शत्रुओं के हाथ दूँगा।  वे अपने शत्रुओं का शिकार बन कर लुट जायेंगे;</span> <sup>15</sup><span class='v-txt'>क्योंकि उन्होंने वहीं किया है, जो प्रभु की दृष्टि में बुरा है और जिस दिन से उनके पूर्वज मिस्र से निकल कर आये थे, वे उस दिन से आज तक मेरा क्रोध भड़काते रहे हैं।&quot;</span> <sup>16</sup><span class='v-txt'>मनस्से ने न केवल यूदा से पाप करवाया, जिससे वे वही करते रहे, जो प्रभु की दृष्टि में बुरा है, बल्कि उसने इतना निर्दोष रक्त बहाया कि उस से सारा येरूसालेम एक छोर से दूसरे छोर तक भर गया।</span> <sup>17</sup><span class='v-txt'>मनस्से का शेष इतिहास, उसके कार्य-कलाप और उसके सारे पापकर्मों का वर्णन यूदा के राजाओं के इतिहास-ग्रन्थ में लिखा है।</span> <sup>18</sup><span class='v-txt'>मनस्से अपने पितरों से जा मिला और अपने महल के बगीचे मे दफ़नाया गया।  उसका पुत्र आमोन उसकी जगह राजा बना।</span> <sup>19</sup><span class='v-txt'>जब आमोन राजा बना, तो वह बाईस वर्ष का था।  उसने येरूसालेम में दो वर्ष तक शासन किया।  उसकी माता का नाम मषुल्लेमेत था।  वह योटबावासी हारूस की पुत्री थी।</span> <sup>20</sup><span class='v-txt'>आमोन ने अपने पिता मनस्से की तरह वही किया, जो प्रभु की दृष्टि में बुरा है।</span> <sup>21</sup><span class='v-txt'>उसने अपने पिता के सब कर्मो का अनुसरण किया।  वह उन देवमूर्तियों की पूजा और दण्डवत् करता था, जिनकी उपासना उसके पिता ने की थी।</span> <sup>22</sup><span class='v-txt'>उसने प्रभु, अपने पूर्वजों के ईश्वर का परित्याग किया और वह प्रभु के मार्ग पर नहीं चलता था।</span> <sup>23</sup><span class='v-txt'>आमोन के सेवकों ने उसके विरुद्ध षड्यन्त्र रचा और राजा को उसके महल में ही मार डाला।</span> <sup>24</sup><span class='v-txt'>फिर देश की जनता ने उन सब को मार डाला, जिन्होंने राजा आमोन के विरुद्ध षड्यन्त्र रचा था और उसके स्थान पर उसके पुत्र योषीया को राजा बनाया।</span> <sup>25</sup><span class='v-txt'>आमोन का शेष इतिहास और उसका कार्यकलाप यूदा के राजाओं के इतिहास-ग्रन्थ में लिखा है।</span> <sup>26</sup><span class='v-txt'>वह उज़्ज़ा के बगीचे में अपनी क़ब्र में दफ़नाया गया। उसका पुत्र योषीया उसकी जगह राजा बना।</span> </p>
+        <div class='nav'><a href='012020.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='012022.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

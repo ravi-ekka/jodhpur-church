@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 26</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 26</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ग्यारहवें वर्ष, महीने के पहले दिन मुझे प्रभु की वाणी यह कहते सुनाई पड़ीः</span> <sup>2</sup><span class='v-txt'>“मानवपुत्र! तीरुस ने येरूसालेम के विषय में यह कहा था: ’अह! राष्ट्रों का यह प्रवेशद्वार टूट गया है; इसके फाटक मेरे लिए खुले गये हैं।  मैं सम्पन्न हो जाऊँगा; अब यह उजड़ गया है।’</span> <sup>3</sup><span class='v-txt'>इसलिए प्रभु-ईश्वर यह कहता हैः तीरुस! मैं तुम्हारे विरुद्ध हो गया हूँ और मैं तुम्हारे विरुद्ध राष्ट्रों को उमडने दूँगा, जिस तरह समुद्र अपनी लहरों को उमड़ने देता है।</span> <sup>4</sup><span class='v-txt'>वे तीरुस की दीवारें ढा देंगे और उसकी मीनारें गिरा देंगे।  मैं उनकी धूल बुहारूँगा और उसे नंगी चट्टान बना डालूँगा।</span> <sup>5</sup><span class='v-txt'>वह समुद्र में जाल सुखाने का स्नान बन कर रह जायेगा; क्योंकि यह मैंने कहा है- यह प्रभु-ईश्वर की वाणी है।  वह राष्ट्रों के लिए लूट का माल बन जायेगा।</span> <sup>6</sup><span class='v-txt'>और मुख्य भूमि पर उसकी पुत्रियाँ तलवार के घाट उतारी जायेंगी।  वे तभी यह समझेंगे कि मैं ही प्रभु हूँ।</span> <sup>7</sup><span class='v-txt'>“यह प्रभु-ईश्वर का कहना हैः मैं तीरुस पर उत्तर दिशा से बाबुल के राजा, राजाधिराज, नबूकदनेज़र द्वारा घुड़सवारों, घोडों और रथों, बहुत-से सैनिकों और जनसमूह के साथ आक्रमण कराऊँगा।</span> <sup>8</sup><span class='v-txt'>वह मुख्यभूमि में तुम्हारी पुत्रियों को तलवार के घाट उतारेगा।  वह तुम्हारे विरुद्ध मोरचाबन्दी करेगा; वह तुम्हारे विरुद्ध टीले बनायेगा और ढालों का आवरण बनायेगा।</span> <sup>9</sup><span class='v-txt'>वह तुम्हारी चारदीवारी पर युद्धयंत्रों से आघात करेगा और अपनी कुल्हाड़ियों से तुम्हारी मीनारें गिरा देगा।</span> <sup>10</sup><span class='v-txt'>उसके घोड़ों की संख्या इतनी विशाल होगी कि उनकी धूल तुम को ढक लेगी।  अश्वारोहियों, रथों और पहियों के कोलाहल से तुम्हारी दीवारें काँपने लगेंगी, जब वह तुम्हारे फाटकों में प्रवेश करेगा, जैसे कोई दरार किये हुए नगर में प्रवेश करता है।</span> <sup>11</sup><span class='v-txt'>वह अपने घोड़ों की टापों से तुम्हारे सभी मार्ग रौंद डालेगा।  वह तुम्हारे निवासियों को तलवार से वध से करेगा और तुम्हारे विशाल स्तम्भ धरती पर लोट जायेंगे।</span> <sup>12</sup><span class='v-txt'>वे तुम्हारे सम्पत्ति लूट लेंगे और तुम्हारी व्यापार-सामग्री छीन लेंगे।  वे तुम्हारी दीवारें नीचे गिरायेंगे और तुम्हारे सुखद घरों को नष्ट कर देंगे।  वे तुम्हारे पत्थर, धरन और खँडहर समुद्र में फेंक देंगे।</span> <sup>13</sup><span class='v-txt'>मैं तुम्हारे गीतों का कोलाहल बन्द कर दूँगा और तुम्हारी सारंगियों का स्वर फिर कभी नहीं सुनाई पडे़गा।</span> <sup>14</sup><span class='v-txt'>मैं तुम को एक नंगी चट्टान बना दूगा; तुम जाल सुखाने का स्थान बन जाओगे; तुम्हारा फिर पुनर्निर्माण नहीं होगा; क्योंकि यह मैंने कहा है- यह प्रभु-ईश्वर की वाणी है।</span> <sup>15</sup><span class='v-txt'>“प्रभु-ईश्वर तीरुस से यह कहता हैः क्या तुम्हारे गिरने की आवाज से, जब घायल कराहेंगे, जब तुम्हारे यहाँ मारकाट मचेगी, समुद्रतट के देश नहीं काँप उठेंगे?</span> <sup>16</sup><span class='v-txt'>तब समुद्र के सभी शासक अपने सिंहासनों से उतर आयेंगे, अपने परिधान उतार देंगे और अपने बेलबूटेदार वस्त्र खोल देंगे।  वे आतंक का वस्त्र पहनेंगे।  वे भूमि पर बैठ कर हर क्षण काँपते रहेंगे और तुम को देख कर भयभीत हो जायेंगे।</span> <sup>17</sup><span class='v-txt'>वे तुम्होरे विषय में शोकगीत गाते हुए कहेंगेः समुद्र के बीच से तुम्हारा कैसे लोप हो गया, ओ प्रसिद्ध नगर!  जो समुदप्रर महाबली थे, तुम और तुम्हारे निवासी, जिन्होंने समस्त मुख्यभूमि पर अपना आतंक फैलाया था।</span> <sup>18</sup><span class='v-txt'>अब तुम्हारे पतन के लिए द्वीप काँपते हैं; समुद्र के द्वीप तुम्हारे प्रस्थान पर विस्मित हैं।</span> <sup>19</sup><span class='v-txt'>“क्योंकि प्रभु-ईश्वर यह कहता हैः जब मैं तुम्हें एक उजाड़ नगर बनाऊँगा, उन नगरों के सदृश, जिन में कोई नहीं रहता; जब मैं तुम पर समुद्र को उमड़ने दूँगा और विशाल जलराशि तुम्हें ढक लेगी,</span> <sup>20</sup><span class='v-txt'>तब मैं तुम को उन लोगों के साथ नीचे ढकेल दूँगा, जो गर्त में उतरते हैं - पुरातन लोगों के पास; मैं तुम को अधोलोक में आदिम खँडहरों के बीच उन लोगों के साथ रहने के लिए विवश करूँगा, जो गर्त में उतरते हैं, जिससे न तो तुम में कोई निवास करेंगा  और न जीवितों के लोक में तुम्हें फिर स्थान मिल सकेगा।</span> <sup>21</sup><span class='v-txt'>मैं तुम्हें आतंक का पात्र बना दूँगा और तुम्हारा पता तक न चलेगा।  ढूँढ़ने पर भी कोई तुम्हें फिर कभी न पायेगा।  यह प्रभु-ईश्वर की वाणी है।“</span> </p>
+        <div class='nav'><a href='033025.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033027.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

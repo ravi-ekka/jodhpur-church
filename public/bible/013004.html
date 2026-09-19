@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>पहला इतिहास ग्रन्थ - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>पहला इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यूदा के पुत्रः पेरेस, हेस्रोन, करमी, हूर और शोबाल।</span> <sup>2</sup><span class='v-txt'>शोबाल का पुत्र रआया यहत का पिता था, यहत अहूमय और लाहद का पिता था।  सोरआतियों के वंशज यही हैं।</span> <sup>3</sup><span class='v-txt'>एटाम के पुत्रः यिज्ऱएल, यिशमा और यिदबाश।  उनकी बहन का नाम हस्सलेलपोनी था।</span> <sup>4</sup><span class='v-txt'>पनूएल गदोर का और एजे़र हूशा का पिता था।  बेथलेहेम के पिता और एफ्ऱाता के पहलौठे हूर के पुत्र यही थे।</span> <sup>5</sup><span class='v-txt'>तकोआ के पिता अशहूर की दो पत्नियाँ थीं: हेलआ और नारा।</span> <sup>6</sup><span class='v-txt'>उसके नारा से अहुज्ज़ाम, हेफ़ेर, तेमनी और अहश्तारी  उत्पन्न हुए।  ये नारा के वंशज थे।</span> <sup>7</sup><span class='v-txt'>हेलआ के पुत्रः सेरेल, सीहर, एतनान</span> <sup>8</sup><span class='v-txt'>और कोश, जो अनूब और सोबेबाह का पिता था और हारूम के पुत्र अहरहेल के वंशों का मूल पुरुश था।</span> <sup>9</sup><span class='v-txt'>याबेस अपने भाइयों से अधिक सम्मानित था।  उसकी माँ ने उसका नाम याबेस रखा था, क्योंकि वह कहती थी, &quot;कष्ट सहते हुए मैंने इसे जन्म दिया&quot;।</span> <sup>10</sup><span class='v-txt'>याबेस ने इस्राएल के ईश्वर से इस प्रकार प्रार्थना की, &quot;कृपा कर मुझे आशीर्वाद दे, मेरा-क्षेत्र बढ़ा दे, मेरा साथ दे कर मुझे विपत्तियों से बचा, जिससे मुझे दुःख न हो&quot;। ईश्वर ने उसकी प्रार्थना स्वीकार की।</span> <sup>11</sup><span class='v-txt'>शूहा का भाई कलूब महीर का पिता था और वह, एश्तोन का।</span> <sup>12</sup><span class='v-txt'>एश्तोन बेत-राफ़ा, पासेअह और ईर-नाहाश के पिता तहिन्ना का पिता था।  ये रेका के रहने वाले थे।</span> <sup>13</sup><span class='v-txt'>कनज़ के पुत्रः ओतनीएल और सराया।  ओतनीएल के पुत्रः हतत और मओेनोतय।</span> <sup>14</sup><span class='v-txt'>मओनोतय ओफ्ऱा का पिता था और सराया योआब का पिता था।  योआब ‘गे हराशम’ (कारीगरों की घाटी) का मूल पुरुश था, क्योंकि उनके वंशज कारीगर थे।</span> <sup>15</sup><span class='v-txt'>यफुत्रे के बेटे कालेब के पुत्रः ईरू, एला और नाअम।  एला का पुत्र कनज़।</span> <sup>16</sup><span class='v-txt'>यहल्ललेएल के पुत्रः ज़ीफ़, ज़ीफ़ा, तीर्या और असरएल।</span> <sup>17</sup><span class='v-txt'>(17-18) एज्ऱा के पुत्रः येतेर, मेरेद, एफ़ेर और यालोन। मेरेद ने फ़िराउन की पुत्री बित्या के साथ विवाह किया था।  उसकी सन्तान ये हैं: उसने मिरयाम, शम्मय और एश्तमोआ के पिता यिशबह को जन्म दिया।  उसकी यहूदी पत्नी ने गदोर के पिता येरेद, सोको के पिता हेवेर और ज़नोअह के पिता यकूतीएल को जन्म दिया।</span> <sup>19</sup><span class='v-txt'>नहम की बहन, होदीया की पत्नी के पुत्रः गरमी कईला का पिता और माकाती एश्तमोआ।</span> <sup>20</sup><span class='v-txt'>शीमोन के पुत्रः अम्नोन, रिन्ना, बेन-हानान और तीलोन। यिशई के पुत्रः ज़ोहेत और बेन-ज़ोहेत।</span> <sup>21</sup><span class='v-txt'>यूदा के बेटे शेला के पुत्रः लेका का पिता एर, मारेशा का पिता लादा।  मारेशा बेत-अशबेआ के निवासी छालटी कपड़े बुनने वालों का मूल पुरुश था।</span> <sup>22</sup><span class='v-txt'>फिर योकीम, कोज़ेबा के निवासी, योआश और साराफ़, जो मोआब में शासन करने के बाद लेहेम लौट आये। (ये पुरानी बातें हैं।)</span> <sup>23</sup><span class='v-txt'>ये कुम्हार थे और नटाईम और गदेरा के निवासी थे।  ये वहाँ राजा की सेवा करते रहते थे।</span> <sup>24</sup><span class='v-txt'>सिमओन के पुत्रः नमूएल, यामीन, यारीब, ज़ेरह, शौल।</span> <sup>25</sup><span class='v-txt'>शल्लूम शौल का पुत्र था, मिबसाम शल्लूम का पुत्र था, मिशमा मिबसाम का पुत्र था।</span> <sup>26</sup><span class='v-txt'>मिशमा के वंशजः उसका पुत्र हम्मूएल, हम्मूएल का पुत्र ज़क्कूर और हम्मूएल का पुत्र शिमई।</span> <sup>27</sup><span class='v-txt'>शिमई के सोलह पुत्र और छः पुत्रियाँ थीं।  न तो उसके भाइयों के पुत्रों की संख्या अधिक थी और न उनका सारा कुल यूदावंशियों की तरह बहुसंख्यक था।</span> <sup>28</sup><span class='v-txt'>वे बएर-शेबा, मोलादा, हसर-शूआल,</span> <sup>29</sup><span class='v-txt'>बिल्हा, एसेम और तोलाद,</span> <sup>30</sup><span class='v-txt'>बतूएल, होरमा, सिकलग,</span> <sup>31</sup><span class='v-txt'>बेत-मरकाबोत, हसर-सूसीम, बेत-बिरई और शआरईम में निवास करते थे।  दाऊद के शासनकाल तक उनके निवासस्थान यही थे</span> <sup>32</sup><span class='v-txt'>और उनके गाँवः एताम, ऐन-रिम्मोन तोकेन और आशान-कुल मिला कर पाँच नगर</span> <sup>33</sup><span class='v-txt'>और बाल तक उनके आसपास के सब गाँव।  यही उनके निवास स्थान थे और उनके पास वंशावली भी थी।</span> <sup>34</sup><span class='v-txt'>मशोबाब, यमलेक, अमस्या का पुत्र योशा,</span> <sup>35</sup><span class='v-txt'>योएल, योशिब्या का पुत्र येहू, जो सराया का पोता और असीएल का परपोता था,</span> <sup>36</sup><span class='v-txt'>एलयोएनय, याकोबा, यशाहाया, असाया, अदीएल, यसीमिएल, बनाया</span> <sup>37</sup><span class='v-txt'>और शिफई का पुत्र ज़ीज़ा जो अल्लोन का, अल्लोन जो यदाया का, यदाया जो शिम्री का और शिम्री जो शमाया का पुत्र था।</span> <sup>38</sup><span class='v-txt'>जिन व्यक्तियों के नाम ऊपर लिखे गये हैं, वे अपने-अपने कुलों के मुखिया थे और उनके परिवारों की संख्या बढ़ती गयी।</span> <sup>39</sup><span class='v-txt'>इसलिए वे घाटी के पूर्व गदोरा तक अपने झुण्डों के लिए चरागाह ढूँढने गये।</span> <sup>40</sup><span class='v-txt'>वहाँ उन्हें उपजाऊ और अच्छे चरागाह मिले।  देश विस्तृत, शान्त और हरा-भरा था।  हाम के वंशज वहाँ पहले निवास करते थे।</span> <sup>41</sup><span class='v-txt'>ऊपर जिनके नाम लिखे गये हैं, उन्होंने यूदा के राजा हिज़कीया के राज्यकाल में वहाँ जा कर हामियों तथा वहाँ रहने वाले मऊनियों के तम्बुओं और घरों को गिराया और उनका पूरा संहार किया।(आज तक उनका यही हाल है) वे उनके स्थान पर वहीं बस गये, क्योंकि वहाँ उनके झुण्डों के लिए चरागाह थे।</span> <sup>42</sup><span class='v-txt'>उन सिमओनवंशियों में पाँच सौ आदमी सेईर के पहाड़ी प्रदेश में घुस पड़े।  यिशई के पुत्र पलट्या, नअर्या, न अर्या, रफ़ाया और उज़्ज़ीएल उनके नेता थे।</span> <sup>43</sup><span class='v-txt'>वे शेष अमालेकियों को पराजित कर वहाँ बसने लगे।  वे आज तक वहाँ बसे हुए हैं।</span> </p>
+        <div class='nav'><a href='013003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='013005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>ओबद्याह - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>ओबद्याह</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ओबद्याह के दर्शन! एदोम के विषय में प्रभु-ईश्वर यह कहता है: प्रभु-ईश्वर से सन्देश प्राप्त कर हमने राष्ट्रों को यह कहला भेजाः &quot;उठो, युद्ध के लिए तैयार हो जाओ।  एदोम से युद्ध करो।&quot;</span> <sup>2</sup><span class='v-txt'>देखो, राष्ट्रों के बीच में तुम्हें छोटा और तिरस्कृत बना दूँगा।</span> <sup>3</sup><span class='v-txt'>तुम्हारे हृदय के अहंकार ने तुम को धोखा दिया है।  तुम पहाडी कन्दराओं में छिप कर रहते हो, और पर्वत-शिखरों पर अपने बसेरे बना कर मन ही मन यह कहते हो, &quot;भला कोई मुझे पछाड देगा&quot;</span> <sup>4</sup><span class='v-txt'>भले ही तुम गरुड़ की तरह ऊँची उडानें क्या न भरो, या तारों में अपना नीड़ क्यों न बनाओ, मैं तुम को भूमि पर चित्त गिरा दूँगा।  यह प्रभु की वाणी है।</span> <sup>5</sup><span class='v-txt'>यदि चोर या डाकू रात को आते, तो क्या वे मनचाही चीजें ही न ले जाते?  और यदि अंगूर बीनने वाले आते, तो क्या वे कुछ अंगूर छोड भी न देते?</span> <sup>6</sup><span class='v-txt'>किन्तु एसाव कैसे लुट गया है, उसके छिपे खजाने की कैसी लूटपाट हो गयी है!</span> <sup>7</sup><span class='v-txt'>तुम्हारे सब मित्र राजाओं ने तुम को धोखा दिया है; उन्होंने तुम को सीमा तक खदेड दिया है; जो तुम से मिले थे, वे तुम को ठग गये हैं; जो तुम्हारे साथ एक ही थाली में भोजन करते थे, उन्होंने तुम को गिराने के लिए फन्दा बिछा दिया है।  वे तो तुम को बुद्धू समझते हैं।</span> <sup>8</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता हैः क्या उसी दिन मैं एदोम के सब विद्वानों का नाश न करूँगा और एसाव के पर्वत पर लोगों की बुद्धि भ्रष्ट न करूँगा।</span> <sup>9</sup><span class='v-txt'>तेमान! तुम्हारे वीर योद्धा सन्न रह जायेंगे और फलतः एसाव के पर्वत पर सब-के-सब तलवार के घाट उतारे जायेंगे।</span> <sup>10</sup><span class='v-txt'>तुमने अपने भाई याकूब के साथ हिंसात्मक व्यवहार किया था, इसलिए तुम को लज्जा से सिर झुकाना पडेगा और सत्यानाश सहना पडेगा।</span> <sup>11</sup><span class='v-txt'>जिस दिन विदेशी तुम्हारे भाई की सम्पत्ति लूट कर ले गये, जिस दिन विदेशी सैनिकों ने येरूसालेम के द्वारों से घुस कर उस पर चिट्ठियाँ डाली थी, तब तुम अलग खडे रहे, जैसे तुम भी उन्हीं में थे।</span> <sup>12</sup><span class='v-txt'>तुम को तुम्हारे अपने भाई की दुर्दशा से उसके दुर्दिनों में आनन्दित नहीं होना चाहिए।  तुम को यूदा के विनाश के दिन उसके लोगों की बुरी हालत देख कर खुशी नहीं मनानी चाहिए; विपत्ति काल में डींग मारना तुम्हारे लिए शोभानीय नहीं है।</span> <sup>13</sup><span class='v-txt'>मेरी प्रजा की आपदा में तुम को उसके द्वारों में प्रवेश नहीं करना चाहिए, न ही ऐसे समय में उसके विनाश से तुम को आनन्दित होना चाहिए।  विपत्ति के दिन तुम को उसका धन-माल नहीं लूटना चाहिए।</span> <sup>14</sup><span class='v-txt'>भागने वालों को चैंकों पर छेंक कर नहीं मार डालना चाहिए; न ही, जो जीवित बच जाते हैं, उन को अपने शत्रु के हाथों सौंपना चाहिए।</span> <sup>15</sup><span class='v-txt'>प्रभु का दिन सब राष्ट्रों पर टूट पडेगा और तुम्हारे साथ वैसा ही व्यवहार किया जायेगा, जैसा तुमने दूसरों के साथ किया था; तुम्हारी करतूतों का बदला तुम्हारे सिर मढ़ा जायेगा।</span> <sup>16</sup><span class='v-txt'>इस्राएल! जैसे तुम मेरे पवित्र पर्वत पर मेरे कोपभाजन बन गये, वैसे ही तुम्हारे चारों ओर के राष्ट्र भी बनेंगे।  उन पर मेरा क्रोध ऐसा जलेगा कि वे लडखडा कर गिरेंगे; उनका नामोनिशान नहीं रहेगा।</span> <sup>17</sup><span class='v-txt'>परन्तु सियोन पर्वत पर कुछ लोग जीवित बचे रहेंगे; वह पवित्र है।  याकूब का घराना उन को निकाल देगा, जिन्होंने उसका अधिकार छीन लिया था।</span> <sup>18</sup><span class='v-txt'>याकूब का घराना आग होगा, यूसुफ़ का घराना उसकी ज्वाला; एसाव का घराना खूँटी होगा, जो आग में जल कर भस्म हो जायेगा और एसाव के घराने से कोई नहीं बचेगा।  यह प्रभु की वाणी है।</span> <sup>19</sup><span class='v-txt'>वे नेगेब प्रदेश पर, एसाव के पर्वत पर और फिलिस्तियों के शफेलाह प्रदेश पर कब्ज़ा करेंगे; वे एफ्राईम और समारिया के प्रदेश पर भी कब्ज़ा करेंगे; और बेनयामिया गिलआद प्रदेश पर अधिकार करेगा।</span> <sup>20</sup><span class='v-txt'>इस्राएल के निर्वासित पुत्रों की सेना सरेप्ता तक कनान देश पर अधिकार करेगी और सफ़रद में येरूसालेम के निर्वासित लोग नेगेब के नगरों पर कब्जा करेंगे।</span> <sup>21</sup><span class='v-txt'>जो जीवित बच गये, वे सियोन पर्वत पर चढ़ कर एसाव के पर्वत पर विजयी होंगे और प्रभुसत्ता प्रभु-ईश्वर की ही बनी रहेगी।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

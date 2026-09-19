@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>बारूक - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>बारूक</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रज्ञा यह है- ईश्वर की आज्ञाओं का ग्रन्थ, वह संहिता, जो सदा बनी रहेगी।  जो उसका पालन करेगा, वह जीता रहेगा; जो उसे छोड़ देगा, वह मर जायेगा।</span> <sup>2</sup><span class='v-txt'>याकूब! लौट कर उसे ग्रहण करो, उसके प्रकाश में महिमा की ओर आगे बढ़ो।</span> <sup>3</sup><span class='v-txt'>न तो दूसरों को अपना गौरव दो और न विदेशियों को अपना विशेष अधिकार।</span> <sup>4</sup><span class='v-txt'>इस्राएल! हम कितने सौभाग्यशाली है!  ईश्वर की इच्छा हम पर प्रकट की गयी है।</span> <sup>5</sup><span class='v-txt'>मेरी प्रजा! ढारस रखो।  तुम इस्राएल का नाम बनाये रखती हो।</span> <sup>6</sup><span class='v-txt'>तुम विनाश के लिए गैर-यहूदियों के हाथ नहीं बिकी हो।  तुमने ईश्वर का क्रोध भड़काया था, इसलिए तुम अपने शत्रुओं के हवाले कर दी गयी।</span> <sup>7</sup><span class='v-txt'>तुमने अपने सृष्टिकर्ता को अप्रसन्न किया; क्योंकि तुमने ईश्वर को नहीं बल्कि देवताओं को बलि चढ़ायी थी।</span> <sup>8</sup><span class='v-txt'>तुमने शाश्वत ईश्वर को भुला दिया, जो तुम्हें भोजन दिया करता था।  तुमने येरूसालेम को दुःख पहुँचाया, जिसने तुम्हारा पालन किया है।</span> <sup>9</sup><span class='v-txt'>येरूसालेम ने ईश्वर का क्रोध तुम पर आते देखा और कहा, “सियोन की पड़ोसिनो!  मेरी बात सुनो!  ईश्वर ने मुझ पर बड़ा शोक भेजा।</span> <sup>10</sup><span class='v-txt'>मैंने देखा कि शाश्वत ईश्वर ने मेरे पुत्र-पुत्रियों को बन्दी बना कर निर्वासित किया है।</span> <sup>11</sup><span class='v-txt'>मैंने आनन्दित हो कर उनका पालन-पोषण किया, किन्तु मैंने उन को आँसू बहाते हुए और दुःखी हो कर जाते हुए देखा।</span> <sup>12</sup><span class='v-txt'>मैं विधवा तथा सब से परित्यक्ता हूँ- कोई मेरा उपहास न करे।  मैं अपनी प्रजा के पापों के कारण अकेली रह गयी हूँ, क्योंकि उसने ईश्वर की संहिता का मार्ग छोड़ दिया है।</span> <sup>13</sup><span class='v-txt'>उसने उसके आदेशों का तिरस्कार किया, वह प्रभु की आज्ञाओं के मार्ग पर नहीं चली और वह उसकी धार्मिकता के अनुरूप उसकी शिक्षा के मार्ग पर नहीं चली।</span> <sup>14</sup><span class='v-txt'>“सियोन की पड़ोसिनो! आओ। उस निर्वासन को याद रखो, जिसके द्वारा शाश्वत ईश्वर ने मेरे पुत्र-पुत्रियों को दण्डित किया।</span> <sup>15</sup><span class='v-txt'>उसने एक दूरवर्ती राष्ट्र को उसके विरुद्ध भेजा, एक दुष्ट राष्ट्र को, जिसकी भाषा अबोधगम्य थी; एक ऐसे राष्ट्र को, जिसे न तो बूढ़ों के प्रति श्रद्धा थी और न बच्चों के प्रति कोई दया।</span> <sup>16</sup><span class='v-txt'>वह विधवा के प्रिय पुत्रों को ले गया, उसने उसे उसकी पुत्रियों से वंचित कर उसे अकेली ही छोड़ दिया।</span> <sup>17</sup><span class='v-txt'>“मैं कैसे तुम्हारी सहायता कर सकती थी?</span> <sup>18</sup><span class='v-txt'>जिसने तुम पर ये विपत्तियाँ ढाहीं, वही तुम को अपने शत्रुओं के हाथ से छुड़ायेगा।</span> <sup>19</sup><span class='v-txt'>तुम जाओ, मेरे बच्चो! जाओ! मैं परित्यक्ता अकेली ही रह गयी हूँ।</span> <sup>20</sup><span class='v-txt'>मैंने शान्ति का वस्त्र उतार कर प्रायश्चित और प्रार्थना का टाट पहन लिया।  मैं जीवन भर शाश्वत प्रभु को पुकारती रहूँगी।</span> <sup>21</sup><span class='v-txt'>“मेरे बच्चों! ढारस रखो, ईश्वर की दुहाई दो; वह तुम को ंिहंसा से, शत्रु के हाथ से छुड़ायेगा।</span> <sup>22</sup><span class='v-txt'>मुझे शाश्वत ईश्वर से तुम्हारे उद्धार का भरोसा है।  परमपावन ईश्वर ने मुझे आनन्द प्रदान किया।  तुम्हारा उद्धारक, शाश्वत ईश्वर शीघ्र ही तुम पर दया करेगा।</span> <sup>23</sup><span class='v-txt'>जब मैंने तुम को जाते हुए देखा, तो मैं दुःखी हो कर रोती थी; किन्तु ईश्वर तुम को मेरे पास लौटायेगा और मैं सदा के लिए आनन्दित और उल्लसित होऊँगी।</span> <sup>24</sup><span class='v-txt'>सियोन की पडोसिनें अब तुम्हारा निर्वासन देखती हैं, किन्तु वे शीघ्र ही तुम्हारे ईश्वर का भेजा हुआ उद्धार देखेंगी।  वह उद्धार तुम को शाश्वत ईश्वर की महिमा और गौरव के साथ प्राप्त होगा।</span> <sup>25</sup><span class='v-txt'>“मेरे बच्चों! ईश्वर का भेजा हुआ प्रकोप धैर्य के साथ सहन करो।  जिन्होंने तुम पर अत्याचार किया, तुम शीघ्र उनका विनाश देखोगे और तुम उनकी गर्दन पर पैर रखोगे।</span> <sup>26</sup><span class='v-txt'>मेरे बिगड़े हुए बच्चों को ऊबड़-खाबड़ मार्गों पर भटकना पड़ा।  वे शत्रुओं द्वारा लूटे रेवड़ की तरह ले जाये गये।</span> <sup>27</sup><span class='v-txt'>मेरे बच्चों! ढारस रखो।  ईश्वर की दुहाई दो; क्योंकि जिसने यह सब तुम पर आने दिया, वही तुमहारी सुध लेगा।</span> <sup>28</sup><span class='v-txt'>तुमने पहले ईश्वर से दूर हो जाने की बात सोची थी।  अब दस गुने उत्साह से उसके पास लौटने की चेष्टा करो;</span> <sup>29</sup><span class='v-txt'>क्योंकि जिसने तुम पर इन विपत्तियों को आने दिया, वही तुमहारा उद्धार कर तुम्हें अनन्त आनन्द प्रदान करेगा।“</span> <sup>30</sup><span class='v-txt'>येरूसालेम! ढारस रख।  जिसने तेरा नाम रखा, वह तुझे सान्त्वना देगा।</span> <sup>31</sup><span class='v-txt'>उन लोगों पर शोक, जिन्होंने तुम पर अत्याचार किया और मेरे पतन पर आनन्द मनाया!</span> <sup>32</sup><span class='v-txt'>उन नगरों पर शोक, जहाँ तेरी सन्तति दास थी!  उस नगर पर शोक, जिसने तेरे पुत्रों को कैद में रखा!</span> <sup>33</sup><span class='v-txt'>उसने तेर पतन पर आनन्द मनाया, वह तेरे विनाश पर प्रसन्न हुआ, किन्तु वह अपने उजाड़ पर शोक मनायेगा।</span> <sup>34</sup><span class='v-txt'>मैं उसके बहुसंख्यक निवासियों का उल्लास मिटा दूँगा।  उसका घमण्ड दुःख में बदल जायेगा;</span> <sup>35</sup><span class='v-txt'>क्योंकि शाश्वत ईश्वर बहुत दिनों तक उस पर आग बरसायेगा और वह बहुत समय तक भूतों का डेरा बना रहेगा।</span> <sup>36</sup><span class='v-txt'>येरूसालेम! पूर्व की ओर दृष्टि डाल और वह आनन्द देख, जो ईश्वर की ओर से तेरे पास आ रहा है!</span> <sup>37</sup><span class='v-txt'>तेरे पुत्र, जिन को तूने जाने दिया, अब आ रहे हैं।  तेरे पुत्र ईश्वर की महिमा पर आनन्द मनाते हुए परमपावन के वचन पर पूर्व और पश्चिम से तेरे पास आ रहे हैं।</span> </p>
+        <div class='nav'><a href='032003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='032005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

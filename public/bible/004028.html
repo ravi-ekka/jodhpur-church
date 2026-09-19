@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 28</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 28</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;इस्राएलियों को यह आदेश दो : इसका ध्यान रखो कि तुम निर्धारित समय पर मुझे होम-बलियों के साथ अन्न-बलि चढ़ाया करो। वह एक सुगन्धयुक्त चढ़ावा है, जो मुझे प्रिय है।</span> <sup>3</sup><span class='v-txt'>&#039;&#039;उन से यह कहो : तुम प्रभु को नित्य प्रति होम-बलि के रूप में एक-एक वर्ष के दो अदोष मेमने चढ़ाओगे।</span> <sup>4</sup><span class='v-txt'>एक मेमना सबेरे चढ़ाओगे और दूसरा शाम को,</span> <sup>5</sup><span class='v-txt'>उसके साथ अन्न-बलि के रूप में एक सेर जैतून के तेल से सना हुआ एक सेर मैदा।</span> <sup>6</sup><span class='v-txt'>यह नित्यप्रति प्रभु को अर्पित होम-बलि है, जो सीनई पर्वत पर निश्चित की गयी है। यह एक सुगन्धयुक्त चढ़ावा है, जो प्रभु को प्रिय है।</span> <sup>7</sup><span class='v-txt'>प्रत्येक मेमने के साथ एक सेर अंगूरी का अर्घ अर्पित किया जाये।</span> <sup>8</sup><span class='v-txt'>दूसरा मेमना शाम को चढ़ाओगे और उसके साथ सबेरे की तरह वही अन्न-बलि और अर्घ। यह होम-बलि है, एक सुगन्धयुक्त चढ़ावा, जो प्रभु को प्रिय है।</span> <sup>9</sup><span class='v-txt'>तुम विश्राम दिवस पर एक-एक वर्ष के दो अदोष मेमने चढ़ाओगे - उनके साथ अन्न-बलि के रूप में तेल से सना हुआ चार सेर मैदा और अर्घ।</span> <sup>10</sup><span class='v-txt'>यह दैनिक होम-बलि और अर्घ के अतिरिक्त प्रत्येक विश्राम-दिवस की होम-बलि है।</span> <sup>11</sup><span class='v-txt'>तुम हर अमावस प्रभु को यह होम-बलि चढ़ाओगे : दो बछड़े, एक मेढा और एक-एक वर्ष के सात अदोष मेमने,</span> <sup>12</sup><span class='v-txt'>और प्रत्येक बछड़े के साथ अन्न-बलि के रूप में तेल से सना हुआ छः सेर मैदा; मेढे के साथ अन्न-बलि के रूप में तेल से सना हुआ चार सेर मैदा;</span> <sup>13</sup><span class='v-txt'>प्रत्येक मेमने के साथ अन्न-बलि के रूप में तेल से सना हुआ दो सेर मैदा। यह होम-बलि है, एक सुगनधयुक्त चढ़ावा, जो प्रभु को प्रिय है।</span> <sup>14</sup><span class='v-txt'>बछड़े के साथ अर्घ के रूप में दो सेर अंगूरी अर्पित की जाये, मेढे के साथ सवा सेर और मेमने के साथ एक सेर। यह मासिक होम-बलि है, जो वर्ष के प्रत्येक महीने के पहले दिन अर्पित की जाये।</span> <sup>15</sup><span class='v-txt'>दैनिक होम-बलि और अर्घ के अतिरिक्त प्रायश्चित-बलि के रूप में प्रभु को एक बकरा चढ़ाया जाये।</span> <sup>16</sup><span class='v-txt'>&#039;&#039;पहले महीने के चौदहवें दिन प्रभु के लिए पास्का-पर्व मनाया जाये।</span> <sup>17</sup><span class='v-txt'>इसी महीने के पन्द्रहवें दिन भी पर्व मनाया जाये, जिसमें सात दिन तक बेख़मीर रोटियाँ खायी जायें।</span> <sup>18</sup><span class='v-txt'>पहले दिन तुम्हारे लिए धर्मसभा का आयोजन किया जाये और तुम उस दिन कोई काम मत करो।</span> <sup>19</sup><span class='v-txt'>उस दिन होम-बलि के रूप में प्रभु को यह चढ़ाओं : दो बछड़े, एक मेढा और एक-एक वर्ष के सात अदोष मेमने।</span> <sup>20</sup><span class='v-txt'>उसके साथ तेल से सने हुए मैदे की अन्न-बलियाँ - प्रत्येक बछड़े के साथ छः सेर, मेढ़े के साथ चार सेर</span> <sup>21</sup><span class='v-txt'>और प्रत्येक मेमने के साथ दो सेर।</span> <sup>22</sup><span class='v-txt'>फिर प्रायश्चित-बलि के रूप में एक बकरा, जिससे तुम्हारे लिए प्रायश्चित-विधि सम्पन्न की जाये।</span> <sup>23</sup><span class='v-txt'>यह सब सबेरे की होम-बलि के अतिरिक्त चढ़ाया जाये।</span> <sup>24</sup><span class='v-txt'>इसी तरह तुम्हें सात दिन तक प्रतिदिन ये अन्न-बलियाँ अर्पित करनी हैं। यह सुगन्धयुक्त चढ़ावा है, जो प्रभु को प्रिय है। इन्हें दैनिक होम-बलि और अर्घ के अतिरिक्त चढ़ाना है।</span> <sup>25</sup><span class='v-txt'>सातवें दिन फिर धर्मसभा का आयोजन किया जाये और तुम उस दिन कोई काम मत करो।</span> <sup>26</sup><span class='v-txt'>&#039;&#039;प्रथम फल के दिन, जब तुम सप्ताहों का उत्सव मनाते हुए प्रभु की नयी फसल का चढ़ावा अर्पित करो, तो धर्मसभा का आयोजन करो और कोई काम नहीं करो।</span> <sup>27</sup><span class='v-txt'>तुम होम-बलि के रूप में दो बछड़े, एक मेढ़ा और एक-एक वर्ष के सात मेमने अर्पित करोगे। यह एक सुगन्धयुक्त चढ़ावा है, जो प्रभु को प्रिय है।</span> <sup>28</sup><span class='v-txt'>हर बछड़े के साथ अन्न-बलि के रूप में तेल से सना हुआ छः सेर मैदा चढ़ाना है;</span> <sup>29</sup><span class='v-txt'>मेढ़े के साथ चार सेर और हर एक मेमने के साथ दो सेर।</span> <sup>30</sup><span class='v-txt'>इसके अतिरिक्त प्रायश्चित-बलि के रूप में एक बकरा।</span> <sup>31</sup><span class='v-txt'>दैनिक होम-बलि और अन्न-बलि के अतिरिक्त इन्हें अपने अर्घ के साथ चढ़ाना है। इसका ध्यान रखों कि पशु अदोष हो।</span> </p>
+        <div class='nav'><a href='004027.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004029.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>दानिएल - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>दानिएल</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>बाबुल के राजा बेलशस्सर के पहले वर्ष, जब दानिएल शय्या पर पड़ा हुआ था, उसे एक स्वप्न और मन में कई दृश्य दिखाई दिये।  वर्णन के रूप में उसने संक्षेप में यह स्वप्न लिख लिया।  दानिएल ने इस प्रकार वर्णन कियाः</span> <sup>2</sup><span class='v-txt'>मैंने रात्रि के समय यह दिव्य दृश्य देखाः आकाश की चारों दिशाओं की हवाएँ महासमुद्र को उद्वेलित कर रही थीं</span> <sup>3</sup><span class='v-txt'>और उस में से चार विशालकाय पशु निकलते थे, जो एक दूसरे से भिन्न थे।</span> <sup>4</sup><span class='v-txt'>पहला सिहं-जैसा था, किन्तु उसके गरूड़ के जैसे पख थे।  मैं देख ही रहा था कि उसके पंख उखाड़ गये, उसे उठा कर दो पाँवों पर मनुष्य की तरह खड़ा कर दिया गया और उसे मनुष्य-जैसा हृदय दिया गया।</span> <sup>5</sup><span class='v-txt'>दूसरा भालू-जैसा था।  वह आधा ही खड़ा था और वह अपने मुँह में दाँतों के बीच तीन पसलियाँ लिये था।  उसे यह आदेश दिया गया, &quot;उठो और बहुत-सा मांस खाओ&quot;।</span> <sup>6</sup><span class='v-txt'>इसके बाद मैंने चीते-जैसा एक और पशु देखा।</span> <sup>7</sup><span class='v-txt'>उसकी पीठ पर पक्षियों के चार डैने थे और उसके चार सिर थे।  उसे राजाधिकार दिया गया।  अंत में मैंने रात्रि के दृश्य में एक चैथा पशु देखा।  वह विभीषण, डरावना और उत्यन्त बलवान् था।  उसके दाँत लोहे के थे।  वह चबाता और खाता जाता था और जो कुछ रह जाता, उसे पैरों तले रौंद देता था।</span> <sup>8</sup><span class='v-txt'>वह पहले के सभी पशुओं से भिन्न था और उसके दस सींग थे।  मैं वे सींग देख ही रहा था कि उनके बीच में से एक और छोटा-सा सींग निकला और उसके लिए जगह बनाने के लिए पहले सींगों में से तीन उखाड़े गये। उस सींग की मनुष्य-जैसी आँखें थी और उसका एक डींग मारता हुआ मुँह भी था।</span> <sup>9</sup><span class='v-txt'>मैं देख ही रहा था कि सिंहासन रख दिये गये और एक वयोवृद्ध व्यक्ति बैठ गया।  उसके वस्त्र हिम की तरह उज्जवल थे और उसके सिर के केश निर्मल ऊन की तरह।</span> <sup>10</sup><span class='v-txt'>उसका सिंहासन ज्वालाओं का समूह था और सिहंासन के पहिये धधकती अग्नि।  उसके सामने से आग की धारा बह रही थी।  सहस्रों उसकी सेवा कर रहे थे।  लाखों उसके सामने खड़े थे।  न्याय की कार्यवाही प्रारंभ हो रही थी।  और पुस्तकें खोल दी गयीं।</span> <sup>11</sup><span class='v-txt'>मैंने देखा कि सींग के डींग मारने के कारण चैथा पशु मारा गया।  उसकी लाश आग में डाली और जलायी गयी।</span> <sup>12</sup><span class='v-txt'>दूसरे पशुओं से भी उनके अधिकार छीन लिये गये, किन्तु उन्हें कुछ और समय तक जीवित ही छोड दिया गया।</span> <sup>13</sup><span class='v-txt'>तब मैंने रात्रि के दृश्य में देखा कि आकाश के बादलों पर मानवपुत्र-जैसा कोई आया।  वह वयोवृद्ध के यहाँ पहुँचा और उसके सामने लाया गया।</span> <sup>14</sup><span class='v-txt'>उसे प्रभुत्व, सम्मान तथा राजत्व दिया गया।  सभी देश, राष्ट्र और भिन्न-भिन्न भाषा-भाषी उसकी सेवा करेंगे।  उसका प्रभुत्व अनन्त है।  वह सदा ही बना रहेगा।  उसके राज्य का कभी विनाश नहीं होगा।</span> <sup>15</sup><span class='v-txt'>मैं बहुत व्याकुल हो उठा और अपने मन के दृश्यों के कारण विस्मित हो गया।</span> <sup>16</sup><span class='v-txt'>मैंने वहाँ उपस्थित लोगों में से एक के पास जा कर पूछा कि इन सब बातों का अर्थ क्या है और उसने मुझे समझाते हुए कहा,</span> <sup>17</sup><span class='v-txt'>&quot;ये चार विशालकय पशु चार राज्य हैं, जो पृथ्वी पर प्रकट होंगे,</span> <sup>18</sup><span class='v-txt'>किन्तु सर्वोच्य प्रभु के संतों को जो राजत्व दिया जायेगा, वह अनन्त काल तक बना रहेगा।&quot;</span> <sup>19</sup><span class='v-txt'>तब मैंने जानना चाहा कि उस चैथे पशु का अर्थ क्या है, जो सभी पहले पशुओं से भिन्न था, जो बहुत डरावना था, जो चबाता और खाता जाता था और जो कुछ रह जाता, उसे पैरों तले रौंदता था।</span> <sup>20</sup><span class='v-txt'>मैंने उसके सिर के दस सींगों के विषय में जानना चाहा और उस अन्य सींग के विषय में भी, जिसके निकलने पर तीन सींग उखड़ गये- उस सींग के विषय में, जिसकी आंखे थी, जिसका एक डींग मारने वाला मुँह था और जो दूसरे सींगों से अधिक बडा दिखता था।</span> <sup>21</sup><span class='v-txt'>मैं देख ही रहा था कि वह सींग संतों से युद्ध कर रहा था और वयोवृद्ध व्यक्ति के आने तक उन पर प्रबल हो रहा था।</span> <sup>22</sup><span class='v-txt'>उसने सर्वोच्य प्रभु के संतों को न्याय दिलाया और वह समय आया, जब संतों ने राज्य पर अधिकार प्राप्त कर लिया।</span> <sup>23</sup><span class='v-txt'>उसने मुझे यह उत्तर दिया, &quot;चैथा पशु पृथ्वी पर प्रकट होने वाला चैथा राज्य है।  वह अन्य सब राज्यों से भिन्न होगा।  वह समस्त पृृथ्वी को खा जायेगा और पैरों तले रौंद कर चूर-चूर कर देगा।</span> <sup>24</sup><span class='v-txt'>वे दस सींग इस राज्य के दस राजा हैं।  उनके बाद एक ऐसे राजा का उदय होगा, जो पहले के राजाओं से भिन्न होगा और तीन राजाओं को परास्त कर देगा।</span> <sup>25</sup><span class='v-txt'>वह सर्वोच्य प्रभु के विरुद्ध बोलेगा, सर्वोच्य प्रभु के संतों पर अत्याचार करेगा और पर्वों और प्रथाओं में परिवर्तन लाने की योजना तैयार करेगा।  संत साढे तीन वर्ष तक उसके हाथ में दिये जायेंगे।</span> <sup>26</sup><span class='v-txt'>इसके बाद न्याय की कार्यवाही प्रारंभ होगी।  राजत्व उस से छीन लिया जायेगा और सदा के लिए उसका सर्वनाश किया जायेगा।</span> <sup>27</sup><span class='v-txt'>तब पृथ्वी भर के सब राज्यों का अधिकार, प्रभुत्व और वैभाव सर्वोच्च प्रभु के संतों की प्रजा को प्रदान किया जायेगा।  उसका राज्य सदा बना रहेगा और सभी राष्ट्र उसकी सेवा करेंगे और उसके अधीन रहेंगे।&quot;</span> <sup>28</sup><span class='v-txt'>यह वर्णन यहाँ समाप्त होता है।  मेरे तो विचारों ने मुझे आतंकित किया और मेरे मुह का रंग उड गया।  फिर भी मैं इन सब बातों को अपने मन में संचित रखा।</span> </p>
+        <div class='nav'><a href='034006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='034008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

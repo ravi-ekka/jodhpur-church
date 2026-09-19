@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 29</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 29</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जो अपने पड़ोसी को उधार देता वह दयालु है।  जो उसकी सहायता करता, वह आज्ञाओें का पालन करता है।</span> <sup>2</sup><span class='v-txt'>पड़ोसी को ज़रूरत हो, तो उसे उधार दो।  और समय पर अपने पड़ोसी के ऋण चुका दो।</span> <sup>3</sup><span class='v-txt'>अपनी प्रतिज्ञा पूरी करो और पड़ोसी के प्रति ईमानदार रहो।  इस प्रकार तुम को हर ज़रूरत में सहायता मिलेगी।</span> <sup>4</sup><span class='v-txt'>अनेक लोग उधार को संयोग से मिला ख़ज़ाना समझते हैं और जिन्होंने उनकी सहायता की है, उन्हे कष्ट पहुँचाते हैं।</span> <sup>5</sup><span class='v-txt'>ऐसे लोग उधार पाने से पहले देने वाले का हाथ चूमते और रुपये के कारण विनय से बात करते हैं,</span> <sup>6</sup><span class='v-txt'>किन्तु लौटाने का समय आने पर विलम्ब करते, बहाना बनाते और असमर्थता प्रकट करते हैं।</span> <sup>7</sup><span class='v-txt'>यदि वे लौटाते हैं, तो उधार देने वाला मुष्किल से आधा पायेगा और समझेगा कि मुझे संयोग से ख़ज़ाना मिला है।</span> <sup>8</sup><span class='v-txt'>यदि वे नहीं लौटाते, तो देने वाला अपना पैसा खो देता और अकारण उन्हें शत्रु बना लेता है।</span> <sup>9</sup><span class='v-txt'>वे उसकी निन्दा तथा भत्र्सना करेंगे और सम्मान के बदले उसका अपमान करेंगे।</span> <sup>10</sup><span class='v-txt'>कुछ लोग उधार नहीं देते, वे दुष्ट नहीं हैं, किन्तु व्यर्थ धोखा खाने से डरते हैं।</span> <sup>11</sup><span class='v-txt'>फिर भी तुम दरिद्र के प्रति उदार बनो और उसे देर तक अपने दान की प्रतीक्षा मत करने दो।</span> <sup>12</sup><span class='v-txt'>आज्ञा का पालन करने के लिए दरिद्र की सहायता करो और उसे अपनी ज़रूरत में खाली हाथ मत जाने दो।</span> <sup>13</sup><span class='v-txt'>अपने धन का त्याग भाई और मित्र के लिए कर दो और ज़मीन के नीचे उस में जंग न लगने दो।</span> <sup>14</sup><span class='v-txt'>सर्वोच्च प्रभु की आज्ञा के अनुसार अपने धन का उपयोग करो और तुम सोने की अपेक्षा उस से अधिक लाभ उठाओगे।</span> <sup>15</sup><span class='v-txt'>(15-17) अपनी भिक्षा दरिद्र के हृदय में संचित करो और वह हर प्रकार की बुराई से तुम्हारी रक्षा करेगी।</span> <sup>18</sup><span class='v-txt'>वह पक्की ढाल और भारी भाले की अपेक्षा अधिक अच्छी तरह से तुम्हारे लिए शत्रु से लड़ेगी।</span> <sup>19</sup><span class='v-txt'>भला आदमी पड़ोसी की ज़मानत देता, किन्तु निर्लज्ज व्यक्ति से धोखा खाता है।</span> <sup>20</sup><span class='v-txt'>(20-21) अपने लिए ज़मानद देने वाले का उपकार मत भुलाओं; उसने तुम्हारे लिए अपने को अर्पित किया।</span> <sup>22</sup><span class='v-txt'>जो अपनी ज़मानत देने वाले का धन गँवाता, वह पापी है</span> <sup>23</sup><span class='v-txt'>और जो अपने उद्धारकर्ता का परित्याग करता, वह कृतघ्न है।</span> <sup>24</sup><span class='v-txt'>जमानत ने बहुत-से धनियों का विनाश किया और उन्हें समुद्र की लहरों की तरह बहा दिया।</span> <sup>25</sup><span class='v-txt'>उसने शक्तिशालियों को निर्वासित किया और उन्हें पराये राष्ट्रों में भटकाया।</span> <sup>26</sup><span class='v-txt'>पापी प्रभु की आज्ञाओें का उल्लंघन करते हुए लाभ की आशा में ज़मानत देता और मुकदमा मोल लेता है।</span> <sup>27</sup><span class='v-txt'>अपनी शक्ति के अनुसार अपने पड़ोसी की ज़मानत दो, किन्तु सावधान रहो कि कहीं धोखा न खाओ।</span> <sup>28</sup><span class='v-txt'>जीवन की प्राथमिक आवश्यकताएँ जल, भोजन, वस्त्र हैं और उचित एकान्त के लिए अपना घर।</span> <sup>29</sup><span class='v-txt'>पराये घर में दावत की अपेक्षा अपने घर में रूखा-सूखा भोजन अच्छा है।</span> <sup>30</sup><span class='v-txt'>तुम्हारे पास बहुत हो या कम, उस से सन्तुष्ट रहो और तुम को परदेश में डाँट-फटकार नहीं सुननी पडे़गी।</span> <sup>31</sup><span class='v-txt'>एक घर से दूसरे घर में भटकना और परदेशी होने के कारण मुँह नहीं खोल सकना- यह एक दयनीय जीवन है।</span> <sup>32</sup><span class='v-txt'>तुम को दूसरों को खिलाना-पिलाना पड़ता है और वे तुम्हारा आभार नहीं मानेंगे, बल्कि तुम को कटु शब्द सुनने पड़ेंगे</span> <sup>33</sup><span class='v-txt'>&quot;परदेशी! आओ और मेज़ तैयार करो; यदि तुम्हारे पास कुछ हो, तो हमें खिला दो&quot;।</span> <sup>34</sup><span class='v-txt'>&quot;परदेशी! चले जाओ, अपने से बड़े आदमी को जगह दो। मेरे भाई आ गये है।  मुझे मकान की ज़रूरत है।&quot;</span> <sup>35</sup><span class='v-txt'>कोमल हृदय व्यक्ति के लिए ये दो बातें दुःखदायी हैं: परदेशी समझा जाना और ऋणदाता का अपमान।</span> </p>
+        <div class='nav'><a href='028028.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028030.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

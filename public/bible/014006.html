@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>दुसरा इतिहास ग्रन्थ - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>दुसरा इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तब सुलेमान ने कहा: &quot;प्रभु ने अन्धकारमय बादल में रहने का निश्चय किया है।  मैंने तेरे लिए एक भव्य निवास का निर्माण किया है;</span> <sup>2</sup><span class='v-txt'>एक ऐसा मन्दिर, जहाँ तू सदा के लिए निवास करेगा।&quot;</span> <sup>3</sup><span class='v-txt'>इसके बाद राजा ने मुड़ कर समस्त इस्राएली समुदाय को आशीर्वाद दिया।</span> <sup>4</sup><span class='v-txt'>उस समय इस्राएल का समस्त समुदाय खड़ा था।  उसने कहा, &quot;धन्य है प्रभु, इस्राएल का ईश्वर, क्योंकि उसने मेरे पिता दाऊद से की हुई यह प्रतिज्ञा पूरी की-</span> <sup>6</sup><span class='v-txt'>मैंने येरूसालेम को चुना, जिससे मेरा नाम वहाँ प्रतिष्ठित हो और मैंने दाऊद को चुना है, जिससे वह मेरी प्रजा इस्राएल का शासक हो।’</span> <sup>7</sup><span class='v-txt'>मेरे पिता दाऊद की इच्छा प्रभु, इस्राएल के ईश्वर के नाम के लिए एक मन्दिर बनवाने की थी;</span> <sup>8</sup><span class='v-txt'>लेकिन प्रभु ने मेरे पिता दाऊद से कहा था, ‘तुम मेरे नाम पर मन्दिर बनवाना चाहते हो, यह एक अच्छी बात है।</span> <sup>9</sup><span class='v-txt'>परन्तु तुम यह मन्दिर नहीं बनवाओगे; बल्कि तुम्हारा पुत्र, जो तुम से उत्पन्न होगा, मेरे नाम पर एक मन्दिर बनवायेगा।’</span> <sup>10</sup><span class='v-txt'>अब प्रभु ने अपने दिये हुए वचन को पूरा किया है।  अब मैंने अपने पिता दाऊद का स्थान ग्रहण किया है और मैं प्रभु के वचन के अनुसार इस्राएल के सिंहासन पर विराजमान हूँ।  मैंने प्रभु, इस्राएल के ईश्वर के नाम पर मन्दिर बनवा दिया है</span> <sup>11</sup><span class='v-txt'>और वहाँ वह मंजूषा रखी है, जिस में इस्राएलियों के लिए निर्धारित प्रभु का विधान रखा है।&quot;</span> <sup>12</sup><span class='v-txt'>इसके बाद सुलेमान ने इस्राएल के समस्त समुदाय के सामने प्रभु की वेदी के सामने खड़ा हो कर अपने हाथ फैलाये।</span> <sup>13</sup><span class='v-txt'>सुलेमान ने काँसे का एक चबूतरा बनवाया था और उसे आँगन के बीच में रखा था।  वह पाँच हाथ लम्बा, पाँच हाथ चैड़ा और तीन हाथ ऊँचा था।  उसने उस पर खड़ा होकर और इस्राएल के समस्त समुदाय के सामने घुटने टेक कर स्वर्ग की ओर अपने हाथ फैलाते हुए</span> <sup>14</sup><span class='v-txt'>कहा, &quot;प्रभु!  इस्राएल के ईश्वर!  न तो ऊपर स्वर्ग में और न नीचे पृथ्वी पर तेरे सदृश कोई ईश्वर है।  तू विधान बनाये रखता और अपने सेवकों पर दयादृष्टि करता है, जो निष्कपट हृदय से तेरे मार्ग पर चलते हैं।</span> <sup>15</sup><span class='v-txt'>तूने अपने सेवक दाऊद, मेरे पिता से की हुई प्रतिज्ञा पूरी की है।  तेरे मुख से जो बात निकली थी, तूने उसे आज पूरा किया।</span> <sup>16</sup><span class='v-txt'>अब, प्रभु!  इस्राएल के ईश्वर!  अपने सेवक दाऊद और मेरे पिता से की हुई यह प्रतिज्ञा पूरी कर- ‘यदि तुम्हारे पुत्र सावधान रहेंगे और तुम-जैसे मेरे मार्गों पर चलते रहेंगे, तो तुम्हारे वंशजों में से कोई-न-कोई सदा मेरे सामने तुम्हारे सिंहासन पर अवश्य बैठा रहेग</span> <sup>17</sup><span class='v-txt'>अब, प्रभु!  इस्राएल के ईश्वर!  दाऊद, तेरे सेवक से की हुई प्रतिज्ञा पूरी हो।</span> <sup>18</sup><span class='v-txt'>क्या यह सम्भव है कि ईश्वर सचमुच पृथ्वी पर मनुष्यों के साथ निवास करे?  आकाश और समस्त ब्रह्माण्ड में तू नहीं समा सकता, तो इस मन्दिर से क्या, जिसे मैंने बनवाया है?</span> <sup>19</sup><span class='v-txt'>प्रभु!  मेरे ईश्वर!  अपने दास की प्रार्थना तथा अनुनय पर ध्यान दे।  जो दुहाई और प्रार्थना तेरा सेवक तेरे सामने प्रस्तुत कर रहा है, उसे सुनने की कृपा कर।</span> <sup>20</sup><span class='v-txt'>तेरी कृपा-दृष्टि दिन-रात इस मन्दिर पर बनी रहे- इस स्थान पर, जिसके विषय में तूने कहा कि मेरा नाम यहाँ विद्यमान रहेगा।</span> <sup>21</sup><span class='v-txt'>तेरा सेवक और तेरी प्रजा इस्राएल यहाँ जो प्रार्थना करेंगे, उसे सुनने की कृपा कर।  तू अपने स्वर्गिक निवासस्थान से उनकी प्रार्थना सुन और उन्हें क्षमा प्रदान कर।</span> <sup>22</sup><span class='v-txt'>जब कोई अपने पड़ोसी के विरुध्द अपराध करे और उस से शपथ खिला ली जाये और जब वह इस मन्दिर की वेदी के सामने शपथ खा ले,</span> <sup>23</sup><span class='v-txt'>तो तू उसे स्वर्ग में सुन कर अपने सेवकों का न्याय कर। तू अपराधी को दण्ड दे और उस से अपराध का बदला चुका।  तू निर्दोष को निर्दोष ठहरा कर उसकी धार्मिकता के अनुसार उसके साथ व्यवहार कर।</span> <sup>24</sup><span class='v-txt'>&quot;यदि तेरी प्रजा इस्राएल शत्रुओं से इसलिए पराजित हो जाये कि उसने तेरे विरुध्द अपराध किया है, तो यदि वह फिर तेरी ओर अभिमुख हो कर और तेरा नाम ले कर इस मन्दिर में तेरी प्रार्थना और पुकार करे,</span> <sup>25</sup><span class='v-txt'>तो तू स्वर्ग में उसकी प्रार्थना सुन, अपनी प्रजा इस्राएल का पाप क्षमा कर और उसे फिर उसी देश ले जा, जिसे तूने उनके पूर्वजों को दिया है।</span> <sup>26</sup><span class='v-txt'>&quot;यदि आकाश के द्वार बन्द होंगे और इसलिए वर्षा नहीं होगी कि लोगों ने तेरे विरुध्द पाप किया है और यदि वे इस स्थान पर प्रार्थना करें, तेरा नाम लें और इसलिए अपने पाप छोड़ दें कि तूने उन्हें कष्ट दिया है,</span> <sup>27</sup><span class='v-txt'>तो तू स्वर्ग में उनकी प्रार्थना स्वीकार कर अपने सेवकों, अपनी प्रजा इस्राएल का पाप क्षमा कर।  उस को वह सन्मार्ग बतला, जिस पर उसे चलना चाहिए और अपने इस देश में वर्षा कर, जिसे तूने अपनी प्रजा को दायभाग के रूप में दिया है।</span> <sup>28</sup><span class='v-txt'>&quot;यदि देश में अकाल पड़े, महामारी फैले, फ़सल में गेरूआ कीड़ा लग जाये या पाला पड़े, टिड्डियाँ या अन्य कीड़े- मकोड़े पैदा हो जायें, यदि उसका शत्रु उसके नगरों पर आक्रमण करे, यदि किसी प्रकार की विपत्ति आये या बीमारी फैले,</span> <sup>29</sup><span class='v-txt'>उस समय यदि कोई भी इस्राएली, किसी भी विपत्ति के कारण दुःखी हो कर इस मन्दिर की ओर हाथ पसार कर प्रार्थना करे और तुझे पुकारे,</span> <sup>30</sup><span class='v-txt'>तो तू स्वर्ग से उसकी प्रार्थना सुन, उसे क्षमा कर और प्रत्येक व्यक्ति को उसके कर्मों का फल दे (क्योंकि तू वही है, जो सब मनुष्यों के हृदय जानता है) ।</span> <sup>31</sup><span class='v-txt'>इस प्रकार जब तक वे उस देश में रहेंगे, जिसे तूने हमारे पुरखों को दिया है, तब तक वे तुझ पर श्रद्धा रखेंगे।</span> <sup>32</sup><span class='v-txt'>&quot;यदि कोई परदेशी, जो तेरी प्रजा का सदस्य नहीं है, तेरे नाम के कारण दूर देश से आये- क्योंकि लोग तेरे महान् नाम, तेरे शक्तिशाली हाथ तथा तेरे समर्थ भुजबल की चरचा करेंगे- यदि वह इस मन्दिर में विनती करने आये,</span> <sup>33</sup><span class='v-txt'>तो तू अपने निवास-स्थान, स्वर्ग में उसकी प्रार्थना सुन और जो कुछ परदेशी माँगे, उसे दे दो।  इस प्रकार सभी राष्ट्र, तेरी प्रजा इस्राएल की तरह, तेरा नाम जान जायेंगे, तुझ पर श्रद्धा रखेंगे और यह समझ जायेंगे कि यह मन्दिर, जिसे मैंने बनवाया है, तेरे नाम को समर्पित है।</span> <sup>34</sup><span class='v-txt'>&quot;यदि तेरी प्रजा, तेरे आदेश के अनुसार, शत्रुओं के विरुद्ध लड़ने जाये, जब वह तेरे बताये हुए मार्ग पर आगे बढ़े और वह तेरे द्वारा चुने हुए नगर की ओर और इस मन्दिर की ओर अभिमुख हो कर प्रार्थना करे, जिसे मैंने तेरे नाम के लिए बनवाया है,</span> <sup>35</sup><span class='v-txt'>तो तू स्वर्ग से उसकी प्रार्थना और पुकार सुन और उसका पक्ष ले।</span> <sup>36</sup><span class='v-txt'>&quot;यदि इस्राएली तेरे विरुध्द पाप करें- क्योंकि कोई ऐसा नहीं है, जो पाप ने करे- और तू उन पर क्रोध कर उन को उनके शत्रुओं के हाथ दे दे और उनके शत्रु उन्हें बन्दी बना कर अपने दूर या निकट देश ले जायें,</span> <sup>37</sup><span class='v-txt'>तो यदि वे अपने को बन्दी बनाने वाले देश में पश्चात्ताप करें और अपने शत्रुओं के देश में यह कहते हुए तुझ से दया की याचना करें, ‘हमने पाप किया है, हमने अपराध किया है, हमने अधर्म किया है;’</span> <sup>38</sup><span class='v-txt'>यदि वे अपने शत्रुओं के देश में, जो उन को बन्दी बना कर ले गये हों, सारे हृदय से और सारी आत्मा से तेरे पास लोैट आयें और इस देश की ओर, जिसे तूने उनके पूर्वजों को दिया है, इस नगर की ओर, जिसे तूने चुना है और इस मन्दिर की ओर, जिसे मैंने तेरे न</span> <sup>39</sup><span class='v-txt'>तो तू स्वर्ग में, अपने निवास में उनकी प्रार्थना और पुकार सुन कर उनका पक्ष ले।  तू अपनी प्रजा को क्षमा कर, जिसने तेरे विरुद्ध पाप किया है।</span> <sup>40</sup><span class='v-txt'>मेरे ईश्वर!  इस स्थान पर जो प्रार्थना की जाये, उसे तेरी आँखें देखती रहें और तेरे कान सुनते रहें।</span> <sup>41</sup><span class='v-txt'>&quot;प्रभु-ईश्वर!  अब तू अपनी तेजस्वी मंजूषा के साथ अपने विश्राम-स्थान को चल।  प्रभु-ईश्वर!  तेरे याजक कल्याण के वस्त्र धारण करें, तेरे भक्त सुख-शान्ति में आनन्द मनायें।</span> <sup>42</sup><span class='v-txt'>प्रभु-ईश्वर!  अपने अभिषिक्त को न त्याग, अपने सेवक दाऊद के सत्कार्यों को याद कर।&quot;</span> </p>
+        <div class='nav'><a href='014005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='014007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

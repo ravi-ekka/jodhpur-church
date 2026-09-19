@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योहन - अध्याय 14</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योहन</h1>
+        <h2>अध्याय 14</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तुम्हारा जी घबराये नहीं।  ईश्वर में विश्वास करो और मुझ में भी विश्वास करो!</span> <sup>2</sup><span class='v-txt'>मेरे पिता के यहाँ बहुत से निवास स्थान हैं।  यदि ऐसा नहीं होता, तो मैं तुम्हें बता देता क्योंकि मैं तुम्हारे लिये स्थान का प्रबंध करने जाता हूँ।</span> <sup>3</sup><span class='v-txt'>मैं वहाँ जाकर तुम्हारे लिये स्थान का प्रबन्ध करने के बाद फिर आऊँगा और तुम्हें अपने यहाँ ले जाउँगा, जिससे जहाँ मैं हूँ, वहाँ तुम भी रहो।</span> <sup>4</sup><span class='v-txt'>मैं जहाँ जा रहा हूँ, तुम वहाँ का मार्ग जानते हो।</span> <sup>6</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;मार्ग सत्य और जीवन मैं हूँ।  मुझ से हो कर गये बिना कोई पिता के पास नहीं आ सकता।&quot;</span> <sup>7</sup><span class='v-txt'>यदि तुम मुझे पहचानते हो, तो मेरे पिता को भी पहचानोगे।  अब तो तुम लोगों ने उसे पहचाना भी है और देखा भी है।&quot;</span> <sup>8</sup><span class='v-txt'>फिलिप ने उन से कहा, &quot;प्रभु! हमें पिता के दर्शन कराइये।  हमारे लिये इतना ही बहुत है।&quot;</span> <sup>9</sup><span class='v-txt'>ईसा ने कहा, &quot;फिलिप! मैं इतने समय तक तुम लोगों के साथ रहा, फिर भी तुमने मुझे नहीं पहचाना?  जिसने मुझे देखा है उसने पिता को भी देखा है।  फिर तुम यह क्या कहते हो- हमें पिता के दर्शन कराइये?&quot;</span> <sup>10</sup><span class='v-txt'>क्या तुम विश्वास नहीं करते कि मैं पिता में हूँ और पिता मुझ में हैं?  मैं जो शिक्षा देता हूँ वह मेरी अपनी शिक्षा नहीं है।  मुझ में निवास करने वाला पिता मेरे द्वारा अपने महान कार्य संपन्न करता है।</span> <sup>11</sup><span class='v-txt'>मेरी इस बात पर विश्वास करो कि मैं पिता में हूँ और पिता मुझ में हैं, नहीं तो उन महान कार्यों के कारण ही इस बात पर विश्वास करो।</span> <sup>12</sup><span class='v-txt'>मैं तुम लोगो से यह कहता हूँ जो मुझ में सिवश्वास करता है, वह स्वयं वे कार्य करेगा, जिन्हें मैं करता हूँ। वह उन से भी महान कार्य करेगा।  क्योंकि मैं पिता के पास जा रहा हूँ।</span> <sup>13</sup><span class='v-txt'>तुम मेरा नाम ले कर जो कुछ माँगोगे, मैं तुम्हें वही प्रदान करूँगा, जिससे पुत्र के द्वारा पिता की महिमा प्रकट हो।</span> <sup>14</sup><span class='v-txt'>यदि तुम मेरा नाम लेकर मुझ से कुछ भी माँगोगें, तो मैं तुम्हें वही प्रदान करूँगा।</span> <sup>15</sup><span class='v-txt'>यदि तुम मुझे प्यार करोगे तो मेरी आज्ञाओं का पालन करोगे।</span> <sup>16</sup><span class='v-txt'>मैं पिता से प्रार्थना करूँगा और वह तुम्हें एक दूसरा सहायक प्रदान करेगा, जो सदा तुम्हारे साथ रहेगा।</span> <sup>17</sup><span class='v-txt'>वह सत्य का आत्मा है जिसे संसार ग्रहण नहीं कर सकता, क्योंकि वह उसे न तो देखता और न पहचानता है।  तुम उसे पहचानते हो, क्योंकि वह तुम्हारे साथ रहता और तुम में निवास करता है।</span> <sup>18</sup><span class='v-txt'>मैं तुम लोगो को अनाथ छोडकर नहीं जाऊँगा, मैं तुम्हारे पास आऊँगा।</span> <sup>20</sup><span class='v-txt'>उस दिन तुम जान जाओगे कि मैं पिता में हूँ, तुम मुझ में हो और मैं तुम में।</span> <sup>21</sup><span class='v-txt'>जो मेरी आज्ञायें जानता और उनका पालन करता है, वही मुझे प्यार करता है और जो मुझे प्यार करता है, उसे मेरा पिता प्यार करेगा और उसे मैं भी प्यार करूँगा और उस पर अपने को प्रकट करूँगा।</span> <sup>22</sup><span class='v-txt'>यूदस ने, (इसकारयोती ने नहीं), उन से कहा, &quot;प्रभु! आप हम पर अपने को प्रकट करेगें, संसार पर नहीं- इसका कारण क्या है?</span> <sup>23</sup><span class='v-txt'>ईसा ने उसे उत्तर दिया यदि कोई मुझे प्यार करेगा तो वह मेरी शिक्षा पर चलेगा।  मेरा पिता उसे प्यार करेगा और हम उसके पास आकर उस में निवास करेंगे।</span> <sup>24</sup><span class='v-txt'>जो मुझे प्यार नहीं करता, वह मेरी शिक्षा पर नहीं चलता। जो शिक्षा तुम सुनते हो, वह मेरी नहीं बल्कि उस पिता की है, जिसने मुझे भेजा।</span> <sup>25</sup><span class='v-txt'>तुम्हारे साथ रहते समय मैंने तुम लोगों को इतना ही बताया है।</span> <sup>26</sup><span class='v-txt'>परन्तु वह सहायक, वह पवित्र आत्मा, जिसे पिता मेरे नाम पर भेजेगा तुम्हें सब कुछ समझा देगा।  मैंने तुम्हें जो कुछ बताया, वह उसका स्मरण दिलायेगा।</span> <sup>27</sup><span class='v-txt'>मैं तुम्हारे लिये शांति छोड जाता हूँ।  अपनी शांति तुम्हें प्रदान करता हूँ।  वह संसार की शांति-जैसी नहीं है। तुम्हारा जी घबराये नहीं।  भीरु मत बनो।</span> <sup>28</sup><span class='v-txt'>तुमने मुझ को यह कहते सुना- मैं जा रहा हूँ और फिर तुम्हारे पास आऊँगा।  यदि तुम मुझे प्यार करते, तो आनन्दित होते कि मैं पिता के पास जा रहा हूँ, क्योंकि पिता मुझ से महान है।</span> <sup>29</sup><span class='v-txt'>मैंने पहले ही तुम लोगों को यह बताया, जिससे ऐसा हो जाने पर तुम विश्वास करो।</span> <sup>30</sup><span class='v-txt'>अब मैं तुम लोगों से अधिक बातें नहीं करूँगा क्योंकि इस संसार का नायक आ रहा है।  वह मेरा कुछ नहीं बिगाड सकता,</span> <sup>31</sup><span class='v-txt'>किन्तु यह आवश्यक है कि संसार जान जाये कि मैं पिता को प्यार करता हूँ और पिता ने मुझे जैसा आदेश दिया है मैं वैसा ही करता हूँ।  उठो! हम यहाँ से चलें।&quot;</span> </p>
+        <div class='nav'><a href='050013.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='050015.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

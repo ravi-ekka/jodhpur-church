@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>स्तोत्र - अध्याय 148</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>स्तोत्र</h1>
+        <h2>अध्याय 148</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>अल्लेूलूया!  स्वर्ग में प्रभु की स्तुति करो।  आकाश में प्रभु की स्तुति करो।</span> <sup>2</sup><span class='v-txt'>प्रभु के सब दूतो!  उसकी स्तुति करो।  समस्त विश्वमण्डल!  उसकी स्तुति करो।</span> <sup>3</sup><span class='v-txt'>सूर्य और चन्द्रमा!  उसकी स्तुति करो।  जगमगाते तारामण्डल!  उसकी स्तुति करो।</span> <sup>4</sup><span class='v-txt'>सर्वोच्च आकाश!  उसकी स्तुति करो।  आकाश के ऊपर के जल!  उसकी स्तुति करो।</span> <sup>5</sup><span class='v-txt'>वे प्रभु के नाम की स्तुति करें, क्योंकि उसके आदेश देते ही उनकी सृष्टि हुई।</span> <sup>6</sup><span class='v-txt'>उसने उन्हें सदा-सर्वदा के लिए स्थापित किया।  उसके ठहराये नियम अपरिवर्तनीय हैं।</span> <sup>7</sup><span class='v-txt'>मगर-मच्छो और समस्त गहराइयो!  पृथ्वी पर प्रभु की स्तुति करो।</span> <sup>8</sup><span class='v-txt'>आग और ओले, बर्फ और कोहरे! प्रभु की आज्ञा मानने वाली आँधियो!</span> <sup>9</sup><span class='v-txt'>पर्वतों और सब पहाड़ियों!  फलदार वृक्षो और देवदारो!</span> <sup>10</sup><span class='v-txt'>बनैले और पालतू पशुओ!  रेंगने वाले सर्पो और उड़ने वाले पक्षियो!</span> <sup>11</sup><span class='v-txt'>पृथ्वी के राजाओ और समस्त राष्ट्रो!  पृथ्वी के क्षत्रपो और सभी शासको!</span> <sup>12</sup><span class='v-txt'>नवयुवकों और नवयुवतियों!  वृद्धो और बालको!  प्रभु की स्तुति करो।</span> <sup>13</sup><span class='v-txt'>वे सब-के-सब प्रभु की स्तुति करें, क्योंकि उसी का नाम महान् है।  उसकी महिमा पृथ्वी और आकाश से परे है।</span> <sup>14</sup><span class='v-txt'>उसने अपनी प्रजा को बल प्रदान किया है।  उसके सभी भक्त इस्राएल की सन्तान तथा उसकी शरण में रहने वाली प्रजा, सब-के-सब प्रभु की स्तुति करें।  अल्लेलूया!</span> </p>
+        <div class='nav'><a href='023147.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='023149.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

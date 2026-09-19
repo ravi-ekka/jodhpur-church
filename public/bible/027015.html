@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रज्ञा - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रज्ञा</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>हमारे ईश्वर!  तू सचमुच कृपालु और सत्यप्रतिज्ञ है।  तू सहिष्णु है और दया से सब कुछ का संचालन करता है।</span> <sup>2</sup><span class='v-txt'>जब हम पाप करते है, तो भी हम तेरे हैं; क्योंकि हम तेरा सामर्थ्य जानते हैं।  किन्तु हम पाप नहीं करेंगे; क्योंकि हम तेरे कहलाते हैं।</span> <sup>3</sup><span class='v-txt'>तेरा ज्ञान हमें पूर्ण धार्मिकता तक पहुँचाता है और तेरे सामर्थ्य की पहचान अमरत्व की जड़ है;</span> <sup>4</sup><span class='v-txt'>क्योंकि हम न तो मनुष्यों की कपटी कल्पना द्वारा भटके- न चत्रिकारों की व्यर्थ कृति द्वारा और न विविध रंगों से पुती हुई मूर्ति द्वारा,</span> <sup>5</sup><span class='v-txt'>जिसका दृश्य मूर्ख में आशा उत्पन्न करता है: वह एक मृत मूर्ति की निर्जीव आकृति पर मुग्ध होता है।</span> <sup>6</sup><span class='v-txt'>जो मूर्तियाँ बनाते हैं, जो उन पर मुग्ध होते और उनकी पूजा करते है, वे बुराई के अनुयायी हैं और इस प्रकार की आशा के योग्य है।</span> <sup>7</sup><span class='v-txt'>कुम्हार परिश्रम से गीली मिट्टी गूँधता और हमारे उपयोग के लिए सब प्रकार के पात्र बनाता है।  वह एक ही मिट्टी से समान रूप से उच्च प्रयोजन के पात्र भी बनाता है और दूसरे प्रयोजन के लिए भी।  कुम्हार निश्चित करता है कि कौन पात्र किस काम आयेगा।</span> <sup>8</sup><span class='v-txt'>वह व्यर्थ परिश्रम से उसी मिट्टी से एक निरर्थक देवमूर्ति गढ़ता है, यद्यपि वह स्वयं कुछ समय पहले मिट्टी से जन्मा और शीघ्र ही उस मिट्टी में लौटने वाला है, जहाँ से वह लाया गया है, जब उस से उसका जीव वापस माँगा गया होगा।</span> <sup>9</sup><span class='v-txt'>उसे कोई चिन्ता नहीं कि उसे मरना होगा और उसका जीवन अल्पकालिक है; बल्कि वह स्वर्ण और रजतकारों से होड़ लगाता, काँसा ढालने वालों का अनुकरण करता और मिथ्या मूर्तियाँ बनाने पर गर्व करता है।</span> <sup>10</sup><span class='v-txt'>उसका हृदय राख उसकी आशा धूल से अधिक व्यर्थ और उसका जीवन मिट्टी से अधिक तुच्छ है;</span> <sup>11</sup><span class='v-txt'>क्योंकि वह अपने निर्माता को नहीं पहचानता, जिसने उस में सक्रिय आत्मा को डाला और जीवनदायक प्राण फ़ूँके।</span> <sup>12</sup><span class='v-txt'>वह हमारे जीवन को लीला समझता है, हमारे अस्तित्व को एक लाभकारी मेला!  वह कहता है कि सब कुछ से, बुराई से भी लाभ उठाना चाहिए।</span> <sup>13</sup><span class='v-txt'>वह किसी भी व्यक्ति से यह अच्छी तरह जानता है कि वह पाप करता है, जब वह मिट्टी से भंगुर पात्र और देवमूर्तियाँ बनाता है।</span> <sup>14</sup><span class='v-txt'>वे लोग सब से अधिक बुद्धिमान् और निर्दोष बच्चे से भी अधिक अभागे हैं, जो तेरी प्रजा के शत्रु बन कर उस पर अत्याचार करते थे।</span> <sup>15</sup><span class='v-txt'>उन्होंने राष्ट्रों की सब मूर्तियों को देवता माना है, जो अपनी आँखों से नहीं देखती, अपने नथनों से साँस नहीं लेती, अपने कानों से नहीं सुनती, अपने हाथ की उँगलियों से नहीं टटोलती और अपने पैरों से नहीं चलती:</span> <sup>16</sup><span class='v-txt'>क्योंकि एक मनुष्य ने उन्हें बनाया, एक व्यक्ति ने उन्हे गढ़ा, जिसे उधार के रूप में प्राण मिले थे।  कोई भी मनुष्य अपने-जैसे कोई देवता बनाने में असमर्थ है।</span> <sup>17</sup><span class='v-txt'>मत्र्य होने के कारण वह अपने अपवित्र हाथों से वही बना सकता है, जो मृत है।  वह अपनी आराध्य वस्तुओं से श्रेष्ठ है; क्योंकि वह जीवित है, किन्तु उन्हें कभी जीवन नहीं मिलेगा।</span> <sup>18</sup><span class='v-txt'>वे सब से घृणित जन्तुओं की पूजा करते हैं, जो अन्य पशुओें से भी अधिक मूर्ख है।</span> <sup>19</sup><span class='v-txt'>जो पशु सुन्दर भी नहीं है, कि कोई उन पर मोहित हो, जैसा कि अन्य पशुओं के विषय में सम्भव है; क्योंकि उन्हे न तो ईश्वर का समर्थन मिला और न उसका आशीर्वाद।</span> </p>
+        <div class='nav'><a href='027014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='027016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

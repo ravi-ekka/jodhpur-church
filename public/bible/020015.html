@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मक्काबियों का पहला ग्रन्थ - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मक्काबियों का पहला ग्रन्थ</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>राजा देमेत्रियस के पुत्र अंतियोख ने समुद्र के द्वीपों से यहूदियों के याजक और नेता सिमोन तथा समस्त राष्ट्र के नाम एक पत्र लिखा।</span> <sup>2</sup><span class='v-txt'>उस में यह लिखा था: &quot;प्रधानयाजक और नेता सिमोन तथा समस्त यहूदी राष्ट्र को राजा अंतियोख को नमस्कार।</span> <sup>3</sup><span class='v-txt'>कुछ दुष्ट लोगों ने हमारे पूर्वजों के राज्य पर अधिकार कर लिया है, किंतु मैं उस राज्य को पुनः अपने हाथ में लेने और उसे पहले की तरह प्रतिष्ठित बनाने का प्रयत्न कर रहा हूँ।  इसलिए मैंने बड़ी संख्या में सैनिक इकट्ठे कर लिये हैं और युद्ध-नौकाएँ तैयार कीं।</span> <sup>4</sup><span class='v-txt'>अब मैं देश की भूमि पर उतर कर उन लोगों से बदला चुकाना चाहता हूँ जिन्होंने हमारे देश का विनाश किया है और मेरे राज्य के अनेकानेक नगरों को उजाड डाला है।</span> <sup>5</sup><span class='v-txt'>मेरे पहले के राजाओं ने आप को कर-संबंधी जो छूट और अन्य विशेषाधिकार प्रदान किये हैं, वे सब मुझ भी स्वीकार्य हैं।</span> <sup>6</sup><span class='v-txt'>मैं आप को देश में प्रचलित सिक्के ढालने का अधिकार देता हूँ।</span> <sup>7</sup><span class='v-txt'>येरूसालेम और मंदिर स्वतंत्र होंगे।  आपने जो अस्त्र-शस्त्र जमा किये हैं, जो गढ बनवायें है और जो आपके अधिकार में है, वे सब आपके हाथ में रहेंगे।</span> <sup>8</sup><span class='v-txt'>आप पर राजकोष का जो ऋण इस समय है या बाद में होगा, उस से आप अब और सदा के लिए मुक्त किये जाते हैं।</span> <sup>9</sup><span class='v-txt'>हम जैसे ही अपने राज्य पर फिर अधिकार कर लेंगे, हम आपका, आपके राष्ट्र और आपके मंदिर का इतना सम्मान करेंगे कि आप लोगों की कीर्ति संसार के सीमांतों तक फैल जायेगी।&quot;</span> <sup>10</sup><span class='v-txt'>अंतियोख ने एक सौ चैहत्तरवें वर्ष अपने पूर्वजों के देश के लिए प्रस्थान किया।  सारी सेना आ कर उस से इस तरह मिल गयी कि त्रीफोन के पास थाडे़ ही आदमी बच गये।</span> <sup>11</sup><span class='v-txt'>अंतियोख ने उसका पीछा किया और वह भागते-भागते समुद्रतटवर्ती दोरा नामक नगर पहुँचा।</span> <sup>12</sup><span class='v-txt'>उसने देखा कि उस पर विपत्ति टूटने ही वाली हैं। उसकी समस्त सेना उस से विमुख हो गयी</span> <sup>13</sup><span class='v-txt'>और उधर बाहर हजार पैदल सैनिक और आठ हजार घुडसवार ले कर अंतियोख दोरा नगर के पास पहुँचा।</span> <sup>14</sup><span class='v-txt'>उसने नगर को घेर लिया और समुद्र की ओर से नावें पास आयीं।  इस तरह उसने थल और समुद्र, दोनों ओर से नगर पर आक्रमण किया।  न कोई व्यक्ति बाहर जा सकता था और न कोई अंदर आ सकता था।</span> <sup>15</sup><span class='v-txt'>नूमेनियम और उसके साथी विभिन्न राजाओं और देशों के नाम पत्र ले कर रोम से पहुँचे।  पत्र की प्रतिलिपि इस प्रकार है:</span> <sup>16</sup><span class='v-txt'>&quot;राजा पतोलेमेउस को मुख्य न्यायाधीश लुसियस का नमस्कार।  हमारे सन्धिबद्ध यहूदी मित्रों के यहाँ से हमारे पास दूत आये हैं, जिससे वे हमारे साथ पहले की तरह मित्रता और सन्धि का सम्बन्ध स्थापित करें।</span> <sup>17</sup><span class='v-txt'>वे प्रधानयाजक सिमोन और यहूदी लोगों की ओर से भेजे गये थे।</span> <sup>18</sup><span class='v-txt'>वे एक ढाल भी लाये जिसका मूल्य पाँच सौ सत्तर किलों सोना है।</span> <sup>19</sup><span class='v-txt'>इसलिए हमें यह उचित जान पड़ा कि हम विभिन्न्ा राजाओं और देशों के नाम इस आशय का पत्र लिखें कि वे न तो उन्हें हानि पहुँचायें, न उन पर और न उनके नगरों या क्षेत्रों पर आक्रमण करें और न उन लोगों की सहायता करें, जो उन से युद्ध करते हैं।</span> <sup>20</sup><span class='v-txt'>हमने उनकी भेजी हुई ढाल स्वीकार करने का निश्चय किया।</span> <sup>21</sup><span class='v-txt'>यदि उनके देश से कुछ दुष्ट लोग आपके यहाँ भाग कर आये हों, तो उन्हें प्रधानयाजक सिमोन के हवाले कर दें, जिससे वह अपने कानून के अनुसार उन्हें दण्ड दें।&quot;</span> <sup>22</sup><span class='v-txt'>उसने राजा देमेत्रियस, अत्तालस, अर्याराथेस और अर्साकेस को भी यही लिखा</span> <sup>23</sup><span class='v-txt'>तथा इन देशों को भी-संप्सा में, स्पार्ता, देलस, मिन्दस, सिक्योन, कारिए, सामस, पंफिलिया, लीसिया, हलीकरनास्सस, रोदस, फसेलिया, कोस, सीदे, अरादस, गोर्तिना, कनीदस, साइप्रस और कुरेने को।</span> <sup>24</sup><span class='v-txt'>इसकी एक प्रतिलिपि प्रधानायाजक सिमोन को भी दी गयी।</span> <sup>25</sup><span class='v-txt'>उधर राजा अन्तियोख देश के निकट पड़ाव डाल कर अपनी सेना से और युद्ध यन्त्रों से उस पर आक्रमण करता रहा।  उसने त्रीफोन को इस तरह घेर लिया कि न कोई व्यक्ति बाहर जा सकता था और न कोई अन्दर आ सकता था।</span> <sup>26</sup><span class='v-txt'>सिमोन ने अन्तियोख की सहायता के लिए दो हजार चुने हुए आदमी भेजे और उनके साथ चाँदी, सोना और विपुल युद्ध-सामग्री।</span> <sup>27</sup><span class='v-txt'>किन्तु उसने यह सब अस्वीकार किया।  यही नहीं, उसने सिमोन के साथ जो भी समझौते पहले किये थे, सब को रद्द कर दिया और सिमोन के प्रति उसका रुख़ बदल गया।</span> <sup>28</sup><span class='v-txt'>उसने अपने एक मित्र अथेनोबियस के द्वारा सिमोन को यह कहला भेजा: &quot;तुम लोगों ने मेरे राज्य के याफ़ा, गेजेर और येरूसालेम के गढ़ पर अधिकार कर लिया।</span> <sup>29</sup><span class='v-txt'>तुमने उसके क्षेत्र उजाड़े, देश को भारी क्षति पहुँचायी है और मेरे राज्य के अनेक स्थानों पर अधिकार कर लिया है।</span> <sup>30</sup><span class='v-txt'>अब तुम वे नगर लोटा दो, जिन्हें तुमने छीना और उन स्थानों का कर दे दो, जो यहूदिया की सीमा के बाहर हैं, किन्तु जिन्हें तुमने अपने देश में मिला लिया है।</span> <sup>31</sup><span class='v-txt'>नहीं तो तुम उनके बदले पाँच सौ मन चाँदी दो और इसके अतिरिक्त अपने द्वारा किये हुए विनाश की क्षतिपूर्ति और नगरों के कर के रूप में और पाँच सौ मन चाँदी। यदि तुम ऐसा नहीं करोगे, तो हम आ कर तुम से युद्ध करेंगे।&quot;</span> <sup>32</sup><span class='v-txt'>राजा का मित्र अथेनोबियस येरूसालेम आया।  उसे सिमोन की महिमा, उसकी मेज पर चाँदी-सोने के बरतन और उसका भव्य वैभव देख कर आश्चर्य हुआ।  उसने उसे राजा का सन्देश सुनाया।</span> <sup>33</sup><span class='v-txt'>सिमोन ने उसे उत्तर दिया, &quot;हमने न तो दूसरे की भूमि पर अधिकार किया और न दूसरे की सम्पत्ति छीनी।  यह तो हमारे पूर्वजों का दायभाग है।  हमारे शत्रुओं ने इस पर अन्याय से कुछ समय पहले अधिकार कर लिया था।</span> <sup>34</sup><span class='v-txt'>जब परिस्थिति हमारे अनुकूल हुई, तो हमने फिर अपने पूर्वजों का वह दायभाग वापस ले लिया।</span> <sup>35</sup><span class='v-txt'>आप हम से जो याफ़ा और गेजेर माँगते हैं, इसके विषय में हमारा उत्तर यह है कि वे नगर हमारी जनता और हमारे देश को बड़ी हानि पहुँचाते थे।  हम उनके लिए एक सौ मन देंगे।&quot;</span> <sup>36</sup><span class='v-txt'>अथेनोबियस ने कोई उत्तर नहीं दिया।  वह बड़े क्रोध में राजा के पास लौटा और उसने उसे सिमोन का उत्तर सुनाया।  उसने सिमोन के वैभव और उन सब बातों का वर्णन किया, जिन्हें उसने उसके यहाँ देखा था।  इस पर राजा के क्रोध की सीमा न रही।</span> <sup>37</sup><span class='v-txt'>त्रीफोन नाव पर चढ़ कर अर्थोसिया भाग निकाला।</span> <sup>38</sup><span class='v-txt'>तब राजा ने कन्देबैयस को समुद्रतटवर्ती प्रदेश का सेनापति नियुक्त किया और उसे पैदल सैनिक और घुड़सवार दिये।</span> <sup>39</sup><span class='v-txt'>उसने उसे आज्ञा दी कि वह यहूदिया की सीमा पर पड़ाव डाले, केद्रोन नगर का पुनर्निर्माण करे, उसके फाटक मजबूत करे और जनता पर छापा मारता रहे।  इसके बाद राजा स्वयं त्रीफोन का पीछा करने चला।</span> <sup>40</sup><span class='v-txt'>इधर कन्देबैयस यमनिया आ कर वहा से लोगों को सताने लगा, यहूदिया पर छापा मारता रहा और लोगों को बंदी बनाता और उनका वध करता रहा।</span> <sup>41</sup><span class='v-txt'>उसने केद्रोन का पुनर्निर्माण किया और वहाँ घुडसवार और पैदल सैनिक रखे, जिससे वे, जैसी कि राजा ने आज्ञा दी थी, यूदा के मार्गों पर छापा मारते रहें।</span> </p>
+        <div class='nav'><a href='020014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='020016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

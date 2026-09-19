@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लेवी - अध्याय 13</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लेवी</h1>
+        <h2>अध्याय 13</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा और हारून से यह कहा,</span> <sup>2</sup><span class='v-txt'>यदि किसी मनुष्य के चमड़े पर सूजन, पपड़ी या फूल दिखाई पड़े और चमड़े में चर्मरोग हो जाने का डर हो, तो वह मनुष्य याजक हारून अथवा उसके पुत्रों में किसी के पास लाया जाये।</span> <sup>3</sup><span class='v-txt'>याजक उसके शरीर के रोगग्रस्त अंश की जाँच करे। यदि उस रोगग्रस्त अंश के रोयें सफेद हो गये हों और वह रोग चमड़े के भीतर तक दिखाई दे, तो वह कोढ़-जैसी बीमारी हैं। याजक जाँच करने के बाद उस मनुष्य को अशुद्ध घोषित करेगा।</span> <sup>4</sup><span class='v-txt'>किन्तु यदि उसके शरीर पर हलका सफ़ेद दाग हो और वह चमड़े के भीतर तक नहीं दिखाई देता हों और वहाँ के रोयें सफेद नहीं हुए हों, तो याजक रोगी को सात दिन तक अलग रखे।</span> <sup>5</sup><span class='v-txt'>याजक सातवें दिन उसकी फिर जाँच करे और यदि वह देखे कि उसका दाग़ ज्यों-का-त्यों है और नहीं बढ़ा है, तो याजक उसे फिर सात दिन तक अलग रखे।</span> <sup>6</sup><span class='v-txt'>यदि याजक फिर सातवें दिन उसकी जाँच करने पर देखे कि वह दाग़ कुछ हलका हो गया है और वह दाग़ चमड़े पर नहीं फैला है, तो याजक उस व्यक्ति को शुद्ध घोषित करे। वह दाग़ केवल पपड़ी थी। वह अपने कपड़े धोने के बाद शुद्ध माना जायेगा।</span> <sup>7</sup><span class='v-txt'>किन्तु यदि याजक द्वारा शुद्ध घोषित किये जाने बाद पपड़ी चमड़े पर बढ़ने लगती है, तो उस व्यक्ति को फिर याजक के पास आना चाहिए।</span> <sup>8</sup><span class='v-txt'>यदि याजक दूसरी बार जाँच करते समय देखता है कि पपड़ी बढ़ी है, तो वह उस व्यक्ति को अशुद्व घोषित करेगा। यह चर्मरोग ही है।</span> <sup>9</sup><span class='v-txt'>जब किसी मनुष्य पर कोढ़-जैसा रोग दिखाई पडे, तो वह याजक के पास लाया जाये,</span> <sup>10</sup><span class='v-txt'>यदि याजक उसकी जाँच करने करने पर देखे कि चमड़े पर सफ़ेद-सी सूजन है और वहाँ के रोयें सफ़ेद हो गये हैं और वहॉँ के मांस पर चमड़ा नहीं है,</span> <sup>11</sup><span class='v-txt'>तो वह पुराना चर्म रोग है। याजक उस व्यक्ति को तुरन्त अशुद्ध घोषित करेगा। वह उसे पहले कुछ समय तक अलग नहीं करेगा। वह अशुद्ध ही है।</span> <sup>12</sup><span class='v-txt'>किन्तु यदि चर्मरोग उसके सारे शरीर से फूट पड़ा हो और रोगी के चमड़े पर सिर से पैर तक फैल गया हो, तो याजक उसकी अच्छी तरह जाँच करेगा।</span> <sup>13</sup><span class='v-txt'>यदि वह रोग सारे शरीर पर फैल गया हो, तो याजक उस व्यक्ति को शुद्ध घोषित करेगा। पूरा शरीर सफ़ेद हो गया है, इसलिए वह शुद्ध है।</span> <sup>14</sup><span class='v-txt'>किन्तु यदि उसके शरीर पर चमड़ा नहीं है, तो वह अशुद्ध है।</span> <sup>15</sup><span class='v-txt'>यदि याजक देखता है कि उस पर कहीं-कहीं चमड़ा नहीं है तो वह उसको अशुद्ध घोषित करेगा; क्योंकि जिस मांस पर चमड़ा नहीं है वह अशुद्ध है यह चर्मरोग है।</span> <sup>16</sup><span class='v-txt'>यदि उसका शरीर फिर से सफ़ेद हो जाता हो, तो वह याजक के पास जाए</span> <sup>17</sup><span class='v-txt'>और यदि जाँच करने पर याजक देखे कि वह सफ़ेद हो गया है, तो याजक उस रोगी को शुद्ध घोषित करे। वह शुद्ध माना जायेगा।</span> <sup>18</sup><span class='v-txt'>यदि किसी के शरीर पर फोड़ा निकले और वह फिर अच्छा हो जाए,</span> <sup>19</sup><span class='v-txt'>किन्तु फोड़े के स्थान पर एक सफ़ेद-सी सूजन या हल्का लाल दाग़ हो जाये, तो वह अपने को याजक को याजक को दिखाये</span> <sup>20</sup><span class='v-txt'>जब याजक जाँच करने पर यह देखे कि वह दाग़ चमडे के भीतर तक दिखाई पड़ता है और वहाँ के रोयें सफ़ेद हो गये हैं, तो याजक उसे अशुद्ध घोषित करे। वह फोड़े के स्थान पर निकला हुआ चर्मरोग है।</span> <sup>21</sup><span class='v-txt'>परन्तु यदि याजक जाँच करने पर देखे कि वहाँ के रोयें सफेद नहीं हैं और वहाँ दाग़ चमडे के भीतर तक दिखाई नहीं देता है और उसकी सफ़ेदी कम हो गई है, तो याजक उसे सात दिन तक अलग रखें।</span> <sup>22</sup><span class='v-txt'>यदि वह रोग चमड़े पर फैल जाये, तो याजक उसे अशुद्ध घोषित करे। यह रोग है।</span> <sup>23</sup><span class='v-txt'>पर यदि वह दाग ज्यों-का-त्यों रहता है और बढ़वा नहीं, तो वह फोंड़े का दाग़ है। याजक उस व्यक्ति को शुद्ध घोषित करे।</span> <sup>24</sup><span class='v-txt'>यदि किसी के चमड़े पर जलने का घाव हो और उस पर हल्का लाल या सफ़ेद दाग पड़ जाये</span> <sup>25</sup><span class='v-txt'>और याजक जाँच करने पर देखे कि वहाँ के रोयें सफ़ेद हो गये हैं और वह चमड़े के भीतर तक दिखाई देता है, तो वह जलने के दाग़ से फूटा हुआ चर्मरोग है। याजक उस व्यक्ति को अशुद्ध घोषित करे। यह चर्मरोग ही है।</span> <sup>26</sup><span class='v-txt'>लेकिन यदि याजक जाँच करते समय देखे कि वहाँ के रोयें सफेद नहीं हैं और वह चमड़े के भीतर तक नहीं दिखाई देता है और उसकी सफ़ेदी कम हो गयी है, तो याजक उस व्यक्ति को सात दिन तक अलग रखे।</span> <sup>27</sup><span class='v-txt'>सातवें दिन याजक फिर उसकी जाँच करे। यदि इसके बाद वह दाग़ चमड़े पर और अधिक फैल गया हो, तो याजक उसे अशुद्ध घोषित करे। वह चर्मरोग ही है।</span> <sup>28</sup><span class='v-txt'>परन्तु यदि वह दाग़ ज्यों-का-त्यों हो और बढ़ता नहीं और उसकी सफ़ेदी कम हो गयी है, तो वह जलने का दाग़ है। याजक उसे शुद्ध घोषित करे; क्योंकि वह जलने का दाग़ ही है।</span> <sup>29</sup><span class='v-txt'>यदि किसी पुरुष या स्त्री के सिर या ठुड्डी पर कोई रोग दिखाई दे</span> <sup>30</sup><span class='v-txt'>और याजक जाँच करने पर यह देखे कि वह रोग चमड़े के भीतर तक है और वहाँ के बाल पतले और पीले हैं, तो याजक उसे अशुद्ध घोषित करे। यह खाज, सिर या ठुड्डी का चर्मरोग है।</span> <sup>31</sup><span class='v-txt'>लेकिन यदि याजक खाज की जाँच करते समय देखे कि वह चमड़े में भीतर तक नहीं दिखाई दे रहा है और उस पर काले बाल नहीं हैं, तो याजक उस रोगी को सात दिन तक अलग रखे।</span> <sup>32</sup><span class='v-txt'>यदि सातवें दिन याजक जाँच कर देखे कि वह खाज नहीं फैली है और उस पर पीले रोयें नहीं हैं और वह खाज चमड़े की भीतर तक नहीं दिखाई दे रहीं है,</span> <sup>33</sup><span class='v-txt'>तो खाज वाले स्थान को छोड़ कर, इसके बाद याजक रोगी व्यक्ति को सात दिन तक अलग रखे।</span> <sup>34</sup><span class='v-txt'>यदि सातवें दिन याजक खाज की जाँच करे और देखे कि वह चमड़े पर और अधिक नहीं फैली है और चमड़े के भीतर तक नहीं दिखाई दे रही है, तो याजक उसे शुद्ध घोषित करे। वह अपने वस्त्र धो ले, इसके बाद वह शुद्ध माना जायेगा।</span> <sup>35</sup><span class='v-txt'>लेकिन यदि शुद्धीकरण के बाद खाज चमड़े पर फैल जाये</span> <sup>36</sup><span class='v-txt'>और याजक जाँच करते समय यह देखे कि खाज चमड़े पर फैल गयी है, तो याजक को पीले बालों पर ध्यान देने की आश्वयकता नहीं है। वह व्यक्ति अशुद्ध ही है।</span> <sup>37</sup><span class='v-txt'>यदि याजक यह देखे कि खाज ज्यों-की-त्यों है और उस पर काले बाल उग गये हैं, तो रोग अच्छा हो गया है और वह व्यक्ति शुद्ध हैं। याजक उसे शुद्ध घोषित करेगा।</span> <sup>38</sup><span class='v-txt'>यदि किसी पुरुष या स्त्री के शरीर पर सफ़ेद दाग़ है</span> <sup>39</sup><span class='v-txt'>और याजक जाँच करते समय यह देखे कि उसके चमड़े के दाग़ सफ़ेद हो और उनकी सफ़ेदी कम होती जा रही है, तो वह समझे कि वह उसके चमड़े पर निकली हुई दाद है। ऐसा व्यक्ति शुद्ध है।</span> <sup>40</sup><span class='v-txt'>यदि किसी मनुष्य के सिर के बाल झड़ गये हो तो वह गंजा है। वह शुद्ध है।</span> <sup>41</sup><span class='v-txt'>यदि उसके सिर के सामने के बाल झड़ गये हों, तो वह आधा गंजा है। वह भी शुद्ध है।</span> <sup>42</sup><span class='v-txt'>किन्तु यदि उसके सिर या सामने के गंजे भाग पर हलका लाल दाग़ दिखाई दे, तो यह उसके सिर या माथे का चर्मरोग है।</span> <sup>43</sup><span class='v-txt'>यदि याजक उस व्यक्ति की जाँच करते समय देखे क सिर या माथे पर चर्मरोग-जैसी कोई हल्की लाल सूजन है,</span> <sup>44</sup><span class='v-txt'>तो वह व्यक्ति रोगी और अशुद्ध है। याजक उसे अशुद्ध घोषित करे, क्योंकि यह उसके सिर पर चर्मरोग है।</span> <sup>45</sup><span class='v-txt'>चर्मरोगी फटे कपड़े पहन ले। उसके बाल बिखरे हुए हों। वह अपना मुँह ढक कर &quot;अशुद्ध, अशुद्ध!&quot; चिल्लाता रहे।</span> <sup>46</sup><span class='v-txt'>वह तब तक अशुद्ध होगा, जब तक उसका रोग दूर न हो। वह अलग रहेगा और शिविर के बाहर निवास करेगा।</span> <sup>47</sup><span class='v-txt'>जिस वस्त्र पर फफूंदी के दाग हों चाहे वे ऊन या छालटी के वस्त्र पर हों,</span> <sup>48</sup><span class='v-txt'>चाहे छालटी या ऊन के बुने या बिने हुए कपड़े पर हों, चमड़े पर हों या चमड़े की बनी वस्तु पर -</span> <sup>49</sup><span class='v-txt'>यदि वे दाग़ वस्त्र पर, चमड़े पर, बुने या बिने हुए कपड़े पर अथवा चमड़े की बनी किसी वस्तु पर हरे या लाल रंग के हों, तो वह फफूंदी है। उसे याजक को दिखाना चाहिए।</span> <sup>50</sup><span class='v-txt'>याजक जाँच करने के बाद उस दाग़ वाली वस्तु को सात दिन तक अलग रखे।</span> <sup>51</sup><span class='v-txt'>जब सातवें दिन वह उस दाग़ वाली वस्तु की फिर जाँच करे और देखे कि उस वस्तु पर, बुने या बिने हुए कपड़े पर या चमड़े की बनी वस्तु पर का दाग़ बढ़ गया है, तो यह विशालु फफूंदी है। वह वस्तु अशुद्ध मानी जायेगी।</span> <sup>52</sup><span class='v-txt'>वह दाग़ वाला वस्त्र, ऊन या छालटी का बुना या बिना हुआ कपड़ा या चमड़े की बनी वस्तु जला दी जायेगी। यह विशालु फफूंदी है। उसे जला दिया जायेगा।</span> <sup>53</sup><span class='v-txt'>परन्तु यदि याजक जाँच करते समय देखे कि वह दाग़ - वस्त्र, बुने या बिने हुए कपड़े या चमड़े की बनी हुई वस्तु पर - नहीं बढ़ा है,</span> <sup>54</sup><span class='v-txt'>तो याजक उस वस्तु को धुला दे और फिर सात दिन तक अलग रखवाये।</span> <sup>55</sup><span class='v-txt'>यदि याजक यह देखे कि धुलाई के बाद दाग़ का रंग नहीं बदला और नहीं बढ़ा हैं, तो वह वस्तु अशुद्ध है। उसे जला दिया जायेगा, चाहे वह दाग सामने की ओर हो या पीछे की ओर।</span> <sup>56</sup><span class='v-txt'>किन्तु यदि याजक दाग़ वाली वस्तु को धुलाई के बाद उसकी जाँच करते समय देखे कि वह दाग़ कम हो गया है, तो उस वस्त्र या उस चमड़े से या बुने या बिने हुए कपड़े से उस दाग वाले भाग को काट दे।</span> <sup>57</sup><span class='v-txt'>इसके बाद यदि उस वस्त्र या उस बुने हुए कपड़े या चमड़े की उस वस्तु पर वह दाग फिर दिखाई दे, तो वह एक फैलने वाला चर्मरोग है। जिस पर वह दाग़ होगा, उसे आग में जला दिया जायेगा।</span> <sup>58</sup><span class='v-txt'>किन्तु वह वस्त्र या बुने या बिने हुए कपड़े या चमड़े की वह वस्तु, जिसके धोने पर दाग़ निकल गया हो, फिर धोयी जाये। इसके बाद वह शुद्ध मानी जायेगी।</span> <sup>59</sup><span class='v-txt'>ऊन या छालटी के वस्त्रों पर, बुने या बिन हुए कपड़ों या चमड़े की वस्तुओं पर फफूंदी पड़ी हो, तो उन्हें शुद्ध या अशुद्ध घोषित करने के यही नियम है।</span> </p>
+        <div class='nav'><a href='003012.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='003014.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

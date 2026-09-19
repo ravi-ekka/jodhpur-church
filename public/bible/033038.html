@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 38</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 38</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मुझे प्रभु की यह वाण्ी सुनाई पड़ी:</span> <sup>2</sup><span class='v-txt'>&quot;मानवपुत्र! अब मागोग देश के गोग की ओर मुँह करो, जो मेशेक और तूबल का महाराजा है।  उसके विरुद्ध भवियवाणी करते हुए</span> <sup>3</sup><span class='v-txt'>यह कहो: प्रभु-ईश्वर यह कहता है: गोग! मेशेक और तूबल के महाराजा! मैं तुम्हारे विरुद्ध हूँ।</span> <sup>4</sup><span class='v-txt'>मैं तुम को मोड़ कर तुम्हारे जबड़ों में अँकुसी डाल दूँगा और मैं तुम को और तुम्हारे सभी सैनिकों घोड़ों और घुडसावरों को- अस्त्र-शस्त्र धारण किये हुए विशाल समुदाय, फरियाँ और ढाल और तलवार लिये हुए सभी लोगों को- बाहर खींच लाऊँगा।</span> <sup>5</sup><span class='v-txt'>ढाल और शिस्त्राण धारण करने वाले फरश, क्रूश और पूट वाले भी उन्हीं के साथ होंगे।</span> <sup>6</sup><span class='v-txt'>गोमेर और उसके सभी सैनिक और अपने सभी सैनिकों के साथ सुदूर उत्तर का बेत-तोगरमा- अनेकानेक राष्ट्र-तुम्हारे साथ होंगे।</span> <sup>7</sup><span class='v-txt'>&quot;तुम और तुम्हारे साथ एकत्र सभी सैनिको! तैयार हो, तत्पर रहो और मेरी सेवा के लिए उद्यत हो जाओ।</span> <sup>8</sup><span class='v-txt'>बहुत दिन बाद तुम लोगों को आदेश दिया जायेगा।  बाद के वर्षों में तुम लोग एक ऐसे देश जाओगे, जो युद्ध से सुरक्षित रह गया है और जहाँ विभिन्न राष्ट्रों से लोग इस्राएल के पर्वतों पर एकत्र किये गये थे, जो निरंतर उजाड़ थे।  उसके लोग राष्ट्रों से वापस लाये गये थे और वे सभी अब सुरक्षित रह गये हैं।</span> <sup>9</sup><span class='v-txt'>तुम आंधी की तरह आ कर आक्रमण करोगे।  तुम और तुम्हारी सभी सैनिक और तुम्हारे साथ के अनेकानेक राष्ट्र बादल की तरह देश पर छा जायेंगे।</span> <sup>10</sup><span class='v-txt'>&quot;प्रभु-ईश्वर यह कहता है: उस दिन तुम्हारे मन में विचार आयेंगे और तुम एक कुचक्र रचोगे।</span> <sup>11</sup><span class='v-txt'>और कहोगे, ’मैं प्राचीरहीन गाँवों के देश पर आक्रमण करूँगा।  मैं उन शांत लोगों पर टूट पडूँगा, जो सुरक्षित रह रहे है, जो सभी बिना प्राचीर के निवास करते और जिनके यहाँ अर्गलाएँ और फाटक नहीं हैं,</span> <sup>12</sup><span class='v-txt'>उन को लूट कर उसका माल ले जाने; उन उजाड़ खण्डों पर धावा बोलने, जो अब बस गये हैं; उन लोगों पर, जो विभिन्न राष्ट्रों के बीच से एकत्र किये गये, जिन्होंने पशु और धन-संपत्ति प्राप्त की हैं और जो पृथ्वी के केन्द्र में रहते हैं।</span> <sup>13</sup><span class='v-txt'>शाबा और ददान तथा तरशीश के व्यापारी और उसके सभी गाँव तुम से पूछेंगे, ’क्या तुम लूट का धन लेने आए हो।  क्या लूट का माल ले जाने, चाँदी और सोना, पशु और धन-संपत्ति छीनने, लूटी गयी प्रचुर सामग्री को अधिकार में करने के लिए तुमने अपने सैनिक एकत्र किये हैं?</span> <sup>14</sup><span class='v-txt'>&quot;इसलिए मानवपुत्र! भवियवाणी करते हुए गोग से बोलो: प्रभु-ईश्वर यह कहता है- जब मेरी प्रजा इस्राएल सुरक्षित रह रही होगी, तब तुम आक्रमण करोगे।</span> <sup>15</sup><span class='v-txt'>तुम और तुम्हारे साथ के अनेकानेक राष्ट्र सब-के-सब घोड़े पर सवार हो कर- एक विशाल समुदाय, एक शक्तिशाली सेना- सुदूर उत्तरी भागों के तुम्हारे निवासस्थान से आ जायेंगे।</span> <sup>16</sup><span class='v-txt'>देश पर छा जने वाले बादल की तरह तुम मेरी प्रजा इस्राएल पर आक्रमण करोगे।  मैं बाद के दिनों में अपने देश पर तुम को आक्रमण करने दूँगा, जिससे, गोग! जब मैं राष्ट्रों की आँखों के सामने तुमहारे द्वारा अपनी पवित्रता प्रमाणित करूँ, तो वे मुझे जान जायें।</span> <sup>17</sup><span class='v-txt'>&quot;प्रभु-ईश्वर यह कहता हैः क्या तुम वही नहीं हो, जिसके विषय में अपने सेवक, इस्राएल के नबियों द्वारा मैंने प्राचीन काल में कहा था, जो उन दिनों बरसों बरस यह भवियवाणी करते रहे कि मैं तुम से उन पर आक्रमण कराऊँगा?</span> <sup>18</sup><span class='v-txt'>किंतु प्रभु-ईश्वर कहता है कि जिस दिन गोग इस्राएल देश पर आक्रमण करेगा, उस दिन मरेा क्रोध भड़क उठेगा।</span> <sup>19</sup><span class='v-txt'>अपनी ईर्या और अपने प्रज्वलिज क्रोध के आवेश में मैं घोषित करता हूँ- उस दिन इस्राएल देश में भारी भूकंप आयेगा;</span> <sup>20</sup><span class='v-txt'>समुद्र की मछलियाँ, आकाश के पक्षी, मैदान के पशु, भूमि पर रेंगेने वाले सभी कीडे-मकोड़े, और पृथ्वी पर के सभी मनुष्य मेरे सामने काँपने लगेंगे; पहाड टूट पर गिर पडेंगे, खड़ी चट्टानें  लुढ़क जायेंगी और प्रत्येक दीवार ज़मीन चूमने लगेगी।</span> <sup>21</sup><span class='v-txt'>प्रभु-ईश्वर कहता है- मैं गोग के विरुद्ध हर तरह का आतंक बुला भेजूँगा।  प्रत्येक की तलवार अपने भाई के विरुद्ध हो जायेगी</span> <sup>22</sup><span class='v-txt'>मैं महामारी और रक्तपात द्वारा उसका न्याय करूँगा; मैं उस पर, उसके सैनिकों और उसके साथ के अनेकानेक राष्ट्रों पर घनघोर वर्षा, ओले, आग और गंधक बरसाऊँगा।</span> <sup>23</sup><span class='v-txt'>इस प्रकार मैं अपनी महानता और पवित्रता प्रदर्शित करूँगा तथा अनेक राष्ट्रों के सामने अपने को प्रकट करूँगा।  तब वे यह जान जायेंगे कि मैं ही प्रभु हूँ।</span> </p>
+        <div class='nav'><a href='033037.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033039.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

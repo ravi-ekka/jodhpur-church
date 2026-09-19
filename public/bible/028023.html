@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 23</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 23</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु! मेरे जीवन के पिता और स्वामी! मुझे उनके वश में न पड़ने दे और उनके द्वारा मेरा पतन न होने दे।</span> <sup>2</sup><span class='v-txt'>कौन मेरे विचारों पर कीड़ों का अंकुश लगायेगा और मेरे हृदय पर प्रज्ञा का अनुशासन, जिससे मेरे अपराधों की अनदेखी न हो और मुझे अपने पापों का दण्ड दिया जाये?</span> <sup>3</sup><span class='v-txt'>कहीं ऐसा न हो कि मेरे अपराधों में वृद्धि हो, मेरे पापों की संख्या बढ़ती जाये, मैं अपने विरोधियों के हाथ पड़ूँ और मेरा शत्रु मुझ पर हँसे।</span> <sup>4</sup><span class='v-txt'>प्रभु! मेरे जीवन के पिता और ईश्वर! मुझे उनके वश में न होने दे।</span> <sup>5</sup><span class='v-txt'>मुझ में अहंकार न आने दे और लालच मुझ से दूर कर।</span> <sup>6</sup><span class='v-txt'>मुझ पर पेटूपन और वासना का अधिकार न होने दे और मुझे प्रबल मनोवेगों का शिकार न बनने दे।</span> <sup>7</sup><span class='v-txt'>पुत्रों! सुनो, किस प्रकार मुँह को वश में रखना चाहिए। जो इस शिक्षा का पालन करता है, वह कभी नहीं फँसेगा।</span> <sup>8</sup><span class='v-txt'>पापी अपने होंठो का शिकार बनता है।  निन्दक और घमण्डी का इसी कारण पतन होता है।</span> <sup>9</sup><span class='v-txt'>अपने मुँह को शपथ खाने का आदी मत बनने दो: इस प्रकार बहुतों का पतन होता है।</span> <sup>10</sup><span class='v-txt'>परमपावन ईश्वर का नाम मत लिया करो।  नहीं तो पाप से नहीं बच सकोगे।</span> <sup>11</sup><span class='v-txt'>जिस प्रकार वह नौकर कोड़ों की मार से नहीं बचेगा, जिस पर निरन्तर निगरानी रखी रहती है, उसी प्रकार वह व्यक्ति पाप से नहीं बच सकेगा, जो हर समय शपथ खाता और परमवान का नाम लेता है।</span> <sup>12</sup><span class='v-txt'>जो व्यक्ति बार-बार शपथ खाता, वह अपराध करता जाता है और उसके घर पर से दण्ड नहीं हटेगा।</span> <sup>13</sup><span class='v-txt'>यदि वह बिना सोचे-समझे शपथ खाता है, तो उसे पाप लगता है।  यदि वह उसे तुच्छ समझता, तो वह दुगुना पाप करता है।</span> <sup>14</sup><span class='v-txt'>यदि उसने अकारण शपथ खायी, तो वह निर्दोष नहीं माना जायेगा और उसके घर पर विपत्तियाँ आ पड़ेगी।</span> <sup>15</sup><span class='v-txt'>एक ऐसी भाषा होती है, जो मृत्युदण्ड के योग्य है।  वह याकूब की विरासत में सुनाई नहीं पडे़।</span> <sup>16</sup><span class='v-txt'>भक्तजन ऐसी भाषा का प्रयोग नहीं करते और इस प्रकार पापों से दूषित नहीं होते।</span> <sup>17</sup><span class='v-txt'>अपने मुँह को अश्लील बातों का आदी न बनने दो, क्योंकि इस प्रकार तुम शब्दों द्वारा पाप करते हो।</span> <sup>18</sup><span class='v-txt'>जब तुम बड़े लोगों के बीच बैठे हो, तो अपने माता-पिता को याद रखो।</span> <sup>19</sup><span class='v-txt'>कहीं ऐसा न हो कि तुम उनके सामने मूर्ख बनो।  तब तुम चाहोगे कि तुम्हारा जन्म नहीं हुआ होता और अपने जन्म के दिन को अभिशाप देागे।</span> <sup>20</sup><span class='v-txt'>जो अश्लील बातचीत का आदी बन गया है, वह जीवन भर सभ्य नहीं बनेगा।</span> <sup>21</sup><span class='v-txt'>दो प्रकार के लोग पाप करते जाते हैं और तीसरे प्रकार के लोग अपने ऊपर ईश्वर का क्रोध बुलाते हैं।</span> <sup>22</sup><span class='v-txt'>प्रबल बासना प्रज्वलित आग-जैसी है।  वह भस्म हो जाने से पहले नहीं बुझती।</span> <sup>23</sup><span class='v-txt'>जो मनुष्य अपना शरीर व्यभिचार को अर्पित करता, वह तब तक नहीं सँभलेगा, जब तक आग उसे जला न दे।</span> <sup>24</sup><span class='v-txt'>व्यभिचारी को हर प्रकार का चारा मीठा लगता है।  वह तब तक उसे नहीं छोड़ता, जब तक वह नहीं मरता।</span> <sup>25</sup><span class='v-txt'>जो व्यक्ति व्यभिचार करता और मन-ही-मन कहता है, &quot;मुझे कौन देखता है?</span> <sup>26</sup><span class='v-txt'>मेरे चारों ओर  अँधेरा है, मुझे दीवारें छिपा रही है।  मुझे कोई नहीं देख सकता।  चिन्ता की बात ही क्या है? सर्वोच्च प्रभु मेरे पापों पर ध्यान नहीं देगा।&quot;</span> <sup>27</sup><span class='v-txt'>वह नहीं समझता कि उसकी आँखें सब कुछ देखती हैं। वह मनुष्यों की आँखों से डरता</span> <sup>28</sup><span class='v-txt'>और नहीं जानता कि प्रभु की आँखें सूर्य से कहीं अधिक प्रकाशमान हैं।  वे मनुष्यों के सभी मार्ग देखतीं और गुप्त-से-गुप्त स्थानों तक पहुँचती हैं।</span> <sup>29</sup><span class='v-txt'>प्रभु-ईश्वर सब वस्तुएँ उनकी सृष्टि से पहले जानता और उनके बनने के बाद भी उन्हें देखता रहता है।</span> <sup>30</sup><span class='v-txt'>व्यभिचारी केा नगर के चैकों पर दण्ड दिया जायेगा और वह उस समय पकड़ा जायेगा, जब उसे उसकी कोई आशंका नहीं।</span> <sup>31</sup><span class='v-txt'>वह सबों के सामने कलंकित होगा; क्येांकि उसे प्रभु पर श्रद्धा नहीं थी।</span> <sup>32</sup><span class='v-txt'>उस स्त्री को भी वही दण्ड दिया जायेगा, जो अपने पति के साथ विश्वासघात करती और उसे ऐसा वारिस देती है, जो उसकी अपनी सन्तान न हो।</span> <sup>33</sup><span class='v-txt'>उसने सर्वोच्च प्रभु की संहिता का उल्लंघन किया, अपने पति के साथ अन्याय किया, व्यभिचार के कारण दूषित हो गयी और परपुरुष की सन्तान को उत्पन्न किया।</span> <sup>34</sup><span class='v-txt'>वह सभा के सामने प्रस्तुत की जायेगी और उसकी सन्तान दुःखी होगी।</span> <sup>35</sup><span class='v-txt'>उसके पुत्र जड़ नहीं पकडेंगे और उसकी टहनियाँ फल नहीं उत्पन्न करेंगी।</span> <sup>36</sup><span class='v-txt'>उसकी स्मृति अभिशप्त होगी और उसका कलंक सदा बना रहेगा।</span> <sup>37</sup><span class='v-txt'>इस प्रकार बाद के लोग जान जायेगें कि प्रभु पर श्रद्धा से बढ़ कर कोई बात नहीं और उसकी आज्ञाओें के पालन से अधिक मधुर कुछ नहीं।</span> </p>
+        <div class='nav'><a href='028022.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028024.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

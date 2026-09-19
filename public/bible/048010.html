@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मारकुस - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मारकुस</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>वहाँ से विदा हो कर ईसा यहूदिया और यर्दन के पार के प्रदेश पहुँचे। एक विशाल जनसमूह फिर उनके पास एकत्र हो गया और वे अपनी आदत के अनुसार लोगों को शिक्षा देते रहे।</span> <sup>2</sup><span class='v-txt'>फरीसी ईसा के पास आये और उनकी परीक्षा लेते हुए उन्होंने प्रश्न किया, “क्या अपनी पत्नी का परित्याग करना पुरुष के लिए उचित है?”</span> <sup>3</sup><span class='v-txt'>ईसा ने उन्हें उत्तर दिया? &quot;मूसा ने तुम्हें क्या आदेश दिया?&quot;</span> <sup>4</sup><span class='v-txt'>उन्होंने कहा, “मूसा ने तो त्यागपत्र लिख कर पत्नी का परित्याग करने की अनुमति दी&quot;।</span> <sup>5</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;उन्होंने तुम्हारे हृदय की कठोरता के कारण ही यह आदेश लिखा।</span> <sup>6</sup><span class='v-txt'>किन्तु सृष्टि के प्रारम्भ ही से ईश्वर ने उन्हें नर-नारी बनाया;</span> <sup>7</sup><span class='v-txt'>इस कारण पुरुष अपने माता-पिता को छोड़ेगा और दोनों एक शरीर हो जायेंगे।</span> <sup>8</sup><span class='v-txt'>इस तरह अब वे दो नहीं, बल्कि एक शरीर हैं।</span> <sup>9</sup><span class='v-txt'>इसलिए जिसे ईश्वर ने जोड़ा है, उसे मनुष्य अलग नहीं करे।&quot;</span> <sup>10</sup><span class='v-txt'>शिष्यों ने, घर पहुँच कर, इस सम्बन्ध में ईसा से फिर प्रश्न किया</span> <sup>11</sup><span class='v-txt'>और उन्होंने यह उत्तर दिया,  &quot;जो अपनी पत्नी का परित्याग करता और किसी दूसरी स्त्री से विवाह करता है, वह पहली के विरुद्ध व्यभिचार करता है</span> <sup>12</sup><span class='v-txt'>और यदि पत्नी अपने पति का त्याग करती और किसी दूसरे पुरुष से विवाह करती है, तो वह व्यभिचार करती है&quot;।</span> <sup>13</sup><span class='v-txt'>लोग ईसा के पास बच्चों को लाते थे, जिससे वे उन पर हाथ रख दें; परन्तु शिष्य लोगों को डाँटते थे।</span> <sup>14</sup><span class='v-txt'>ईसा यह देख कर बहुत अप्रसन्न हुए और उन्होंने कहा, &quot;बच्चों को मेरे पास आने दो। उन्हें मत रोको, क्योंकि ईश्वर का राज्य उन-जैसे लोगों का है।</span> <sup>15</sup><span class='v-txt'>मैं तुम से यह कहता हूँ -  जो छोटे बालक की तरह ईश्वर का राज्य ग्रहण नहीं करता, वह उस में प्रवेश नहीं करेगा।&quot;</span> <sup>16</sup><span class='v-txt'>तब ईसा ने बच्चों को छाती से लगा लिया और उन पर हाथ रख कर आशीर्वाद दिया।</span> <sup>17</sup><span class='v-txt'>ईसा किसी दिन प्रस्थान कर ही रहे थे कि एक व्यक्ति दौड़ता हुआ आया और उनके सामने घुटने टेक कर उसने यह पूछा, &quot;भले गुरु! अनन्त जीवन प्राप्त करने के लिए मुझे क्या करना चाहिए?&quot;</span> <sup>18</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;मुझे भला क्यों कहते हो?  ईश्वर को छोड़ कोई भला नहीं।</span> <sup>19</sup><span class='v-txt'>तुम आज्ञाओं को जानते हो, हत्या मत करो, व्यभिचार मत करो, चोरी मत करो, झूठी गवाही मत दो, किसी को मत ठगो, अपने माता-पिता का आदर करो।&quot;</span> <sup>20</sup><span class='v-txt'>उसने उत्तर दिया, &quot;गुरुवर!  इन सब का पालन तो मैं अपने बचपन से करता आया हूँ&quot;।</span> <sup>21</sup><span class='v-txt'>ईसा ने उसे ध्यानपूर्वक देखा और उनके हृदय में प्रेम उमड़ पड़ा।  उन्होंने उस से कहा, &quot;तुम में एक बात की कमी है।  जाओ, अपना सब कुछ बेच कर ग़रीबों को दे दो और स्वर्ग में तुम्हारे लिए पूँजी रखी रहेगी।  तब आ कर मेरा अनुसरण करों।“</span> <sup>22</sup><span class='v-txt'>यह सुनकर उसका चेहरा उतर गया और वह बहुत उदास हो कर चला गया, क्योंकि वह बहुत धनी था।</span> <sup>23</sup><span class='v-txt'>ईसा ने चारों ओर  दृष्टि दौड़ायी और अपने शिष्यों से कहा, &quot;धनियों के लिए ईश्वर के राज्य में प्रवेश करना कितना कठिन होगा!</span> <sup>24</sup><span class='v-txt'>शिष्य यह बात सुन कर चकित रह गये।  ईसा ने उन से फिर कहा, &quot;बच्चों!  ईश्वर के राज्य में प्रवेश करना कितना कठिन है!</span> <sup>25</sup><span class='v-txt'>सूई के नाके से हो कर ऊँट निकलना अधिक सहज है, किन्तु धनी का ईश्वर के राज्य में प्रवेश़्ा करना कठिन है?&quot;</span> <sup>26</sup><span class='v-txt'>शिष्य और भी विस्मित हो गये और एक दूसरे से बोले, &quot;तो फिर कौन बच सकता है?&quot;</span> <sup>27</sup><span class='v-txt'>उन्हें स्थिर दृष्टि से देखते हुए ईसा ने कहा, &quot;मनुष्यों के लिए तो यह असम्भव है, ईश्वर के लिए नहीं; क्योंकि ईश्वर के लिए सब कुछ सम्भव है&quot;।</span> <sup>28</sup><span class='v-txt'>तब पेत्रुस ने यह कहा, &quot;देखिए, हम लोग अपना सब कुछ छोड़ कर आपके अनुयायी बन गये हैं।&quot;</span> <sup>29</sup><span class='v-txt'>ईसा ने कहा, &quot;मैं तुम से यह कहता हूँ -  ऐसा कोई नहीं, जिसने मेरे और सुसमाचार के लिए घर, भाई-बहनों, माता-पिता, बाल-बच्चों अथवा खेतों को छोड़ दिया हो</span> <sup>30</sup><span class='v-txt'>और जो अब, इस लोक में, सौ गुना न पाये- घर, भाई-बहनें, माताएँ, बाल-बच्चे और खेत, साथ-ही-साथ अत्याचार और परलोक में अनन्त जीवन।</span> <sup>31</sup><span class='v-txt'>बहुत-से लोग जो अगले हैं, पिछले हो जायेंगे और जो पिछले हैं, अगले हो जायेंगे।&quot;</span> <sup>32</sup><span class='v-txt'>वे येरूसालेम के मार्ग पर आगे बढ़ रहे थे।  ईसा शिष्यों के आगे-आगे चलते थे।  शिष्य बहुत घबराये हुए थे और पीछे आने वाले लोग भयभीत थे।  ईसा बारहों को फिर अलग ले जा कर उन्हें बताने लगे कि मुझ पर क्या-क्या बीतेगी,</span> <sup>33</sup><span class='v-txt'>&quot;देखो, हम येरूसालेम जा रहे हैं।  मानव पुत्र महायाजकों और शास्त्रियों के हवाले कर दिया जायेगा।  वे उसे प्राणदण्ड की आज्ञा सुना कर गै़र-यहूदियों के हवाले कर देंगे,</span> <sup>34</sup><span class='v-txt'>उसका उपहास करेंगे, उस पर थूकेंगे, उसे कोड़े लगायेंगे और मार डालेंगे; लेकिन तीसरे दिन वह जी उठेगा।&quot;</span> <sup>35</sup><span class='v-txt'>ज़ेबेदी के पुत्र याकूब और योहन ईसा के पास आ कर बोले, &quot;गुरुवर ! हमारी एक प्रार्थना है।  आप उसे पूरा करें।&quot;</span> <sup>36</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;क्या चाहते हो?  मैं तुम्हारे लिए क्या करूँ?&quot;</span> <sup>37</sup><span class='v-txt'>उन्होंने कहा, &quot;अपने राज्य की महिमा में हम दोनों को अपने साथ बैठने दीजिए- एक को अपने दायें और एक को अपने बायें&quot;।</span> <sup>38</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;तुम नहीं जानते कि क्या माँग रहे हो।  जो प्याला मुझे पीना है, क्या तुम उसे पी सकते हो और जो बपतिस्मा मुझे लेना है, क्या तुम उसे ले सकते हो?&quot;</span> <sup>39</sup><span class='v-txt'>उन्होंने उत्तर दिया, &quot;हम यह कर सकते हैं&quot;।  इस पर ईसा ने कहा, &quot;जो प्याला मुझे पीना है, उसे तुम पियोगे और जो बपतिस्मा मुझे लेना है, उसे तुम लोगे;</span> <sup>40</sup><span class='v-txt'>किन्तु तुम्हें अपने दायें या बायें बैठने देने का अधिकार मेरा नहीं हैं।  वे स्थान उन लोगों के लिए हैं, जिनके लिए वे तैयार किये गये हैं।&quot;</span> <sup>41</sup><span class='v-txt'>जब दस प्रेरितों को यह मालूम हुआ, तो वे याकूब और योहन पर क्रुद्ध हो गये।</span> <sup>42</sup><span class='v-txt'>ईसा ने उन्हें अपने पास बुला कर कहा, &quot;तुम जानते हो कि जो संसार के अधिपति माने जाते हैं, वे अपनी प्रजा पर निरंकुश शासन करते हैं और सत्ताधारी लोगों पर अधिकार जताते हैं।</span> <sup>43</sup><span class='v-txt'>तुम में ऐसी बात नहीं होगी।  जो तुम लोगों में बड़ा होना चाहता है, वह तुम्हारा सेवक बने</span> <sup>44</sup><span class='v-txt'>और जो तुम में प्रधान होना चाहता है, वह सब का दास बने;</span> <sup>45</sup><span class='v-txt'>क्योंकि मानव पुत्र भी अपनी सेवा कराने नहीं, बल्कि सेवा करने और बहुतों के उद्धार के लिए अपने प्राण देने आया है।&quot;</span> <sup>46</sup><span class='v-txt'>वे येरीख़ो पहुँचे।  जब ईसा अपने शिष्यों तथा एक विशाल जनसमूह के साथ येरीख़ो से निकल रहे थे, तो तिमेउस का बेटा बरतिमेउस, एक अन्धा भिखारी, सड़क के किनारे बैठा हुआ था।</span> <sup>47</sup><span class='v-txt'>जब उसे पता चला कि यह ईसा नाज़री हैं, तो वह पुकार-पुकार कर कहने लगा, &quot;ईसा, दाऊद के पुत्र! मुझ पर दया कीजिए&quot;!</span> <sup>48</sup><span class='v-txt'>बहुत-से लोग उसे चुप करने के लिए डाँटते थे; किन्तु वह और भी जोर से पुकारता रहा, &quot;दाऊद के पुत्र! मुझ पर दया कीजिए&quot;।</span> <sup>49</sup><span class='v-txt'>ईसा ने रुक कर कहा, &quot;उसे बुलाओ&quot;। लोगों ने यह कहते हुए अन्धे को बुलाया, &quot;ढ़ारस रखो। उठो! वे तुम्हें बुला रहे हैं।&quot;</span> <sup>50</sup><span class='v-txt'>वह अपनी चादर फेंक कर उछल पड़ा और ईसा के पास आया।</span> <sup>51</sup><span class='v-txt'>ईसा ने उस से पूछा, &quot;क्या चाहते हो?  मैं तुम्हारे लिए क्या करूँ?&quot;  अन्धे ने उत्तर दिया, &quot;गुरुवर! मैं फिर देख सकूँ&quot;।</span> <sup>52</sup><span class='v-txt'>ईसा ने कहा, &quot;जाओ, तुम्हारे विश्वास ने तुम्हारा उद्धार किया है&quot;।  उसी क्षण उसकी दृष्टि लौट आयी और वह मार्ग में ईसा के पीछे हो लिया।</span> </p>
+        <div class='nav'><a href='048009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='048011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

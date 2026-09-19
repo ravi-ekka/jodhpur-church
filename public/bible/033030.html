@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 30</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 30</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु की वाणी मुझे यह कहते हुए सुनाई पड़ी:</span> <sup>2</sup><span class='v-txt'>“मानवपुत्र! भवियवाणी करते हुए कहो, ’प्रभु-ईश्वर यह कहता हैः विलाप करो, “हाय, यह कैसा दिन आया!“</span> <sup>3</sup><span class='v-txt'>क्योंकि वह दिन निकट है, प्रभु का दिन समीप है।  वह दिन बादलों का होगा, वह घड़ी राष्ट्रों की होगी।</span> <sup>4</sup><span class='v-txt'>मिस्र पर तलवार गिरेगी।  और जब मिस्र में मारे हुए लोग धराशायी होंगे, उसकी सम्पत्ति छीन ली जायेगी और उसकी नींव तोड़ दी जायेगी, तब कूश भय से काँपेगा।</span> <sup>5</sup><span class='v-txt'>कूश, पूट और लूद, समस्त अरब, लीबिया और सन्धि देशों के लोग उनके साथ तलवार के घाट उतारे जायेंगे।</span> <sup>6</sup><span class='v-txt'>“प्रभु-ईश्वर यह कहता हैः मिस्र की सहायता करने वालों का पतन होगा और उसकी अभिमानी शक्ति का अपकर्ष हो जायेगा।  मिगदोल से सवेने तक लोग तलवार के घाट उतारे जायेंगे - यह प्रभु-ईश्वर कहता है।</span> <sup>7</sup><span class='v-txt'>“वह उजाड़े गये देशों से भी उजाड़ होगा और उसके नगर उजाड़ नगरों से भी अधिक उजाड़ होंगे।</span> <sup>8</sup><span class='v-txt'>तब वे लोग यह समझ जायेंगे कि मैं ही वह प्रभु हूँ, जब मैं मिस्र में आग लगाऊँगा और उसके सभी सहायक नष्ट हो जायेंगे।</span> <sup>9</sup><span class='v-txt'>“उस दिन असावधान क्रूश को आतंकित करने मेरे यहाँ से नावों पर दूत जायेंगे और मिस्र के न्याय के दिन उन पर आशंका छा जायेगी; क्योंकि वह दिन आ ही रहा है।</span> <sup>10</sup><span class='v-txt'>“प्रभु-ईश्वर यह कहता हैः मैं बाबुल के राजा नबूकदनेज़र के हाथों मिस्र का वैभव नष्ट कर दूँगा।</span> <sup>11</sup><span class='v-txt'>वह और उसके साथ उसकी प्रजा, जो राष्ट्रों में सब से भयंकर हैं, देश का विनाश करने के लिए लाये जायेंगे।  वे मिस्र पर अपनी तलवारें खीचेंगे और मृतकों से देश पाट देंगे।</span> <sup>12</sup><span class='v-txt'>मैं नील की नहरों को सूखी भूमि बना दूँगा और देश को दुष्टों के हाथ बेच दूँगा।  मैं विदेशियों द्वारा देश और उस में जो कुछ है, उसे उजाड़ बना दूँगा।  यह मैं, प्रभु, ने कहा है।</span> <sup>13</sup><span class='v-txt'>“ ’प्रभु-ईश्वर यह कहता हैः मैं देवमूर्तियों को नष्ट कर दूँगा और मेमफिस की प्रतिमाओं के टुकडे़-टुकड़े कर दूँगा।  मिस्र में कोई शासक नहीं रह जायेगा।  मैं मिस्र देश में आतंक भर दूँगा।</span> <sup>14</sup><span class='v-txt'>मैं पत्रोस को उजाड़ बना डालूँगा, सोअन में आग लागाऊँगा और नो को दण्ड दूँगा।</span> <sup>15</sup><span class='v-txt'>मैं मिस्र के गढ़ सीन पर अपना कोप बरसाऊँगा और नो के जनसमूह का विनाश करूँगा</span> <sup>16</sup><span class='v-txt'>मैं मिस्र में आग लगाऊँगा और सीन पीड़ा से छटपटायेगा।  नो में दरार कर दी जायेगी और उस पर दिन दहाड़े आक्रमण किया जायेगा।</span> <sup>17</sup><span class='v-txt'>ओन और पीबेसेत के युवक तलवार के घाट उतार दिये जायेंगे तथा उन्हें बन्दी बना कर ले जाया जायेगा।</span> <sup>18</sup><span class='v-txt'>जब में मिस्र का राजदण्ड तोड़ दूँगा, तो तहपनहेस में दिन में अँधेरा छा जायेगा।  उसकी अभिमानी शक्ति समाप्त हो जायेगी।  उस पर दुर्दिन छा जायेगा और उसकी पुत्रियों को बन्दी बना कर ले जाया जायेगा।</span> <sup>19</sup><span class='v-txt'>इस प्रकार मैं मिस्र को दण्ड दूँगा और वे लोग यह समझ जायेंगे कि मैं ही प्रभु हूँ।“</span> <sup>20</sup><span class='v-txt'>ग्यारहवें वर्ष के पहले महीने के सातवें दिन मुझे प्रभु की वाणी यह कहते सुनाई पड़ीः</span> <sup>21</sup><span class='v-txt'>“मानवपुत्र! मैंने मिस्र के राजा फ़िराउन की भुजा तोड़ दी है और चंगा करने के लिए उस पर कोई मरहम-पट्टी नहीं बँधी गयी है, जिससे वह तलवार चलाने में समर्थ हो जाये।</span> <sup>22</sup><span class='v-txt'>इसलिए प्रभु-ईश्वर यह कहता है, ’मैं मिस्र के राजा फिराउन के विरुद्ध हो गया हूँ और उसकी भुजाएँ तोड़ डालूँगा- उसकी सामर्थ और टूटी, दोनों भुजाओं को।  मैं उसके हाथ से तलवार गिर जाने दूँगा।</span> <sup>23</sup><span class='v-txt'>मैं मिस्र के निवासियों को राष्ट्रों में बिखेर दूँगा और देश-देश में तितर-बितर कर दूँगा।</span> <sup>24</sup><span class='v-txt'>मैं बाबुल के राजा की भुजाओं को शक्तिशाली बनाऊँगा और अपनी तलवार उसके हाथ कर दूँगा; किन्तु मैं फ़िराउन की भुजाएँ तोड़ डालूँगा और वह उसके सामने गंभीर रूप से घायल हो कर कराहेगा।</span> <sup>25</sup><span class='v-txt'>मैं बाबुल के राजा की भुजाओं को शक्तिशाली बनाऊँगा, किन्तु फ़िराउन की भुजाएँ टूट कर गिर जायेंगी।  तब वे यह समझ जायेंगे कि मैं ही प्रभु हूँ, जब मैं बाबुल के राजा के हाथ में अपनी तलवार रखूँगा, वह उस से मिस्र देश पर वार करेगा।</span> <sup>26</sup><span class='v-txt'>और मैं मिस्र के निवासियों को राष्ट्रों में बिखेर दूँगा तथा देश-देश में तितर-बितर कर दूँगा।  तब वे यह समझ जायेंगे कि मैं ही प्रभु हूँ।“</span> </p>
+        <div class='nav'><a href='033029.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033031.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

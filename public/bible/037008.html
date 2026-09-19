@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>आमोस - अध्याय 8</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>आमोस</h1>
+        <h2>अध्याय 8</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु-ईश्वर ने मुझे यह दृश्य दिखायाः मैंने पके फलों की टोकरी देखी।</span> <sup>2</sup><span class='v-txt'>उसने मुझ से पूछा, &quot;आमोस! तुम क्या देखते हो?&quot;  मैंने उत्तर दिया, &quot;पके फलों की टोकरी&quot;।  इस पर प्रभु ने मझ से कहा, &quot;मेरी प्रजा इस्राएल का अन्त निकट है; अब मैं उनके अपराधों का दण्ड दिये बिना नहीं छोडूँगा।</span> <sup>3</sup><span class='v-txt'>उस दिन दरबार की गायिकाएँ यह शोक गीत गायेंगीः यह प्रभु की वाणी है-  लाशो के ढेर पड़ा हुआ है,  सभी ओर मौन छाया हुआ है।&quot;</span> <sup>4</sup><span class='v-txt'>तुम लोग मेरी यह बात सुनो, तुम जो दीन-हीन को रौंदते हो और देश के गरीबों को समाप्त कर देना चाहते हो।</span> <sup>5</sup><span class='v-txt'>तुम कहते हो, &quot;अमावस का पर्व कब बीतेगा, जिससे हम अपना अनाज बेच सकें ?  विश्राम का दिन कब बीतेगा, जिससे हम अपना गेहूँ बेच सकें?  हम अनाज की नाप छोटी कर देंगे, रुपये का वजन बढ़ायेंगे  और तराजू को खोटा बनायेंगे।</span> <sup>6</sup><span class='v-txt'>हम चाँदी के सिक्के से दरिद्र को खरीद लेंगे और जूतों की जोड़ी के दाम पर कंगाल को।  हम गेहूँ का कचरा तक बेच देंगे।&quot;</span> <sup>7</sup><span class='v-txt'>प्रभु याकूब के अहँ का शपथ खा कर कहता है- &quot;तुम लोगों ने जो कुछ किया, मैं वह सब याद रखूँगा।</span> <sup>8</sup><span class='v-txt'>क्या यह सुन कर धरती नहीं काँप उठेगी?  क्या उसके सब निवासी विलाप नहीं करेंगे?  सारी पृथ्वी नील नदी की बाढ़ की तरह हिलोरित हो उठेगी और फिर मिस्र की नील नदी की तरह शान्त हो जायेगी।&quot;</span> <sup>9</sup><span class='v-txt'>यह प्रभु की वाणी हैः &quot;उस दिन मैं मध्यान्ह में ही सूर्य को डुबा दूँगा और दोपहर में ही पृथ्वी पर अन्धकार फेलाऊँगा।</span> <sup>10</sup><span class='v-txt'>मैं तुम्हारे पर्वों को शोक में और तुम्हारे गीतों को विलाप में बदल दूँगा।  मैं सबों को टाट के कपड़े पहनाऊँगा और सबों के सिर का मुण्डन कराऊँगा।  मैं इस देश को वही शोक दिलाऊँगा, जो एकलौते पुत्र के लिए होता है और इसका अन्तिम दिन बहुत कड़ा होगा।&#039;&#039;</span> <sup>11</sup><span class='v-txt'>यह प्रभु की वाणी है: &quot;वे दिन आ रहे हैं, जब मैं इस देश में भूख भेजूँगा- रोटी की भूख और पानी की प्यास नहीं, बल्कि प्रभु की वाणी सुनने की भूख और प्यास।</span> <sup>12</sup><span class='v-txt'>तब वे प्रभु की वाणी की खोज में एक समुद्र से दूसरे समुद्र तक दौड़ते फिरेंगे और उत्तर से पूर्व तक भटकते रहेंगे, किन्तु वे उसे कहीं भी नहीं पायेंगे।</span> <sup>13</sup><span class='v-txt'>उस दिन कोमलांगी तरुणियों और नवयुवक प्यास से मूच्र्छित हो उठेंगे।</span> <sup>14</sup><span class='v-txt'>जो कोई समारिया की देवी अशीमा की शपथ खाते हैं, अथवा ‘दान! तेरे देव की शपथ!’ या ‘बरए-शेबा! तेरे इष्ष्टदेवता की शपथ!’ कहते हैं,  उन सब का पतन होगा; वे फिर नहीं उठ सकेंगे।&quot;</span> </p>
+        <div class='nav'><a href='037007.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='037009.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

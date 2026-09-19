@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>दानिएल - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>दानिएल</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मै, नबूकदनेज़र, अपने निवास में सुखपूर्वक रहता था और राजभवन में फल-फूल रहा था।</span> <sup>2</sup><span class='v-txt'>तब मैंने एक भयावह स्वप्न देखा और शय्या पर लेटे हुए मुझे डरावनी कल्पनाएँ और दृश्य भयभीत करने लगे।</span> <sup>3</sup><span class='v-txt'>अतः मैंने बाबुल के सभी विद्वानों को उपस्थित होने की आज्ञा दी, जिससे वे स्वप्न का अर्थ बता दें।</span> <sup>4</sup><span class='v-txt'>तब जादूगर, ओझा, खल्दैयी और ज्योतिषी आये।  मैं अपना स्वप्न उन्हें बताया, परन्तु वे उसका अर्थ नहीं बता सके।</span> <sup>5</sup><span class='v-txt'>अंत में मेरे सामने आया दानिएल, जिसका नाम, अपने देवता के नाम के अनुसार, मैंने बेल्टशस्सर रखा था और जिस में ईश्वर की शक्ति निवास करती थी।  उस को अपना स्वप्न बताने के पहले मैंने उस से कहा,</span> <sup>6</sup><span class='v-txt'>&quot;जादूगरों के सिरताज बेल्टशस्सर!  मैं जानता हूँ कि तुम में ईश्वर की शक्ति निवास करती हैं और तुम सभी रहस्य समझते हो।  तुम मेरा स्वप्न सुनो और उसका अर्थ बताओ।</span> <sup>7</sup><span class='v-txt'>जब मैं शय्या पर था, तो मुझे यह स्वप्न दिखाई पड़ाः पृथ्वी के बीचोंबीच एक विशाल वृक्ष खड़ा था।</span> <sup>8</sup><span class='v-txt'>वृक्ष बढ़ता और सबल होता गयाः उसकी चोटी आकाश छू रही थी और वह पृथ्वी के छोर तक दिखाई दे रहा था।</span> <sup>9</sup><span class='v-txt'>उसकी पत्तियाँ सुन्दर थीं और उस में प्रचुर फल थे।  सब प्राणी उसका फल खाकर तृप्त हो जाते थे।  वन के पशु उसकी छाया में विश्राम करने आते।  पक्षी उसकी डालियों में निवास करते थे।  उस से सभी प्राणियों का भरण-पोषण होता था।</span> <sup>10</sup><span class='v-txt'>शय्या पर लेटे-लेटे मैंने और भी दिव्य दृश्य देखे।  मेरे देखते-देखते एक रक्षक, एक स्वर्गिक प्राणी, स्वर्ग से उतरा।</span> <sup>11</sup><span class='v-txt'>वह चिल्ला उठा, ’वृक्ष काट डालो और उसकी डालें छाँट दो, उसकी पत्तियाँ झाड़ दो और उसके फल बिखेर दो।  उसके नीचे से पशुओं और उसकी डालों से पक्षियों को भाग जाने दो।</span> <sup>12</sup><span class='v-txt'>तना हो, तो जड़-सहित रहने दो।  तने पर लोहे और काँसे की जंजीर बाँधो और खेत की हरी घास के बीच रहने दो।  वह ओस से भीग जाये और उसे पशुओं के साथ घास का हिस्सा मिले।</span> <sup>13</sup><span class='v-txt'>उसका मानव मन नष्ट हो जाये और उसे पशु का मन प्राप्त हो।  सात वर्षों तक ऐसा ही रहे।</span> <sup>14</sup><span class='v-txt'>यह दण्ड रक्षको ने निश्चित किया है, यह पवित्र प्रहरियों का वचन हैं।  यह इसलिए है कि जीव-लोक के प्राणी जान जायें कि मनुष्यों के राज्य पर सर्वोच्च ईश्वर का अधिकार है और जिसे वह चाहे, उसे देता है; वह उसे दीन से दीन को दे सकता है।’</span> <sup>15</sup><span class='v-txt'>मैं, नबूकदनेज़र, ने यह स्वप्न देखा।  बेल्टशस्सर! अब तुम उसका अर्थ बताओ, क्योंकि मेरे राज्य के सभी विद्वानों में एक भी मुझे उसका अर्थ नहीं बता सका।  किन्तु तुम में ईश्वर की शक्ति निवास करती है; तुम उसे बताने में समर्थ हो।&quot;</span> <sup>16</sup><span class='v-txt'>यह सुन कर दानिएल, जो बेल्टशस्सर कहलाता था, कुछ देर तक स्तब्ध रह गया और मन में भयभीत हो उठा। तब राजा ने कहा, &quot;बेल्टशस्सर! तुम स्वप्न और उसके अर्थ से न डरो&quot;।  बेल्टशस्तर ने उत्तर दिया, &quot;काश! यह स्वप्न आपके शत्रुओं के लिए होता और इसका अर्थ आपके बैरियों पर लागू होता !</span> <sup>17</sup><span class='v-txt'>आपने एक ऐसा वृक्ष देखा, जो बढ़ता और सबल होता गया और जिसका सिरा आकाश छू रहा था और जो पथ्वी के छोर से दिखाई दे रहा था,</span> <sup>18</sup><span class='v-txt'>जिसकी मनोहर पत्तियाँ और प्रचुर फल थे और जिसे सब लोग खा सकते थे; जिसकी छाया में वन से पशु शरण लेते थे और जिसकी डालियों में पक्षी बसते थे।</span> <sup>19</sup><span class='v-txt'>यह वृक्ष आप ही हैं, महाराज! आपकी शक्ति बढ़ती गयी है और आकाश तक छूती है और आपकी प्रभुसत्ता पृथ्वी के छोर तक फैल गयी है।</span> <sup>20</sup><span class='v-txt'>महाराज! आपने साथ ही स्वर्ग से उतरे हुए एक स्वर्गिक प्राणी, एक पवित्र रक्षक को देखा, जिसने यह कहा, ’वृक्ष काट कर नष्ट करो, किंतु जड-सहित तने को भूमि में छोड़ो; उसे लोहे और काँसे के पगहे से बाँध कर हरी घास चरने दो।  उसे ओस से भीगने दो और सात वर्षों तक उसके पशु की तरह घास में से हिस्सा मिले।&#039;</span> <sup>21</sup><span class='v-txt'>राजा! इसका अर्थ यह हैः सर्वोच्च ईश्वर का महाराज के लिए निर्णय है</span> <sup>22</sup><span class='v-txt'>कि आप मनुष्यों के समाज से बहिष्कृत किये जायेंगे और आप को वन के पशुओं के साथ रहना पडेगा; आप को बैल की तरह घास चना पड़ेगा और आप ओस से भीगेंगे और यह स्थिति सात वर्षों तक बनी रहेगी, जब तक आप यह न जान जायें कि सर्वोच्च ईश्वर का ही मनुष्यों के राज्य पर अधिकार है और वह जिसे चाहे, उसे देता है।</span> <sup>23</sup><span class='v-txt'>यह भी आदेश दिया गया था कि जड़-सहित तने को छोड़ दो।  आप इस से यह समझिए कि जिस समय से आप सर्वोच्च ईश्वर का आधिपत्य मान लेंगे, उसे समय से आप को पुनः राज्य प्राप्त होगा।</span> <sup>24</sup><span class='v-txt'>राजा! आप मेरा परामर्श स्वीकार करें आप सदाचार के द्वारा पापों से मुक्ति पा जाइए और दयाधर्म के द्वारा कुकर्मों का प्रायश्चित्त कीजिए।  तभी आपके अच्छे दिन लौटेंगे।</span> <sup>25</sup><span class='v-txt'>राजा नबूकदनेज़र पर यह सब बीती।</span> <sup>26</sup><span class='v-txt'>बारह महीने बाद राजा बाबुल में राजमहल की छत पर टलहते ही बोल उठा,</span> <sup>27</sup><span class='v-txt'>&quot;कितना विशाल है यह बाबुल, जिसे मैंने अपनी अपार शक्ति से अपनी राजधानी बनाया है, जिससे वह मेरा एश्वर्य बढाये!&quot;</span> <sup>28</sup><span class='v-txt'>राजा के ये शब्द पूरे भी नहीं हुए कि स्वर्ग से यह वाणी सुनाई पड़ी, &quot;राजा नबूकदनेज़र! तुम्हारे लिए यह सन्देश है: तुम्हारे हाथ से राज्य छिन गया है।</span> <sup>29</sup><span class='v-txt'>तुम मानव समाज से बहिष्कृत हो और तुम पशुओं के बीच रहोगे।  तुम बैल की तरह घास खाओगे और तुम जब तक यह समझोगे कि मनुष्यों के राज्यों पर सर्वोच्च ईश्वर का अधिकार है और वह जिस चाहे, उसे दे सकता है, तब तक सात वर्ष बीत जायेंगे।&quot;</span> <sup>30</sup><span class='v-txt'>यह वचन तुरन्त ही नबूकदनेज़र में पूरा हो गया।  वह मानव समाज से बहिष्कृत हो गया और बैल की तरह घास खाने लगा।  वह ओस से भीगा रहता था।  उसके रोयें बकरे के बाल की तरह लम्बे और नाखून पक्षी के चंगुलों की तरह बड़े-बड़े हो गये थे।</span> <sup>31</sup><span class='v-txt'>&quot;इस अवधि के बाद मैं, नबूकदनेज़र ने, स्वर्ग की ओर दृष्टि उठायी और मुझे होश हुआ।  मैं शाश्वत, सर्वोच्च ईश्वर को धन्यवाद दे कर उसकी स्तुति करने लगाः उसकी प्रभुसत्ता चिरन्तन है, उसका शासन युगानुयुग बना रहता है।</span> <sup>32</sup><span class='v-txt'>इस लोक के सब प्राणी नगण्य हैं; स्वर्ग के देवता उसके आधीन हैं।  उसकी शक्ति का कोई नहीं सामना कर सकता और उस से पूछ सकता है, ’तू क्या करता है?&quot;</span> <sup>33</sup><span class='v-txt'>&quot;उसी समय मुझे होश आया तथा अपने राज्य के ऐश्वर्य की वृद्धि के लिए मुझे अपना वैभव और ठाठ-बाट पुनः प्राप्त हो गया।  मेरे मंत्री और दरबारी मुझे पुनः ढूँढने लगे, मेरा राज्य मेरे आधीन हो गया और मेरी महिमा बढने लगी।</span> <sup>34</sup><span class='v-txt'>अतः अब मैं, नबूकदनेज़र, सर्वोच्य ईश्वर की स्तुति करता हूँ, उसकी महिमा गाता हूँ और उसका जयजयकार करता हूँ, क्योंकि उसके सभी कार्य सच्चे और हमारे साथ उसका व्यवहार न्यायसंगत है तथा वह घमण्डियों को नीच दिखाता है।&quot;</span> </p>
+        <div class='nav'><a href='034003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='034005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

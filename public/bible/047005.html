@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मत्ती - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मत्ती</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ईसा यह विशाल जनसमूह देखकर पहाड़ी पर चढ़े और बैठ गए।  उनके शिष्य उनके पास आये।</span> <sup>2</sup><span class='v-txt'>और वे यह कहते हुए उन्हें शिक्षा देने लगेः</span> <sup>3</sup><span class='v-txt'>&quot;धन्य हैं वे, जो अपने को दीन-हीन समझते हैं! स्वर्गराज्य उन्हीं का है।</span> <sup>4</sup><span class='v-txt'>धन्य हैं वे जो नम्र हैं! उन्हें प्रतिज्ञात देश प्राप्त होगा।</span> <sup>5</sup><span class='v-txt'>धन्य हैं वे, जो शोक करते हैं! उन्हें सान्त्वना मिलेगी।</span> <sup>6</sup><span class='v-txt'>घन्य हैं, वे, जो धार्मिकता के भूखे और प्यासे हैं! वे तृप्त किये जायेंगे।</span> <sup>7</sup><span class='v-txt'>धन्य हैं वे, जो दयालू हैं! उन पर दया की जायेगी।</span> <sup>8</sup><span class='v-txt'>धन्य हैं वे, जिनका हृदय निर्मल हैं! वे ईश्वर के दर्शन करेंगे।</span> <sup>9</sup><span class='v-txt'>धन्य हैं वे, जो मेल कराते हैं! वे ईश्वर के पुत्र कहलायेंगे।</span> <sup>10</sup><span class='v-txt'>धन्य हैं वे, जो धार्मिकता के कारण अत्याचार सहते हैं! स्वर्गराज्य उन्हीं का है।</span> <sup>11</sup><span class='v-txt'>धन्य हो तुम जब लोग मेरे कारण तुम्हारा अपमान करते हैं, तुम पर अत्याचार करते हैं और तरह-तरह के झूठे दोष लगाते हैं।</span> <sup>12</sup><span class='v-txt'>खुश हो और आनन्द मनाओ - स्वर्ग में तुम्हें महान् पुरस्कार प्राप्त होगा। तुम्हारे पहले के नबियों पर भी उन्होंने इसी तरह अत्याचार किया।</span> <sup>13</sup><span class='v-txt'>&quot;तुम पृथ्वी के नमक हो। यदि नमक फीका पड़ जाये, तो वह किस से नमकीन किया जायेगा? वह किसी काम का नहीं रह जाता। वह बाहर फेंका और मनुष्यों के पैरों तले रौंदा जाता है।</span> <sup>14</sup><span class='v-txt'>&quot;तुम संसार की ज्योति हो। पहाड़ पर बसा हुआ नगर छिप नहीं सकता।</span> <sup>15</sup><span class='v-txt'>लोग दीपक जला कर पैमाने के नीचे नहीं, बल्कि दीवट पर रखते हैं, जहाँ से वह घर के सब लोगों को प्रकाश देता है।</span> <sup>16</sup><span class='v-txt'>उसी प्रकार तुम्हारी ज्योति मनुष्यों के सामने चमकती रहे, जिससे वे तुम्हारे भले कामों को देख कर तुम्हारे स्वर्गिक पिता की महिमा करें।</span> <sup>17</sup><span class='v-txt'>&quot;यह न समझो कि मैं संहिता अथवा नबियों के लेखों को रद्द करने आया हूँ। उन्हें रद्द करने नहीं, बल्कि पूरा करने आया हूँ।</span> <sup>18</sup><span class='v-txt'>मैं तुम लोगों से यह कहता हूँ -  आकाश और पृथ्वी भले ही टल जाये, किन्तु संहिता की एक मात्रा अथवा एक बिन्दु भी पूरा हुए बिना नहीं टलेगा।</span> <sup>19</sup><span class='v-txt'>इसलिए जो उन छोटी-से-छोटी आज्ञाओं में एक को भी भंग करता और दूसरों को ऐसा करना सिखाता है, वह स्वर्गराज्य में छोटा समझा जायेगा। जो उनका पालन करता और उन्हें सिखाता है, वह स्वर्गराज्य में बड़ा समझा जायेगा।</span> <sup>20</sup><span class='v-txt'>मैं तुम लोगों से कहता हूँ - यदि तुम्हारी धार्मिकता शास्त्रियों और फ़रीसियों की धार्मिकता से गहरी नहीं हुई, तो तुम स्वर्गराज्य में प्रवेश नहीं करोगे।</span> <sup>21</sup><span class='v-txt'>&quot;तुम लोगों ने सुना है कि पूर्वजों से कहा गया है- हत्या मत करो। यदि कोई हत्या करे, तो वह कचहरी में दण्ड के योग्य ठहराया जायेगा।</span> <sup>22</sup><span class='v-txt'>परन्तु मैं तुम से यह कहता हूँ - जो अपने भाई पर क्रोध करता है, वह कचहरी में दण्ड के योग्य ठहराया जायेगा। यदि वह अपने भाई से कहे, ’रे मूर्ख! तो वह महासभा में दण्ड के योग्य ठहराया जायेगा और यदि वह कहे, ’रे नास्तिक! तो वह नरक की आग के योग्य ठहराया जायेगा ।</span> <sup>23</sup><span class='v-txt'>&quot;जब तुम वेदी पर अपनी भेंट चढ़ा रहे हो और तुम्हें वहाँं याद आये कि मेरे भाई को मुझ से कोई शिकायत है,</span> <sup>24</sup><span class='v-txt'>तो अपनी भेंट वहीं वेदी के सामने छोड़ कर पहले अपने भाई से मेल करने जाओ और तब आ कर अपनी भेंट चढ़ाओ।</span> <sup>25</sup><span class='v-txt'>&quot;कचहरी जाते समय रास्ते में ही अपने मुद्दई से समझौता कर लो। कहीं ऐसा न हो कि वह तुम्हें न्यायाकर्ता के हवाले कर दे, न्यायाकर्ता तुम्हें प्यादे के हवाले कर दे और प्यादा तुम्हें बन्दीगृह में डाल दे।</span> <sup>26</sup><span class='v-txt'>मैं तुम से यह कहता हूँ -  जब तक कौड़ी-कौड़ी न चुका दोगे, तब तक वहाँ से नहीं निकल पाओगे।</span> <sup>27</sup><span class='v-txt'>तुम लोगों ने सुना है कि कहा गया है - व्यभिचार मत करो।</span> <sup>28</sup><span class='v-txt'>परन्तु मैं तुम से कहता हूँ - जो बुरी इच्छा से किसी स्त्री पर दृष्टि डालता है वह अपने मन में उसके साथ व्यभिचार कर चुका है।</span> <sup>29</sup><span class='v-txt'>&quot;यदि तुम्हारी दाहिनी आँख तुम्हारे लिए पाप का कारण बनती है, तो उसे निकाल कर फेंक दो। अच्छा यही है कि तुम्हारे अंगों में से एक नष्ट हो जाये, किन्तु तुम्हारा सारा शरीर नरक में न डाला जाये।</span> <sup>30</sup><span class='v-txt'>और यदि तुम्हारा दाहिना हाथ तुम्हारे लिए पाप का कारण बनता है, तो उसे काट कर फेंक दो। अच्छा यही है कि तुम्हारे अंगों में से एक नष्ट हो जाये, किन्तु तुम्हारा सारा शरीर नरक में न जाये।</span> <sup>31</sup><span class='v-txt'>&quot;यह भी कहा गया है- जो अपनी पत्नी का परित्याग करता है, वह उसे त्याग पत्र दे दे।</span> <sup>32</sup><span class='v-txt'>परन्तु मैं तुम से कहता हूँ -  व्यभिचार को छोड़ किसी अन्य कारण से जो अपनी पत्नी का परित्याग करता है, वह उस से व्यभिचार कराता है और जो परित्यक्ता से विवाह करता है, वह व्यभिचार करता है।</span> <sup>33</sup><span class='v-txt'>तुम लोगों ने यह भी सुना है कि पूर्वजों से कहा गया है -झूठी शपथ मत खाओ। प्रभु के सामने खायी हुई शपथ पूरी करो।</span> <sup>34</sup><span class='v-txt'>परतु मैं तुम से कहता हूँः शपथ कभी नहीं खानी चाहिए- न तो स्वर्ग की, क्योंकि वह ईश्वर का सिंहासन है;</span> <sup>35</sup><span class='v-txt'>न पृथ्वी की, क्योंकि वह उसका पावदान है और न येरूसालेम की, क्योंकि वह राजाधिराज का नगर है।</span> <sup>36</sup><span class='v-txt'>और न अपने सिर की, क्योंकि तुम इसका एक भी बाल सफेद या काला नहीं कर सकते।</span> <sup>37</sup><span class='v-txt'>तुमहारी बात इतनी हो-हाँ की हाँ, नहीं की नहीं। जो इससे अधिक है, वह बुराई से उत्पन्न होता है।</span> <sup>38</sup><span class='v-txt'>तुम लोगों ने सुना है कि कहा गया है- आँख के बदले आँख, दाँत के बदले दाँत।</span> <sup>39</sup><span class='v-txt'>परन्तु मैं तुम से कहता हूँ - दुष्ट का सामना नहीं करो। यदि कोई तुम्हारे दाहिने गाल पर थप्पड मारे, तो दूसरा भी उसके सामने कर दो।</span> <sup>40</sup><span class='v-txt'>जो मुक़दमा लड़ कर तुम्हारा कुरता लेना चाहता है, उसे अपनी चादर भी ले लेने दो।</span> <sup>41</sup><span class='v-txt'>और यदि कोई तुम्हें आधा कोस बेगार में ले जाये, तो उसके साथ कोस भर चले जाओ।</span> <sup>42</sup><span class='v-txt'>जो तुम से माँगता है, उसे दे दो और जो तुम से उधार लेना चाहता है, उस से मुँह न मोड़ो।</span> <sup>43</sup><span class='v-txt'>&quot;तुम लोगों ने सुना है कि कहा गया है- अपने पड़ोसी से प्रेम करो और अपने बैरी से बैर।</span> <sup>44</sup><span class='v-txt'>परन्तु मैं तुम से कहता हूँ -  अपने शत्रुओं से प्रेम करो और जो तुम पर अत्याचार करते हैं, उनके लिए प्रार्थना करो।</span> <sup>45</sup><span class='v-txt'>इस से तुम अपने स्वर्गिक पिता की संतान बन जाओगे; क्योंकि वह भले और बुरे, दोनों पर अपना सूर्य उगाता तथा धर्मी और अधर्मी, दोनों पर पानी बरसाता है।</span> <sup>46</sup><span class='v-txt'>यदि तुम उन्हीं से प्रेम करत हो, जो तुम से प्रेम करते हैं, तो पुरस्कार का दावा कैसे कर सकते हो? क्या नाकेदार भी ऐसा नहीं करते ?</span> <sup>47</sup><span class='v-txt'>और यदि तुम अपने भाइयों को ही नमस्कार करते हो, तो क्या बडा काम करते हो? क्या गै़र -यहूदी भी ऐसा नहीं करते?</span> <sup>48</sup><span class='v-txt'>इसलिए तुम पूर्ण बनो, जैसे तुम्हारा स्वर्गिक पिता पूर्ण है।</span> </p>
+        <div class='nav'><a href='047004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='047006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

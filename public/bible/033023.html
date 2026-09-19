@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 23</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 23</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मुझे प्रभु की वाणी यह कहते हुए सुनाई पड़ीः</span> <sup>2</sup><span class='v-txt'>“मानवपुत्र! दो स्त्रियाँ, एक ही माता की दो पुत्रियाँ थीं।</span> <sup>3</sup><span class='v-txt'>वे मिस्र में व्यभिचार करती थीं।  वे अपनी युवावस्था से ही व्यभिचार करती थीं।  वहाँ उनका उरोजमर्दन होता था, उनके अक्षत स्तन सहलाये जाते थे।</span> <sup>4</sup><span class='v-txt'>बड़़ी का नाम ओहोला था और उसकी बहन का नाम ओहोलीबा।  मैंने उन्हें अपना लिया और उनके पुत्र-पुत्रियाँ उत्पन्न हुए।  ओहोला नाम समरिया का है और ओहोलीबा, येरूसालेम का।</span> <sup>5</sup><span class='v-txt'>“जब ओहोला मेरे अधीन थी, तो उसने व्यभिचार किया।  वह अस्सूरियों पर मोहित हो गयी,</span> <sup>6</sup><span class='v-txt'>उस बैंगनी वस्त्रधारी योद्धाओं क्षतप्रों और सेनापतियों पर, जो सभी अश्वारोही सुन्दर नवयुवक थे।</span> <sup>7</sup><span class='v-txt'>उसने अपने आप को सभी सर्वोत्म अस्सूरियों को व्यभिचार के लिए अर्पित किया और वह जिनके प्रति आसक्त थी, उनकी मूर्तियों की पूजा द्वारा अपने को दूषित किया।</span> <sup>8</sup><span class='v-txt'>उसके मिस्र में रहते समय किये गये व्यभिचार का परित्याग नहीं किया था; क्योंकि उसकी तुरुणाई में लोग उसके साथ सोये थे, उन्होंने उसके अक्षत उरोज सहलाये और अपनी वासना शान्त की थी।।</span> <sup>9</sup><span class='v-txt'>इसलिए मैंने उस को अपने प्रेमी अस्सूरियों के हाथ दे दिया, जिन पर वह आसक्त थी।</span> <sup>10</sup><span class='v-txt'>उन्होंने उसे निर्वस्त्र कर उसके पुत्र-पुत्रियों को बन्दी बनाया और उसे तलवार के घाट उतार दिया।  दण्डित किये जाने के बाद वह स्त्रियों के बीच दृष्टान्त बन गयी।</span> <sup>11</sup><span class='v-txt'>“उसकी बहन ओहोलीबा ने यह सब देखा, तब भी वह उस से कहीं अधिक भ्रष्ट बनी रही और व्यभिचार में उस से भी आगे रही।</span> <sup>12</sup><span class='v-txt'>वह अस्सूरियों पर मोहित हो गयी- क्षतप्रों, सेनापतियों, अस्त्र-शस्त्रों से सज्जित योद्धाओं, अश्वारोहियों पर जो सभी मोहक नवयुवक थे।</span> <sup>13</sup><span class='v-txt'>मैंने यह देखा कि वह शीलभ्रष्ट हो गयी; दोनों का आचरण एक जैसा था।</span> <sup>14</sup><span class='v-txt'>किन्तु वह व्यभिचार में और भी आगे बढ़ गयी।  जब उसने भित्ति पर अंकित लोगों को, लाल रंग से बने हुए खल्दैयियों के वे चत्रि देखे,</span> <sup>15</sup><span class='v-txt'>जो अपनी कमर में बन्दकसे, अपने सिर पर साफे पहने, सब-के-सब सैनिक अधिकारियों-जैसे थे, खल्दैया में रहने वाले बाबुलवासियों के चत्रि जैसे,</span> <sup>16</sup><span class='v-txt'>तो वह उन पर मोहित हो गयी।  उसने खल्देया में उनके यहाँ दूत भेजे।</span> <sup>17</sup><span class='v-txt'>बाबुलवासी उसके प्रेम की सेज के समीप आ गये और उन्होंने अपनी वासना द्वारा उसे भ्रष्ट कर दिया।  उनके द्वारा अपवित्र किये जाने पर घृणा के कारण वह उन से विमुख हो गयी।</span> <sup>18</sup><span class='v-txt'>जब उसने खुले आम व्यभिचार किया और अपनी निर्लज्जता प्रकट की, तो घृणा के कारण मैं उस से उसी तरह विमुख हो गया, जिस तरह मैं उसकी बहन से विमुख हुआ था।</span> <sup>19</sup><span class='v-txt'>तब भी वह अपनी तरुणाई के उन दिनों की याद कर, जब वह मिस्र देश में व्यभिचार करती थी, और अधिक व्यभिचार करती गयी।</span> <sup>20</sup><span class='v-txt'>वह वहाँ अपने प्रेमियों पर मोहित हो गयी, जिनके कामांग गधों-जैसे थे और जिनका स्राव घोड़ों के सदृश था।</span> <sup>21</sup><span class='v-txt'>इस तरह तुम अपनी उस तरुणाई के व्यभिचार के लिए लालायित हो गयी, जब मिस्रवासी तुम्हारे स्तन सहलाते और तुम्हारा उरोज-मर्दन करते थे।</span> <sup>22</sup><span class='v-txt'>“इसलिए ओहोलीबा! प्रभु-ईश्वर यह कहता है, ’मैं तुम्हारे प्रेमियों को, जिन से तुम विमुख हो गयी हो, तम्हारे विरुद्ध उकसाऊँगा और हर दिशा से उन को तुम पर आक्रमण करने लाऊँगा-</span> <sup>23</sup><span class='v-txt'>बाबुलवासियों, सभी खल्दैदियों, पकोद, शोआ और कोआ के निवासियों तथा उनके साथ सभी अस्सूरियों को मोहक, नवयुवकों, उनके समस्त क्षतप्रों, सेनापतियों, पदाधिकारियों और सैनिकों को, जो सभी अश्वारोही हैं।</span> <sup>24</sup><span class='v-txt'>वे रथों, वाहनों और विशाल जनसमूह के साथ उत्तर की ओर से तुम पर आक्रमण करेंगे।  वे फरी, ढाल और शिरस्त्राण धारणा कर तुम को हर ओर से घेर लेंगे।  मैं उन को तुम्हारे न्याय का अधिकार दे दूँगा और वे अपने विधान के अनुसार तुम्हारा न्याय करेंगे।</span> <sup>25</sup><span class='v-txt'>मैं तुम्हारे विरुद्ध अपना कोप प्रकट करूँगा, जिससे वे तुम्हारे साथ रोषपूर्ण व्यवहार करें।  वे तुम्हारे नाक-कान काटदेंगे और तुम्हारे बीच जीवित रह गये लोग तलवार के घाट उतार दिये जायेंगे।  वे तुम्हारे पुत्र-पुत्रियों को पकड़ कर ले जायेंगे और तुम्हारे बीच जीवित रह गये लोग आग में जला दिये जायेंगे।</span> <sup>26</sup><span class='v-txt'>वे तुम्हारे वस्त्र तक उतार लेंगे और तुम्हारे बहुमूल्य आभूषण छीन लेंगे।</span> <sup>27</sup><span class='v-txt'>मैं मिस्र देश में शुरू हुए तुम्हारे दुराचरण और व्यभिचार का अन्त कर दूँगा, जिससे तुम न तो मिस्रियों की ओर देखोगी और न कभी उनका स्मरण करोगी।</span> <sup>28</sup><span class='v-txt'>क्योंकि प्रभु-ईश्वर यह कहता है: मैं तुम्हें उन लोगों के हाथ कर दूँगा, जिन से तु घृण करती हो- उन लोगों के हाथ, जिन से तुम घृणा के कारण विमुख हो गयी हो।</span> <sup>29</sup><span class='v-txt'>तुम्हारे प्रति उनका व्यवहार घृणा का होगा।  वे तुम्हारे श्रम का समस्त लाभ हड़प लेंगे, तुम्हें निर्वस्त्र और नग्न छोड़ देंगे और तुम्हारे व्यभिचार की निर्लज्जता प्रकट हो जायेगी।  तुम्हारे दुराचरण और व्यभिचार के कारण ही</span> <sup>30</sup><span class='v-txt'>तुम पर यह बीती है, क्योंकि तुमने राष्ट्रों के साथ व्यभिचार किया और उनकी दूवमूर्तियों की पूजा द्वारा अपने को अपवित्र बनाया।</span> <sup>31</sup><span class='v-txt'>तुमने अपनी बहन का अनुसरण किया; इसलिए मैं उसका प्याला तुम्हारे हाथ दे दूँगा।</span> <sup>32</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता है- तुम अपनी बहन का प्याला पियोगी जो गहरा और बड़ा है।  तुम्हारी हँसी होगी और तुम्हारा उपहास किया जायेगा, क्योंकि उस में बहुत समाता है।</span> <sup>33</sup><span class='v-txt'>तुम नशे और उदासी से भर जाओगी।  तुम्हारी बहन समारिया का प्याला सन्त्रास और विध्वंस का प्याला है।</span> <sup>34</sup><span class='v-txt'>तुम इसे पियोगी और अंतिम बूँद तक पीती रहोगी; तुम अपने केश नोचोगी और अपनी छाती चीरोगी; क्योंकि यह मैंने कहा है- यह प्रभु-ईश्वर की वाणी है।</span> <sup>35</sup><span class='v-txt'>“इसलिए प्रभु-ईश्वर यह कहता हैः तुमने मुझे भुला दिया है और अपने आप से ओझ कर दिया है, इसलिए तुम अपनी दुश्चरत्रिता और व्यभिचार के फल भोगो।“</span> <sup>36</sup><span class='v-txt'>प्रभु ने मुझ से यह कहा, “मानवपुत्र! क्या तुम ओहोला और ओहोलीबा का न्याय करोगे?  तो उनके घृणित कार्यों की घोषणा उनके सामने कर दो।</span> <sup>37</sup><span class='v-txt'>उन्होंने व्यभिचार किया है और उनके हाथ खून से रँगे हैं।  उन्होंने अपनी दूवमूर्तियों के साथ व्यभिचार किया है, यहाँ तक कि उन्होंने मेरे लिए उत्पन्न अपने पुत्रों को उन्हें बलि के लिए अर्पित किया है।</span> <sup>38</sup><span class='v-txt'>यही नहीं, उन्होंने मेरे विरुद्ध यह कार्य किया है: उन्होंने उसी दिन मेरा मन्दिर अपवित्र किया है और मेरे विश्राम-दिवस अपवित्र किये हैं।</span> <sup>39</sup><span class='v-txt'>उन्होंने जिस दिन अपनी देवमूर्तियों पर चढ़ाने के लिए अपनी सन्तानों का वध किया था, उसी दिन उन्होंने मेरे मन्दिर को अपवित्र करने के लिए उस में प्रवेश किया था।  उन्होंने यह कार्य मेरे घर में किया।</span> <sup>40</sup><span class='v-txt'>उन्होंने दूर-दूर के लोगों को बुलाया, यहाँ तक कि उनके यहाँ दूत भेजा और वे आ गये।  तुमने उनके लिए स्नान कर अपनी आँखों के काजल लगाया और आभूषण सजाये।</span> <sup>41</sup><span class='v-txt'>तुम एक सुसज्जित आसन पर बैठ गयीं, उसके सामने एक मेज़ रखी थी, जिस पर तुमने मेरा लोबान और मेरा तेल रख दिया था।</span> <sup>42</sup><span class='v-txt'>उसके चारों ओर बेफिक्र लोगों का कोलाहल सुनाई दे रहा था और सामान्य लोगों के साथ उजाड़खण्ड से पियक्कड़ भी आये थे।  उन्होंने इन स्त्रियों की कलाइयों में कंगन और इनके माथे पर सुन्दर मुकुट पहनाये थे।</span> <sup>43</sup><span class='v-txt'>“इस पर मैं यह बोलाः क्या जब लोग उसके साथ संसर्ग करते हैं, तो वे व्यभिचार नहीं करते?</span> <sup>44</sup><span class='v-txt'>वे उसके यहाँ उसी प्रकार गये हैं, जिस प्रकार लोग वेश्या के यहाँ जाते हैं।  ठीक उसी प्रकार वे ओहोला और ओहोलीबा के यहाँ व्यभिचार के लिए गये थे।</span> <sup>45</sup><span class='v-txt'>किन्तु धर्मी लोग उनका न्याय करेंगे, जैसे व्यभिचारिणियों और रक्त बहाने वाले लोगों का विचार करते हैं; क्योंकि वे व्यभिचारिणी हैं और उनके हाथ खून से रँगे हैं।</span> <sup>46</sup><span class='v-txt'>“प्रभु-ईश्वर यह कहता है: उनके विरुद्ध जनसमूह को एकत्रित करो और उन को आतंक और लूट का शिकार बनने दो।</span> <sup>47</sup><span class='v-txt'>वह जनसमूह उन्हें पत्थरों से मारेगा और तलवार से टुकड़े-टुकड़े कर देगा।  वह उनके पुत्र-पुत्रियों का वध करेगा और उनके घर जला डालेगा।</span> <sup>48</sup><span class='v-txt'>इस प्रकार मैं इस देश के व्यभिचार को मिटा दूँगा, जिससे सभी स्त्रियाँ सचेत हो जायें और तुम्हारी तरह दुराचरण न करें।</span> <sup>49</sup><span class='v-txt'>तुम्हें अपने दुराचरण का प्रतिफल मिलगा और अपनी पापपूर्ण मूर्तिपूजा का दण्ड भोगना होगा।  तब तुम यह जान जाओेगी कि मैं ही प्रभु-ईश्वर हूँ।“</span> </p>
+        <div class='nav'><a href='033022.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033024.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

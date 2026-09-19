@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 21</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 21</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>पुत्र! क्या तुमने पाप किया है? तो फिर ऐसा मत करो और अपने पुराने पापों के लिए क्षमा माँगो।</span> <sup>2</sup><span class='v-txt'>साँप के सामने की तरह पाप से दूर भाग जाओ। यदि पास आओगे, तो वह तुम को काटेगा।</span> <sup>3</sup><span class='v-txt'>उसके दाँत सिंह के दाँतो-जैसे हैं; वे मनुष्य की आत्माओें का विनाश करते हैं।</span> <sup>4</sup><span class='v-txt'>प्रत्येक अपराध दुधारी तलवार-जैसा हैः उसके घाव का इलाज नहीं होता।</span> <sup>6</sup><span class='v-txt'>दरिद्र की प्रार्थना सीधे ईश्वर के कान तक पहुँचती है; उसे शीघ्र ही न्याय दिलाया जायेगा।</span> <sup>7</sup><span class='v-txt'>जो सुधार नापसन्द करता, वह पापी के मार्ग पर चलता है; किन्तु जो प्रभु पर श्रद्धा रखता, वह हृदय से पश्चात्ताप करेगा।</span> <sup>8</sup><span class='v-txt'>सब लोग डींग मारने वाले को पहचानते हैं; किन्तु समझदार व्यक्ति अपनी गलतियाँ जानता है।</span> <sup>9</sup><span class='v-txt'>जो पराये धन से अपना घर बनाता है, वह मानो अपने मकबरे के लिए पत्थर बटोरता है।</span> <sup>10</sup><span class='v-txt'>पापियों की सभा सन की गठरी-जैसी है।  उसका अन्त प्रज्वलित आग में होता है।</span> <sup>11</sup><span class='v-txt'>पापियों का मार्ग प्रशस्त है, उस में रोड़े नहीं है, किन्तु वह मृतकों के निवास के गर्त में ले जाता है।</span> <sup>12</sup><span class='v-txt'>संहिता के पालनकर्ता की बुद्धि स्थिर है।</span> <sup>13</sup><span class='v-txt'>प्रज्ञा प्रभु पर श्रद्धा की परिपूर्णता है।</span> <sup>14</sup><span class='v-txt'>जो बुद्धिमान् नहीं है, वह सुशिक्षित नहीं बना सकता।</span> <sup>15</sup><span class='v-txt'>किन्तु एक ऐसी बुद्धिमानी होती है, जो बुराई से भरी हुई है और जहाँ कटुता है, वहाँ बुद्धिमानी नहीं।</span> <sup>16</sup><span class='v-txt'>प्रज्ञ का ज्ञान बाढ़ की तरह बढ़ता है और उसका परामर्श संजीवन जल का स्त्रोत है।</span> <sup>17</sup><span class='v-txt'>मूर्ख का हृदय टूटे घड़े के सदृश है; उस में कोई भी ज्ञान नहीं ठहर पाता।</span> <sup>18</sup><span class='v-txt'>जब समझदार व्यक्ति ज्ञान की बात सुनता, तो वह उसकी प्रशंसा करता और अपनी ओर से उस में कुछ जोड़ देता है; किन्तु लम्पट उसे सुन कर नापसन्द करता और उसे अपनी पीठ पीछे फेंक देता है।</span> <sup>19</sup><span class='v-txt'>मूर्ख बकवाद यात्रा में बोझ-जैसी है, किन्तु बुद्धिमान् की बातें मनोहर हैं।</span> <sup>20</sup><span class='v-txt'>लोग सभा में बुद्धिमान् की सम्मति को महत्व देते और उसके षब्दों पर विचार करते हैं।</span> <sup>21</sup><span class='v-txt'>मूर्ख की दृष्टि में प्रज्ञा टूट-फूटे मकान जैसी है।  बेसमझ का ज्ञान है- बेसिर-पैर की बातें।</span> <sup>22</sup><span class='v-txt'>मूर्ख के लिए अनुशासन पैरों में बेड़ियों जैसा या दाहिने हाथ में हथकड़ियों-जैसा है।</span> <sup>23</sup><span class='v-txt'>मूर्ख खिलखिला कर हँसता है, किन्तु समझदार अधिक-से-अधिक मुस्कराता है।</span> <sup>24</sup><span class='v-txt'>प्रज्ञ के लिए अनुशासन सोने आभूषण जैसा या दाहिनी बाँह में भुजबन्द-जैसा है।</span> <sup>25</sup><span class='v-txt'>मूर्ख किसी के घर निधड़क घुस जाता, किन्तु समझदार सविनय खड़ा रहता है।</span> <sup>26</sup><span class='v-txt'>मूर्ख द्वार पर घर के अन्दर झाँकता, किन्तु सभ्य मनुष्य बाहर खड़ा रहता है।</span> <sup>27</sup><span class='v-txt'>असभ्य द्वार पर कान लगा कर सुनता, किन्तु समझदार व्यक्ति उसे लज्जा की बात समझता है।</span> <sup>28</sup><span class='v-txt'>गप्पी के होंठ बकवाद करते हैं, किन्तु समझदार व्यक्ति के शब्द तराजू पर तोले हुए हैं।</span> <sup>29</sup><span class='v-txt'>मूर्खों का हृदय उनकी जीभ पर बसता है, किन्तु ज्ञानियों की जीभ उनके हृदय में बसती है।</span> <sup>30</sup><span class='v-txt'>जब दुष्ट अपने विरोधी को कोसता, तो वह अपने केा कोसता है।</span> <sup>31</sup><span class='v-txt'>चुगलखोर अपने को दूषित करता और अपने को पड़ोस में घृणा का पात्र बना लेता है।</span> </p>
+        <div class='nav'><a href='028020.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028022.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

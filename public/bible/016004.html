@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>नहेम्या - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>नहेम्या</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब सनबल्लट और टोबीयाह तथा अरबांे, अम्मोनियों और अशदोद के निवासियों ने यह सुना कि येरूसालेम की चारदीवारी की मरम्मत ठीक चल रही है और उसकी दरार भरी जा रही है, तो उन्हें बड़ा क्रोध हुआ।</span> <sup>2</sup><span class='v-txt'>उन सबों ने येरूसालेम के विरुद्ध लड़ने और वहाँ उपद्रव करने के लिए षड्यंत्र रचा।</span> <sup>3</sup><span class='v-txt'>परन्तु हमने अपने ईश्वर से प्रार्थना की और काम को शत्रुओं से सुरक्षित रखने के लिए दिन-रात पहरेदारों को नियुक्त किया।</span> <sup>4</sup><span class='v-txt'>यूदावंशी कहते थेः &quot;बोझ ढोने वाले थक गये हैं।  मलबा अधिक है।  हम दीवार उठाने में असमर्थ होंगे।&quot;</span> <sup>5</sup><span class='v-txt'>उधर हमारे विरोधियों ने सोचा कि &quot;जब तक हम उनके बीच न घुसें, तब तक उन्हें न तो इसका पता लगेगा और न वे हमें देख सकेंगे।  इसके बाद हम उनका वध करेंगे और उनका काम रोकेंगे।&quot;</span> <sup>6</sup><span class='v-txt'>उनके पास रहने वाले यहूदी आ कर हम से दसियों बार कर चुके थे, &quot;जहाँ-जहाँ से आप आये हुए हैं, वे वहाँ-वहाँ से आप पर आक्रमण करने आयेंगे&quot;।</span> <sup>7</sup><span class='v-txt'>इसलिए मैंने नगर के निचले असुरक्षित भागों में, दीवार के भीतर लोगों को खड़ा किया।  मैंने उन्हें घरानों के अनुसार तलवारें, भाले और धनुष लिये तैयार रखा ।</span> <sup>8</sup><span class='v-txt'>मैंने उ़ठ कर चारों ओर दृष्टि डाली और कुलीनों, पदाधिकारियों तथा अन्य लोगों से कहा, &quot;आप उन से नहीं डरें।  आप महान् और भीषण प्रभु को याद रखें और यह न भूलें कि आप अपने भाइयों, पुत्रों, पुत्रियों, पत्नियों और घरों के लिए युद्ध करते हैं।&quot;</span> <sup>9</sup><span class='v-txt'>जब हमारे विरोधियों को यह पता चला कि हम उनका षड्यन्त्र जान गये हैं और ईश्वर ने उसे असफल कर दिया है, तो हम में से प्रत्येक व्यक्ति फिर दीवार पर जा कर अपने काम में लग गया।</span> <sup>10</sup><span class='v-txt'>उस दिन से मेरे आदमियों में से आधे लोग काम करते और आधे अपने नेताओं के साथ बरछे, ढाल और धनुष लिये तथा कवच पहने काम करने वाले यूदावंशियों के पीछे रक्षार्थ तैयार रहते थे।</span> <sup>11</sup><span class='v-txt'>चारदीवारी बनानेवाले और बोझा ढोने वाले एक हाथ से काम करते और दूसरे में शस्त्र लिये रहते।</span> <sup>12</sup><span class='v-txt'>काम करने वाले काम करते समय अपनी कमर में अपनी तलवार कसे रहते।  सिंगा बजाने वाला मेरे साथ रहता।</span> <sup>13</sup><span class='v-txt'>मैंने कुलीनों, पदाधिकारियों और अन्य लोगों से कहा, &quot;यह काम भारी और लम्बा-चोड़ा है।  हम दीवार पर इधर-उधर फैले हुए और एक दूसरे से दूर हैं।</span> <sup>14</sup><span class='v-txt'>आप जिस स्थान से सिंगे की ध्वनि सुनें, वहीं आ कर हमारे पास एकत्रित हो जायें।  हमारा ईश्वर हमारे लिए लड़ेगा।&quot;</span> <sup>15</sup><span class='v-txt'>इस प्रकार हम काम करते रहते और इस समय हम में से आधे लोग उषाकाल से तारे दिखाई देने तक भाले लिए तैयार रहते।</span> <sup>16</sup><span class='v-txt'>उस समय मैंने लोगों को यह आज्ञा दी कि प्रत्येक व्यक्ति अपने नौकरों के साथ येरूसालेम में ही रात बिताये।  इस तरह वे रात को पहरेदारों का काम करें और दिन में कारीगरों का।</span> <sup>17</sup><span class='v-txt'>मैं, मेरे भाई-बन्धु, मेरे आदमी और मेरे साथ के पहरेदार-सब ने कपड़े तक नहीं उतारे।  हर व्यक्ति अपने हाथ में हथियार लिये रहा।</span> </p>
+        <div class='nav'><a href='016003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='016005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

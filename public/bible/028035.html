@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 35</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 35</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>संहिता के अनुसार आचरण बहुत-सी बलियों के बराबर है।</span> <sup>2</sup><span class='v-txt'>(2-3) जो आज्ञाओें का पालन करता है, वह शांति का बलिदान चढ़ाता है।</span> <sup>4</sup><span class='v-txt'>परोपकार अन्न-बलि लगाने के बराबर है।  जो भिक्षादान करता है, वह धन्यवाद का बलिदान चढ़ाता है।</span> <sup>5</sup><span class='v-txt'>बुराई का त्याग प्रभु को प्रिय होता है और अधर्म से दूर रहना प्रायश्चित के बलिदान के बराबर है।</span> <sup>6</sup><span class='v-txt'>फिर भी खाली हाथ प्रभु के सामने मत जाओ,</span> <sup>7</sup><span class='v-txt'>क्योंकि ये सब बलिदान आदेश के अनुकूल हैं।</span> <sup>8</sup><span class='v-txt'>धर्मी का चढ़ावा वेदी की शोभा बढ़ाता है और उसकी सुगन्ध सर्वोच्च ईश्वर तक पहुँचती है।</span> <sup>9</sup><span class='v-txt'>धर्मी का बलिदान सुग्राहय होता है, उसकी स्मृति सदा बनी रहेगी।</span> <sup>10</sup><span class='v-txt'>उदारतापूर्वक प्रभु की स्तुति करते रहो।  प्रथम फलों के चढ़ावे में कमी मत करो।</span> <sup>11</sup><span class='v-txt'>प्रसन्नमुख हो कर दान चढ़ाया करो और खुशी से दशमांश देा।</span> <sup>12</sup><span class='v-txt'>जिस प्रकार सर्वोच्च ईश्वर ने तुम्हें दिया है, उसकी प्रकार तुम भी उसे सामर्थ्य के अनुसार उदारतापूर्वक दो;</span> <sup>13</sup><span class='v-txt'>क्योंकि प्रभु प्रतिदान करता है, वह तुम्हें सात गुना लौटायेगा।</span> <sup>14</sup><span class='v-txt'>उसे घूस मत दो, वह उसे स्वीकार नहीं करता।</span> <sup>15</sup><span class='v-txt'>पाप की कमाई के चढ़ावे पर भरोसा मत रखो; क्योंकि प्रभु वह न्यायाधीश है, जो पक्षपात नहीं करता।</span> <sup>16</sup><span class='v-txt'>वह दरिद्र के साथ अन्याय नहीं करता और पद्दलित की पुकार सुनता है।</span> <sup>17</sup><span class='v-txt'>वह विनय करने वाले अनाथ अथवा अपना दुःखड़ा रोने वाली विधवा का तिरस्कार नहीं करता।</span> <sup>18</sup><span class='v-txt'>उसके आँसू उसके चेहरे पर झरते हैं और उसकी आह उत्याचारी पर अभियोग लगाती है।</span> <sup>19</sup><span class='v-txt'>उसके आँसू उसके चेहरे से स्वर्ग तक चढ़ते हैं और प्रभु उसकी आह सुनता है।</span> <sup>20</sup><span class='v-txt'>जो सारे हृदय से प्रभु की सेवा करता है, उसकी सुनवाई होती है और उसकी पुकार मेघों को चीर कर ईश्वर तक पहुँचती हैं।</span> <sup>21</sup><span class='v-txt'>वह तब तक आग्रह करता रहता, जब तक सर्वोच्च ईश्वर उस पर दयादृष्टि न करे और धर्मियों को न्याय न दिलाये।</span> <sup>22</sup><span class='v-txt'>प्रभु देर नहीं करेगा।  वह उन पर दया नहीं करेगा और क्रूर लोगों की कमर तोड़ देगा।</span> <sup>23</sup><span class='v-txt'>वह राष्ट्रों को बदला चुकायेगा, घमण्डियों का झुण्ड मिटायेगा और दुष्टों का राजदण्ड तोड़ेगा।</span> <sup>24</sup><span class='v-txt'>वह मनुष्यों को उनके कर्मों का फल और उनके उद्देश्य के अनुसार उनके कार्यो का पुरस्कार प्रदान करेगा।</span> <sup>25</sup><span class='v-txt'>वह अपनी प्रजा का पक्ष लेगा और अपनी दया से उसे आनन्दित करेगा।</span> <sup>26</sup><span class='v-txt'>सूखे के समय वर्षा के बादलों की तरह विपत्ति के दिनों में प्रभु की दया का स्वागत होता है।</span> </p>
+        <div class='nav'><a href='028034.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028036.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

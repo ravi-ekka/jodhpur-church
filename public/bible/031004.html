@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>शोक गीत - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>शोक गीत</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>कैसे सोना मलिन हो गया, कैसे शुद्ध सोना परिवर्तित हो गया!  पवित्र पत्थर हर रास्ते के नुक्कड़ पर बिखरे पड़े हैं।</span> <sup>2</sup><span class='v-txt'>सियोन के लाड़ले, जिनका वजन शुद्ध सोने के बराबर था, कैसे कुम्हार द्वारा बनाये मिट्टी के बरतनों-जैसे समझे जा रहे हैं!</span> <sup>3</sup><span class='v-txt'>सियारिनें भी अपनी छाती खोलकर अपने बच्चों को दूध पिलाती हैं, लेकिन हमारे देश की पुत्री मरुभूमि की शुतुरमुर्गियों-जैसी निर्दय हो गयी हैं।</span> <sup>4</sup><span class='v-txt'>दुधमुँहे बच्चे की जीभ प्यास के कारण उसके तालू में चिपक जाती है।  बच्चे रोटी माँगते हैं, लेकिन उन्हें कोई कुछ नहीं देता।</span> <sup>5</sup><span class='v-txt'>जो लोग कभी स्वादिष्ट भोजन करते थे, वे अब सडकों पर मर रहे हैं।  जिनका पालन बैंगनी वस्त्रों में होता था, वे अब घूरे पर पडे हैं।</span> <sup>6</sup><span class='v-txt'>हमारे देश की पुत्री का दण्ड सोदोम के दण्ड से भी भारी था, जो किसी के हाथ लगाये बिना ही क्षण भर में नष्ट कर दिया गया था।</span> <sup>7</sup><span class='v-txt'>उसके युवक हिम से भी अधिक उज्जवल, दुग्ध से भी अधिक श्वेत थे।  उनके शरीर मूँगे से भी अधिक लाल थे, उनका रूप नीलम-जैसा सुन्दर था।</span> <sup>8</sup><span class='v-txt'>अब उनका मुख कालिख से भी अधिक काला हो गया है, वे अब सड़कों पर पहचान में नहीं आते।  उनकी चमड़ी उनकी हड्डियों से चिपक गयी है, वह लकड़ी की तरह सूख गयी है।</span> <sup>9</sup><span class='v-txt'>तलवार से मरने वाले भूख से मरने वालों से कहीं अच्छे थे, जो खेत की उपज के अभाव में छीजते-घुलते गये।</span> <sup>10</sup><span class='v-txt'>करुणामयी नारियों ने अपने ही हाथ से अपने बच्चों को उबाला।  हमारे देश की पुत्री के विनाश के समय वे उनका आहार बन गये।</span> <sup>11</sup><span class='v-txt'>प्रभु ने अपना कोप अच्छी तरह उतारा; उसने अपना जलता हुआ क्रोध बरसाया और उसने सियोन में ऐसी आग लगायी, जिसने उसकी नींव जला डाली।</span> <sup>12</sup><span class='v-txt'>पृथ्वी के राजाओं को यह विश्वास नहीं था, न ही संसार के किसी निवासी को कि अत्याचारी और बैरी येरूसालेम के फाटकों में प्रवेश कर पायेंगें।</span> <sup>13</sup><span class='v-txt'>यह उसके नबियों के पापों और उसके याजकों के अपराधों के कारण हुआ, जिन्होंने उसके बीच धर्मियों का रक्त बहाया!</span> <sup>14</sup><span class='v-txt'>वे रक्त से अपवित्र हो कर सड़कों पर अन्धों की तरह भटकते थे और कोई व्यक्ति उनके वस्त्र तक नहीं छूता था</span> <sup>15</sup><span class='v-txt'>लोग चिल्ला कर उन से कहते थे, “दूर हो, अशुद्ध! हटो-हटो, मत छुओ!’  जब वे भगोड़े और घुमन्तू बन गये, तो राष्ट्रों के लोग कहते थे, “वे हमारे यहाँ कभी नहीं रह सकते।“</span> <sup>16</sup><span class='v-txt'>स्वयं प्रभु ने उन्हें छितरा दिया है।  अब वह उनकी चिन्ता कभी नहीं करेगा।  न तो याजकों के प्रति कोई सम्मान दिखाया गया और न वृद्धजनों पर कोई दया की गयी।</span> <sup>17</sup><span class='v-txt'>व्यर्थ ही सहायता की राह देखते-देखते हमारी आँखें धुँधला गयी, हम एक ऐसे राष्ट्र की प्रतीक्षा करते रहे, जो हमारी रक्षा नहीं कर सका।</span> <sup>18</sup><span class='v-txt'>लोग हमारे कदमों का पीछा करते थे, जिससे हम अपने चैकों पर भी नहीं चल सकते थे।  हमारा अन्त समीप आ गया, हमारे दिन पूरे हो गये; क्योंकि हमारा अन्त आ गया था।</span> <sup>19</sup><span class='v-txt'>हमारा पीछा करने वाले आकाश के गरुड़ों से भी तेज थे।  वे पर्वतों पर हमारा पीछा करते थे; वे मरुभूमि में हमारे घात में रहते थे।</span> <sup>20</sup><span class='v-txt'>हमारी प्राणवायु- प्रभु की अभ्यंजित उनके फन्दे में पड़ गयी थी- वह, जिसके विषय में हमने कहा था, “हम उसकी छाया में राष्ट्रों के बीच जीवित रहेंगे।“</span> <sup>21</sup><span class='v-txt'>आनन्द मनाओ और प्रसन्न हो, एदोम की पुत्री!  ऊस देश-निवासिनी!  वह प्याला तुम्हारी ओर भी बढ़ाया जायेगा!  मतवाली हो कर तुम अपने वस्त्र उतार दोगी।</span> <sup>22</sup><span class='v-txt'>सियोन की पुत्री! तुम्हारी दुष्टता का दण्ड पूरा हो गया है, वह तुम्हें अब और निर्वासन में नही रखेगा।  किन्तु एदोम की पुत्री! तुम्हारी दुष्टता के लिए वह तुम्हें दण्ड देगा, वह तुम्हारे पाप प्रकट करेगा।</span> </p>
+        <div class='nav'><a href='031003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='031005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योहन - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योहन</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैं सच्ची दाखलता हूँ और मेरा पिता बागवान है।</span> <sup>2</sup><span class='v-txt'>वह उस डाली को, जो मुझ में नहीं फलती, काट देता है और उस डाली को जो फलती है, छाँटता है।  जिससे वह और भी अधिक फल उत्पन्न करें।</span> <sup>3</sup><span class='v-txt'>मैंने तुम लोगो को जो शिक्षा दी है, उसके कारण तुम शुद्ध हो गये हो।</span> <sup>4</sup><span class='v-txt'>तुम मुझ में रहो और मैं तुम में रहूँगा।  जिस तरह दाखलता में रहे बिना डाली स्वयं नहीं फल सकती, उसी तरह मुझ में रहे बिना तुम भी नहीं फल सकते।</span> <sup>5</sup><span class='v-txt'>मैं दाखलता हूँ और तुम डालियाँ हो।  जो मुझ में रहता है और मैं जिसमें रहता हूँ वही फलता है क्योंकि मुझ से अलग रहकर तुम कुछ भी नहीं कर सकते।</span> <sup>6</sup><span class='v-txt'>यदि कोई मुझ में नहीं रहता तो वह सूखी डाली की तरह फेंक दिया जाता है।  लोग ऐसी डालियाँ बटोर लेते हैं और आग में झोंक कर जला देते हैं।</span> <sup>7</sup><span class='v-txt'>यदि तुम मुझ में रहो और तुम में मेरी शिक्षा बनी रहती है तो चाहे जो माँगो, वह तुम्हें दिया जायेगा।</span> <sup>8</sup><span class='v-txt'>मेरे पिता की महिमा इस से प्रकट होगी कि तुम लोग बहुत फल उत्पन्न करो और मेरे शिष्य बने रहो।</span> <sup>9</sup><span class='v-txt'>जिस प्रकार पिता ने मुझ को प्यार किया है, उसी प्रकार मैंने भी तुम लोगों को प्यार किया है।  तुम मेरे प्रेम से दृढ बने रहो।</span> <sup>10</sup><span class='v-txt'>यदि तुम मेरी आज्ञओं का पालन करोगे तो मेरे प्रेम में दृढ बने रहोगे।  मैंने भी अपने पिता की आज्ञाओं का पालन किया है और उसके प्रेम में दृढ बना रहता हूँ।</span> <sup>11</sup><span class='v-txt'>मैंने तुम लोगों से यह इसलिये कहा है कि तुम मेरे आनंद के भागी बनो और तुम्हारा आनंद परिपूर्ण हो।</span> <sup>12</sup><span class='v-txt'>मेरी आज्ञा यह है जिस प्रकार मैंने तुम लोगो को प्यार किया, उसी प्रकार तुम भी एक दूसरे को प्यार करो।</span> <sup>13</sup><span class='v-txt'>इस से बडा प्रेम किसी का नहीं कि कोई अपने मित्रों के लिये अपने प्राण अर्पित कर दे।</span> <sup>14</sup><span class='v-txt'>यदि तुम लोग मेरी आज्ञाओं का पालन करते हो, तो तुम मेरे मित्र हो।</span> <sup>15</sup><span class='v-txt'>अब से मैं तुम्हें सेवक नहीं कहूँगा।  सेवक नहीं जानता कि उसका स्वामी क्या करने वाला है।  मैंने तुम्हें मित्र कहा है क्योंकि मैने अपने पिता से जो कुछ सुना वह सब तुम्हें बता दिया है।</span> <sup>16</sup><span class='v-txt'>तुमने मुझे नहीं चुना बल्कि मैंने तुम्हें इसलिये चुना और नियुक्त किया कि तुम जा कर फल उत्पन्न करो, तुम्हारा फल बना रहे और तुम मेरा नाम लेकर पिता से जो कुछ माँगो, वह तुम्हें वही प्रदान करे।</span> <sup>17</sup><span class='v-txt'>मैं तुम लोगों को यह आज्ञा देता हूँ एक दूसरे को प्यार करो।</span> <sup>18</sup><span class='v-txt'>यदि संसार तुम लोगों से बैर करे, तो याद रखो कि तुम से पहले उसने मुझ से बैर किया।</span> <sup>19</sup><span class='v-txt'>यदि तुम संसार के होते, तो संसार तुम्हें अपना समझ कर प्यार करता।  परन्तु तुम संसार के नहीं हो, क्योंकि मैंने तुम्हें संसार में से चुन लिया हैं।  इसीलिये संसार तुम से बैर करता है।</span> <sup>20</sup><span class='v-txt'>मैंनें तुम से जो बात कही, उसे याद रखो- सेवक अपने स्वामी से बडा नहीं होता।  यदि उन्होंने मुझे सताया, तो वे तुम्हें भी सतायेंगे।  यदि उन्होंने मेरी शिक्षा का पालन किया तो वे तुम्हारी शिक्षा का भी पालन करेंगे।</span> <sup>21</sup><span class='v-txt'>वे यह सब मेरे नाम के कारण तुम लोगो के साथ करेंगे क्योंकि जिसने मुझे भेजा, उसे वे नहीं जानते।</span> <sup>22</sup><span class='v-txt'>यदि मैं नहीं आता और उन्हें शिक्षा नहीं देता तो उन्हें पाप नहीं लगता, परन्तु अब तो उनके पास अपने पाप का कोई बहाना नहीं।</span> <sup>23</sup><span class='v-txt'>जो मुझ से बैर करता है, वो मेरे पिता से भी बैर करता है।</span> <sup>24</sup><span class='v-txt'>यदि मैंने उनके सामने वे महान कार्य नहीं किये होते, जिन्हें किसी और ने कभी नहीं किया, तो उन्हें पाप नहीं लगता।  परन्तु अब तो उन्होंने देख कर भी मुझ से और मेरे पिता से बैर किया है।</span> <sup>25</sup><span class='v-txt'>यह इसलिये हुआ कि उनकी संहिता का यह कथन पूरा हो जाये उन्होंने अकारण ही मुझ से बैर किया।</span> <sup>26</sup><span class='v-txt'>जब वह सहायक, पिता के यहाँ से आने वाला वह सत्य का आत्मा आयेगा, जिसे मैं पिता के यहाँ से तुम लोगो के पास भेजूगाँ तो वह मेरे विषय में साक्ष्य देगा।</span> <sup>27</sup><span class='v-txt'>और तुम लोग भी साक्ष्य दोगे, क्योंकि तुम प्रारंभ से मेरे साथ रहे हो।</span> </p>
+        <div class='nav'><a href='050014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='050016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

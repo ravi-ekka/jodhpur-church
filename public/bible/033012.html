@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 12</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 12</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु की वाणी मुझे यह कहते हुई सुनाई दी,</span> <sup>2</sup><span class='v-txt'>“मानवपुत्र! तुम विद्रोही लोगों के बीच रहते हो।  देखने के लिए उनके आँखें हैं, किन्तु वे देखते नहीं; सुनने के लिए कान हैं, किन्तु वे सुनते नहीं;</span> <sup>3</sup><span class='v-txt'>क्योंकि वे विद्रोही हैं।  मानवपुत्र! प्रवास का सामान बाँध लो और दिन में सब के देखते प्रवास के लिए प्रस्थान करो।  तुम जहाँ रहते हो, उनके देखते ही वहाँ से प्रवास के लिए प्रस्थान करो।  हो सकता है कि वे समझ जायें कि वे एक विद्रोही प्रजा हैं।</span> <sup>4</sup><span class='v-txt'>प्रवास का सामान दिन में ही उनके देखते-देखते बाहर रखो और सन्ध्या को उनकी आँखों के सामने प्रवास के लिए प्रस्थान करो।</span> <sup>5</sup><span class='v-txt'>उनके देखते ही दीवार में छेद करो और उस से निकल जाओ।</span> <sup>6</sup><span class='v-txt'>उनके देखते ही सामान कन्धो पर रख कर सन्ध्या के समय प्रस्थान करो।  अपना मुँह ढक लो, जिससे तुम भूमि नहीं देख सको; क्योंकि मैं तुम्हें इस्राएली प्रजा के सामने एक चिह्न के रूप में प्रस्तुत करने जा रहा हूँ।“</span> <sup>7</sup><span class='v-txt'>मुझे जैसा आदेश मिला था, मैंने वैसा ही किया।  मैंने दिन में प्रवास का सामान बाहर रखा और सन्ध्या के समय अपने हाथ से दीवार में छेद किया।  मैं झुटपुटे में कन्धे पर सामान रख कर उनके देखते ही चला गया।</span> <sup>8</sup><span class='v-txt'>दूसरे दिन प्रातः मुझे प्रभु की वाणी यह कहते हुए सुनाई पड़ी,</span> <sup>9</sup><span class='v-txt'>“मानवपुत्र! क्या इस्राएल की विद्रोही प्रजा ने तुम से यह नहीं पूछा कि तुम क्या करते हो?</span> <sup>10</sup><span class='v-txt'>उन से कहोः प्रभु-ईश्वर यह कहता है।  यह येरूसालेम के राजा और वहाँ रहने वाली समस्त इस्राएली प्रजा के विषय में भवियवाणी है।</span> <sup>11</sup><span class='v-txt'>उन से यह कहोः मैं तुम लोगों के लिए एक चिह्न हूँ।  तुमने जैसा किया, उन लोगों के साथ वैसा ही किया जायेगा।  वे बन्दी बनकर निर्वासित किये जायेंगे।</span> <sup>12</sup><span class='v-txt'>उन लोगों का राजा सन्ध्या के समय अपना सामान कन्धे पर रख कर नगर से चला जायेगा।  लोग दीवार में छेद करेंगे, जिससे वह बाहर जा सके।  वह अपना मुँह ढक लेगा, जिससे वह अपनी आँखों से यह भूमि न देखे।</span> <sup>13</sup><span class='v-txt'>मैं उस पर अपना जाल डालूँगा और वह मेरे फन्दे में फँस जायेगा।  मैं उसे खल्दैयियों के देश, बाबुल ले जाऊँगा यद्यपि वह उसे नहीं देख सकेगा और वहाँ उसकी मृत्यु हो जायेगी।</span> <sup>14</sup><span class='v-txt'>मैं उसके परिजनों, सहायकों और उसके सभी सैनिकों को सभी ओर बिखेर दूँगा और उनका पीछा तलवार से करूँगा।</span> <sup>15</sup><span class='v-txt'>वे तभी यह समझेंगे कि मैं ही प्रभु हूँ, जब मैं उन्हें राष्ट्रों में बिखेर दूँगा और देशों मे तितर-बितर कर दूँगा।</span> <sup>16</sup><span class='v-txt'>लेकिन में उन में से कुछ को तलवार, अकाल और महामारी से बच निकलने दूँगा, जिससे वे जिन राष्ट्रों में जाते हैं, उन्हें अपने वीभत्स कर्मों की बात बतला सकें और यह समझ जायें कि मैं ही प्रभु हूँ।“</span> <sup>17</sup><span class='v-txt'>मुझे प्रभु की यह वाणी सुनाई पड़ी,</span> <sup>18</sup><span class='v-txt'>“मानवपुत्र! काँपते हुए भोजन करो, थरथराते-डरते हुए पानी पियो और देश के लोगों से यह कहो, “प्रभु-ईश्वर ने इस्राएल देश के येरूसालेम-निवासियों के विषय में यह कहा हैः</span> <sup>19</sup><span class='v-txt'>वे डरते हुए भोजन करेंगे और भयभीत हो कर पानी पियेंगे, जिससे देश और उसके निवासी अपने यहाँ रहने वाले लोगों की हिंसा से मुक्त हों।</span> <sup>20</sup><span class='v-txt'>बसे हुए नगर खँडहर हो जायेंगे और देश उजाड़ हो जायेगा।  तब तुम यह समझोगे कि मैं ही प्रभु हूँ“।</span> <sup>21</sup><span class='v-txt'>मुझे प्रभु की यह वाणी सुनाई पड़ी,</span> <sup>22</sup><span class='v-txt'>“मानवपुत्र! इस्राएल देश-सम्बन्धी इस कहावत से क्या समझते हो, ’दिन-बीतते जा रहे हैं, दिव्य दृश्य निष्फल होते जा रहे हैं?’</span> <sup>23</sup><span class='v-txt'>इसलिए उन से यह कहो, “मैं यह कहावत उठा दूँगा और वे इस्राएल में फिर कभी इसका प्रयोग नहीं करेंगे।  बल्कि तुम उन से यह कहोः दिन पास आ गये हैं और प्रत्येक दिव्य दृश्व की पूर्ति भी;</span> <sup>24</sup><span class='v-txt'>क्योंकि इस्र्राएल के घराने में अब कोई मिथ्या दिव्य दृश्य या झूठी भवियवाणी नहीं होगी।</span> <sup>25</sup><span class='v-txt'>मैं, प्रभु, वही कहूँगा, जो मुझे कहना है और वह पूरा होगा।  उस में कोई देर नहीं होगीः क्योंकि विद्रोही घराने के लोगो! तुम्हारे जीवनकाल के विषय मैं जो कहूँगा, उसे पूरा करूँगा।  यह प्रभु-ईश्वर की वाणी है’।“</span> <sup>26</sup><span class='v-txt'>मुझे प्रभु की यह वाणी सुनाई पड़ी,</span> <sup>27</sup><span class='v-txt'>“मानवपुत्र! देखो, इस्राएली घराने के लोग यह कहते हैं, ’वह जो दिव्य दृश्य देखता है।  वह बहुत दिन बाद के लिए है और वह बहुत समय की भवियवाणी करता है’।</span> <sup>28</sup><span class='v-txt'>इसलिए उन से कहो कि प्रभु-ईश्वर यह कहता है, ’मेरी किसी भी बात के पूरा हाने में कोई देर नहीं होगी, बल्कि मैं जो कहता हूँ वह हो कर रहेगा।  यह प्रभु-ईश्वर की वाणी है’।“</span> </p>
+        <div class='nav'><a href='033011.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033013.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>न्यायकर्ता - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>न्यायकर्ता</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>कुछ समय बाद, गेहूँ की फ़सल के समय, समसोन बकरी का एक बच्चा ले कर अपनी पत्नी को देखते आया। उसने कहा, &quot;मैं कमरे के भीतर अपनी पत्नी के पास जाऊँगा&quot;।  लेकिन पत्नी के पिता ने उसे अन्दर नहीं जाने दिया।</span> <sup>2</sup><span class='v-txt'>पत्नी के पिता ने कहा, &quot;मैंने सोचा कि तुम उसे बिलकुल नहीं चाहते, इसलिए मैंने उसे तुम्हारे एक साथी को दे दिया है।  उसकी छोटी बहन उस से कहीं अधिक सुन्दर है।  तुम उसकी जगह इसे ले लो।&quot;</span> <sup>3</sup><span class='v-txt'>समसोन ने उस से कहा, &quot;यदि इस बार मैं फ़िलिस्तियों की कुछ बुराई करूँ, तो मुझे दोष मत देना&quot;।</span> <sup>4</sup><span class='v-txt'>तब समसोन ने तीने सौ लोमड़ियाँ पकड़ीं और मशालें लीं।  फिर उसने दो-दो लोमड़ियों की पूछें एक साथ बाँध कर उन में एक-एक मशाल बाँध दी।</span> <sup>5</sup><span class='v-txt'>फिर मशालें जला कर उन्हें फ़िलिस्तियों की खड़ी फ़सलों में छोड़ दिया।  इस प्रकार उसने फूलों के लगाये गये ढेरों, खड़ी फ़सलों और जैतून वृक्षों को भी जला दिया।</span> <sup>6</sup><span class='v-txt'>फ़िलिस्तयों ने जब पूछा कि किसने ऐसा किया, तो उत्तर मिला कि तिमनावासी के दामाद समसोन ने ऐसा इसलिए किया है उसकी पत्नी को उसके किसी साथी को दे दिया गया है।  तब फ़िलिस्तियों ने आ कर उस स्त्री और उसके पिता, दोनों को जला डाला।</span> <sup>7</sup><span class='v-txt'>समसोन ने उन से कहा, &quot;तुम लोगों ने यह काम किया। है!  मैं तुम से इसका बदला चुकाने के बाद ही साँस लूँगा।&quot;</span> <sup>8</sup><span class='v-txt'>इस पर उसने उनकी भरपूर पिटाई की और उन में बहुतों का वध किया।  इसके बाद वह एताम की एक चट्टानी गुफा में रहने लगा।</span> <sup>9</sup><span class='v-txt'>इसके बाद फ़िलिस्तियों ने यूदा जा कर अपने पड़ाव डाले और लही नामक नगर पर छापा मारा।</span> <sup>10</sup><span class='v-txt'>यूदा के लोगों ने पूछा, &quot;तुम हम पर क्यों छापा मारने आये हो?&quot;  उन्होंने उत्तर दिया, &quot;हम समसोन को पकड़ने आये हैं।  हम उसके साथ वैसा ही करेंगे, जैसा उसने हमारे साथ किया है।&quot;</span> <sup>11</sup><span class='v-txt'>इसके बाद यूदा के तीन हज़ार लोग एताम की चट्टानी गुफा के पास गये और समसोन से बोले, &quot;क्या तुम यह नहीं जानते हो कि फ़िलिस्ती हमारे शासक हैं?  तुमने हमारे साथ ऐसा क्यों किया?&quot;  उसने उन्हें उत्तर दिया, &quot;उन्होंने मेरे साथ जैसा किया, मैंने भी उनके साथ वै</span> <sup>12</sup><span class='v-txt'>वे उस से बोले, &quot;हम तुम्हें बाँध कर फ़िलिस्तियाँ के हाथ देने के लिए यहाँ आये हैं&quot;।  इस पर समसोन ने उन से कहा, &quot;मुझ से शपथ खा कर कहो कि तुम स्वयं मेरा वध नहीं करोगे&quot;।</span> <sup>13</sup><span class='v-txt'>उन्होंने उसे उत्तर दिया, &quot;नहीं हम तुम्हें केवल उनके हाथ देने के लिए बाँधेंगे।  हम तुम्हारा वध नहीं करेंगे।&quot;  तब वे उसे दो नयी रस्सियों से बाँध कर चट्टान की गुफा से ले गये।</span> <sup>14</sup><span class='v-txt'>जब वह लही पहुँचा, तो फ़िलिस्तिी ज़ोरों का जयघोष कर उस से मिलने दौड़े।  तब उसे प्रभु की प्रेरणा प्राप्त हुई और उसके हाथों में बंधी रस्सियाँ आग में झुलसे हुए सन के रेशों के समान हो गयीं और उसके हाथों के बन्धन मानो गल कर टूट गये।</span> <sup>15</sup><span class='v-txt'>उसे गधे के जबड़े की एक नयी हड्डी मिली, जिसे उसने उठा लिया और उस से एक हज़ार आदमियों को मार डाला।</span> <sup>16</sup><span class='v-txt'>समसोन ने कहा: &quot;गधे के जबड़े की एक हड्ड़ी से मैंने ढेर के ढेर लगा दिये; गधे के जबडे़ की एक हड्डी से मैंने एक हज़ार को मार गिराया&quot;।</span> <sup>17</sup><span class='v-txt'>उसने यह कह कर जबडे़ की हड्डी दूर फेंक दी।  इससे उस स्थान का नाम रामतलही पड़ गया।</span> <sup>18</sup><span class='v-txt'>जब उसे ज़ोरों की प्यास लगी, तो उसने प्रभु से प्रार्थना की, &quot;तूने अपने सेवक को इतनी बड़ी विजय दिलायी और अब क्या मैं प्यास से मर कर इन बेख़तना लोगों के हाथ पडूँ?&quot;</span> <sup>19</sup><span class='v-txt'>तब ईश्वर ने लही की एक निचली भूमि को फोड़ दिया और उस से पानी निकल पड़ा।  उसका पानी पीने के बाद उसे जैसे फिर प्राण और नवजीवन प्राप्त हो गया। इसलिए उसका नाम एनहक्कोरे पड़ा।  वह आज तक लही में विद्यमान है।</span> <sup>20</sup><span class='v-txt'>फ़िलिस्तियों के शासन-काल में समसोन ने बीस वर्ष तक इस्राएल में न्यायकर्ता का कार्य किया।</span> </p>
+        <div class='nav'><a href='007014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='007016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 16</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 16</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>लेवी के वंशज कहात के पोते यिसहार के पुत्र कोरह, एलीआब के पुत्र दातान और अबीरा तथा रूबेन के वंशज पेलेत के पुत्र ओन ने</span> <sup>2</sup><span class='v-txt'>अन्य ढाई सौ इस्राएलियों के साथ, जो समुदाय के प्रतिष्ठित नेता और सभासद थे, मूसा के विरुद्ध विद्रोह किया।</span> <sup>3</sup><span class='v-txt'>वे एकत्रित हो कर मूसा और हारून का विरोध करने आये और बोले : &#039;&#039;बहुत हुआ! सारा समुदाय और उसके सब सदस्य पवित्र है, क्योंकि प्रभु उनके बीच है। आप अपने को प्रभु के समुदाय से बड़ा क्यों समझते हैं?&#039;&#039;</span> <sup>4</sup><span class='v-txt'>(४-५) यह सुन कर मूसा ने सिर नीचे झुका लिया और कोरह और उसके पूरे दल को उत्तर देते हुए कहा, &#039;&#039;कल सुबह प्रभु निपटारा कर देगा कि उसका कौन अपना है और कौन इतना पवित्र है कि वह उसे अपने पास तक आने दे। वह जिसे चुनेगा, उसे अपने पास तक आने देगा।</span> <sup>6</sup><span class='v-txt'>तुम लोग ऐसा करो कि कल कोरह ओर उसके दल के सारे लोग धूपदान ले कर आयें ;</span> <sup>7</sup><span class='v-txt'>वे उन में आग रखें और प्रभु के सामने उस पर लोबान रखें। तब प्रभु जिसे चुनेगा, वही पवित्र मान लिया जायेगा। लेवी के वंशजों! बहुत हुआ।&#039;&#039;</span> <sup>8</sup><span class='v-txt'>फिर मूसा ने कोरह को सम्बोधित करते हुए कहा, लेवी के वंशजों, सुनो!</span> <sup>9</sup><span class='v-txt'>क्या तुम इतने से सन्तुष्ट नहीं हो कि इस्राएल के ईश्वर ने तुम्हें इस्राएलियों के समुदाय से चुन लिया है, जिससे वह तुम्हें प्रभु के निवास में सेवा करने अपने पास तक आने दे और कि तुम समुदाय की ओर से उसकी सेवा करो?</span> <sup>10</sup><span class='v-txt'>उसने स्वयं तुम को अपने लेवीवंशी भाइयों के साथ अपने निकट तक आ जाने दिया और अब तुम याजक का पद भी पाना चाहते हो?</span> <sup>11</sup><span class='v-txt'>तुम और तुम्हारा सारा दल प्रभु के विरुद्ध एकत्रित हुआ है, क्योंकि हारून कौन है कि तुम उसके विरुद्ध भुनभुनाओ?&#039;&#039;</span> <sup>12</sup><span class='v-txt'>इसके बाद मूसा ने एलीआब के पुत्र दातान और अबीराम को बुलवाया। परन्तु उन्होंने यह कहला भेजा, &#039;&#039;हम नहीं आयेंगे।</span> <sup>13</sup><span class='v-txt'>यही बहुत है कि आप हमें एक ऐसे देश से, जहाँ दूध और मधु की नदियाँ बह रही थीं, इस उजाड़खण्ड में बेमौत मारने को निकाल लाये हैं। क्या अब आप हमारा शासक भी बनना चाहते हैं?</span> <sup>14</sup><span class='v-txt'>आप न हमें ऐसे देश में लाये हैं, जहाँ दूध और मधु की नदियाँ बहती हैं, और न आपने हमें विरासत के रूप में खेत और दाखबरियाँ दी हैं। आप इन सब लोगों की आँखों में धूल झोंकना चाहते हैं? हम नहीं आयेंगे।</span> <sup>15</sup><span class='v-txt'>यह सुन कर मूसा बहुत क्रुद्ध हुआ और प्रभु से निवेदन करने लगा, तू इनके चढ़ावे स्वीकार न कर। न तो मैंने इन से कोई गधा लिया है और न इन में किसी का कुछ बिगाड़ा है।</span> <sup>16</sup><span class='v-txt'>इसके बाद मूसा ने कोरह से कहा, तुम और तुम्हारे दल के सारे लोग कल प्रभु के सामने आयें। तुम उनके साथ आओ और हारून भी आये।</span> <sup>17</sup><span class='v-txt'>तुम में प्रत्येक अपना धूपदान लेता आये और उस पर लोबान रखे। फिर प्रत्येक अपना धूपदान लाये, अर्थात् ढाई सौ धूपदान प्रभु के सामने ले आओ। तुम और हारून अपना-अपना धूपदान ले कर आना।</span> <sup>18</sup><span class='v-txt'>इसलिए सब ने अपने धूपदान में आग ली, उस पर लोबान रखा और दर्शन-क़क्ष के द्वार पर खड़े हो गये। मूसा और हारून भी खड़े हुए।</span> <sup>19</sup><span class='v-txt'>कोरह ने सारे समुदाय को उनके विरुद्ध दर्शन-कक्ष के द्वार पर एकत्रित किया। तब प्रभु की महिमा सारे समुदाय को दिखाई पड़ी।</span> <sup>20</sup><span class='v-txt'>प्रभु ने मूसा और हारून से कहा,</span> <sup>21</sup><span class='v-txt'>&#039;&#039;तुम लोग अपने को उनके दल से अलग कर लो, क्योंकि मैं क्षण भर में ही उनका विनाश करने जा रहा हूँ।</span> <sup>22</sup><span class='v-txt'>तब वे नतमस्तक हो कर निवेदन करने लगे, &#039;&#039;ईश्वर! सारे प्राणियों के जीवनदाता! क्या तू एक व्यक्ति के पाप के कारण सारे समुदाय पर क्रोध करेगा?&#039;&#039;</span> <sup>23</sup><span class='v-txt'>इस पर प्रभु ने मूसा से कहा,</span> <sup>24</sup><span class='v-txt'>&#039;&#039;तुम समुदाय से यह कहो - कोरह, दातान और अबीराम के तम्बूओं के पास से दूर हो जाओ।&#039;&#039;</span> <sup>25</sup><span class='v-txt'>इसके बाद मूसा उठ कर दातान और अबीराम के पास गया। इस्राएल के नेता भी उसके पीछे हो लिए।</span> <sup>26</sup><span class='v-txt'>तब उसने समुदाय को सम्बोधित करते हुए कहा, &#039;&#039;इन दुष्ट आदमियों के तम्बूओं से दूर जाओ। इनके किसी भी सामान का स्पर्श न करो। नहीं तो इनके सब पापों के कारण तुम्हारा भी विनाश हो जायेगा।&#039;&#039;</span> <sup>27</sup><span class='v-txt'>तब लोग कोरह, दातान और अबीराम के तम्बूओं से अलग हो गये। दातान और अबीराम निकल कर अपनी पत्नियों और अपने छोट-बड़े बच्चों के साथ अपने तम्बूओं के द्वार पर खड़े थे।</span> <sup>28</sup><span class='v-txt'>उसी समय मूसा ने कहा, &#039;&#039;अब तुम जान जाओगे कि प्रभु ने मुझे ये सब कार्य करने भेजा है और मैं अपने आप कुछ नहीं करता।</span> <sup>29</sup><span class='v-txt'>यदि इन लोगों की मृत्यु अन्य लोगों की तरह हो जाये और इनका भाग्य अन्य मनुष्यों की तरह ही हो, तो समझो कि प्रभु ने मुझे नहीं भेजा है।</span> <sup>30</sup><span class='v-txt'>परन्तु यदि प्रभु कोई असाधारण कार्य करे और पृथ्वी अपना मुँह खोल कर इन्हें और इनका सारा सामान लील जाये तथा ये जीवित ही अधोलोक में उतरें, तो तुम जानोगे कि इन मनुष्यों ने प्रभु का तिरस्कार किया है।&#039;&#039;</span> <sup>31</sup><span class='v-txt'>मूसा जैसे ही यह कह चुका, उन लोगों के नीचे की भूमि फटी और पृथ्वी अपना मुँह खोल कर उन्हें उनके परिवारों-सहित निगल गयी-यही नहीं,</span> <sup>32</sup><span class='v-txt'>उनके सारे सामान के साथ कोरह के दल वालों को भी।</span> <sup>33</sup><span class='v-txt'>वे अपने परिवारों के साथ जीवित ही अधोलोक में उतरे। उन को निगल जाने के बाद पृथ्वी का मुँह फिर बन्द हो गया। इस तरह समाज से उनका विलोप हो गया।</span> <sup>34</sup><span class='v-txt'>उनका हाहाकार सुन कर आसपास खड़े सब इस्राएली यह सोच कर भाग निकले कि ऐसा न हो पृथ्वी हमें भी निगल जाये।</span> <sup>35</sup><span class='v-txt'>प्रभु की ओर से अग्नि आयी और उसने उन ढाई सौ लोगों को भस्म कर दिया, जो धूप चढ़ाने आये थे।</span> </p>
+        <div class='nav'><a href='004015.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004017.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

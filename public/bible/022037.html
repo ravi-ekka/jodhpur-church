@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 37</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 37</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यह देख कर मेरा दिल धड़कता और अपने स्थान से उछल पडता है।</span> <sup>2</sup><span class='v-txt'>सुनो, उसकी वाणी के गर्जन को, उसके मुख से निकलने वाली गडगडाहट को,</span> <sup>3</sup><span class='v-txt'>जो समस्त आकाश के नीचे गूँजती है।  उसकी बिजली पृथ्वी के सीमांतों तक फैल जाती है।</span> <sup>4</sup><span class='v-txt'>बिजली के बाद उसकी वाणी सुनाई देती है; वह ऊँचे स्वर में गरजती है।  जब उसकी वाणी सुनाई पड़ती है, तो वह अपना वज्रपात नहीं रोकता।</span> <sup>5</sup><span class='v-txt'>ईश्वर अपने चमत्कार-घोषित करता है।  उसके महान् कार्य हमारी समझ के परे हैं।</span> <sup>6</sup><span class='v-txt'>जब वह बर्फ से भूमि पर गिरने का और बादल से मूसलाधार वर्षा करने का आदेश देता है।</span> <sup>7</sup><span class='v-txt'>तो मनुष्यों के सब काम ठप पड़ जाते हैं और उन्हें ईश्वर के सामर्थ्य का आभास हो जाता है।</span> <sup>8</sup><span class='v-txt'>पशु अपनी-अपनी गुफाओं में छिप जाते और अपनी-अपनी मांदो में पड़े रहते हैं।</span> <sup>9</sup><span class='v-txt'>दक्षिण से बवण्डर आता है और उत्तर से ठण्डी हवा।</span> <sup>10</sup><span class='v-txt'>ईश्वर के श्वास से शीत निकलता, जिससे बड़े जलाश्य जम जाते हैं।</span> <sup>11</sup><span class='v-txt'>तब प्रकाश बादलों से हो कर आता और धूप उन्हें छिन्न-भिन्न कर देता है।</span> <sup>12</sup><span class='v-txt'>बादल ईश्वर के कहने पर समस्त पृथ्वी पर फैल जाते और सर्वत्र उसके आदेश का पालन करते हैं।</span> <sup>13</sup><span class='v-txt'>वे उसकी इच्छा के अनुसार कहीं मनुष्यों को दण्ड देते और कहीं पृथ्वी सींच कर उसका प्रेम प्रकट करते हैं।</span> <sup>14</sup><span class='v-txt'>अय्यूब!  कान लगा कर सुनो!  ईश्वर के चमत्कारों पर विचार करो।</span> <sup>15</sup><span class='v-txt'>क्या तुम जानते हो कि ईश्वर किस प्रकार बादलों का नियत्रंण करता और उन में से बिजली चमकाता है?</span> <sup>16</sup><span class='v-txt'>क्या तुम जानते हो कि वह किसी प्रकार बादलों को फैलाता है?  क्या तुम सर्वज्ञ ईश्वर का एक भी चमत्कार समझते हो?</span> <sup>17</sup><span class='v-txt'>जब दक्षिणी हवा के कारण भूमि तपती है और तुम अपने गरम कपड़ों में पसीना बहाते हो,</span> <sup>18</sup><span class='v-txt'>तो क्या तुमने ईश्वर की सहायता की जिसने ढली धातु के दर्पण की तरह आकाशमण्डल को फैलाया?</span> <sup>19</sup><span class='v-txt'>हमें बताओं कि हम उस से क्या कहें, हम अपने अज्ञान के कारण तुम्हारा पक्ष प्रस्तुत करने में असमर्थ है।</span> <sup>20</sup><span class='v-txt'>क्या मेरी बात उसके पास पहुँचती है?  जब कोई मनुष्य बोलता है, तो क्या उसे इसका पता चलता है?</span> <sup>21</sup><span class='v-txt'>जब पवन आकाश के बाद छितराता है, तो कोई सूर्य की प्रखर ज्योति पर आँखें नहीं टिका सकता।</span> <sup>22</sup><span class='v-txt'>उत्तर की ओर से सुनहला प्रकाश प्रकट होता है।  ईश्वर विस्मयकारी प्रताप से विभूशित है।</span> <sup>23</sup><span class='v-txt'>सर्वशक्तिमान् सर्वोपरि और अगम्य है, फिर भी वह मूर्तिमान न्याय है और किसी पर अत्याचार नहीं करता।</span> <sup>24</sup><span class='v-txt'>इसलिए सभी मनुष्य उस पर श्रद्धा रखते हैं; किंतु जो लोग अपने की बुद्धिमान समझते, ईश्वर उसका ध्यान नहीं रखता।</span> </p>
+        <div class='nav'><a href='022036.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022038.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

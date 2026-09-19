@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>“हमने प्रभु के आदेश के अनुसार वहाँ से आगे चलकर लाल समुद्र के मार्ग से उजाड़खण्ड़ की ओर प्रस्थान किया और बहुत समय तक सेईर के पहाड़ी प्रदेश के चारों ओर चक्कर काटते रहे।</span> <sup>2</sup><span class='v-txt'>इसके बाद प्रभु ने मुझसे कहा,</span> <sup>3</sup><span class='v-txt'>’तुम लोग काफ़ी समय तक इस पहाड़ी प्रदेश के आस पास चक्कर काट चुके हो।  अब उत्तर की ओर मुड़ो।</span> <sup>4</sup><span class='v-txt'>लोगों से कहो कि जब तुम अपने भाइयों, अर्थात् सेईर के निवासी एसाव के वंशजों के देश से होकर जाओगे, तो वे तुमसे डर जायेंगे।  इसलिए सावधान रहो।</span> <sup>5</sup><span class='v-txt'>तुम उनसे छेड़-छाड़ मत करो, क्योंकि मैं उनके देश में पैर रखने तक की भूमि भी तुम्हें नहीं दूँगा।  मैं एसाब को सेईर का पहाड़ी प्रदेश उसके अधिकार मे दे चुका हूँ।</span> <sup>6</sup><span class='v-txt'>तुम उन्हें कीमत देकर भोजन और पीने का पानी खरीदो।</span> <sup>7</sup><span class='v-txt'>प्रभु, तुम्हारे ईश्वर ने तुमको तुम्हारे प्रत्येक काम में बहुत आशीर्वाद दिया है।  उसने विशाल उजाड़खण्ड की यात्रा में तुम्हारी रक्षा की है और प्रभु, तुम्हारे ईश्वर ने पिछले चालीस वर्षों से तुम्हारा साथ दिया है और तुम्हें किसी प्रकार की कमी नहीं हुई।</span> <sup>8</sup><span class='v-txt'>“इसलिए हम एसाब के वंशजों, सेईर निवासियों के देश से आगे चल कर, अराबा के मार्ग छोड़ कर, एलत और एस्योन - गेबेर के पास मोआब के मैदानों की ओर चल पडे़।’</span> <sup>9</sup><span class='v-txt'>वहाँ प्रभु ने मुझे यह आज्ञा दी थी, ’मोआबियों को मत सताओ और उनसे युद्ध मत करो।  मैं तुम्हारे अधिकार में उनके देश का कोई अंश नहीं दूँगा; क्योंकि मैंने आर प्रदेश लोट के वंशजों के अधिकार में दे दिया है।’</span> <sup>10</sup><span class='v-txt'>(इनके पहले उस देश में एमी लोग रहा करते थे, जो अनाकियों के समान बलवान्, बहुसंख्यक और ऊँचे क़द के थे।</span> <sup>11</sup><span class='v-txt'>वे अनाकियों की तरह रफाई माने जाते थे; किन्तु मोआबी उन्हें एमी कहते हैं।</span> <sup>12</sup><span class='v-txt'>सेईर प्रदेश में पहले होरी लोग रहते थे परन्तु एसाव के वंशजों ने उनका विनाश किया और उनका देश अपने अधिकार में ले लिया।  इस्राएलियों ने भी ऐसा ही उस देश में किया जिसे प्रभु ने उनके अधिकार में दिया था।)</span> <sup>13</sup><span class='v-txt'>प्रभु ने कहा, ’अब उठ कर जे़रेद पार करो’।  “इस पर हमने जे़रेद पार किया।</span> <sup>14</sup><span class='v-txt'>जब हमने कादेश-बरनेअ से लेकर ज़ेरेद नाला पार किया, तब तक चालीस वर्ष बीत गये।  तब तक शिविर के योद्धाओं की पूरी पीढ़ी की मृत्यु हो चुकी थी, जैसा प्रभु ने शपथ खाकर उनसे कहा था।</span> <sup>15</sup><span class='v-txt'>सच पूछो तो जब तक उनका शिविर से लोप नहीं हो गया, तब तक प्रभु का हाथ उन्हें दण्डित करता रहा।</span> <sup>16</sup><span class='v-txt'>“जब समुदाय के सब योद्धाओं की मृत्यु हो गई,</span> <sup>17</sup><span class='v-txt'>तब प्रभु ने मुझसे कहा,</span> <sup>18</sup><span class='v-txt'>’आज तुम आर के पास मोआब की सीमा पार करने वाले हो।</span> <sup>19</sup><span class='v-txt'>अम्मोनियों के पास पहुँच कर उनको नहीं सताओ और न उनके विरुद्ध युद्ध करो, क्योंकि मैं अम्मानियों के देश का कोई भी भाग तुम्हारे अधिकार में नहीं दूँगा।  मैं उसे लोट के वंशजो के अधिकार में दे चुका हूँ।</span> <sup>20</sup><span class='v-txt'>(यह देश रफाइयों का देश भी कहा जाता है।  इसमें पहले रफाई लोग रहा करते थे।  अम्मोनी लोग इन्हें जम-जुमी कहते हैं।</span> <sup>21</sup><span class='v-txt'>वे अनाकियों के समान बलवान् बहुसंख्यक और ऊँचे कद के हैं।  पर प्रभु ने उन्हें अम्मोनियों के आने पर भगा दिया, इसलिए इन्होंने उनके देश को अधिकार में ले लिया और वहाँ बस गये।</span> <sup>22</sup><span class='v-txt'>प्रभु ने सेईर के निवासियों, एसाव के वंशजों के लिए वैसा ही किया।  उनके आने पर उसने होरियों को भगा दिया था, जिससे वे उनका देश अपने अधिकार में ले और उनके स्थान पर वहाँ बस जायें।  वे आज तक वहाँ बसे हुए है।</span> <sup>23</sup><span class='v-txt'>कफ्तोर से आए कफ्तोरी लोगों ने भी अव्वियों को, जो गाजा तक गाँव में रहते थे, भगा दिया था और उनके स्थान पर वहाँ बस गए थे।)</span> <sup>24</sup><span class='v-txt'>अब आगे बढ़ो और अरनोन नाले को पार करो।  मैं हेषबोन के अमोरी राजा सीहोन और उसके देश को तुम्हारे हाथ देता हूँ ।  उस देश को आपने अधिकार में लेने का उपक्रम करो और उन पर आक्रमण करो।</span> <sup>25</sup><span class='v-txt'>मैं आज से सारे संसार के लोगों में तुम्हारे प्रति आतंक और भय उत्पन्न करूँगा।  जो लोग तुम्हारे विषय मे सुनेंगे वे तुम्हारे सामने थरथरा कर काँपने लगेंगे।’</span> <sup>26</sup><span class='v-txt'>“इसलिए मैने कदेमोत के उज़ाड़खण्ड से हेषबोन के राजा सीहोन के पास दूतों द्वारा यह शांति-संदेश भेजा,</span> <sup>27</sup><span class='v-txt'>’मैं आपका देश पार करना चाहता हूँ।  मैं सीधे मार्ग से निकल जाऊँगा।  मैं न दाहिनी ओर मुडूँगा और न बायीं ओर।</span> <sup>28</sup><span class='v-txt'>आप कीमत लेकर मुझे भोजन और पीने का पानी दीजिए। मुझे केवल पार करने दीजिए।</span> <sup>29</sup><span class='v-txt'>सेईर में रहने वाले एसाव के वंशजों ने भी मेरे लिए ऐसा ही किया था और आर-निवासी मोआबी लोगों ने भी।  मैं यर्दन पार कर केवल उस देश में पहुँच जाना चाहता हूँ, जो प्रभु, हमारा ईश्वर हमें देने वाला है।’</span> <sup>30</sup><span class='v-txt'>“परन्तु हेषबोन के राजा सीहोन ने हमें अपने देश से होकर नहीं जाने दिया।  प्रभु, तुम्हारे ईश्वर ने उसका मन हठी और उसका हृदय कठोर बना दिया था, जिससे वह उसे हमारे हवाले कर दे, जैसा कि बाद में हुआ।</span> <sup>31</sup><span class='v-txt'>तब प्रभु ने मुझ से कहा था, “मैं सीहोन और उसका देश तुमको देने वाला हूँ।  तुम उसे जीतने का उपक्रम करो और उसे अपने अधिकार में कर लो।’</span> <sup>32</sup><span class='v-txt'>सीहोन अपनी सारी सेना के साथ यहज में हमारा सामना करने आया,</span> <sup>33</sup><span class='v-txt'>किन्तु प्रभु, हमारे ईश्वर ने उसे हमारे हाथ दे दिया।  हमने उसे, उसके पुत्रों और उसकी सारी सेना को परास्त किया।</span> <sup>34</sup><span class='v-txt'>हमने उस समय उसके सब नगरों पर अधिकार कर लिया और उनके निवासियों का-पुरुषों, स्त्रियों, बच्चों सब का सर्वनाश किया।</span> <sup>35</sup><span class='v-txt'>हम उनके पशुओं को और विजित नगरों की लूट अपने साथ ले गये।</span> <sup>36</sup><span class='v-txt'>अरनोन के तट पर स्थित अरोऐर और घाटी में स्थित नगर से लेकर गिलआद तक कोई नगर ऐसा नहीं था जो हमारा सामना कर सके।  प्रभु, हमारे ईश्वर ने उन सबको हमारे हाथ दे दिया था।</span> <sup>37</sup><span class='v-txt'>तुमने अम्मोनियों का देश, यब्बोक नदी के किनारे का समस्त भू भाग और पहाड़ी प्रान्त के नगरों को अधिकृत नहीं किया, जैसा कि प्रभु, हमारे ईश्वर ने तुम्हें आदेश दिया था।</span> </p>
+        <div class='nav'><a href='005001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

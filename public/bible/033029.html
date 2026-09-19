@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 29</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 29</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>दसवें वर्ष के दसवें महीने के बारहवें दिन मुझे प्रभु की वाणी यह कहते हुए सुनाई पड़ी:</span> <sup>2</sup><span class='v-txt'>“मानवपुत्र! मिस्र के राजा फ़िराउन की ओर मुँह कर उसके और समस्त मिस्र के विषय में यह भवियवाणी करो।</span> <sup>3</sup><span class='v-txt'>कहो, ’प्रभु-ईश्वर यह कहता है: मैं तुम्हारे विरुद्ध हूँ, मिस्र के राजा फ़िराउन!  नील की जलधाराओं के नीचे रहने वाला पंखदार सर्प, जो यह कहता है ’मेरी नील नदी मेरी अपनी है; उसकी रचना मैंने की है।“</span> <sup>4</sup><span class='v-txt'>मैं तुम्हारे जबड़ों में अँकुसी डालूँगा और तुम्हारे छिलके पर तुम्हारी जलधाराओं की मछलियों को चिपका दूँगा; मैं तुम्हारी जलधाराओं से तुम को तुम्हारी चमड़ी से चिपकी तुम्हारी जलधाराओं की सभी मछलियों के साथ बाहर खींच लूँगा।</span> <sup>5</sup><span class='v-txt'>मैं तुम्हें अपनी जलधाराओं की सभी के साथ उजाड़खण्ड में फेंक दूँगा।  तुम खुले मैदान में गिर पड़ोगे, और तुम को उठा कर कोई तुम्हारा दफ़न नहीं करेगा।  मैं तुम को धरती के पशुओं और आकाश के पक्षियों का आहार बना दूँगा।</span> <sup>6</sup><span class='v-txt'>“तब सभी मिस्रवासी यह समझ जायेंगे कि मैं ही प्रभु हूँ।  तुम इस्राएल के घराने के लिए सरकण्डे की छड़ी रहे होः</span> <sup>7</sup><span class='v-txt'>जब उन लोगों ने तुम को पकड़ा तो तुम उनके हाथ से टूट गये और उनके कन्धे तोड़ दिये; और जब वे तुम पर झुके, तो तुम टुकडे़-टुकड़े हो गये और तुमने उनकी पीठ तोड़ दी।</span> <sup>8</sup><span class='v-txt'>इसलिए प्रभु-ईश्वर यह कहता हैः मैं तुम पर तलवार भेजूँगा और तुम्हारे यहाँ से मनुष्य और पशु को निर्मूल कर दूँगा।</span> <sup>9</sup><span class='v-txt'>मिस्र देश खँडहर और उजाड़ हो जायेगा। तब वे यह समझ जायेंगे कि मैं ही प्रभु हूँ। “क्योंकि तुमने यह कहा था, “नील नदी मेरी अपनी है; मैंने उसकी रचना की थी“</span> <sup>10</sup><span class='v-txt'>इसलिए मैं तुम्हारे और तुम्हारी जलधाराओं के विरुद्ध हूँ।  मैं मिगदोल से ले कर सवेने तक, कूश की सीमा तक, मिस्र देश को खँडहर और उजाड़ बना दूँगा।</span> <sup>11</sup><span class='v-txt'>वहाँ न तो किसी मनुष्य का चरण पड़ेगा और न किसी पशु की ही।  वह चालीस वर्षों तक निर्जन रहेगा।</span> <sup>12</sup><span class='v-txt'>मैं मिस्र देश को उजाड़ देशों से भी उजाड़ बना दूँगा और उसके नगर उजाड़े गये नगरों से भी चालीस वर्षों तक उजाड़ बने रहेंगे।  मैं मिस्रियों को राष्ट्रों में बिखेर दूँगा और देश-देश में तितर-बितर कर दूँगा।</span> <sup>13</sup><span class='v-txt'>“प्रभु-ईश्वर यह कहता हैः चालीस वर्ष बीतने पर मैं मिस्रियों को उन राष्ट्रों में से, जिन में वे बिखरे रहेंगे, एकत्रित करूँगा।</span> <sup>14</sup><span class='v-txt'>मैं मिस्रियों का भाग्य पलट दूँगा और उन्हें अपने मूल देश-पत्रोस देश वापस ले जाऊँगा, जहाँ वे एक दीन राज्य बन जायेंगे।</span> <sup>15</sup><span class='v-txt'>वह राज्यों में सब से दीन राज्य होगा और राष्ट्रों के बीच फिर कभी ऊपर नहीं उठेगा।  मैं उसे इतना तुच्छ बना दूँगा कि वह फिर कभी राष्ट्रों पर शासन नहीं कर पायेगा।</span> <sup>16</sup><span class='v-txt'>वह इस्राएल के घराने के लिए फिर कभी विश्वास योग्य नहीं बनेगा, जिसे सहायता के लिए उसकी ओर देखने पर अपना अपराध याद हो आयेगा।  तब वे लोग यह समझ जायेंगे कि मैं ही प्रभु हूँ।“</span> <sup>17</sup><span class='v-txt'>सत्ताईसवें वर्ष के पहले महीने के पहले दिन मुझे प्रभु की यह वाणी सुनाई पड़ी:</span> <sup>18</sup><span class='v-txt'>“मानवपुत्र! बाबुल के राजा नबूकदनेज़र ने अपनी सेना से तीरुस के विरुद्ध बहुत परिश्रम कराया।  उस में से हर एक सिर के बाल उड़ गये और हर एक का कन्धा छिल गयाः किन्तु तीरुस के विरुद्ध किये गये परिश्रम का कोई मूल्य न तो उसे और न उसकी सेना को तीरुस से प्राप्त हुआ।</span> <sup>19</sup><span class='v-txt'>इसलिए प्रभु-ईश्वर यह कहता है: मैं बाबूल के राजा नबूकदनेजर को मिस्र देश दे दूँगा।  वह उसकी सम्पत्ति छीन कर ले जायेगा, उसे लूट लेगा और उजाड़ देगा और यही उसकी सेना का वेतन होगा।</span> <sup>20</sup><span class='v-txt'>मैंने उस को अपने परिश्रम के पुरस्कार के रूप में मिस्र देश दे दिया है, क्योंकि उन लोगों ने मेरे लिए श्रम किया था।  यह प्रभु-ईश्वर की वाणी है।</span> <sup>21</sup><span class='v-txt'>“उस दिन इस्राएल के घराने को मैं नयी शक्ति प्रदान करूँगा और उनके सामने तुम्हें बोलने का समाथ्र्य दूँगा।  तब वे यह समझ जायेंगे कि मैं ही प्रभु हूँ।</span> </p>
+        <div class='nav'><a href='033028.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033030.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

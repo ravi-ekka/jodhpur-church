@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मारकुस - अध्याय 12</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मारकुस</h1>
+        <h2>अध्याय 12</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>वह लोगों को दुष्तान्तों में शिक्षा देने लगे- &quot;किसी मनुष्य ने दाख की बारी लगवायी, उसके चारों ओर घेरा बनवाया, उस में उस का कुण्ड खुदवाया और पक्का मचान बनवाया।  तब उसे असामियों को पट्टे पर दे कर वह परदेश चला गया।</span> <sup>2</sup><span class='v-txt'>समय आने पर उसने दाखबारी की फ़सल का हिस्सा वसूल करने के लिए असामियों के पास एक नौकर को भेजा।</span> <sup>3</sup><span class='v-txt'>असामियों ने नौकर को पकड़ कर मारा-पीटा और खाली हाथ लौटा दिया।</span> <sup>4</sup><span class='v-txt'>उसने एक दूसरे नौकर को भेजा।  उन्होंने उसका सिर फोड़ दिया और उसे अपमानित किया।</span> <sup>5</sup><span class='v-txt'>उसने एक और नौकर को भेजा और उन्होंने उसे मार डाला।  इसके बाद उसने और बहुत -से नौकरों को भेजा।  उन्होंने उन में से कुछ लोगों को पीटा और कुछ को मार डाला।</span> <sup>6</sup><span class='v-txt'>अब उसके पास एक ही बच गया- उसका परममित्र पुत्र। अन्त में उसने यह सोच कर उसे उनके पास भेजा कि वे मेरे पुत्र का आदर करेंगे।</span> <sup>7</sup><span class='v-txt'>किन्तु उन असामियों ने आपस में कहा, ‘यह तो उत्तराधिकारी है।  चलो, हम इसे मार डालें और इसकी विरासत हमारी हो जायेगी।’</span> <sup>8</sup><span class='v-txt'>उन्होंने इसे पकड़ कर मार डाला और दाखबारी के बाहर फेंक दिया।</span> <sup>9</sup><span class='v-txt'>दाखबारी का स्वामी क्या करेगा?  वह आ कर उन असामियों का सर्वनाश करेगा और अपनी दाखबारी दूसरों को सौंप देगा।</span> <sup>10</sup><span class='v-txt'>&quot;क्या तुम लोगों ने धर्मग्रन्थ में यह नहीं पढ़ा?- कारीगरों ने जिस पत्थर को बेकार समझ कर निकाल दिया था, वही कोने का पत्थर बन गया है।&quot;</span> <sup>11</sup><span class='v-txt'>यह प्रभु का कार्य है।  यह हमारी दृष्टि में अपूर्व है।&quot;</span> <sup>12</sup><span class='v-txt'>वे समझ गये कि ईसा का यह दृष्टान्त हमारे ही विषय में है और उन्हें गिरफ़्तार करने का उपाय ढूँढ़ने लगे।  किन्तु वे जनता से डरते थे और उन्हें छोड़ कर चले गये।</span> <sup>13</sup><span class='v-txt'>उन्होंने ईसा के पास कुछ फरीसियों और हेरोदियों को भेजा, जिससे वे उन्हें उनकी अपनी बात के फन्दे में फँसाये।</span> <sup>14</sup><span class='v-txt'>वे आ कर उन से बोले, &quot;गुरुवर! हम यह जानते हैं कि आप सत्य बोलते हैं और किसी की परवाह नहीं करते। आप मुँह-देखी बात नहीं करते, बल्कि सच्चाई से ईश्वर के मार्ग की शिक्षा देते हैं।  कैसर को कर देना उचित है या नहीं?&quot;</span> <sup>15</sup><span class='v-txt'>हम दें या नहीं दें?&quot; उनकी धूर्तता भाँप कर ईसा ने कहा, &quot;मेरी परीक्षा क्यों लेते हो?  एक दीनार ला कर मुझे दिखलाओ।&quot;</span> <sup>16</sup><span class='v-txt'>वे दीनार लाये और ईसा ने उन से पूछा, &quot;यह किसका चेहरा और किसका लेख है?&quot; उन्होंने उत्तर दिया, &quot;कैसर का&quot;।</span> <sup>17</sup><span class='v-txt'>इस पर ईसा ने उन से कहा, &quot;जो कैसर का है, उसे कैसर को दो और जो ईश्वर का है, उसे ईश्वर को&quot;।  यह सुन कर वे बड़े अचम्भे में पड़ गये।</span> <sup>18</sup><span class='v-txt'>इसके बाद सदूकी उनके पास आये। उनकी धारणा है कि पुनरुत्थान नहीं होता।  उन्होंने ईसा के सामने यह प्रश्न रखा,</span> <sup>19</sup><span class='v-txt'>&quot;गुरुवर! मूसा ने हमारे लिए यह नियम बनाया- यदि किसी का भाई, अपनी पत्नी के रहते निस्सन्तान मर जाये, तो वह उसकी विधवा को ब्याह कर अपने भाई के लिए सन्तान उत्पन्न करे।</span> <sup>20</sup><span class='v-txt'>सात भाई थे।  पहले ने विवाह किया और वह निस्सन्तान मर गया।</span> <sup>21</sup><span class='v-txt'>दूसरा उसकी विधवा को ब्याह कर निस्सन्तान मर गया। तीसरे के साथ भी वही हुआ,</span> <sup>22</sup><span class='v-txt'>और सातों भाई निस्सन्तान मर गये।  सब के बाद वह स्त्री भी मर गयी।</span> <sup>23</sup><span class='v-txt'>जब वे पुनरुत्थान में जी उठेंगे, तो वह किसकी पत्नी होगी?  वह तो सातों की पत्नी रह चुकी है।&quot;</span> <sup>24</sup><span class='v-txt'>ईसा ने उन्हें उत्तर दिया, &quot;कहीं तुम लोग इसीलिए तो भ्रम में नहीं पड़े हुए हो कि तुम न तो धर्मग्रन्थ जानते हो और न ईश्वर का सामर्थ्य?</span> <sup>25</sup><span class='v-txt'>क्योंकि जब वे मृतकों में से जी उठते हैं, तब न तो पुरुष विवाह करते और न स्त्रियाँ विवाह में दी जाती है; बल्कि वे स्वर्गदूतों के सदृश होते हैं।</span> <sup>26</sup><span class='v-txt'>&quot;जहाँ तक पुनरुत्थान का प्रश्न है, क्या तुम लोगों ने मूसा के ग्रन्थ में, झाड़ी की कथा में, यह नहीं पढ़ा कि ईश्वर ने मूसा से कहा- मैं इब्राहीम का ईश्वर, इसहाक का ईश्वर और याकूब का ईश्वर हूँ?</span> <sup>27</sup><span class='v-txt'>वह मृतकों का नहीं, जीवितों का ईश्वर है।  यह तुम लोगों का भारी भ्रम है।“</span> <sup>28</sup><span class='v-txt'>तब एक शास्त्री ईसा के पास आया।  उसने यह विवाद सुना था और यह देख कर कि ईसा ने सदूकियों को ठीक उत्तर दिया था, उन से पूछा, “सबसे पहली आज्ञा कौन सी है?“</span> <sup>29</sup><span class='v-txt'>ईसा ने उत्तर दिया,  “पहली आज्ञा यह है- इस्राएल, सुनो!  हमारा प्रभु-ईश्वर एकमात्र प्रभु है।</span> <sup>30</sup><span class='v-txt'>अपने प्रभु-ईश्वर को अपने सारे हृदय, अपनी सारी आत्मा,  अपनी सारी बुद्धि और सारी शक्ति से प्यार करो।</span> <sup>31</sup><span class='v-txt'>दूसरी आज्ञा यह है- अपने पड़ोसी को अपने समान प्यार करो।  इनसे बड़ी कोई आज्ञा नहीं।“</span> <sup>32</sup><span class='v-txt'>शास्त्री ने उन से कहा, “ठीक है, गुरुवर! आपने सच कहा है।  एक ही ईश्वर है, उसके सिवा और कोई नहीं है।</span> <sup>33</sup><span class='v-txt'>उसे अपने सारे हृदय, अपनी सारी बुद्धि और अपने सारी शक्ति से प्यार करना और अपने पड़ोसी को अपने समान प्यार करना, यह हर प्रकार के होम और बलिदान से बढ़ कर है।“</span> <sup>34</sup><span class='v-txt'>ईसा ने उसका विवेकपूर्ण उत्तर सुन कर उस से कहा, “तुम ईश्वर के राज्य से दूर नहीं हो&quot;।  इसके बाद किसी को ईसा से और प्रश्न करने का साहस नहीं हुआ।</span> <sup>35</sup><span class='v-txt'>ईसा ने, मन्दिर में शिक्षा देते समय, यह प्रश्न उठाया, “शास्त्री लोग कैसे कह सकते हैं कि मसीह दाऊद के पुत्र हैं?</span> <sup>36</sup><span class='v-txt'>दाऊद ने स्वयं पवित्र आत्मा की प्रेरणा से कहा- प्रभु ने मेरे प्रभु से कहा, तुम तब तक मेरे दाहिने बैठे रहो, जब तक मैं तुम्हारे शत्रुओं को तुम्हारे पैरों तले न डाल दूँ।</span> <sup>37</sup><span class='v-txt'>दाऊद स्वयं उन्हें प्रभु कहते हैं, तो वह उनके पुत्र कैसे हो सकते हैं?&quot; एक विशाल जन समूह बड़ी रुचि से ईसा की बातें सुन रहा था।</span> <sup>38</sup><span class='v-txt'>ईसा ने शिक्षा देते समय कहा, &quot;शास्त्रियों से सावधान रहो।  लम्बे लबादे पहन कर टहलने जाना, बाज़ारों में प्रणाम-प्रणाम सुनना,</span> <sup>39</sup><span class='v-txt'>सभागृहों में प्रथम आसनों पर और भोजों में प्रथम स्थानों पर विराजमान होना- यह सब उन्हें बहुत पसन्द है।</span> <sup>40</sup><span class='v-txt'>वे विधवाओं की सम्पत्ति चट कर जाते और दिखावे के लिए लम्बी-लम्बी प्रार्थनाएँ करते हैं।  उन लोगों को बड़ी कठोर दण्डाज्ञा मिलेगी।&quot;</span> <sup>41</sup><span class='v-txt'>ईसा ख़जाने के सामने बैठ कर लोगों को उस में सिक्के डालते हुए देख रहे थे।  बहुत-से धनी बहुत दे रहे थे।</span> <sup>42</sup><span class='v-txt'>एक कंगाल विधवा आयी और उसने दो अधेले अर्थात् एक पैसा डाल दिया।</span> <sup>43</sup><span class='v-txt'>इस पर ईसा ने अपने शिष्यों को बुला कर कहा, &quot;मैं तुम से यह कहता हूँ -  ख़जाने में पैसे डालने वालों में से इस विधवा ने सब से अधिक डाला है;</span> <sup>44</sup><span class='v-txt'>क्योंकि सब ने अपनी समृद्धि से कुछ डाला, परन्तु इसने तंगी में रहते हुए भी जीविका के लिए अपने पास जो कुछ था, वह सब दे डाला।&quot;</span> </p>
+        <div class='nav'><a href='048011.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='048013.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

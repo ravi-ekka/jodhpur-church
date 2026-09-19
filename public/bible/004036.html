@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 36</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 36</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>एक दिन यूसुफ़ के वंशज माकीर के पुत्र और मनस्से के पोते गिलआद के कुल के मुखिया आये। वे मूसा और नेताओं, इस्राएली घरानों के मुखियाओं से</span> <sup>2</sup><span class='v-txt'>बोले, &#039;&#039;स्वामी! प्रभु ने आप को आदेश दिया कि आप चिट्ठियाँ डाल कर यह देश इस्राएलियों में दायभाग के रूप में बाँट दें। हमारे स्वामी को प्रभु के द्वारा यह भी आदेश मिला था कि हमारे भाई सलोफ़हाद का दायभाग उसकी पुत्रियों को मिले।</span> <sup>3</sup><span class='v-txt'>अब यदि वे इस्राएलियों के किसी अन्य वंश के पुरुषों के साथ विवाह करें, तो उनका दायभाग हमारे पूर्वजों के दायभाग से निकल जायेगा और उस वंश के दायभाग में सम्मिलित हो जायेगा, जिस में वे विवाह करेंगी। इस प्रकार हमारी पैतृक सम्पति का भाग कम हो जायेगा</span> <sup>4</sup><span class='v-txt'>और तब यदि इस्राएलियों के लिए जयन्ती-वर्ष आयेगा, उनका दायभाग उस वंश के दायभाग में सम्मिलित हो जायेगा, जिस में उन्होंने विवाह किया है और इस प्रकार हमारे पूर्वजों के वंश का दायभाग हमसे छिनता जायेगा।</span> <sup>5</sup><span class='v-txt'>मूसा ने प्रभु की आज्ञा पर कर इस्राएलियों को यह आदेश दिया, यूसुफ़ के वंशजों का कहना ठीक है।</span> <sup>6</sup><span class='v-txt'>प्रभु सलोफ़हाद की पुत्रियों के मामलों में यह आज्ञा देता है कि वे जिसके साथ विवाह करना चाहें, कर लें परन्तु वे अपने पिता के कुल के किसी पुरुष से ही शादी करें।</span> <sup>7</sup><span class='v-txt'>इस्राएल में कोई दायभाग एक वंश से दूसरे वंश में न जाने पाये, बल्कि हर एक इस्राएली अपनी पूर्वजों की भूमि अपने पास रखे।</span> <sup>8</sup><span class='v-txt'>इसलिए प्रत्येक कन्या, जिसे इस्राएली वंश में भूमि प्राप्त है, केवल अपने पिता के कुल के किसी पुरुष से विवाह करे, जिससे प्रत्येक इस्राएली अपनी पैतृक सम्पत्ति स्थायी रूप से अपने कुल में ही रखे रहे।</span> <sup>9</sup><span class='v-txt'>कोई विरासत एक वंश से दूसरे वंश में न जाने पाये; प्रत्येक इस्राएली विरासत में प्राप्त भूमि अपने पास रखे।&#039;&#039;</span> <sup>10</sup><span class='v-txt'>प्रभु ने मूसा को जैसा आदेश दिया था, सलोफ़हाद की पुत्रियों ने वैसा ही किया।</span> <sup>11</sup><span class='v-txt'>इसलिए सलोफ़हाद की पुत्रियों ने, अर्थात् महल, तिर्सा, होगला, मिल्का और नोआ ने, अपने चाचाओं के पुत्रों के साथ विवाह कर लिया।</span> <sup>12</sup><span class='v-txt'>उन्होंने यूसुफ़ के पुत्र मनस्से के वंशजों के साथ विवाह किया। इस प्रकार उनका दायभाग उनके पिता के कुल में ही रह गया।</span> <sup>13</sup><span class='v-txt'>यही वे आदेश और विवि-निषेध हैं, जिन्हें प्रभु ने मूसा द्वारा यर्दन के पास, येरीखों के सामने, मोआब के मैदान में इस्राएलियों को दिया था।</span> </p>
+        <div class='nav'><a href='004035.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

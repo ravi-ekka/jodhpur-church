@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>टोबीत - अध्याय 12</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>टोबीत</h1>
+        <h2>अध्याय 12</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>टोबीत ने विवाहोत्सव के बाद अपने पुत्र टोबीयाह को बुला कर उस से कहा, &quot;हमें उस व्यक्ति को, जो तुम्हारे साथ गया, वेतन के सिवा कुछ और देना चाहिए&quot;।</span> <sup>2</sup><span class='v-txt'>उसने कहा, &quot;पिताजी! मैं उसे कितना वेतन दूँ?  मैं जो धन अपने साथ लाया, यदि मैं उसे उसका आधा भाग देता, तो भी मुझे कोई कमी नहीं होती।</span> <sup>3</sup><span class='v-txt'>उसने मुझे सुरक्षित वापस पहुँचाया, मेरी पत्नी को स्वस्थ किया, मेरे साथ रूपया ले आया और आप को स्वस्थ किया।  मैं उसे कितना दे दूँ?&quot;</span> <sup>4</sup><span class='v-txt'>टोबीत ने उस से कहा, &quot;बेटा! यह उचित है कि तुम जो धन लाये हो, उसका आधा भाग उसे दिया जाये&quot;।</span> <sup>5</sup><span class='v-txt'>टोबीयाह ने उसे बुलाया और कहा, &quot;जो कुछ तुम अपने साथ ले आये, उसका आधा भाग वेतन के रूप में स्वीकार करो और सकुशल विदा लो&quot;।</span> <sup>6</sup><span class='v-txt'>इस पर रफ़ाएल ने दोनों को एकान्त में बुला कर उन से कहा, &quot;ईश्वर का धन्यवाद कीजिए और सब प्राणियों के सामने यह घोषित कीजिए कि उसने हमारा कितना उपकार किया है।  उसके नाम के आदर में धन्यवाद और स्तुतिगान कीजिए।  ईश्वर के सत्कार्य प्रकट करने में संकोच मत कीजिए।</span> <sup>7</sup><span class='v-txt'>राजा का रहस्य अवश्य गुप्त रखना चाहिए, किन्तु ईश्वर के कार्य घोषित करना और योग्य रीति से उसकी स्तुति करना उचित है।  भलाई कीजिए और बुराई आपके पास नहीं फटकेगी।</span> <sup>8</sup><span class='v-txt'>प्रार्थना तथा उपवास और भिक्षादान तथा धार्मिकता उत्तम हैं।  दुष्टता से संचित धन-सम्पदा की अपेक्षा धार्मिकता से कमाया हुआ थोड़ा धन भी अच्छा है।  भिक्षादान स्वर्ण-संचय से श्रेष्ठ है।</span> <sup>9</sup><span class='v-txt'>भिक्षादान मृत्यु से बचाता और हर प्रकार का पाप हरता है।  जो भिक्षादान करता है, उसे पूर्ण जीवन प्राप्त होगा।</span> <sup>10</sup><span class='v-txt'>जो पाप और अन्याय किया करते हैं, वे अपने को हानि पहुँचाते हैं।</span> <sup>11</sup><span class='v-txt'>मैं आपके लिए पूरा सत्य प्रकट करूँगा और आप लोगों से कुछ भी नहीं छिपाऊँगा।  मैं आप से कह चुका हूँ कि राजा का रहस्य अवश्य गुप्त रखना चाहिए, किन्तु ईश्वर के कार्य घोषित करना उचित है।</span> <sup>12</sup><span class='v-txt'>जब आप और सारा प्रार्थना कर रहे थे, तो मैं आपकी प्रार्थना ईश्वर की महिमा के सामने प्रस्तुत कर रहा था। जब आप मुरदों को दफ़नाते थे, तो मैं यही करता था।</span> <sup>13</sup><span class='v-txt'>जब आप आगा-पीछा किये बिना अपना भोजन छोड़ कर मुरदा दफ़नाने गये, तो मुझे आपकी परीक्षा करने भेजा गया।</span> <sup>14</sup><span class='v-txt'>ईश्वर ने मुझे फिर भेजा, जिससे मैं आप को और आपकी बहू को स्वस्थ करूँ।</span> <sup>15</sup><span class='v-txt'>मैं स्वर्गदूत रफ़ाएल हूँ।  मैं उन सात स्वर्गदूतों में से एक हूँ, जो प्रभु की महिमा के सामने उपस्थित रहते हैं।&quot;</span> <sup>16</sup><span class='v-txt'>यह सुन कर दोनों घबरा कर मुँह के बल गिर पड़े और भयभीत हो गये।</span> <sup>17</sup><span class='v-txt'>उसने उन से कहा, &quot;मत डरिए।  आप को शान्ति मिले! सदा-सर्वदा ईश्वर की स्तुति कीजिए।</span> <sup>18</sup><span class='v-txt'>जहाँ तक मेरा सम्बन्ध है, मैं अपनी इच्छा से नहीं, बल्कि ईश्वर की इच्छा से आपके साथ रहा।  आप दिन-प्रतिदिन उसका स्तुतिगान कीजिए।</span> <sup>19</sup><span class='v-txt'>जब आपने मुझे खाते देखा, तो वह खाने का दिखावा मात्र था।</span> <sup>20</sup><span class='v-txt'>अब पृथ्वी पर प्रभु का धन्यवाद कीजिए और ईश्वर के महान् कार्यो का बखान कीजिए।  मैं अब उसके पास जा रहा हूँ, जिसने मुझे भेजा है।  आपके साथ जा कुछ घटित हुआ, वह सब लिख लीजिए&quot;।  स्वर्गदूत ऊपर चल पड़ा।</span> <sup>21</sup><span class='v-txt'>जब वे उठे, तो वह अन्तर्धान हो गया।</span> <sup>22</sup><span class='v-txt'>उन्होंने ईश्वर को गाते हुए धन्यवाद दिया।  वे ईश्वर के महान् कार्यो का बखान करते रहे; क्योंकि उन्हें ईश्वर का दूत दिखाई दिया था।</span> </p>
+        <div class='nav'><a href='017011.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='017013.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

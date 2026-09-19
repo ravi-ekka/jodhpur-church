@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़्रा - अध्याय 8</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़्रा</h1>
+        <h2>अध्याय 8</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>राजा अर्तज़र्कसीस के शासनकाल में मेरे साथ-साथ बाबुल से प्रस्थान करने वाले लोगों और उनके घरानों के मुखियाओं की सूची इस प्रकार है।</span> <sup>2</sup><span class='v-txt'>पीनहास के वंशजों में गेरशोम, ईतामार के वंशजों में दानिएल; दाऊद के वंशजों में हट्टूश,</span> <sup>3</sup><span class='v-txt'>जो शकन्या के पुत्रों में था।  परओश के वंशजों में ज़कर्या, जिसके साथ डेढ़ सौ नामांकित पुरुष थे,</span> <sup>4</sup><span class='v-txt'>पहत-मोआब के वंशजों में ज़रह्या का पुत्र एल्योएनय और उसके साथ दो सौ पुरुष।</span> <sup>5</sup><span class='v-txt'>ज़तू के वंशजों में यहज़ीएल का पुत्र शकन्या और उसके ेसाथ तीन सौ पुरुष।</span> <sup>6</sup><span class='v-txt'>आदीन के वंशजों में योनातान का पुत्र एबेद और उसके साथ पचास पुरुष।</span> <sup>7</sup><span class='v-txt'>एलाम के वंशजों में अतल्या का पुत्र यशाया और उसके साथ सत्तर पुरुष।</span> <sup>8</sup><span class='v-txt'>शफ़ट्îा के वंशजों में मीकाएल का पुत्र ज़बद्या और उसके साथ अस्सी पुरुष।</span> <sup>9</sup><span class='v-txt'>योआब के वंशजों में यहीएल का पुत्र ओबद्या और उसके साथ दो सौ अठारह पुरुष।</span> <sup>10</sup><span class='v-txt'>बानी के वंशजों में योसिफ़्या का पुत्र शलोमीत और उसके साथ एक सौ साठ पुरुष।</span> <sup>11</sup><span class='v-txt'>बेबाय के वंशजों में बेबाय का पुत्र ज़कार्या और उसके साथ अट्ठाईस पुरुष।</span> <sup>12</sup><span class='v-txt'>अज़गाद के वंशजों में हक्काटान का पुत्र योहानान और उसके साथ एक सौ दस पुरुष।</span> <sup>13</sup><span class='v-txt'>अन्त में अदोनीकाम के वंशजों मेंः एलीफे़ट, येईएल, शमाया और उसके साथ साठ पुरुष।</span> <sup>14</sup><span class='v-txt'>बिगवय के वंशजों में ऊतय और ज़ब्बूद तथा उनके साथ सत्तर पुरुष।</span> <sup>15</sup><span class='v-txt'>मैंने उन को उस नदी के तट पर एकत्रित किया, जो अहवा की ओर बहती है।  वहाँ हम तीन दिन पड़े रहे। जब मैंने लोगों और याजकों का निरीक्षण किया, तो मुझे कोई लेवी नहीं मिला।</span> <sup>16</sup><span class='v-txt'>इसलिए मैंने एलीएज़र, अरीएल, शमाया, एल्नातान, यारीब, एल्नातान, नातान, ज़कर्या और मशुलाम को बुलाया, जो मुखिया थे और योयारीब एवं एल्नातान, को जो शास्त्री थे</span> <sup>17</sup><span class='v-txt'>औन उन को कासिफ़्या के इद्दो नामक अध्यक्ष के पास भेजा।  मैंने इद्दो और उसके भाई-बन्धुओं तथा मन्दिर के सेवकों को, जो कासिफ़्या में रहते थे, यह कहला भेजा कि वे हमारे ईश्वर के मन्दिर के लिए हमें कुछ सेवक भेजें।</span> <sup>18</sup><span class='v-txt'>कृपालु ईश्वर हमारे साथ था, इसलिए वे शेरेब्या और उसके पुत्रों और भाइयों को-कुल मिलाकर अठारह व्यक्तियों को हमारे पास ले आये।  शेरेब्या बुद्धिमान था। वह इस्राएल का परपोता, लेवी का पोता और महली का पुत्र था।</span> <sup>19</sup><span class='v-txt'>फिर वे मरारी वंशज हशब्या एवं याशाया और उनके भाइयों और पुत्रों को-कुल मिलाकर बीस व्यक्तियों को ले आये।</span> <sup>20</sup><span class='v-txt'>इनके अतिरिक्त दाऊद और उसके पदाधिकारियों द्वारा लेवियों की सहायता के लिए नियुक्त मन्दिर के सेवकों के वंशजों में से एक सौ बीस व्यक्तियों को; इन सब के नाम लिपिबद्ध थे।</span> <sup>21</sup><span class='v-txt'>वहाँ अहवा नदी के पास मैंने एक उपवास की घोषणा की, जिससे हम अपने ईश्वर के सामने दीन बनें और उस से प्रार्थना करें कि हमारी और हमारे परिवारों की यात्रा सफल और हमारी सारी सम्पत्ति सुरक्षित हो।</span> <sup>22</sup><span class='v-txt'>यात्रा में शत्रुओं से अपनी रक्षा के लिए राजा से आदमी और घुड़सवार माँगने में मुझे संकोच था; क्योंकि हमने राजा से कहा था कि हमारे ईश्वर का हाथ उन सबकी भलाई के लिए तत्पर रहता है, जो उसे ढूँढ़ते हैं, जबकि उसका क्रोध उन सब पर प्रकट होता है, जो उसे त्याग देते हैं।</span> <sup>23</sup><span class='v-txt'>इसलिए यह वरदान माँगने के लिए हमने उपवास घोषित किया और ईश्वर ने हमारी यह प्रार्थना स्वीकार भी कर ली।</span> <sup>24</sup><span class='v-txt'>इसके बाद मैंने मुख्य याजकों में से बारह को, अर्थात् शेरेब्या, हशब्या और उनके साथ उनके भाइयों में दस अन्य को अलग कर लिया।</span> <sup>25</sup><span class='v-txt'>मैंने उन्हें वह चाँदी, सेना और अन्य वस्तुएँ सौंपी, जिन्हें राजा, उसके मन्त्रियों और पदाधिकारियों एवं वहाँ के रहने वाले इस्राएलियों ने ईश्वर के मन्दिर के लिए चढ़ाया था।</span> <sup>26</sup><span class='v-txt'>मैंने साढ़े छः सौ मन चाँदी, एक सौ मन चाँदी की वस्तुएँ, फिर एक सौ मन सोना,</span> <sup>27</sup><span class='v-txt'>सोने के बीस पात्र, जिनका मूल्य एक हज़ार अशर्फि़याँ था और सोने की तरह मूल्यवान्, सुन्दर चमकीले काँसे की दो वस्तुएँ-यह सब तौल कर उनके हाथों में दिया।</span> <sup>28</sup><span class='v-txt'>तब मैंने उन से कहा, &quot;तुम प्रभु की सेवा में समर्पित हो। ये वस्तुएँ पवित्र हैं।  यह चाँदी-सोना प्रभु, तुम्हारे पूर्वजों के ईश्वर को स्वेच्छा से चढ़ाया गया है।</span> <sup>29</sup><span class='v-txt'>जब तक तुम इन्हें येरूसालेम में ईश्वर के मन्दिर के कोषागार में याजकों के प्रधानों, लेवियों और इस्राएली घरानों के मुखियाओं के सामने तौल कर नहीं दोगे, तब तक इन्हें संभाल कर रखो।&quot;</span> <sup>30</sup><span class='v-txt'>इस पर याजकों और लेवियों ने चाँदी, सोना और अन्य तौली हुई वस्तुओं को येरूसालेम के ईश्वर के मन्दिर ले जाने के लिए ले लिया।</span> <sup>31</sup><span class='v-txt'>हमने पहले महीने के बारहवें दिन अहवा नदी से येरूसालेम के लिए प्रस्थान किया।  हमारा ईश्वर हमारे साथ था।  उसने शत्रुओं और रास्ते में घात में बैठे हुए लोगों से हमारी रक्षा की।</span> <sup>32</sup><span class='v-txt'>हमने येरूसालेम पहुँच कर वहाँ तीन दिन तक विश्राम किया और</span> <sup>33</sup><span class='v-txt'>चौथे दिन हमारे ईश्वर के मन्दिर में चाँदी, सोना और अन्य वस्तुओं को तौल कर ऊरीया के पुत्र याजक मरेमोत के हाथ में दिया।  उसके पास पीनहास का पुत्र एल आज़ार, लेवी येशूआ का पुत्र योज़ाबाद और बिन्नूई का पुत्र नोअद्या थे।</span> <sup>34</sup><span class='v-txt'>संख्या और तौल के अनुसार सब कुछ सुपुर्द कर दिया गया।  उस समय उन सब का वज़न भी लिखा गया।</span> <sup>35</sup><span class='v-txt'>उस समय निर्वासन से लौटे हुए लोगों ने, समस्त इस्राएल के कल्याण के लिए, इस्राएल के ईश्वर को ये होम-बलियाँ चढ़ायीं: बारह बछड़े, छियानबे मेढ़े, सतहत्तर मेमने और प्रायश्चित-बलि के रूप में बारह बकरे।</span> <sup>36</sup><span class='v-txt'>उन्होंने क्षत्रपों और नदी के उस पार के राज्यपालों को राजा के आदेश सुनाये और उन्होंने लोगों की और ईश्वर के मन्दिर की भी सहायता की।</span> </p>
+        <div class='nav'><a href='015007.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='015009.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रज्ञा - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रज्ञा</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उस समय धर्मी आत्मविश्वास के साथ उन लोगों के सामने खड़े हो जायेंगे, जो उन पर अत्याचार करते और उनके परिश्रम को तुच्छ समझते थे।</span> <sup>2</sup><span class='v-txt'>दुष्ट उसे देख आतंकित होकर काँपने लगेंगे और वे उसके अप्रत्याशित कल्याण पर आश्चर्यचकित होंगे।</span> <sup>3</sup><span class='v-txt'>वे मन-ही-मन पश्चात्ताप करेंगे और दुःखी होकर कराहते हुए कहेंगेः</span> <sup>4</sup><span class='v-txt'>&quot;यह वही है, जिसकी हम हँसी उड़ाते थे, जिस पर हम ताना मारते थे।  हम मूर्खतावष उसके जीवन को पागलपन और उसकी मृत्यु को अपमानजनक समझते थे।</span> <sup>5</sup><span class='v-txt'>वह ईश्वर के पुत्रों में कैसे सम्मिलित किया गया?  वह कैसे सन्तों का सहभागी बना?</span> <sup>6</sup><span class='v-txt'>इसलिए हम सत्य के मार्ग से भटक गये, न्याय के प्रकाश ने हमें आलोकित नहीं किया और सूर्य हम पर उदित नहीं हुआ।</span> <sup>7</sup><span class='v-txt'>हम अन्याय और विनाश के पथ पर भटकते रहे, हमने मार्गहीन मरुभूमियों को पार किया, किन्तु हमें प्रभु के मार्ग का पता नहीं था।</span> <sup>8</sup><span class='v-txt'>घमण्ड से हमें क्या लाभ हुआ?  जिस सम्पत्ति पर हमें गर्व था, उसने हमें क्या दिया?</span> <sup>9</sup><span class='v-txt'>यह सब छाया की तरह, उड़ती अफवाह की तरह बीत गया,</span> <sup>10</sup><span class='v-txt'>समुद्र की लहरों पर चलने वाले जहाज की तरह, जिसके पारगमन का कहीं निषान नहीं, जिसके पेंदे के मार्ग की कहीं खोज नहीं ;</span> <sup>11</sup><span class='v-txt'>या पक्षी की तरह, जो हवा में उड़ते हैं, जिसके मार्ग की कोई खोज नहीं।  वह हवा में पंख फड़फड़ाता और उसे अपने पंखों की पूरी शक्ति से चीरता, किन्तु बाद में वहाँ उसकी उड़ान का कोई निषान नहीं,</span> <sup>12</sup><span class='v-txt'>या बाण की तरह, जो निषाने पर चलाया जाता है।  हवा उस से चिर जाती, किन्तु वह तुरन्त जुड़ जाती है। जिससे उसके मार्ग का कोई पता नहीं चलता।</span> <sup>13</sup><span class='v-txt'>इसी तरह हम जन्म के बाद तुरन्त लुप्त हो गये और अपने सद्गुणांें को कोई चिह्न नहीं दिखा सके।  हम अपने दुर्गुणों द्वारा समाप्त हो गये।&quot;</span> <sup>14</sup><span class='v-txt'>सच!  दुष्ट की आशा भूसी-जैसी है, जो पवन द्वारा उड़ायी जाती है ; हलके फेन-जैसी है, जो आँधी द्वारा छितराया जाता है; धुएँ-जैसी है, जिसे पवन उड़ा ले जाता है; एक दिन के मेहमान-जैसी है, जिसे कोई याद नहीं करता।</span> <sup>15</sup><span class='v-txt'>किन्तु धर्मी सदा के लिए जीवित रहेंगे।  उनका पुरस्कार प्रभु के हाथ में है और सर्वोच्च ईश्वर उनकी देखरेख करता है।</span> <sup>16</sup><span class='v-txt'>वे प्रभु के हाथ से महिमामय राजत्व और भव्य मुकुट ग्रहण करेंगे; क्योंकि वह अपने दाहिने हाथ से और अपने भुजबल से उनकी रक्षा करेगा।</span> <sup>17</sup><span class='v-txt'>वह अपने धर्मोत्साह के शस्त्र पहनेगा और अपनी सृष्टि द्वारा अपने शत्रुओें को दण्डित करेगा।</span> <sup>18</sup><span class='v-txt'>वह न्याय का कवच धारण करेगा और अपरिवर्तनीय निर्णय का टोप पहनेगा।</span> <sup>19</sup><span class='v-txt'>वह अजेय पवित्रता की ढाल</span> <sup>20</sup><span class='v-txt'>और अनम्य क्रोध की तलवार धारण करेगा।  समस्त सृष्टि उसके साथ मूर्खों के विरुद्ध युद्ध करेगी।</span> <sup>21</sup><span class='v-txt'>चढ़े हुए धनुष से जैसे बाण सीधे लक्ष्य पर लग जाते हैं, वैसे ही बादलों से बिजली निकलेगी।</span> <sup>22</sup><span class='v-txt'>उसका क्रोध गोफन की तरह भारी ओले बरसायेगा।  समुद्र की लहरें उन पर आक्रमण करेंगी और नदियों की बाढ़ उन को ढ़क देगी।</span> <sup>23</sup><span class='v-txt'>घोर आँधी उन पर टूट पड़ेगी और बवण्डर उन्हें छितरा देगा।  अराजकता पृथ्वी को उजाड़ कर देगी और कुकर्म शासकों के सिंहासन गिरायेंगे।</span> </p>
+        <div class='nav'><a href='027004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='027006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

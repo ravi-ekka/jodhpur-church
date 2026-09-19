@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मारकुस - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मारकुस</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>वे समुद्र के उस पार गेरासेनियों के प्रदेश पहुँचे।</span> <sup>2</sup><span class='v-txt'>ईसा ज्यों ही नाव से उतरे, एक अपदूतग्रस्त मनुष्य मक़बरों से निकल कर उनके पास आया।</span> <sup>3</sup><span class='v-txt'>वह मक़बरों में रहा करता था।  अब कोई उसे जंजीर से भी नहीं बाँध पाता था;</span> <sup>4</sup><span class='v-txt'>क्योंकि वह बारम्बार बेडि़यों और जंजीरों से बाँधा गया था, किन्तु उसने ज़ंजीरों को तोड़ डाला और बेडि़यों को टुकड़े-टुकड़े कर दिया था।  उसे कोई भी वश में नहीं रख पाता था।</span> <sup>5</sup><span class='v-txt'>वह दिन रात निरन्तर मक़बरों में और पहाड़ों पर चिल्लाता और पत्थरों से अपने को घायल करता था।</span> <sup>6</sup><span class='v-txt'>वह ईसा को दूर से देख कर दौड़ता हुआ आया और उन्हें दण्डवत् कर</span> <sup>7</sup><span class='v-txt'>ऊँचें स्वर से चिल्लाया, &quot;ईसा! सर्वोच्च ईश्वर के पुत्र!  मुझ से आप को क्या?  ईश्वर के नाम पर प्रार्थना है- मुझे न सताइए।&quot;</span> <sup>8</sup><span class='v-txt'>क्योंकि ईसा उस से कह रहे थे, &quot;अशुद्ध आत्मा!  इस मनुष्य से निकल जा&quot;।</span> <sup>9</sup><span class='v-txt'>ईसा ने उस से पूछा, &quot;तेरा नाम क्या है?&quot;  उसने उत्तर दिया, &quot;मेरा नाम सेना है, क्योंकि हम बहुत हैं&quot;,</span> <sup>10</sup><span class='v-txt'>और वह ईसा से बहुत अनुनय-विनय करता रहा कि हमें इस प्रदेश से नहीं निकालिए।</span> <sup>11</sup><span class='v-txt'>वहाँ पहाड़ी पर सूअरों का एक बड़ा झुण्ड चर रहा था।</span> <sup>12</sup><span class='v-txt'>अपदूतों ने यह कहते हुए ईसा से प्रार्थना की, &quot;हमें सूअरों में भेज दीजिए।  हमें उन में घुसने दीजिए।&quot;</span> <sup>13</sup><span class='v-txt'>ईसा ने अनुमति दे दी।  तब अपदूत उस मनुष्य से निकल कर सुअरों में जा घुसे और लगभग दो हज़ार का वह झुण्ड तेज़ी से ढाल पर से समुद्र में कूद पड़ा और उस में डूब कर मर गया।</span> <sup>14</sup><span class='v-txt'>सूअर चराने वाले भाग गये।  उन्होंने नगर और बस्तियों में इसकी ख़बर फैला दी।  लोग यह सब देखने निकले।</span> <sup>15</sup><span class='v-txt'>वे ईसा के पास आये और यह देख कर भयभीत हो गये कि वह अपदूतग्रस्त, जिस में पहले अपदूतों की सेना थी, कपड़े पहने शान्त भाव से बैठा हुआ है।</span> <sup>16</sup><span class='v-txt'>जिन्होंने यह सब अपनी आँखों से देखा था, उन्होंन लोगों को बताया कि अपदूतग्रस्त के साथ क्या हुआ और सूअरों पर क्या-क्या बीती।</span> <sup>17</sup><span class='v-txt'>तब गेरासेनी ईसा से निवेदन करने लगे कि वे उनके प्रदेश से चले जायें।</span> <sup>18</sup><span class='v-txt'>ईसा नाव पर चढ़ ही रहे थे कि अपदूतग्रस्त ने बड़े आग्रह के साथ यह प्रार्थना की- &quot;मुझे अपने पास रहने दीजिए&quot;।</span> <sup>19</sup><span class='v-txt'>उसकी प्रार्थना अस्वीकार करते हुए ईसा ने कहा, &quot;अपने लोगों के पास अपने घर जाओ और उन्हें बता दो कि प्रभु ने तुम्हारे लिए क्या-क्या किया है और तुम पर किस तरह कृपा की है&quot;।</span> <sup>20</sup><span class='v-txt'>वह चला गया और सारे देकापोलिस में यह सुनाता फिरता कि ईसा ने उसके लिए क्या-क्या किया था और सब लोग अचम्भे में पड़ जाते थे।</span> <sup>21</sup><span class='v-txt'>जब ईसा नाव से उस पार पहॅूचे, तो समुद्र के तट पर उनके पास एक विशाल जनसमूह एकत्र हो गया।</span> <sup>22</sup><span class='v-txt'>उस समय सभागृह का जैरूस नाम एक अधिकारी आया। ईसा को देख कर वह उनके चरणों पर गिर पड़ा</span> <sup>23</sup><span class='v-txt'>और यह कहते हुए अनुनय-विनय करता रहा, &quot;मेरी बेटी मरने पर है।  आइए और उस पर हाथ रखिए, जिससे वह अच्छी हो जाये और जीवित रह सके।&quot;</span> <sup>24</sup><span class='v-txt'>ईसा उसके साथ चले।  एक बड़ी भीड़ उनके पीछे हो ली और लोग चारों ओर से उन पर गिरे पड़ते थे।</span> <sup>25</sup><span class='v-txt'>एक स्त्री बारह बरस से रक्तस्राव से पीड़ित थी।</span> <sup>26</sup><span class='v-txt'>अनेकानेक वैद्यों के इलाज के कारण उसे बहुत कष्ट सहना पड़ा था और सब कुछ ख़र्च करने पर भी उसे कोई लाभ नहीं हुआ था।</span> <sup>27</sup><span class='v-txt'>उसने ईसा के विषय में सुना था और भीड़ में पीछे से आ कर उनका कपड़ा छू लिया,</span> <sup>28</sup><span class='v-txt'>क्योंकि वह मन-ही-मन कहती थी, ’यदि मैं उनका कपड़ा भर छूने पाऊॅ, तो अच्छी हो जाऊँगी’।</span> <sup>29</sup><span class='v-txt'>उसका रक्तस्राव उसी क्षण सूख गया और उसने अपने शरीर में अनुभव किया कि मेरा रोग दूर हो गया है।</span> <sup>30</sup><span class='v-txt'>ईसा उसी समय जान गये कि उन से शक्ति निकली है। भीड़ में मुड़ कर उन्होंने पूछा, &quot;किसने मेरा कपड़ा छुआ?&quot;</span> <sup>31</sup><span class='v-txt'>उनके शिष्यों ने उन से कहा, &quot;आप देखते ही है कि भीड़ आप पर गिरी पड़ती है।  तब भी आप पूछते हैं- किसने मेरा स्पर्श किया?&quot;</span> <sup>32</sup><span class='v-txt'>जिसने ऐसा किया था, उसका पता लगाने के लिए ईसा ने चारों ओर दृष्टि दौड़ायी।</span> <sup>33</sup><span class='v-txt'>वह स्त्री, यह जान कर कि उसे क्या हो गया है, डरती- काँपती हुई आयी और उन्हें दण्डवत् कर सारा हाल बता दिया।</span> <sup>34</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;बेटी! तुम्हारे विश्वास ने तुम्हें चंगा कर दिया है।  शान्ति प्राप्त कर जाओ और अपने रोग से मुक्त रहो।&quot;</span> <sup>35</sup><span class='v-txt'>ईसा यह कह ही रहे थे कि सभागृह के अधिकारी के यहाँ से लोग आये और बोले, &quot;आपकी बेटी मर गयी है।  अब गुरुवर को कष्ट देने की ज़रूरत ही क्या है?&quot;</span> <sup>36</sup><span class='v-txt'>ईसा ने उनकी बात सुन कर सभागृह के अधिकारी से कहा, &quot;डरिए नहीं।  बस, विश्वास कीजिए।&quot;</span> <sup>37</sup><span class='v-txt'>ईसा ने पेत्रुस, याकूब और याकूब के भाई योहन के सिवा किसी को भी अपने साथ आने नहीं दिया।</span> <sup>38</sup><span class='v-txt'>जब वे सभागृह के अधिकारी के यहाँ पहुँचे, तो ईसा ने देखा कि कोलाहल मचा हुआ है और लोग विलाप कर रहे हैं।</span> <sup>39</sup><span class='v-txt'>उन्होंने भीतर जा कर लोगों से कहा, &quot;यह कोलाहल, यह विलाप क्यों?  लड़की मरी नहीं, सो रही है।&quot;</span> <sup>40</sup><span class='v-txt'>इस पर वे उनकी हँसी उड़ाते रहे।  ईसा ने सब को बाहर कर दिया और वह लड़की के माता-पिता और अपने साथियों के साथ उस जगह आये, जहाँ लड़की पड़ी हुई थी।</span> <sup>41</sup><span class='v-txt'>लड़की का हाथ पकड़ कर उस से कहा, ’तालिथा कुम&quot;। इसका अर्थ है- ओ लड़की!  मैं तुम से कहता हूँः उठो।</span> <sup>42</sup><span class='v-txt'>लड़की उसी क्षण उठ खड़ी हुई और चलने-फिरने लगी, क्योंकि वह बारह बरस की थी।  लोग बड़े अचम्भे में पड़ गये।</span> <sup>43</sup><span class='v-txt'>ईसा ने उन्हें बहुत समझा कर आदेश दिया कि यह बात कोई न जान पाये और कहा कि लड़की को कुछ खाने को दो।</span> </p>
+        <div class='nav'><a href='048004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='048006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

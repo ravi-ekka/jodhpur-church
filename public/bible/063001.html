@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>तीतुस - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>तीतुस</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यह पत्र, एक ही विश्वास में सहभागिता के नाते सच्चे पुत्र तीतुस के नाम, पौलुस की ओर से है, जो ईश्वर का सेवक तथा ईसा मसीह का प्रेरित है,</span> <sup>2</sup><span class='v-txt'>ताकि वह ईश्वर के कृपापात्रों को विश्वास, सच्ची भक्ति का ज्ञान और अनन्त जीवन की आशा दिलाये।  सत्यवादी ईश्वर ने अनादि काल से इस जीवन की प्रतिज्ञा की थी।</span> <sup>3</sup><span class='v-txt'>अब, उपयुक्त समय में, इसका अभिप्राय उस सन्देश द्वारा स्पष्ट कर दिया गया है, जिसका प्रचार मुक्तिदाता ईश्वर ने मुझे सौंपा है।</span> <sup>4</sup><span class='v-txt'>पिता-परमेश्वर और हमारे मुक्तिदाता ईसा मसीह तुम्हें अनुग्रह तथा शान्ति प्रदान करें!</span> <sup>5</sup><span class='v-txt'>मैंने तुम्हें इसलिए क्रेत में रहने दिया कि तुम वहाँ  कलीसिया का संगठन पूरा कर दो और मेरे अनुदेश के अनुसार प्रत्येक नगर में अधिकारियों को नियुक्त करो।</span> <sup>6</sup><span class='v-txt'>उन में प्रत्येक अनिन्द्य और एकपत्नीव्रत हो।  उसकी सन्तान विश्वासी हो, उस पर लम्पटता का अभियोग नहीं लगाया जा सके और वह निरंकुश न हो;</span> <sup>7</sup><span class='v-txt'>क्योंकि ईश्वर का कारिन्दा होने के नाते अध्यक्ष को चाहिए कि वह अनिन्द्य हो।  वह घमण्डी, क्रोधी, मद्यसेवी, झगड़ालू या लोभी न हो।</span> <sup>8</sup><span class='v-txt'>वह अतिथि-प्रेमी, धर्मपरायण, समझदार, न्यायी, प्रभुभक्त और संयमी हो।</span> <sup>9</sup><span class='v-txt'>वह परम्परागत प्रामाणिक धर्मसिद्धान्त पर दृढ़ रहे, जिससे वह सही शिक्षा द्वारा उपदेश दे सके और आपत्ति करने वालों को निरूत्तर कर सके।</span> <sup>10</sup><span class='v-txt'>बहुत-से लोग, विशेष कर यहूदी विश्वासियों में, निरंकुश, बकवादी और कपटी हैं,</span> <sup>11</sup><span class='v-txt'>ऐसे लोगों का मुँह बन्द कर देना चाहिए; क्योंकि वे घिनावने लाभ के लिए अनुचित बात सिखाते हैं और इस प्रकार परिवार के परिवार चैपट कर देते हैं।</span> <sup>12</sup><span class='v-txt'>(12-13) उन में से एक, उनके अपने नबी ने उनके विषय में सच ही कहा: ’क्रेत के निवासी सदा झूठ बोलते हैं, जानवर, पेटू और आलसी हैं।’  इसलिए तुम उन्हें कड़ी चेतावनी देते रहो, जिससे वे विश्वास में दृढ़ बने रहें</span> <sup>14</sup><span class='v-txt'>और यहूदियों की कल्पित कथाओं तथा सत्य का तिरस्कार करने वाले मनुष्यों के आदेशों पर ध्यान न दें।</span> <sup>15</sup><span class='v-txt'>जो शुद्ध हैं, उनके लिए सब कुछ शुद्ध है।  किन्तु जो दूषित और अविश्वासी हैं, उनके लिए कुछ भी शुद्ध नहीं है, क्योंकि उनका मन और अन्तःकरण, दोनों दूषित हैं।</span> <sup>16</sup><span class='v-txt'>वे ईश्वर को जानने का दावा तो करते हैं, किन्तु अपने कर्मों द्वारा उसे अस्वीकार करते हैं।  वे घृणित, अवज्ञाकारी और किसी भी भले काम के नितान्त अयोग्य हैं।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='063002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

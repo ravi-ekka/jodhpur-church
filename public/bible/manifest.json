@@ -1,0 +1,27 @@
+{
+  "name": "जयेसु हिन्दी कैथलिक बाइबिल",
+  "short_name": "हिन्दी बाइबिल",
+  "description": "सम्पूर्ण पवित्र बाइबिल - ऑफलाइन मोबाइल ऐप",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#e0f2fe",
+  "theme_color": "#0284c7",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://www.jayesu.com/favicon.ico",
+      "sizes": "32x32 48x48 64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=192&auto=format&fit=crop",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=512&auto=format&fit=crop",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

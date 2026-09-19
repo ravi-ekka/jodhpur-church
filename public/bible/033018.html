@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 18</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 18</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु की वाणी मुझे यह कहते हुए सुनाई दी,</span> <sup>2</sup><span class='v-txt'>“तुम लोग इस्राएल देश के विषय में यह कहावत क्यों दोहराते हो- बाप-दादों ने खट्टे अंगूर खाये और बच्चों के दाँत खुरदरे हो गये?</span> <sup>3</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता है- अपने अस्तित्व की शपथ! कोई भी इस्राएली यह कहावत फिर नहीं दोहरायेगा!</span> <sup>4</sup><span class='v-txt'>सभी आत्माएँ मेरी ही हैं।  पिता की आत्मा मेरी है और पुत्र की आत्मा भी।  जो व्यक्ति पाप करता है, वही मरेगा।</span> <sup>5</sup><span class='v-txt'>“यदि कोई मनुष्य धार्मिक है और संहिता तथा न्याय के अनुसार आचरण करता है;</span> <sup>6</sup><span class='v-txt'>यदि वह पहाड़ी पूजास्थानों में भोजन नहीं करता और इस्राएली प्रजा की देवमूर्तियों की ओर आँख उठा कर नहीं देखता; यदि वह परायी स्त्री का शील भंग नहीं करता और ऋतुमती स्त्री के पास नहीं जाता;</span> <sup>7</sup><span class='v-txt'>यदि वह किसी पर अत्याचार नहीं करता, अपने कर्जदार को उधार लौटाता और किसी का धन नहीं चुराता; यदि वह भूखों को भोजन और नंगों को कपड़े देता;</span> <sup>8</sup><span class='v-txt'>यदि वह ब्याज ले कर उधार नहीं देता, सूदखोरी अथवा अन्याय नहीं करता और दो पक्षों का उचित न्याय करता है;</span> <sup>9</sup><span class='v-txt'>यदि वह मेरे विधान के अनुसार आचरण करता और मेरे नियमों का निष्ठापूर्वक पालन करता है, तो ऐसा धार्मिक मनुष्य जीवित रहेगा- यह प्रभु-ईश्वर की वाणी है।</span> <sup>10</sup><span class='v-txt'>“किन्तु यदि उस से ऐसा पुत्र उत्पन्न हो, जो डाकू और हत्यारा हो जाये, जो स्वयं भी इन में से कोई अपराध करे;</span> <sup>11</sup><span class='v-txt'>जब उसने स्वयं ऐसा कोई अपराध न किया हो, यदि वह पहाड़ी पूजास्थानों में भोजन करे, परायी स्त्री का शील भंग करे,</span> <sup>12</sup><span class='v-txt'>दरिद्र और अभावग्रस्त लोगों पर अत्याचार करे, धन चुराये, ज़मानत न लौटाये, देवमूर्तियों की ओर आँख उठा कर देखे, कुकर्म करे,</span> <sup>13</sup><span class='v-txt'>ब्याज पर कर्ज़ दे और सूदख़ोरी करे, तो क्या वह जीवित रहेगा?  कभी नही! वह अपने कुकर्मों के कारण अवश्य मर जायेगा और उसका रक्त उसी के सिर पड़ेगा।</span> <sup>14</sup><span class='v-txt'>“किन्तु यदि उस से ऐसा पुत्र उत्पन्न हो, जो अपने पिता द्वारा किये गये पापों को देखे और उसके-जैसा आचरण न करे,</span> <sup>15</sup><span class='v-txt'>जो पहाड़ी पूजास्थानों में भोजन न करे या इस्राएल के घराने की दूवमूर्तियों की ओर आँख उठा कर न देखे, अपने पड़ोसी की पत्नी का शील भंग न करे,</span> <sup>16</sup><span class='v-txt'>किसी पर अत्याचार न करें, जमानत न ले, धन न चुराये, बल्कि भूखे को भोजन और नंगे को वस्त्र दे,</span> <sup>17</sup><span class='v-txt'>अन्याय से दूर रहे, ब्याज या अतिरिक्त रकम न ले, मेरे विधानों का पालन करे और मेरी आज्ञाओं का पालन करे, तो वह अपने पिता के पापों के कारण नहीं मरेगा, बल्कि वह अवश्य जीवित रहेगा।</span> <sup>18</sup><span class='v-txt'>उसके पिता ने लूटा-खसोटा, अपने भाई का धन चुराया और अपने जातिवालों के साथ अनुचित व्यवहार किया, इसलिए वह अपने पापों के कारण मर जायेगा।</span> <sup>19</sup><span class='v-txt'>“इस पर भी तुम यह कहते हो, ’पिता के पाप का दण्ड पुत्र क्यों नहीं भोगेगा?’  लेकिन वह धार्मिकता और न्याय के पथ पर चलता रहा है तथा उसके सावधानी से मेरी सब आज्ञाओं का पालन किया है।  वह अवश्य जीवित रहेगा।</span> <sup>20</sup><span class='v-txt'>जो पाप करता है, वह मर जायेगा।  पुत्र अपने पिता के पाप की दण्ड नहीं भोगेगा और पुत्र के पाप का दण्ड पिता नहीं भोगेगा।  धर्मी को अपनी धार्मिकता का फल प्राप्त होगा और दुष्ट को अपनी दुष्टता का फल मिलेगा।</span> <sup>21</sup><span class='v-txt'>“यदि पापी, अपना पुराना पापमय जीवन त्याग कर, मेरी सब आज्ञाओं का पालन करता और धार्मिकता तथा न्याय के पथ पर चलने लगता है, तो वह अवश्य जीवित रहेगा, मरेगा नहीं।</span> <sup>22</sup><span class='v-txt'>उसके सब पापों को भुला दिया जायेगा और वह अपनी धार्मिकता के कारण जीवित रहेगा।</span> <sup>23</sup><span class='v-txt'>प्रभु-ईश्वर का यह कहना है- क्या मैं दुष्ट की मृत्यु से प्रसन्न हूँ?  क्या मैं यह नहीं चाहता कि वह अपना मार्ग छोड़ दे और जीवित रहे?</span> <sup>24</sup><span class='v-txt'>किन्तु यदि भला मनुष्य अपनी धार्मिकता त्याग कर दुष्ट की तरह घृणित पाप करने लगता है, तो क्या वह जीवित रहेगा?  उसकी समस्त धार्मिकता को भुला दिया जायेगा और वह अपने अधर्म तथा पाप के कारण मर जायेगा।</span> <sup>25</sup><span class='v-txt'>“तुम लोग कहते हो कि प्रभु का व्यवहार न्यायसंगत नहीं हैं।  इस्राएलियो! मेरी बात सुनो।  क्या मेरा व्यवहार न्यायसंगत नहीं है?  क्या यह सही नहीं है कि तुम्हारा ही व्यवहार न्यायसंगत नहीं हैं।</span> <sup>26</sup><span class='v-txt'>यदि कोई भला मनुष्य अपनी धार्मिकता त्याग कर अधर्म करने लगता और मर जाता है, तो वह अपने पाप के कारण मरता है।</span> <sup>27</sup><span class='v-txt'>और यदि कोई पापी अपना पापमय जीवन त्याग कर धार्मिकता और न्याय के पथ पर चलने लगता है, तो वह अपने जीवन को सुरक्षित रखेगा।</span> <sup>28</sup><span class='v-txt'>यदि उसने अपने पुराने पापों को छोड़ देने का निश्चय किया है, तो वह अवश्य जीवित रहेगा, मरेगा नहीं।</span> <sup>29</sup><span class='v-txt'>इस्राएल का घराना यह कहता है ’प्रभु का व्यवहार न्यासंगत नहीं हं’।  इस्राएलियो! मेरी बात सुनो।  क्या मेरा व्यवहार न्यायसंगत नहीं हैं?  क्या यह सही नहीं है कि तुम्हारा ही व्यवहार न्यायसंगत नहीं है?</span> <sup>30</sup><span class='v-txt'>“प्रभु-ईश्वर यह कहता है- इस्राएल के घराने! मैं हर एक का उसके कर्मों के अनुसार न्याय करूँगा।  तुम मेरे पास लौट कर अपने सब पापों को त्याग दो।  कहीं ऐसा न हो कि तुम्हारे अपराधों को कारण तुम्हारा विनाश हो जाये।</span> <sup>31</sup><span class='v-txt'>अपने पुराने पापों का भार फेंक दो।  एक नया हृदय और एक नया मनोभाव धारण करो।  प्रभु-ईश्वर यह कहता है-इस्राएलियों! तुम क्यों मरना चाहते हो?</span> <sup>32</sup><span class='v-txt'>मैं किसी भी मनुष्य की मृत्यु से प्रसन्न नहीं होता।  इसलिए तुम मेरे पास लौट कर जीते रहो।“</span> </p>
+        <div class='nav'><a href='033017.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033019.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रेरित-चरित - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रेरित-चरित</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब पेंतेकोस्त का दिन आया और सब शिष्य एक स्थान पर इकट्ठे थे,</span> <sup>2</sup><span class='v-txt'>तो अचानक आँधी-जैसी आवाज आकाश से सुनाई पड़ी और सारा घर, जहाँ वे बैठे हुए थे, गूँज उठा।</span> <sup>3</sup><span class='v-txt'>उन्हें एक प्रकार की आग दिखाई पड़ी जो जीभों में विभाजित होकर उन में से हर एक के ऊपर आ कर ठहर गयी।</span> <sup>4</sup><span class='v-txt'>वे सब पवित्र आत्मा से परिपूर्ण हो गये और पवित्र आत्मा द्वारा प्रदत्त वरदान के अनुसार भिन्न-भिन्न भाषाएं बोलने लगे।</span> <sup>5</sup><span class='v-txt'>पृथ्वी भर के सब राष्ट्रों से आये हुए धर्मी यहूदी उस समय येरूसालेम में रहते थे।</span> <sup>6</sup><span class='v-txt'>बहुत-से लोग वह आवाज सुन कर एकत्र हो गये।  वे विस्मित थे, क्योंकि हर एक अपनी-अपनी भाषा में शिष्यों को बोेलते सुन रहा था।</span> <sup>7</sup><span class='v-txt'>वे बड़े अचम्भे में पड़ गये और चकित हो कर बोल उठे, &quot;क्या ये बोलने वाले सब-के-सब गलीली नहीं है?</span> <sup>8</sup><span class='v-txt'>तो फिर हम में हर एक अपनी-अपनी जन्मभूमि की भाषा कैसे सुन रहा है?</span> <sup>9</sup><span class='v-txt'>पारथी, मेदी और एलामीती; मेसोपोतामिया, यहूदिया और कम्पादुनिया, पोंतुस और एशिया,</span> <sup>11</sup><span class='v-txt'>क्रेत और अरब के निवासी-हम सब अपनी-अपनी भाषा में इन्हें ईश्वर के महान् कार्यों का बख़ान करते सुन रहे हैं।&quot;</span> <sup>12</sup><span class='v-txt'>सब-के-सब बड़े अचम्भे में पड़ कर चकित रह गये और एक दूसरे से कहते थे, &quot;यह क्या बात है?&quot;</span> <sup>13</sup><span class='v-txt'>कुछ लोग उपहास करते हुए कहते थे, &quot;ये तो नयी अंगूरी पी कर मतवाले हैं&quot;।</span> <sup>14</sup><span class='v-txt'>पेत्रुस ने ग्यारहो के साथ खड़े हो कर लोगों को सम्बोधित करते हुए ऊँचे स्वर से कहा, &quot;यहूदी भाइयो और येरूसालेम के सब निवासियो! आप मेरी बात ध्यान से सुनें और यह जान लें कि</span> <sup>15</sup><span class='v-txt'>ये लोग मतवाले नहीं हैं, जैसा कि आप समझते हैं।  अभी तो दिन के नौ ही बजे हैं।</span> <sup>16</sup><span class='v-txt'>यह वह बात है, जिसके विषय में नबी योएल ने कहा है,</span> <sup>17</sup><span class='v-txt'>प्रभु यह कहता है- मैं अन्तिम दिनों सब शरीरधारियों पर अपना आत्मा उतारूँगा।  तुम्हारे पुत्र और पुत्रियाँ भविष्यवाणी करेंगे, तुम्हारे नवयुवकों को दिव्य दर्शन होंगे और तुम्हारे बड़े-बूढ़े स्वप्न देखेंगे।</span> <sup>18</sup><span class='v-txt'>मैं उन दिनों अपने दास-दासियों पर अपना आत्मा उतारूँगा और वे भविष्यवाणी करेंगे।</span> <sup>19</sup><span class='v-txt'>मैं ऊपर आकाश में चक्कर दिखाऊँगा और नीचे पृथ्वी पर चिह्न प्रकट करूँगा, अर्थात् रक्त, अग्नि और उड़ता हुआ धुआँ।</span> <sup>20</sup><span class='v-txt'>प्रभु के महान् तथा प्रकाशमान दिन के आगमन से पहले सूर्य अन्धकारमय और चन्द्रमा रक्तमय हो जायेगा।</span> <sup>21</sup><span class='v-txt'>जो प्रभु के नाम की दुहाई देगा, वही बचेगा।’</span> <sup>22</sup><span class='v-txt'>इस्राएली भाइयो!  मेरी बातें ध्यान से सुनें!  आप लोग स्वयं जानते हैं कि ईश्वर ने ईसा नाज़री के द्वारा आप लोगों के बीच कितने महान् कार्य, चमत्कार एवं चिह्न दिखाये हैं।  इस से यह प्रमाणित हुआ कि ईसा ईश्वर की ओर से आप लोगों के पास भेजे गये थे।</span> <sup>23</sup><span class='v-txt'>वह ईश्वर के विधान तथा पूर्वज्ञान के अनुसार पकड़वाये गये और आप लोगों ने विधर्मियों के हाथों उन्हें क्रूस पर चढ़वाया और मरवा डाला है।</span> <sup>24</sup><span class='v-txt'>किन्तु ईश्वर ने मृत्यु के बन्धन खोल कर उन्हें पुनर्जीवित किया।  यह असम्भव था कि वह मृत्यु के वश में रह जायें,</span> <sup>25</sup><span class='v-txt'>क्योंकि उनके विषय में दाऊद यह कहते हैं - प्रभु सदा मेरी आँखों के सामने रहता है।  वह मेरे दाहिने विराजमान है, इसलिए मैं दृढ़ बना रहता हूँ।</span> <sup>26</sup><span class='v-txt'>मेरा हृदय आनन्दित है, मेरी आत्मा प्रफुल्लित है और मेरा शरीर भी सुरक्षित रहेगा;</span> <sup>27</sup><span class='v-txt'>क्योंकि तू मेरी आत्मा को अधोलोक में नहीं छोड़ेगा, तू अपने भक्त को क़ब्र में गलने नहीं देगा।</span> <sup>28</sup><span class='v-txt'>तूने मुझे जीवन का मार्ग दिखाया है।  तेरे पास रह कर मुझे परिपूर्ण आनन्द प्राप्त होगा।</span> <sup>29</sup><span class='v-txt'>भाइयो!  मैं कुलपति दाऊद के विषय में।  आप लोगों से निस्संकोच यह कह सकता हूँ कि वह मर गये और कब्र में रखे गये।  उनकी कब्र आज तक हमारे बीच विद्यमान है।</span> <sup>30</sup><span class='v-txt'>दाऊद जानते थे कि ईश्वर ने शपथ खा कर उन से यह कहा था कि मैं तुम्हारे वंशजों में एक व्यक्ति को तुम्हारे सिंहासन पर बैठाऊँगा;</span> <sup>31</sup><span class='v-txt'>इसलिये नबी होने के नाते भविष्य में होने वाला मसीह का पुनरुत्थान देखा और इनके विषय में कहा कि वह अधोलोक में नहीं छोड़े गये और उनका शरीर गलने नहीं दिया गया।</span> <sup>32</sup><span class='v-txt'>ईश्वर ने इन्हीं ईसा नामक मनुष्य को पुनर्जीवित किया है-हम इस बात के साक्षी हैं।</span> <sup>33</sup><span class='v-txt'>अब वह ईश्वर के दाहिने विराजमान हैं।  उन्हें प्रतिज्ञात आत्मा पिता से प्राप्त हुआ और उन्होंने उसे हम लोगों को प्रदान किया, जैसा कि आप देख और सुन रहे हैं।</span> <sup>34</sup><span class='v-txt'>दाऊद स्वयं स्वर्ग नहीं गये; किन्तु वे कहते हैं- प्रभु ने मेरे प्रभु से कहा, तुम तब तक मेरे दाहिने बैठे रहो,</span> <sup>35</sup><span class='v-txt'>जब तब तक मैं तुम्हारे शत्रुओं को तुम्हारा पावदान न बना दूँ।</span> <sup>36</sup><span class='v-txt'>इस्राएल का सारा घराना यह निश्चित रूप से जान ले कि जिन्हें आप लोगों ने क्रूस पर चढ़ाया ईश्वर ने उन्हीं ईसा को प्रभु भी बना दिया है और मसीह भी।&quot;</span> <sup>37</sup><span class='v-txt'>यह सुन कर वे मर्माहत हो गये और उन्होंने पेत्रुस तथा अन्य प्रेरितों से कहा, &quot;भाइयों!  हमें क्या करना चाहिए?&quot;</span> <sup>38</sup><span class='v-txt'>पेत्रुस ने उन्हें यह उत्तर दिया, &quot;आप लोग पश्चाताप करें।  आप लोगों में प्रत्येक अपने-अपने पापों की क्षमा के लिए ईसा के नाम पर बपतिस्मा ग्रहण करे।  इस प्रकार आप पवित्र आत्मा का वरदान प्राप्त करेंगे;</span> <sup>39</sup><span class='v-txt'>क्योंकि वह प्रतिज्ञा आपके तथा आपकी सन्तान के लिए है, और उन सबों के लिए, जो भी दूर हैं और जिन्हें हमारा प्रभु-ईश्वर बुलाने वाला है।&quot;</span> <sup>40</sup><span class='v-txt'>पेत्रुस ने और बहुत-सी बातों द्वारा साक्ष्य दिया और यह कहते हुए उन से अनुरोध किया कि आप लोग अपने को इस विधर्मी पीढ़ी से बचाये रखें।</span> <sup>41</sup><span class='v-txt'>जिन्होंने पेत्रुस की बातों पर विश्वास किया, उन्होंने बपतिस्मा ग्रहण किया।  उस दिन लगभग तीन हजार लोग शिष्यों में सम्मिलित हो गये।</span> <sup>42</sup><span class='v-txt'>नये विश्वासी दत्तचित्त होकर प्रेरितों की शिक्षा सुना करते थे, भ्रातृत्व के निर्वाह में ईमानदार थे और प्रभु -भोज तथा सामूहिक प्रार्थनाओं में नियमित रूप से शामिल हुआ करते थे।</span> <sup>43</sup><span class='v-txt'>सबों पर विस्मय छाया रहता था, क्योंकि प्रेरित बहुत-से चमत्कार एवं चिह्न दिखाते थे।</span> <sup>44</sup><span class='v-txt'>सब विश्वासी एक हृदय थे।  उनके पास जो कुछ था, उसमें सबों का साझा था।</span> <sup>45</sup><span class='v-txt'>वे अपनी चल-अचल सम्पत्ति बेचते थे और उसकी कीमत हर एक की ज़रूरत के अनुसार सब में बाँटते थे।</span> <sup>46</sup><span class='v-txt'>वे सब मिलकर प्रतिदिन मन्दिर जाया करते थे और निजी घरों में प्रभु-भोज में सम्मिलित होकर निष्कपट हृदय से आनन्दपूर्वक एक साथ भोजन करते थे।</span> <sup>47</sup><span class='v-txt'>वे ईश्वर की स्तुति किया करते थे और सारी जनता उन्हें बहुत मानती थी।  प्रभु प्रतिदिन उनके समुदाय में ऐसे लोगों को मिला देता था, जो मुक्ति प्राप्त करने वाले थे।</span> </p>
+        <div class='nav'><a href='051001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='051003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

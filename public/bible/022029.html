@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योब - अध्याय 29</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योब</h1>
+        <h2>अध्याय 29</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>अय्यूब ने अपना काव्य आगे बढ़ाते हुए कहा:</span> <sup>2</sup><span class='v-txt'>कौन मुझे पहले की सुख-शांति लौटायेगा?  वे दिन, जब ईश्वर मुझे सुरक्षित रखता था,</span> <sup>3</sup><span class='v-txt'>जब उसका दीपक मेरे ऊपर चमकता था, जब मैं रात के समय ईश्वर की ज्योति में चलता था;</span> <sup>4</sup><span class='v-txt'>जब मैं समृद्धि में जीवन बिताता था, जब मुझे ईश्वर की कृपादृष्टि प्राप्त थी;</span> <sup>5</sup><span class='v-txt'>जब सर्वशक्तिमान् मेरे साथ था और मेरे बाल-बच्चे मुझे घेरे रहते थे;</span> <sup>6</sup><span class='v-txt'>जब मैं अपने पैर दूध से धोता और उत्तम तेल की धाराओं से नहाता था;</span> <sup>7</sup><span class='v-txt'>जब मैं नगर के फाटक जा कर चैक में अपने आसन पर बैठ जाता था,</span> <sup>8</sup><span class='v-txt'>तो जवान मुझे देखकर खिसक जाते थे, वृद्ध उठ खडे हो जाते थे,</span> <sup>9</sup><span class='v-txt'>कुलीन लोग भी मुँह पर हाथ रख कर अपनी बातचीत बंद कर देते थे,</span> <sup>10</sup><span class='v-txt'>शासकों की वाणी मौन हो जाती थी उनकी जीभ तालू से चिपक जाती थी।</span> <sup>11</sup><span class='v-txt'>जो लोग मेरी बात सुनते, वे मुझे धन्य कहते और जो मुझे देखते, वे मेरी प्रशंसा करते थे;</span> <sup>12</sup><span class='v-txt'>क्योंकि मैं दुहाई देने वाले दरिद्र और निस्सहाय अनाथ की रक्षा करता था।</span> <sup>13</sup><span class='v-txt'>मुझे मरणासन्न व्यक्ति का आशीर्वाद प्राप्त था; मैं विधवा का हृदय प्रसन्नता से भरता था।</span> <sup>14</sup><span class='v-txt'>मैं धार्मिकता को वस्त्र की तरह ओढ़े था, मैं न्याय को चादर और पगड़ी की तरह पहनता था।</span> <sup>15</sup><span class='v-txt'>मैं अंधे के लिए आँख बन गया था और लँगड़े के लिए पैर।</span> <sup>16</sup><span class='v-txt'>मैं दरिद्रों का पिता था और अपरिचितों को न्याय दिलाता था</span> <sup>17</sup><span class='v-txt'>मैं दुष्टों के दाँत तोड़ता और उनके जबड़े से शिकार छीनता था।</span> <sup>18</sup><span class='v-txt'>मैं सोचता था-मैं समृद्धि में मरूँगा, मेरे दिनों की संख्या रेत के कणों की तरह अनंत होगी।</span> <sup>19</sup><span class='v-txt'>जलस्रोत मेरी जड़े सींचता और ओस मेरी डालियों पर उतरती है।</span> <sup>20</sup><span class='v-txt'>मेरी प्रतिष्ठा चिरनवीन रहेगी, मेरे हाथ का धनुष कभी जर्जर नहीं होगा।</span> <sup>21</sup><span class='v-txt'>सब लोग उत्सुकता से मेरी बात सुनते और मौन रह कर मेरा परामर्श स्वीकार करते थे।</span> <sup>22</sup><span class='v-txt'>कोई मेरे बाद नहीं बोलता था, वे मेरे एक-एक शब्द का रस लेते थे।</span> <sup>23</sup><span class='v-txt'>वे वर्षा की तरह मेरी वाणी की प्रतीक्षा करते थे।  वे मुँह खोल कर वसंत की बौछार की तरह मेरे शब्दों की बूँद पीते थे।</span> <sup>24</sup><span class='v-txt'>जब मैं उनकी ओर देख कर मुस्करता, तो उन्हें अपनी आँखों पर विश्वास नहीं होता।  मेरी मुस्कराहट उनकी उदासी दूर करती थी।</span> <sup>25</sup><span class='v-txt'>मैं उनका पथप्रदर्शक और मुखिया था।  मैं उनके बीच सेना में राजा के सदृश था, मैं शोक मनाने वालों के सान्त्वनादाता जैसा था।</span> </p>
+        <div class='nav'><a href='022028.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='022030.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

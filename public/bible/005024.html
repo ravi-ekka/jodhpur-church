@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 24</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 24</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>&quot;यदि कोई व्यक्ति किसी स्त्री से विवाह करे, बाद में वह उसे इसलिए नापसन्द कर कि वह उस में कोई लज्जाजनक बात पाता हो और उसे त्याग पत्र दे कर घर से निकाल दे और</span> <sup>2</sup><span class='v-txt'>वह स्त्री उसका घर छोड़ कर किसी दूसरे पुरुष से विवाह कर ले;</span> <sup>3</sup><span class='v-txt'>अब यदि दूसरा पुरुष भी उसे नापसन्द करे और उसे त्याग पत्र देकर घर से निकाल दे या वह दूसरा पुरुष, जिसने उस से विवाह किया था, मर जाये,</span> <sup>4</sup><span class='v-txt'>तब वह पहला पुरुष, जिसने उसका परित्याग कर दिया था, उसके साथ दुबारा विवाह नहीं कर सकता, क्योंकि वह उसके लिए अशुद्ध हो गयी है।  वह प्रभु की दृष्टि में घृणित है।  ऐसा करने पर तुम उस देश को दूषित करोगे, जिसे प्रभु, तुम्हारा ईश्वर तुम्हें दायभाग के रूप में देने वाला है।</span> <sup>5</sup><span class='v-txt'>&quot;कोई नवविवाहित पुरुष सेना के साथ युद्ध में न जायें या किसी काम का भार उस पर न डाला जायें।  वह एक वर्ष तक घर पर मुक्त रहकर अपनी विवाहिता पत्नी को आनन्दित करे।</span> <sup>6</sup><span class='v-txt'>&quot;चक्की या चक्की का ऊपरी पाठ बन्धक में न लिया जाये; क्योंकि यह तो उसकी जीविका को बन्धक रखने के बराबर है।</span> <sup>7</sup><span class='v-txt'>&quot;यदि कोई व्यक्ति अपने इस्राएली भाई का अपहरण करे और पकड़ा जाये या उसके साथ दास-जैसा आचरण करे या उसे बेचे, तो अपहत्र्ता को मृत्यु दण्ड़ दिया जाये।  इस प्रकार तुम अपने बीच से यह बुराई दूर करोगे।</span> <sup>8</sup><span class='v-txt'>&quot;यदि किसी को चर्म रोग लग जाये, तो लेवी कुल के याजकों, द्वारा दिये गए आदेशों का सावधानी से पालन करो।  मैंने उन्हें जैसी आज्ञा दी थी, ठीक वैसा ही तुम्हें करना चाहिए।</span> <sup>9</sup><span class='v-txt'>याद रखो कि मिस्र से तुम्हारे निकलने के समय प्रभु, तुम्हारे ईश्वर ने मिरयम के साथ क्या किया था।</span> <sup>10</sup><span class='v-txt'>&quot;यदि तुम अपने पड़ोसी को किसी प्रकार का कोई उधार दे रहो हो, तो उसका बन्धक लेने के लिए उसके घर के भीतर नहीं जाओगे।</span> <sup>11</sup><span class='v-txt'>तुम बाहर खड़े रहोगे।  जिसे तुमने उधार दिया है, वह स्वयं बन्धक तुम्हारे पास बाहर लायेगा।</span> <sup>12</sup><span class='v-txt'>&quot;यदि वह आदमी दरिद्र हो, तो उस से प्राप्त बन्धक अपने सोने के समय तक नहीं रखोगे।</span> <sup>13</sup><span class='v-txt'>उसे सूर्याेस्त के समय अपना बन्धक वापस दे दिया जायेगा, जिससे वह अपनी चादर ओढ़ कर आराम से सो सके और वह तुम्हें आशीर्वाद दे।  यह प्रभु, तुम्हारे ईश्वर की दृष्टि में पुण्य होगा।</span> <sup>14</sup><span class='v-txt'>&quot;किसी अभागे, कंगाल मज़दूर का शोषण नहीं करोगे, चाहे वह तुम्हारा देश-भाई हो या तुम्हारे किसी नगर में रहने वाला प्रवासी।</span> <sup>15</sup><span class='v-txt'>उसने जिस दिन मज़दूरी की है, तुम उसी दिन उसे उसकी मज़दूरी सूर्यास्त के पहले दे दोगे।  वह दरिद्र है, वह उसकी प्रतीक्षा कर रहा है; क्योंकि यदि वह तुम्हारे विरुद्ध प्रभु से दुहाई करेगा, तो तुम दोषी माने जाओगे।</span> <sup>16</sup><span class='v-txt'>&quot;न तो पिता को अपने किसी बच्चे के पाप के लिए प्राणदण्ड दिया जाये और न बच्चे को अपने पिता के पाप के लिए।  हर व्यक्ति को अपने दोष के लिए प्राणदण्ड़ दिया जायेगा।</span> <sup>17</sup><span class='v-txt'>&quot;तुम न तो परदेशी अथवा अनाथ के साथ अन्याय करो और न रहन के तौर पर विधवा का वस्त्र लो।</span> <sup>18</sup><span class='v-txt'>याद रखो की तुम मिस्र देश में दास थे और कि ईश्वर ने वहाँ से तुम्हारा उद्धार किया।  इसलिए मैं तुम लोगों को यह आदेश दे रहा हूँ।</span> <sup>19</sup><span class='v-txt'>&quot;जब तुम अपने खेत में फ़सल काटोगे और यदि वहाँ एक पूला भूल जाओगे, तो उसे ले आने के लिए नहीं लौटोगे। उसे किसी परदेशी, अनाथ अथवा विधवा के लिए छोड़ दोगे, जिससे तुम्हारा प्रभु-ईश्वर तुम्हें अपने सब कार्यों में आशीर्वाद देता रहे।</span> <sup>20</sup><span class='v-txt'>जब तुम अपने जैतून के पेड़ों से फ़ल झाड़ोगे, तो बाद में दुबारा उसकी शाखाओं को नहीं झाड़ोगे। जो रह जायेगा, वह परदेशी, अनाथ अथवा विधवा का होगा।</span> <sup>21</sup><span class='v-txt'>जब तुम अपनी दाखबारी में अंगूर तोड़ लोगे, तो बाद में बचे हुए अंगूर बटोरने नहीं जाओगे।  जो रह जायेगा वह परदेशी, अनाथ अथवा विधवा का होगा।</span> <sup>22</sup><span class='v-txt'>याद रखो कि तुम मिस्र देश में दास थे।  इसलिए मैं तुम लोगों को यह आदेश दे रहा हूँ।</span> </p>
+        <div class='nav'><a href='005023.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005025.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

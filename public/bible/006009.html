@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योशुआ - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योशुआ</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यर्दन के इस पार पहाड़ी प्रान्त में और लेबानोन तक महासमुद्र से पूरे तट पर निचले प्रदेश में रहने वाले सब राजाओं ने जो हित्ती, अमोरी, कनानी, परिज्जी, हिब्बी और यबूसी थे, इस्राएलियों की विजय के विषय में सुना</span> <sup>2</sup><span class='v-txt'>और वे योशुआ और इस्राएल से युद्ध करने के लिए एकत्रित हुए।</span> <sup>3</sup><span class='v-txt'>जब गिबओन के निवासियों ने वह सब सुना जो योशुआ ने येरीख़ो और अय के साथ किया था,</span> <sup>4</sup><span class='v-txt'>तो उन्होंने छल-कपट करने का निष्चय किया।  उन्होंने कुछ प्रतिनिधियों को भेजा जिनके गधो पर भोजन के पुराने बोरे और अंगूरी की मरम्मत की हुई मषकें लदी थी।</span> <sup>5</sup><span class='v-txt'>उन्होंने अपने पैरो में पैबन्द लगे जूते और शरीर पर फटे पुराने कपडे़ पहन लिये।  उनके रसद की रोटियाँ सूखी और फफूँददार थीं।</span> <sup>6</sup><span class='v-txt'>वे इस देश में गिलगाल के शिविर में योशुआ के पास आये।  वे उस से और इस्राएली लोगों से कहने लगे, &quot;हम दूर देश से आ रहे हैं इसलिए हमारे साथ सन्धि कीजिए&quot;।</span> <sup>7</sup><span class='v-txt'>लेकिन इस्राएलियों ने उन हिव्वियों को उत्तर दिया, &quot;सम्भव है तुम्हारा निवास स्थान हमारे आसपास ही कहीं हो, तो हम तुम्हारे साथ कैसे सन्धि कर सकते हैं?&quot;</span> <sup>8</sup><span class='v-txt'>किन्तु जब उन्होंने योशुआ से कहा, &quot;हम आपके दास है&quot; तो योशुआ ने उन से पूछा, &quot;सच बताओ तुम कौन हो और कहाँ से आये हो।&quot;</span> <sup>9</sup><span class='v-txt'>उन्होंने उसे उत्तर दिया, &quot;हम आपके दास प्रभु, आपके ईश्वर का नाम सुन कर एक सुदूर देश से आये हैं।  हमने उसके विषय में और मिस्र में उसके किये सब कार्यो के विषय में सुना है।</span> <sup>10</sup><span class='v-txt'>हमने यह भी सुना है कि उसने हेषबाने के राजा सीहोन और अष्तारोत में रहने वाले बाशान के राजा ओग, यर्दन के उस पार रहने वाले उन दोनों अमोरी राजाओं के साथ क्या किया है।</span> <sup>11</sup><span class='v-txt'>यह सुन कर हमारे नेताओं और हमारे देश के सब निवासियों ने हमसे कहा, ’रास्ते के लिए रसद तैयार कर उन से मिलने जाओ और उन से कहो कि हम आप लोगों के दास है।  आप लोग हमारे साथ सन्धि कर लें।’</span> <sup>12</sup><span class='v-txt'>ये हैं हमारी रोटियाँ।  जब हम अपने रास्ते के लिए अपने घरों से इन्हें ले कर आप से मिलने निकले थे तब ये गर्म थी और अब देखिए ये कितनी सूखी और फफूँददार हो गयी हैं।</span> <sup>13</sup><span class='v-txt'>ये हैं हमारी अंगूरी की मषकें जब हमने इन्हें भरा था तब ये नयी थी और अब देखिए ये फट गयी है और ये हैं ंहमारे जूते और वस्त्र जो लम्बा मार्ग तय करने के कारण एकदम जर्जर हो गये हैं।&quot;</span> <sup>14</sup><span class='v-txt'>इस पर लोगों ने उनके रसद की रोटियाँ चखी और प्रभु से पूछे बिना ही</span> <sup>15</sup><span class='v-txt'>योशुआ ने उन से संधि कर ली।  समझौता हुआ कि उन्हें जीवित रहने दिया जाये।  समुदाय के नेताअें ने इस बात को शपथ खा कर स्वीकार किया।</span> <sup>16</sup><span class='v-txt'>उनके साथ की हुई संधि के तीन दिन बाद इस्राएलियों को मालूम हुआ कि वे उनके पड़ोसी हैं।  बिलकुल पास के रहने वाले।</span> <sup>17</sup><span class='v-txt'>इस पर इस्राएली प्रस्थान कर तीसरे दिन उनके नगरों में पहुँचे।  गिबओन कफीरा बएरोत और किर्यत-यआरीम उनके नगर थे।</span> <sup>18</sup><span class='v-txt'>परन्तु इस्राएलियों ने उन पर इसलिए आक्रमण नहीं किया कि समुदाय के नेताओं ने प्रभु इस्राएल के ईश्वर के नाम की शपथ खायी थी।  सारा समुदाय नेताओं के विरुद्ध भुनभुनाने लगा।</span> <sup>19</sup><span class='v-txt'>इस पर सब नेताओं ने उत्तर दिया, &quot;हमने प्रभु इस्राएल के ईश्वर के नाम पर उन्हें शपथपूर्वक वचन दिया हैं। इसलिए हम उन पर आक्रमण नहीं कर सकते।</span> <sup>20</sup><span class='v-txt'>अब हम उनके साथ ऐसा व्यवहार करें: हम उन्हें जीवित रहने दें।  कहीं ऐसा न हो कि अपनी शपथ भंग करने के कारण हमें दण्ड दिया जाए।&quot;</span> <sup>21</sup><span class='v-txt'>नेताओं ने उनसे कहा, &quot;उन्हें जीवित रहने दो।  वे सारे समुदाय के लिए लकडी काटें और पानी भरें।&quot;  समुदाय ने नेताओं की बात मान ली।</span> <sup>22</sup><span class='v-txt'>योशुआ ने उन्हें बुलाकर उनसे कहा, &quot;तुमने हमें यह कह कर धोखा क्यों दिया कि तुम हमसे बहुत दूर के निवासी हो जबकि तुम हमारे पास के ही रहने वाले हो?</span> <sup>23</sup><span class='v-txt'>इसलिए तुमको अभिशाप!  तुम सदा दास के रूप में प्रभु के घर में लकड़ी काटने और पानी भरने का काम करोगे।&quot;</span> <sup>24</sup><span class='v-txt'>उन्होंने योशुआ को उत्तर दिया, &quot;हम, आपके दासों को ठीक ठीक बताया गया था कि प्रभु आपके ईश्वर ने अपने सेवक मूसा से कहा कि वह आप लोगों को यह सारा देश दे देगा और वह आपके कारण इस देश के सब निवासियों का विनाश करेगा।  इसलिए हमने आप लोागों</span> <sup>25</sup><span class='v-txt'>देखिए, हम अब आपके हाथों में ही है।  आप जैसा ठीक और उचित समझें, हमारे साथ वैसा ही करें।&quot;</span> <sup>26</sup><span class='v-txt'>योशुआ ने उन्हें इस्राएलियों के हाथों से बचाया जिससे कि वे उन्हें मार न डालें।</span> <sup>27</sup><span class='v-txt'>उसी दिन योशुआ ने उन्हें समुदाय और प्रभु की वेदी की सेवा में, उस स्थान पर लकडी काटने और पानी भरने के लिए नियुक्त किया, जिसे प्रभु चुनने वाला था।  वे आज तक यही काम करते हैं।</span> </p>
+        <div class='nav'><a href='006008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='006010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

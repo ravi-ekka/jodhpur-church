@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>1 कुरिन्थियों - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>1 कुरिन्थियों</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>भाइयो! जब मैं ईश्वर का सन्देश सुनाने आप लोगों के यहाँ आया, तो मैंने शब्दाडम्बर अथवा पाण्डित्य का प्रदर्शन नहीं किया।</span> <sup>2</sup><span class='v-txt'>मैंने निश्चय किया था कि मैं आप लोगों से ईसा मसीह और क्रूस पर उनके मरण के अतिरिक्त किसी और विषय पर बात नहीं करूँगा।</span> <sup>3</sup><span class='v-txt'>वास्तव में मैं आप लोगों के बीच रहते समय दुर्बल, संकोची और भीरू था।</span> <sup>4</sup><span class='v-txt'>मेरे प्रवचन तथा मेरे संदेश में विद्वतापूर्ण शब्दों का आकर्षण नहीं, बल्कि आत्मा का सामर्थ्य था,</span> <sup>5</sup><span class='v-txt'>जिससे आप लोगों का विश्वास मानवीय प्रज्ञा पर नहीं, बल्कि ईश्वर के सामर्थ्य पर आधारित हो।</span> <sup>6</sup><span class='v-txt'>हम उन लोगों के बीच प्रज्ञा की बातें करते हैं, जो परिपक्व हो गये हैं।  यह प्रज्ञा न तो इस संसार की है और न इस संसार के अधिपतियों की, जो समाप्त होने को हैं।</span> <sup>7</sup><span class='v-txt'>हम ईश्वर की उस रहस्यमय प्रज्ञा और उद्देश्य की घोषणा करते हैं, जो अब तक गुप्त रहे, जिन्हें ईश्वर ने संसार की सृष्टि से पहले ही हमारी महिमा के लिए निश्चित किया था,</span> <sup>8</sup><span class='v-txt'>और जिन को संसार के अधिपतियों में किसी ने नहीं जाना।  यदि वे लोग उन्हें जानते, तो महिमामय प्रभु को क्रूस पर नहीं चढ़ाते।</span> <sup>9</sup><span class='v-txt'>हम उन बातों के विषय में बोलते हैं, जिनके सम्बन्ध में धर्मग्रन्थ यह कहता है - ईश्वर ने अपने भक्तों के लिए जो तैयार किया है, उस को किसी ने कभी देखा नहीं, किसी ने सुना नहीं और न कोई उसकी कल्पना ही कर पाया।</span> <sup>10</sup><span class='v-txt'>ईश्वर ने अपने आत्मा द्वारा हम पर वही प्रकट किया है, क्योंकि आत्मा सब कुछ की, ईश्वर के रहस्य की भी, थाह लेता है।</span> <sup>11</sup><span class='v-txt'>मनुष्य के निजी आत्मा के अतिरिक्त कौन किसी का अन्तरतम जानता है?  इसी तरह ईश्वर के आत्मा के अतिरिक्त कोई ईश्वर का अन्तरतम नहीं जानता।</span> <sup>12</sup><span class='v-txt'>हमें संसार का नहीं, बल्कि ईश्वर का आत्मा मिला है, जिससे हम ईश्वर के वरदान पहचान सकें।</span> <sup>13</sup><span class='v-txt'>हम उन वरदानों की व्याख्या करते समय मानवीय प्रज्ञा के शब्दों का नहीं, बल्कि आत्मा द्वारा प्रदत्त शब्दों का प्रयोग करते हैं।  इस प्रकार हम आध्यात्मिक शब्दावली में आध्यात्मिक तथ्यों की विवेचना करते है।।</span> <sup>14</sup><span class='v-txt'>प्राकृत मनुष्य ईश्वर के आत्मा की शिक्षा स्वीकार नहीं करता।  वह उसे मूर्खता मानता और उसे समझने में असमर्थ है, क्योंकि आत्मा की सहायता से ही उस शिक्षा की परख हो सकती है।</span> <sup>15</sup><span class='v-txt'>आध्यात्मिक मनुष्य सब बातों की परख करता है, किन्तु कोई भी उस मनुष्य की परख नहीं करता है, किन्तु कोई भी उस मनुष्य की परख नहीं कर पाता;</span> <sup>16</sup><span class='v-txt'>क्योंकि (लिखा है) - प्रभु का मन कौन जानता है?  कौन उसे शिक्षा दे सकता है?  हम में तो मसीह का मनोभाव विद्यमान है।</span> </p>
+        <div class='nav'><a href='053001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='053003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

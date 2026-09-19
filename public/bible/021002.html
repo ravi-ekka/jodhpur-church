@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मक्काबियों का दूसरा ग्रन्थ - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मक्काबियों का दूसरा ग्रन्थ</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ग्रंथों में इसका उल्लेख किया गया है कि नबी यिरमियाह ने निर्वासितों से कहा था कि वे आग का थोड़ा सा अंश अपने साथ ले जाये, जैसा कि उसका उल्लेख किया जा चुका है।</span> <sup>2</sup><span class='v-txt'>नबी ने निर्वासितों को संहिता दे दी और उन से अनुरोध किया कि वे प्रभु की आज्ञाएँ नहीं भूलें और सोने-चाँदी की अलंकृत मूर्तियाँ देख कर उनकी ओर आकर्षित न हो जायें।</span> <sup>3</sup><span class='v-txt'>नबी ने इस प्रकार की अन्य बातों के साथ-साथ उन से आग्रह किया कि वे संहिता को अपने हृदय से दूर होने न दें।</span> <sup>4</sup><span class='v-txt'>उसी ग्रंथ में यह भी लिखा है कि नबी ने ईश्वर की प्रेरणा से विधान का तम्बू और मंजूषा लाने और अपने पीछे ले जाने का आदेश दिया।  तब वह उस पर्वत गया, जिस पर चढ़ कर मूसा ने ईश्वर की विरासत के दर्शन किये थे।</span> <sup>5</sup><span class='v-txt'>यहाँ यिरमियाह को एक बड़ी गुफा मिली।  उसने उस में तम्बू, मंजूषा और धूपदेवी रखवायी और</span> <sup>6</sup><span class='v-txt'>इसके बाद उसका द्वार बंद किया।  बाद में उसके साथियों के कई व्यक्ति वहाँ गये, जिससे वे उस मार्ग पर चिह्न लगा दें, लेकिन वे उस स्थान का पता नहीं लगा सके।</span> <sup>7</sup><span class='v-txt'>जब यिरमियाह ने यह बात सुनी, तो उसने उन्हें इस प्रकार डाँटा, &quot;यह स्थान तब तक गुप्त रहेगा, जब तक ईश्वर अपनी प्रजा को एकत्र न करे और उन पर तरस न खाये।</span> <sup>8</sup><span class='v-txt'>उस समय प्रभु ये वस्तुएँ दिखायेगा।  तब बादल के साथ-साथ प्रभु की महिमा प्रकट होगी, जैसी वह मूसा के समय प्रकट हुई थी और उस समय, जब सुलेमान ने मंदिर के भव्य प्रतिष्ठान के लिए प्रार्थना की थी।&quot;</span> <sup>9</sup><span class='v-txt'>उन ग्रंथों में इसका भी वर्णन किया गया है कि प्रज्ञासम्पन्न सुलेमान ने मंदिर के निर्माण की समाप्ति पर प्रतिष्ठान का यज्ञ चढ़ाया।</span> <sup>10</sup><span class='v-txt'>जिस तरह मूसा ने प्रभु से प्रार्थना की थी और स्वर्ग से उतरी आग ने चढावे भस्म कर दिये, उसी तरह सुलेमान ने भी प्रार्थना की थी और आग से उतर कर होम-बलि भस्म कर दी।</span> <sup>11</sup><span class='v-txt'>मूसा ने कहा था, &quot;प्रायश्चित बलि नहीं खायी गयी, इसलिए वह भस्म की गयी है&quot;।</span> <sup>12</sup><span class='v-txt'>सुलेमान ने भी आठ दिन तक इसी तरह पर्व मनाया था।</span> <sup>13</sup><span class='v-txt'>उपर्युक्त बातों के अतिरिक्त उन ग्रंथों और नहेम्या के संस्मरणों में यह भी लिखा है कि नहेम्या ने एक पुस्तकालय बनवाया, जिस में उसने राजाओं और नबियों के ग्रंन्थों, दाऊद के ग्रंथों और मंदिरों में अर्पित की गयी भेंटों से संबंधित राजाओं के पत्रों का संग्रह किया था।</span> <sup>14</sup><span class='v-txt'>इसी प्रकार यूदाह ने भी उन सब गं्रथों को संग्रहीत किया, जो हमारे साथ की गयी लडाई के कारण इधर-उधर बिखर गये थे।  वे इस समय हमारे पास हैं।</span> <sup>15</sup><span class='v-txt'>यदि आप को उनकी आवश्यकता है, तो दूत भेजें, जो उन ग्रंथों को आपके पास ले जायेंगे।</span> <sup>16</sup><span class='v-txt'>हम मंदिर के शुद्धीकरण का पर्व मनाने जा रहे हैं, इसलिए हम आप को लिख रहे हैं।  अच्छा होगा कि आप भी यह पर्व मनायें।</span> <sup>17</sup><span class='v-txt'>ईश्वर ने अपनी समस्त प्रजा की रक्षा की, सब को विरासत, राजत्व, याजकत्व और पवित्रीकरण प्रदान किया,</span> <sup>18</sup><span class='v-txt'>जैसा कि उसने संहिता में इसकी प्रतिज्ञा की थी।  हमें आशा है कि वही ईश्वर शीघ्र ही हम पर दया करेगा और आकाश के नीचे के सब स्थानों से हमें अपने पवित्र देश में एकत्र करेगा; क्योंकि उसने हमें बड़ी-बड़ी विपत्तियों से मुक्त किया है और मंदिर का शुद्धीकरण किया है।</span> <sup>19</sup><span class='v-txt'>यूदाह मक्काबी और उसके भाइयों का इतिहास, महामंदिर का शुद्धीकरण और वेदी का प्रतिष्ठान,</span> <sup>20</sup><span class='v-txt'>अंतियोख एपीफानेस और उसके पुत्र यूपातोर के साथ हुई लडाइयाँ,</span> <sup>21</sup><span class='v-txt'>यहूदी संस्कृति की रक्षा के लिए संघर्ष करने वाले लोगों को स्वर्ग की ओर से दिखाये हुए चमत्कार-वे अपनी छोटी संख्या के बावजूद इतनी उदारता और साहस के साथ लडते रहे और करूणामय प्रभु की उन पर इतनी कृपादृष्टि रही कि उन्होंने समस्त देश को लूटा, विदेशियों को भगाया,</span> <sup>22</sup><span class='v-txt'>सारे संसार में सुव्यवस्थित मंदिर को अपने अधिकार में कर लिया, नगर को मुक्त किया और उन विधि-निषेधों का पुनरुद्धार किया, जिनका उन्मूलन किया जा रहा था-</span> <sup>23</sup><span class='v-txt'>इस सब बातों का विस्तृत वर्णन कुरेने के यासोन ने पाँच ग्रंथों में किया है।  हम एक ही ग्रंथ में उनका संक्षेप प्रस्तुत करने का प्रयत्न करेंगे।</span> <sup>24</sup><span class='v-txt'>हमारी दृष्टि में उन ग्रंथों में इतने आंकड़ों का उल्लेख किया गया है और उन में इतनी सामग्री का समावेश किया गया है कि वे उन लोगों के लिए कठिनाई उत्पन्न करते हैं, जो उन ऐतिहासिक ग्रंथों का अध्ययन करना चाहते हैं।</span> <sup>25</sup><span class='v-txt'>इसलिए हमें यह उचित प्रतीत हुआ कि हम उनका रोचक संक्षेप प्रस्तुत करें, जिससे पढ़ने वाला लाभ उठा सके- चाहे वह साधारण पाठक हो या वह ऐतिहासिक घटनाओं की स्मृति अपने मन पर अंकित करना चाहता हो।</span> <sup>26</sup><span class='v-txt'>इस संक्षेप की रचना हमारे लिए सरल नहीं, बल्कि कठिन कार्य था, जिसके लिए रात-रात भर जाग कर पसीना बहाना पड़ा।</span> <sup>27</sup><span class='v-txt'>मेरा यह कार्य उन लोगों-जैसा है, जो भोज की तैयारी करना चाहते हैं और बिना परिश्रम किये सभी अतिथियों को संतुष्ट नहीं कर सकेंगे।  फिर भी हमने यह जान कर परिश्रम किया कि बहुत-से लोग इस से लाभ उठायेंगे।</span> <sup>28</sup><span class='v-txt'>हमने ऐतिहासिक घटनाओं का अनुसन्धान मूल लेखक पर छोड़ कर बड़ी सावधानी से संक्षेपण प्रस्तुत किया।</span> <sup>29</sup><span class='v-txt'>नये भवन के वास्तुपति पर समस्त भवन का उत्तरदायित्व है, जब कि जिसने दीवारों पर चत्रि अंकित करने का भार लिया, उसे केवल अलंकरण पर ध्यान रखना है।  मैं समझता हूँ कि यह मुझ पर भी लागू है।</span> <sup>30</sup><span class='v-txt'>विषय के अध्ययन और सर्वोपांग निरीक्षण के अतिरिक्त  एक-एक घटना की सूक्ष्म जाँच करना इतिहासकार का कार्य है।</span> <sup>31</sup><span class='v-txt'>किंतु जो किसी ग्रंथ का संक्षेपण करता है, उसे समास-शैली का प्रयोग करने और विषय का पूर्ण विवरण छोड़ देने का अधिकार है।</span> <sup>32</sup><span class='v-txt'>अब हम कुछ कहने की बजाय अपनी रचना प्रारंभ करें; क्योंकि इतिहास-ग्रंथ का संक्षेपण करते समय उसकी लंबी-चैड़ी भूमिका प्रस्तुत करना मूर्खता होगी।</span> </p>
+        <div class='nav'><a href='021001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='021003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 43</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 43</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>वह मुझे पूर्वी फाटक तक ले गया</span> <sup>2</sup><span class='v-txt'>और मैंने पूर्व की ओर से आती हुई इस्राएल के ईश्वर की महिमा देखी।  उसके साथ-साथ समुद्र-गर्जन की-सी आवाज सुनाई पड़ी और पृथ्वी उसकी महिमा से आलोकित हो उठी।</span> <sup>3</sup><span class='v-txt'>जो दृश्य मैं देख रहा था, वह उसी के सदृश था, जिसे मैंने उस समय देखा था, जब प्रभु नगर का विनाश करने आया था और उस दृश्य के सदृश, जिसे मैंने कबार नदी के पास देखा था।  मैं मुँह के बल गिर पड़ा।</span> <sup>4</sup><span class='v-txt'>प्रभु की महिमा पूर्वी फाटक से हो कर मंदिर में आ पहुँची।</span> <sup>5</sup><span class='v-txt'>आत्मा मुझे उठा कर मन्दिर के भीतरी प्रांगण में ले गया और मैंने देखा कि मन्दिर प्रभु की महिमा से भरा जा रहा है।</span> <sup>6</sup><span class='v-txt'>वह व्यक्ति मेरी बगल में खड़ा रहा और मैंने मन्दिर में से किसी को मुझ से यह कहते सुना।</span> <sup>7</sup><span class='v-txt'>उसने मुझ से कहा, &quot;मानवपुत्र! यही मेरे सिंहासन का स्थान है।  यही मेरा पावदान है।  मैं सदा इस्राएलियों के बीच निवास करूँगा।  इस्राएली घराने के लोग- वे और उनके राजा- अपने व्यभिचार और अपने राजाओं के शवों द्वारा मेरे पवित्र नाम को फिर कभी कलंकित नहीं करेंगे।</span> <sup>8</sup><span class='v-txt'>अपनी देहली को मेरी देहली से और अपनी चैखट के बाजू को मेरी चैखट के बाजू से सटा कर बनाने के कारण, जिससे मेरे और उनके बीच केवल एक दीवार रह गयी, उन्होंने अपने वीभत्स कर्मों द्वारा मेरे पवित्र नाम को कलंकित किया है; इसलिए मैंने अपने क्रोधावेश में उनका  विनाश कर दिया है।</span> <sup>9</sup><span class='v-txt'>अब वे लोग अपनी मूर्तिपूजा और अपने राजाओं के शव मुझ से दूर कर दें और मैं सदा उनके बीच निवास करूँगा।</span> <sup>10</sup><span class='v-txt'>&quot;मानवपुत्र! तुम इस्राएली घराने के लोगों के सामने मन्दिर, उसके आकार और योजना का विवरण दो, जिससे वे अपने अपराधों के लिए लज्जित हों।</span> <sup>11</sup><span class='v-txt'>यदि वे अपने द्वारा किये हुए समस्त कार्यों पर लज्जा अनुभव करें, तो मन्दिर, उसके क्रम-विन्यास, उसके ेनिर्गम-मार्गों, प्रवेश-मार्गों और उसका रूप-विधान अंकित करो, तथा उन्हें उस से सम्बन्धित सभी आदेश और उसकी समस्त विधियाँ बता दो, तथा उन्हें उनकी आँखों के  सामने लिख दो, जिससे वे उस से सम्बन्धित सभी विधियों और समस्त आदेशों का पालन और कार्यान्वयन करें।</span> <sup>12</sup><span class='v-txt'>मन्दिर-सम्बन्धी विधि यह है: पर्वत के शिखर के पर के चारों ओर का क्षेत्र परमपवित्र माना जायेगा।  मन्दिर-सम्बन्धी विधि यही है।</span> <sup>13</sup><span class='v-txt'>&quot;हाथ की नाप से वेदी की परिमाप यह है (एक हाथ और एक बित्ते के बराबर एक हाथ) : उसका आधार एक हाथ ऊँचा और एक हाथ चैड़ा हागा और उसके चारों ओर की किनारी की चैड़ाई एक बित्ता होगी।  वेदी की ऊँचाई इस प्रकार होगीः</span> <sup>14</sup><span class='v-txt'>नीचे की सतह से निचले कगर तक दो हाथ, जिसकी चैड़ाई एक हाथ होगी; छोटे कगर से बड़े कगर तक चार हाथ, जिसकी चैड़ाई एक हाथ होगी,</span> <sup>15</sup><span class='v-txt'>और वेदी के अग्निकुण्ड की ऊँचाई चार हाथ, तथा वेदी के अग्निकुण्ड के ऊपर निकले हुए एक-एक हाथ ऊँचे चार सींग होंगे।</span> <sup>16</sup><span class='v-txt'>वेदी का अग्निकुण्ड बारह हाथ लम्बा और बारह हाथ चैड़ा, वर्गाकार होगा।</span> <sup>17</sup><span class='v-txt'>कगर भी चैदह हाथ लम्बा और चैदह हाथ चैड़ा, वर्गाकार होगा।  उसके चारों ओर की किनारी आधा हाथ चैड़ी होगी और उसका आधार चारों ओर एक हाथ ऊँचा होगा।  वेदी के सोपानों की दिशा पूर्व की ओर होगी।&quot;</span> <sup>18</sup><span class='v-txt'>उसने मुझ से यह कहा, &quot;मानवपुत्र! प्रभु-ईश्वर यह कहता है- वेदी सम्बन्धी आदेश ये हैं: जिस दिन उसकी प्रतिष्ठा उस पर होम-बलि चढाने और उस पर रक्त उँढ़ेलने के लिए कर दी जायेगी,</span> <sup>19</sup><span class='v-txt'>तुम सादोक वंश के लेवी याजकों को, जो मेरे सेवाकार्य के लिए मरे सामने उपस्थित होते हैं, प्रायश्चित-बलि के लिए एक बछड़ा दोगे।  प्रभु-ईश्वर यह कहता है।</span> <sup>20</sup><span class='v-txt'>तुम उसका कुछ रक्त ले कर उस को वेदी के चारों सींगो, कगर के चारों कोनों और उसके चारों ओर की किनारी पर लगा दोगे।  इस प्रकार तुम वेदी को शुद्ध करोगे और उसकी प्रायश्चित-विधि पूरी करोगे।</span> <sup>21</sup><span class='v-txt'>तुम प्रायश्चित्त-बलि का बछड़ा ले कर उसे पवित्र क्षेत्र से बाहर, मन्दिर के निर्धारित स्थान पर, जला दोगे।</span> <sup>22</sup><span class='v-txt'>दूसरे दिन तुम एक अदोष बकरा, प्रायश्चित-बलि के रूप में चढाओगे और वेदी को उसी प्रकार शुद्ध किया जायेगा, जिस प्रकार उसे बछड़े के प्रसंग में शुद्ध किया गया था।</span> <sup>23</sup><span class='v-txt'>उसे शुद्ध करने के बाद तुम एक अदोष सांड और रेवड़ का एक अदोष मेढा चढाओगे।</span> <sup>24</sup><span class='v-txt'>तुम उन्हें प्रभु के सामने प्रस्तुत करोगे, याजक उन पर नमक छिडकेंगे और होम-बलि के रूप में प्रभु को चढायेंगे।</span> <sup>25</sup><span class='v-txt'>तुम सात दिनों तक प्रतिदिन प्रायश्चित-बलि के रूप में एक-एक बकरा चढाओगे। इसके अतिरिक्त एक अदोष सांड और रेवड़ मे से एक अदोष मेढे का भी प्रबंध किा जायेगा।</span> <sup>26</sup><span class='v-txt'>वे लोग सात दिनों तक वेदी के लिए प्रायश्चित करेंगे, उसे शुद्ध करेंगे और इस प्रकार उसका अभ्यंजन करेंगे।</span> <sup>27</sup><span class='v-txt'>जब ये दिन पूरे हो जायेंगे, तो याजक आठवें दिन से वेदी पर तुम्हारी होम-बलियाँ और शांति बलियाँ चढायेंगे।  तब मैं तुम्हें अपनाऊँगा यह प्रभु-ईश्वर की वाणी है।</span> </p>
+        <div class='nav'><a href='033042.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033044.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

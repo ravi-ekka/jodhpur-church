@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>सूक्ति - अध्याय 20</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>सूक्ति</h1>
+        <h2>अध्याय 20</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>अंगूरी उपहास करती और मदिरा उपद्रव मचाती है।  जो उनके कारण भटकता है, वह बुद्धिमान् नहीं।</span> <sup>2</sup><span class='v-txt'>राजा का क्रोध सिंह की दहाड़-जैसा है।  जो उसे अप्रसन्न करता, वह अपना जीवन दाँव पर रखता है।</span> <sup>3</sup><span class='v-txt'>विवाद से अलग रहना मनुष्य को शोभा देता है।  सभी मूर्ख झगड़ालू होते हैं।</span> <sup>4</sup><span class='v-txt'>आलसी कार्तिक में हल नहीं चलाता, किन्तु फसल के समय ढूढ़ने पर भी उसे कुछ नहीं मिलेगा।</span> <sup>5</sup><span class='v-txt'>मानव हृदय के उद्देश्य गहरे जलाशय जैसे है; समझदार व्यक्ति उन्हें खींच कर निकालता है।</span> <sup>6</sup><span class='v-txt'>बहुत से लोग ईमानदार कहलाते हैं, किन्तु निष्ठावान् व्यक्ति कहाँ मिलेगा?</span> <sup>7</sup><span class='v-txt'>धर्मी सन्मार्ग पर आगे बढ़ता है।  धन्य हैं वे पुत्र, जो उसका अनुसरण करते हैं!</span> <sup>8</sup><span class='v-txt'>जब राजा अपने न्यायासन पर विराजमान है, तो उसकी आँखे बुराई को भूसी की तरह ओसाती हैं।</span> <sup>9</sup><span class='v-txt'>कौन मनुष्य यह कह सकता है: &quot;मैंने अपना हृदय शुद्ध किया, मैं अपने पाप से मुक्त हो गया हूँ?&quot;</span> <sup>10</sup><span class='v-txt'>दो प्रकार के बाट और दो प्रकार के मापक: प्रभु को इन दोनों से घृणा है।</span> <sup>11</sup><span class='v-txt'>नवयुवक का आचरण निर्दोष और निष्कपट है- यह उसके कामों से पहचाना जाता है।</span> <sup>12</sup><span class='v-txt'>सुनने के कान और देखने की आँखे - प्रभु ने दोनों को बनाया है।</span> <sup>13</sup><span class='v-txt'>नींद को प्यार मत करों, नहीं तो दरिद्र बनोगे।  आँखे खुली रखो और तुम को रोटी की कमी नहीं होगी।</span> <sup>14</sup><span class='v-txt'>खरीददार कहता है: &quot;यह चीज रद्दी है, रद्दी है!&quot; किन्तु वह माल ले जाकर अपनी खरीद की शेखी मारता है।</span> <sup>15</sup><span class='v-txt'>सोना और मोती बहुत मिलते है, किन्तु ज्ञानपूर्ण बातें सर्वोत्तम हैं।</span> <sup>16</sup><span class='v-txt'>जो अपरिचित व्यक्ति की जमानत देता, उसका वस्त्र ले लो।  जो अपरिचित नारी की जिम्मेदारी लेता, उसे बन्धक रखो।</span> <sup>18</sup><span class='v-txt'>सोच-विचार के बाद की योजनाएँ सफल हो जाती हैं। सत्परामर्श लेकर ही युद्ध करो।</span> <sup>19</sup><span class='v-txt'>जो गुप्त बातें प्रकट करता है, वह विश्वासघाती है; इसलिए गप्पी की संगति मत करो।</span> <sup>20</sup><span class='v-txt'>जो अपने माता-पिता को अभिशाप देता है, उसका दीपक अन्धकार में बुझ जायेगा।</span> <sup>21</sup><span class='v-txt'>जो सम्पत्ति पहले जल्दबाजी से प्राप्त होती है, वह बाद में कल्याणकारी नहीं होगी।</span> <sup>22</sup><span class='v-txt'>यह नहीं कहो: &quot;मैं इस बुराई का बदला चुकाऊँगा&quot;।  प्रभु का भरोसा करो और वह तुम्हारी रक्षा करेगा।</span> <sup>23</sup><span class='v-txt'>प्रभु को दो प्रकार के बाटों से घृणा है।  खोटा तराजू बुरी बात है।</span> <sup>24</sup><span class='v-txt'>मनुष्य के कदम प्रभु पर निर्भर रहते हैं, वह यह नहीं जानता कि मैं कहाँ जा रहा हूँ।</span> <sup>25</sup><span class='v-txt'>जल्दबाजी से प्रभु को कुछ अर्पित करना और मन्नत मानने के बाद ही विचार करना: यह मनुष्य के लिए फन्दा है।</span> <sup>26</sup><span class='v-txt'>बुद्धिमान् राजा दुष्टों को ओसाता और रथ के पहियों के नीचे उन्हे दाँवता है।</span> <sup>27</sup><span class='v-txt'>मनुष्य का अन्तःकरण प्रभु का दीपक है, जो उसके अन्तरतम की थाह लेता।</span> <sup>28</sup><span class='v-txt'>दया और निष्ठा राजा की रक्षा करती है।  दया के कारण उसका सिंहासन दृढ़ रहता है।</span> <sup>29</sup><span class='v-txt'>नवयुवकों का बल उनका अलंकरण है।  सिर के पके बाल बूढ़ो का मुकुट हैं।</span> <sup>30</sup><span class='v-txt'>प्रहार घाव की बुराई को दूर करता है।  मार खाने से अन्तरतम शुद्ध होता है।</span> </p>
+        <div class='nav'><a href='024019.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='024021.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

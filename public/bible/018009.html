@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>यूदीत - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>यूदीत</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यूदीत अपने सिर पर राख डाले अपने वस्त्र उतार कर मात्र टाट ओढ़े मुँह के बल गिर पड़ी।  जब येरूसालेम के प्रभु के मन्दिर में उस दिन सन्ध्या की धूप चढ़ायी जा रही थी, ठीक उसी समय यूदीत ने उच्च स्वर में प्रभु से प्रार्थना करते हुए कहा,</span> <sup>2</sup><span class='v-txt'>&quot;प्रभु!  मेरे पूर्वज सिमओन के ईश्वर!  तूने उसके हाथ में तलवार दी थी, जिससे वह उन विजातियों से बदला ले, जिन्होंने एक कन्या को दूषित और अपमानित करने के लिए उसका कमरबन्द खोला था और उसे वस्त्र खोल कर उसका शील भंग किया।  और यह उन्होंने तेरे मना  करने पर किया था।</span> <sup>3</sup><span class='v-txt'>इसीलिए तूने उनके नेताओं को वध के लिए छोड़ दिया और उनकी उस शय्या को रक्त से सींचा, जिस पर उन्होंने यह निन्दनीय कार्य किया था।  तूने दासों के साथ शासकों को और शासकों को उनकी गद्दियों पर मारा।</span> <sup>4</sup><span class='v-txt'>तूने उनकी पत्नियों को लुटने के लिए और उनकी पुत्रियों को बन्दी बनने के लिए छोड़ दिया और तूने उनकी सम्पत्ति अपनी उन प्रिय सन्तानों को दे दी, जिन में तेरे लिए बड़ा उत्साह था, जो अपने रक्त के दूषण से दुःखी थे और जिन्होंने तेरी सहायता माँगी थी।  ईश्वर!  मेरे ईश्वर! मुझ विधवा की प्रार्थना स्वीकार कर!</span> <sup>5</sup><span class='v-txt'>पहले जो हुआ था और बाद में जो हुआ, यह बस तेरा ही कार्य है।  तूने वर्तमान और भविष्य की योजना की।  तू जिन घटनाओं की योजना करता है, वे पूरी हो जाती है।</span> <sup>6</sup><span class='v-txt'>वे तेरे सामने आ कर कहती है, ’देख!  हम प्रस्तुत है’।  तेरे सभी मार्ग प्रशस्त है और तू पूर्वज्ञान के आधार पर निर्णय करता है।</span> <sup>7</sup><span class='v-txt'>अस्सूरियों की सेना कितनी विशाल है; उन्हें अपने घोड़ों और घुड़़सवारों पर अभिमान है।  वे अपने पैदल सैनिकों का घमण्ड करते हैं।  उन्हें ढाल, भाले, तीर और गोफन का भरोसा है।  वे यह नहीं जानते कि तू वह प्रभु है, जो युद्ध समाप्त करता है।</span> <sup>10</sup><span class='v-txt'>मेरे कपटपूर्ण शब्दों द्वारा दास के साथ स्वामी को और स्वामी के साथ दास को मार गिरा।  विधवा के हाथ से उनका घमण्ड तोड़।</span> <sup>11</sup><span class='v-txt'>तेरी शक्ति न तो विशाल संख्या पर निर्भर है और न तेरा सामर्थ्य शूरवीरों पर।  तू दीन-हीन लोगों का ईश्वर है, दलितों का सहायक, बलहीनों का रक्षक, उपेक्षितों का संरक्षक और निराश जनों का उद्धारक है।</span> <sup>12</sup><span class='v-txt'>हाँ, मेरे पिता के ईश्वर!  इस्राएल के दायभाग के ईश्वर स्वर्ग और पृथ्वी के स्वामी!  समुद्रों के सृष्टिकर्ता!  समस्त सृष्टि के अधीश्वर! तू मेरी प्रार्थना सुन।</span> <sup>13</sup><span class='v-txt'>तू मेरे कपटपूर्ण शब्दों द्वारा उन लोगों पर प्रहार कर, उन्होंने तेरे विधान, तेरे पवित्र मन्दिर, सियोन पर्वत और तेरी प्रजा के निवास के विरुद्ध कुचक्र रचा है।</span> <sup>14</sup><span class='v-txt'>अपनी सारी प्रजा, अपने सभी वंशों पर यह प्रकट कर कि तू समस्त सामर्थ्य और बल का ईश्वर है और तेरे सिवा इस्राएली जाति का कोई रक्षक नहीं।&quot;</span> </p>
+        <div class='nav'><a href='018008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='018010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

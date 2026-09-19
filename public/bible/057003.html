@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>फ़िलिप्पियों - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>फ़िलिप्पियों</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>आप लोगों को दुबारा वे ही बातें लिखने में मुझे कोई कष्ट नहीं, और इस में आपका कल्याण है।</span> <sup>2</sup><span class='v-txt'>आप कुत्तों से सावधान रहें दुष्ट कार्यकर्ताओं से सावधान रहें, अंगच्छेद करने वालों से सावधान रहें।</span> <sup>3</sup><span class='v-txt'>सच पूछिए तो ’ख़तने वाले’ हम हैं।  हम आत्मा से प्रेरित हो कर ईश्वर की उपासना करते हैं और ’शरीर’ पर नहीं, बल्कि ईसा मसीह पर गौरव करते हैं-</span> <sup>4</sup><span class='v-txt'>हालाँकि मैं भी ’शरीर’ पर गौरव कर सकता हूँ।  यदि कोई यह समझता है कि वह ’शरीर’ पर गौरव कर सकता है, तो मैं और भी ऐसा कर सकता हूँ।</span> <sup>5</sup><span class='v-txt'>आठवें दिन मेरा ख़तना हुआ था।  मैं इस्राएली, बेनयामीन-वंशी और इब्रानियों की इब्रानी सन्तान हूँ। संहिता-पालन की दृष्टि में मैं फ़रीसी था।</span> <sup>6</sup><span class='v-txt'>मेरा धर्मोत्साह ऐसा था कि मैंने कलीसिया पर अत्याचार किया।  संहिता पर आधारित धार्मिकता की दृष्टि में मैं निर्दोष था।</span> <sup>7</sup><span class='v-txt'>किन्तु मैं जिन बातों को लाभ समझता था, उन्हें मसीह के कारण हानि समझने लगा हूँ।</span> <sup>8</sup><span class='v-txt'>इतना ही नहीं, मैं प्रभु ईसा मसीह को जानना सर्वश्रेष्ठ लाभ मानता हूँ और इस ज्ञान की तुलना में हर वस्तु को हानि ही मानता हूँ।  उन्हीं के लिए मैंने सब कुछ छोड़ दिया है और उसे कूड़ा समझता हूँ,</span> <sup>9</sup><span class='v-txt'>जिससे मैं मसीह को प्राप्त करूँ और उनके साथ पूर्ण रूप से एक हो जाऊँ।  मुझे अपनी धार्मिकता का नहीं, जो संहिता के पालन से मिलती है, बल्कि उस धार्मिकता का भरोसा है, जो मसीह में विश्वास करने से मिलती है, जो ईश्वर से आती है और विश्वास पर आधारित है।</span> <sup>10</sup><span class='v-txt'>मैं यह चाहता हूँ कि मसीह को जान लूँ, उनके पुनरूत्थान के सामर्थ्य का अनुभव करूँ और मृत्यु में उनके सदृश बन कर उनके दुःखभोग का सहभागी बन जाऊँ,</span> <sup>11</sup><span class='v-txt'>जिससे मैं किसी तरह मृतकों के पुनरूत्थान तक पहुँच सकूँ।</span> <sup>12</sup><span class='v-txt'>मैं यह नहीं जानता कि मैं अब तक यह सब कर चुका हूँ या मुझे पूर्णता प्राप्त हो गयी है!  किन्तु मैं आगे बढ़ रहा हूँ ताकि वह लक्ष्य मेरी पकड़ में आये, जिसके लिए ईसा मसीह ने मुझे अपने अधिकार में ले लिया।</span> <sup>13</sup><span class='v-txt'>भाइयो!  मैं यह नहीं समझता कि वह लक्ष्य अब तक मेरी पकड़ में आया है।  मैं इतना ही कहता हूँ कि पीछे की बातें भुला कर और आगे की बातों पर दृष्टि लगा कर</span> <sup>14</sup><span class='v-txt'>मैं बड़ी उत्सुकता से अपने लक्ष्य की ओर दौड़ रहा हूँ, ताकि मैं स्वर्ग में वह पुरस्कार प्राप्त कर सकूँ, जिसके लिए ईश्वर ने हमें ईसा मसीह में बुलाया है।</span> <sup>15</sup><span class='v-txt'>हम में जितने लोग परिपक्व हैं, उनका यही मनोभाव होना चाहिए और यदि किसी विषय पर आपका दृष्टिकोण भिन्न होगा, तो ईश्वर आप को इसके सम्बन्ध में ज्योति प्रदान करेगा।</span> <sup>16</sup><span class='v-txt'>जो भी हो, हम जिस स्तर पर पहुँच चुके हैं, उसी के अनुरूप आचरण करें।</span> <sup>17</sup><span class='v-txt'>भाईयो!  आप सब मिल कर मेरा अनुसरण करें।  मैंने आप लोगों को एक नमूना दिया।  इसके अनुसार चलने वालों पर ध्यान देते रहें;</span> <sup>18</sup><span class='v-txt'>क्योंकि जैसा कि मैं आप से बार-बार कह चुका हूँ और अब रोते हुए कहता हूँ, बहुत-से लोग ऐसा आचरण करते हैं कि मसीह के क्रूस के शत्रु बन जाते हैं।</span> <sup>19</sup><span class='v-txt'>उनका सर्वनाश निश्चित है।  वे भोजन को अपना ईश्वर बना लेते हैं और ऐसी बातों पर गर्व करते हैं, जिन पर लज्जा करनी चाहिए।  उनका मन संसार की चीजों में लगा हुआ है।</span> <sup>20</sup><span class='v-txt'>हमारा स्वदेश तो स्वर्ग है और हम स्वर्ग से आने वाले मुक्तिदाता प्रभु ईसा मसीह की राह देखते रहते हैं।</span> <sup>21</sup><span class='v-txt'>वह जिस सामर्थ्य द्वारा सब कुछ अपने अधीन कर सकते हैं, उसी के द्वारा वह हमारे तुच्छ शरीर का रूपान्तरण करेंगे और उसे अपने महिमामय शरीर के अनुरूप बना देंगे।</span> </p>
+        <div class='nav'><a href='057002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='057004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

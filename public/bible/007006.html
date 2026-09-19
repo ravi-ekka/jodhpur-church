@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>न्यायकर्ता - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>न्यायकर्ता</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इस्राएलियों ने फिर वही किया, जो प्रभु की दृष्टि में बुरा है।  इसलिए प्रभु ने उन्हे सात वर्ष के लिए मिदयानियों के हाथ दे दिया।</span> <sup>2</sup><span class='v-txt'>मिदयानी इस्राएलियों पर अत्यधिक अत्याचार करते थे। इस्रााएलियों ने मिदयानियों के डर से पर्वतों में अपने लिए दरारें, गुफाएँ और गढ़ तैयार किये।</span> <sup>3</sup><span class='v-txt'>जब-जब इस्राएली बीज बोते, तब-तब मिदयानी, अमालेकी और पूर्व के लोग आकर उन पर आक्रमण करते।</span> <sup>4</sup><span class='v-txt'>वे देश में अपने खेमे डाल देते और गाज़ा के निकट तक की उपज नष्ट कर देते।  वे इस्राएलियों के लिए न अन्न छोड़ते, न भेडें, न बैल और न गधे।</span> <sup>5</sup><span class='v-txt'>वे अपने ढोरों और खेमों-सहित आया करते।  संख्या में वे टिड्डियों की तरह उतरते।  वे और उनके ऊँट असंख्य थे।  इस प्रकार जब वे देश में आ जाते, तो उसे उजाड़ डालते थे।</span> <sup>6</sup><span class='v-txt'>मिदयानियों द्वारा इस्राएलियों की इतनी दुर्गति की गयी कि वे सहायता के लिए प्रभु से प्रार्थना करने लगे।</span> <sup>7</sup><span class='v-txt'>इस्राएलियों ने मिदयानियों के भय से प्रभु की सहायता के लिए उसकी दुहाई की</span> <sup>8</sup><span class='v-txt'>और प्रभु ने इस्राएलियों के लिए एक नबी भेजा, जिसने उन से कहा, &quot;प्रभु, इस्राएलियों के ईश्वर का कहना है- मैं ही तुम लोगों को मिस्र से निकाल लाया और मैंने ही दासता के गृह के बन्धनों से तुम्हारा उद्धार किया।</span> <sup>9</sup><span class='v-txt'>मैंने ही मिस्रियों के हाथों से और तुम्हारे सब अत्याचारियों के हाथों से तुम्हें मुक्ति दिलायी।  मैंने उन्हें तुम्हारे सामने भगा कर तुम्हें उनका देश दिया।</span> <sup>10</sup><span class='v-txt'>मैंने तुम से कहा- मैं ही प्रभु, तुम्हारा ईश्वर हूँ।  तुम जिन अमोरियों के देश में निवास करते हो, तुम्हें उनके देवताओं की सेवा नहीं करनी चाहिए।  लेकिन तुम लोगों ने मेरी बात पर ध्यान नहीं दिया।&quot;</span> <sup>11</sup><span class='v-txt'>प्रभु का दूत आया और ओफ्ऱा के बलूत वृक्ष के नीचे बैठ गया।  यह वृक्ष अबीएजे़र-वंशी योआश का था।  योआश का पुत्र गिदओन इसलिए अंगूर पेरने के कोल्हू में गेहूँ दाँव रहा था कि वह उसे मिदयानियों से छिपा कर रखे।</span> <sup>12</sup><span class='v-txt'>प्रभु का दूत उसे दिखाई दिया और बोला, &quot;वीर योद्धा! प्रभु तुम्हारे साथ है&quot;।</span> <sup>13</sup><span class='v-txt'>गिदओन ने उत्तर दिया, &quot;क्षमा करें, महोदय! यदि प्रभु हमारे साथ हैं, तो यह सब हम पर क्यों बीती?  वे सब चमत्कार कहाँ गये, जिनका वर्णन हमारे पूर्वज यह कहते हुए करते थे- ‘प्रभु ने हमें मिस्र से निकाल लसश्स’? अब तो प्रभु ने हमें छोड़ कर मिदयानियों के हवाले कर दिया।</span> <sup>14</sup><span class='v-txt'>प्रभु ने उसे सम्बोधित करते हुए कहा, &quot;तुम मिदयानियों से युद्ध करने जाओ।  तुम अपनी शक्ति के बल पर इस्राएल को उनके हाथ से बचा सकते हो।  मैं ही तुम को भेज रहा हूँ।&quot;</span> <sup>15</sup><span class='v-txt'>गिदओन ने उत्तर दिया, &quot;क्षमा करें, महोदय! मैं इस्राएल को कैसे बचा सकता हूँ?  मेरा कुल मनस्से में सब से दरिद्र है और मैं अपने पिता के घराने में सब से छोटा हूँ।&quot;</span> <sup>16</sup><span class='v-txt'>किन्तु प्रभु ने कहा, &quot;मैं तुम्हारे साथ रहूँगा। तुम मिदयानियों को पराजित करोगे, मानो वे एक ही आदमी हों।&quot;</span> <sup>17</sup><span class='v-txt'>गिदओन ने निवेदन किया, &quot;यदि मुझ पर आपकी कृपादृष्टि हो, तो मुझे एक ऐसा चिह्न दीजिए, जिससे मैं जान सकूँ कि</span> <sup>18</sup><span class='v-txt'>आप ही मुझ से बोल रहे हैं।  आप कृपया यहाँ से तब तक न जायें, जब तक मैं आपके पास न लौट आऊँ।  मैं अपना चढ़ावा ले कर आऊँगा और आपके सामने रखूँगा।&quot; उसने उत्तर दिया, &quot;मैं तुम्हारे लौटने तक यहाँ रहूँगा&quot;।</span> <sup>19</sup><span class='v-txt'>गिदओन ने जा कर बकरी का एक बच्चा पकाया और आधा मन मैदे की बे-ख़मीर रोटियाँ बनायी।  उसने एक टोकरी में मांस रखा और एक पात्र में षोरबा उँड़ेला।  फिर उसने इन्हें ले जा कर बलूत के नीचे स्वर्गदूत के सामने रख दिया।</span> <sup>20</sup><span class='v-txt'>प्रभु के दूत ने उस से कहा, &quot;मांस और रोटियाँ वहाँ चट्टान पर रखो और उन पर षोरबा उँड़ेल दो&quot;।  उसने यही किया।</span> <sup>21</sup><span class='v-txt'>तब प्रभु के दूत ने अपने हाथ का डण्डा बढ़ा कर उसके सिरे से मांस और बेख़मीर रोटियों को स्पर्श किया।  इस पर चट्टान से आग निकली, जिसने मांस और बेख़मीर रोटियों को भस्म कर दिया और प्रभु का दूत गिदओन की आँख से ओझल हो गया।</span> <sup>22</sup><span class='v-txt'>तब गिदओन समझ गया कि वह प्रभु का दूत था और उसने कहा, &quot;हाय! प्रभु-ईश्वर!  मैंने प्रभु के दूत को आमने-सामने देखा है।&quot;</span> <sup>23</sup><span class='v-txt'>किन्तु प्रभु ने उसे आश्वासन दिया, &quot;तुम्हें शान्ति मिले! मत डरो।  तुम नहीं मरोगे।&quot;</span> <sup>24</sup><span class='v-txt'>गिदओन ने वहाँ प्रभु के लिए एक वेदी बनायी और  उसका नाम ‘प्रभु-शांति’ रखा।  वह अबीएज़ेर के वंशजों के ओफ्ऱा में आज तक विद्यमान है।</span> <sup>25</sup><span class='v-txt'>उसी रात प्रभु ने उसे आदेश दिया, &quot;अपने पिता का बछड़ा और सात साल का एक साँड़ ले लो।  अपने पिता की बाल-देव की वेदी गिरा दो तथा उसके पास का (अशेरा-देवी का) खूँट काट डालो।</span> <sup>26</sup><span class='v-txt'>तब इस गढ़ वाले ऊँचे स्थान पर पत्थरों को ठीक तौर से जोड़ कर प्रभु, अपने ईश्वर के लिए एक वेदी बनाओ। फिर उस दूसरे साँड़ को ला कर काटी हुई आशेरा की लकड़ी पर उसकी होम-बलि चढ़ाओं।&quot;</span> <sup>27</sup><span class='v-txt'>तब गिदओन ने अपने नौकरों में से दस को ले कर प्रभु द्वारा दिये हुए आदेश का पालन किया।  अपने कुटुम्ब और नगर के लोगों के डर से उसने दिन में ऐसा नहीं किया।  उसने यह काम रात में किया।</span> <sup>28</sup><span class='v-txt'>दूसरे दिन सबेरे जब नगर के लोग उठे, तो उन्होंने देखा कि बाल-देव की वेदी गिरा दी गयी है, उसके पास का (अशेरा-देवी का) खूँट काट दिया गया है और नयी  बनायी हुई वेदी पर दूसरे साँड़ की बलि की गयी है।</span> <sup>29</sup><span class='v-txt'>वे एक दूसरे से कहने लगे, &quot;किसने यह काम किया?&quot; पूछताछ करने पर उन्हें मालूम हुआ कि योआश के पुत्र गिदओन ने यह किया था।</span> <sup>30</sup><span class='v-txt'>नगर के लोगों ने योआश से कहा, &quot;अपने बेटे को हमारे हवाले कर दो।  बालदेव की वेदी ढहाने और उसके पास का (अशेरा-देवी का) खूँट काटने के कारण उसका वध किया जायेगा।&quot;</span> <sup>31</sup><span class='v-txt'>परन्तु योआश ने अपने सामने खडे़ लोगों से कहा, &quot;क्या तुम बाल-देव का पक्ष लेने आये?  क्या तुम बाल-देव की रक्षा करने आये? (जो उसका पक्ष लेता है, वह सुबह होने तक मार डाला जायेगा।)  यदि बाल सचमुच देवता है, तो वह अपने पक्ष में बोले, क्योंकि गिदओन ने उसकी वेदी गिरा दी है।&quot;</span> <sup>32</sup><span class='v-txt'>इसलिए उस दिन से गिदआन का नाम यरूबबाल पड़ गया।  इसका अर्थ है, &quot;बाल ही उसके विरुद्ध लड़े़’, क्योंकि उसने उसकी वेदी तोड़ डाली थी।</span> <sup>33</sup><span class='v-txt'>सब मिदयानी, अमालेकी और पूर्व के लोग एकत्रित हुए और उन्होंने यर्दन पार कर यिज्ऱएल के मैदान में पड़ाव डाला।</span> <sup>34</sup><span class='v-txt'>प्रभु की प्रेरणा से गिदओन ने नरसिंगा बजाया और अबीएज़ेर वंशियों को अपना साथ देने के लिए बुलाया।</span> <sup>35</sup><span class='v-txt'>उसने सारे मनस्से प्रान्त में दूत भेज कर उन्हें भी अपना साथ देने के लिए कहला भेजा।  फिर उसने आशेर, ज़बुलोन और नफ्ताली के लोगों को बुलवाया।  वे भी आ कर उन से मिले।</span> <sup>36</sup><span class='v-txt'>गिदओन ने ईश्वर से यह प्रार्थना की, &quot;क्या तू सचमुच अपनी प्रतिज्ञा के अनुसार मेरे द्वारा इस्राएलियों का उद्धार करायेगा?</span> <sup>37</sup><span class='v-txt'>देख, मैं यह ऊनी खाल खलिहान में रख देता हूँ।  यदि केवल इस खाल पर ओस पडे़गी और आसपास की भूमि सूखी रहेगी, तो मुझे विश्वास हो जायेगा कि तू अपनी प्रतिज्ञा के अनुसार मेरे द्वारा इस्राएलियों को मुक्ति दिलायेगा।&quot;</span> <sup>38</sup><span class='v-txt'>ऐसा ही हुआ।  प्रातःकाल आ कर उसने उस खाल को निचोड़ कर उस से एक पात्र-भर पानी निकाला।</span> <sup>39</sup><span class='v-txt'>फिर गिदओन ने ईश्वर से यह प्रार्थना की, &quot;मुझ पर क्रोध न कर।  मैं फिर एक बार तुझ से निवेदन कर रहा हूँ, मुझे फिर से एक बार इस खाल के द्वारा परख करने दे।  इस बार केवल खाल सूखी रहे और आसपास की भूमि पर सर्वत्र ओस पडे़।&quot;</span> <sup>40</sup><span class='v-txt'>उस रात ईश्वर ने ऐसा ही किया।  केवल खाल सूखी रह गयी, किन्तु भूमि पर सर्वत्र ओस पड़ गयी थी।</span> </p>
+        <div class='nav'><a href='007005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='007007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

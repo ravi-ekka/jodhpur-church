@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 15</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 15</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जो प्रभु पर श्रद्धा रखता है, वह ऐसा आचरण करता है। जो संहिता का पालन करता, उसे प्रज्ञा प्राप्त होगी।</span> <sup>2</sup><span class='v-txt'>प्रज्ञा माता की तरह उसकी अगवानी करने जायेगी, वह उसका नववधू-जैसा स्वागत करेगी।</span> <sup>3</sup><span class='v-txt'>वह उसे बुद्धि की रोटी खिलायेगी और उसे ज्ञान का जल पिलायेगी।  वह उसके सहारे चलेगा और नहीं गिरेगा।</span> <sup>4</sup><span class='v-txt'>वह उस पर निर्भर रहेगा और कभी लज्जित नहीं होगा। वह उसे उसके साथियों के ऊपर उठायेगी और सभा में बोलने की शक्ति देगी।</span> <sup>5</sup><span class='v-txt'>वह उसे प्रज्ञा और विवेक का आत्मा प्रदान करेगी और उसे महिमा के वस्त्र पहनायेगी।</span> <sup>6</sup><span class='v-txt'>उसे सुख-शान्ति तथा आनन्द प्राप्त होगा और उसका नाम सदा बना रहेगा।</span> <sup>7</sup><span class='v-txt'>मूर्ख लोग उसे नहीं प्राप्त करेंगे, पापी उसके दर्शन नहीं करेंगे।  वह घमण्डी और कपटी से दूर रहती है।</span> <sup>8</sup><span class='v-txt'>मिथ्यावादी उस पर ध्यान नहीं देंगे।  सत्यवादी उसे प्राप्त करेंगे।</span> <sup>9</sup><span class='v-txt'>पानी के मुँह में प्रशंसा अशोभनीय है;</span> <sup>10</sup><span class='v-txt'>क्योंकि वह प्रभु से प्रेरित नहीं हैं।  प्रशंसा प्रज्ञा के अनुकूल होनी चाहिए, प्रभु ही उसे प्रेरित करता है।</span> <sup>11</sup><span class='v-txt'>यह मत कहों, &quot;प्रभु के कारण मैं भटक गया&quot;; क्येांकि जिस से वह घृणा करता है, उसे प्रेरित नहीं करता।</span> <sup>12</sup><span class='v-txt'>यह मत कहो, &quot;उसी ने मुझे भटकाया&quot;, क्योंकि उसे पापी से क्या?</span> <sup>13</sup><span class='v-txt'>प्रभु को हर पाप से घृणा होती है; जो पाप करता है, वह ईश्वर पर श्रद्धा नहीं रखता।</span> <sup>14</sup><span class='v-txt'>ईश्वर ने प्रारम्भ में मनुष्य की सृष्टि की और उसे निर्णय करने की स्वतन्त्रता प्रदान की।</span> <sup>15</sup><span class='v-txt'>उसने अपनी आज्ञाऍ एवं आदेश प्रकट किये और मनुष्य पर अपनी इच्छा प्रकट की है।</span> <sup>16</sup><span class='v-txt'>यदि तुम चाहते हो, तो आज्ञाओें का पालन कर सकते हो; ईश्वर के प्रति ईमानदार रहना तुम्हारी इच्छा पर निर्भर है।</span> <sup>17</sup><span class='v-txt'>उसने तुम्हारे सामने अग्नि और जल, दोनों रख दिये हाथ बढ़ा कर उन में एक का चुनाव करो।</span> <sup>18</sup><span class='v-txt'>मनुष्य के सामने जीवन और मरण, दोनों रखे हुए हैं। जिसे मनुष्य चुनता, वहीं उसे मिलता है।</span> <sup>19</sup><span class='v-txt'>ईश्वर की प्रज्ञा अपार है।  वह सर्वशक्तिमान् और सर्वज्ञ है।</span> <sup>20</sup><span class='v-txt'>वह अपने श्रद्धालु भक्तों की देखरेख करता है।  मनुष्य जो भी करते हैं, वह सब देखता रहता है।</span> <sup>21</sup><span class='v-txt'>उसने न तो किसी को अधर्म करने का आदेश दिया और न किसी को पाप करने की छूट।</span> <sup>22</sup><span class='v-txt'>विधर्मियों और दुष्टों की बहुसंख्यक सन्तति से ईर्ष्या मत करो।</span> </p>
+        <div class='nav'><a href='028014.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028016.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

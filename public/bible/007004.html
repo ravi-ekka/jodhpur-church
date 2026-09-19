@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>न्यायकर्ता - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>न्यायकर्ता</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>एहूद की मृत्यु के बाद इस्राएलियों ने फिर वही किया, जो प्रभु की दृष्टि में बुरा है।</span> <sup>2</sup><span class='v-txt'>तब प्रभु ने उन्हें हासोंर में शासन करने वाले कनान के राजा याबीन के हाथ बेच दिया, जिसका सेनाध्यक्ष सीसरा हरोषेत-हग्गोयीम में रहता था।</span> <sup>3</sup><span class='v-txt'>तब इस्राएलियों ने सहायता के लिए प्रभु से प्रार्थना की; क्योंकि उसके पास लोहे के नौ सौ रथ थे और उसने बीस वर्ष तक इस्राएलियों पर घोर अत्याचार किया था।</span> <sup>4</sup><span class='v-txt'>उस समय लप्पीदोत की पत्नी दबोरा नामक नबियानी इस्राएलियों के बीच न्यायाधिकारिणी का काम करती थी।</span> <sup>5</sup><span class='v-txt'>वह एफ्ऱईम के पहाड़ी प्रदेश में रामा और बेतेल के बीच दबोरा के खजूर के नीचे बैठती थी और इस्राएली उसके पास अपने विवाह सुलझाने के लिए आया करते थे।</span> <sup>6</sup><span class='v-txt'>उसने अबीनोअम के पुत्र बाराक को नफ़्ताली के केदेश से बुलवाया और उस से कहा, &quot;प्रभु, इस्राएल का ईश्वर तुम को यह आदेश देता है: ताबोर पर्वत पर जाओ और अपने साथ नफ़्ताली और ज़बुलोनवंशियों में से दस हज़ार      आदमियों को ले जाओ।</span> <sup>7</sup><span class='v-txt'>मैं याबीन के सेनापति सीसरा को, उसके रथों और उसकी सेना-सहित, कीषोन नदी तक तुम्हारे सामने ले आऊँगा और उसे तुम्हारे हाथ दे दूँगा।&quot;</span> <sup>8</sup><span class='v-txt'>बाराक ने उसे उत्तर दिया, &quot;यदि तुम मेरे साथ चलोगी, तो मैं जाऊँगा।  यदि तुम मेरे साथ नहीं चलोगी, तो मैं नहीं जाऊँगा।&quot;</span> <sup>9</sup><span class='v-txt'>उसने उत्तर दिया, &quot;मैं तुम्हारे साथ अवश्य चलूँगी, परन्तु तब उस कार्य का श्रेय तुम्हें नहीं मिलेगा, क्योंकि प्रभु सीसरा को किसी स्त्री के हाथ दे देगा&quot;।</span> <sup>10</sup><span class='v-txt'>दबोरा बाराक के साथ चल कर केदेश पहुँची।  तब बाराक ने ज़बुलोन और नफ़्तालीवंशियों को केदेश में बुलाया।  दस हजार आदमी उसके साथ हो लिये और दबोरा भी उसके साथ गयी।</span> <sup>11</sup><span class='v-txt'>केनी जाति के हेबेर ने मूसा के ससुर होबाब के वंशजों से अलग हो कर केदेश के समीप सानन्नीम के पास वाले बलूत वृक्ष के निकट अपना तम्बू लगाया था।</span> <sup>12</sup><span class='v-txt'>सीसरा को समाचार मिला कि अबी-नोअम का पुत्र बाराक ताबोर पर्वत पर आ गया है।</span> <sup>13</sup><span class='v-txt'>इस पर सीसरा ने लोहे के अपने नौ सौ रथ अपने साथ ले लिये और हरोषेत-हग्गोयीम से ले कर कीषोन नदी तक अपने अधीनस्थ सब लोगों को अपने पास बुलाया।</span> <sup>14</sup><span class='v-txt'>तब दबोरा ने बाराक से कहा, &quot;उठो, आज ही वह दिन है, जब प्रभु सीसरा को तुम्हारे हाथ देगा।  प्रभु स्वयं तुम्हारे आगे-आगे चलेगा।&quot;  तब बाराक ताबोर पर्वत से नीचे उतरा।  दस हज़ार सैनिक उसके पीछे हो लिये।</span> <sup>15</sup><span class='v-txt'>प्रभु ने तलवार से बाराक के सामने सीसरा, उसके सब रथों और उसकी सम्पूर्ण सेना को पराजित किया।  सीसरा अपने रथ से उतर कर पैदल भाग चला।</span> <sup>16</sup><span class='v-txt'>बाराक ने हरोषेत-हग्गोयीम तक रथों और सेना का पीछा किया।  सीसरा की सारी सेना तलवार के घाट उतार दी  गयी।  एक भी आदमी जीवित नहीं रहा।</span> <sup>17</sup><span class='v-txt'>सीसरा पैदल भागते-भागते केनी जाति के हेबेर की पत्नी याएल के डेरे पर आया- हासोर के राजा याबीन और केनी हेबेर के कुल के बीच सन्धि थी।</span> <sup>18</sup><span class='v-txt'>याएल सीसरा से मिलने निकली और उस से बोली, &quot;महोदय! मेरे यहाँ आइए, मेरे घर आइए।  डरिए नहीं।&quot; इस पर वह उसके यहाँ तम्बू में चला गया और उसने उसे एक दरी से ढक दिया।</span> <sup>19</sup><span class='v-txt'>तब उसने उस से कहा, &quot;थोड़ा पानी पिलाओ।  मुझे प्यास लगी है।&quot; याएल ने दूध का कुप्पा खोल कर उसे पिलाया और उसे ढक दिया।</span> <sup>20</sup><span class='v-txt'>सीसरा ने उस से यह भी कहा, &quot;तम्बू के द्वार पर चली जाओ और यदि कोई आये और तुम से पूछे कि कोई अन्दर है, तो कहना कि कोई नहीं है&quot;।</span> <sup>21</sup><span class='v-txt'>लेकिन हेबेर की पत्नी याएल हाथ में तम्बू की खूँटी और हथौड़ा ले कर धीरे-धीरे उसके पास गयी और खूँटी को उसकी कनपटी पर रख कर ऐसे मारा कि वह धरती तक धॅस गयी।  थकावट के मारे सीसरा गहरी नींद में पड़ा था और उसकी मृत्यु हो गयी।</span> <sup>22</sup><span class='v-txt'>जब सीसरा का पीछा करता हुआ बाराक वहाँ पहुॅचा, तब याएल बाहर निकल कर उस से मिली और बोली, &quot;आइए, मैं आप को वह आदमी दिखलाती हूँ, जिसे आप ढूँढ़ रहे हैं&quot;।  वह उसके तम्बू में घुसा और उसने सीसरा को मरा पाया, जिसकी कनपटी में खुँटी ठोंकी गयी थी</span> <sup>23</sup><span class='v-txt'>इस प्रकार उस दिन प्रभु ने कनान के राजा याबीन को इस्राएलियों के सामने पराजित कर दिया।</span> <sup>24</sup><span class='v-txt'>इस्राएली कनान के राजा याबीन से प्रबल होते जा रहे थे और अन्त में उन्होंने उसका सर्वनाश कर दिया।</span> </p>
+        <div class='nav'><a href='007003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='007005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

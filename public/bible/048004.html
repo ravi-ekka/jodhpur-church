@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>मारकुस - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>मारकुस</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ईसा किसी दिन समुद्र के किनारे शिक्षा देने लगे और उनके पास इतनी भीड़ इकट्ठी हो गयी कि वह समुद्र में एक नाव पर जा बैठे और सारी भीड़ समुद्र के तट पर बनी रही।</span> <sup>2</sup><span class='v-txt'>उन्होंने दृष्टान्तों में उन्हें बहुत-सी बातों की शिक्षा दी। शिक्षा देते हुए उन्होंने कहा-</span> <sup>3</sup><span class='v-txt'>&quot;सुनो! कोई बोने वाला बीज बोने निकला।</span> <sup>4</sup><span class='v-txt'>बोते-बोते कुछ बीज रास्ते के किनारे गिरे और आकाश के पक्षियों ने आ कर उन्हें चुग लिया।</span> <sup>5</sup><span class='v-txt'>कुछ बीज पथरीली भूमि पर गिरे, जहाँ उन्हें अधिक मिट्टी नहीं मिली। वे जल्दी ही उग गये, क्येांकि उनकी मिट्टी  गहरी नहीं थी।</span> <sup>6</sup><span class='v-txt'>सूरज चढ़ने पर वे झुलस गये और जड़ न होने के कारण सूख गये।</span> <sup>7</sup><span class='v-txt'>कुछ बीज काँटों में गिरे और काँटों ने बढ़ कर उन्हें दबा दिया, इसलिए वे फल नहीं लाये।</span> <sup>8</sup><span class='v-txt'>कुछ बीज अच्छी भूमि पर गिरे।  वे उग कर फले-फूले और तीस गुना या साठ गुना या सौ गुना फल लाये।&quot;</span> <sup>9</sup><span class='v-txt'>अन्त में उन्होंने कहा, &quot;जिसके सुनने के कान हों, वह सुन ले !</span> <sup>10</sup><span class='v-txt'>ईसा के अनुयायियों और बारहों ने एकान्त में उन से दृष्टान्तों का अर्थ पूछा।</span> <sup>11</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;तुम लोगों को ईश्वर के राज्य का भेद जानने का वरदान दिया गया है।  बाहर वालों को दृष्टान्त ही मिलते हैं,</span> <sup>12</sup><span class='v-txt'>जिससे वे देखते हुए भी नहीं देख़ें और सुनते हुए भी नहीं समझें।  कहीं ऐसा न हो कि वे मेरी ओर लौट आयें और मैं उन्हें क्षमा प्रदान कर दूँ।&quot;</span> <sup>13</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;क्या तुम लोग यह दृष्टान्त नहीं समझते? तो सब दृष्टान्तों को कैसे समझोगे?</span> <sup>14</sup><span class='v-txt'>बोने वाला वचन बोता है।</span> <sup>15</sup><span class='v-txt'>जो रास्ते के किनारे हैं, जहाँ वचन बोया जाता हैः ये वे लोग हैं जिन्होंने सुना है, परन्तु शैतान तुरन्त ही आ कर यह वचन ले जाता है, जो उनके हृदय में बोया गया है।</span> <sup>16</sup><span class='v-txt'>इस प्रकार, जो पथरीली भूमि में बोये जाते हैं: ये वे लोग हैं, जो वचन सुनते ही उसे प्रसन्नता से ग्रहण करते हैं;</span> <sup>17</sup><span class='v-txt'>किन्तु उन में जड़ नहीं है और वे थोड़े ही दिन दृढ़ रहते हैं।  वचन के कारण संकट या अत्याचार आ पड़ने पर, वे तुरन्त विचलित हो जाते हैं।</span> <sup>18</sup><span class='v-txt'>दूसरे बीज काँटों में बोये जाते हैं: ये वे लोग हैं, जो वचन सुनते हैं,</span> <sup>19</sup><span class='v-txt'>परन्तु संसार की चिन्ताएँ, धन का मोह और अन्य वासनाएँ उन में प्रवेश कर वचन को दबा देती हैं और वह फल नहीं लाता।</span> <sup>20</sup><span class='v-txt'>जो अच्छी भूमि में बोये गये हैं: ये वे लोग हैं, जो वचन सुनते हैं- उसे ग्रहण करते हैं और फल लाते हैं -कोई तीस गुना, कोई साठ गुना, कोई सौ गुना।&quot;</span> <sup>21</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;क्या लोग इसलिए दीपक जलाते हैं कि उसे पैमाने अथवा पलंग के नीचे रखें?  क्या वे उसे दीवट पर नहीं रखते?</span> <sup>22</sup><span class='v-txt'>ऐसा कुछ भी छिपा हुआ नहीं है, जो प्रकट नहीं किया जायेगा और कुछ भी गुप्त नहीं है, जो प्रकाश में नहीं लाया जायेगा।</span> <sup>23</sup><span class='v-txt'>जिसके सुनने के कान हों, वह सुन ले!’</span> <sup>24</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;ध्यान से मेरी बात सुनो।  जिस नाप से तुम नापते हो, उसी से तुम्हारे लिए भी नापा जायेगा और सच पूछो तो तुम्हें उस से भी अधिक दिया जायेगा;</span> <sup>25</sup><span class='v-txt'>क्योंकि जिसके पास कुछ है, उसी को और दिया जायेगा और जिसके पास कुछ नहीं है, उस से वह भी ले लिया जायेगा, जो उसके पास है।&quot;</span> <sup>26</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;ईश्वर का राज्य उस मनुष्य के सदृश है, जो भूमि में बीज बोता है।</span> <sup>27</sup><span class='v-txt'>वह रात को सोने जाता और सुबह उठता है। बीज उगता है और बढ़ता जाता है हालाँकि उसे यह पता नहीं कि यह कैसे हो रहा है।</span> <sup>28</sup><span class='v-txt'>भूमि अपने आप फसल पैदा करती है- पहले अंकुर, फिर बाल और बाद में पूरा दाना।</span> <sup>30</sup><span class='v-txt'>ईसा ने कहा, &quot;हम ईश्वर के राज्य की तुलना किस से करें?  हम किस दृष्टान्त द्वारा उसका निरूपण करें?</span> <sup>31</sup><span class='v-txt'>वह राई के दाने के सदृश है।  मिट्टी में बोये जाते समय वह दुनिया भर का सब से छोटा दाना है;</span> <sup>32</sup><span class='v-txt'>परन्तु बाद में बढ़ते-बढ़ते वह सब पौधों से बड़ा हो जाता है और उस में इतनी बड़ी-बड़ी डालियाँ निकल आती हैं कि आकाश के पंछी उसकी छाया में बसेरा कर सकते हैं।</span> <sup>33</sup><span class='v-txt'>वह इस प्रकार के बहुत-से दृष्टान्तों द्वारा लोगों को उनकी समझ के अनुसार सुसमाचार सुनाते थे।</span> <sup>34</sup><span class='v-txt'>वह बिना दृष्टान्त के लोगों से कुछ नहीं कहते थे, लेकिन एकान्त में अपने शिष्यों को सब बातें समझाते थे।</span> <sup>35</sup><span class='v-txt'>उसी दिन, सन्ध्या हो जाने पर, ईसा ने अपने शिष्यों से कहा, &quot;हम उस पार चलें&quot;।</span> <sup>36</sup><span class='v-txt'>लोगों को विदा करने के बाद शिष्य ईसा को उसी नाव पर ले गये, जिस पर वे बैठे हुए थे। दूसरी नावें भी उनके साथ चलीं।</span> <sup>37</sup><span class='v-txt'>उस समय एकाएक झंझावात उठा।  लहरें इतने ज़ोर से नाव से टकरा रहीं थीं कि वह पानी से भरी जा रही थी।</span> <sup>38</sup><span class='v-txt'>ईसा दुम्बाल में तकिया लगाये सो रहे थे।  शिष्यों ने उन्हें जगा कर कहा, &quot;गुरुवर! हम डूब रहे हैं!  क्या आप को इसकी कोई चिन्ता नहीं?&quot;</span> <sup>39</sup><span class='v-txt'>वे जाग गये और उन्होंने वायु को डाँटा और समुद्र से कहा, &quot;शान्त हो! थम जा!&quot; वायु मन्द हो गयी और पूर्ण शान्ति छा गयी।</span> <sup>40</sup><span class='v-txt'>उन्होंने अपने शिष्यों से कहा, &quot;तुम लोग इस प्रकार क्यों डरते हो ? क्या तुम्हें अब तक विश्वास नहीं हैं?&quot;</span> <sup>41</sup><span class='v-txt'>उन पर भय छा गया और वे आपस में यह कहते रहे, &quot;आखिर यह कौन है?  वायु और समुद्र भी इनकी आज्ञा मानते हैं।&quot;</span> </p>
+        <div class='nav'><a href='048003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='048005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

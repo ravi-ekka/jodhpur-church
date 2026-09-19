@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 24</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 24</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>बिलआम ने देखा कि प्रभु इस्राएलियों को आशीर्वाद देना चाहता है, इसलिए उसने पहले की तरह तंत्र-मंत्र छोड़ कर,</span> <sup>2</sup><span class='v-txt'>अपनी आँखें ऊपर उठायीं और इस्राएलियों को देखा, जो अपने-अपने वंश के अनुसार शिविर डाल चुके थे। ईश्वर का आत्मा उस पर उतरा</span> <sup>3</sup><span class='v-txt'>और वह अपना यह काव्य सुनाने लगाः</span> <sup>4</sup><span class='v-txt'>यह उसकी भविष्यवाणी है, जो ईश्वर के वचन सुनता</span> <sup>5</sup><span class='v-txt'>याकूब! तुम्हारे तम्बू कितने सुन्दर है!</span> <sup>6</sup><span class='v-txt'>वे घाटियों की तरह फैले हुए हैं,</span> <sup>7</sup><span class='v-txt'>इस्राएलियों के पात्र जल से भरे रहेंगे,</span> <sup>8</sup><span class='v-txt'>ईश्वर उसे मिस्र से निकाल लाया,</span> <sup>9</sup><span class='v-txt'>वह सिंह की तरह झुक कर बैठा है,</span> <sup>10</sup><span class='v-txt'>इसे सुनने के बाद बालाक को बिलआम पर क्रोध हो गया। उसने हाथ पर हाथ मार कद बिलआम से कहा, &#039;&#039;मैंने आप को अपने शत्रुओं को शाप देने के लिए बुलाया था। इसके विपरीत आपने उन्हें तीन बार आशीर्वाद दिया है।</span> <sup>11</sup><span class='v-txt'>आप तुरन्त अपने घर लौट जाइए। मैंने आप को महान् पुरस्कार देने का वचन दिया था, किन्तु प्रभु ने आप को उस से वंचित कर दिया है।&#039;&#039;</span> <sup>12</sup><span class='v-txt'>बिलआम ने बालाक को उत्तर दिया, &#039;&#039;क्या मैंने आपके दूतों से, जिन्हें आपने मेरे पास भेजा था, यह नहीं कहा था कि</span> <sup>13</sup><span class='v-txt'>यदि बालाक मुझे इतना सोना चाँदी दे, जो उनके महल में भी न समा सके, तो भी मैं न तो प्रभु के आदेश का उल्लंघन करूँगा और न अपनी ओर से भला-बुरा कहूँगा। जो प्रभु कहेगा, मैं वही बोलूँगा।</span> <sup>14</sup><span class='v-txt'>अच्छा, अब मैं फिर अपनी जाति वालों के पास लौट जाता हूँ। लेकिन मैं जाने से पहले आप को यह बताऊँगा कि ये भविष्य में आपकी प्रजा के साथ क्या करेंगे।&#039;&#039;</span> <sup>15</sup><span class='v-txt'>इसके बाद बिलआम ने फिर कहा</span> <sup>16</sup><span class='v-txt'>यह उसकी भविष्यवाणी है, जो ईश्वर के वचन सुनता</span> <sup>17</sup><span class='v-txt'>मैं उसे देखता हूँ - किन्तु वर्तमान में नहीं,</span> <sup>18</sup><span class='v-txt'>एदोम पराधीन देश होगा,</span> <sup>19</sup><span class='v-txt'>याकूब के वंश में एक शासक का उदय होगा,</span> <sup>20</sup><span class='v-txt'>बिलआम ने अमालेकियों को देख कर यह गीत सुनायाः</span> <sup>21</sup><span class='v-txt'>फिर केनानियों को देख कर उसने कहा :</span> <sup>22</sup><span class='v-txt'>फिर भी काइन का नाश होगा।</span> <sup>23</sup><span class='v-txt'>अन्त में उसने यह कहाः</span> <sup>24</sup><span class='v-txt'>कित्तीम के तट से जलयान आयेंगे।</span> <sup>25</sup><span class='v-txt'>इसके बाद बिलआम लौट कर अपने देश चला गया और बालाक भी अपने रास्ते गया।</span> </p>
+        <div class='nav'><a href='004023.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004025.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योशुआ - अध्याय 12</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योशुआ</h1>
+        <h2>अध्याय 12</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इस्राएलियों ने यर्दन के पूर्व में अरनोन नदी से लेकर हेरमोन पर्वत तक का प्रांत और अराबा के पूर्व का पूरा प्रदेश अधिकार में कर लिया।  उनके राजाओं के नाम इस प्रकार है।</span> <sup>2</sup><span class='v-txt'>अमोरियों का राजा सीहोन, जो हेशबोन में निवास करता था।  वह अरनोन की घाटी के किनारे पर स्थित अरोएब से और घाटी की मध्य रेखा से अमोरियों की सीमा, यब्बोक नदी तक, अर्थात आधे गिलआद पर राज्य करता था।</span> <sup>3</sup><span class='v-txt'>वह यर्दन की घाटी के पूर्व में किन्नरोत के समुद्र से, अराबा के समुद्र (अर्थात् मतृ सागर) तक, पूर्व की ओर वे यषिमोत, और दक्षिण की ओर पिसगा पर्वत की ढलान तक राज्य करता था।</span> <sup>4</sup><span class='v-txt'>फिर अष्तारोत और एद्रेई में निवास करने वाला बाषन का राजा ओग, जो रफाइयों का अंतिम वंशज था।</span> <sup>5</sup><span class='v-txt'>वह हेरमोन पर्वत, सलका गशूरियों और मकातियों की सीमा तक सारे बाशान पर और हेशबोन के राजा सीहोन के देश की सीमा तक गिलआद के आधे भाग पर राज्य करता था।</span> <sup>6</sup><span class='v-txt'>प्रभु के सेवक मूसा ने इस्राएलियों के साथ उन्हें पराजित किया था।  तब प्रभु के सेवक मूसा ने उनका देश रूबेन और गाद के वंशों को और मनस्से के आधे वंश को विरासत के रूप में दिया था।</span> <sup>7</sup><span class='v-txt'>पश्चिम दिशा में यर्दन के इस पार नेबानोन की तराई से लेकर सेईर की चढाई की ओर हालाक पर्वत तक, योशुआ और इस्राएलियों ने निम्नलिखित राजाओं को पराजित किया और योशुआ ने उनका देश विरासत के रूप में इस्राएलियों वंशों को दे दिया।</span> <sup>8</sup><span class='v-txt'>पहाड़ी प्रांत, निचला प्रदेश अराबा, पहाड़ी की ढलानें, हित्तियों, अमोरियो, कन्नानियों और परिजि़्ज़यों, हिव्वियों , और यबूसियों के देश।</span> <sup>9</sup><span class='v-txt'>येरीखो का राजा बेतेल के पास स्थित अय का राजा,</span> <sup>10</sup><span class='v-txt'>येरूसालेम का राजा, हेब्रोन का राजा,</span> <sup>11</sup><span class='v-txt'>यर्मूत का राजा, लाकीश का राजा,</span> <sup>12</sup><span class='v-txt'>एगलोन का राजा, गेसेर का राजा</span> <sup>13</sup><span class='v-txt'>दबीर का राजा, गेदेर का राजा,</span> <sup>14</sup><span class='v-txt'>होरमा का राजा, अराद का राजा,</span> <sup>15</sup><span class='v-txt'>लिबना का राजा, अदुल्लाम का राजा,</span> <sup>16</sup><span class='v-txt'>मक्केद का राजा, बेतेल का राजा,</span> <sup>17</sup><span class='v-txt'>तप्पूअह का राजा, हेफेर का राजा,</span> <sup>18</sup><span class='v-txt'>अफेक का राजा, लषारोन का राजा,</span> <sup>19</sup><span class='v-txt'>मादोन का राजा, हासोर का राजा,</span> <sup>20</sup><span class='v-txt'>सिम्रोन-मरोन का राजा, अक्षाफ़ का राजा,</span> <sup>21</sup><span class='v-txt'>तानाक का राजा, मगिद्धो का राजा,</span> <sup>22</sup><span class='v-txt'>केदेश का राजा, करमेल पर स्थित योकनआम का राजा,</span> <sup>23</sup><span class='v-txt'>नाफ़त-दोर में स्थित दोर का राजा, गलीलियों के गोयीम का राजा</span> <sup>24</sup><span class='v-txt'>और तिर्सा का राज कुल मिला कर इकतीस राजा।</span> </p>
+        <div class='nav'><a href='006011.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='006013.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

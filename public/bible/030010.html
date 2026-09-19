@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>यिरमियाह - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>यिरमियाह</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इस्राएलियों! अपने प्रति ईश्वर की वाणी सुनो।</span> <sup>2</sup><span class='v-txt'>प्रभु यह कहता हैः “राष्ट्रों का आचरण मत सीखो और आकाश के उन चिन्हों से मत डरो जिन से वे लोग घबराते हैं।</span> <sup>3</sup><span class='v-txt'>उन लोगों के रिवाज व्यर्थ हैं।  वे जंगल का कोई वृक्ष काट डालते हैं और शिल्पकार उसे छेनी से गढ़ता है।</span> <sup>4</sup><span class='v-txt'>वे उस पर सोना एंव चाँदी मढ़ते हैं और हथौड़े से कीलें ठोक कर उसे बैठाते हैं, जिससे वह हिले नहीं।</span> <sup>5</sup><span class='v-txt'>उनकी मूर्तियाँ ककड़ी के खेत में फूस के पुतले-जैसी हैं। वे न बोल सकती हैं और न चल सकतीं, इसलिए उन्हें उठा कर ले जाना पड़ता है।  उन से मत डरो।  वे न तो कोई हानि कर सकती हैं औ न कोई लाभ पहुँचा सकती है।“</span> <sup>6</sup><span class='v-txt'>प्रभु! तुझ-जैसा कोई नहीं है।  तू महान् है और तेरा नाम शक्तिमान् है।</span> <sup>7</sup><span class='v-txt'>राष्ट्रों के अधिपति! किसे तुझ पर श्रद्धा नहीं रखनी चाहिए?  तू इसके यौग्य है।  राष्ट्रों के सब ज्ञानियों में और उनके सब राज्यों में तेरे समान कोई भी नहीं!</span> <sup>8</sup><span class='v-txt'>वे सभी नासमझ और मूर्ख हैं।  लकड़ी की मूर्तियाँ उन्हें कौन-सी शिक्षा दे सकती हैं?</span> <sup>9</sup><span class='v-txt'>उन पर तरशीश से लायी हुई चाँदी और अफ़ाज का सोना मढ़ दिया गया है।  कारीगर और सोना की कृतियों पर नीले और बैंगनी वस्त्र पहनाये गये हैं।  यह सब निपुण कलाकारों द्वारा निर्मित है।</span> <sup>10</sup><span class='v-txt'>किन्तु प्रभु ही सच्चा ईश्वर है।  वही जीवन्त ईश्वर और शाश्वत राजा है।  उसके क्रोध पर धरती डोलने लगती है।  उसके कोप के सामने राष्ट्र नहीं टिक सकते।</span> <sup>11</sup><span class='v-txt'>“तुम उन से यह कहोः जिन देवताओं ने स्वर्ग और पृथ्वी नहीं बनायी, वे पृथ्वी पर से और आकाश के नीचे से मिट जायेंगे।“</span> <sup>12</sup><span class='v-txt'>ईश्वर ने अपने सामर्थ्य से पृथ्वी बनायी।  उसने अपनी प्रज्ञा से संसार को उत्पन्न किया और अपने विवेक से आकाश फैलाया।</span> <sup>13</sup><span class='v-txt'>जब वह गरजता है, तो आकाश से मूसलधार वर्षा होती है।  वह पृथ्वी के सीमान्तों से बादल बुलाता है।  वह वर्षा के साथ बिजली चमकाता और अपने भण्डारों से पवन बहाता है।</span> <sup>14</sup><span class='v-txt'>मनुष्य चकित रह जाते और नहीं समझ पाते हैं।  सोनार अपनी मूर्ति पर लज्जित है, उसकी मूर्तियाँ मिथ्या हैं।  उन में प्राण नहीं हैं।</span> <sup>15</sup><span class='v-txt'>वे असार हैं और उपहास के पात्र हैं।  दण्ड का समय आने पर वे नष्ट हो जायेंगी।</span> <sup>16</sup><span class='v-txt'>किन्तु याकूब का ईश्वर ऐसा नहीं है।  वह सभी वस्तुओं की सृष्टि करता है और इस्राएल उसकी अपनी विरासत है।  उसका नाम सर्वशक्तिमान् प्रभु है।</span> <sup>17</sup><span class='v-txt'>तुम, जो घेरेबन्द नगर में रहते हो, ज़मीन पर से अपनी गठरियाँ उठा कर देश छोड़ दो ;</span> <sup>18</sup><span class='v-txt'>क्योंकि प्रभु यह कहता हैः “इस बार मैं निवासियों को गोफन में रखे पत्थरों की तरह दूर फेंक दूँगा।  मैं उन पर विपत्तियाँ ढाहूँगा, जिससे वे दण्ड से न बच सकें।“</span> <sup>19</sup><span class='v-txt'>मुझ पर शोक! मैं घायल हूँ, मेरे घावों का कोई इलाज नहीं!  मैं सोचता हूँ- यह मेरा कष्ट है, मुझे इसे सहना होगा।</span> <sup>20</sup><span class='v-txt'>मेरा तम्बू नष्ट हो गया है, उसकी सारी रस्सियाँ टूट गयीं हैं।  मेरे बाल-बच्चे चले गये, वे अब नहीं रहे।  फिर मेरा तम्बू खड़ा करने और मेरा निवास को सुव्यवस्थित करने वाला कोई नहीं।</span> <sup>21</sup><span class='v-txt'>चरवाहे नासमझ हैं: वे प्रभु की खोज नहीं करते।  इसलिए उनकी दुर्गति हो गयी है और उनका सारा रेवड़ तितर-बितर हो गया है।</span> <sup>22</sup><span class='v-txt'>यह समाचार सुनो-यूदा के नगरों को उजाड़ने और उन्हें गीदड़ों की माँद बनाने उत्तर के शत्रु भारी कोलाहल के साथ आ रहे हैं।</span> <sup>23</sup><span class='v-txt'>प्रभु! मैं जानता हूँ कि कोई मनुष्य अपना मार्ग निश्चित नहीं करता, कोई जहाँ चाहता, वहाँ नहीं जाता।</span> <sup>24</sup><span class='v-txt'>प्रभु! क्रुद्ध हुए बिना न्याय के अनुसार मुझे दण्ड दे।  नहीं तो मेरा सर्वनाश हो जायेगा।</span> <sup>25</sup><span class='v-txt'>उन राष्ट्रों पर अपने क्रोध का प्याला उँड़ेल, जो तुझे नहीं जानते- उन जातियों पर, जो तेरा नाम नहीं लेतीं; क्योंकि वे याकूब को निगल रही हैं, वे उसे खाती और मिटाती हैं।  वे उसका देश उजाड़ती हैं।</span> </p>
+        <div class='nav'><a href='030009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='030011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

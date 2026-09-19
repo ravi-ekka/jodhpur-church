@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 37</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 37</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रत्येक मित्र कहता है: &quot;मैं भी तुम्हारा मित्र हूँ&quot;, किन्तु कुछ लोग नाम मात्र के मित्र हैं।  क्या वह दुःख मृत्यु के सदृश नहीं,</span> <sup>2</sup><span class='v-txt'>जब कोई अभिन्न मित्र शत्रु बन जाता है?</span> <sup>3</sup><span class='v-txt'>वह दुर्भाव कहाँ से उत्पन्न हुआ है, जो पृथ्वी को कपट से ढक देता है?</span> <sup>4</sup><span class='v-txt'>कपटी मित्र सुख में अपने मित्र का साथ देता, किन्तु विपत्ति में उसका विरोधी बन जाता है।</span> <sup>5</sup><span class='v-txt'>सच्चा मित्र दुःख में अपने मित्र का साथ देता और भाला उठाकर उसके शत्रु से लड़ता है।</span> <sup>6</sup><span class='v-txt'>अपने मन में मित्र केा मत भुलाओे और समृद्धि में भी उसे याद रखो।</span> <sup>7</sup><span class='v-txt'>कपटी व्यक्ति से सलाह मत लो।  और ईर्ष्यालु से अपनी योजना छिपाओे।</span> <sup>8</sup><span class='v-txt'>प्रत्येक परामर्शदाता अपनी सम्मति अच्छी समझता है, किन्तु कुछ लोग अपने हित में परामर्श देते हैं।</span> <sup>9</sup><span class='v-txt'>परामर्शदाता से सावधान रहो और पहले पता करो कि उसका स्वार्थ किस में है; क्योंकि वह अपने हित में परामर्श देगा</span> <sup>10</sup><span class='v-txt'>और तुम से लाभ उठाने के विचार से कहेगा:</span> <sup>11</sup><span class='v-txt'>&quot;आप सही मार्ग पर चलते हैं&quot;, किन्तु किनारे से देखता है, कि तुम को क्या होगा।</span> <sup>12</sup><span class='v-txt'>जो तुम से बैर रखता, उस से सलाह मत माँगो और ईर्ष्यालु व्यक्ति से अपनी योजना छिपाओे।  तुम न तो स्त्री से उसकी सौत के विषय में सलाह माँगो और न कायर से युद्ध के विषय में, न व्यापारी से सौदे के विषय में, न खरीददार से बिक्री के विषय मे, न विद्वेषी</span> <sup>13</sup><span class='v-txt'>न विधर्मी से भक्ति के विषय में, न बेईमान से ईमानदारी के विषय में, न आलसी से किसी काम के विषय में,</span> <sup>14</sup><span class='v-txt'>न ठेके के मजदूर से किसी काम की समाप्ति के विषय में और न आलसी नौकर से कठिन काम के विषय में।  इन लोगों के किसी परामर्श पर निर्भर मत रहो,</span> <sup>15</sup><span class='v-txt'>किन्तु धार्मिक व्यक्ति की संगति करो, जिसके विषय में तुम जानते हो कि वह आज्ञाओें का पालन करता है,</span> <sup>16</sup><span class='v-txt'>जिसका स्वभाव तुम्हारे स्वभाव से मेल खाता है और जब तुम लड़खड़ाते हो, तो वह तुम से सहानुभूति रखेगा।</span> <sup>17</sup><span class='v-txt'>अपने अन्तःकरण पर भी ध्यान दो, क्योंकि वह तुम्हारे प्रति किसी से भी अधिक ईमानदार है।</span> <sup>18</sup><span class='v-txt'>ऊँची मीनार पर बैठने वाले पहरेदारों से भी अधिक मनुष्य को अधिक जानकारी अन्तःकरण देता है।</span> <sup>19</sup><span class='v-txt'>सब से महत्वपूर्ण बात यह है कि तुम सर्वोच्च प्रभु से प्रार्थना करो, जिससे वह तुम को सत्य के मार्ग पर ले चले।</span> <sup>20</sup><span class='v-txt'>प्रत्येक योजना विचार-विमर्ष से प्रारम्भ होती है, और प्रत्येक कार्य सोच-विचार से।</span> <sup>21</sup><span class='v-txt'>हृदय में विचारों की जड़ है, उस में से चार डालियाँ निकलती हैं: बुराई और भलाई, जीवन और मृत्यु और इन सबों पर जिह्वा शासन करती है।</span> <sup>22</sup><span class='v-txt'>कुछ अनुभवी लोग बहुतों को शिक्षा देते हैं, किन्तु अपनी आत्मा के लिए किसी काम के नहीं।</span> <sup>23</sup><span class='v-txt'>कुछ विद्वान् अपने शब्दों द्वारा अपने प्रति बैर उत्पन्न करते हैं और इस कारण स्वादिष्ट भोजन से वंचित रहते हैं।</span> <sup>24</sup><span class='v-txt'>प्रभु ने उन्हें लोकप्रियता का वरदान नहीं दिया; उन पर रत्ती भर प्रज्ञा नहीं।</span> <sup>25</sup><span class='v-txt'>कुछ लोग अपनी बुद्धि से लाभ उठाते और अपनी बुद्धि के फल से अपना शरीर पुष्ट करते हैं।</span> <sup>26</sup><span class='v-txt'>प्रज्ञासम्पन्न व्यक्ति अपने लोगों को शिक्षा देता है और उसकी बुद्धि का परिणाम चिरस्थायी है।</span> <sup>27</sup><span class='v-txt'>प्रज्ञासम्पन्न व्यक्ति को सभी आशीर्वाद देते हैं और जो उसे देखते, वे उसे धन्य कहते हैं।</span> <sup>28</sup><span class='v-txt'>मनुष्य के दिन गिने जा सकते हैं, किन्तु इस्राएल के दिन असंख्य हैं।</span> <sup>29</sup><span class='v-txt'>प्रज्ञासम्पन्न व्यक्ति को अपने लोगो से सम्मान मिलेगा और उसका नाम सदा जीवित रहेगा।</span> <sup>30</sup><span class='v-txt'>पुत्र! अपने जीवनकाल में अपने आचरण पर विचार करो। देखो कि तुम्हारे लिए क्या अहितकर है और उस से अपने को दूर रखो;</span> <sup>31</sup><span class='v-txt'>क्योंकि सब कुछ सबों के लिए हितकर नहीं है और सभी की सब कुछ में रुचि नहीं।</span> <sup>32</sup><span class='v-txt'>हर सुख के लालची मत बनो और स्वादिष्ट भोजन पर मत टूटो।</span> <sup>33</sup><span class='v-txt'>अधिक भोजन करने से मनुष्य अस्वस्थ्य हो जाता और पेटूपन से मिचली आती है।</span> <sup>34</sup><span class='v-txt'>अधिक खाने से बहुतों की मृत्यु हो गयी और जो संयम रखता है, वह अपने दिनों की संख्या बढ़ाता है।</span> </p>
+        <div class='nav'><a href='028036.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028038.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

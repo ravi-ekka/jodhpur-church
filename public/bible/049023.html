@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 23</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 23</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तब सारी सभा उठ खड़ी हो गयी और वे उन्हें पिलातुस के यहाँ ले गये।</span> <sup>2</sup><span class='v-txt'>वे यह कहते हुए ईसा पर अभियोग लगाने लगे, &quot;हमें पता चला कि यह मनुष्य हमारी जनता में विद्रोह फैलाता है, कैसर को कर देने से लोगों को मना करता और अपने को मसीह, राजा कहता&quot;।</span> <sup>3</sup><span class='v-txt'>पिलातुस ने ईसा से यह प्रश्न किया, &quot;क्या तुम यहूदियों के राजा हो?&quot; ईसा ने उत्तर दिया, &quot;आप ठीक ही कहते हैं&quot;।</span> <sup>4</sup><span class='v-txt'>तब पिलातुस ने महायाजकों और भीड़ से कहा, &quot;मैं इस मनुष्य में कोई दोष नहीं पाता&quot;।</span> <sup>5</sup><span class='v-txt'>उन्होंने यह कहते हुए आग्रह किया, &quot;यह गलीलिया से लेकर यहाँ तक, यहूदिया के कोने-कोने में अपनी शिक्षा से जनता को उकसाता है&quot;।</span> <sup>6</sup><span class='v-txt'>पिलातुस ने यह सुन कर पूछा कि क्या वह मनुष्य गलीली है</span> <sup>7</sup><span class='v-txt'>और यह जान कर कि यह हेरोद के राज्य का है, उसने ईसा को हेरोद के पास भेजा।  वह भी उन दिनों येरूसालेम में था।</span> <sup>8</sup><span class='v-txt'>हेरोद ईसा को देख कर बहुत प्रसन्न हुआ।  वह बहुत समय से उन्हें देखना चाहता था, क्योंकि उसने ईसा की चर्चा सुनी थी और उनका कोई चमत्कार देखने की आशा करता था।</span> <sup>9</sup><span class='v-txt'>वह ईसा से बहुत से प्रश्न करता रहा, परन्तु उन्होंने उसे उत्तर नहीं दिया।</span> <sup>10</sup><span class='v-txt'>इस बीच महायाजक और शास्त्री ज़ोर-ज़ोर से ईसा पर अभियोग लगाते रहे।</span> <sup>11</sup><span class='v-txt'>तब हेरोद ने अपने सैनिकों के साथ ईसा का अपमान तथा उपहास किया और उन्हें भड़कीला वस्त्र पहना कर पिलातुस के पास भेजा।</span> <sup>12</sup><span class='v-txt'>उसी दिन हेरोद और पिलातुस मित्र बन गयें-पहले तो उन दोनों में शत्रुता थी।</span> <sup>13</sup><span class='v-txt'>अब पिलातुस ने महायाजकों, शासकों और जनता को बुला कर</span> <sup>14</sup><span class='v-txt'>उन से कहा, &quot;आप लोगों ने यह अभियोग लगा कर इस मनुष्य को मेरे सामने पेश किया कि यह जनता में विद्रोह फैलाता है।  मैंने आपके सामने इसकी जाँच की; परन्तु आप इस मनुष्य पर जिन बातों का अभियोग लगाते हैं, उनके विषय में मैंने इस में कोई दोष नहीं पाया</span> <sup>15</sup><span class='v-txt'>और हेरोद ने भी दोष नहीं पाया; क्योंकि उन्होंने इसे मेरे पास वापस भेजा है।  आप देख रहे हैं कि इसने प्राणदण्ड के योग्य कोई अपराध नहीं किया है।</span> <sup>16</sup><span class='v-txt'>इसलिए मैं इसे पिटवा कर छोड़ दूँगा।&quot;</span> <sup>17</sup><span class='v-txt'>पर्व के अवसर पर पिलातुस को यहूदियों के लिए एक बन्दी रिहा करना था।</span> <sup>18</sup><span class='v-txt'>वे सब-के-सब एक साथ चिल्ला उठे, &quot;इसे ले जाइए,  हमारे लिए बराब्बस को रिहा कीजिए।&quot;</span> <sup>19</sup><span class='v-txt'>बराब्बस शहर में हुए विद्रोह के कारण तथा हत्या के अपराध में क़ैद किया गया था।</span> <sup>20</sup><span class='v-txt'>पिलातुस ने ईसा को मुक्त करने की इच्छा से लोगों को फिर समझाया,</span> <sup>21</sup><span class='v-txt'>किन्तु वे चिल्लाते रहे, &quot;इसे क्रूस दीजिए! इसे क्रूस कीजिए!&quot;</span> <sup>22</sup><span class='v-txt'>पिलातुस ने तीसरी बार उन से कहा, &quot;क्यों?  इस मनुष्य ने कौन-सा अपराध किया है?  मैं इस में प्राणदण्ड के योग्य कोई दोष नहीं पाता।  इसलिए मैं इसे पिटवा कर छोड़ दूँगा।’</span> <sup>23</sup><span class='v-txt'>परन्तु वे चिल्ला-चिल्ला कर आग्रह करते रहे कि इसे क्रूस दिया जाये और उनका कोलाहल बढ़ता जा रहा था।</span> <sup>24</sup><span class='v-txt'>तब पिलातुस ने उनकी माँग पूरी करने का निश्चय किया।</span> <sup>25</sup><span class='v-txt'>जो मनुष्य विद्रोह और हत्या के कारण क़ैद किया गया था और जिसे वे छुड़ाना चाहते थे, उसने उसी को रिहा किया और ईसा को लोगों की इच्छा के अनुसार सैनिकों के हवाले कर दिया।</span> <sup>26</sup><span class='v-txt'>जब वे ईसा को ले जा रहे थे, तो उन्होंने देहात से आते हुए सिमोन नामक कुरेने निवासी को पकड़ा और उस पर क्रूस रख दिया, जिससे वह उसे ईसा के पीछे-पीछे ले जाये।</span> <sup>27</sup><span class='v-txt'>लोगों की भारी भीड़ उनके पीछे-पीछे चल रही थी।  उन में नारियाँ भी थीं, जो अपनी छाती पीटते हुए उनके लिए विलाप कर रही थी।</span> <sup>28</sup><span class='v-txt'>ईसा ने उनकी ओर मुड़ कर कहा, &quot;येरूसालेम की बेटियो ! मेरे लिए मत रोओ।  अपने लिए और अपने बच्चों के लिए रोओ,</span> <sup>29</sup><span class='v-txt'>क्योंकि वे दिन आ रहे हैं, जब लोग कहेंगे-धन्य हैं वे स्त्रियाँ, जो बाँझ है; धन्य हैं वे गर्भ, जिन्होंने प्रसव नहीं किया और धन्य है वे स्तन, जिन्होंने दूध नहीं पिलाया!</span> <sup>30</sup><span class='v-txt'>तब लोग पहाड़ों से कहने लगेंगे-हम पर गिर पड़ों, और पहाडि़यों से-हमें ढक लो;</span> <sup>31</sup><span class='v-txt'>क्योंकि यदि हरी लकड़ी का हाल यह है, तो सूखी का क्या होगा?&quot;</span> <sup>32</sup><span class='v-txt'>वे ईसा साथ दो कुकर्मियों को भी प्राणदण्ड के लिए ले जा रहे थे।</span> <sup>33</sup><span class='v-txt'>वे ‘खोपड़ी की जगह’ नामक स्थान पहुँचे।  वहाँ उन्होंने ईसा को और उन दो कुकर्मियों को भी क्रूस पर चढ़ाया-एक को उनके दायें और एक को उनके बायें।</span> <sup>34</sup><span class='v-txt'>ईसा ने कहा, &quot;पिता! इन्हें क्षमा कर, क्योंकि ये नहीं जानते कि क्या कर रहे हैं&quot;। तब उन्होंने उनके कपड़े के कई भाग किये और उनके लिए चिट्ठी निकाली।</span> <sup>35</sup><span class='v-txt'>जनता खड़ी हो कर यह सब देख ही थी।  नेता यह कहते हुए उनका उपहास करते थे, &quot;इसने दूसरों को बचाया।  यदि यह ईश्वर का मसीह और परमप्रिय है, तो अपने को बचाये।&quot;</span> <sup>36</sup><span class='v-txt'>सैनिकों ने भी उनका उपहास किया।  वे पास आ कर उन्हें खट्ठी अंगूरी देते हुए बोले,</span> <sup>37</sup><span class='v-txt'>&quot;यदि तू यहूदियों का राजा है, तो अपने को बचा&quot;।</span> <sup>38</sup><span class='v-txt'>ईसा के ऊपर लिखा हुआ था, &quot;यह यहूदियों का राजा है&quot;।</span> <sup>39</sup><span class='v-txt'>क्रूस पर चढ़ाये हुए कुकर्मियों में एक इस प्रकार ईसा की निन्दा करता था, &quot;तू मसीह है न?  तो अपने को और हमें भी बचा।&quot;</span> <sup>40</sup><span class='v-txt'>पर दूसरे ने उसे डाँट कर कहा, &quot;क्या तुझे ईश्वर का भी डर नहीं?  तू भी तो वही दण्ड भोग रहा है।</span> <sup>41</sup><span class='v-txt'>हमारा दण्ड न्यायसंगत है, क्योंकि हम अपनी करनी का फल भोग रहे हैं; पर इन्होंने कोई अपराध नहीं किया है।&quot;</span> <sup>42</sup><span class='v-txt'>तब उसने कहा, &quot;ईसा! जब आप अपने राज्य में आयेंगे, तो मुझे याद कीजिएगा&quot;।</span> <sup>43</sup><span class='v-txt'>उन्होंने उस से कहा, &quot;मैं तुम से यह कहता हूँ कि तुम आज ही परलोक में मेरे साथ होगे&quot;।</span> <sup>44</sup><span class='v-txt'>अब लगभग दोपहर हो रहा था।  सूर्य के छिप जाने से तीसरे पहर तक सारे प्रदेश पर अँधेरा छाया रहा।</span> <sup>45</sup><span class='v-txt'>मन्दिर का परदा बीच से फट कर दो टुकड़े हो गया।</span> <sup>46</sup><span class='v-txt'>ईसा ने ऊँचे स्वर से पुकार कर कहा, &quot;पिता! मैं अपनी आत्मा को तेरे हाथों सौंपता हूँ&quot;, और यह कह कर उन्होंने प्राण त्याग दिये।</span> <sup>47</sup><span class='v-txt'>शतपति ने यह सब देख कर ईश्वर की स्तुति करते हुए कहा, &quot;निश्चित ही, यह मनुष्य धर्मात्मा था&quot;।</span> <sup>48</sup><span class='v-txt'>बहुत-से लोग यह़ दृश्य देखने के लिए इकट्ठे हो गये थे। वे सब-के-सब इन घटनाओं को देख कर अपनी छाती पीटते हुए लौट गये।</span> <sup>49</sup><span class='v-txt'>उनके सब परिचित और गलीलिया से उनके साथ आयी हुई नारियाँ कुछ दूरी पर से यह सब देख रहीं थीं।</span> <sup>50</sup><span class='v-txt'>महासभा का यूसुफ़़ नामक सदस्य निष्कपट और धार्मिक था।</span> <sup>51</sup><span class='v-txt'>वह सभा की योजना और उसके षड्यन्त्र से सहमत नहीं हुआ था।  वह यहूदियों के अरिमथिया नगर का निवासी था और ईश्वर के राज्य की प्रतीक्षा में था।</span> <sup>52</sup><span class='v-txt'>उसने पिलातुस के पास जा कर ईसा का शव माँगा।</span> <sup>53</sup><span class='v-txt'>उसने शव को क्रूस से उतारा और छालटी के कफ़न में लपेट कर एक ऐसी क़ब्र में रख दिया, जो चट्टान में खुदी हुई थी और जिस में कभी किसी को नहीं रखा गया था।</span> <sup>54</sup><span class='v-txt'>उस दिन शुक्रवार था और विश्राम का दिन आरम्भ हो रहा था।</span> <sup>55</sup><span class='v-txt'>जो नारियाँ ईसा के साथ गलीलिया से आयी थीं, उन्होंने यूसुफ़़ के पीछे-पीछे चल कर क़ब्र को देखा और यह भी देखा कि ईसा का शव किस तरह रखा गया है।</span> <sup>56</sup><span class='v-txt'>लौट कर उन्होंने सुगन्धित द्रव्य तथा विलेपन तैयार किया और विश्राम के दिन नियम के अनुसार विश्राम किया।</span> </p>
+        <div class='nav'><a href='049022.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='049024.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

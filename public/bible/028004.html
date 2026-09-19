@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 4</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 4</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>पुत्र! दरिद्र की जीविका मत छीनो और प्रतीक्षा करने वाली आँखों को निराश मत करो।</span> <sup>2</sup><span class='v-txt'>भूखे को मत सताओ और दरिद्र को मत चिढ़ाओे।</span> <sup>3</sup><span class='v-txt'>कटु हृदय को उत्पीड़ित मत करो और कंगाल को देने में विलम्ब मत करो।</span> <sup>4</sup><span class='v-txt'>संकट में पड़े की याचना मत ठुकराओे, कंगाल से अपना मुँह मत मोड़ो।</span> <sup>5</sup><span class='v-txt'>दरिद्र से आँखें मत फेरो, उसे अवसर मत दो कि वह तुम को अभिशाप दे।</span> <sup>6</sup><span class='v-txt'>यदि वह अपनी आत्मा की कटुता के कारण तुम को अभिशाप दे, तो उसका सृष्टिकर्ता उसकी प्रार्थना सुनेगा।</span> <sup>7</sup><span class='v-txt'>सभा में मिलनसार बनो और बड़े को प्रणाम करो।</span> <sup>8</sup><span class='v-txt'>कंगाल की बात पर कान दो और सौजन्य से उसके नमस्कार का उत्तर दो।</span> <sup>9</sup><span class='v-txt'>अत्याचारी के हाथों से उत्पीड़ित को छुड़ाओे और न्याय करने में आगा-पीछा मत करो।</span> <sup>10</sup><span class='v-txt'>अनाथों के दयालु पिता बनो और पति की तरह उनकी माता के सहायक बनो।</span> <sup>11</sup><span class='v-txt'>तब तुम मानो सर्वोच्च प्रभु के पुत्र बनोगे और वह तुम को माता से भी अधिक प्यार करेगा।</span> <sup>12</sup><span class='v-txt'>प्रज्ञा अपनी प्रजा को महान् बनाती है।  जो उसकी खोज में लगे रहते हैं, वह उनकी देखरेख करती है।</span> <sup>13</sup><span class='v-txt'>जो उसे प्यार करता है, वह जीवन को प्यार करता है। जो प्रातःकाल से उसे ढूँढ़ते हैं, वे आनन्दित होंगे।</span> <sup>14</sup><span class='v-txt'>जो उसे प्राप्त कर लेता है, वह महिमान्वित होगा।  वह जहाँ कहीं जायेगा, प्रभु उसे वहाँ आशीर्वाद प्रदान करेगा।</span> <sup>15</sup><span class='v-txt'>जो उसकी सेवा करते हैं, वे परमपावन प्रभु की सेवा करते हैं।  जो उसे प्यार करते हैं, प्रभु उन को प्यार करता है।</span> <sup>16</sup><span class='v-txt'>जो उसकी बात मानता है, वह न्यायसंगत निर्णय देता है। जो उसके मार्ग पर चलता है, उसका निवास सुरक्षित है।</span> <sup>17</sup><span class='v-txt'>जो उस पर भरोसा रखता है, वह उसे प्राप्त करेगा और उसका वंश भी उसका अधिकारी होगा।</span> <sup>18</sup><span class='v-txt'>प्रारम्भ में प्रज्ञा उसे टेढ़े-मेढ़े रास्ते पर ले चलेगी और उसकी परीक्षा लेगी।</span> <sup>19</sup><span class='v-txt'>वह उस में भय तथा आतंक उत्पन्न करेगी।  वह अपने अनुशासन से उसे उत्पीड़ित करेगी और तब तक अपने नियमों से उसकी परीक्षा करती रहेगी, जब तक वह उस पूर्णतया विश्वास नहीं करती।</span> <sup>20</sup><span class='v-txt'>इसके बाद वह उसे सीधे मार्ग पर ले जा कर आनन्दित कर देगी</span> <sup>21</sup><span class='v-txt'>और उस पर अपने रहस्य प्रकट करेगी।  वह उसे ज्ञान और न्याय का विवेक प्रदान करेगी।</span> <sup>22</sup><span class='v-txt'>किन्तु यदि वह भटक जायेगा, तो वह उसका त्याग करेगी और उसे विनाश के मार्ग पर आगे बढ़ने के लिए छोड़ देगी।</span> <sup>23</sup><span class='v-txt'>परिस्थिति के अनुसार आचरण करो, अपने को बुराई से दूर रखो</span> <sup>24</sup><span class='v-txt'>और तुम्हें अपने पर लज्जा नहीं होगी;</span> <sup>25</sup><span class='v-txt'>क्योंकि एक प्रकार की लज्जा पाप की ओर ले जाती और दूसरे प्रकार की लज्जा महिमा और सम्मान की ओर।</span> <sup>26</sup><span class='v-txt'>धृष्टता के कारण अपनी हानि मत करो और अपने पतन का कारण मत बनो।</span> <sup>27</sup><span class='v-txt'>अपने पड़ोस के रोब को अपने पतन का कारण न बनने दो।</span> <sup>28</sup><span class='v-txt'>अवसर आने पर बोलने में संकोच मत करो और अपनी प्रज्ञा को मत छिपाओे;</span> <sup>29</sup><span class='v-txt'>क्योंकि प्रज्ञा भाषा में और ज्ञान शब्दों में प्रकट होता है।</span> <sup>30</sup><span class='v-txt'>सत्य का विरोध मत करो और नम्रता से अपना अज्ञान स्वीकार करो।</span> <sup>31</sup><span class='v-txt'>अपने पाप स्वीकार करने में संकोच मत करो।  पाप के कारण किसी की अधीनता स्वीकार मत करो।</span> <sup>32</sup><span class='v-txt'>शक्तिशाली का विरोध मत करो; नदी के प्रवाह का सामना मत करो।</span> <sup>33</sup><span class='v-txt'>मृत्यु तक न्याय के लिए संघर्ष करो और प्रभु-ईश्वर तुम्हारे लिए युद्ध करेगा।</span> <sup>34</sup><span class='v-txt'>जब तुम करनी में आलसी और निष्क्रिय हो, तो कथनी में धृष्ट मत बनो!</span> <sup>35</sup><span class='v-txt'>अपने दासों को निकाल कर और अपने अधीन लोगों पर अत्याचार कर अपने घर में सिंह मत बनो।</span> <sup>36</sup><span class='v-txt'>लेने के लिए अपना हाथ मत पसारो और देने के लिए उसे बन्द मत रखो।</span> </p>
+        <div class='nav'><a href='028003.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028005.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

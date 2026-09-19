@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लेवी - अध्याय 20</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लेवी</h1>
+        <h2>अध्याय 20</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>&quot;इस्राएलियों से यह कहो - यदि इस्राएलियों में से या इस्राएल में रहने वाले प्रवासियों में से कोई अपनी संतान मोलेक देवता को चढ़ाएगा, तो उसे प्राणदण्ड दिया जायेगा, देश वासी उसे पत्थरों से मार डालेंगे।</span> <sup>3</sup><span class='v-txt'>मैं उस पर अप्रसन्न हो जाऊँगा और उसका समुदाय से बहिष्कार करूँगा; क्योंकि उसने मोलेक देवता को अपनी संतान चढ़ा कर मेरे पवित्र-स्थान को दूषित किया और मेरा पवित्र नाम अपवित्र किया।</span> <sup>4</sup><span class='v-txt'>यदि देष के निवासी उस बात पर ध्यान नहीं देंगे कि उस व्यक्ति ने अपनी संतान मोलेक को चढ़ायी है और उसे प्राणदण्ड नहीं देंगे,</span> <sup>5</sup><span class='v-txt'>तो मैं उस पर और उसके परिवार पर अप्रसन्न हो जाऊँगा और उनका उसके समुदाय से बहिष्कार करूँगा, उसे और उन सबको जो व्यभिचार करते हुए उसका अनुसरण करते हैं।</span> <sup>6</sup><span class='v-txt'>यदि कोई भूत-प्रेत साधने वालों या ओझों के पास जायेगा तथा व्यभिचार करते हुए उनका अनुसरण करेगा, तो मैं उस पर अप्रसन्न हो जाऊँगा और उसका उसके समुदाय से बहिष्कार करूँगा।</span> <sup>7</sup><span class='v-txt'>तुम अपने को पवित्र करो और पवित्र बने रहो। मैं प्रभु, तुम्हारा ईश्वर हूँ।</span> <sup>8</sup><span class='v-txt'>तुम मेरी विधियों का पालन करोगे और उनके अनुसार आचरण करोगे। मैं वह प्रभु हूँ जो तुमको पवित्र करता है।</span> <sup>9</sup><span class='v-txt'>यदि कोई अपने पिता या अपनी माता को अभिशाप देगा, तो उसे प्राणदण्ड दिया जाएगा। उसने अपने पिता या माता को अभिशाप दिया, इसलिए उसका रक्त उसके सिर पड़ेगा।</span> <sup>10</sup><span class='v-txt'>यदि कोई पुरुष किसी की पत्नी - अपने पड़ोसी की पत्नी - से व्यभिचार करे, तो व्यभिचारी और व्यभिचारिणी को प्राणदण्ड दिया जाएगा।</span> <sup>11</sup><span class='v-txt'>यदि कोई अपने पिता की किसी पत्नी के साथ व्यभिचार करे, तो वह अपने पिता का अनादर करता है। दोनों को प्राणदण्ड दिया जाएगा उनका रक्त उनके सिर पडेगा।</span> <sup>12</sup><span class='v-txt'>यदि कोई अपनी पुत्रवधु के साथ व्यभिचार करे, तो दोनों को प्राणदण्ड दिया जाएगा। उन्होंने घृणित पाप किया - उनका रक्त उनके सिर पडेगा।</span> <sup>13</sup><span class='v-txt'>यदि कोई स्त्री की तरह किसी पुरुष के साथ प्रसंग करे, तो दोनों घृणित पाप करते हैं। उनको प्राणदण्ड दिया जाएगा - उनका रक्त उनके सिर पडेगा।</span> <sup>14</sup><span class='v-txt'>यदि कोई किसी स्त्री और उसकी माता, दोनों के साथ विवाह करे, तो यह घृणित पाप है। उस पुरुष और दोनों स्त्रियों को आग में जलाया जाएगा; इस प्रकार का कुकर्म तुम लोगों में नहीं रहेगा।</span> <sup>15</sup><span class='v-txt'>यदि कोई पशुगमन करे, तो उसे और पषु को दोनों को मार दिया जाएगा।</span> <sup>16</sup><span class='v-txt'>यदि कोई स्त्री किसी पशु के साथ प्रसंग होने दे, तो उसे और पशु, दोनों को मार दिया जाएगा। उन्हें मारना है - उनका रक्त उनके सिर पडेगा।</span> <sup>17</sup><span class='v-txt'>यदि कोई पुरुष अपनी बहन के साथ विवाह करे - चाहे वह उसके पिता की पुत्री हो, चाहे उसकी माता कि हो - और वह प्रसंग करें, तो दोनों को लोगों के सामने मारना है। उसने अपनी बहन का अनादर किया और वह दोषी है।</span> <sup>18</sup><span class='v-txt'>यदि कोई पुरुष किसी स्त्री के मासिक धर्म के समय उसकी अनुमति से उसके साथ प्रसंग करे, तो दोनों को मारा जाएगा; क्योंकि उन्होंने उसके रक्त का बहता स्रोत उघारा।</span> <sup>19</sup><span class='v-txt'>तुम अपने पिता या अपनी माता कि बहन का शील भंग नहीं करोगे। जो ऐसा करता है, वह अपनी निकट कुटुम्बिनी का अनादर करता है और वह दोषी है।</span> <sup>20</sup><span class='v-txt'>जो अपनी चाची का शील भंग करता है, वह अपने चाचा का अनादर करता है। वह दोषी है और वे निःसन्तान मर जायेंगे।</span> <sup>21</sup><span class='v-txt'>यदि कोई अपनी भाई की पत्नि से विवाह करता है, तो वह व्यभिचार है। उसने अपने भाई का अनादर किया। दोनों निःसन्तान मर जायेंगे।</span> <sup>22</sup><span class='v-txt'>जब तुम मेरी सब विधियों और आदेशों का पालन करोगे और उनके अनुसार आचरण करोगे तो मैं जिस देश में तुम लोगों को ले जाऊँगा, वह तुम्हें बाहर नहीं निकालेगा।</span> <sup>23</sup><span class='v-txt'>जिन जातियों को मैं तुम्हारे सामने निकाल दूँगा, तुम उनकी प्रथाओं का अनुसरण नहीं करोगे। उनके कुकर्मों के कारण मैं उन से घृणा करता था।</span> <sup>24</sup><span class='v-txt'>मैंने तुम लोगों से कहा, &quot;तुम उनके देश अपने अधिकार में करोगे। मैं उस देश को, जहाँ दूध और मधु कि नदियॉँ बहती हैं, तुम लोगों को विरासत के रूप में देता हूँ&quot;। मैं प्रभु, तुम्हारा ईश्वर हूँ। मैंने तुम को अन्य राष्ट्रों से अलग कर लिया।</span> <sup>25</sup><span class='v-txt'>तुम शुद्ध और अशुद्ध पशुओं तथा अशुद्ध और शुद्ध पक्षियों में भेद करोगे। तुम उन पशुओं, पक्षियों और भूमि पर रेगनें वाले जीवों से अपने को दूषित नहीं करोगे, जिन्हें मैंने तुम्हारे लिये अशुद्ध घोषित किया है।</span> <sup>26</sup><span class='v-txt'>मेरे लिये पवित्र बनो, क्योंकि मैं प्रभु पवित्र हूँ। मैंने तुम लोगों को अन्य राष्ट्रों से अपने लिये अलग कर लिया है।</span> <sup>27</sup><span class='v-txt'>जो पुरुष और स्त्रियाँ भूत-प्रेत की साधना करते है, या जादू-टोना करते हैं, उन्हें मार डाला जाए। वे पत्थरों से मारे जायेंगे उनका रक्त उनके सिर पडेगा।&#039;&#039;</span> </p>
+        <div class='nav'><a href='003019.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='003021.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

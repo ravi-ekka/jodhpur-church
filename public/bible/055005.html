@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गलातियों - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गलातियों</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मसीह ने स्वतन्त्र बने रहने के लिए ही हमें स्वतन्त्र बनाया, इसलिए आप लोग दृढ़ रहें और फिर दासता के जुए में नहीं जुतें।</span> <sup>2</sup><span class='v-txt'>मैं, पौलुस, आप लोगों से यह कहता हूँ -  यदि आप ख़तना करायेंगे, तो आप को मसीह से कोई लाभ नहीं होगा।</span> <sup>3</sup><span class='v-txt'>मैं ,खतना कराने वाले हर एक व्यक्ति से फिर कहता हूँ कि उसे समस्त संहिता का पालन करना है।</span> <sup>4</sup><span class='v-txt'>यदि आप अपनी धार्मिकता के लिए संहिता पर निर्भर रहना चाहते हैं, तो आपने मसीह से अपना सम्बन्ध तोड़ लिया और ईश्वर की कृपा को खो दिया है।</span> <sup>5</sup><span class='v-txt'>हम तो उस धार्मिकता की तीव्र अभिलाषा करते हैं;  जो विश्वास पर आधारित हैं और आत्मा द्वारा प्राप्त होती है।</span> <sup>6</sup><span class='v-txt'>यदि हम ईसा मसीह से संयुक्त हैं तो न ख़तने का कोई महत्व है और न उसके अभाव का।  महत्व विश्वास का है, जो प्रेम से अनुप्रेरित है।</span> <sup>7</sup><span class='v-txt'>आप लोग अच्छी प्रगति कर रहे थे।  आप को किसने सत्य के मार्ग पर आगे बढ़ने से रोका?  उस व्यक्ति ने जो भी तर्क दिया हो,</span> <sup>8</sup><span class='v-txt'>वह तर्क ईश्वर की ओर से नहीं आया, जो आप लोगों को बुलाता है।</span> <sup>9</sup><span class='v-txt'>याद रखें, थोड़ा सा ख़मीर सारे सने हुए आटे को ख़मीर बना देता है।</span> <sup>10</sup><span class='v-txt'>मुझे प्रभु में आप लोगों पर यह भरोसा है कि आप विचलित नहीं होंगे।  जो व्यक्ति आप लोगों में अशान्ति उत्पन्न करता है, वह, चाहे जो भी हो, ईश्वर का दण्ड भोगेगा।</span> <sup>11</sup><span class='v-txt'>भाइयो!  यदि मैं अब तक खतने का प्रचार करता, तो मुझ पर अब तक अत्याचार क्यों किया जा रहा है?  यदि मैं ऐसा करता, तो क्रूस के कारण जो बाधा होती है, वह समाप्त हो जाती।</span> <sup>12</sup><span class='v-txt'>अच्छा यही होता है कि जो लोग आप में अशान्ति उत्पन्न करते हैं, वे अपने को नपुंसक बना लेते!</span> <sup>13</sup><span class='v-txt'>भाइयो!  आप जानते हैं कि आप लोग स्वतन्त्र होने के लिए बुलाये गये हैं।  आप सावधान रहें, नहीं तो यह स्वतन्त्रता भोग-विलास का कारण बन जायेगी।</span> <sup>14</sup><span class='v-txt'>आप लोग प्रेम से एक दूसरे की सेवा करें, क्योंकि एक ही आज्ञा में समस्त संहिता निहित है, और वह यह है- अपने पड़ोसी को अपने समान प्यार करो।</span> <sup>15</sup><span class='v-txt'>यदि आप लोग एक दूसरे को काटने और फाड़ डालने की चेष्टा करेंगे, तो सावधान रहें।  कहीं ऐसा न हो कि आप एक दूसरे का सर्वनाश करें।</span> <sup>16</sup><span class='v-txt'>मैं यह कहना चाहता हूँ- आप लोग आत्मा की प्रेरणा के अनुसार चलेंगे, तो शरीर की वासनाओं को तृप्त नहीं करेंगे।</span> <sup>17</sup><span class='v-txt'>शरीर तो आत्मा शरीर के विरुद्ध।  ये दोनों एक दूसरे के विररोधी हैं।  इसलिए आप जो चाहते हैं, वही नहीं कर पाते हैं।</span> <sup>18</sup><span class='v-txt'>यदि आप आत्मा की प्रेरणा के अनुसार चलते है, तो संहिता के अधीन नहीं हैं।</span> <sup>19</sup><span class='v-txt'>शरीर के कुकर्म प्रत्यक्ष हैं, अर्थात् व्यभिचार, अशुद्धता, लम्पटता,</span> <sup>20</sup><span class='v-txt'>मूर्तिपूजा, जादू-टोना, बैर, फूट, ईर्ष्या, क्रोध, स्वार्थ-परता, मनमुटाव, दलबन्दी,</span> <sup>21</sup><span class='v-txt'>द्वेष, मतवालापन, रंगरलियाँ और इस प्रकार की और बातें। मैं आप लोगों से कहता हूँ जैसा कि मैंने पहले भी कहा- जो इस प्रकार का आचरण करते हैं, वे ईश्वर के राज्य के अधिकारी नहीं होंगे।</span> <sup>22</sup><span class='v-txt'>परन्तु आत्मा का फल है-प्रेम, आनन्द, शान्ति, सहनशीलता, मिलनसारी, दयालुता ईमानदारी,</span> <sup>23</sup><span class='v-txt'>सौम्यता और संयम।  इनके विरुद्ध कोई विधि नहीं है।</span> <sup>24</sup><span class='v-txt'>जो लोग ईसा मसीह के हैं, उन्होंने वासनाओं तथा कामनाओं-सहित अपने शरीर को क्रूस पर चढ़ा दिया है।</span> <sup>25</sup><span class='v-txt'>यदि हमें आत्मा द्वारा जीवन प्राप्त हो गया है, तो हम आत्मा के अनुरूप जीवन बितायें।</span> <sup>26</sup><span class='v-txt'>हम मिथ्याभिमानी न बनें, एक दूसरे को न छेड़ें और एक दूसरे से ईर्ष्या न करें।</span> </p>
+        <div class='nav'><a href='055004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='055006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

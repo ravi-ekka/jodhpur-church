@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लेवी - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लेवी</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>हारून के पुत्र नादाब और अबीहू ने अपने-अपने धूपदानों में आग रख कर उस में धूप-द्रव्य डाला और प्रभु को ऐसी अग्नि अर्पित की, ये प्रभु के नियमों के अनुसार नहीं थीं।</span> <sup>2</sup><span class='v-txt'>इस पर प्रभु के सामने से अग्नि निकली और उसने उन्हें भस्म कर दिया। इस प्रकार प्रभु के सामने उनकी मृत्यु हो गई।</span> <sup>3</sup><span class='v-txt'>इस पर मूसा ने हारून से कहा, &#039;&#039;प्रभु ने वही कहा था - जो मेरे निकट आयेंगे, वे मुझे पवित्र मानेंगे; सारी प्रजा के सामने मेरी महिमा प्रकट को जायेगी।&#039;&#039; हारून मौन रहा।</span> <sup>4</sup><span class='v-txt'>मूसा ने हारून के चाचा, उज्जीएल के पुत्र मीशाएल और एल्साफान को बुलावा भेजा और उन से कहा &#039;&#039;यहाँ आओ, अपने भाइयों को पवित्र-स्थान से शिविर के बाहर ले जाओ।&#039;&#039;</span> <sup>5</sup><span class='v-txt'>वे आये और मूसा के आदेश के अनुसार उन्हें कुरते पहने हुए ही शिविर के बाहर ले गये।</span> <sup>6</sup><span class='v-txt'>मूसा ने हारून और उसके पुत्र एलआजार और ईतामार से कहा, &#039;&#039;तुम अपने बाल खुले मत रखो और न अपने वस्त्र ही फाड़ो। नहीं तो तुम्हारी मृत्यु हो जायेगी और सारे समुदाय पर प्रभु का कोप भड़क उठेगा। इस्राएली प्रजा, तुम्हारे सब भाई-बन्धु उन पर शोक मना सकते हैं, जिनका प्रभु की अग्नि ने विनाश किया है।</span> <sup>7</sup><span class='v-txt'>तुम लोग दर्शन-कक्ष का द्वार मत छोड़ो। नहीं तो तुम्हारी मृत्यु हो जायेगी; क्योंकि प्रभु के अभ्यंजन के तेल से तुम्हारा विलेपन किया गया है।&#039;&#039; उन्होंने मूसा का आदेश मान लिया।</span> <sup>8</sup><span class='v-txt'>प्रभु ने हारून से कहा,</span> <sup>9</sup><span class='v-txt'>&#039;&#039;जब तुम और तुम्हारे पुत्र दर्शन-कक्ष में प्रवेश करें, तो तुम अंगूरी या अन्य मादक पेय नहीं पी सकते हो। नहीं तो तुम्हारी मृत्यु हो जायेगी। यह पीढ़ी-दर-पीढ़ी चिरस्थायी आदेश है</span> <sup>10</sup><span class='v-txt'>तुम्हारे लिए यह आवश्यक है कि तुम पवित्र और अपवित्र, शुद्व और अशुद्व का भेद जानो।</span> <sup>11</sup><span class='v-txt'>तुम्हें इस्राएलियों को उन सब नियमों की शिक्षा देनी है, जिन्हें प्रभु ने मूसा द्वारा घोषित किया है।&#039;&#039;</span> <sup>12</sup><span class='v-txt'>मूसा ने हारून और उसके जीवित पुत्रों-एलआजार और ईतामार - से कहा, &#039;&#039;प्रभु को अन्न बलि चढ़ाने के बाद जो अंश बच जाता है, तुम उसे वेदी के पास ख़मीर के बिना खा सकते हो। यह परमपवित्र हैं।</span> <sup>13</sup><span class='v-txt'>तुम इसे एक पवित्र स्थान पर खाओगें। प्रभु के चढ़ावे के इस अंश पर तुम्हारा और तुम्हारे पुत्रों का अधिकार है। मुझे ऐसा आदेश मिला है।</span> <sup>14</sup><span class='v-txt'>सीना, जो हिल-हिला कर चढ़ाया गया है और जाँघ, जो दी गयी है, यह इस्राएलियों की शान्ति-बलियों का वह भाग है, जिस पर तुम्हारा और तुम्हारे वंश का अधिकार है। उसे तुम्हारे पुत्र और पुत्रियाँ एक शुद्ध स्थान पर खा सकती हैं।</span> <sup>15</sup><span class='v-txt'>जाँघ, जो दी गयी है और सीना, जो हिला-हिला कर चढाया गया है, उन्हें लोग उस चरबी के साथ ले आयें, जो जलायी जायेगी। यह सब प्रभु के सामने हिला-हिला कर चढ़ाया जायेगा। इसके बाद जाँघ और सीना, दोनों तुम्हे मिलेगें। उन पर तुम्हारा और तुम्हारे पुत्रों का चिरस्थायी अधिकार है। प्रभु ने ऐसा आदेश दिया है।</span> <sup>16</sup><span class='v-txt'>मूसा ने जब प्रायश्चित-बलि के बकरे के विषय में पूछा, तो पता चला कि वह जला दिया गया है। उसने क्रुद्ध होकर हारून के जीवित पुत्रों - एलआजार और ईतामार से पूछा,</span> <sup>17</sup><span class='v-txt'>&#039;&#039;तुमने प्रायश्चित-बलि को पवित्र-स्थान पर क्यों नहीं खाया? वह तो परमपिवत्र है। वह तुम्हें इसीलिए मिला था कि तुम प्रभु के सामने उस से प्रायश्चित-विधि सम्पन्न करो और समुदाय का पाप दूर करो।</span> <sup>18</sup><span class='v-txt'>उसका रक्त पवित्र-स्थान के भीतर नहीं लाया गया, इसलिए तुम्हें उसे उसके पास ही खाना चाहिए था, जैसा कि मैंने आदेश दिया था।&#039;&#039;</span> <sup>19</sup><span class='v-txt'>इस पर हारून ने मूसा को उत्तर दिया, &#039;&#039;आज ही तो उन्होंने अपनी प्रायश्चित और होम-बलि प्रभु को चढ़ायी है, फिर भी मुझ पर ऐसी विपत्तियाँ आ पड़ी। यदि आज में प्रायश्चित बलि का मांस खाता, तो क्या यह प्रभु को अच्छा लगता?&#039;&#039;</span> <sup>20</sup><span class='v-txt'>यह सुन कर मूसा सन्तुष्ट हो गया।</span> </p>
+        <div class='nav'><a href='003009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='003011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

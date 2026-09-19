@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>इसायाह - अध्याय 33</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>इसायाह</h1>
+        <h2>अध्याय 33</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>विनाश करने वाले! तुम को धिक्कार! तुम्हारा विनाश अब तक नहीं हुआ।  विश्वासघाती! तुम को धिक्कार, जिसके साथ अब तक विश्वासघात नहीं किया गया! जब तुमने सब का विनाश कर दिया होगा, तो तुम्हारा भी विनाश किया जायेगा।  जब तुम विश्वाघात कर चुके होगे, तो तुम्हारे साथ भी विश्वासघात किया जायेगा।</span> <sup>2</sup><span class='v-txt'>प्रभु! तू हम पर दया कर।  तुझ पर भरोसा है।  तू हर सुबह हमें बल प्रदान कर; तू विपत्ति में हमारी रक्षा कर।</span> <sup>3</sup><span class='v-txt'>मेघगर्जन सुन कर लोग भाग जाते हैं; जब तू उठ कर खड़ा हो जाता है, तो राष्ट्र छितरा जाते हैं।</span> <sup>4</sup><span class='v-txt'>तब लूट एकत्र हो जाती है और लोग टिड्डियों की तरह उस पर टूट पड़ते हैं।</span> <sup>5</sup><span class='v-txt'>प्रभु सवोच्य हैं।  वह ऊँचाइयों पर निवास करता है।  वह सियोन को न्याय और धार्मिकता से परिपूर्ण कर देगा।</span> <sup>6</sup><span class='v-txt'>वह तुम्हारे दिनों की सुरक्षा होगा।  प्रज्ञा, ज्ञान और प्रभु पर श्रद्धा यही तुम्हारा ख़जा़ना होगा।</span> <sup>7</sup><span class='v-txt'>देखो, अरीएल के शूरवीर विलाप कर रहे हैं, शान्ति के सन्देशवाहक फूट-फूट कर रो रहे हैं।</span> <sup>8</sup><span class='v-txt'>राजमार्ग खाली हैं, सड़कों पर कोई नहीं दिखता।  सन्धि भंग हो गयी है, नगर उजाड़ हैं और किसी का ध्यान नहीं रखा जाता।</span> <sup>9</sup><span class='v-txt'>देश शोक मनाता है और नष्ट हो रहा है।  लेबनोन लज्जा से मुरझाता जा रहा है।  शारोन मरुभूमि बन रहा है।  बाशान और करमेल में पतझड़ है।</span> <sup>10</sup><span class='v-txt'>प्रभु कहता है, “अब में उठूँगा, उब मैं उठ खड़ा हो जाऊँगा, अब मेरी महिमा प्रकट की जायेगी।</span> <sup>11</sup><span class='v-txt'>तुम्हारे गर्भ में भूसा है, तुम पुआल पैदा करते हो; तुम्हारी साँस तुम को आग की तरह भस्म करेगी।</span> <sup>12</sup><span class='v-txt'>राष्ट्र जल कर चूने के सदृश बन जायेंगे।  काटे हुए काँटों की तरह आग में धधक उठेंगे।“</span> <sup>13</sup><span class='v-txt'>तुम, जो दूर हो, सुनो कि मैंने क्या किया है।  तुम जो निकट हो, मेरा सामर्थ्य स्वीकार करो।</span> <sup>14</sup><span class='v-txt'>सियोन के पापी आतंकित हैं, विधर्मी काँपने लगे।  “हम में कौन धधक्ती आग में टिक सकता है?  हम में कौन सदा जलने वाली भट्टी में टिक सकता है?“</span> <sup>15</sup><span class='v-txt'>जो सदाचारण करता और सत्य बोलता है, जो अत्याचार द्वारा लाभ नहीं उठाता और घूस स्वीकार नहीं करता; जो वध का षड्यन्त्र सुन कर कान बन्द कर लेता, जिसकी आँखें बुराई नहीं देखना चाहतीं,</span> <sup>16</sup><span class='v-txt'>वह ऊँचाई पर निवास करेगा, उसका आश्रय पर्वत पर बसा हुआ क़िला होगा; उसे रोटी मिलती रहेगी और उसे कभी पानी का अभाव नहीं होगा।</span> <sup>17</sup><span class='v-txt'>तुम्हारी आँखें राजा के वैभव के दर्शन करेंगी।  तुम दूर तक फैला हुआ देश देखोगे।</span> <sup>18</sup><span class='v-txt'>तुम बीते दिनों के आतंक पर विचार करोगेः “हमारी आय का लेखा करने वाले और कर वसूल करने वाले अब कहाँ हैं?  कहाँ है वह अधिकारी, जो हमारे बुर्जों को निरीक्षण करता था?“</span> <sup>19</sup><span class='v-txt'>तुम्हें अहंकारी लोग दिखाई नहीं देंगे, जो विदेशी और अस्पष्ट भाषा में ऐसी बातें करते थे, जिन्हें तुम ही समझते थे।</span> <sup>20</sup><span class='v-txt'>हमारे पर्वों के नगर सियोन पर दृष्टि दौड़ाओ।  तुम्हारी आँखें येरूसालेम को एक शान्तिमय क्षेत्र के रूप में देखेंगी एक तम्बू, जो नहीं उठाया जायेगा, जिसकी खूँटियाँ नहीं उखाड़ी जायेंगी, जिसकी रस्सियाँ नहीं खोली जायेंगी।</span> <sup>21</sup><span class='v-txt'>प्रभु वहाँ हम पर अपनी महिमा प्रकट करेगा।  येरूसालेम महानदियों और चैड़ी नहरों का क्षेत्र-जैसा बनेगा, किन्तु उन पर युद्धपोत नहीं आयेंगे; उन पर बड़े जलयान आक्रमण नहीं करेंगे;</span> <sup>22</sup><span class='v-txt'>क्योंकि प्रभु हमारा न्यायाधीश है, वही हमारा विधिकर्ता है। प्रभु हमारा राजा है, वही हमारा उद्वार करेगा।</span> <sup>23</sup><span class='v-txt'>तुम्हारी रस्सियाँ ढीली पड़ गयी हैं।  वे न तो मस्तूल को अपनी जगह बनाये रखती और न झण्डे को फहराती हैं। तब अपार लूट बाँटी जायेगी; लँगड़े तक उस में से अपना हिस्सा ले सकेंगे।</span> <sup>24</sup><span class='v-txt'>वहाँ एक भी निवासी यह नहीं कहेगा कि मैं बीमार हूँ। येरूसालेम के नागरिकों का पाप क्षमा होगा।</span> </p>
+        <div class='nav'><a href='029032.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='029034.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

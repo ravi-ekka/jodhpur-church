@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>इसायाह - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>इसायाह</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>यूदा और येरूसालेम के विषय में यूदा के राजा उज़्ज़ीया, योताम, आहाज़ और हिज़कीया के दिनों में आमोस के पुत्र इसायाह का देखा हुआ दिव्य दृश्य।</span> <sup>2</sup><span class='v-txt'>आकाश! सुनो; पृथवी! ध्यान दो; क्योंकि प्रभु बोला हैः “मैंने पुत्रों का पालन-पोषण किया, किन्तु उन्होंने मेरे विरुद्ध विद्रोह किया है।</span> <sup>3</sup><span class='v-txt'>बैल अपने मालिक को पहचानता है, गधा अपने मालिक की नाँद जानता है; किन्तु इस्राएल नहीं जानता, मेरी प्रजा नहीं समझती।“</span> <sup>4</sup><span class='v-txt'>धिक्कार इस पापी राष्ट्र को, दोष से लदे लोगों को, अपराधियों की सन्तति को, पथभ्रष्ट पुत्रों को!  उन्होंने प्रभु का परित्याग किया, इस्राएल के परमपावन ईश्वर का तिरस्कार किया और उसे पीठ दिखायी।</span> <sup>5</sup><span class='v-txt'>तुम विद्रोह करते रहते हो, तुम्हारे किस अंग पर प्रहार किया जाय?  तुम्हारा सारा सिर घायल है, तुम्हारा हृदय टूट गया है।</span> <sup>6</sup><span class='v-txt'>सिर से पैर तक कोई स्थान स्वस्थ नहीं रहा - केवल चोट, साँट और रक्त बहते घाव।  उनका न तो मवाद पोंछा गया, न उन पर पट्टी बाँधी गयी और न तेल लगाया।</span> <sup>7</sup><span class='v-txt'>तुम्हारा देश उजाड़ पड़ा है।  तुम्हारे नगर जलाये गये हैं।  विदेशी तुम्हारे सामने ही तुम्हारी फ़सलें खाते हैं। तुम्हारा देश मानो शत्रुओं द्वारा उजाड़ दिया गया है।</span> <sup>8</sup><span class='v-txt'>सियोन की पुत्री रह गयी है - दाखबारी में झोपड़ी की तरह, ककड़ी के खेत में मचान की तरह, सेना से घिरे नगर की तरह।</span> <sup>9</sup><span class='v-txt'>यदि विश्वमण्डल के प्रभु ने हम में कुछ लोगों को नहीं बचाया होता, तो हम सोदोम और गोमोरा की तरह पूर्ण रूप से नष्ट हो गये होते।</span> <sup>10</sup><span class='v-txt'>सोदोम के शासको! प्रभु की वाणी सुनो।  गोमारा की प्रजा! ईश्वर की शिक्षा पर ध्यान दो।</span> <sup>11</sup><span class='v-txt'>प्रभु यह कहता है: “तुम्हारे असंख्य बलिदानों से मुझ को क्या?  में तुम्हारे मेढ़ों और बछड़ों की चरबी से ऊब गया हूँ।  मैं साँड़ों, मेमनों और बकरों का रक्त नहीं चाहता।</span> <sup>12</sup><span class='v-txt'>जब तुम मेरे दर्शन करते आते हो, तो कौन तुम से यह सब माँगता है?  तुम मेरे प्रांगण क्यों रौंदते हो?</span> <sup>13</sup><span class='v-txt'>मेरे पास व्यर्थ का चढ़ावा लिये फिर नहीं आना।  तुम्हारे लोबान से मुझे घृणा हो गयी है।  अमावस, विश्राम-दिवस और तुम्हारी धर्म-सभाएँ।  मैं अन्याय के कारण ये सब समारोह सहन नहीं करता।</span> <sup>14</sup><span class='v-txt'>तुम्हारे अमावस और अन्य पर्वों से मुझे घृणा हो गयी है, ये मेरे लिए असह्य भार बन गये हैं।</span> <sup>15</sup><span class='v-txt'>जब तुम अपने हाथ फैलाते हो, तो मैं तुम्हारी ओर से आँख फेर लेता हूँ।  मैं तुम्हारी असंख्य प्रार्थनाओं को अनसुना कर देता हूँ।  तुम्हारे हाथ रक्त से रँगे हुए हैं।</span> <sup>16</sup><span class='v-txt'>स्नान करो, शुद्ध हो जाओ।  अपने कुकर्म मेरी आँखों के सामने से दूर करो।  पाप करना छोड़ दो,</span> <sup>17</sup><span class='v-txt'>भलाई करना सीखो।  न्याय के अनुसार आचरण करो, पद्दलितों को सहायता दो, अनाथों को न्याय दिलाओ और विधवाओं की रक्षा करो।“</span> <sup>18</sup><span class='v-txt'>प्रभु कहता है: “आओ, हम एक साथ विचार करें।  तुम्हारे पाप सिंदूर की तरह लाल क्यों न हों, वे हिम की तरह उज्जवल हो जायेंगे; वे किरमिज की तरह मटमैले क्यों न हों, वे ऊन की तरह श्वेत हो जायेंगे।</span> <sup>19</sup><span class='v-txt'>यदि तुम अज्ञापालन स्वीकार करोगे, तो भूमि की उपज खा कर तृप्त हो जाओगे।</span> <sup>20</sup><span class='v-txt'>किन्तु यदि तुम अस्वीकार कर विद्रोह करोगे, तो तलवार के घाट उतार दिये जाओगे।“ यह प्रभु की वाणी है।</span> <sup>21</sup><span class='v-txt'>यह साध्वी नगरी कैसे वेश्या बन गयी है?  जहाँ पहले न्याय और धार्मिकता का निवास था, वहाँ आज हत्यारे ही पाये जाते हैं!</span> <sup>22</sup><span class='v-txt'>तेरी चाँदी धातुमल बन गयी है, तेरी अंगूरी पानी से भी पतली हो गयी है।</span> <sup>23</sup><span class='v-txt'>तेरे शासक विद्रोही और चारों के साथी हैं।  वे उपहार पसन्द करते और रिश्वत के लोभी हैं।  वे अनाथ को न्याय नहीं दिलाते और विधवाओं के मामले नहीं सुनते।</span> <sup>24</sup><span class='v-txt'>इसलिए विश्वमण्डल का प्रभु, इस्राएल का सर्वशक्तिमान् ईश्वर यह कहता हैः “मैं अपने विरोधियों को पराजित करूँगा, मैं अपने शत्रुओं से बदला चुकाऊँगा।</span> <sup>25</sup><span class='v-txt'>मैं तुझ पर अपना हाथ उठाऊँगा, मैं तुझे घरिया में गला कर तेरी मैल दूर करूँगा।</span> <sup>26</sup><span class='v-txt'>मैं तेरे न्यायकर्ताओं और मन्त्रियों को पहले-जैसा बना दूँगा।  तब तेरा यह नाम होगा: धार्मिक एवं विश्वसनीय नगरी।“</span> <sup>27</sup><span class='v-txt'>न्याय से ही सियोन का और धार्मिकता से उसके निवासियों का उद्वार होगा।</span> <sup>28</sup><span class='v-txt'>किन्तु विद्रोही और पापी नष्ट हो जायेंगे।  जो प्रभु का परित्याग करते हैं, उनका सर्वनाश किया जायेगा।</span> <sup>29</sup><span class='v-txt'>जो बलूत वृक्ष तुम लोगों को इतने प्रिय हैं, उनके कारण तुम्हें लज्जित होना पड़ेगा।  जिन उद्यानों पर तुम को इतना गौरव था, उनके कारण तुम कलंकित हो जाओगे।</span> <sup>30</sup><span class='v-txt'>तुम उस बलूत के सदृश बनोगे, जिसके पत्ते सूख गये हैं, उस उद्यान के सदृश, जिसे कोई नहीं सींचता।</span> <sup>31</sup><span class='v-txt'>शक्तिशाली व्यक्ति सूखा ईंधन बनेगा और उसकी बनायी प्रतिमा चिनगारी: दोनों एक साथ जल उठेंगे और बुझाने वाला कोई नहीं होगा।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='029002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

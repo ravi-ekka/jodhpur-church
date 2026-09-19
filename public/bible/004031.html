@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 31</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 31</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;तुम इस्राएलियों का बदला मिदयानियों से लो। इसके बाद तुम अपने पूर्वजों से जा मिलोगे।&#039;&#039;</span> <sup>3</sup><span class='v-txt'>इस पर मूसा ने लोगों से कहा, &#039;&#039;तुम में से एक दल युद्ध के लिए तैयार हो जाये। वह प्रभु के नाम पर मिदयानियों से बदला लेने जाये।</span> <sup>4</sup><span class='v-txt'>तुम इस्राएलियों के प्रत्येक वंश से युद्ध के लिए एक-एक हज़ार पुरुष भेजो।&#039;&#039;</span> <sup>5</sup><span class='v-txt'>इसलिए इस्राएल के प्रत्येक वंश से एक हज़ार मनुष्य चुने गये, अर्थात् कुल बारह हजार सषस्त्र सैनिक।</span> <sup>6</sup><span class='v-txt'>मूसा ने प्रत्येक कुल के एक हज़ार पुरुष भेजे और उनके साथ याजक एलआजार के पुत्र पीनहास को, जो पवित्र-स्थान के पात्र और युद्ध की तुरहियाँ अपने साथ ले गया।</span> <sup>7</sup><span class='v-txt'>इस प्रकार, जैसी प्रभु ने मूसा को आज्ञा दी थी, वे मिदयानियों से लड़ने निकले। उन्होंने उनके सब पुरुषों को मार डाला।</span> <sup>8</sup><span class='v-txt'>मारे हुओं में मिदयान के ये राजा थे : ऐवी, रेकेम, सूर, हूर और रेबा। उन्होंने बओर के पुत्र बिलआम को भी तलवार के घाट उतारा।</span> <sup>9</sup><span class='v-txt'>तब इस्राएली लोग मिदयानियों की स्त्रियों और उनके बच्चों को बन्दी बना कर ले गये और उनके सब पशुओं, रेवड़ों और उनके सब सामान को लूट लिया।</span> <sup>10</sup><span class='v-txt'>उन्होंने उनके सब नगरों और शिविरों को जला दिया।</span> <sup>11</sup><span class='v-txt'>वे लूट का सारा माल, बन्दियों और पशुओं को ले गये।</span> <sup>12</sup><span class='v-txt'>वे बन्दियों को, पकड़े हुए पशुओं को और लूट का सारा माल मूसा, एलआज़ार और इस्राएलियों के समुदाय के पास, यर्दन नदी के तट पर, येरीख़ों के सामने, मोआब के मैदान में शिविर में ले आये।</span> <sup>13</sup><span class='v-txt'>मूसा, याजक एलआज़ार और समुदाय के सब नेता उनसे मिलने के लिए शिविर के बाहर आये।</span> <sup>14</sup><span class='v-txt'>मूसा युद्ध से लौटने वाले सेनापतियों, सहस्रपतियों और शतपतियों पर क्रुद्ध हुआ।</span> <sup>15</sup><span class='v-txt'>मूसा ने उन से पूछा, &#039;&#039;क्या तुमने सब स्त्रियों को जीवित छोड़ दिया हैं ?</span> <sup>16</sup><span class='v-txt'>इन्होंने तो बिलआम के परामर्श के अनुसार पओर में इस्राएलियों को बहकाया और इसके कारण प्रभु ने समुदाय पर महामारी भेजी।</span> <sup>17</sup><span class='v-txt'>इसलिए सब लड़कों को मार डालो और उन स्त्रियों को भी, जिनका पुरुष से प्रसंग हुआ है।</span> <sup>18</sup><span class='v-txt'>किन्तु तुम उन सब कन्याओं को, जिनका पुरुष से प्रसंग नहीं हुआ है, जीवित छोड़ सकते हो।</span> <sup>19</sup><span class='v-txt'>तुम सात दिन तक शिविर के बाहर रहो। प्रत्येक व्यक्ति, जिसने किसी को मारा है या किसी मृतक का स्पर्श किया है, तीसरे या सातवें दिन अपना शुद्धीकरण करायेगा। यह तुम पर और तुम्हारे बन्दियों पर लागू है।</span> <sup>20</sup><span class='v-txt'>तुम सब कपड़े, चमडे की, बकरों की बालों की बनी हुई और लकड़ी की सब वस्तुएँ शुद्ध करोगे।&#039;&#039;</span> <sup>21</sup><span class='v-txt'>याजक एलआज़ार ने युद्ध में गये हुए सैनिकों से कहा, &#039;&#039;प्रभु ने मूसा को यह नियम दिया है -</span> <sup>22</sup><span class='v-txt'>तुम प्रत्येक धातु को, सोना, चाँदी, काँसा, लोहा, राँगा और सीसा,</span> <sup>23</sup><span class='v-txt'>अर्थात् उन सब चीजों को, जो अग्नि में भस्म नहीं होती है, अग्नि में डाल कर शुद्ध करोगे। इसके बाद शुद्धीकरण के जल से उन्हें शुद्ध करोगे। इसके बाद वे शुद्ध मानी जायेगी। किन्तु जो अग्नि में भस्म हो सकती हैं, उसे केवल जल से शुद्ध करोगे।</span> <sup>24</sup><span class='v-txt'>तुम सातवें दिन अपने कपड़े धोओगे और तुम शुद्ध होगे। इसके बाद तुम शिविर में आ सकोगे।&#039;&#039;</span> <sup>25</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>26</sup><span class='v-txt'>तुम याजक एलआज़ार और समुदाय के मुखियाओं के साथ लूट के बन्दिओं और पशुओं की गिनती करोगे।</span> <sup>27</sup><span class='v-txt'>तुम लूट का आधा भाग युद्ध से आये हुए सैनिकों को दोगे और आधा भाग समुदाय के अन्य लोगों को।</span> <sup>28</sup><span class='v-txt'>युद्ध से आये हुए सैनिकों के भाग से तुम प्रति पाँच सौ बन्दियों, गाय-बैलों, गधों और भेड़ों में से एक-एक प्रभु को अर्पित करोगे।</span> <sup>29</sup><span class='v-txt'>तुम प्रभु के लिए यह चढ़ावा याजक एलआज़ार को दोगे।</span> <sup>30</sup><span class='v-txt'>इस्राएलियों के भाग से तुम प्रति पचास बन्दियों, बैलों, गधों और भेड़ों अर्थात् सब प्राणियों में से एक-एक लोगे और उन्हें लेवियों को, जो प्रभु के निवास में सेवा करते हैं, दे दोगे।</span> <sup>31</sup><span class='v-txt'>मूसा और याजक एलआज़ार ने ठीक वैसा ही किया, जैसा प्रभु ने मूसा को आदेश दिया था।</span> <sup>32</sup><span class='v-txt'>सैनिकों ने जो वस्तुएँ अपने लिए ले ली थीं, उनके अतिरिक्त लूट का विवरण इस प्रकार था : छः लाख पचहत्तर हज़ार भेड़े,</span> <sup>33</sup><span class='v-txt'>बहत्तर हजार गाय-बैल</span> <sup>34</sup><span class='v-txt'>इकसठ हज़ार गधे</span> <sup>35</sup><span class='v-txt'>और कुल मिला कर ऐसी बत्तीस हज़ार कन्याएँ, जिनका किसी पुरुष के साथ प्रसंग नहीं हुआ था।</span> <sup>36</sup><span class='v-txt'>युद्ध से आये सैनिकों को लूट का जो आधा भाग मिला, वह इस प्रकार था : तीन लाख सैंतीस हज़ार पाँच सौ भेडें,</span> <sup>37</sup><span class='v-txt'>इन में से प्रभु के लिए चढ़ावा छह सौ पचहत्तर भेडें;</span> <sup>38</sup><span class='v-txt'>छत्तीस हज़ार गाय-बैल - इन में से प्रभु के लिए चढ़ावा बहत्तर गाय-बैल,</span> <sup>39</sup><span class='v-txt'>तीस हजार पाँच सौ गधे - इन में से प्रभु के लिए चढ़ावा इकसठ गधे;</span> <sup>40</sup><span class='v-txt'>सोलह हज़ार कन्याएँ - इन में से प्रभु के लिए चढ़ावा बत्तीस कन्याएँ।</span> <sup>41</sup><span class='v-txt'>मूसा ने प्रभु के लिए यह चढ़ावा याजक एलआज़ार को दिया, जैसा कि प्रभु ने मूसा को आदेश दिया था।</span> <sup>42</sup><span class='v-txt'>(४२-४३) मूसा ने युद्ध से आये हुए सैनिकों के भाग से इस्राएलियों के समुदाय को मिलने वाला भाग अलग कर दिया। वह इस प्रकार था : तीन लाख सैंतीस हज़ार पाँच सौ भेडें,</span> <sup>44</sup><span class='v-txt'>छत्तीस हजार गाय-बैल,</span> <sup>45</sup><span class='v-txt'>तीस हज़ार पाँच सौ गधे</span> <sup>46</sup><span class='v-txt'>और सोलह हज़ार कन्याएँ।</span> <sup>47</sup><span class='v-txt'>मूसा ने इस्राएलियों के भाग से प्रति पचास कन्याओं और पशुओं में से एक-एक को अलग कर दिया और उन्हें लेवियों को दिया, जो प्रभु के निवास में सेवा करते थे।</span> <sup>48</sup><span class='v-txt'>तब सेनापति, सहस्रपति और शतपति भी मूसा के पास आये। वे मूसा से कहने लगे,</span> <sup>49</sup><span class='v-txt'>&#039;&#039;हम, आपके सेवकों ने अपने अधीन सैनिकों की गणना की है और उन में से एक भी खेत नहीं रहा।</span> <sup>50</sup><span class='v-txt'>इसलिए प्रभु के सामने अपना प्रायश्चित कराने के लिए हम प्रभु को भेट-स्वरूप वह सोना चढ़ाते हैं, जो हम में से प्रत्येक ने लिया है, अर्थात् भुजबन्द, कड़े, अँगूठियाँ, बालियाँ और हार।</span> <sup>51</sup><span class='v-txt'>मूसा और याजक एलआज़ार ने उन से वे सोने के आभूषण स्वीकार किये।</span> <sup>52</sup><span class='v-txt'>सहस्रपति और शतपति प्रभु को भेंट स्वरूप जो सोना ले आये, उसका वज़न सोलह हज़ार सात सौ पचास शेकेल था।</span> <sup>53</sup><span class='v-txt'>इसके अतिरिक्त सैनिकों ने अपने लिए लूट ली थी।</span> <sup>54</sup><span class='v-txt'>मूसा और याजक एलआज़ार ने सहस्रपतियों और शतपतियों से सोना स्वीकार किया और वे उसे दर्शन-कक्ष ले आये, जिससे वह इस्राएलियों के लिए स्मरण-चिह्न के रूप में प्रभु के सामने विद्यमान रहे।</span> </p>
+        <div class='nav'><a href='004030.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004032.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रज्ञा - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रज्ञा</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>विधर्मी कुतर्क करते हुए आपस में यह कहते थे: &quot;हमारा जीवन अल्पकालिक और दुःखमय है।  जब मनुष्य मरने को हो, तो कोई उपचार नहीं और हमारी जानकारी में कोई कभी अधोलोक से नहीं लौटा।</span> <sup>2</sup><span class='v-txt'>हमने संयोग से जन्म लिया और बाद में ऐसा होगा, मानो हम कभी थे ही नहीं!  हमारी साँस मात्र धुआँ है और हमारे विचार हमारे हृदय की धड़कन की चिनगारी!</span> <sup>3</sup><span class='v-txt'>चिनगारी बुझ जाने पर शरीर राख बनेगा और प्राण शून्य आकाश में लुप्त हो जायेंगे।</span> <sup>4</sup><span class='v-txt'>हमारा नाम समय पाकर भुला दिया जायेगा।  हमारे कार्यों को कोई भी याद नहीं करेगा।  हमारा जीवन बादल के मार्ग की तरह मिट जायेगा।  वह कुहरे की तरह विलीन हो जायेगा, जो सूर्य की किरणोें से छितराया और उसकी गरमी से लुप्त हो जाता है।</span> <sup>5</sup><span class='v-txt'>हमारा जीवनकाल छाया की तरह गुजरता है, हमारा अन्त टाला नहीं जा सकता: उस पर मुहर लग चुकी है और कोई नहीं लौटता।</span> <sup>6</sup><span class='v-txt'>&quot;इसलिए आओ, हम जब तक जवान है, उत्सुकता से वर्तमान की अच्छी चीजों का उपभोग करें।</span> <sup>7</sup><span class='v-txt'>हम उत्तम अंगूरी और इत्र का पूरा-पूरा आनन्द उठाये; हम वसन्त के फूल हाथ से न जाने दें।</span> <sup>8</sup><span class='v-txt'>इससे पहले कि गुलाब की कलियाँ मुरझायें , हम उनका मुकुट गूँथ कर पहन लें।</span> <sup>9</sup><span class='v-txt'>कोई भी हमारे आनन्दोत्सव से अलग न रहे; हम सर्वत्र अपने आमोद-प्रमोद की निशानी छोड़े; क्योंकि यही हमारा हिस्सा है, यही हमारा भाग्य है।</span> <sup>10</sup><span class='v-txt'>&quot;हम दरिद्र धर्मात्मा पर अत्याचार करें।  हम विधवा को भी नहीं छोड़ें और वृद्ध के पके बालों का आदर नहीं करें।</span> <sup>11</sup><span class='v-txt'>हमारी शक्ति हमारे न्याय का मापदण्ड हो, क्योंकि दुर्बलता किसी काम की नहीं।</span> <sup>12</sup><span class='v-txt'>&quot;हम धर्मात्मा के लिए फन्दा लगायें, क्योंकि वह हमें परेशान करता और हमारे आचरण का विरोध करता है। वह हमें संहिता भंग करने के कारण फटकारता है और हम पर हमारी शिक्षा को त्यागने का अभियोग लगाता है।</span> <sup>13</sup><span class='v-txt'>वह समझता है कि वह ईश्वर को जानता है और अपने को प्रभु का पुत्र कहता है।</span> <sup>14</sup><span class='v-txt'>वह हमारे विचारों के लिए एक जीवित चुनौती है।  उसे देखने मात्र से हमें अरूचि होती है।</span> <sup>15</sup><span class='v-txt'>उसका आचरण दूसरों-जैसा नहीं और उसके मार्ग भिन्न हैं।</span> <sup>16</sup><span class='v-txt'>वह हमें खोटा और अपवित्र समझ कर हमारे सम्पर्क से दूर रहता है।  वह धर्मियों की अन्तगति को सौभाग्यशाली बताता और शेखी मारता है कि ईश्वर उसका पिता है।</span> <sup>17</sup><span class='v-txt'>हम यह देखें कि उसका दावा कहाँ तक सच है; हम यह पता लगायें कि अन्त में उसका क्या होगा।</span> <sup>18</sup><span class='v-txt'>यदि वह धर्मात्मा ईश्वर का पुत्र है, तो ईश्वर उसकी सहायता करेगा और उसे उसके विरोधियों के हाथ से छुड़ायेगा।</span> <sup>19</sup><span class='v-txt'>हम अपमान और अत्याचार से उसकी परीक्षा ले, जिससे हम उसकी विनम्रता जानें और उसका धैर्य परख सकें।</span> <sup>20</sup><span class='v-txt'>हम उसे घिनौनी मृत्यु का दण्ड दिलायें, क्योंकि उसका दावा है, कि ईश्वर उसकी रक्षा करेगा।&quot;</span> <sup>21</sup><span class='v-txt'>वे ऐसा सोचते थे, किन्तु यह उनकी भूल थी।  उनकी दुष्टता ने उन्हें अन्धा बना दिया था।</span> <sup>22</sup><span class='v-txt'>वे ईश्वर के रहस्य नहीं जानते थे।  वे न तो धार्मिकता के प्रतिफल में विश्वास करते थे और न धर्मात्माओें के पुरस्कार में।</span> <sup>23</sup><span class='v-txt'>ईश्वर ने मनुष्य को अमर बनाया; उसने उसे अपना ही प्रतिरूप बनाया।</span> <sup>24</sup><span class='v-txt'>शैतान की ईर्ष्या के कारण ही मृत्यु संसार में आयी है। जो लोग शैतान का साथ देते हैं, वे अवश्य ही मृत्यु का शिकार हो जाते हैं।</span> </p>
+        <div class='nav'><a href='027001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='027003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

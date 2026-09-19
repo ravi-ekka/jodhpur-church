@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गलातियों - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गलातियों</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>नासमझ गलातियों!  किसने आप लोगों पर जादू डाला है?  आप लोगों को तो सुस्पष्ट रूप से यह दिखलाया गया कि ईसा मसीह क्रूस पर आरोपित किये गये थे।</span> <sup>2</sup><span class='v-txt'>मैं आप लोगों से इतना ही जानना चाहता हूँ - आप को संहिता के कर्मकाण्ड के कारण आत्मा का वरदान मिला या सुसमाचार के सन्देश पर विश्वास करने के कारण?</span> <sup>3</sup><span class='v-txt'>क्या आप लोग इतने नासमझ हैं कि आपने जो कार्य आत्मा द्वारा प्रारम्भ किया, उसे अब शरीर द्वारा पूर्ण करना चाहते हैं?</span> <sup>4</sup><span class='v-txt'>क्या आप लोगों को व्यर्थ ही इतने वरदान प्राप्त हुए?  मुझे ऐसा विश्वास नहीं है।</span> <sup>5</sup><span class='v-txt'>जब ईश्वर आप लोगों को आत्मा का वरदान देता है और आपके बीच चमत्कार दिखाता है, तो क्या वह संहिता के कर्मकाण्ड के कारण ऐसा करता है या इसलिए कि आप सुसमाचार के सन्देश पर विश्वास करते है?</span> <sup>6</sup><span class='v-txt'>इब्राहीम ने ईश्वर में विश्वास किया और इसी से वह धार्मिक माने गये,</span> <sup>7</sup><span class='v-txt'>इसलिए आप लोग यह निश्चित रूप से जान लें कि जो लोग विश्वास करते हैं, वे ही इब्राहीम की सन्तान हैं।</span> <sup>8</sup><span class='v-txt'>धर्मग्रन्थ पहले से यह जानता था कि ईश्वर विश्वास द्वारा गैर-यहूदियों को पापमुक्त करेगा, इसलिए उसने पहले से इब्राहीम को यह सुसमाचार सुनाया कि तुम्हारे द्वारा पृथ्वी भर के राष्ट्र आशीर्वाद प्राप्त करेंगे।</span> <sup>9</sup><span class='v-txt'>इसलिए जो विश्वास पर निर्भर रहते हैं, विश्वास करने वाले इब्राहीम के साथ ही आशीर्वाद प्राप्त करते हैं।</span> <sup>10</sup><span class='v-txt'>परन्तु जो संहिता के कर्मकाण्ड पर निर्भर रहते है, वे शाप के अधीन हैं; क्योंकि लिखा है- जो व्यक्ति संहिता-ग्रन्थ में लिखी हुई सभी बातों का पालन नहीं करता रहता है, वह शापित है।</span> <sup>11</sup><span class='v-txt'>यह तो स्पष्ट है कि कोई संहिता के कारण ईश्वर की दृष्टि में धार्मिक नहीं होता; क्योंकि लिखा है- धार्मिक मनुष्य अपने विश्वास के द्वारा जीवन प्राप्त करेगा।</span> <sup>12</sup><span class='v-txt'>और संहिता का विश्वास से कोई सम्बन्ध नहीं है; क्योंकि उस में लिखा है-जो इन बातों का पालन करेगा, उसे इन्हीं के द्वारा जीवन प्राप्त होगा।</span> <sup>13</sup><span class='v-txt'>मसीह हमारे लिए शापित बने और इस तरह उन्होंने हम को संहिता के अभिशाप से मुक्त किया; क्योंकि लिखा है- जो काठ पर लटकाया जाता है, वह शापित है।</span> <sup>14</sup><span class='v-txt'>यह इसलिए हुआ कि ईसा मसीह के द्वारा इब्राहीम का आशीर्वाद ग़ैर-यहूदियों को भी प्राप्त हो और हमें विश्वास द्वारा वह आत्मा मिले, जिसकी प्रतिज्ञा की गयी थी।</span> <sup>15</sup><span class='v-txt'>भाइयो!  मैं आप लोगों को साधारण जीवन का उदाहरण दे रहा हूँ।  कोई व्यक्ति किसी मनुष्य का प्रामाणिक वसीयतनामा न तो रद्द कर सकता और न उस में कुछ जोड़ सकता है।</span> <sup>16</sup><span class='v-txt'>अब प्रतिज्ञाएँ इब्राहीम और उनके वंशज को दी गयी हैं। धर्मग्रन्थ नहीं कहता- उनके वंशजों को, मानो बहुतों को, बल्कि उनके वश्ंाज को, मानो एक को ही, और वह वंशज मसीह हैं।</span> <sup>17</sup><span class='v-txt'>मेरे कहने का अभिप्राय यह है- जो वसीयतनामा ईश्वर द्वारा प्रमाणित किया जा चुका है, उसे चार सौ वर्ष बाद की संहिता न तो रद्द कर सकती और न उसकी प्रतिज्ञाएँ उठा सकती हैं।</span> <sup>18</sup><span class='v-txt'>यदि संहिता के माध्यम से वसीयत प्राप्त होती है, तो प्रतिज्ञा से उसका कोई सम्बन्ध नहीं; किन्तु प्रतिज्ञा द्वारा ही ईश्वर ने उसे इब्राहीम को दिया।</span> <sup>19</sup><span class='v-txt'>तब संहिता का प्रयोजन क्या है?  जिस वंशज को प्रतिज्ञा दी गयी थी, उसके आने के समय तक संहिता अपराधों के कारण जोड़ दी गयी थी।  वह स्वर्गदूतों द्वारा एक मध्यस्थ के माध्यम से घोषित की गयी है।</span> <sup>20</sup><span class='v-txt'>वह मध्यस्थ एक की ओर से नहीं, अनेकों की ओर से मध्यस्थता करता थाः किन्तु ईश्वर एक है।</span> <sup>21</sup><span class='v-txt'>तो क्या संहिता और प्रतिज्ञाओं में विरोध है?  कभी नहीं! यदि ऐसी संहिता की घोषणा हुई होती, जो जीवन प्रदान करने में समर्थ थी, तो संहिता के पालन द्वारा ही पापमुक्ति मिलती।</span> <sup>22</sup><span class='v-txt'>परन्तु धर्मग्रन्थ ने सब कुछ पाप के अधीन कर दिया है, जिससे ईसा मसीह में विश्वास के द्वारा विश्वास करने वालों के लिए प्रतिज्ञा पूरी की जाये।</span> <sup>23</sup><span class='v-txt'>विश्वास के आगमन से पहले हम को उसके प्रकट होने के समय तक संहिता के निरीक्षण में बन्दी बना दिया गया था।</span> <sup>24</sup><span class='v-txt'>इस प्रकार जब तक मसीह नहीं आये और हम विश्वास के द्वारा धार्मिक नहीं बने, तब तक संहिता हमारी निरीक्षक रही।</span> <sup>25</sup><span class='v-txt'>किन्तु अब विश्वास आया है और हम निरीक्षक के अधीन नहीं रहे।</span> <sup>26</sup><span class='v-txt'>क्योंकि आप लोग सब-के-सब ईसा मसीह में विश्वास करने के कारण ईश्वर की सन्तति हैं;</span> <sup>27</sup><span class='v-txt'>क्योंकि जितने लोगों ने मसीह का बपतिस्मा ग्रहण किया, उन्होंने मसीह को धारण किया है।</span> <sup>28</sup><span class='v-txt'>अब न तो कोई यहूदी और न यूनानी, न तो कोई दास है और न स्वतन्त्र, न तो कोई पुरुष है और न स्त्री-आप सब ईसा मसीह में एक हो गये हैं।</span> <sup>29</sup><span class='v-txt'>यदि आप लोग मसीह के है, तो इब्राहीम की सन्तान है और प्रतिज्ञा के अनुसार उनके उत्तराधिकारी।</span> </p>
+        <div class='nav'><a href='055002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='055004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

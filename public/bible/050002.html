@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योहन - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योहन</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तीसरे दिन गलीलिया के काना में एक विवाह था।  ईसा की माता वहीं थी।</span> <sup>2</sup><span class='v-txt'>ईसा और उनके शिष्य भी विवाह में निमन्त्रित थे।</span> <sup>3</sup><span class='v-txt'>अंगूरी समाप्त हो जाने पर ईसा की माता ने उन से कहा, &quot;उन लोगो के पास अंगूरी नहीं रह गयी है&quot;।</span> <sup>4</sup><span class='v-txt'>ईसा ने उत्तर दिया, &quot;भद्रे! इस से मुझ को और आप को क्या, अभी तक मेरा समय नहीं आया है।&quot;</span> <sup>5</sup><span class='v-txt'>उनकी माता ने सेवकों से कहा, &quot;वे तुम लोगों से जो कुछ कहें वही करना&quot;।</span> <sup>6</sup><span class='v-txt'>वहाँ यहूदियों के शुद्धीकरण के लिए पत्थर के छः मटके रखे थे।  उन में दो-दो तीन तीन मन समाता था।</span> <sup>7</sup><span class='v-txt'>ईसा ने सेवकों से कहा, “मटकों में पानी भर दो“। सेवकों ने उन्हें लबालब भर दिया।</span> <sup>8</sup><span class='v-txt'>फिर ईसा ने उन से कहा, &quot;अब निकाल कर भोज के प्रबन्धक के पास ले जाओ&quot;।  उन्होंने ऐसा ही किया।</span> <sup>9</sup><span class='v-txt'>प्रबन्धक ने वह पानी चखा, जो अंगूरी बन गया था।  उसे मालूम नहीं था कि यह अंगूरी कहाँ से आयी है।  जिन सेवकों ने पानी निकाला था, वे जानते थे।  इसलिए प्रबन्धक ने दुल्हे को बुला कर</span> <sup>10</sup><span class='v-txt'>कहा, &quot;सब कोई पहले बढि़या अंगूरी परोसते हैं, और लोगों के नशे में आ जाने पर घटिया।  आपने बढि़या अंगूरी अब तक रख छोड़ी है।&quot;</span> <sup>11</sup><span class='v-txt'>ईसा ने अपना यह पहला चमत्कार गलीलिया के काना में दिखाया।  उन्होंने अपनी महिमा प्रकट की और उनके शिष्यों ने उन में विश्वास किया।</span> <sup>12</sup><span class='v-txt'>इसके बाद ईसा अपनी माता, अपने भाइयों और अपने शिष्यों के साथ कफरनाहूम गये, परन्तु वे वहाँ थोड़े ही दिन रहे।</span> <sup>13</sup><span class='v-txt'>यहूदियों का पास्का पर्व निकट आने पर ईसा येरूसालेम गये।</span> <sup>14</sup><span class='v-txt'>उन्होंने मन्दिर में बैल, भेड़ें और कबूतर बेचने वालों को तथा अपनी मेंज़ों के सामने बैठे हुए सराफों को देखा।</span> <sup>15</sup><span class='v-txt'>उन्होंने रस्सियों का कोड़ा बना कर भेड़ों और बेलों-सहित सब को मन्दिर से बाहर निकाल दिया, सराफों के सिक्के छितरा दिये, उनकी मेजे़ं उलट दीं</span> <sup>16</sup><span class='v-txt'>और कबूतर बेचने वालों से कहा, &quot;यह सब यहाँ से हटा ले जाओ।  मेरे पिता के घर को बाजार मत बनाओ।&quot;</span> <sup>17</sup><span class='v-txt'>उनके शिष्यों को धर्मग्रन्थ का यह कथन याद आया- तेरे घर का उत्साह मुझे खा जायेगा।</span> <sup>18</sup><span class='v-txt'>यहूदियों ने ईसा से कहा, &quot;आप हमें कौन-सा चमत्कार दिखा सकते हैं, जिससे हम यह जानें कि आप को ऐसा करने का अधिकार है?&quot;</span> <sup>19</sup><span class='v-txt'>ईसा ने उन्हें उत्तर दिया, &quot;इस मन्दिर को ढा दो और मैं इसे तीन दिनों के अन्दर फिर खड़ा कर दूँगा&quot;।</span> <sup>20</sup><span class='v-txt'>इस पर यहूदियों ने कहा, &quot;इस मंदिर के निर्माण में छियालीस वर्ष लगे, और आप इसे तीन दिनों के अन्दर खड़ा कर देंगे?&quot;</span> <sup>21</sup><span class='v-txt'>ईसा तो अपने शरीर के मन्दिर के विषय में कह रहे थे।</span> <sup>22</sup><span class='v-txt'>जब वह मृतकों में से जी उठे, तो उनके शिष्यों को याद आया कि उन्होंने यह कहा था; इसलिए उन्होंने धर्मग्रन्ध और ईसा के इस कथन पर विश्वास किया।</span> <sup>23</sup><span class='v-txt'>जब ईसा पास्का पर्व के दिनों में येरूसालेम में थे, तो बहुत-से लोगों ने उनके किये हुए चमत्कार देख कर उनके नाम में विश्वास किया।</span> <sup>24</sup><span class='v-txt'>परन्तु ईसा को उन पर कोई विश्वास नहीं था, क्योंकि वे सब को जानते थे।</span> <sup>25</sup><span class='v-txt'>इसकी ज़रूरत नहीं थी कि कोई उन्हें मनुष्य के विषय में बताये।  वे तो स्वयं मनुष्य का स्वभाव जानते थे।</span> </p>
+        <div class='nav'><a href='050001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='050003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

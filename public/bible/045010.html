@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>ज़कारिया - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>ज़कारिया</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>वसन्त ऋतु में प्रभु-ईश्वर से वर्षा के लिए प्रार्थना करो।  प्रभु-ईश्वर ही बादलों को गरजने की आज्ञा देता है और जल की बौछार करता है।  वह मनुष्यों को अन्न और मवेशियों को घास देता है।</span> <sup>2</sup><span class='v-txt'>गृह-देवताओं की मूर्तियाँ अनाप-शनाप बकती हैं; शकुन विचारने वाले झूठे दर्शन देखते हैं तथा मिथ्या स्वप्नों की घोषणा करते हुए धोखेबाज परामर्श देते हैं।  कोई अचरज नही कि लोग भेड़ों की तरह भटकते रहते हैं।  वे इसलिए भूले-भटके हैं कि उनका कोई चरवाहा नहीं।</span> <sup>3</sup><span class='v-txt'>चरवाहों के विरुद्ध मेरा क्रोध उबल पडा है और मैं नेताओं को दण्ड दूँगा।  हाँ, विश्वमण्डल का प्रभु अपने रेवड, यूदा के घराने की देखभाल करेगा; वह उन्हें अपना गर्वीला युद्धाश्व बना लेगा।</span> <sup>4</sup><span class='v-txt'>उस से कोने का पत्थर और तम्बू का खूँटा नियुक्त होंगे; वही युद्ध के लिए धनुष प्रदान करेगा; वही सभी नेताओं को चुन लेगा।</span> <sup>5</sup><span class='v-txt'>वे सब मिल कर ऐसे योद्धाओं की तरह होगें, जो युद्ध के समय गलियों के कीचड में डग भरते जाते हैं।  यह जान कर कि प्रभु-ईश्वर हमारे साथ है, वे लडेंगे और घुडसवारों को भगा देंगे।</span> <sup>6</sup><span class='v-txt'>मैं यूदा के घराने को महान् बना दूँगा और यूसुफ़ के घराने का उद्धार करूँगा।  उन पर दयादृष्टि कर मैं उन्हें वापस लाऊँगा; तब वे वैसे ही हो जायेंगे, जैसे मैंने उन्हें कभी त्यागा न हो।  मैं तो प्रभु, उनका ईश्वर हूँ और उनकी प्रार्थनाएँ सुनूँगा ही।</span> <sup>7</sup><span class='v-txt'>एफ्ऱाईम योद्धा की तरह बन जायेगा।  उनका जी खिल उठेगा, जैसे कोई अंगूरी पी कर प्रसन्न होता है।  उनके पुत्र ऐसा होते देख कर हर्शित हो उठेंगे और उनका हृदय आनन्दविभोर हो जायेगा।</span> <sup>8</sup><span class='v-txt'>मैं सीटी बजा कर उन्हें एकत्र करूँगा- मैं तो उनका उद्धारकर्ता हूँ- और उनकी संख्या इतनी बढ जायेगी, जितनी वह पहले थी</span> <sup>9</sup><span class='v-txt'>मैंने राष्ट्रों के बीच उन्हें बिखेर दिया, किन्तु वे दूर-दराज से मुझे स्मरण करेंगे; वे अपने पुत्रों को सिखलायेंगे कि ये लौट सकें।</span> <sup>10</sup><span class='v-txt'>मैं मिस्र देश से उन्हें वापस ले आऊँगा और अस्सूर से उन्हें बुलाऊँगा; मैं उन्हें गिलआद देश में और लेबानोन तक भी ले जाऊँगा किन्तु वहाँ वे शायद ही अँट सकेंगें।</span> <sup>11</sup><span class='v-txt'>मिस्र का समुद्र पार करेंगे, समुद्र की लहरें थम जायेगी; नील महानदी का जल सूख जायेगा।  अस्सूर का गर्व चूर कर दिया जायेगा और मिस्र के हाथ से राजदण्ड छिन जायेगा।</span> <sup>12</sup><span class='v-txt'>प्रभु-ईश्वर ही उनका बल होगा और उनका नाम उनका गौरव!  यह प्रभु-ईश्वर की वाणी है।</span> </p>
+        <div class='nav'><a href='045009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='045011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

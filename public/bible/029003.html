@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>इसायाह - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>इसायाह</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>देखो! प्रभु, विश्वमण्डल का प्रभु, येरूसालेम और यूदा से हर प्रकार की सहायता, भोजन और जल की आपूर्ति छीनने जा रहा है।</span> <sup>2</sup><span class='v-txt'>वीर और योद्वा, न्यायाधीश और नबी, शकुन विचारने वाला और नेता,</span> <sup>3</sup><span class='v-txt'>सेनापति पदाधिकारी और सभासद, निपुण ओझा और अभिचारक- सब हटा दिये जायेंगे।</span> <sup>4</sup><span class='v-txt'>मैं युवकों को उनके पदाधिकारी बनाऊँगा- निरे बच्चे उन पर मनमाना शासन करेंगे।</span> <sup>5</sup><span class='v-txt'>लोग एक दूसरे पर अत्याचार करेंगे - हर एक अपने पड़ोसी को लूटेगा।  युवक वृद्ध के विरुद्ध खड़ा हो जायेगा और क्षुद्र व्यक्ति प्रतिष्ठित के विरुद्ध।</span> <sup>6</sup><span class='v-txt'>कोई अपने पिता के घर में ही अपने भाइयों में एक को पकड़ कर यह कहेगा, “तुम्हारे पास एक चादर बच गयी, तुम हमारे नेता बनो और इन खडँहरों के ढेर की रक्षा करें“।</span> <sup>7</sup><span class='v-txt'>किन्तु वह उत्तर देगा, “मुझ से कुछ नहीं होगा।  मेरे यहाँ न तो भोजन है और न वस्त्र, मुझे जनता का नेता मत बनाओ।“</span> <sup>8</sup><span class='v-txt'>येरूसालेम लड़खड़ा रहा है, यूदा प्रदेश गिर रहा है। उनके वचन और उनके कार्य प्रभु से विद्रोह करते हैं; वे उसकी महिमा को चुनौती देते हैं।</span> <sup>9</sup><span class='v-txt'>उनका रुख़ उनके विरुद्ध साक्ष्य दे रहा है, वे सोदोम की तरह अपने पाप घोषणा करते हैं, वे उसे नहीं छिपाते। धिक्कार उन्हें, वे स्वयं अपनी विपत्ति मोल लेते हैं!</span> <sup>10</sup><span class='v-txt'>देखो, धार्मिक मनुष्य का भला होगा।  उसे अपने कर्मों का पुरस्कार मिलेगा।</span> <sup>11</sup><span class='v-txt'>धिक्कार विधर्मी को! उसका बुरा होगा।  उसके कर्मों के अनुसार उसके साथ व्यवहार होगा।</span> <sup>12</sup><span class='v-txt'>मेरी प्रजा! युवक तुम पर अत्याचार करते और स्त्रियाँ तुम पर शासन करती हैं।  मेरी प्रजा! तुम्हारे पथप्रदर्शक तुम को बहकाते और तुम को सन्मार्ग से भटकाते हैं।</span> <sup>13</sup><span class='v-txt'>प्रभु अपने न्यायासन पर बैठ गया, वह लोगों का न्याय करने जा रहा है।</span> <sup>14</sup><span class='v-txt'>प्रभु अपनी प्रजा के नेताओं और शासकों को अपने न्यायालय में बुलाता है: “तुम लोगों ने मेरी दाख़बारी लूटी और दरिद्रों की सम्पत्ति से अपने घर भर लिये हैं।</span> <sup>15</sup><span class='v-txt'>तुम किस अधिकार से मेरी प्रजा को पद-दलित करते और दरिद्रों को रौंदते हो?“ यह सर्वशक्तिमान प्रभु की वाणी है।</span> <sup>16</sup><span class='v-txt'>प्रभु यह कहता है - “सियोन की पुत्रियाँ धमण्डी हैं।  वे सिर उठाये, आँखें मटकाते और धूँधरू छमछमाते, फुदकते हुए आगे बढ़ती हैं।</span> <sup>17</sup><span class='v-txt'>इसलिए प्रभु सियोन की स्त्रियों के सिर पर खाज भेजेगा, वह उनकी खोपड़ी गंजी बना देगा।“</span> <sup>18</sup><span class='v-txt'>उस दिन प्रभु उनके आभूषण छीन लेगा: नूपुर, बिन्दी,  कण्ठी,</span> <sup>19</sup><span class='v-txt'>बाली, कंकण, दुपट्ठा,</span> <sup>20</sup><span class='v-txt'>चूड़ामणि, भुजबन्द, करधनी, इत्र-दान और तावीज़;</span> <sup>21</sup><span class='v-txt'>अँगूठी, नथ,</span> <sup>22</sup><span class='v-txt'>की़मती वस्त्र, ओढ़नी, लबादा, बटुआ,</span> <sup>23</sup><span class='v-txt'>दर्पण, छालटी वस्त्र, किरीट और शाल।</span> <sup>24</sup><span class='v-txt'>तब सुगन्ध के बदले दुर्गन्ध होगी, कमरबन्द के बदले रस्सी, गूथे हुए केशों के बदले गंजापन, कीमती वस्त्रों के बदले टाट, सौन्दर्य के बदले गुलामी का दाग।</span> <sup>25</sup><span class='v-txt'>तुम्हारे पुरुष तलवार के घाट उतारे जायेंगे, तुम्हारे सैनिक युद्ध में खेत रहेंगे।</span> <sup>26</sup><span class='v-txt'>सियोन के फाटक आह भर कर विलाप करेंगे और नगर एकाकिनी की तरह ज़मीन पर बैठा रहेगा।</span> </p>
+        <div class='nav'><a href='029002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='029004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

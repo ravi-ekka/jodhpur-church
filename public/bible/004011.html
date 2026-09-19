@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 11</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 11</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>लोग अपने कष्टों के कारण प्रभु के विरुद्ध भुनभुनाने लगे। इस से प्रभु का कोप भड़क उठा। प्रभु की अग्नि उनके बीच प्रज्वलित हुई और उसने शिविर का एक कोना जला दिया।</span> <sup>2</sup><span class='v-txt'>लोगों ने मूसा को सहायता के लिए पुकारा। मूसा ने प्रभु से प्रार्थना की और अग्नि बुझ गयी।</span> <sup>3</sup><span class='v-txt'>इसलिए उस स्थान का नाम तबएरा पड़ गया, क्योंकि वहाँ उनके बीच प्रभु की अग्नि प्रज्वलित हुई थी।</span> <sup>4</sup><span class='v-txt'>उनके साथ चलने वाले छोटे लोग स्वादिष्ट भोजन के लिए लालायित हो उठे और इस्राएली भी विलाप करने लगे। उन्होंने यह कहा, &#039;&#039;कौन हमें खाने के लिए मांस देगा?</span> <sup>5</sup><span class='v-txt'>हाय! हमें याद आता है कि हम मिस्र में मुफ्त मछली खाते थे, साथ ही खीरा, तरबूज, गन्दना प्याज और लहसुन।</span> <sup>6</sup><span class='v-txt'>अब तो हम भूखों मर रहे हैं - हमें कुछ भी नहीं मिलता। मन्ना के सिवा हमें और कुछ दिखाई नहीं देता।&#039;&#039;</span> <sup>7</sup><span class='v-txt'>मन्ना धनिया के बीज-जैसा था। उसका रूप-रंग गुग्गुल के सदृष था।</span> <sup>8</sup><span class='v-txt'>लोग उसे बटोरने जाते थे, चक्की में पीसते या ओखली में कूटते थे, और बरतनों में उबाल कर उसकी रोटियाँ पकाते थे। उसका स्वाद तेल में तली हुई पूरी-जैसा था</span> <sup>9</sup><span class='v-txt'>जब रात को ओस शिविर पर उतरती थी, तो मन्ना भी गिरता था।</span> <sup>10</sup><span class='v-txt'>मूसा ने लोगों को, हर परिवार को अपने-अपने तम्बू के द्वार पर विलाप करते सुना। प्रभु का क्रोध भड़क उठा। मूसा को यह बहुत बुरा लगा</span> <sup>11</sup><span class='v-txt'>और उसने प्रभु से यह कहा, &#039;&#039;तू अपने दास को इतना दुख क्यों दे रहा है? तू मुझ पर इतना अप्रसन्न क्यों है कि तूने इस प्रजा का पूरा भार मुझ पर ही डाल दिया है?</span> <sup>12</sup><span class='v-txt'>क्या मैंने इसे उत्पन्न किया है, जो तू मुझसे कहता है - जिस तरह दायी दूध-पीते बच्चे को सँभालती है, तुम इसे गोद में उठाकर उस देश ले जाओ, जिसे मैंने इसके पूर्वजों को देने की शपथ खाई है।</span> <sup>13</sup><span class='v-txt'>मैं इन सब लोगों के लिए कहाँ से माँस ले आऊँ। वे विलाप करते हुए मुझ से कहते है, “हमें खाने के लिए माँस दीजिए।&quot;</span> <sup>14</sup><span class='v-txt'>मैं अकेले ही इस प्रजा को नहीं सँभाल सकता, मैं यह भार उठाने में असमर्थ हूँ।</span> <sup>15</sup><span class='v-txt'>यदि मेरे साथ तेरा यही व्यवहार हो, तो यह अच्छा होता कि तू मुझे मार डालता। यह संकट मुझ से दूर करने की कृपा कर।&#039;&#039;</span> <sup>16</sup><span class='v-txt'>प्रभु ने मूसा से कहा, &#039;&#039;इस्राएलियों में से सत्तर वयोवृद्धों को बुलाओ, जिनके विषय में तुम जानते हो कि वे जनता के नेता और शास्त्री हैं। उन्हें दर्शन-कक्ष ले जा कर अपने साथ खड़ा करो।</span> <sup>17</sup><span class='v-txt'>मैं आ कर वहाँ तुम्हारे साथ बात करूँगा। जो शक्ति तुम्हें मिली है, मैं उसका कुछ अंष वापस ले कर उन्हें प्रदान करूँगा। इस तरह वे तुम्हारे साथ इस जाति का भार सँभालेंगे और तुम्हें इसे अकेले ही नहीं उठाना पडेगा।</span> <sup>18</sup><span class='v-txt'>लोगों से यह भी कहो कि कल के लिए तुम अपने को पवित्र करो, क्योंकि तुम्हें मांस खाने को मिलेगा। तुम लोगों ने तो प्रभु के विरुद्ध भुनभुनाते हुए कहा, “कौन हमें मांस खाने को देगा? मिस्र में हमारी दशा कितनी अच्छी थी।&quot; इसलिए प्रभु तुम्हें मांस खाने को देगा।</span> <sup>19</sup><span class='v-txt'>न केवल एक दिन, न दो दिन, न पाँच, न दस, न बीस दिन,</span> <sup>20</sup><span class='v-txt'>बल्कि तुम महीने भर मांस खाओगे - यहाँ तक कि उस से तुम्हें अरूचि हो जायेगी और तुम ऊब जाओगे; क्योंकि तुमने अपने साथ रहने वाले प्रभु को तुच्छ समझा और यह कहते हुए उसके सामने पश्चात्ताप प्रकट किया कि हम मिस्र से क्यों निकल आये।&#039;&#039;</span> <sup>21</sup><span class='v-txt'>मूसा ने कहा, &#039;&#039;ये लोग, जिनके साथ मैं हूँ, छःलाख पैदल सैनिक हैं। तो भी तू कह रहा है कि मैं उनके लिए इतना मांस जुटा दूँगा कि वे महीने भर खायेंगे। तो क्या इतनी भेड़ें और बछड़े काटे जा सकते हैं कि वे उनके लिए पर्याप्त हों?</span> <sup>22</sup><span class='v-txt'>अथवा कोई उनके लिए समुद्र की सब मछलियाँ पकड़े, तो क्या वे भी उनके लिए पर्याप्त होंगी।</span> <sup>23</sup><span class='v-txt'>प्रभु ने मूसा को उत्तर दिया, &#039;&#039;क्या प्रभु में इतनी भी शक्ति नहीं है कि वह ऐसा कर सके? तुम स्वयं देखोगे कि मैं जो कह रहा हूँ, वह सच होगा या नहीं।&#039;&#039;</span> <sup>24</sup><span class='v-txt'>मूसा ने जा कर लोगों को प्रभु के ये शब्द सुनाये। उसने सत्तर वयोवृद्धों को बुला कर दर्शन-कक्ष के आसपास खड़ा कर दिया।</span> <sup>25</sup><span class='v-txt'>तब प्रभु बादल में आ कर मूसा से बात करने लगा और उसने मूसा की शक्ति का कुछ अंष सत्तर वयोवृद्धों को प्रदान किया। इसके फलस्वरूप उन्हें एक दिव्य प्रेरणा का अनुभव हुआ और वे भविष्यवाणी करने लगे। बाद में उन्हें फिर ऐसा अनुभव नहीं हुआ।</span> <sup>26</sup><span class='v-txt'>दो पुरुष शिविर में रह गये थे। एक का नाम था एलदाद और दूसरे का मेदाद। यद्यपि वे दर्शन-कक्ष में नहीं आये थे, तब भी उन्हें दिव्य प्रेरणा का अनुभव हुआ क्योंकि वे चुने हुए वयोवृद्वों में से थे और वे शिविर में ही भविष्यवाणी करने लगे।</span> <sup>27</sup><span class='v-txt'>एक नवयुवक दौड़ कर मूसा से यह कहने आया - &#039;&#039;एलदाद और मेदाद शिविर में भविष्यवाणी कर रहे हैं&#039;&#039;।</span> <sup>28</sup><span class='v-txt'>नुन के पुत्र योशुआ ने, जो बचपन में मूसा की सेवा करता था, यह कह कर अनुरोध किया, &#039;&#039;मूसा! गुरूवर! उन्हें रोक दीजिए।&#039;&#039;</span> <sup>29</sup><span class='v-txt'>इस पर मूसा ने उसे उत्तर दिया, &#039;&#039;क्या तुम मेरे कारण ईर्ष्या करते हो? अच्छा यही होता कि प्रभु सब को प्रेरणा प्रदान करता और प्रभु की सारी प्रजा भविष्यवाणी करती।&#039;&#039;</span> <sup>30</sup><span class='v-txt'>इसके बाद मूसा और इस्राएलियों के नेता शिविर लौट आये।</span> <sup>31</sup><span class='v-txt'>प्रभु की आज्ञा से समुद्र की ओर से हवा आयी और अपने साथ बटेरें ले आयी और उन्हें आसपास गिरा दिया। उन्होंने शिविर के चारों ओर एक दिन की यात्रा की दूरी तक और दो हाथ की ऊँचाई तक सारी पृथ्वी ढक ली।</span> <sup>32</sup><span class='v-txt'>तब लोग उस दिन और रात तथा दूसरे दिन भी जा-जा कर बटेरें पकड़ने लगे। किसी ने भी सौ मन से कम नहीं बटोरा। उन्हें सुखाने के लिए लोगों ने उन्हें शिविर के आसपास रख दिया।</span> <sup>33</sup><span class='v-txt'>वे उनका मांस पूरा खा भी नहीं पाये थे कि प्रभु का क्रोध लोगों पर भड़क उठा और प्रभु ने उन लोगों पर एक भारी व्याधि भेज दी।</span> <sup>34</sup><span class='v-txt'>इसलिए उस स्थान का नाम किब्रोत-हत्तावा पड़ गया, क्योंकि वहीं उन लोगों को दफ़नाया गया, जो स्वादिष्ट भोजन के लिए लालायित हो उठे थे।</span> <sup>35</sup><span class='v-txt'>लोग किब्रोत-हत्तावा से आगे चल कर हसेरोत पहुँचे और हसेरोत में ठहर गये।</span> </p>
+        <div class='nav'><a href='004010.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004012.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

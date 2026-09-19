@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>बड़ी या छोटी, किसी भी बात में अपराध मत करो।  मित्र से शत्रु मत बनो।  बदनामी से लज्जा और कलंक मिलता है, यही दोमुँहे पापी का भाग्य है।</span> <sup>2</sup><span class='v-txt'>साँड़ की तरह घमण्डी मत बनो।  कहीं ऐसा न हो कि वह तुम्हारा विनाश कर दे,</span> <sup>3</sup><span class='v-txt'>तुम्हारे पत्ते खाये, तुम्हारे फल तोड़े और तुम को सूखे पेड़ की तरह छोड़ दे।</span> <sup>4</sup><span class='v-txt'>वासना सब का विनाश करती और उन्हें उनके शत्रुओं के उपहास का पात्र बनाती है।</span> <sup>5</sup><span class='v-txt'>प्रिय शब्दों से मित्रों की संख्या बढ़ती है और मधुर वाणी से मैत्रीपूर्ण व्यवहार।</span> <sup>6</sup><span class='v-txt'>तुम्हारे परिचित अनेक हों, किन्तु तुम्हारा परामर्शदाता सहस्रों में से एक।</span> <sup>7</sup><span class='v-txt'>परीक्षा लेने के बाद किसी को मित्र बना लो, उस पर तुरन्त विश्वास मत करो।</span> <sup>8</sup><span class='v-txt'>कोई मित्र अवसरवादी होता है, वह विपत्ति के दिन तुम्हारा साथ नहीं देगा।</span> <sup>9</sup><span class='v-txt'>कोई मित्र शत्रु बन जाता है और अलगाव का दोष तुम्हें ही देता है।</span> <sup>10</sup><span class='v-txt'>कोई मित्र तुम्हारे यहाँ खाता-पीता है, किन्तु विपत्ति के दिन दिखाई नहीं देता।</span> <sup>11</sup><span class='v-txt'>समृद्धि के दिनों में वह तुम्हारा अंतरंग मित्र बन कर तुम्हारे नौकरों पर रोब जमाता है,</span> <sup>12</sup><span class='v-txt'>किन्तु दुर्दिन आते ही वह तुम्हारा शत्रु बन कर तुम से मुँह फेर लेगा।</span> <sup>13</sup><span class='v-txt'>तुम अपने शत्रुओं से दूर रहो और अपने मित्रों से सावधान।</span> <sup>14</sup><span class='v-txt'>सच्चा मित्र प्रबल सहायक है; जिसे मिल जाता है, उसे खजाना प्राप्त है।</span> <sup>15</sup><span class='v-txt'>सच्चा मित्र एक अमूल्य निधि है, उसकी कीमत धन से चुकायी नहीं जा सकती।</span> <sup>16</sup><span class='v-txt'>सच्चा मित्र संजीवनी है, वह प्रभु-भक्तों को ही प्राप्त होता है।</span> <sup>17</sup><span class='v-txt'>प्रभु-भक्त मित्रता का निर्वाह करता है; वह जैसा है, उसका मित्र वैसा ही होगा।</span> <sup>18</sup><span class='v-txt'>पुत्र! बचपन से शिक्षा ग्रहण करो।  तब तुम्हें बुढ़ापे में प्रज्ञा प्राप्त होगी।</span> <sup>19</sup><span class='v-txt'>तुम हल चलाने और बोने वाले की तरह प्रज्ञा प्राप्त करने का प्रयत्न करो और उसके अच्छे फलों की प्रतीक्षा करो।</span> <sup>20</sup><span class='v-txt'>तुम्हें कुछ समय तक परिश्रम करना पड़ेगा किन्तु बाद में उसे शीघ्र प्राप्त करोगे।</span> <sup>21</sup><span class='v-txt'>अज्ञानियों के लिए प्रज्ञा बहुत कठिन होती है और नासमझ उसकी साधना में दृढ़ नहीं रहेगा।</span> <sup>22</sup><span class='v-txt'>प्रज्ञा भारी पत्थर की तरह उसकी परीक्षा लेती है और वह उसे फेंक देने में देर नहीं करेगा;</span> <sup>23</sup><span class='v-txt'>क्योंकि प्रज्ञा अपने नाम के अनुरूप कठिन है।  बहुत कम लोग उसे देख पाते हैं।</span> <sup>24</sup><span class='v-txt'>पुत्र! मेरी बात मानो; मेरा परामर्श मत ठुकराओे।</span> <sup>25</sup><span class='v-txt'>प्रज्ञा की बेड़ियाँ अपने पैरों में पहनो और उसका जूआ अपनी गरदन पर रखो।</span> <sup>26</sup><span class='v-txt'>अपने कन्धे झुका कर उसे धारण करो और उसके बन्धनों से मत चिढ़ो।</span> <sup>27</sup><span class='v-txt'>उस को सारे हृदय से अपनाओे और सारी शक्ति से उसका पालन करो।</span> <sup>28</sup><span class='v-txt'>उसकी खोज करो और वह तुम को मिल जायेगी; उसे पाने पर तुम उसे मत जाने दो।</span> <sup>29</sup><span class='v-txt'>अन्त में तुम्हें उस में शान्ति मिलेगी और वह तुम्हारे लिए आनन्द का कारण बनेगी।</span> <sup>30</sup><span class='v-txt'>उसकी बेड़ियाँ तुम्हारा सुदृढ़ आश्रय बनेंगी और उसका जूआ एक महिमामय आभूषण।</span> <sup>31</sup><span class='v-txt'>वह सोने से अलंकृत है और उसके बन्धन बैंगनी फ़ीते-जैसे हैं।</span> <sup>32</sup><span class='v-txt'>तुम उसे महिमामय आभूषण की तरह पहनोगे और उसे आनन्द के मुकुट की तरह धारण करोगे।</span> <sup>33</sup><span class='v-txt'>पुत्र! यदि तुम सुनना चाहो, तो शिक्षा प्राप्त करोगे; यदि उस में मन लगाओगे, तो समझदार बनोगे।</span> <sup>34</sup><span class='v-txt'>यदि तुम रूचि से सुनोगे, तो ज्ञान प्राप्त करोगे ; यदि कान दोगे, तो बुद्धिमान् बनोगे।</span> <sup>35</sup><span class='v-txt'>बड़े-बूढ़ो की संगति करो और उनकी प्रज्ञा की बातों पर ध्यान दो।  धर्म-सम्बन्धी चरचा रूचि से सुनो और ज्ञान-सम्बन्धी सूक्तियाँ मत भुलाओ।</span> <sup>36</sup><span class='v-txt'>यदि तुम को समझदार व्यक्ति का पता चले, तो सबेरे ही  उस से मिलने जाओ।  उसके द्वार की देहली तुम्हारे पैरों से घिस जाये।</span> <sup>37</sup><span class='v-txt'>प्रभु की आज्ञाओे का चिन्तन करो, उसके आदेशों का पालन करो।  वह तुम्हारा मन दृढ़ करेगा और तुम को वह प्रज्ञा देगा, जिसकी तुम कामना करते हो।</span> </p>
+        <div class='nav'><a href='028005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

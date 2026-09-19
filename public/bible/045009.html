@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>ज़कारिया - अध्याय 9</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>ज़कारिया</h1>
+        <h2>अध्याय 9</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>दिव्य वाणी।  प्रभु-ईश्वर हद्राक देश से हो कर गुज़र गया है और दमिश्क मे बस गया है; जैसे इस्राएल के वंश, वैसे अराम के नगर प्रभु के हैं।</span> <sup>2</sup><span class='v-txt'>सीमा पर स्थिति हमात, तीरूस भी और अपनी चालाकी के होते हुए भी, सीदोन भी, ये सब प्रभु के हैं।</span> <sup>3</sup><span class='v-txt'>तीरूस ने सुदृढ़ परकोटा बनाया है; उसकी गलियों में जितनी धूल, उतनी चाँदी, जितना कीचड उतना सोना उसने इकट्टा कर लिया है।</span> <sup>4</sup><span class='v-txt'>और अब प्रभु उस पर अधिकार कर लेगा; उसकी शक्तिशाली नावें डुबायी जायेगी और वह आग में ध्वस्त हो जायेगा।</span> <sup>5</sup><span class='v-txt'>यह देख कर अशकलोन भयभीत हो उठेगा, गाज़ा थरथराने लगेगा और एक्रोन काँपर उठेगा; क्योंकि उनकी आशाओं पर पानी फिर जायेगा।  गाज़ा से राज लुप्त हो जायेगा, अशकलोन निर्जन पड जायेगा,</span> <sup>6</sup><span class='v-txt'>किन्तु वर्णसंकर जाति अशदोद में बसी रहेगी।  मैं फिलिस्तिया का अहंकार चूर कर दूँगा।</span> <sup>7</sup><span class='v-txt'>उसके मुँह से बलिपशु का रक्त वमन करवाऊँगा और उसके दाँतों के बीच से घृणित वस्तुएँ निकाल लूँगा।  वह भी हमारे ईश्वर की प्रजा के अविशष्ट भाग में सम्मिलित किया जायेगा और यूदा का एक कुल-जैसा बन जायेगा।  एक्रोन भी, यबूसी की तरह, वैसा ही बन जायेगा।</span> <sup>8</sup><span class='v-txt'>मैं स्वयं अपने भवन के पास पहरा दूँगा, जिससे वहाँ कोई फटकने न पाये; अत्याचारी उसे फिर कभी सता नहीं पायेंगे, क्योंकि मैंने उसके कष्ट की सुधि ली हैं।</span> <sup>9</sup><span class='v-txt'>सियोन की पुत्री! आनन्द मना!  येरूसालेम की पुत्री! जयकार कर! देख! तेरे राजा तेरे पास आ रहे हैं।  वह न्यायी और विजयी हैं।  वह विनम्र हैं।  वह गदहे पर, बछेडे पर, गदही के बच्चे पर सवार हैं।</span> <sup>10</sup><span class='v-txt'>वह एफ्राईम से रथ दूर कर देंगें और येरूसालेम से युद्ध के घोड़ों को।  योद्धा के धनुष का बहिष्कार कर दिया जायेगा।  वह राष्ट्रों के लिए शान्ति घोषित करेंगे।  उनका शासन समुद्र से समुद्र तक और नदी से पृथ्वी के सीमान्तों तक फैल जायेगा।</span> <sup>11</sup><span class='v-txt'>और तेरे सम्बन्ध में, तेरे साथ रक्त के व्यवस्थान के कारण मैं निर्जल गर्त में से तेरे बन्दियों को निकालूँगा।</span> <sup>12</sup><span class='v-txt'>सियोन की पुत्री! तेरे ही पास तेरे बन्दी आशा के साथ लौट आयेंगे।  तेरे निर्वासन काल की क्षतिपूर्ति के लिए मैं तुझे दुगुना लौटा दूँगा।</span> <sup>13</sup><span class='v-txt'>यूदा मेरा धनुष हैः मैं अपना धनुष तान रहा हूँ; एफ्राईम उसका बाण है।  सियोन!  मैं यवन के विरुद्ध तेरे पुत्रों को तैनात करने वाला हूँ; मैं तुझे योद्धा की तलवार बना दूँगा।</span> <sup>14</sup><span class='v-txt'>प्रभु उन पर प्रकट होगा; उसके तीर वज्र की तरह टूट पडेंगे।  प्रभु-ईश्वर तुरही फूँकेगा और दक्षिण की आँधी की तरह आगे बढेगा।</span> <sup>15</sup><span class='v-txt'>विश्वमण्डल का प्रभु उनकी रक्षा करेगा।  वे गोफनों के पत्थरों को निगल लेंगे और अंगूरी की तरह रक्त के प्यासे हो जाऐंगे; और वेदी के सींगों के समान वे रक्त से तरबतर हो जायेंगे।</span> <sup>16</sup><span class='v-txt'>उस दिन प्रभु-ईश्वर उन को विजयी बनायेगा; वह रेवड़ की तरह अपनी प्रजा को चरायेगा; वे भूमि में जड़ी हुई मणियों की तरह चमकेंगे।</span> <sup>17</sup><span class='v-txt'>वे कितने आनन्दित और कितने मनोहर होंगे!  नवयुवक अन्न से हष्ट-पुष्ट हो जायेंगे और अंगूरी पी कर युवतियाँ प्रफुल्लित हो उठेंगी।</span> </p>
+        <div class='nav'><a href='045008.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='045010.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

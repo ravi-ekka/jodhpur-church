@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>पहला इतिहास ग्रन्थ - अध्याय 14</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>पहला इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 14</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तीरूस के राजा हीराम ने देवनगर की लकड़ी, शिल्पकारों और बढ़इयों के साथ दाऊद के पास दूत भेजे, जिससे वे उसके लिए महल बना दें।</span> <sup>2</sup><span class='v-txt'>अब दाऊद जान गया कि प्रभु ने उसे इस्राएल का राजा बना दिया है और अपनी प्रजा इस्राएल के कारण उसका राज्य महान् बना दिया।</span> <sup>3</sup><span class='v-txt'>दाऊद ने येरूसालेम में अन्य पत्नियों से विवाह किया और उसके और पुत्र-पुत्रियाँ उत्पन्न हुए।</span> <sup>4</sup><span class='v-txt'>येरूसालेम में उत्पन्न उसके पुत्रों के नाम ये हैं: शम्मूआ, शोबाब, नातान, सुलेमान,</span> <sup>5</sup><span class='v-txt'>यिभार, एलीशूआ, एल्पलेट,</span> <sup>6</sup><span class='v-txt'>नोगह, नेफ़ेग, याफ़ीआ,</span> <sup>7</sup><span class='v-txt'>एलीशामा, बएलयादा और एलीफ़े।</span> <sup>8</sup><span class='v-txt'>जब फ़िलिस्तियों ने सुना कि दाऊद का सभी इस्राएलियों के राजा के रूप में अभिषेक हुआ है, तो वे सब दाऊद की खोज में निकले।  यह सुन कर दाऊद उनका सामना करने निकला।</span> <sup>9</sup><span class='v-txt'>फ़िलिस्तिनी आये और रफ़ाईम के मैदान में फैल गये।</span> <sup>10</sup><span class='v-txt'>तब दाऊद ने ईश्वर से पूछा, &quot;क्या मैं फ़िलिस्तियों पर आक्रमण करूँ?  क्या तू उन्हें मेरे हाथ दे देगा?&quot;  प्रभु ने उसे उत्तर दिया, &quot;हाँ, आक्रमण करो; मैं उन्हें तुम्हारे हाथ दे दूँगा&quot;।</span> <sup>11</sup><span class='v-txt'>दाऊद ने उन्हें बाल-परासीम जा कर पराजित किया। उस समय दाऊद ने कहा, &quot;ईश्वर ने मेरे द्वारा मेरे शत्रुओं की पंक्ति इस प्रकार तोड़ डाली है, जैसे पानी बाँध का तोड़ डालता है&quot;।  इसलिए उस स्थान का नाम बाल-परसीम पड़ गया।</span> <sup>12</sup><span class='v-txt'>फ़िलिस्ती वहाँ अपनी देवमूर्तियाँ छोड़ कर चले गये और वे दाऊद की आज्ञा से आग में जला दी गयीं।</span> <sup>13</sup><span class='v-txt'>फ़िलिस्ती फिर आ कर उस मैदान में फैल गये।</span> <sup>14</sup><span class='v-txt'>ईश्वर से पूछने पर दाऊद को उत्तर मिला, &quot;उन पर सीधे आक्रमण मत करो, बल्कि चक्कर काट कर उनके पीछे पहुँचो और मोखा वृक्षों की ओर से चढ़ाई करो।</span> <sup>15</sup><span class='v-txt'>तब यदि तुम मोखा वृक्षों के शिखरों में चलने की आवाज़ सुनोगे, तो आक्रमण करोगे; क्योंकि तब फ़िलिस्तियों की सेना पराजित करने के लिए ईश्वर तुम्हारे आगे-आगे जा रहा होगा।&quot;</span> <sup>16</sup><span class='v-txt'>दाऊद ने ईश्वर की आज्ञा का पालन किया और गिबओन से ले कर गेजे़र तक फ़िलिस्तियों को मार भगाया।</span> <sup>17</sup><span class='v-txt'>दाऊद की कीर्ति देश-देशान्तरों में फैल गयी और प्रभु ने उसका आतंक सब राष्ट्रों पर फैला दिया।</span> </p>
+        <div class='nav'><a href='013013.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='013015.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>आमोस - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>आमोस</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>तकोआ के चरवाहों में से आसोम के वचन।  भूकम्प के दो वर्ष पहले यूदा के राजा उज्जीया के दिनों में और इस्राएल के राजा योआश के पुत्र यरोबआम के दिनों में आमोस ने इस्राएल के विषय में दिव्य दर्शन में ये वचन सुनेः</span> <sup>2</sup><span class='v-txt'>&quot;प्रभु-ईश्वर सियोन से गरजता है, येरूसालेम से उसका स्वर गूँजता है; चरवाहों के चरागाह शोक मना रहे हैं और करमेल का शिखर झुलस गया है।&quot;</span> <sup>3</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता हैः &quot;दमिश्क के असंख्य अपराधों के कारण उसके दण्ड का निर्णय अअल है; उसने तो लोहे के पहियों से गिलआद को रौंदा था।</span> <sup>4</sup><span class='v-txt'>इसलिए मैं हज़ाएल के महल मे आग लगा दूँगा, जो बेन-हदद के गढ़ों को भी भस्म कर डालेगी।</span> <sup>5</sup><span class='v-txt'>मैं दमिश्क के प्रवेशद्वार की अर्गला तोडूँगा; आवेन घाटी के निवासियों को बौर बतएदेन के राज्यपाल को मिटा दूँगा; और अराम के लागों को कीर में निर्वासित होना पडेगा&quot;।  यह प्रभु की वाणी है।</span> <sup>6</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता हैः &quot;गाज़ा के असंख्य अपराधों के कारण उसके दण्ड का निर्णय अटल है; उन्होंने तो एक पूरी जाति को निर्वासित कर एदोम के हाथों सौंप दिया था।</span> <sup>7</sup><span class='v-txt'>इसलिए मैं गाज़ा की दीवारों में आग लगा दूँगा, जो उसके गढ़ों को भस्म कर डालेगी।</span> <sup>8</sup><span class='v-txt'>मैं अशदोद के निवासियों का नाश करूँगा और अशकलीन के राज्यपाल को मिटा दूँगा।  मैं एफ्रोन पर अपना हाथ उठाऊँगा और फिलिस्तियों के अवशिष्ट लोग भी नष्ट हो जायेगे।&quot;  यह प्रभु ईश्वर की वाणी है।</span> <sup>9</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता हैः &quot;तीरूस के असंख्य अपराधों के कारण उसके दण्ड का निर्णय अटल है; उन्होंने तो भाईचारे की सांधि को ठुकरा कर एक पूरी जाति को ेनिर्वासित किया था और एदोम के हाथों सौंप दिया था।</span> <sup>10</sup><span class='v-txt'>इसलिए मैं तीरूस की दीवारों पर आग बरसा दूँगा, जो उसके गढ़ों को भी भस्म कर डालेगी।&quot;</span> <sup>11</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता हैः &quot;एदोम के असंख्य अपराधों के कारण उसके दण्ड का निर्णय अटल है; उसने तो हृदय पर पत्थर रख कर अपने भाई पर तलवार चलायी थी; वह अपने क्रोध में कुढता रहता था और आगबबूला हुआ करता था।</span> <sup>12</sup><span class='v-txt'>इसलिए मैं तेमान में आग लगा दूँंगा, जो बोस्त्रा के गढ़ो को भी भस्म कर डालेगी&quot;।</span> <sup>13</sup><span class='v-txt'>प्रभु-ईश्वर यह कहता हैः &quot;अम्मोनियों के असंख्य अपराधों के कारण उसके दण्ड का निर्णय अटल है; उन्होंने तो अपनी सीमाएँ बढ़ाने के लिए गर्भवती माताओं के पेट चीर डाले थे।</span> <sup>14</sup><span class='v-txt'>इसलिए मैं रब्बा की दीवारों में आग लगा दूँगा; युद्ध के दिन, कोलाहल के बीच, तूफान के दिन बवण्डर के वेग से आग भभक उठेगी और उनके गढों को भस्म कर डालेगी।</span> <sup>15</sup><span class='v-txt'>अपने सब सामन्तों के साथ उनका राजा निर्वासित कर दिया जायेगा।&quot;  यह प्रभु की वाणी है।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='037002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

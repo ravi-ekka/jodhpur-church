@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़ेकिएल - अध्याय 44</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़ेकिएल</h1>
+        <h2>अध्याय 44</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इसके बाद वह मुझे पवित्र-स्थान के, बाहरी फाटक पर वापस ले आया, जिसका मुख पूर्व की ओर है, किन्तु वह बन्द था</span> <sup>2</sup><span class='v-txt'>वह मुझ से बोला, &quot;यह फाटक बन्द रखा जायेगा।  इसे खोला नहीं जायेगा और इस से हो कर कोई प्रवेश नहीं करेगा; क्योंकि इस से हो कर इस्राएल के प्रभु-ईश्वर ने प्रवेश किया है।  इसलिए यह बंद रखा जायेगा।</span> <sup>3</sup><span class='v-txt'>प्रभु के सामने प्रसाद खाने के लिए इस में केवल शासक बैठ सकता है।  वह फाटक के द्वारमण्डप से हो कर प्रवेश करेगा और उसी मार्ग से बाहर निकलेगा।&quot;</span> <sup>4</sup><span class='v-txt'>इसके बाद वह मुझे उत्तरी फाटक के मार्ग से मंदिर के सामने ले अया।  जब मैंने दृष्टि दौड़ायी, तो यह देखा कि प्रभु का मंदिर प्रभु की महिमा से भरा गया है और मैं मुँह के बल गिर पडा।</span> <sup>5</sup><span class='v-txt'>प्रभु ने मुझ से कहा, &quot;मानवपुत्र! अच्छी तरह ध्यान दो, अपनी आँखें खोल कर देखो और अपने कान लगा कर वह सब सुनो, जो मैं तुम को प्रभु के मंन्दिर सम्बन्धी आदेशों और उसकी विधियों के विषय में बताने जा रहा हूँ।  इसका पूरा ध्यान रखो कि किन को मंदिर में प्रवेश करने दिया जा सकता है और किन को पवित्र-स्थान में प्रवेश करने नहीं देना है।</span> <sup>6</sup><span class='v-txt'>विद्रोही घराने से, इस्राएल के घराने से बोलोः प्रभु-ईश्वर यह कहता है- इस्राएल के घराने! अपने सभी वीभत्स कर्मों का त्याग कर दो।</span> <sup>7</sup><span class='v-txt'>तुम विदेशियों को, जो मन और शरीर से बेखतना है, मेरे पवित्र-स्थान में प्रवेश दे कर उसे दूषित करते हो, जब तुम मुझे नैवेद्य, चरबी और रक्त चढाते हो।  तुमने अपने सभी वीभत्स कर्मों के अतिरिक्त मेर विधान भी भंग किया है।</span> <sup>8</sup><span class='v-txt'>तुमने मेरी पवित्र वस्तुओं की देखभाल नहीं की, बल्कि मेरे पवित्र-स्थान की सेवा के लिए विदेशियों को नियुक्त किया है।</span> <sup>9</sup><span class='v-txt'>&quot;इसलिए प्रभु-ईश्वर यह कहता है: इस्राएलियों के साथ रहने वाले सभी विदेशियों में एक भी विदेशी, जो मन और शरीर से बेखतना है, मेरे पवित्र-स्थान में प्रवेश नहीं करेगा।</span> <sup>10</sup><span class='v-txt'>किन्तु लेवियों को अपना दण्ड भोगना होगा, जो मुझ से बहुत दूर हो गये थे और इस्राएल के भटकते ही अपनी देवमूर्तियों की उपासना करने के कारण भटक गये थे।</span> <sup>11</sup><span class='v-txt'>वे मन्दिर के फाटकों पर पहरेदारी और उसका सेवाकार्य करेंगे।  वे मेरे पवित्र-स्थान के सेवक होंगे।  वे लोगों के लिए होम-बलि और बलि-पशुओं का वध करेंगे तथा लोगों की सेवा के लिए उनके सामने प्रस्तुत रहेंगे।</span> <sup>12</sup><span class='v-txt'>वे उनकी देवमूर्तियों के सामने उनके लिए सेवाकार्य करते थे और इस्राएल के घराने के लिए पाप की ठोकर बन गये थे, इसलिए मैंने उनके विषय में यह शपथ खायी है- प्रभु-ईश्वर यह कहता है-कि उन को अपना दण्ड भोगना होगा।</span> <sup>13</sup><span class='v-txt'>वे न तो याजकीय सेवा करने मरे पास आयेंगे और न मेरी पवित्र वस्तुओं और परमपवित्र वस्तुओं के पास, बल्कि उन्हें अपने द्वारा किये गये वीभत्स कार्यों के कारण अपमान सहना पडेगा।</span> <sup>14</sup><span class='v-txt'>तब भी मैं मन्दिर की रखवाली करने, उसके सभी सेवाकार्य और वहाँ जो कुछ किया जा सकता है, उसे सम्पन्न करने के लिए उन को नियुक्त करूँगा।</span> <sup>15</sup><span class='v-txt'>&quot;किन्तु सादोक वश के वे लेवी याजक, जो इस्राएलियों के मुझ से भटक जाने पर मेरे पवित्र-स्थान की सेवा करते थे, मेरे सेवाकार्य के लिए मेरे पास आ सकेंगे।  वे मुझे चरबी और रक्त चढ़ाने के लिए मेरे सामने उपस्थित होंगे- यह प्रभु-ईश्वर की वाणी है।</span> <sup>16</sup><span class='v-txt'>मेरे पवित्र स्थान में प्रवेश करेंगे, मेरा सेवाकार्य करने मेरी मेज के समीप आयेंगे और मेरी सेवा करेंगे।</span> <sup>17</sup><span class='v-txt'>जब वे भीतरी प्रांगण के फाटकों में प्रवेश करेंगे, तो वे छालटी के वस्त्र धारण किये रहेंगे।  जब वे भीतरी प्रांगण के फाटकों पर और मन्दिर के भीतर मेरी सेवा करेंगे, तो वे कोई ऊनी वस्त्र नहीं पहनेंगे।</span> <sup>18</sup><span class='v-txt'>वे अपने सिर पर छालटी की पगड़ी और कमर में छालटी के जाँघियें पहने रहेंगे।  वे ऐसे वस्त्र न पहनेंगे, जिन से पसीना आता हो।</span> <sup>19</sup><span class='v-txt'>जब वे भीतरी प्रांगण में लोगों के पास जायेंगे, तो सेवाकार्य के समय पहने गये वस्त्र उतार देंगे और उन्हें पवित्र कक्षों में रख देंगे।  वे दूसरे वस्त्र पहनेंगे, जिससे उनके वस्त्रों की पवित्रता लोगेां का स्पर्श न करें।</span> <sup>20</sup><span class='v-txt'>वे न तो सिर मुँडायेंगे और न लम्बे बाल ही रखेंगे।  वे अपने सिर के बाल कटाते रहेंगे।</span> <sup>21</sup><span class='v-txt'>कोई भी याजक भीतरी प्रांगण में अंगूरी पी कर प्रवेश नहीं करेगा।</span> <sup>22</sup><span class='v-txt'>वे किसी विधवा या परित्यक्ता से विवाह नहीं करेंगे, बल्कि इस्राएल के घराने की वंशज कुमारी कन्या अथवा ऐसी विधवा से, जो याजक की विधवा है।</span> <sup>23</sup><span class='v-txt'>वे मेरी प्रजा को पवित्र और सामान्य का भेद सिखलायेंगे और उसे अशुद्ध और शुद्ध में अन्तर करने की शिक्षा देंगे।</span> <sup>24</sup><span class='v-txt'>वे विवाद में न्यायकर्ता का काम करेंगे और वे उसका निर्णय मेरे निर्णयों के अनुसार करेंगे।  वे मेरे सभी निर्धारित पर्वों में मेरे नियमों और आदेशों का पालन करेंगे और मेरे विश्रामदिवसों को पवित्र बनाये रखेंगे।</span> <sup>25</sup><span class='v-txt'>वे मृतक के पास जा कर अपने को अशुद्ध नहीं बनायेंगे किन्तु वे अपने पिता, माता, पुत्र, पुत्री, भाई या अविवाहित बहन के शव द्वारा अपने को अशुद्ध बना सकते हैं।</span> <sup>26</sup><span class='v-txt'>यदि वह अशुद्ध हो जाता है, तो वह सात दिन प्रतीक्षा करेगा और तब शुद्ध हो जायेगा।</span> <sup>27</sup><span class='v-txt'>जब वह पवित्र-स्थान में, भीतरी प्रांगन में पवित्र-स्थान का सेवाकार्य करने जायेगा, तो वह प्रायश्चित-बलि अर्पित करेगा।  यह प्रभु-ईश्वर की वाणी है।</span> <sup>28</sup><span class='v-txt'>&quot;उनका कोई दायभाग नहीं होगा।  मैं ही उनका दायभाग हूँ।  तुम उन्हें इस्राएल में कोई सम्पत्ति नहीं दोगे।  मैं ही उनकी सम्पत्ति हूँ।</span> <sup>29</sup><span class='v-txt'>वे अन्न-बलि, प्रायश्चित-बलि और क्षतिपूर्ति-बलि खा सकेंगे।  इस्राएल की प्रत्येक पूर्णसमर्पित वस्तु मेरी होगी।</span> <sup>30</sup><span class='v-txt'>सब से पहले, सभी प्रकार के प्रथम फलों और तुम्हारी भेंटों में सब प्रकार की भेंटों पर याजकों का अधिकार होगा।  तुम लोग भी अपने पहले आटे में से याजकों को दोगे, जिससे तुम्हारे घरों को आशीर्वाद प्राप्त हो।</span> <sup>31</sup><span class='v-txt'>याजक ऐसे पक्षी या पशु का मांस नहीं खायेंगे, जिसकी मृत्यु स्वयं हुई है या जिसे किसी पशु ने मारा है।</span> </p>
+        <div class='nav'><a href='033043.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='033045.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

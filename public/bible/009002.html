@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>समूएल का पहला ग्रन्थ - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>समूएल का पहला ग्रन्थ</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>अन्ना ने इस प्रकार प्रार्थना की: मेरा हृदय प्रभु के कारण आनन्दित हो उठा, मुझे अपने प्रभु से बल मिलता है।  मैं अपने शत्रुओं का सामना कर सकती हूँ, क्योंकि तेरा सहारा मुझे उत्साहित करता है।</span> <sup>2</sup><span class='v-txt'>प्रभु जैसा कोई पावन नहीं, तुझे छोड़ कर कोई नहीं, हमारे ईश्वर- जैसी कोई चट्टान नहीं।</span> <sup>3</sup><span class='v-txt'>घमण्ड-भरी बातें मत करो, तुम्हारे मुख से ढिठाई के शब्द नहीं निकलें।  प्रभु सर्वज्ञ ईश्वर है, वह कर्मों का लेखा रखता है।</span> <sup>4</sup><span class='v-txt'>शक्तिशालियों के धनुष टूट गये, और जो दुर्बल थे, वे शक्तिसम्पन्न बन गये।</span> <sup>5</sup><span class='v-txt'>जो तृप्त थे, वे रोटी के लिए मज़दूरी करते है।  और जो भूखे थे, वे सम्पन्न बन गये।  जो बाँझ थी, वह सात बार प्रसव करती है।  और जो पुत्रवती थी, उसकी गोद ख़ाली है।</span> <sup>6</sup><span class='v-txt'>प्रभु मारता और जिलाता है, वह अधोलोक पहुँचाता और वहाँ से निकालता है।</span> <sup>7</sup><span class='v-txt'>प्रभु निर्धन और धनी बना देता है, वह नीचा दिखाता और ऊँचा उठाता है।</span> <sup>8</sup><span class='v-txt'>वह दीन-हीन को धूल से निकालता और कूड़े पर बैठे कंगाल को ऊपर उठा कर उसे रईसों की संगति में पहुँचाता और सम्पन्न के आसन पर बैठाता है; क्योंकि पृथ्वी के खम्भे प्रभु के हैं, उसने उन पर जगत् को रखा है।</span> <sup>9</sup><span class='v-txt'>वह अपने भक्तों के क़दमों की रक्षा करता है, किन्तु दुष्ट जन अन्धकार में लुप्त हो जायेंगे; क्योंकि मनुष्य अपने बाहुबल के कारण विजयी नहीं होता।</span> <sup>10</sup><span class='v-txt'>प्रभु के विरोधी नष्ट हो जायेगे, वह उनके विरुद्ध आकाश में गरज उठेगा।  प्रभु समस्त पृथ्वी का न्याय करेगा वह अपने राजा को सामर्थ्य प्रदान करेगा।  वह अपने अभिषिक्त का सिर ऊँचा उठायेगा।</span> <sup>11</sup><span class='v-txt'>एल्काना अपने घर रामा लौट आया, परन्तु बालक याजक एली के संरक्षण में प्रभु की सेवा करने लगा।</span> <sup>12</sup><span class='v-txt'>एली के पुत्र दुष्ट थे।  वे याजक प्रभु पर श्रद्धा नहीं रखते</span> <sup>13</sup><span class='v-txt'>और लोगों के साथ इस प्रकार का व्यवहार करते थे - जब कोई बलि चढ़ाता, याजक का सेवक त्रिशूल ले कर आ जाता और जब मांस पकने लगता,</span> <sup>14</sup><span class='v-txt'>तो उसे तवा या कड़ाही या कड़ाह या पात्र में चुभोता और जो कुछ त्रिशूल में लगा आ जाता, याजक उसे अपने लिए रख लेता।  शिलों में आने वाले सब इस्राएलियों के साथ वे यही किया करते,</span> <sup>15</sup><span class='v-txt'>यहाँ तक कि चरबी जलाने के पहले ही याजक का सेवक आकर बलि चढ़ाने वाले से कहता, &quot;याजक को भुनने के लिए मांस दो।  वह तुम्हारे पकाये हुए मांस से कुछ नहीं लेना चाहता।  वह कच्चा मांस माँगता है।&quot;</span> <sup>16</sup><span class='v-txt'>इस पर यदि वह कहता कि पहले चरबी तो जला लेने दो, उसके बाद तुम जो कुछ चाहों, ले लेना, तो वह उत्तर देता, &quot;नहीं, तुम्हें अभी देना पड़ेगा; नहीं तो मैं उसे ज़बरदस्ती ले लूँगा।&quot;</span> <sup>17</sup><span class='v-txt'>प्रभु की दृष्टि में उन युवकों का पाप बहुत बड़ा था, क्योंकि वे प्रभु को अर्पित चढ़ावा तुच्छ समझते थे।</span> <sup>18</sup><span class='v-txt'>बालक समूएल छालटी का एफ्ऱोद पहने प्रभु के सामने सेवा करता था।</span> <sup>19</sup><span class='v-txt'>उसकी माँ उसके लिए एक छोटा अंगरखा बनाती और प्रति वर्ष, जब वह अपनी वार्षिक बलि चढ़ाने अपने पति के साथ आती, उसे उसके पास लाया करती थी।</span> <sup>20</sup><span class='v-txt'>उस समय एली एल्काना और उसकी पत्नी को आशीर्वाद दे कर कहता, &quot;प्रभु उस प्रभु-समर्पित बालक के बदले इस स्त्री द्वारा तुम्हें सन्तति दे, तुम्हारी वंश-वृद्वि करे।&quot; इसके बाद वे घर लौट जाते थे।</span> <sup>21</sup><span class='v-txt'>प्रभु की कृपा से अन्ना बार-बार गर्भवती हुई और वह तीन पुत्रों और दो पुत्रियों की माता बन गयी।  इस बीच बालक समूएल प्रभु के सामने बढ़ता गया।</span> <sup>22</sup><span class='v-txt'>अब एली बूढा हो गया था।  उसने वह सब सुना, जो उसके पुत्र सारे इस्राएलियों के साथ किया करते थे और यह भी कि वे दर्शन-कक्ष के द्वार पर सेवा करने वाली स्त्रियों के साथ सोते थे।</span> <sup>23</sup><span class='v-txt'>यह सुन उसने उन से कहा, &quot;तुम ऐसा काम क्यों करते हो?  मैं सब लोगों से तुम्हारे कुकर्मों की चरचा सुन रहा हूँ।</span> <sup>24</sup><span class='v-txt'>नहीं, नहीं, मेरे पुत्रों, प्रभु की प्रजा द्वारा जिसकी सर्वत्र चरचा होती है, वह कोई ठीक बात नहीं है।</span> <sup>25</sup><span class='v-txt'>मनुष्य जब मनुष्य के विरुद्ध अपराध करता, तो ईश्वर मध्यस्थ हो कर न्याय करता है; परन्तु यदि कोई मनुष्य प्रभु के विरुद्ध पाप करता, तो उसका मध्यस्थ कौन होगा?&quot;  परन्तु उन्होंने अपने पिता की बातों पर ध्यान नहीं दिया, क्योंकि प्रभु की इच्छा थी कि उनकी मृत्यु हो जाये।</span> <sup>26</sup><span class='v-txt'>बालक समूएल के शरीर का विकास होता रहा और वह ईश्वर तथा मनुष्यों के अनुग्रह में बढ़ता गया।</span> <sup>27</sup><span class='v-txt'>एक दिन एली के पास एक ईश्वर-भक्त मनुष्य आया और बोला, &quot;प्रभु का यह कहना है: जब तुम्हारे पिता का घराना मिस्र में फ़िराउन के अधीन था, तब मैं उनके सामने प्रकट हुआ था</span> <sup>28</sup><span class='v-txt'>और मैंने इस्राएल के सब वंशों में तुम्हारे पिता को अपना याजक नियुक्त किया था, जिससे वह मेरी वेदी के पास आकर सुगन्धित दृव्य चलाये और मेरे पवित्र-स्थान पर एफ्ऱोद पहने।  मैंने तुम्हारे पिता के घराने को इस्राएलियों द्वारा अर्पित सब चढ़ावे दिये।</span> <sup>29</sup><span class='v-txt'>मैंने जो बलिदान और चढ़ावा अपने मन्दिर में अर्पित करने का आदेश दिया है, तुम उनका तिरस्कार क्यों करते हो और अपने पुत्रों को मुझ से अधिक क्यों समझते हो, जिससे तुम मेरी प्रजा इस्राएल द्वारा अर्पित प्रत्येक भेंट का सर्वोत्तम भाग खा कर मोटे होते जाते हो?</span> <sup>30</sup><span class='v-txt'>इसलिए प्रभु इस्राएल का ईश्वर यह कहता है: मैंने कहा था कि तुम्हारा और तुम्हारे पिता का घराना सदा मेरे पवित्र स्थान पर मेरी सेवा करेगा, किन्तु जब प्रभु कहता हैः ऐसा नहीं होगा।  मैं उन्हीं का आदर करता हूँ, जो मेरा आदर करते हैं; परन्तु जो मुझे तुच्छ समझते हैं वे तुझ समझे जायेंगे।</span> <sup>31</sup><span class='v-txt'>एक समय ऐसा आ जायेगा, जब मैं तुम्हारी तथा तुम्हारे पिता के घराने की शक्ति समाप्त कर दूँगा।  तुम्हारे घराने में कोई बूढ़ा नहीं रह जायेगा।</span> <sup>32</sup><span class='v-txt'>तुम मन्दिर में एक प्रतिद्वन्द्वी को और उसके द्वारा किया हुआ इस्राएल का कल्याण देखोगे; किन्तु तुम्हारे घराने में कोई बूढ़ा नहीं रह पायेगा।</span> <sup>33</sup><span class='v-txt'>मैं अपनी वेदी के पास तुम्हारे एक वंशज को इसलिए बनाये रखूँगा कि वह तुम को रूलाता रहे और तुम्हारे जी को दुःख देता रहे और तुम्हारे सभी वंशजों की मृत्यु युवास्था में ही हो जायेगी।</span> <sup>34</sup><span class='v-txt'>जो तुम्हारे दोनों पुत्र होप़नी ओर पीनहास पर बीतेगी, वह तुम्हारे लिए एक चिह्न होगा -दोनों की मृत्यु एक ही दिन होगी।</span> <sup>35</sup><span class='v-txt'>मैं अपने लिए एक ईमानदार याजक नियुक्त करूँगा, जो मेरे मन और मेरी इच्छा के अनुसार काम करेगा।  मैं उसका वंश बनाये रखूँगा, जो सदा मेरे अभिषिक्त के सामने सेवा करता रहेगा।</span> <sup>36</sup><span class='v-txt'>जो तुम्हारे घराने में शेष रहेगा, वह एक सिक्का और एक रोटी माँगते हुए उसके सामने दण्डवत् करेगा और कहेगा: कृपया मुझे याजकीय दल में सम्मिलित कर लीजिए, जिससे मुझे खाने के लिए रोटी का टुकड़ा मिले’।&quot;</span> </p>
+        <div class='nav'><a href='009001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='009003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

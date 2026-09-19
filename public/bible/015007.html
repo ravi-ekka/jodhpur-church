@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एज़्रा - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एज़्रा</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इसके बाद, फ़ारस के राजा अर्तज़र्कसीस के शासनकाल में, एज़्रा आया।  एज़्रा सराया का पुत्र था, सराया अज़र्या का, अज़र्या हिलकीया का,</span> <sup>2</sup><span class='v-txt'>हिलकीया शल्लूम का, शल्लूम सादोक का, सादोक अहीटूब का,</span> <sup>3</sup><span class='v-txt'>अहीटूब अमर्या का, अमर्या अज़र्या का, अज़र्या मरायोत का,</span> <sup>4</sup><span class='v-txt'>मरायोत ज़रह्या का, ज़रह्या उज़्ज़ी का, उज़्ज़ी बुक्की का।</span> <sup>5</sup><span class='v-txt'>बुक्की अबीशूआ का, अबीशूआ पीनहास का, पीनहास एलआजर का और एलआजर महायाजक हारून का पुत्र था।</span> <sup>6</sup><span class='v-txt'>वही एज़ा बाबुल से लौट कर आया।  वह शास्त्री था। वह मूसा की संहिता का विशेषज्ञ था, जिसे प्रभु, इस्राएल के ईश्वर ने दिया था।  प्रभु, उसका ईश्वर उसके साथ था, इसलिए वह जो कुछ मांगता था, राजा उसे देता था।</span> <sup>7</sup><span class='v-txt'>उस समय, राजा अर्तज़र्कसीस के सातवें वर्ष, अनेक इस्राएली, याजक, लेवी, गायक, द्वारपाल और मन्दिर के सेवक येरूसालेम आये।</span> <sup>8</sup><span class='v-txt'>एज़्रा राजा के सातवें वर्ष के पाँचवें महीने येरूसालेम आया।</span> <sup>9</sup><span class='v-txt'>वह पहले महीने के पहले दिन बाबुल से चला गया और पाँचवें महीने के पहले दिन येरूसालेम पहुँचा।  उसके ईश्वर की कृपा उसकी सहायता करती थी;</span> <sup>10</sup><span class='v-txt'>क्योंकि एज्ऱा़ ने प्रभु की संहिता के अध्ययन में, उसके पालन और इस्राएल की विधियों और रीति-रिवाजों की शिक्षा में मन लगाया था।</span> <sup>11</sup><span class='v-txt'>जो पत्र राजा अर्तज़र्कसीस ने याजक, शास्त्री और प्रभु की आज्ञाओं तथा इस्राएल की विधियों की पण्डित एज्रा़ को दिया था, उसकी प्रतिलिपि इस प्रकार हैः</span> <sup>12</sup><span class='v-txt'>&quot;याजक और स्वर्ग के ईश्वर की संहिता के ज्ञाता एज़्रा के नाम राजाधिराज अर्तज़र्कसीस का पत्र।  अभिवादन।</span> <sup>13</sup><span class='v-txt'>मेरा आदेश है कि मेरे राज्य के इस्राएली लोगों, उनके याजकों और लेवियों में ऐसा प्रत्येक व्यक्ति तुम्हारे साथ जा सकता है, जो येरूसालेम जाने को तैयार है।</span> <sup>14</sup><span class='v-txt'>तुम राजा और उसके सात मन्त्रियों की ओर से इसलिए भेजे जा रहे हो कि तुम अपने ईश्वर की संहिता के पालन के विषय में यूदा और येरूसालेम में पता लगाओ</span> <sup>15</sup><span class='v-txt'>और राजा तथा उसके मन्त्री येरूसालेम में निवास करने वाले ईश्वर को जो सोना-चाँदी स्वेच्छा से चढ़ाते हैं</span> <sup>16</sup><span class='v-txt'>और वह चाँदी, सोना, जो तुम्हें बाबुल के प्रान्त भर से मिलेगा तथा वे चढ़ावे, जो जनता और याजक येरूसालेम के अपने ईश्वर के मन्दिर में स्वेच्छा से अर्पित करेंगे, वह सब ले जाओ।</span> <sup>17</sup><span class='v-txt'>तुम उस द्रव्य से बछड़े, मेढ़े, मेमने और उनके साथ की अन्न-बलियाँ और अर्घ ख़रीदोगे और येरूसालेम में अपने ईश्वर के मन्दिर में चढ़ाओगे।</span> <sup>18</sup><span class='v-txt'>तुम्हें और तुम्हारे भाई-बन्धुओं को जैसा उचित लगे, शेष चाँदी और सोने का उपयोग अपने ईश्वर की इच्छा के अनुसार कर सकते हो।</span> <sup>19</sup><span class='v-txt'>जो वस्तुएँ तुम्हें अपने ईश्वर के मन्दिर की सेवा के लिए दी जाएँगी, उन्हें तुम येरूसालेम के ईश्वर के सामने रखोगे।</span> <sup>20</sup><span class='v-txt'>तुम राजा के कोषागार से वह सब ख़र्च करोगे, जो तुम्हारे ईश्वर के मन्दिर के उपयोग के लिए तुम्हें आवश्यक लगे।</span> <sup>21</sup><span class='v-txt'>&quot;मैं, राजा अर्तज़र्कसीस, नदी के उस पार के ख़ज़ांचियों को यह आज्ञा देता हूँ कि याजक और स्वर्ग के ईश्वर की संहिता का शास्त्री एज्ऱा तुम से जो कुछ माँगे, वह उसे इतना ही दिया जाये,</span> <sup>22</sup><span class='v-txt'>अर्थात् एक सौ मन चाँदी, पैंतालीस हज़ार लिटर गेहूँ, साढे़ चार हज़ार लिटर अंगूरी, साढ़े चार हज़ार लिटर तेल और बिना माप-तौल के नमक।</span> <sup>23</sup><span class='v-txt'>स्वर्ग का ईश्वर स्वर्ग के ईश्वर के मन्दिर के लिए जो भी आज्ञा दे, उसक पालन तुरन्त किया जाये।  कहीं ऐसा न हो कि राजा का शासन और उसके पुत्र उसके कोप-भाजन बन जायें।</span> <sup>24</sup><span class='v-txt'>हम तुम्हें यह आदेश भी देते हैं कि किसी याजक, लेवी, गायक, द्वारपाल, मन्दिर के सेवक या ईश्वर के मन्दिर के किसी अन्य कर्मचारी से कर, उपहार या चुंगी न ली जाये।</span> <sup>25</sup><span class='v-txt'>&quot;और तुम, एज़्रा!  तुम अपनी ईश्वर-प्रदत्त बुद्धि के अनुसार न्यायाधीशों और पदाधिकारियों को नियुक्त करोगे, जो नदी के उस पार के सब निवासियों का न्याय करेंगे, उनको जो तुम्हारे ईश्वर की विधियाँ जानते हैं जो उन्हें नहीं जानते है।, तुम उन्हें उनकी शिक्षा दोगे।</span> <sup>26</sup><span class='v-txt'>जो व्यक्ति तुम्हारे ईश्वर की संहिता और राजा की विधि का पूरा-पूरा पालन नहीं करे, उसे दण्ड दिया जाये-या तो प्राणदण्ड या निर्वासन या जुर्माना या कै़द।&quot;</span> <sup>27</sup><span class='v-txt'>प्रभु, हमारे पूर्वजों का ईश्वर धन्य है!  जिसने राजा के मन में येरूसालेम में प्रभु के मन्दिर का सम्मान करने का विचार उत्पन्न किया है</span> <sup>28</sup><span class='v-txt'>और मुझे राजा और उसके मन्त्रियों तथा राजा के सभी शक्तिशाली पदाधिकारियों का कृपापात्र बनाया है।  प्रभु, मेरा ईश्वर मेरे साथ रहा।  तभी तो मैं इस्राएलियों के बीच अपने साथ चलने वाले नेताओं को पा सका।</span> </p>
+        <div class='nav'><a href='015006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='015008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

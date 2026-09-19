@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 27</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 27</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मूसा और इस्राएल के नेताओं ने लोगों को यह आदेश दिया, “मैं जो आज्ञायें तुम्हें आज दे रहा हूँ, तुम उन सबका पालन करते रहो।</span> <sup>2</sup><span class='v-txt'>जब तुम यर्दन पार कर उस देश में पहुँचो, जिसे प्रभु, तुम्हारा ईश्वर तुम्हें देने वाला है, तब बड़े-बड़े पत्थर लगा कर उन पर चूना फेर दो</span> <sup>3</sup><span class='v-txt'>और उन पर संहिता के सब नियम अंकित करो।  इस प्रकार तुम यर्दन पार कर उस देश में पहुँच सकोगे, जिसे प्रभु, तुम्हारा ईश्वर तुम्हें दे रहा है - एक ऐसा देश, जहाँ दूध और मधु की नदियाँ बहती हैं, जैसी की प्रभु तुम्हारे पूर्वजों के ईश्वर ने तुम से प्रतिज्ञा की थी</span> <sup>4</sup><span class='v-txt'>&quot;यर्दन पार करने के बाद तुम उन पत्थरों को, जिन के विषय में मैं तुम्हें आज आदेश दे रहा हूँ, एबाल पर्वत पर स्थापित कर उन पर चूना फेर दो।</span> <sup>5</sup><span class='v-txt'>वहाँ प्रभु, अपने ईश्वर के लिए एक ऐसी वेदी बनाओ, जिसके पत्थरों पर लोहे का औज़ार न चला हो।</span> <sup>6</sup><span class='v-txt'>तुम प्रभु, अपने ईश्वर के लिए ऐसे ही अनगढ़ पत्थरों की एक वेदी बनाओ और उस पर प्रभु, अपने ईश्वर के लिए होम बलियाँ चढ़ाओ।</span> <sup>7</sup><span class='v-txt'>तुम वहाँ शांति-बलि भी चढ़ाओ और वहाँ भोजन करते हुये आनन्द मनाओ।</span> <sup>8</sup><span class='v-txt'>तुम उन पत्थरों पर इस संहिता के सभी शब्द स्पष्ट अक्षरों में अंकित करो।</span> <sup>9</sup><span class='v-txt'>मूसा और लेवी कुल के याजकों ने सब इस्राएलियों से कहा, &quot;इस्राएल! शांत रहकर ध्यान से सुनो।  आज तुम प्रभु, अपने ईश्वर की प्रजा बन गये हो।</span> <sup>10</sup><span class='v-txt'>तुम प्रभु, अपने ईश्वर की बात मानो; उसके आदेशों और विधि-निषेधों का पालन करो, जो मैं आज तुम्हें दे रहा हूँ।&quot;</span> <sup>11</sup><span class='v-txt'>उसी दिन मूसा ने लोगों को यह कहते हुये आदेश दिया,</span> <sup>12</sup><span class='v-txt'>&quot;यर्दन पार करने के बाद लोगों को आषीर्वचन देने के लिए सिमओन, लेवी, युदा, इस्साकार, यूसुफ़ और बेनयामीन के वंश गरिज़्ज़ीम पर्वत पर खडे़ हों</span> <sup>13</sup><span class='v-txt'>और अभिशाप देने के लिए रूबेन, गाद, आषेर, जबुलोन, दान और नफ़्ताली के वंश एबाल पर्वत पर खड़े हों।</span> <sup>14</sup><span class='v-txt'>तब लेवीवंश ऊँचे स्वर में सब इस्राएलियों को यह घोषणा सुनायेंगे-</span> <sup>15</sup><span class='v-txt'>’अभिशप्त है वह व्यक्ति, जो प्रतिमा खोदता या देव मूर्ति ढ़ालता है और उसे छिप कर स्थापित करता है, क्योंकि प्रभु की दृष्टि में कारीगर की कृति घृणित है’, और सब लोग उत्तर मे कहेंगे ’आमेन’।</span> <sup>16</sup><span class='v-txt'>’अभिशप्त है वह, जो अपने पिता या अपनी माता का अपमान करता है’, और सब लोग उत्तर में कहेंगे। आमेन</span> <sup>17</sup><span class='v-txt'>’अभिशप्त है वह, जो अपने पड़ोसी की मेड़ बदलता है’ और सब लोग उत्तर में कहेंगे, ’आमेन’।</span> <sup>18</sup><span class='v-txt'>’अभिशप्त है वह, जो अंधे को उसके रास्ते से भटकाता है’ और सब लोग उत्तर में कहेगे ’आमेन’।</span> <sup>19</sup><span class='v-txt'>’अभिशप्त वह, जो प्रवासी, अनाथ और विधवा के विरुद्ध अन्यायपूर्ण निर्णय देता है’, और सब लोग उत्तर में कहेंगे ’आमेन’।</span> <sup>20</sup><span class='v-txt'>’अभिशप्त है वह, जो अपने पिता की पत्नी से संसर्ग करता है, क्योंकि वह अपने पिता की शय्या का अनादर करता है,’ और सब लोग उत्तर में कहेंगे, ’आमेन’।</span> <sup>21</sup><span class='v-txt'>’अभिशप्त वह, जो किसी भी पशु के साथ गमन करता है’, और सब लोग उत्तर में कहेंगे ’आमेन’।</span> <sup>22</sup><span class='v-txt'>’अभिशप्त है वह, जो अपनी बहन के साथ - चाहे व अपने पिता या माता की बेटी हो - प्रसंग करता है, और सब लोग उत्तर में कहेंगे ’आमेन’।</span> <sup>23</sup><span class='v-txt'>’अभिशप्त है वह, जो अपनी सास के साथ प्रसंग करता है, और सब लोग उत्तर में कहेंगे ’आमेन’।</span> <sup>24</sup><span class='v-txt'>’अभिशप्त है वह, जो छिप कर अपने पड़ोसी की हत्या करता है’, और सब लोग उत्तर में कहेंगे ’आमेन’।</span> <sup>25</sup><span class='v-txt'>’अभिशप्त है वह, जो निर्दोष रक्त बहाने के लिए घूस लेता है’ और सब लोग उत्तर में कहेंगे ’आमेन’।</span> <sup>26</sup><span class='v-txt'>’अभिशप्त है वह, जो इस संहिता के शब्दों का आदर और पालन नहीं करेगा,’ और सब लोग उत्तर में कहेंगे ’आमेन’।</span> </p>
+        <div class='nav'><a href='005026.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005028.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

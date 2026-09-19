@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>राजाओं का पहला ग्रन्थ - अध्याय 3</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>राजाओं का पहला ग्रन्थ</h1>
+        <h2>अध्याय 3</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>सुलेमान मिस्र के राजा फ़िराऊन का दामाद बन गया।  उसने फ़िराऊन  की पुत्री से विवाह किया और जब तक उसने अपना महल, प्रभु का निवास और येरूसालेम की चारदीवारी नहीं बनवा ली, तब तक उसे दाऊदनगर में ही रखा।</span> <sup>2</sup><span class='v-txt'>लोग अब तक पहाड़ी पूजास्थानों पर उपासना किया करते थे, क्योंकि उस समय तक प्रभु के नाम पर कोई मन्दिर नहीं बनवाया गया था।</span> <sup>3</sup><span class='v-txt'>सुलेमान को प्रभु से प्रेम था और वह अपने पिता दाऊद के विधानों के अनुसार कार्य करता था; लेकिन वह पहाड़ी पूजास्थानों पर बलि चढ़ाता और धूप दिया करता था।</span> <sup>4</sup><span class='v-txt'>सुलेमान बलि चढ़ाने गिबओन गया, क्योंकि यह बलि चढ़ाने के मुख्य पहाड़ी थी।  सुलेमान ने वहाँ की वेदी पर एक हज़ार होम बलियाँ चढ़ायीं।</span> <sup>5</sup><span class='v-txt'>गिबओन में प्रभु रात को सुलेमान को स्वप्न में दिखाई दिया।  ईश्वर ने कहा, &quot;बताओ, मैं तुम्हें क्या दे दूँ?&quot;</span> <sup>6</sup><span class='v-txt'>सुलेमान ने यह उत्तर दिया, &quot;तू मेरे पिता अपने सेवक दाऊद पर बड़ी कृपा करता रहा।  वह सच्चाई, न्याय और निष्कपट हृदय से तेरे मार्ग पर चलते रहे, इसलिए तूने उन्हें एक पुत्र दिया, जो अब उनके सिंहासन पर बैठा है।</span> <sup>7</sup><span class='v-txt'>प्रभु! मेरे ईश्वर! तूने अपने इस सेवक को अपने पिता दाऊद के स्थान पर राजा बनाया, लेकिन मैं अभी छोटा हूँ।  मैं यह नहीं जानता कि मुझे क्या करना चाहिए।</span> <sup>8</sup><span class='v-txt'>मैं यहाँ तेरी चुनी हुई प्रजा के बीच हूँ।  यह राष्ट्र इतना महान् है कि इसके निवासियों की गिनती नहीं हो सकती।</span> <sup>9</sup><span class='v-txt'>अपने इस सेवक को विवेक देने की कृपा कर, जिससे वह न्यायपूर्वक तेरी प्रजा का शासन करे और भला तथा बुरा पहचान सके।  नहीं तो, कौन तेरी इस असंख्य प्रजा का शासन कर सकता है?&quot;</span> <sup>10</sup><span class='v-txt'>सुलेमान का यह निवेदन प्रभु को अच्छा लगा।</span> <sup>11</sup><span class='v-txt'>प्रभु ने उसे से कहा, &quot;तुमने अपने लिए न तो लम्बी आयु माँगी, न धन-सम्पत्ति और न अपने शत्रुओं का विनाश।</span> <sup>12</sup><span class='v-txt'>तुमने न्याय करने का विवेक माँगा है।  इसलिए मैं तुम्हारी इच्छा पूरी करूँगा।  मैं तुम को ऐसी बुद्धि और ऐसा विवेक प्रदान करता हूँ कि तुम्हारे समान न तो पहले कभी कोई था और न बाद में कभी कोई होगा।</span> <sup>13</sup><span class='v-txt'>और जो तुमने नहीं माँगा, मैं वह भी तुम्हें दे देता हूँ, अर्थात् ऐसी धन-सम्पत्ति तथा ऐसा ऐश्वर्य, जिससे कोई भी राजा तुम्हारी बराबरी नहीं कर पायेगा।</span> <sup>14</sup><span class='v-txt'>और यदि तुम अपने पिता दाऊद की तरह मेरे नियमों तथा आदेशों का पालन करते हुए मेरे मार्ग पर चलोगे, तो मैं तुम्हें लम्बी आयु प्रदान करूँगा।&quot;</span> <sup>15</sup><span class='v-txt'>सुलेमान की नींद खुल गयी और उसने समझ लिया कि मैंने स्वप्न देखा है।  येरूसालेम में लौट आने पर उसने प्रभु की मंजूषा के सामने होम बलियाँ और शान्ति-बलियाँ चढ़ायीं और अपने सब सेवकों को भोज दिया।</span> <sup>16</sup><span class='v-txt'>एक दिन दो वेश्याएँ राजा के सामने उपस्थित हुई।</span> <sup>17</sup><span class='v-txt'>पहली स्त्री ने कहा, &quot;महाराज! हम - मैं और यह स्त्री- एक ही घर में रहती हैं।  यह घर में ही थी, जब मुझे एक बच्चा हुआ।</span> <sup>18</sup><span class='v-txt'>मेरे प्रसव के तीन दिन बाद इस स्त्री को भी एक बच्चा हुआ।  हम एक साथ थीं और हमारे साथ घर में कोई दूसरा नहीं था; केवल हम दोनों घर में थीं।</span> <sup>19</sup><span class='v-txt'>अब रात को इसका बच्चा मर गया, क्योंकि यह उस पर लेट गयी थी।</span> <sup>20</sup><span class='v-txt'>आधी रात को उठ कर वह मेरे बच्चे को मेर पास से उठा ले गयी, जब मैं,  आपकी यह दासी सोयी हुई थी और उसे अपने गोद में रख लिया।  फिर यह अपने मृत बच्चे को मेरी गोद में रख गयी।</span> <sup>21</sup><span class='v-txt'>जब मैं सबेरे अपने बच्चे को दूध पिलाने उठी, तो मैंने देखा वह मेरा पड़ा है।  लेकिन जब अधिकं प्रकाश हो जाने पर मैंने उसकी ओर ठीक से देखा, तो मालुम हुआ कि यह बच्चा मेरा नहीं है।&quot;</span> <sup>22</sup><span class='v-txt'>इस पर दूसरी स्त्री कहने लगी, &quot;नहीं, मेरा बच्चा जीवित है।  तुम्हारा बच्चा मरा है।&quot;  पहली स्त्री ने कहा, &quot;नहीं, तुम्हारा बच्चा मरा है।  मेरा बच्चा जीवित है।&quot;  इस प्रकार वे दोनों राजा के सामने झगड़ती रहीं।</span> <sup>23</sup><span class='v-txt'>इस पर राजा ने कहा, &quot;यह कहती है कि मेरा बच्चा जीवित है और तेरा बच्चा मेरा है, और वह कहती है कि नहीं, तेरा बच्चा मरा है, और मेरा बच्चा जीवित है&quot;।</span> <sup>24</sup><span class='v-txt'>तब राजा ने एक तलवार लाने की आज्ञा दी।  तलवार राजा के पास लायी गयी।</span> <sup>25</sup><span class='v-txt'>तब राजा ने आदेश दिया, &quot;इस जीवित बच्चे के दो टुकड़े कर दो और एक टुकड़ा इस को दे दो और दुसरा उस को&quot;।</span> <sup>26</sup><span class='v-txt'>जिस स्त्री का बच्चा जीवित था, उसका हृदय वात्सल्य से भर गया और उसने राजा से कहा, &quot;महाराज! जीवित बच्चे को उस को दे दीजिए, उसका वध मत कीजिए&quot;। परन्तु दूसरी स्त्री ने कहा, &quot;नहीं, वह न मेरा रहे, न तेरा। उसके दो टुकड़े कर दो।&quot;</span> <sup>27</sup><span class='v-txt'>इस पर राजा ने यह निर्णय दिया, &quot;जीवित बच्चा पहली स्त्री को दे दो, उसे मत मारो, क्योंकि वही उसकी माँ है&quot;।</span> <sup>28</sup><span class='v-txt'>जब सारे इस्राएल ने राजा का निर्णय सुना, तब लोग आश्चर्यचकित हो उठे; क्योंकि उन्होंने देखा कि राजा में न्याय करने की ईश्वरीय प्रज्ञा है।</span> </p>
+        <div class='nav'><a href='011002.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='011004.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

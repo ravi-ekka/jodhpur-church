@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>पहला इतिहास ग्रन्थ - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>पहला इतिहास ग्रन्थ</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>आदम, सेत, एनोष,</span> <sup>2</sup><span class='v-txt'>केनान, महल-लएल, यारेद,</span> <sup>3</sup><span class='v-txt'>हेनोक, मतूषेलह, लेमेक,</span> <sup>4</sup><span class='v-txt'>नूह, सेम, हाम और याफ़ेत।</span> <sup>5</sup><span class='v-txt'>याफ़ेत के पुत्र: गोमेर, मागोग, मादय, यावान, तूबल, मेषेक और तीरास।</span> <sup>6</sup><span class='v-txt'>गोमेर के पुत्रः अषकनज़, रीफ़त, और तोगरमा।</span> <sup>7</sup><span class='v-txt'>यावान के पुत्रः एलीषा, तरषीष, कित्तीम और दोदानीम।</span> <sup>8</sup><span class='v-txt'>हाम के पुत्रः कूष, मिस्र, पूट और कनान।</span> <sup>9</sup><span class='v-txt'>कूष के पुत्रः सबा, हवीला, सबता, रअमा और सबतका। रअमा के पुत्रः षबा और ददान।</span> <sup>10</sup><span class='v-txt'>कूष निम्रोद का पिता था।  निम्रोद पृथ्वी पर पहला वीर योद्धा था।</span> <sup>11</sup><span class='v-txt'>मिस्र लूदियों, अनामियों, लहाबियों, नफ़्तुहियों,</span> <sup>12</sup><span class='v-txt'>पत्रोसियों, कसलुहियों-जिन के फ़िलिस्ती वंश निकला-और कफ़्तोरियों का मूल पुरुष था।</span> <sup>13</sup><span class='v-txt'>कनाल का पहला पुत्र सीदोन और दूसरा हेत था।</span> <sup>14</sup><span class='v-txt'>वह यबूसी, अमोरी, गिरगाषी,</span> <sup>15</sup><span class='v-txt'>हिव्वी, अरकी, सीनी,</span> <sup>16</sup><span class='v-txt'>अरवादी, सेमारी और हमाती जातियों का मूल पुरुष था।</span> <sup>17</sup><span class='v-txt'>सेम के पुत्रः एलाम, अस्सूर, अरफ़क्षद, लूद, अराम, ऊस, हूल, गेतेर और मेषेक।</span> <sup>18</sup><span class='v-txt'>अरफ़क्षद षेलह का पिता था और षेलह एबेर का।</span> <sup>19</sup><span class='v-txt'>एबेर के दो पुत्र थेः एक का नाम पेलेग था- उसके दिनों में पृथ्वी के लोग विभाजित हो गये-और उसके भाई का नाम योकटान था।</span> <sup>20</sup><span class='v-txt'>योकटान से पैदा हुएः एल्मोदाद, षेलेफ़, हसिरमावेद, येरह,</span> <sup>21</sup><span class='v-txt'>हदोराम, ऊज़ाल, दिकला,</span> <sup>22</sup><span class='v-txt'>एबाल, अबीमाएल, शबा,</span> <sup>23</sup><span class='v-txt'>ओफ़िर, हवीला और योबाब।  ये सब योकटान के पुत्र थे।</span> <sup>24</sup><span class='v-txt'>सेम,अरफ़क्षद, षेलह,</span> <sup>25</sup><span class='v-txt'>एबेर, पेलेग, रऊ,</span> <sup>26</sup><span class='v-txt'>सरूग, नाहोर, तेरह,</span> <sup>27</sup><span class='v-txt'>अब्राम अर्थात् इब्राहीम।</span> <sup>28</sup><span class='v-txt'>इब्राहीम के पुत्रः इसहाक और इसमाएल।</span> <sup>29</sup><span class='v-txt'>उनके वंशज ये थेः इसमाएल का पहलौठा पुत्र नबायोत था, फिर केदारा, अदबेएल, मिबसाम,</span> <sup>30</sup><span class='v-txt'>मिषमा, दूमा, मस्सा, हदद, तेमा,</span> <sup>31</sup><span class='v-txt'>यटूर, नाफ़ीष और केदमा।  यही इसमाएल के पुत्र थे।</span> <sup>32</sup><span class='v-txt'>इब्राहीम की उपपत्नी कटूरा के पुत्र ये थेः ज़िम्रान, योकषान, मदान, मिदयान, यिषबाक और षूअह। योकषान के पुत्रः षबा और ददान।</span> <sup>33</sup><span class='v-txt'>मिदयान के पुत्रः एफ़ा, एफ़ेर, हनोक, अबीदा और एल्दाआ।  ये सब कटूरा के पुत्र थे।</span> <sup>34</sup><span class='v-txt'>इब्राहीम इसहाक का पिता था।  इसहाक के पुत्रः एसाव और इस्राएल।</span> <sup>35</sup><span class='v-txt'>एसाव के पुत्रः एलीफ़ज, रऊएल, यऊष, यालाम और कोरह।</span> <sup>36</sup><span class='v-txt'>एलीफ़ज़ के पुत्रः तेमान, ओमार, सफ़ी, गाताम, कनज़, तिनमा और अमालेक।</span> <sup>37</sup><span class='v-txt'>रऊएल के पुत्रः नहत, ज़ेरह, षम्मा और मिज़्ज़ा।</span> <sup>38</sup><span class='v-txt'>सेईर के पुत्रः लोटान, षोबाल, सिबओन, अना, दिषोन, एसेर और दीषान।</span> <sup>39</sup><span class='v-txt'>लोटान के पुत्रः होरी और होमाम।  लोटान की बहन तिमना थी।</span> <sup>40</sup><span class='v-txt'>षोबाल के पुत्रः अलयान, मानहत, एबाल, षफ़ी और ओनाम।  सिबओन के पुत्रः अय्या और अना।</span> <sup>41</sup><span class='v-txt'>अना का पुत्रः दिषोन।  दिषोन के पुत्रः हमरान, एषबान, यित्रान और केरान।</span> <sup>42</sup><span class='v-txt'>एसेर के पुत्रः बिल्हान, ज़ावान और याकान।  दीषान के पुत्रः ऊस और अरान।</span> <sup>43</sup><span class='v-txt'>इस्राएल के राजाओं के शासन के पूर्व एदोम देश में यही राजा शासन करते थे।  अबोर का पुत्र बेला।  उसकी राजधानी का नाम दिनहाबा था।</span> <sup>44</sup><span class='v-txt'>जब बेला की मृत्यु हो गयी, तो बोस्रावासी सेरह का पुत्र योबाब उसका उत्तराधिकारी हुआ।</span> <sup>45</sup><span class='v-txt'>जब योबाब की मृत्यु हो गयी, तो उसके स्थान पर तेमानियों के देश का हुषाम राजा हुआ।</span> <sup>46</sup><span class='v-txt'>जब हुषाम की मृत्यु हो गयी, तो उसके स्थान पर मोआब के मैदान में मिदयानियों को पराजित करने वाले बदद का पुत्र हदद राजा हुआ।  उसकी राजधानी का नाम अवीत था।</span> <sup>47</sup><span class='v-txt'>जब हदद की मृत्यु हो गयी, तो उसके स्थान पर मसरेकावासी समला राजा हुआ।</span> <sup>48</sup><span class='v-txt'>जब समला की मृत्यु हो गयी, तो उसके स्थान पर फ़रात नदी के किनारे अवस्थित रहोबोत का निवासी षौल राजा हुआ।</span> <sup>49</sup><span class='v-txt'>जब षौल की मृत्यु हो गयी, तो उसके स्थान पर अकबोर का पुत्र बाल-हानान राजा हुआ।</span> <sup>50</sup><span class='v-txt'>जब बाल-हानान की मृत्यु हो गयी, तो उसके स्थान पर हदद राजा हुआ।  उसकी राजधानी का नाम पाइ था। उसकी पत्नी का नाम महेटबएल था।  वह मेज़ाहाब की मट्रेट की बेटी थी।</span> <sup>51</sup><span class='v-txt'>जब हदद की मृत्यु हो गयी, तो एदोम के मुखिया ये थेः मुखिया तिमना, अल्या, यतेत,</span> <sup>52</sup><span class='v-txt'>ओहोलीबामा, एला, पीनोन,</span> <sup>53</sup><span class='v-txt'>कनज़, तेमान, मिबसार,</span> <sup>54</sup><span class='v-txt'>मगदीएल और ईराम।  एदोम के मुखिया यही थे।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='013002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>स्तोत्र - अध्याय 48</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>स्तोत्र</h1>
+        <h2>अध्याय 48</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>3</sup><span class='v-txt'>(1-3) प्रभु महान् और परमप्रशंनीय है।  हमारे ईश्वर के नगर में उसका पवित्र पर्वत ऊँचा और मनोहर है।  वह समस्त पृथ्वी को आनन्द प्रदान करता है।  सियोन का पर्वत ईश्वर का निवास और राजाधिराज का नगर है।</span> <sup>4</sup><span class='v-txt'>ईश्वर उसके गढ़ों में निवास करता और उसे सुरक्षित रखता है।</span> <sup>5</sup><span class='v-txt'>देखो!  राजागण संगठित हो गये, उन्होंने मिल कर उस पर आक्रमण किया।</span> <sup>6</sup><span class='v-txt'>वे उसे देखते ही घबरा गये, आतंकित हो कर भाग गये।</span> <sup>7</sup><span class='v-txt'>वे वहाँ पहुँचते ही इस तरह भयभीत और पीड़ित हो गये, जिस तरह प्रसव निकट आने पर स्त्री को वेदना होती है।</span> <sup>8</sup><span class='v-txt'>उनकी दशा उन समुद्री जहाजों-जैसी हो गयी, जिन्हें पूर्वी आँधी छिन्न-भिन्न कर देती है।</span> <sup>9</sup><span class='v-txt'>जैसा हमने सुना था, वैसा ही हमने देखा है- विश्वमंडल के प्रभु के नगर में, हमारे ईश्वर के नगर में, ईश्वर उसे सदा के लिए सुरक्षित रखता है।</span> <sup>10</sup><span class='v-txt'>ईश्वर!  हम तेरे मन्दिर में तेरे प्रेम का मनन करते हैं।</span> <sup>11</sup><span class='v-txt'>ईश्वर!  तेरे नाम की तरह तेरी स्तुति पृथ्वी के सीमान्तों तक फैल जाती है।  तेरे दाहिने हाथ में न्याय भरा है।</span> <sup>12</sup><span class='v-txt'>तेरी न्यायप्रियता के कारण सियोन पर्वत आनन्द मनाता है।  यूदा के नगर तेरे निर्णय सुन कर आनन्दित हैं।</span> <sup>13</sup><span class='v-txt'>सियोन की प्रदक्षिणा करो, उसकी मीनारों की गिनती करो,</span> <sup>14</sup><span class='v-txt'>उसकी चारदीवारी को ध्यान से देखो, उसके भवनों पर दृष्टि दौड़ाओ, जिससे तुम आने वाली पीढ़ियों को बता सको</span> <sup>15</sup><span class='v-txt'>कि प्रभु हमारा ईश्वर है।  वह अनन्त काल तक हमारा नेतृत्व करेगा।</span> </p>
+        <div class='nav'><a href='023047.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='023049.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

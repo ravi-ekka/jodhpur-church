@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>सूक्ति - अध्याय 12</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>सूक्ति</h1>
+        <h2>अध्याय 12</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जिसे अनुशासन प्रिय है, उसे ज्ञान भी प्रिय है।  जो सुधार से घृणा करता, वह मूर्ख है।</span> <sup>2</sup><span class='v-txt'>जो भला है, उसे प्रभु की कृपा मिलती है, किन्तु प्रभु कपटी को दण्ड देता है।</span> <sup>3</sup><span class='v-txt'>जो बुराई करता, वह नहीं टिक सकता; किन्तु धर्मियों की जड़े नहीं उखाड़ी जायेंगी।</span> <sup>4</sup><span class='v-txt'>सच्चरत्रि पत्नी अपने पति का मुकुट है, किन्तु व्यभिचारिणी अपने पति की हड्डियों का क्षय है।</span> <sup>5</sup><span class='v-txt'>धर्मी के विचार न्यायसंगत, किन्तु दुष्टों की योजनाएँ कपटपूर्ण हैं।</span> <sup>6</sup><span class='v-txt'>दुष्टों के शब्द घातक हैं, किन्तु धर्मियों के शब्द लोगों की रक्षा करते हैं।</span> <sup>7</sup><span class='v-txt'>दुष्टों का विनाश हो जाता है और वे फिर दिखाई नहीं देते, किन्तु धर्मी का घराना बना रहता है।</span> <sup>8</sup><span class='v-txt'>समझदारी के कारण मनुष्य की प्रशंसा होती है, किन्तु जिनका मन कुटिल है, उनका तिरस्कार किया जाता है।</span> <sup>9</sup><span class='v-txt'>उपेक्षित मनुष्य, जिसके पास नौकर है, उस शेख़ीबाज से अच्छा है, जिसे पेट भर रोटी नहीं मिलती।</span> <sup>10</sup><span class='v-txt'>धर्मी अपने पशुओं की आवश्यकताओंं का ध्यान रखता, किन्तु पापी स्वभाव से निर्दय है।</span> <sup>11</sup><span class='v-txt'>जो अपनी भूमि जोतता, उसे रोटी की कमी नहीं होगी; किन्तु जो व्यर्थ के कामों में लगा रहता वह नासमझ है।</span> <sup>12</sup><span class='v-txt'>दुष्ट पापियों की लूट का लालच करता, किन्तु धर्मियों की जड़ फल उत्पन्न करेगी।</span> <sup>13</sup><span class='v-txt'>दुष्ट अपने शब्दों के जाल में फँस जाता, किन्तु धर्मी विपत्ति से मुक्ति पाता है।</span> <sup>14</sup><span class='v-txt'>मनुष्य जिस तरह अपने हाथ से परिश्रम का फल पाता उसी तरह उसे अपने शब्दों के फल से अच्छी चीज़ें प्राप्त होती हैं।</span> <sup>15</sup><span class='v-txt'>मूर्ख अपना आचरण ठीक समझता, किन्तु जो सत्परामर्श सुनता, वह बुद्धिमान् है।</span> <sup>16</sup><span class='v-txt'>मूर्ख अपना क्रोध तुरन्त प्रकट करता, किन्तु समझदार व्यक्ति अपमान पी जाता है।</span> <sup>17</sup><span class='v-txt'>विश्वसनीय गवाह प्रामाणिक साक्ष्य देता है, किन्तु झूठा गवाह कपटपूर्ण बातें कहता है।</span> <sup>18</sup><span class='v-txt'>अविचारित शब्द कटार की तरह छेदते हैं, किन्तु ज्ञानियों की वाणी मरहम-जैसी है।</span> <sup>19</sup><span class='v-txt'>सत्यवादी का कथन सदा बना रहता, किन्तु मिथ्यावादी की वाणी क्षणभंगुर है।</span> <sup>20</sup><span class='v-txt'>बुरी योजनाएँ बनाने वालों के मन में कपट, किन्तु शान्ति-समर्थकों के मन में आनन्द है।</span> <sup>21</sup><span class='v-txt'>धर्मियों के सिर पर विपत्ति नहीं पड़ेगी, किन्तु दुष्ट कष्टों से घिरे रहते हैं।</span> <sup>22</sup><span class='v-txt'>प्रभु को झूठ बोलने वालों से घृणा है, किन्तु वह सत्य बोलने वालों पर प्रसन्न है।</span> <sup>23</sup><span class='v-txt'>बुद्धिमान् अपना ज्ञान छिपाये रखता किन्तु मूर्ख अपनी मूर्खता घोषित करता है।</span> <sup>24</sup><span class='v-txt'>परिश्रमी शासक बनेगा, किन्तु आलसी को बेगार में लगाया जायेगा।</span> <sup>25</sup><span class='v-txt'>मन की चिन्ता मनुष्य को निराश करती है, किन्तु एक सहानुभूतिपूर्ण शब्द उसे आनन्दित कर देता है।</span> <sup>26</sup><span class='v-txt'>धर्मी दूसरों का पथप्रदर्शन करता किन्तु दुष्टों का मार्ग उन्हें भटका देता है।</span> <sup>27</sup><span class='v-txt'>आलसी के हाथ शिकार नहीं लगता, किन्तु परिश्रमी धन एकत्र करता है।</span> <sup>28</sup><span class='v-txt'>धार्मिकता का मार्ग जीवन की ओर, किन्तु दुष्टता मृत्यु की ओर ले जाती है।</span> </p>
+        <div class='nav'><a href='024011.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='024013.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

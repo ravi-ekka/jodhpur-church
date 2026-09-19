@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>एफ़ेसियों - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>एफ़ेसियों</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>आप लोग अपने अपराधों और पापों के कारण मर गये थे;</span> <sup>2</sup><span class='v-txt'>क्योंकि आपका आचरण पहले इस संसार की रीति के अनुकूल, आकाश में विचरने वाले अपदूतों के नायक के अनुकूल था, उस आत्मा के अनुकूल था, जो अब तक ईश्वर के विरोधियों में क्रियाशील है।</span> <sup>3</sup><span class='v-txt'>हम सभी पहले उन विरोधियों में सम्मिलित थे, जब हम अपनी वासनाओं के वशीभूत हो कर अपने शरीर और मन की वासनाओं को तृप्त करते थे।  हम दूसरों की तरह अपने स्वभाव के कारण ईश्वर के कोप के पात्र थे।</span> <sup>4</sup><span class='v-txt'>परन्तु ईश्वर की दया अपार है।  हम अपने पापों के कारण मर गये थे, किन्तु उसने हमें इतना प्यार किया</span> <sup>5</sup><span class='v-txt'>कि उसने हमें मसीह के साथ जीवन प्रदान किया।  उसकी कृपा ने आप लोगों का उद्धार किया।</span> <sup>6</sup><span class='v-txt'>उसने ईसा मसीह के द्वारा हम लोगों को पुनर्जीवित किया और स्वर्ग में बैठाया।</span> <sup>7</sup><span class='v-txt'>उसने ईसा मसीह में जो दयालुता दिखायी, उसके द्वारा उसने आगामी युगों के लिए अपने अनुग्रह की असीम समृद्धि को प्रदर्शित किया।</span> <sup>8</sup><span class='v-txt'>उसकी कृपा ने विश्वास द्वारा आप लोगों का उद्धार किया है।  यह आपके किसी पुण्य का फल नहीं है।  यह तो ईश्वर का वरदान है।</span> <sup>9</sup><span class='v-txt'>यह आपके किसी कर्म का पुरस्कार नहीं -कहीं ऐसा न हो कि कोई उस पर गर्व करे।</span> <sup>10</sup><span class='v-txt'>ईश्वर ने हमारी रचना की।  उसने ईसा मसीह द्वारा हमारी सृष्टि की, जिससे हम पुण्य के कार्य करते रहें और उसी मार्ग पर चलते रहें, जिसे ईश्वर ने हमारे लिए तैयार किया है।</span> <sup>11</sup><span class='v-txt'>आप जन्म से गैर-यहूदी हैं और उन लोगों द्वारा ’बेख़तने’ कहे जाते हैं, जिनके शरीर में ख़तना किया गया है।</span> <sup>12</sup><span class='v-txt'>आप याद रखें कि पहले आप मसीह से अलग थे, इस्राएल के समुदाय के बाहर थे, विधान की प्रतिज्ञाओं से अपरिचित और इस संसार में आशा और ईश्वर से रहित थे।</span> <sup>13</sup><span class='v-txt'>आप लोग पहले दूर थे, किन्तु ईसा मसीह से संयुक्त हो कर आप अब मसीह के रक्त द्वारा निकट आ गये है;</span> <sup>14</sup><span class='v-txt'>क्योंकि वही हमारी शान्ति हैं।  उन्होंने यहूदियों और गैर-यहूदियों को एक कर दिया है।  दोनों में शत्रुता की जो दीवार थी, उसे उन्होंने गिरा दिया है।</span> <sup>15</sup><span class='v-txt'>और अपनी मृत्यु द्वारा विधि-निषेधों की संहिता को रद्द कर दिया।  इस प्रकार उन्होंने यहूदियों तथा गैर-यहूदियों को अपने से मिला कर एक नयी मानवता की सृष्टि की और शान्ति स्थापित की है।</span> <sup>16</sup><span class='v-txt'>उन्होंने क्रूस द्वारा दोनों का एक ही शरीर में ईश्वर के साथ मेल कराया और इस प्रकार शत्रुता को नष्ट कर दिया।</span> <sup>17</sup><span class='v-txt'>तब उन्होंने आ कर दोनों को शान्ति का सन्देश सुनाया - आप लोगों को, जो दूर थे और उन लोगों को, जो निकट थे;</span> <sup>18</sup><span class='v-txt'>क्योंकि उनके द्वारा हम दोनों एक ही आत्मा से प्रेरित हो कर पिता के पास पहुँच सकते हैं।</span> <sup>19</sup><span class='v-txt'>आप लोग अब परेदशी या प्रवासी नहीं रहे, बल्कि सन्तों के सहनागरिक तथा ईश्वर के घराने के सदस्य बन गये हैं।</span> <sup>20</sup><span class='v-txt'>आप लोगों का निर्माण भवन के रूप में हुआ है, जो प्रेरितों तथा नबियों की नींव पर खड़ा है और जिसका कोने का पत्थर स्वयं ईसा मसीह हैं।</span> <sup>21</sup><span class='v-txt'>उन्हीं के द्वारा समस्त भवन संघटित हो कर प्रभु के लिए पवित्र मन्दिर का रूप धारण कर रहा है।</span> <sup>22</sup><span class='v-txt'>उन्हीं के द्वारा आप लोग भी इस भवन में जोड़े जाते हैं, जिससे आप ईश्वर के लिए एक आध्यात्मिक निवास बनें।</span> </p>
+        <div class='nav'><a href='056001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='056003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

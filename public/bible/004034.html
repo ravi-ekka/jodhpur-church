@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>गणना - अध्याय 34</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>गणना</h1>
+        <h2>अध्याय 34</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>2</sup><span class='v-txt'>&#039;&#039;इस्राएलियों को यह आदेश दो - जब तुम कनान देश पहुँचोगे, तब सारा कनान देश दायभाग के रूप में तुम्हारे अधिकार में आ जायेगा।</span> <sup>3</sup><span class='v-txt'>तुम्हारे दक्षिणी सीमान्त में सिन के उजाड़खण्ड का वह कुछ भाग रहेगा, जो एदोम की सीमा पर है। तुम्हारी दक्षिणी सीमा पूर्व में लवण समुद्र के छोर से प्रारम्भ होगी।</span> <sup>4</sup><span class='v-txt'>तब वह अऋब्बीस की घाटी के दक्षिण से हो कर सिन की ओर जायेगी और कादेश-बरनेअ के दक्षिण तक पहुँचेगी।</span> <sup>5</sup><span class='v-txt'>वह वहाँ से हसर-अद्दार होते हुए असमोन तक जायेगी, जहाँ वह मुड़ कर मिस्र की बरसाती नदी से मिल जायेगी और समुद्र में समाप्त हो जायेगी।</span> <sup>6</sup><span class='v-txt'>महासमुद्र का तट तुम्हारी पष्चिमी सीमा होगा। यही तुम्हारे देश की पष्चिमी सीमा होगी।</span> <sup>7</sup><span class='v-txt'>तुम्हारे उत्तरी सीमा समुद्र से होर पर्वत तक,</span> <sup>8</sup><span class='v-txt'>होर पर्वत से लेबो-हमात तक, वहाँ से ज़दाद और</span> <sup>9</sup><span class='v-txt'>जिफ्रोम तक जायेगी और हसर-एनान में समाप्त होगी। यही तुम्हारी उत्तरी सीमा होगी।</span> <sup>10</sup><span class='v-txt'>&#039;&#039;तुम्हारी पूर्वी सीमा हसर-एनान से शफाम तक और</span> <sup>11</sup><span class='v-txt'>वहाँ से अयीन के पूर्व में रिबला तक जायेगी। फिर वह सीमा आगे जा कर किन्नेरेत के सागर के पूर्व की पर्वत-श्रेणी तक जायेगी।</span> <sup>12</sup><span class='v-txt'>यर्दन नदी के किनारे-किनारे हो कर लवण समुद्र पर इस सीमा का अन्त हो जायेगा। तुम्हारे देश के चारों ओर की सीमाएँ यही रहेगी।&#039;&#039;</span> <sup>13</sup><span class='v-txt'>मूसा ने इस्राएलियों को यह आदेश दिया, &#039;&#039;तुम यह देश चिट्ठी डाल कर विरासत के रूप में बाँट लो। प्रभु ने उसे साढ़े नौ वंशों को देने कहा।</span> <sup>14</sup><span class='v-txt'>रूबेन के वंश, गाद के वंश और मनस्से के आधे वंश के घरानों ने अपना दायभाग प्राप्त किया है।</span> <sup>15</sup><span class='v-txt'>इन ढाई वंशों ने अपना-अपना दायभाग येरीख़ों के पास यर्दन के पूर्व, सूर्योदय की दिषा में, प्राप्त कर लिया है।&#039;&#039;</span> <sup>16</sup><span class='v-txt'>प्रभु ने मूसा से कहा,</span> <sup>17</sup><span class='v-txt'>&#039;&#039;तुम्हारे लिए देश को दायभाग के रूप में बाँटने वालों के नाम ये हैं : याजक एलआज़ार और नून का पुत्र योशुआ।</span> <sup>18</sup><span class='v-txt'>फिर देश को दायभागों में बाँटने के लिए प्रत्येक वंश से एक-एक नेता लो।</span> <sup>19</sup><span class='v-txt'>उन पुरुषों के नाम ये है : यूदा के वंश से यफ़ुन्ने का पुत्र कालेब;</span> <sup>20</sup><span class='v-txt'>सिमओन के वंश से अम्मीहूद का पुत्र शमूएल;</span> <sup>21</sup><span class='v-txt'>बेनयामीन के वंश से किसलोन का पुत्र एलादाद;</span> <sup>22</sup><span class='v-txt'>दान के वंश से योग्ली का पुत्र बुक्की;</span> <sup>23</sup><span class='v-txt'>यूसुफ़ के पुत्र मनस्से के वंश से एफ़ोद का पुत्र हन्नीएल;</span> <sup>24</sup><span class='v-txt'>यूसुफ़ के पुत्र एफ्रईम के वंश से शिपटान का पुत्र कमूएल;</span> <sup>25</sup><span class='v-txt'>ज़बुलोन के वंश से परनाक का पुत्र एलीसाफान;</span> <sup>26</sup><span class='v-txt'>इस्साकार के वंश से अज्जान का पुत्र पल्टीएल;</span> <sup>27</sup><span class='v-txt'>आषेर के वंश से शलोमी का पुत्र अहीहूद;</span> <sup>28</sup><span class='v-txt'>नपताली के वंश से अम्मीहूद का पुत्र पदएल।&#039;&#039;</span> <sup>29</sup><span class='v-txt'>यही वे पुरुष हैं, जिन्हें प्रभु ने कनान देश को इस्राएलियों के बीच विरासत के रूप में बाँटने का आदेश दिया था।</span> </p>
+        <div class='nav'><a href='004033.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='004035.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

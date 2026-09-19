@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रेरित-चरित - अध्याय 10</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रेरित-चरित</h1>
+        <h2>अध्याय 10</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>कैसरिया में इटालियन पलटन का शतपति करनेलियुस नामक मनुष्य रहता था।</span> <sup>2</sup><span class='v-txt'>वह, और उसका समस्त परिवार भी, धर्मपरायण तथा ईश्वर-भक्त था।  वह यहूदियों को बहुत-सा भिक्षादान दिया करता और हर समय ईश्वर की प्रार्थना में लगा रहता था।</span> <sup>3</sup><span class='v-txt'>उसने किसी दिन तीसरे पहर के लगभग एक दिव्य दर्शन में यह साफ़-साफ़ देखा कि ईश्वर का दूत उसके यहाँ आ कर कह रहा है, ’करनेलियस!’</span> <sup>4</sup><span class='v-txt'>करनेलियुस ने उस पर आँखें गड़ा कर तथा भयभीत हो कर कहा, &quot;महोदय! बात क्या है?&quot; और स्वर्ग दूत ने उत्तर दिया, &quot;आपकी प्रार्थनाएं और आपके भिक्षादान ऊपर चढ़ कर ईश्वर के सामने पहुँचे और उसने आप को याद किया।</span> <sup>5</sup><span class='v-txt'>अब आप आदमियों को योप्पे भेजिए और सिमोन को, जो पेत्रुस कहलाते हैं, बुला लीजिए।</span> <sup>6</sup><span class='v-txt'>वह चर्मकार सिमोन के यहाँ ठहरे हुए हैं।  उसका घर समुद्र के किनारे है।&quot;</span> <sup>7</sup><span class='v-txt'>जब वह स्वर्गदूत, जो उस से बात कर रहा था, चला गया, तो करनेलियुस ने अपने दो नौकरों और एक धर्मपरायण सैनिक को बुलाया</span> <sup>8</sup><span class='v-txt'>और उन्हें सारी बातें समझा कर योप्पे भेजा।</span> <sup>9</sup><span class='v-txt'>दूसरे दिन जब वे यात्रा करते-करते नगर के निकट आ रहे थे, तो पेत्रुस दोपहर के लगभग छत पर प्रार्थना करने लगा।</span> <sup>10</sup><span class='v-txt'>तब उसे भूख लगी और उसने भोजन करने की इच्छा प्रकट की।  लोग खाना बना ही रहे थे कि पेत्रुस आत्मा से आविष्ट हो गया।</span> <sup>11</sup><span class='v-txt'>उसने देखा कि स्वर्ग खुल गया है और लम्बी-चैड़ी चादर-जैसी कोई चीज़ उतर रही है और उसके चारों कोने पृथ्वी पर रखे जा रहे हैं;</span> <sup>12</sup><span class='v-txt'>उस में सब प्रकार के चैपाये, पृथ्वी पर रेंगने वाले जीव-जन्तु और आकाश के पक्षी है।</span> <sup>13</sup><span class='v-txt'>उसे एक वाणी यह कहते हुए सुनाई पड़ी, &quot;पेत्रुस! उठो, मारो और खाओ&quot;।</span> <sup>14</sup><span class='v-txt'>किन्तु पेत्रृस ने कहा, &quot;प्रभु! कभी नहीं!  मैंने कभी कोई अपवित्र अथवा अशुद्ध वस्तु नहीं खायी।&quot;</span> <sup>15</sup><span class='v-txt'>फिर वह वाणी दूसरी बार उसे सुनाई पड़ी, &quot;ईश्वर ने जिसे शुद्ध घोषित किया, तुम उसे अशुद्ध मत कहो&quot;।</span> <sup>16</sup><span class='v-txt'>तीन बार ऐसा ही हुआ और इसके बाद वह चीज़ फिर स्वर्ग में ऊपर उठा ली गयी।</span> <sup>17</sup><span class='v-txt'>पेत्रुस यह नहीं समझ पा रहा था कि मैंने जो दृश्य देखा है, उसका अर्थ क्या हो सकता हैं।  इतने में करनेलियुस द्वारा भेजे गये आदमी सिमोन के घर का पता लगा कर फाटक के सामने आ पहुँचे।</span> <sup>18</sup><span class='v-txt'>वे ऊँचे स्वर मे यह पूछ रह थे, &quot;क्या सिमोन, जो पेत्रुस कहलाते हैं, इसी घर में ठहरे हुए हैं।?&quot;</span> <sup>19</sup><span class='v-txt'>पेत्रुस अब भी उस दर्शन के विषय में विचार कर रहा था कि आत्मा ने उस से कहा, &quot;देखो! दो आदमी तुम को ढूँढ रहे हैं।</span> <sup>20</sup><span class='v-txt'>तुम जल्दी नीचे उतरो और बेखटके उनके साथ चले जाओ, क्योंकि उन्हें मैंने भेजा है।</span> <sup>21</sup><span class='v-txt'>पेत्रुस ने उतर कर उन आदमियों से कहा, &quot;आप जिसे ढूँढते हैं, मैं वही हूँ।  आप लोग यहाँ कैसे आये?&quot;</span> <sup>22</sup><span class='v-txt'>उन्होंने यह उत्तर दिया, &quot;शतपति करनेलियुस धार्मिक तथा ईश्वर-भक्त हैं।  समस्त यहूदी जनता उनका सम्मान करती हैं।  उन्हें एक पवित्र स्वर्गदूत से यह आज्ञा मिली है कि वह आप को अपने घर बुला भेंजे और आपकी शिक्षा सुनें।&quot;</span> <sup>23</sup><span class='v-txt'>पेत्रुस ने उन्हें अंदर बुलाया और उनका आतिथ्य-सत्कार किया।</span> <sup>24</sup><span class='v-txt'>दूसरे दिन वह उनके साथ चल दिया और योप्पे के कुछ भाई भी उनके साथ हो लिये।  वह अगले दिन कैसरिया पहुँचा।  करनेलियुुस अपने संबंधियों और घनिष्ठ मित्रों को बुला कर उन लोगों की प्रतीक्षा कर रहा था।</span> <sup>25</sup><span class='v-txt'>जब पेत्रुस उनके यहाँ आया, तो करनेलियुस उस से मिला और उसने पेत्रुस के चरणों पर गिर कर उसे प्रणाम किया।</span> <sup>26</sup><span class='v-txt'>किंतु पेत्रुस ने उसे यह कहते हुए उठाया, &quot;खड़े हो जाइए, मैं भी तो मनुष्य हूँ&quot;</span> <sup>27</sup><span class='v-txt'>और उसके साथ बातचीत करते हुए घर में प्रवेश किया। वहाँ बहुत-से लोगों को एकत्र देखकर</span> <sup>28</sup><span class='v-txt'>पेत्रुस ने उन से यह कहा, &quot;आप जानते है कि गैर-यहूदी से संपर्क रखना या उसके घर में प्रवेश करना यहूदी के लिए सख्त मना है; किंतु ईश्वर ने मुझ पर यह प्रकट किया हैं कि किसी भी मनुष्य को अशुद्ध अथवा अपवित्र नहीं कहना चाहिए।</span> <sup>29</sup><span class='v-txt'>इसलिए आपके बुलाने पर मैं बेखटके यहाँ आया हूँ।  अब मैं पूछना चाहता हूँ कि आपने मुझे क्यों बुलाया?&quot;</span> <sup>30</sup><span class='v-txt'>करनेलियुस ने उत्तर दिया, &quot;चार दिन पहले इसी समय मैं अपने घर में सन्ध्या की प्रार्थना कर रहा था कि उजले वस्त्र पहने एक पुरुष मेरे सामने आ खड़ा हुआ।</span> <sup>31</sup><span class='v-txt'>उसने यह कहा, ’करनेलियुस! आपकी प्रार्थनाएँ सुनी गयी हैं और ईश्वर ने आपके भिक्षा-दानों को याद किया।</span> <sup>32</sup><span class='v-txt'>आप आदमियों को योप्पे भेजिए और सिमोन को, जो पेत्रुस कहलाते हैं, बुलाइए।  वह चर्मकार सिमोन के यहाँ, समुद्र के किनारे, ठहरे हुए हैं।</span> <sup>33</sup><span class='v-txt'>मैंने आप को तुरंत बुला भेजा और आपने पधारने की कृपा की हैं।  ईश्वर ने आप को जो-जो आदेश दिये हैं, उन्हें सुनने के लिए हम सब यहाँ आपके सामने उपस्थित हैं।&quot;</span> <sup>34</sup><span class='v-txt'>पेत्रुस ने कहा, &quot;मैं अब अच्छी तरह समझ गया हूँ कि ईश्वर किसी के साथ पक्ष-पात नहीं करता।</span> <sup>35</sup><span class='v-txt'>मनुष्य किसी भी राष्ट्र का क्यों न हो, यदि वह ईश्वर पर श्रद्धा रख कर धर्माचरण करता है, तो वह ईश्वर का कृपापात्र बन जाता हैं।</span> <sup>36</sup><span class='v-txt'>ईश्वर ने इस्राएलियों को अपना संदेश भेजा और हमें ईसा मसीह द्वारा, जो सबों के प्रभु हैं, शांति का सुसमाचार सुनाया।</span> <sup>37</sup><span class='v-txt'>नाज़रेत के ईसा के विषय में यहूदिया भर में जो हुआ हैं, उसे आप लोग जानते हैं।  वह सब गलीलिया में प्रारंभ हुआ-उस बपतिस्मा के बाद, जिसका प्रचार योहन किया था।</span> <sup>38</sup><span class='v-txt'>ईश्वर ने ईसा को पवित्र आत्मा और सामर्थ्य से विभूषित किया और वह चारों ओर घूम-घूम कर भलाई करते रहें और शैतान के वश में आये हुए लोगों को चंगा करते रहें, क्योंकि ईश्वर उनके साथ था</span> <sup>39</sup><span class='v-txt'>उन्होंने जो कुछ यहूदिया देश और येरूसालेम में किया, उसके साक्षी हम हैं।  उन को लोगों ने क्रूस के काठ पर चढ़ा कर मार डाला;</span> <sup>40</sup><span class='v-txt'>परन्तु ईश्वर ने उन्हें तीसरे दिन जिलाया और प्रकट होने दिया-</span> <sup>41</sup><span class='v-txt'>सारी जनता के सामने नहीं, बल्कि उन साक्षियों के सामने, जिन्हें ईश्वर ने पहले ही से चुन लिया था।  वे साक्षी हम हैं।  मृतकों में से उनके जी उठने के बाद हम लोगों ने उनके साथ खाया-पिया</span> <sup>42</sup><span class='v-txt'>और उन्होंने हमें आदेश दिया कि हम जनता को उपदेश दे कर घोषित करें कि ईश्वर ने उन्हें जीवितों और मृतकों का न्यायकर्ता नियुक्त किया हैं।</span> <sup>43</sup><span class='v-txt'>उन्हीं के विषय में सब नबी घोषित करते है कि जो उन में विश्वास करेगा, उसे उनके नाम द्वारा पापों की क्षमा मिलेगी।&quot;</span> <sup>44</sup><span class='v-txt'>पेत्रुस बोल ही रहा था कि पवित्र आत्मा सब सुनने वालों पर उतरा।</span> <sup>45</sup><span class='v-txt'>पेत्रुस के साथ आये हुए यहूदी विश्वासी यह देख कर चकित रह गये कि गैर-यहूदियों को भी पवित्र आत्मा का वरदान मिला है;</span> <sup>46</sup><span class='v-txt'>क्योंकि वे गैर-यहूदियों को भिन्न-भिन्न भाषाएँ बोलते और ईश्वर की स्तुति करते सुन रहे थे।  तब पेत्रुस ने कहा,</span> <sup>47</sup><span class='v-txt'>&quot;इन लोगों को हमारे ही समान पवित्र आत्मा का वरदान मिला है, तो क्या कोई इन्हें बपतिस्मा का जल देने से इंकार कर सकता है?</span> <sup>48</sup><span class='v-txt'>और उसने उन्हें ईसा मसीह के नाम पर बपतिस्मा देने का आदेश दिया।  तब उन्होंने पेत्रुस से यह कहते अनुरोध किया, &quot;आप कुछ दिन हमारे यहाँ रहिए&quot;।</span> </p>
+        <div class='nav'><a href='051009.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='051011.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

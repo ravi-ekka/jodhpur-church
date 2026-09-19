@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>योहन - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>योहन</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>इसके कुछ समय बाद ईसा यहूदियों के किसी पर्व के अवसर पर येरूसालेम गये।</span> <sup>2</sup><span class='v-txt'>येरूसालेम में भेड़-फाटक के पास एक कुण्ड है, जो इब्रानी भाषा में बेथेस्दा कहलाता है।  उसके पाँच मण्डप हैं।</span> <sup>3</sup><span class='v-txt'>उन में बहुत-से रोगी-अन्धे, लँगड़े और अर्ध्दांगरोगी-पड़े हुए थे।  (वे पानी के लहराने की राह देख रहे थे,</span> <sup>4</sup><span class='v-txt'>क्योंकि प्रभु का दूत समय-समय पर कुण्ड में उतर कर पानी हिला देता था।  पानी के लहराने के बाद जो सब से पहले कुण्ड में उतरता था- चाहे वह किसी भी रोग से पीड़ित क्यों न हो- अच्छा हो जाता था।)</span> <sup>5</sup><span class='v-txt'>वहाँ एक मनुष्य था, जो अड़तीस वर्षों से बीमार था।</span> <sup>6</sup><span class='v-txt'>ईसा ने उसे पड़ा हुआ देखा और, यह जान कर कि वह बहुत समय से इसी तरह पड़ा हुआ है, उस से कहा, &quot;क्या तुम अच्छा हो जाना चाहते हो&quot;</span> <sup>7</sup><span class='v-txt'>रोगी ने उत्तर दिया, &quot;महोदय; मेरा कोई नहीं है, जो पानी के लहराते ही मुझे कुण्ड में उतार दे।  मेरे पहुँचने से पहले ही उस में कोई और उतर पड़ता है।&quot;</span> <sup>8</sup><span class='v-txt'>ईसा ने उस से कहा, &quot;उठ कर खड़े हो जाओ; अपनी चारपाई उठाओ और चलो&quot;।</span> <sup>9</sup><span class='v-txt'>उसी क्षण वह मनुष्य अच्छा हो गया और अपनी चारपाई उठा कर चलने-फिरने लगा।</span> <sup>10</sup><span class='v-txt'>वह विश्राम का दिन था।  इसलिए यहूदियों ने उस से, जो अच्छा हो गया था, कहा, &quot;आज विश्राम का दिन है। चारपाई उठाना तुम्हारे लिए उचित नहीं है।&quot;</span> <sup>11</sup><span class='v-txt'>उसने उत्तर दिया, &quot;जिसने मुझे अच्छा किया, उसी ने मुझ से कहा- अपनी चार पाई उठाओ और चलो&quot;।</span> <sup>12</sup><span class='v-txt'>उन्होंने उस से पूछा, &quot;कौन है वह, जिसने तुम से कहा- अपनी चारपाई उठाओ और चलो?&quot;</span> <sup>13</sup><span class='v-txt'>चंगा किया हुआ मनुष्य नहीं जानता था कि वह कौन है, क्योंकि उस जगह बहुत भीड़ थी और ईसा वहाँ से निकल गये थे।</span> <sup>14</sup><span class='v-txt'>बाद में मंदिर में मिलने पर ईसा ने उस से कहा, &quot;देखो, तुम चंगे हो गये हो।  फिर पाप नहीं करो।  कहीं ऐसा न हो कि तुम पर और भी भारी संकट आ पड़े।&quot;</span> <sup>15</sup><span class='v-txt'>उस मनुष्य ने जा कर यहूदियों को बताया कि जिन्होंने मुझे चंगा किया है, वह ईसा हैं।</span> <sup>16</sup><span class='v-txt'>यहूदी ईसा को इसलिए सताते थे कि वे विश्राम के दिन ऐसे काम किया करते थे।</span> <sup>17</sup><span class='v-txt'>ईसा ने उन्हें यह उत्तर दिया, &quot;मेरा पिता अब तक काम कर रहा है और मैं भी काम कर रहा हूँ।</span> <sup>18</sup><span class='v-txt'>अब यहूदियों का उन्हें मार डालने का निश्चय और भी दृढ़ हो गया, क्योंकि वे न केवल विश्राम-दिवस का नियम तोड़ते थे, बल्कि ईश्वर को अपना निजी पिता कह कर ईश्वर के बराबर होने का दावा करते थे।</span> <sup>19</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;मैं तुम लोगों से यह कहता हूँ -  पुत्र स्वयं अपने से कुछ नहीं कर सकता।  वह केवल वही कर सकता है, जो पिता को करते देखता है।  जो कुछ पिता करता है, वह पुत्र भी करता है;</span> <sup>20</sup><span class='v-txt'>क्योंकि पिता पुत्र को प्यार करता है, और वह स्वयं जो कुछ करता है, उसे पुत्र को दिखाता है।  वह उसे और महान् कार्य दिखायेगा, जिन्हें देख कर तुम लोग अचम्भे में पड़ जाओगे।</span> <sup>21</sup><span class='v-txt'>जिस तरह पिता मृतकों को उठाता और जिलाता है, उसी तरह पुत्र भी जिसे चाहता, उसे जीवन प्रदान करता है;</span> <sup>22</sup><span class='v-txt'>क्योंकि पिता किसी का न्याय नहीं करता।  उसने न्याय करने का पूरा अधिकार पुत्र को दे दिया है,</span> <sup>23</sup><span class='v-txt'>जिससे सब लोग जिस प्रकार पिता का आदर करते हैं, उसी प्रकार पुत्र का भी आदर करें।  जो पुत्र का आदर नहीं करता, वह पिता का, जिसने पुत्र को भेजा, आदर नहीं करता।</span> <sup>24</sup><span class='v-txt'>&quot;मैं तुम लोगों से यह कहता हूँ -  जो मेरी शिक्षा सुनता और जिसने मुझे भेजा, उस में विश्वास करता है, उसे अनन्त जीवन प्राप्त है।  वह दोषी नहीं ठहराया जायेगा। वह तो मृत्यु को पार कर जीवन में प्रवेश कर चुका है।</span> <sup>25</sup><span class='v-txt'>&quot;मैं तुम लोगों से यह कहता हूँ -  वह समय आ रहा है, आ ही गया है, जब मृतक ईश्वर के पुत्र की वाणी सुनेंगे, और जो सुनेंगे, उन्हें जीवन प्राप्त होगा।</span> <sup>26</sup><span class='v-txt'>जिस तरह पिता स्वयं जीवन का स्रोत है, उसी तरह उसने पुत्र को भी जीवन का स्रोत बना दिया</span> <sup>27</sup><span class='v-txt'>और उसे न्याय करने का भी अधिकार दिया है, क्योंकि वह मानव पुत्र है।</span> <sup>28</sup><span class='v-txt'>इस पर आश्चर्य न करो।  वह समय आ रहा है, जब वे सब, जो कब्रों में है, उसकी वाणी सुन कर निकल आयेंगे।</span> <sup>29</sup><span class='v-txt'>सत्कर्मी जीवन के लिए पुनर्जीवित हो जायेंगे और कुकर्मी नरकदण्ड के लिए।</span> <sup>30</sup><span class='v-txt'>मैं स्वयं अपने से कुछ भी नहीं कर सकता।  मैं जो सुनता, उसी के अनुसार निर्णय देता हूँ और मेरा निर्णय न्यायसंगत है; क्योंकि मैं अपनी इच्छा नहीं, बल्कि जिसने मुझे भेजा, उसकी इच्छा पूरी करना चाहता हूँ।&quot;</span> <sup>31</sup><span class='v-txt'>&quot;यदि मैं अपने विषय में साक्ष्य देता हूँ, तो मेरा साक्ष्य मान्य नहीं है।</span> <sup>32</sup><span class='v-txt'>कोई दूसरा मेरे विषय में साक्ष्य देता है और मैं जानता हूँ कि वह मेरे विषय में जो साक्ष्य देता है, वह मान्य है।</span> <sup>33</sup><span class='v-txt'>तुम लोगों ने योहन से पुछवाया और उसने सत्य के सम्बन्ध में साक्ष्य दिया।</span> <sup>34</sup><span class='v-txt'>मुझे किसी मनुष्य के साक्ष्य की आवश्यकता नहीं।  मैं यह इसलिए कहता हूँ कि तुम लोग मुक्ति पा सको।</span> <sup>35</sup><span class='v-txt'>योहन एक जलता और चमकता हुआ दीपक था।  उसकी ज्योति में थोड़ी देर तक आनन्द मनाना तुम लोगों को अच्छा लगा।</span> <sup>36</sup><span class='v-txt'>परन्तु मुझे जो साक्ष्य प्राप्त है, वह योहन के साक्ष्य से भी महान् है।  पिता ने जो कार्य मुझे पूरा करने  को सौंपे हैं, जो कार्य मैं करता हूँ, वही मेरे विषय में यह साक्ष्य देते हैं कि मुझे पिता ने भेजा है।</span> <sup>37</sup><span class='v-txt'>पिता ने भी, जिसने मुझे भेजा, मेरे विषय में साक्ष्य दिया है।  तुम लोगों ने न तो कभी उसकी वाणी सुनी और न उसका रूप ही देखा।</span> <sup>38</sup><span class='v-txt'>उसकी शिक्षा तुम लोगों के हृदय में घर नहीं कर सकी, क्योंकि तुम उस में विश्वास नहीं करते, जिसे उसने भेजा।</span> <sup>39</sup><span class='v-txt'>तुम लोग यह समझ कर धर्मग्रंथ का अनुशीलन करते हो कि उस में तुम्हें अनन्त जीवन का मार्ग मिलेगा।  वही धर्मग्रन्ध मेरे विषय में साक्ष्य देता है,</span> <sup>40</sup><span class='v-txt'>फिर भी तुम लोग जीवन प्राप्त करने के लिए मेरे पास आना नहीं चाहते।</span> <sup>41</sup><span class='v-txt'>मैं मनुष्यों की ओर से सम्मान नहीं चाहता।</span> <sup>42</sup><span class='v-txt'>&quot;मैं तुम लोगों के विषय में जानता हूँ कि तुम ईश्वर से प्रेम नहीं करते।</span> <sup>43</sup><span class='v-txt'>मैं अपने पिता के नाम पर आया हूँ, फिर भी तुम लोग मुझे स्वीकार नहीं करतें यदि कोई अपने ही नाम पर आये, तो तुम लोग उस को स्वीकार करोगे।</span> <sup>44</sup><span class='v-txt'>तुम लोग एक दूसरे से सम्मान चाहते हो और वह सम्मान नहीं चाहते, जो एक मात्र ईश्वर की ओर से आता है? तो तुम लोग कैसे विश्वास कर सकते हो?</span> <sup>45</sup><span class='v-txt'>यह न समझो कि मैं पिता के सामने तुम लोगों पर अभियोग लगाऊँगा।  तुम पर अभियोग लगाने वाले तो मूसा हैं, जिन पर तुम भरोसा रखते हो।</span> <sup>46</sup><span class='v-txt'>यदि तुम लोग मूसा पर विश्वास करते, तो मुझ पर भी विश्वास करते; क्योंकि उन्होंने मेरे विषय में लिखा है।</span> <sup>47</sup><span class='v-txt'>यदि तुम लोग उनके लेखों पर विश्वास नहीं करते, तो मेरी शिक्षा पर कैसे विश्वास करोगे?&quot;</span> </p>
+        <div class='nav'><a href='050004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='050006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>उपदेशक - अध्याय 7</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>उपदेशक</h1>
+        <h2>अध्याय 7</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>उत्तम सुगन्धित द्रव्य से सुनाम अच्छा है और जन्मदिन से मृत्यु का दिन अच्छा।</span> <sup>2</sup><span class='v-txt'>दावत के घर जाने की अपेक्षा शोक के घर में प्रवेश करना अच्छा है; क्योंकि मृत्यु हर मनुष्य की गति है।  जीवितों को उस पर ध्यान देना चाहिए।</span> <sup>3</sup><span class='v-txt'>हँसी से शोक अच्छा है; क्योंकि उदास मुख वाले का हृदय सुखी हो सकता है।</span> <sup>4</sup><span class='v-txt'>बुद्धिमान् का हृदय शोक के घर को अधिक पसन्द करता है, किन्तु मूर्खो का हृदय उत्सव के घर को।</span> <sup>5</sup><span class='v-txt'>मूर्खों का गाना सुनने की अपेक्षा बुद्धिमान् की डाँट सुनना अच्छा है।</span> <sup>6</sup><span class='v-txt'>मूर्खों की हँसी वैसी ही होती है, जैसी हँड़िया के नीचे लकड़ियों की चर-चराहट।  यह भी व्यर्थ है।</span> <sup>7</sup><span class='v-txt'>अत्याचार बुद्धिमान् को मूर्ख बनाता और घूस उसे भ्रष्ट कर देती है।</span> <sup>8</sup><span class='v-txt'>किसी मामले का अन्त उसके प्रारंभ से अच्छा है और धैर्य अहंकार से अच्छा है।</span> <sup>9</sup><span class='v-txt'>आसानी से उत्तेजित मत हो; क्योंकि मूर्खों के हृदय में क्रोध का निवास है।</span> <sup>10</sup><span class='v-txt'>यह मत पूछो कि पहले के दिन क्यों इन दिनों से अच्छे थे।  इस प्रकार का प्रश्न उठाना बुद्धिमानी की बात नहीं।</span> <sup>11</sup><span class='v-txt'>प्रज्ञा विरासत की तरह अच्छी बात है, इस से सूर्य देखने वाले लाभ उठाते हैं।</span> <sup>12</sup><span class='v-txt'>प्रज्ञा और धन, दोनों मनुष्य की रक्षा करते हैं, कि वह ज्ञानी को जीवन प्रदान करता है।</span> <sup>13</sup><span class='v-txt'>ईश्वर के कार्यों पर विचार करो: जिसे ईश्वर ने टेढ़ा कर दिया, उसे कौन सीधा कर सकता है?</span> <sup>14</sup><span class='v-txt'>सुख के दिन आनन्द मनाओे, दुःख के दिन यह सोचो कि ईश्वर ने दोनों को बनाया है।  मनुष्य नहीं जानता कि उसके बाद क्या होने वाला है।</span> <sup>15</sup><span class='v-txt'>मैंने अपने व्यर्थ जीवन में इन दोनों को देखा है: धर्मी को, जो अपने न्याय के कारण नष्ट हो गया, और दुष्ट को, जो अपनी दुष्टता के बावजूद बहुत समय तक जीवित रहा।</span> <sup>16</sup><span class='v-txt'>न बहुत अधिक न्यायी बनों और न बहुत अधिक बुद्धिमान्- क्यों अपनी हानि करना चाहते हो?</span> <sup>17</sup><span class='v-txt'>न बहुत अधिक दुष्ट बनो और न मूर्ख बनो - क्यों समय से पहले मरना चाहते हो?</span> <sup>18</sup><span class='v-txt'>अच्छा यह है कि तुम एक को पकड़े रहो और दूसरे को हाथ से जाने न दो।  जो ईश्वर पर श्रद्धा रखता है, वह दोनों कर पायेगा।</span> <sup>19</sup><span class='v-txt'>प्रज्ञा बुद्धिमान् मनुष्य को नगर के दस शासकों से अधिक शक्तिशाली बनाती है।</span> <sup>20</sup><span class='v-txt'>संसार में ऐसा कोई धार्मिक मनुष्य नहीं जो भलाई ही करता और कभी पाप नहीं करता।</span> <sup>21</sup><span class='v-txt'>लोग जो बाते कहते हैं, उन सब पर ध्यान मत दो; नहीं तो तुम अपने नौकर को अपने को कोसते सुनोगे;</span> <sup>22</sup><span class='v-txt'>क्योंकि तुम यह भी जानते हो कि तुमने कितनी बार दूसरों को कोसा है।</span> <sup>23</sup><span class='v-txt'>मैंने प्रज्ञा से इन सब बातों की छानबीन की है और कहा: &quot;मैंने प्रज्ञा प्राप्त करने का निश्चय किया&quot;, किन्तु यह मेरी शक्ति के परे था।</span> <sup>24</sup><span class='v-txt'>जो अस्तित्व में आया, वह हमारी बुद्धि के परे है।  वह गहरा है, बहुत गहरा।  कौन उसकी थाह ले सकता है?</span> <sup>25</sup><span class='v-txt'>मैंने सारे हृदय से यह जानने का प्रयत्न किया कि प्रज्ञा और बुद्धि क्या है और यह समझा कि दुष्टता नासमझी और मूर्खता पागलपन है।</span> <sup>26</sup><span class='v-txt'>मैं यह समझता हूँ कि कुछ स्त्रियाँ मृत्यु से भी कड़वी है; वे फन्दे-जैसी हैं, उनका हृदय जाल-जैसा और उनके हाथ जंजीर-जैसे हैं।  जो ईश्वर के प्रिय है, वही उन से बचता है; किन्तु पापी उनके जाल में फँसता है।</span> <sup>27</sup><span class='v-txt'>उपदेशक कहता है- अनुसन्धान करते-करते मैं इतना ही जान पाया।</span> <sup>28</sup><span class='v-txt'>मैं अनुसन्धान करता रहा, किन्तु मैं असफल रहा।  मुझे हजार में एक पुरुष मिला, किन्तु उन सब में मुझे एक भी स्त्री नहीं मिली।</span> <sup>29</sup><span class='v-txt'>अन्त मे मैं इस निष्कर्ष पर पहुँचा: ईश्वर ने मानव जीवन को सरल बनाया, किन्तु मनुष्य ने उसे तर्क-वितर्क से जटिल बना दिया।</span> </p>
+        <div class='nav'><a href='025006.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='025008.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>नहेम्या - अध्याय 6</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>नहेम्या</h1>
+        <h2>अध्याय 6</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>जब सनबल्लट, टोबीयाह, अरबी गेशेम और हमारे अन्य विरोधियों को यह मालूम हुआ कि मैंने दीवार फिर से उठवा दी है और अब उस में दरार नहीं रह गयी है (यद्यपि मैंने अब तक फाटकों के किवाड़ नहीं लगाये थे) ,</span> <sup>2</sup><span class='v-txt'>तो सनबल्लट और गेशेम, दोनों ने मेरे पास यह कहला भेजा, &quot;आइए, हम ओनो के मैदान के फ़िरीम गाँव में मिलें&quot;।  लेकिन वे मेरा बुरा करने के लिए षड़यन्त्र रच रहे थे;</span> <sup>3</sup><span class='v-txt'>इसलिए मैंने दूतों से उन्हें यह कहला भेजा, &quot;मैं एक बड़ी योजना में व्यस्त हूँ।  मैं नहीं आ सकता।  यदि मैं काम छोड़ कर आपके पास आऊँ, तो वह बन्द हो जायेगा।&quot;</span> <sup>4</sup><span class='v-txt'>उन्होंने इस तरह मुझ से चार बार कहलवाया।  परन्तु मैंने हर बार एक ही उत्तर दिया।</span> <sup>5</sup><span class='v-txt'>अब सनबल्लट ने पाँचवीं बार उसी सन्देश के साथ मेरे पास अपना एक दूत भेजा।  उसके हाथ में एक खुली चिट्ठी थी।</span> <sup>6</sup><span class='v-txt'>उस में लिखा थाः &quot;लोगो में यह अफ़वाह है और गेशेम का भी कहना है कि आप और यहूदी लोग राजद्रोह करने की सोच रहे हैं और इसीलिए आप दीवार उठा रहे हैं। इस अफ़वाह के अनुसार आप उनके राजा भी होना चाहते हैं।</span> <sup>7</sup><span class='v-txt'>और यह भी कहा जाता है कि आप येरूसालेम में अपने को ही यूदा का राजा घोषित करवाने के लिए नबी नियुक्त कर चुके हैं।  ये बातें राजा को निश्चय ही मालूम हो जायेंगी।  इसलिए आप आइए, जिससे हम आपस में विचार कर लें।&quot;</span> <sup>8</sup><span class='v-txt'>परन्तु मैंने उस से कहलवाया, &quot;आप जो बातें कहते हैं, वे निराधार हैं।  वे आपके ही दिमाग की उपज हैं।&quot;</span> <sup>9</sup><span class='v-txt'>वे सब हमें डराना चाहते थे और कहते थे, &quot;काम करते-करते उनके हाथ शिथिल पड़ जायेंगे और यह काम पूरा नहीं होगा।&quot; परन्तु मैंने प्रार्थना की, &quot;ईश्वर! तू मेरे हाथ सुदृढ़ कर&quot;।</span> <sup>10</sup><span class='v-txt'>मैं किसी दिन महेटबएल के पौत्र, दलाया के पुत्र शमाया के घर गया।  वह उस समय अपने घर में बन्द पड़ा था। उसने मुझ से कहा, &quot;हम ईश्वर के मन्दिर के भीतरी भाग में मिलें और मन्दिर के दरवाजे़ भीतर से बन्दर कर लें, क्योंकि वे आपका वध करने आयेंगे।  वे रात ही में आपका वध करने आयेंगे।&quot;</span> <sup>11</sup><span class='v-txt'>लेकिन मैंने कहा, &quot;क्या मुझ जैसे आदमी के लिए भागना उचित है और मुझ-जैसे आदमी को अपने प्राण बचाने के लिए मन्दिर के भीतर जाना चाहिए?  मैं भीतर नहीं जाऊँगा।&quot;</span> <sup>12</sup><span class='v-txt'>मुझे मालूम था कि उसे ईश्वर ने नहीं भेजा है।  वह मुझ से ऐसा इसलिए कह रहा था कि टोबीयाह और सनबल्लट ने उसे ख़रीद लिया था।</span> <sup>13</sup><span class='v-txt'>वह इसलिए ख़रीदा गया था कि वह मुझे डराये और मन्दिर में प्रवेश कर पाप करूँ।  इसके बाद वे इसकी चरचा करते हुए मुझे बदनाम करना चाहते थे।</span> <sup>14</sup><span class='v-txt'>मेरे ईश्वर!  टोबीयाह और सनबल्लट को उनके कुकर्मों के कारण याद कर और नबिया नोअद्या और अन्य नबियों को भी, जो मुझे डराना चाहते थे।</span> <sup>15</sup><span class='v-txt'>एलूल मास के पच्चीसवें दिन, अर्थात् बावन दिन में, दीवार बन कर तैयार हो गयी।</span> <sup>16</sup><span class='v-txt'>जैसे ही हमारे सब विरोधियों ने यह सुना, हमारे आसपास के सभी लोग भयभीत हो उठे और अपने आप को छोटा समझने लगे।  वे यह जान गये कि हमारे ईश्वर की सहायता से ही यह कार्य सम्पन्न हुआ है।</span> <sup>17</sup><span class='v-txt'>इन्हीं दिनों यूदा के कुलीन लोगों ने टोबीयाह के पास कई चिट्ठियाँ भेजीं और टोबीयाह के भी पत्र उन्हें मिले।</span> <sup>18</sup><span class='v-txt'>कारण यह था कि यूदा के बहुत-से लोगों ने शपथ खा कर टोबीयाह की सहायता करने की प्रतिज्ञा की थी; क्योंकि वह आरह के पुत्र शकन्या का दामाद था और उसके पुत्र योहानान ने बेरेक्या के पुत्र मशुल्लाम की पुत्री से विवाह किया था।</span> <sup>19</sup><span class='v-txt'>वे मेरे सामने उसके गुणों का उल्लेख करते और बाद में उस को बताते थे कि मैंने क्या-क्या कहा है।  टोबीयाह मुझे डराने के लिए पत्र लिखता था।</span> </p>
+        <div class='nav'><a href='016005.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='016007.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

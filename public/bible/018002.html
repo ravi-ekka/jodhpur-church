@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>यूदीत - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>यूदीत</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>अठाहरवें वर्ष के पहले महीने के बाईसवें दिन, अस्सूरियों के राजा नबूकदनेज़र के महल में इसकी चरचा हुई कि वह अपनी प्रतिज्ञा के अनुसार उन सभी देशों में बदला लेगा।</span> <sup>2</sup><span class='v-txt'>उसने अपने सब दरबारियों और अपने सब उच्च पदाधिकारियों को एकत्रित कर एकान्त में उन्हें अपना निर्णय बताया कि वह अपनी प्रतिज्ञा के अनुसार उन सब देशों का विनाश करेगा।</span> <sup>3</sup><span class='v-txt'>उन्होंने भी इस निर्णय का समर्थन किया कि उन सब का सर्वनाश किया जाये, जिन्होंने उसकी आज्ञा की अवहेलना की थी।</span> <sup>4</sup><span class='v-txt'>इस सभा के बाद अस्सूरियों के राजा नबूकदनेज़र ने अपने प्रधान सेनापति होलोफ़ेरनिस को, जिसका उसके बाद दूसरा स्थान था, बुलाया</span> <sup>5</sup><span class='v-txt'>और उस से कहा, &quot;समस्त पृथ्वी के राजाधिराज की आज्ञा हैः तुम यहाँ से विदा हो कर अपने साथ ऐसे व्यक्तियों को ले जाओ, जिन को अपने बल पर भरोसा हो।  तुम एक लाख बीस हज़ार पैदल सैनिकों और बारह हज़ार घुड़सवारों को ले कर</span> <sup>6</sup><span class='v-txt'>सारे पश्चिमी देशों पर इसलिए आक्रमण करोगे कि उन्होंने मेरे आदेश की अवहेलना की थी।</span> <sup>7</sup><span class='v-txt'>तुम उन्हें यह आज्ञा भी दोगे कि वे अधीनता स्वीकार करें। नहीं तो मैं क्रुद्ध हो कर उन पर आक्रमण करूँगा और पृथ्वी को अपनी सेना से पाट कर उन्हें लुटवाऊँगा।</span> <sup>8</sup><span class='v-txt'>उनके घायलों से घाटियाँ भर जायेंगी और उनके मृतकों की लाशों से नाले और नदियाँ इस प्रकार प्रकार पट जायेंगी कि पानी उनके तट के ऊपर से बह निकलेगा।</span> <sup>9</sup><span class='v-txt'>मैं उनके बन्दियों को पृथ्वी के कोनों तक ले जाऊँगा।</span> <sup>10</sup><span class='v-txt'>तुम जा कर मेरे लिए उन लोगों के सभी सीमान्तों पर अधिकार करोगे।  जब वे तुम्हें अपने को समर्पित करेंगे, तो उन्हें मेरे लिए उस दिन तक रख छोड़ोगे, जिस दिन मैं स्वयं उन को दण्ड देने जाऊँगा।</span> <sup>11</sup><span class='v-txt'>जो तुम्हारा विरोध करेंगे, तुम उन पर दया मत दिखाओगे।  उन्हें सब जगह वध और लूट का शिकार होने दोगे ;</span> <sup>12</sup><span class='v-txt'>क्योंकि मैंने अपने जीवन और राज्याधिकार की शपथ खा कर जो कहा है, मैं उसे अवश्य पूरा करूँगा ।</span> <sup>13</sup><span class='v-txt'>तुम अपने स्वामी की इन आज्ञाओं में एक का भी उल्लंघन नहीं करोगे, बल्कि जैसा मैंने आदेश दिया, उसका बिना विलम्ब किये अवश्य पालन करोगे।&quot;</span> <sup>14</sup><span class='v-txt'>होलोफ़ेरनिस ने अपने स्वामी से विदा ले कर सब सामन्तों और अस्सूर की सेना के सेनापतियों और अध्यक्षों को बुलाया</span> <sup>15</sup><span class='v-txt'>और अपने स्वामी के आदेशानुसार युद्ध के लिए उत्तम सैनिकों को चुना-एक लाख बीस हज़ार पैदल सैनिकों और बारह हज़ार घुड़सवार तीरन्दाज़ों को-ऽ</span> <sup>16</sup><span class='v-txt'>और युद्ध के लिए उनकी व्यूहरचना की।</span> <sup>17</sup><span class='v-txt'>वह इनके साथ बहुत से ऊँटों, गधों और खच्चरों को माल-असबाब लादने के लिए तथा असंख्य भेड़ों, गायों और बकरियों को रसद के लिए ले गया।</span> <sup>18</sup><span class='v-txt'>उसने प्रत्येक सैनिक के लिए भरपूर भोज्य-पदार्थ का प्रबन्ध किया और राजभवन से प्रचुर मात्रा में सोना-चाँदी निकलवायी।</span> <sup>19</sup><span class='v-txt'>इस प्रकार वह अपनी सारी सेना के साथ राजा नबूकदनेज़र से पहले नीनवे से चल पड़ा, जिससे वह सभी पश्चिमी देशों को अपने रथों, घुड़सवारों और चुने हुए पैदल सैनिकों से भर दे।</span> <sup>20</sup><span class='v-txt'>उनके साथ हर प्रकार के अन्य लोग भी थे, जो टिड्डियों और पृथ्वी के रेतकणों की तरह असंख्य थे।</span> <sup>21</sup><span class='v-txt'>वे नीनवे की तीन दिन की यात्रा की दूरी तक, बेकटिलेत के मैदान तक गये और उन्होंने बेकटिलेत के पास, जो उस पर्वतश्रेणी के निकट है जो किलीकिया के ऊपरी भाग में अवस्थित है, पड़ाव डाला।</span> <sup>22</sup><span class='v-txt'>फिर वह अपनी सारी सेना-पैदल सैनिक, घुड़सवार और रथ-ले कर वहाँ से पहाड़ी प्रान्त की ओर आगे बढ़ा।</span> <sup>23</sup><span class='v-txt'>पूद और लूद वालों को पराजित कर उसने रस्सीद के सभी वंशजों और इसमाएलियों को लूटा, जो खलैयों के देश के दक्षिण में उजाड़खण्ड के निकट रहते हैं।</span> <sup>24</sup><span class='v-txt'>इसके बाद वह फ़रात नदी पार कर मेसोपोतामिया हो कर गया और समुद्र तक आगे बढ़ कर अब्रोना नदी के पास के सब क़िलाबन्द नगरों को ध्वस्त कर दिया।</span> <sup>25</sup><span class='v-txt'>उसने किलीकिया प्रान्त पर अधिकार कर लिया और अपने सब विरोध करने वालों का वध किया।  इस प्रकार वह याफ़ेत की सीमा तक आया, जो दक्षिण में अरब के सामने है।</span> <sup>26</sup><span class='v-txt'>इसके बाद उसने मिदयान के सभी वंशजों को घेर कर उनके खेमों को जला दिया और उनके रेवड़ों को लूटा।</span> <sup>27</sup><span class='v-txt'>तब वह गेहूँ की फ़सल के समय दमिश्क के मैदान में उतरा और उसने उनके सब खेत जला दिये, उनका पशुधन नष्ट किया, उनके नगरों को लूटा, उनके मैदान उजाड़ दिये और उनके सब नौजवानों को तलवार के घाट उतार दिया।</span> <sup>28</sup><span class='v-txt'>तब समुद्रतट के लोग, सीदोन और तीरुस के निवासी, सूर और ओकीना के निवासी तथा यमनिया के सब निवासी भयभीत हो कर काँपने लगे।  अशदोद और अशकलोन के निवासी उस से बहुत डरने लगे।</span> </p>
+        <div class='nav'><a href='018001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='018003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

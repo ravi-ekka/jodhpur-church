@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>2 कुरिन्थियों - अध्याय 11</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>2 कुरिन्थियों</h1>
+        <h2>अध्याय 11</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ओह, यदि आप लोग मेरी थोड़ी-सी नादानी सह लेते! खैर, आप मुझ को अवश्य सहेंगे।</span> <sup>2</sup><span class='v-txt'>मैं जितनी तत्परता से आप लोगों की चिन्ता करता हूँ वह ईश्वर की चिन्ता जैसी है।  मैंने आपके एकमात्र दुलहे मसीह के साथ आपका वाग्दान सम्पन्न किया, जिससे मैं आप को पवित्र कुँवारी की तरह उनके सामने प्रस्तुत कर सकूँ।</span> <sup>3</sup><span class='v-txt'>मुझे डर है कि जिस प्रकार साँप ने अपनी धूर्तता से हेवा को धोखा दिया था, उसी प्रकार आप लोगों का मन भी न बहका दिया जाये और आप मसीह के प्रति अपनी निष्कपट भक्ति न खो बैठें ;</span> <sup>4</sup><span class='v-txt'>क्योंकि जब कोई आप लोगों के पास एक ऐसे ईसा का प्रचार करने आता है, जो हमारे द्वारा प्रचारित ईसा से भिन्न हैं, या एक ऐसा आत्मा अथवा सुसमाचार ग्रहण करने को कहता है, जो आपके द्वारा स्वीकृत आत्मा अथवा सुसमाचार से भिन्न है, तो आप लोग उस व्यक्ति का स्वागत करते हैं।</span> <sup>5</sup><span class='v-txt'>ऐसे महान् प्रचारकों से मैं अपने को किसी तरह कम नहीं समझता।</span> <sup>6</sup><span class='v-txt'>मैं अच्छा वक्ता नहीं हूँ, किन्तु मुझ में ज्ञान का अभाव नहीं।  इसका प्रमाण मैं सब तरह से और हर प्रकार की बातों में आप लोगों को दे चुका हूँ।</span> <sup>7</sup><span class='v-txt'>आप लोगों को ऊपर उठाने के लिए मैंने अपने को दीनहीन बनाया और बिना कुछ लिए आप लोगों के बीच ईश्वर के सुसमाचार का प्रचार किया।  क्या इस में मेरा कोई दोष था?</span> <sup>8</sup><span class='v-txt'>आप लोगों की सेवा करने के लिए मैंने दूसरी कलीसियाओं से चन्दा माँगा।</span> <sup>9</sup><span class='v-txt'>आप लोगों के यहाँ रहते समय मैं आर्थिक संकट में पड़ने पर भी किसी के लिए भी भार नहीं बनता था।  मकेदूनिया से आने वाले भाइयो ने मेरी आवश्यकताओं को पूरा किया।  मैं आपके लिए भार नहीं बना और कभी नहीं बनूँगा।</span> <sup>10</sup><span class='v-txt'>मुझ में विद्यमान मसीह की सच्चाई की शपथ!  अखै़या भर में कोई या कुछ भी मुझे इस गौरव से वंचित नहीं कर सकेगा।</span> <sup>11</sup><span class='v-txt'>ऐसा क्यों?  क्या इसलिए कि मैं आप को प्यार नहीं करता?  ईश्वर जानता हैं कि मैं आप लोगों को प्यार करता हूँ।</span> <sup>12</sup><span class='v-txt'>मैं जो करता आ रहा हूँ वही करता जाऊँगा, जिससे उन लोगों को इस बात पर गर्व करने का मौका न मिले कि वे प्रचार-कार्य में मेरे बराबर हैं;</span> <sup>13</sup><span class='v-txt'>क्योंकि वे झूठे प्रचारक और कपटपूर्ण कार्यकर्ता है, जो मसीह के सन्देशवाहकों का स्वाँग रचते हैं।</span> <sup>14</sup><span class='v-txt'>यह आश्चर्य की बात नहीं, क्योंकि स्वयं शैतान ज्योतिर्मय स्वर्गदूत का स्वाँग रचता है।</span> <sup>15</sup><span class='v-txt'>इसलिए उसके कार्यकर्ता भी सहज ही धर्म के सेवकों का स्वाँग रचते हैं, किन्तु उनकी अन्तगति उनके आचरण के अनुरूप होगी।</span> <sup>16</sup><span class='v-txt'>मै फिर कहता हूँ कोई मुझे नासमझ नहीं समझे और यदि आप मुझे ऐसा समझते हों, तो मुझे थोड़ी-सी डींग मारने की छूट भी दें।</span> <sup>17</sup><span class='v-txt'>इस संबंध में मैं जो कहने वाला हूँ, वह तो प्रभु के मनोभाव के अनुकूल नहीं, बल्कि नासमझी मात्र है।</span> <sup>18</sup><span class='v-txt'>जब बहुत से लोग उन बातों की डींग मारते हैं, जो संसार की दृष्टि में महत्व रखती है, तो मैं भी वही करूँगा।</span> <sup>19</sup><span class='v-txt'>समझदार होने के नाते आप लोग नासमझ लोगों का व्यवहार खुशी से सहते हैं।</span> <sup>20</sup><span class='v-txt'>जब कोई आप की स्वतंत्रता छीनता, आपकी धन-सम्पत्ति खा जाता, आपका शोषण करता, आपके प्रति तिरस्कारपूर्ण व्यवहार करता अथवा आप को थप्पड़ करता है, तो आप यह सब सह लेते हैं।</span> <sup>21</sup><span class='v-txt'>मैं संकोच के साथ स्वीकार करता हूँ कि आप लोगों के साथ इस प्रकार का व्यवहार करने का मुझे साहस नहीं हुआ।  आप इसे मेरी नादानी समझें, किन्तु जिन बातों के विषय में वे लोग डींग मारने का साहस करते हैं, मैं भी उन बातों के विषय में वही कर सकता हूँ।</span> <sup>22</sup><span class='v-txt'>वे इब्रानी हैं?  मैं भी हूँ!  वे इस्राएली हैं?  मैं भी हूँ!  वे इब्राहीम की सन्तान हैं?  मैं भी हूँ!</span> <sup>23</sup><span class='v-txt'>मैं नादानी की झोंक में कहता हूँ कि मैं इस में उन से बढ़ कर हूँ।  मैंने उन से अधिक परिश्रम किया, अधिक समय बन्दीगृह में बिताया और अधिक बार कोड़े खाये।  मैं बारम्बार प्राण संकट में पड़ा।</span> <sup>24</sup><span class='v-txt'>यहूदियों ने मुझ पाँच बार एक कम चालीस कोड़े लगाये।</span> <sup>25</sup><span class='v-txt'>मैं तीन बार बेंतों से पीटा और एक बार पत्थरों से मारा गया।  तीन बार ऐसा हुआ कि जिस नाव पर मैं यात्रा कर कर रहा था, वह टूट गयी और एक बार वह पूरे चैबीस घण्टे खुले समुद्र पर इधर-उधर बहती रही।</span> <sup>26</sup><span class='v-txt'>मैं बारम्बार यात्रा करता रहा।  मुझे नदियों के खतरे का सामना करना पड़ा, डाकुओं के खतरे, समुद्र के खतरे और कपटी भाइयो के खतरे का।</span> <sup>27</sup><span class='v-txt'>मैंने कठोर परिश्रम किया और बहुत-सी रातें जागते हुए बितायीं।  मुझे अक्सर भोजन नहीं मिला।  भूख-प्यास, ठण्ड और कपड़ों के अभाव-यह सब मैं सहता रहा</span> <sup>28</sup><span class='v-txt'>और इन बातों के अतिरिक्त सब कलीसियाओं के विषय में मेरी चिन्ता हर समय बनी रहती है।</span> <sup>29</sup><span class='v-txt'>जब कोई दुर्बल है, तो क्या मैं उसकी दुर्बलता से प्रभावित नहीं?  जब किसी का पतन होता है, तो क्या मैं इसका तीखा अनुभव नहीं करता?</span> <sup>30</sup><span class='v-txt'>यदि किसी बात पर गर्व करना है, तो मैं अपनी दुर्बलताओं पर गर्व करूँगा।</span> <sup>31</sup><span class='v-txt'>ईश्वर, हमारे प्रभु ईसा मसीह का पिता, युगानुयुग धन्य है।  वह जानता है कि मैं झूठ नहीं बोल रहा हूँ।</span> <sup>32</sup><span class='v-txt'>जब मैं दमिश्क में था, तो राजा अरेतास के राज्यपाल ने मुझे गिरफ़्तार करने के लिए नगर पर पहरा बैठा दिया।</span> <sup>33</sup><span class='v-txt'>मैं चारदीवारी की खिड़की से टोकरे में नीचे उतार दिया गया अैार इस प्रकार उसके हाथ से निकल भागा।</span> </p>
+        <div class='nav'><a href='054010.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='054012.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

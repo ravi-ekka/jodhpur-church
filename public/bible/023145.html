@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>स्तोत्र - अध्याय 145</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>स्तोत्र</h1>
+        <h2>अध्याय 145</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मेरे ईश्वर!  मेरे राजा!  मैं तेरी स्तुति करूँगा।  मैं सदा-सर्वदा तेरा नाम धन्य कहूँगा।</span> <sup>2</sup><span class='v-txt'>मैं दिन-प्रतिदिन तुझे धन्य कहूँगा।  मैं सदा-सर्वदा तेरे नाम की स्तुति करूँगा।</span> <sup>3</sup><span class='v-txt'>प्रभु महान् और अत्यन्त प्रशंसनीय है।  उसकी महिमा अगम है।</span> <sup>4</sup><span class='v-txt'>सब पीढ़ियाँ तेरी सृष्टि की प्रशंसा करती और तेरे महान् कार्यों का बखान करती हैं।</span> <sup>5</sup><span class='v-txt'>मैं भी तेरे प्रताप, तेरे ऐश्वर्य और तेरे महान् चमत्कारों का बखान करूँगा।</span> <sup>6</sup><span class='v-txt'>मैं भी तेरे विस्मयकारी कार्यों और तेरी महिमा का वर्णन करूँगा।</span> <sup>7</sup><span class='v-txt'>लोग तेरी अपार कृपा की चरचा करते रहेंगे और तेरी न्यायप्रियता का जयकार।</span> <sup>8</sup><span class='v-txt'>प्रभु दया और अनुकम्पा से परिपूर्ण है।  वह सहनशील और अत्यन्त प्रेममय है।</span> <sup>9</sup><span class='v-txt'>प्रभु सब का कल्याण करता है।  वह अपनी समस्त सृष्टि पर दया करता है।</span> <sup>10</sup><span class='v-txt'>प्रभु!  तेरी समस्त सृष्टि तेरा धन्यवाद करेगी, तेरे भक्त तुझे धन्य कहेंगे।</span> <sup>11</sup><span class='v-txt'>वे तेरे राज्य की महिमा गायेंगे और तेरे सामर्थ्य का बखान करेंगे,</span> <sup>12</sup><span class='v-txt'>जिससे सभी मनुष्य तेरे महान् कार्य और तेरे राज्य की अपार महिमा जान जायें।</span> <sup>13</sup><span class='v-txt'>तेरे राज्य का कभी अन्त नहीं होगा।  तेरा शासन पीढ़ी-दर-पीढ़ी बना रहेगा।  प्रभु अपनी सब प्रतिज्ञाएँ पूरी करता है, वह जो कुछ कहता है, प्रेम से करता है।</span> <sup>14</sup><span class='v-txt'>प्रभु निर्बल को सँभालता और झुके हुए को सीधा करता है।</span> <sup>15</sup><span class='v-txt'>सब तेरी ओर देखते और तुझ से यह आशा करते हैं कि तू समय पर उन्हें भोजन प्रदान करेगा।</span> <sup>16</sup><span class='v-txt'>तू खुले हाथों देता और हर प्राणी को तृप्त करता है।</span> <sup>17</sup><span class='v-txt'>प्रभु जो कुछ करता है, ठीक ही करता है।  वह जो कुछ करता है, प्रेम से करता है।</span> <sup>18</sup><span class='v-txt'>वह उन सबों के निकट है, जो उसका नाम लेते हैं, जो सच्चे हृदय से उस से विनती करते हैं।</span> <sup>19</sup><span class='v-txt'>जो उस पर श्रद्धा रखते हैं, वह उनका मनेारथ पूरा करता है।  वह उनकी पुकार सुन कर उनका उद्धार करता है।</span> <sup>20</sup><span class='v-txt'>प्रभु अपने भक्तों को सुरक्षित रखता, किन्तु अधर्मियों का सर्वनाश करता है।</span> <sup>21</sup><span class='v-txt'>मेरा कण्ठ प्रभु की स्तुति करता रहेगा।  सभी मनुष्य सदा-सर्वदा उसका पवित्र नाम धन्य कहें।</span> </p>
+        <div class='nav'><a href='023144.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='023146.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

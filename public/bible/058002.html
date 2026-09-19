@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>कलोसियों - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>कलोसियों</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैं चाहता हूँ कि आप यह जानें कि मैं आप लोगों के लिए, लौदीकिया के विश्वासियों और उन सबों के लिए, जिन्होंने मुझे कभी नहीं देखा, कितना कठोर परिश्रम करता रहता हूँ,</span> <sup>2</sup><span class='v-txt'>जिससे वे हिम्मत न हारें, पे्रेम की एकता में बंधे रहें, ज्ञान की परिपूर्णता प्राप्त करें और इस प्रकार ईश्वर के रहस्य के मर्म तक पहुँच जायें।</span> <sup>3</sup><span class='v-txt'>वह रहस्य है मसीह, जिन में प्रज्ञा तथा ज्ञान की सम्पूर्ण निधि निहित है।</span> <sup>4</sup><span class='v-txt'>मैं यह इसलिए कह रहा हूँ कि कोई भ्रामक तर्कों द्वारा आप लोगों को नहीं बहकाये।</span> <sup>5</sup><span class='v-txt'>मैं शरीर से दूर होते हुए भी मन से आप लोगों के साथ हूँ और मुझे यह देख कर आनन्द होता है कि आपका जीवन सुव्यवस्थित और मसीह में आपका विश्वास सुदृढ़ है।</span> <sup>6</sup><span class='v-txt'>आपने ईसा मसीह को प्रभु के रूप में स्वीकार किया है;</span> <sup>7</sup><span class='v-txt'>इसलिए उन्हीं से संयुक्त हो कर जीवन बितायें।  उन्हीं से संयुक्त हो कर जीवन बितायें।  उन्हीं में आपकी जड़ें गहरी हों और नींव सुदृढ़ हो।  आप को जिस विश्वास की शिक्षा प्राप्त हुई है, उसी में दृढ़ बने रहें और आपके हृदयों में धन्यवाद की प्रार्थना उमड़ती रहे ।</span> <sup>8</sup><span class='v-txt'>सावधान रहें।  कहीं ऐसा न हो कि कोई आप लोगों को ऐसे खोखले और भ्रामक दर्शन-शास्त्र द्वारा बहकाये, जो मनुष्यों की परम्परागत शिक्षा के अनुसार है और मसीह पर नहीं, बल्कि संसार के तत्वों पर आधारित हैं।</span> <sup>9</sup><span class='v-txt'>क्योंकि मसीह में ईश्वरीय तत्व की परिपूर्णता अवतरित हो कर निवास करती है</span> <sup>10</sup><span class='v-txt'>और उन में आप इस परिपूर्णता के सहभागी है।  मसीह विश्व के सभी आधिपत्यों और अधिकारों के शीर्ष हैं- सभी मसीह के अधीन हैं।</span> <sup>11</sup><span class='v-txt'>उन्हीं में आप लोगों का ख़तना भी हुआ है।  वह ख़तना हाथ से नहीं किया जाता, वह ख़तना मसीह का अर्थात् बपतिस्मा है, जिसके द्वारा पापमय शरीर को उतार कर फेंक दिया जाता है।</span> <sup>12</sup><span class='v-txt'>आप लोग बपतिस्मा के समय मसीह के साथ दफ़नाये गये और उन्हीं के साथ पुनर्जीवित भी किये गये हैं, क्योंकि आप लोगों ने ईश्वर के सामर्थ्य में विश्वास किया, जिसने उन्हें मृतकों में से पुनर्जीवित किया।</span> <sup>13</sup><span class='v-txt'>आप लोग पापों के कारण और अपने स्वभाव के ख़तने के अभाव के कारण मर गये थे।  ईश्वर ने आप लोगों को मसीह के साथ पुनर्जीवित किया है और हमारे सब अपराधों को क्षमा किया है।</span> <sup>14</sup><span class='v-txt'>उसने नियमों का वह बन्धपत्र, जो हमारे विरुद्ध था, रद्द कर दिया और उसे क्रूस पर ठोंक कर उठा दिया है।</span> <sup>15</sup><span class='v-txt'>उसने विश्व के प्रत्येक आधिपत्य और अधिकर को अपदस्थ किया, संसार की दृष्टि में उन को नीचा दिखाया और क्रूस के द्वारा उन्हें पराजित कर दिया है।</span> <sup>16</sup><span class='v-txt'>इसलिए किसी को यह अधिकार नहीं कि वह खान-पान, पर्व, अमावस्या या विश्राम-दिवस के विषय में आप लोगों पर दोष लगाये।</span> <sup>17</sup><span class='v-txt'>यह सब आने वाली बातों की छाया मात्र है; ठोस वास्तविकता मसीह की हैं।</span> <sup>18</sup><span class='v-txt'>आप अपने को ऐसे लोगों द्वारा अपने पुरस्कार से वंचित न होने दें, जो तपस्या, स्वर्गदूतों की पूजा और अपने तथा-कथित दिव्य दृश्यों को अनुचित महत्व देते हैं।</span> <sup>19</sup><span class='v-txt'>वे लोग अपनी संासारिक बुद्धि के कारण घमण्ड से फूल जाते हैं और इस प्रकार शीर्ष अर्थात् मसीह से संयुक्त नहीं रह पाते।  मसीह वह शीर्ष है, जो समस्त शरीर को पोषित करता है और इस प्रकार शरीर, सन्धियों और स्नायुओं द्वारा संगठित हो कर ईश्वर की इच्छानुसार बढ़ता है।</span> <sup>20</sup><span class='v-txt'>यदि आप लोग मसीह के साथ मर कर संसार के तत्वों से मुक्त हो गये हैं, तो आप उसके आदेशों का पालन क्यों करें, मानो आपका जीवन अब तक संसार के अधीन हो?</span> <sup>21</sup><span class='v-txt'>&quot;उस से परहेज करना, यह मत चखना, वह मत छूना&quot; -</span> <sup>22</sup><span class='v-txt'>ये सब मनुष्यों के आदेश हैं, मानवीय सिद्धान्तों पर आधारित हैं और ऐसी वस्तुओं से सम्बन्ध रखते हैं, जो उपयोग में आने पर नष्ट हो जाती है।</span> <sup>23</sup><span class='v-txt'>मनमानी व्यक्तिगत साधना, दैन्य और कठोर तपस्या द्वारा ज्ञान का दिखावा तो होता है, किन्तु ये शरीर की वासनाओं का दमन करने में असमर्थ है।</span> </p>
+        <div class='nav'><a href='058001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='058003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लेवी - अध्याय 16</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लेवी</h1>
+        <h2>अध्याय 16</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>हारून के दो पुत्रों की मृत्यु के बाद, जिनकी मृत्यु प्रभु के सामने बलि चढ़ाते समय हो गयी थी,</span> <sup>2</sup><span class='v-txt'>प्रभु ने मूसा से कहा, &#039;&#039;अपने भाई हारून से कहो कि वह किसी भी समय पवित्र-स्थान के अन्तरपट के भीतर मंजूषा के छादन-फलक के पास न जाया करे। नहीं तो उसकी मृत्यु हो जायेगी। मैं मंजूषा के छादन-फलक के ऊपर बादल में दर्शन देता हूँ।</span> <sup>3</sup><span class='v-txt'>हारून पवित्र-स्थान में तभी प्रवेश करे, जब वह प्रायश्चित-बलि के रूप में एक बछड़ा चढ़ाता है और होम-बलि के रूप में एक मेढ़ा।</span> <sup>4</sup><span class='v-txt'>वह छालटी का कुरता और छालटी का जाँघिया पहन ले, कमर में छालटी की पट्टी बाँध ले और छालटी की पगड़ी बाँधे। वे पवित्र वस्तुएँ हैं। वह उन्हें पहनने के पहले स्नान करे।</span> <sup>5</sup><span class='v-txt'>वह इस्राएली समुदाय से प्रायश्चित के लिए दो बकरे और होम-बलि के लिए एक मेढ़ा ले ले।</span> <sup>6</sup><span class='v-txt'>हारून पहले अपने लिए और अपने वंश के लिए प्रायश्चित के रूप में एक बछड़ा चढ़ाये।</span> <sup>7</sup><span class='v-txt'>तब वह उन दो बकरों को दर्शन-कक्ष के द्वार पर ले आये।</span> <sup>8</sup><span class='v-txt'>फिर हारून इन दो बकरों पर चिट्टियाँ डाले - एक चिट्टी प्रभु के लिए और एक चिट्टी अजाज़ेल के लिए।</span> <sup>9</sup><span class='v-txt'>हारून उस बकरे को, जिस पर प्रभु के नाम की चिट्टी पड़ी प्रायश्चित-बलि के रूप में चढ़ाये।</span> <sup>10</sup><span class='v-txt'>फिर उस बकरे को, जिस पर अजाज़ेल के नाम की चिट्टी पड़ी, प्रायश्चित-बलि के रूप में जीवित ही प्रभु के सामने प्रस्तुत किया जाये, उसके साथ प्रायश्चित-विधि सम्पन्न की जाये और बाद में उसे निर्जनस्थान में अजाजेल के पास भेज दिया जाए।</span> <sup>11</sup><span class='v-txt'>हारून पहले अपने लिए और अपने वंश के लिए प्रायश्चित-बलि के रूप में बछड़ा चढ़ाये और उसका वध करे।</span> <sup>12</sup><span class='v-txt'>फिर वह प्रभु की वेदी से अंगारों से भरे धूपदान और अंजलि-भर महीन सुगन्धित धूप-द्रव्य ले कर उन्हें अन्तरपट के पीछे ले जाये।</span> <sup>13</sup><span class='v-txt'>वह प्रभु के सामने धूप-द्रव्य अंगारों पर रखे, जिससे धुआँ विधान की मंजूषा का छादन-फलक ढक ले। नहीं तो उसकी मृत्यु हो जायेगी।</span> <sup>14</sup><span class='v-txt'>अन्त में वह उस बछड़े के रक्त में अपनी उँगली डुबों कर उसे छादन-फलक के सामने के भाग पर सात बार छिड़के।</span> <sup>15</sup><span class='v-txt'>इसके बाद वह समुदाय के लिए प्रायश्चित-बलि के बकरे का वध करे। वह उसका रक्त अन्तरपट के भीतर ले जाये और बछड़े के रक्त की तरह उसे छादन-फलक के सामने और ऊपर छिड़के।</span> <sup>16</sup><span class='v-txt'>इसी प्रकार इस्राएलियों के अपराधों और उनके सब प्रकार के पापों की अशुद्धता के कारण वह परमपवित्र-स्थान की प्रायश्चित-विधि सम्पन्न करेगा और इसी प्रकार वह दर्शन-कक्ष की भी प्रायश्चित-विधि सम्पन्न करेगा, जो उनकी अशुद्धता के होते हुए भी उनके बीच रहता है।</span> <sup>17</sup><span class='v-txt'>जब हारून उसका प्रायश्चित करने परमपवित्र-स्थान में प्रवेश करे, तो वह जब तक बाहर नहीं आये, तब तक कोई व्यक्ति दर्शन-कक्ष में प्रवेश नहीं करे। इस प्रकार वह अपने और अपने घर के सब लोगों तथा सारे इस्राएली समुदाय के लिए प्रायश्चित करे।</span> <sup>18</sup><span class='v-txt'>इसके बाद वह प्रभु के सामने की वेदी के पास प्रायश्चित-विधि सम्पन्न करे। वह उस बछड़े और उस बकरे का रक्त वेदी के चार सींगों पर लगायें</span> <sup>19</sup><span class='v-txt'>और अपनी उँगली से सात बार वेदी पर रक्त छिड़के। इस प्रकार वह इस्राएलियों की अशुद्धता से वेदी को शुद्ध और पवित्र करे।</span> <sup>20</sup><span class='v-txt'>वह परमपवित्र-स्थान, दर्शन-कक्ष और वेदी का प्रायश्चित कर चुकने के बाद दूसरा जीवित बकरा ले आने कहें।</span> <sup>21</sup><span class='v-txt'>हारून अपने दोनों हाथ उस जीवित बकरे के सिर पर रख कर, इस्राएलियों के सारे कुकर्मों और सब प्रकार के अपराधों को स्वीकार कर, उन्हें उसके सिर पर डाल दे और फिर पहले से निर्धारित व्यक्ति के द्वारा उसे रेगिस्तान में पहुँचा दे।</span> <sup>22</sup><span class='v-txt'>इस प्रकार वह बकरा लोगों के सब अपराधों को निर्जन-स्थान ले जायेगा और वह वहाँ छोड़ दिया जायेगा।</span> <sup>23</sup><span class='v-txt'>इसके बाद हारून फिर दर्शन-कक्ष में प्रवेश करे और छालटी के वे कपड़े उतार कर वहाँ रखें, जिन्हें उसने परमपवित्र-स्थान में प्रवेश करने के लिए पहना था।</span> <sup>24</sup><span class='v-txt'>तब वह पवित्र-स्थान में स्नान करे, अपने वस्त्र पहने और फिर बाहर आये और अपने और लोगों के लिए होम-बलि चढ़ाये और इस प्रकार वह अपनी और लोगों की प्रायश्चित-विधि सम्पन्न करे।</span> <sup>25</sup><span class='v-txt'>वह प्रायश्चित-बलि की चरबी वेदी पर जला दे।</span> <sup>26</sup><span class='v-txt'>&#039;&#039;वह व्यक्ति, जो उस बकरे को अजाजेल के पास ले गया था, अपने कपड़े धोये और स्नान करे। तब वह फिर शिविर में प्रवेश कर सकता है।</span> <sup>27</sup><span class='v-txt'>प्रायश्चित-बलि का बछड़ा और प्रायश्चित-बलि का बकरा जिनका रक्त प्रायश्चित्त करने के लिए परमपपित्र-स्थान में लाया गया था, शिविर के बाहर ले जाये। उनकी खालें, उनका मांस और उनका गोबर आग में जला दिया जाये।</span> <sup>28</sup><span class='v-txt'>जो उन्हें जलाये, वह अपने वस्त्र धो कर और स्नान कर फिर शिविर में प्रवेश कर सकता है।</span> <sup>29</sup><span class='v-txt'>यह तुम्हारे लिए चिरस्थायी धर्मविधि होगी : सातवें महीनें, महीने के ठीक दसवें दिन, तुम उपवास करोगे और किसी प्रकार का काम नहीं करोगे-न तो इस्राएली और न तुम्हारे साथ रहने वाला प्रवासी;</span> <sup>30</sup><span class='v-txt'>क्योंकि उसी दिन तुम्हारे पापों के कारण तुम्हारे प्रायश्चित की विधि सम्पन्न की जायेगी। जिससे तुम प्रभु के सामने फिर शुद्ध हो जाओ।</span> <sup>31</sup><span class='v-txt'>वह तुम्हारे लिए पूर्ण विश्राम का दिन होगा और तुम उस दिन उपवास करोगे। यह तुम्हारे लिए चिरस्थायी आदेश है।</span> <sup>32</sup><span class='v-txt'>यही याजक प्रायश्चित-विधि सम्पन्न करेगा, जो अपने पिता के स्थान पर याजक-पद के लिए अभ्यंजित और अभिषिक्त किया गया है।</span> <sup>33</sup><span class='v-txt'>वह छालटी के पवित्र वस्त्र धारण कर परमपवित्र-स्थान का, दर्शन-कक्ष का, वेदी का और याजकों तथा इस्राएलियों के समुदाय का प्रायश्चित भी करेगा।</span> <sup>34</sup><span class='v-txt'>यह तुम्हारे लिए चिरस्थायी आदेश है कि वर्ष में एक बार इस्राएलियों के सब पापों के लिए प्रायश्चित किया जाये।&#039;&#039; प्रभु ने मूसा को जैसा आदेश दिया था, वैसा ही किया गया।</span> </p>
+        <div class='nav'><a href='003015.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='003017.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

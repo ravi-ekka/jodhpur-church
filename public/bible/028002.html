@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 2</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 2</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>पुत्र! यदि तुम प्रभु की सेवा करना चाहते हो, तो विपत्ति का सामना करने को तैयार हो जाओ।</span> <sup>2</sup><span class='v-txt'>तुम्हारा हृदय निष्कपट हो, तुम दृढ़संकल्प बने रहो, विपत्ति के समय तुम्हारा जी नही घबराये।</span> <sup>3</sup><span class='v-txt'>ईश्वर से लिपटे रहो, उसे मत त्यागो, जिससे अन्त में तुम्हारा कल्याण हो।</span> <sup>4</sup><span class='v-txt'>जो कुछ तुम पर बीतेगा, उसे स्वीकार करो तथा दुःख और विपत्ति में धीर बने रहो;</span> <sup>5</sup><span class='v-txt'>क्योंकि अग्नि में स्वर्ण की परख होती है और दीन-हीनता की घरिया में ईश्वर के कृपापात्रों की।</span> <sup>6</sup><span class='v-txt'>ईश्वर पर निर्भर रहो और वह तुम्हारी सहायता करेगा।  प्रभु के भरोसे सन्मार्ग पर आगे बढ़ते जाओ।</span> <sup>7</sup><span class='v-txt'>प्रभु के श्रद्धालु भक्तो! उसकी दया पर भरोसा रखो।  मार्ग से मत भटको; कहीं पतित न हो जाओ।</span> <sup>8</sup><span class='v-txt'>प्रभु के श्रद्धालु भक्तों! उस पर भरोसा रखो और तुम्हें निश्चय ही पुरस्कार मिलेगा।</span> <sup>9</sup><span class='v-txt'>प्रभु के श्रद्धालु भक्तो! उसके उपकारों की, चिरस्थायी आनन्द और दया की प्रतीक्षा करो।</span> <sup>10</sup><span class='v-txt'>प्रभु के श्रद्धालु भक्तों! उस से प्रेम रखो और तुम्हारे हृदयों में प्रकाश का उदय होगा।</span> <sup>11</sup><span class='v-txt'>पिछली पीढ़ियों पर विचार कर देखो किसने ईश्वर पर भरोसा रखा और वह निराश हुआ?</span> <sup>12</sup><span class='v-txt'>किसने ईश्वर पर श्रद्धा रखी और वह परित्यक्ता हुआ? किसने ईश्वर से प्रार्थना की और वह उपेक्षित रहा?</span> <sup>13</sup><span class='v-txt'>क्योंकि ईश्वर अनुकम्पा और दया से परिपूर्ण है।  वह पापों को क्षमा करता और संकट के दिन में हमें बचाता है।</span> <sup>14</sup><span class='v-txt'>धिक्कार कायर हृदयों, निष्क्रिय हाथों और उस पापी को, जो दो मार्गो पर चलता है!</span> <sup>15</sup><span class='v-txt'>धिक्कार निरूत्साह हृदय को, जो भरोसा नहीं रखता! इसलिए उसकी रक्षा नहीं की जायेगी!</span> <sup>16</sup><span class='v-txt'>धिक्कार तुम लोगों को, जो धैर्य खो चुके हो!</span> <sup>17</sup><span class='v-txt'>तुम क्या करोगे, जब प्रभु लेखा लेने आयेग?</span> <sup>18</sup><span class='v-txt'>जो प्रभु पर श्रद्धा रखते हैं, वे उसकी आज्ञाओें की अवज्ञा नहीं करते।  जो उससे प्रेम रखते हैं, वे उसके मार्गो पर चलते हैं।</span> <sup>19</sup><span class='v-txt'>जो प्रभु पर श्रद्धा रखते हैं, वे वही करते हैं, जो उसे प्रिय है।  जो उस से प्रेम रखते हैं, उसकी संहिता उनका सम्बल है।</span> <sup>20</sup><span class='v-txt'>जो प्रभु पर श्रद्धा रखते हैं, उनका हृदय प्रस्तुत रहता है।  वे उसके सामने अपनी आत्मा को पवित्र करते हैं।</span> <sup>21</sup><span class='v-txt'>जो प्रभु पर श्रद्धा रखते हैं, वे उसकी आज्ञाओें का पालन करते हैं और उसके आगमन के दिन तक धैर्य रखेंगे।</span> <sup>22</sup><span class='v-txt'>वे कहते हैं, &quot;हम मनुष्यों के हाथों नहीं, बल्कि प्रभु के हाथ पड़ जायेंगे;</span> <sup>23</sup><span class='v-txt'>क्योंकि वह जितना महान् है, उतना ही दयालु भी&quot;।</span> </p>
+        <div class='nav'><a href='028001.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='028003.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

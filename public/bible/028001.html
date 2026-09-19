@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रवक्ता - अध्याय 1</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रवक्ता</h1>
+        <h2>अध्याय 1</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>समस्त प्रज्ञा प्रभु से उत्पन्न होती है, वह सदा उसके पास विद्यमान है।</span> <sup>2</sup><span class='v-txt'>समुद्रतट के बालू-कण, वर्षा की बूॅदें और अनन्त काल के दिन कौन गिन सकता है ?  आकाश की ऊॅचाई, पृथ्वी का विस्तार और महागत्र्त की गहराई कौन नाप सकता है ?</span> <sup>3</sup><span class='v-txt'>किसने ईश्वर की प्रज्ञा का अनुसन्धान किया, जो सब से पहले विद्यमान थी?</span> <sup>4</sup><span class='v-txt'>सबसे पहले प्रज्ञा की सृष्टि हुई थी।  विवेकपूर्ण बुद्धि अनादिकाल से बनी हुई है।</span> <sup>5</sup><span class='v-txt'>प्रज्ञा का स्त्रोत है- स्वर्ग में ईश्वर का शब्द।  प्रज्ञा के मार्ग हैं- शाश्वत आदेश।</span> <sup>6</sup><span class='v-txt'>प्रज्ञा की जड़ तक कौन पहुँचा है?  उसकी बारीकियाँ कौन समझता है?</span> <sup>7</sup><span class='v-txt'>प्रज्ञा की शिक्षा किस को मिली है? उसके विविध मार्ग कौन जानता है?</span> <sup>8</sup><span class='v-txt'>परमश्रद्धेय प्रभु ही प्रज्ञासम्पन्न है, वह अपने सिंहासन पर विराजमान है।</span> <sup>9</sup><span class='v-txt'>प्रभु ने ही प्रज्ञा की सृष्टि की है। उसने उसका अवलोकन एवं मूल्यांकन किया</span> <sup>10</sup><span class='v-txt'>और उसे अपने सभी कार्यों में सन्निविष्ट किया है।  उसने उसे अपनी उदारता के अनुरूप सब प्राणियों और अपने भक्तों को प्रचुर मात्रा में प्रदान किया है।</span> <sup>11</sup><span class='v-txt'>प्रभु पर श्रद्धा महिमा और गौरव, आनन्द और उल्लास की पराकाष्ठा है।</span> <sup>12</sup><span class='v-txt'>प्रभु पर श्रद्धा हृदय में स्फूर्ति भरती और आनन्द, प्रसन्नता एवं दीर्घ जीवन प्रदान करती हैं।</span> <sup>13</sup><span class='v-txt'>जो प्रभु पर श्रद्धा रखता है, उसका अन्त में भला होगा, वह अपनी मृत्यु के दिन धन्य माना जायेगा।</span> <sup>14</sup><span class='v-txt'>ईश्वर के प्रति प्रेम सम्मान्य प्रज्ञा है।</span> <sup>15</sup><span class='v-txt'>जिन लोगों को यह वरदान मिलता है, वह उन्हें ईश्वर के दर्शन और उन से उसके महान् कार्यो की स्तुति कराता है।</span> <sup>16</sup><span class='v-txt'>प्रज्ञा का मूल स्रोत प्रभु पर श्रद्धा है।  वह भक्तों को जन्म से प्राप्त होती है।  उसने अपने लिए मनुष्यों के बीच सदा के लिए अपना निवास बनाया और वह उनके वंशजों के प्रति ईमानदार रहेगी।</span> <sup>17</sup><span class='v-txt'>प्रभु पर श्रद्धा ज्ञानसम्मत धार्मिकता है।</span> <sup>18</sup><span class='v-txt'>धार्मिकता हृदय को सुरक्षित रखेगी</span> <sup>19</sup><span class='v-txt'>और उसे प्रसन्नता एवं आनन्द प्रदान करेगी।</span> <sup>20</sup><span class='v-txt'>प्रभु पर श्रद्धा प्रज्ञा की परिपूर्णता है; वह अपने फलों से मनुष्यों को तृप्त करती है।</span> <sup>21</sup><span class='v-txt'>वह उनके घर बहुमूल्य वस्तुओं से और उनके बखार उपज से भर देती है।</span> <sup>22</sup><span class='v-txt'>प्रभु पर श्रद्धा प्रज्ञा का मुकुट है, उसके द्वारा शान्ति और स्वास्थ्य की वृद्धि होती है।</span> <sup>23</sup><span class='v-txt'>दोनो ईश्वर के वरदान हैं।</span> <sup>24</sup><span class='v-txt'>प्रज्ञा वर्षा की तरह ज्ञान और विवेक बरसाती है; जो उस से सम्पन्न हैं, वह उनके यष की वृद्धि करती है।</span> <sup>25</sup><span class='v-txt'>प्रभु पर श्रद्धा प्रज्ञा की जड़ है, उसकी शाखाऍॅ लम्बी आयु है।</span> <sup>26</sup><span class='v-txt'>प्रज्ञा के भण्डार में विवेक और ज्ञानसम्मत धार्मिकता है; उसका तिरस्कार पापियों की समझदारी है।</span> <sup>27</sup><span class='v-txt'>प्रभु पर श्रद्धा पाप हरती और जब तक वह विद्यमान है, (प्रभु का) क्रोध दूर करती है।</span> <sup>28</sup><span class='v-txt'>जो अकारण क्रोध करता है, वह दोषी है; क्रोध का आवेग उसके विनाश का कारण बनता है।</span> <sup>29</sup><span class='v-txt'>धैर्यवान् तब तक दुःख सहता है, जब तक उसके हृदय में आनन्द का विकास नहीं होता।</span> <sup>30</sup><span class='v-txt'>वह तब तक अपने विचार प्रकट नहीं करता, जब तक बहुत-से लोग उसके विवेक की चरचा न करें।</span> <sup>31</sup><span class='v-txt'>प्रज्ञा के भण्डार में ज्ञानपूर्ण सूक्तियाँ हैं,</span> <sup>32</sup><span class='v-txt'>किन्तु पापी भक्ति से घृणा करता है।</span> <sup>33</sup><span class='v-txt'>पुत्र! यदि तुम प्रज्ञा चाहते हो, तो आज्ञाओें का पालन करो और प्रभु उसे तुम को प्रदान करेगा।</span> <sup>34</sup><span class='v-txt'>प्रभु की श्रद्धा प्रज्ञा और अनुशासन में निहित है।</span> <sup>35</sup><span class='v-txt'>निष्ठा और विनम्रता प्रभु को प्रिय हैं।</span> <sup>36</sup><span class='v-txt'>प्रभु पर श्रद्धा का विरोध नहीं करो, कपटपूर्ण हृदय से उसके पास नहीं जाओ।</span> <sup>37</sup><span class='v-txt'>मनुष्यों के सामने पाखण्डी मत बनो अपने शब्दों पर नियन्त्रण रखो।</span> <sup>38</sup><span class='v-txt'>घमण्डी मत बनो; नहीं तो तुम्हारा पतन होगा और तुम पर कलंक लगेगा;</span> <sup>39</sup><span class='v-txt'>ईश्वर तुम्हारे गुप्त कार्य प्रकट करेगा और तुम को भरी सभा में नीचा दिखायेगा;</span> <sup>40</sup><span class='v-txt'>क्योंकि तुम में ईश्वर के प्रति श्रद्धा नहीं है और तुम्हारा हृदय कपट से भरा है।</span> </p>
+        <div class='nav'><a href='index.html'>🏠 मुख्य सूची</a> | <a href='028002.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

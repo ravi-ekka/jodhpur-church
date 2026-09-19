@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>लूकस - अध्याय 24</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>लूकस</h1>
+        <h2>अध्याय 24</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>सप्ताह के प्रथम दिन, पौ फटते ही, वे तैयार किये हुए सुगन्धित द्रव्य ले कर क़ब्र के पास गयीं।</span> <sup>2</sup><span class='v-txt'>उन्होंने पत्थर को क़ब्र से अलग लुढ़काया हुआ पाया,</span> <sup>3</sup><span class='v-txt'>किन्तु भीतर जाने पर उन्हें प्रभु ईसा का शव नहीं मिला।</span> <sup>4</sup><span class='v-txt'>वे इस पर आश्चर्य कर ही रही थीं कि उजले वस्त्र पहने दो पुरुष उनके पास आ कर खड़े हो गये।</span> <sup>5</sup><span class='v-txt'>स्त्रियों ने भयभीत हो कर धरती की ओर सिर झुका लिया।  उन पुरुषों ने उन से कहा, &quot;आप लोग जीवित को मृतकों में क्यों ढूँढ़ती हैं?</span> <sup>6</sup><span class='v-txt'>वे यहाँ नहीं हैं- वे जी उठे हैं।  गलीलिया में रहते समय उन्होंने आप लोगों से जो कहा था, वह याद कीजिए।</span> <sup>7</sup><span class='v-txt'>उन्होंने यह कहा था कि मानव पुत्र को पापियों के हवाले कर दिया जाना होगा, क्रूस पर चढ़ाया जाना और तीसरे दिन जी उठना होगा।&quot;</span> <sup>8</sup><span class='v-txt'>तब स्त्रियों को ईसा का यह कथन याद आया।</span> <sup>9</sup><span class='v-txt'>कब्र से लौट कर मरियम मगदलेना, योहन्ना, और याकूब की माता मरियम ने यह सब ग्यारहों और दूसरे शिष्यों को भी बताया।</span> <sup>10</sup><span class='v-txt'>जो अन्य नारियाँ उनके साथ थीं, उन्होंने भी प्रेरितों से यही कहा;</span> <sup>11</sup><span class='v-txt'>परन्तु उन्होंने इन सब बातों को प्रलाप ही समझा और स्त्रियों पर विश्वास नहीं किया।</span> <sup>12</sup><span class='v-txt'>फिर भी पेत्रुस उठ क़र दौड़ते हुए क़ब्र के पास पहुँचा। उसने झुक कर देखा कि पट्टियों के अतिरिक्त वहाँ कुछ भी नहीं है और वह इस पर आश्चर्यचकित हो कर चला गया।</span> <sup>13</sup><span class='v-txt'>उसी दिन दो शिष्य इन सब घटनाओं पर बातें करते हुए एम्माउस नामक गाँव जा रहे थे।  वह येरूसालेम से कोई चार कोस दूर है।</span> <sup>14</sup><span class='v-txt'>वे आपस में बातचीत और विचार-विमर्श कर ही रहे थे</span> <sup>15</sup><span class='v-txt'>कि ईसा स्वयं आ कर उनके साथ हो लिये,</span> <sup>16</sup><span class='v-txt'>परन्त शिष्यों की आँखें उन्हें पहचानने में असमर्थ रहीं।</span> <sup>17</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;आप लोग राह चलते किस विषय पर बातचीत कर रहे हैं?&quot; वे रुक गये।  उनके मुख मलिन थे।</span> <sup>18</sup><span class='v-txt'>उन में एक क्लेओपस-ने उत्तर दिया, &quot;येरूसालेम में रहने वालों में आप ही एक ऐसे हैं, जो यह नहीं जानते कि वहाँ इन दिनों क्या-क्या हुआ है’।</span> <sup>19</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;क्या हुआ है?&quot; उन्होंने उत्तर दिया, &quot;बात ईसा नाज़री की है वे ईश्वर और समस्त जनता की दृष्टि में कर्म और वचन के शक्तिशाली नबी थे।</span> <sup>20</sup><span class='v-txt'>हमारे महायाजकों और शासकों ने उन्हें प्राणदण्ड दिलाया और क्रूस पर चढ़वाया।</span> <sup>21</sup><span class='v-txt'>हम तो आशा करते थे कि वही इस्राएल का उद्धार करने वाले थे।  यह आज से तीन दिन पहले की बात है।</span> <sup>22</sup><span class='v-txt'>यह सच है कि हम में से कुछ स्त्रियों ने हमें बड़े अचम्भे में डाल दिया है।  वे बड़े सबेरे क़ब्र के पास गयीं</span> <sup>23</sup><span class='v-txt'>और उन्हें ईसा का शव नहीं मिला।  उन्होंने लौट कर कहा कि उन्हें स्वर्गदूत दिखाई दिये, जिन्होंने यह बताया कि ईसा जीवित हैं।</span> <sup>24</sup><span class='v-txt'>इस पर हमारे कुछ साथी क़ब्र के पास गये और उन्होंने सब कुछ वैसा ही पाया, जैसा स्त्रियों ने कहा था; परन्तु उन्होंने ईसा को नहीं देखा।&quot;</span> <sup>25</sup><span class='v-txt'>तब ईसा ने उन से कहा, &quot;निर्बुद्धियों! नबियों ने जो कुछ कहा है, तुम उस पर विश्वास करने में कितने मन्दमति हो !</span> <sup>26</sup><span class='v-txt'>क्या यह आवश्यक नहीं था कि मसीह वह सब सहें और इस प्रकार अपनी महिमा में प्रवेश करें?&quot;</span> <sup>27</sup><span class='v-txt'>तब ईसा ने मूसा से ले कर अन्य सब नबियों का हवाला देते हुए, अपने विषय में जो कुछ धर्मग्रन्थ में लिखा है, वह सब उन्हें समझाया।</span> <sup>28</sup><span class='v-txt'>इतने में वे उस गाँव के पास पहुँच गये, जहाँ वे जा रहे थे।  लग रहा था, जैसे ईसा आगे बढ़ना चाहते हैं।</span> <sup>29</sup><span class='v-txt'>शिष्यों ने यह कह कर उन से आग्रह किया, &quot;हमारे साथ रह जाइए।  साँझ हो रही है और अब दिन ढल चुका है&quot; और वह उनके साथ रहने भीतर गये।</span> <sup>30</sup><span class='v-txt'>ईसा ने उनके साथ भोजन पर बैठ कर रोटी ली, आशिष की प्रार्थना पढ़ी और उसे तोड़ कर उन्हें दे दिया।</span> <sup>31</sup><span class='v-txt'>इस पर शिष्यों की आँखे खुल गयीं और उन्होंने ईसा को पहचान लिया ... किन्तु ईसा उनकी दृष्टि से ओझल हो गये।</span> <sup>32</sup><span class='v-txt'>तब शिष्यों ने एक दूसरे से कहा, हमारे हृदय कितने उद्दीप्त हो रहे थे, जब वे रास्ते में हम से बातें कर रहे थे और हमारे लिए धर्मग्रन्थ की व्याख्या कर रहे थे!&quot;</span> <sup>33</sup><span class='v-txt'>वे उसी घड़ी उठ कर येरूसालेम लौट गये।  वहाँ उन्होंने ग्यारहों और उनके साथियों को एकत्र पाया,</span> <sup>34</sup><span class='v-txt'>जो यह कह रहे थे, &quot;प्रभु सचमुच जी उठे हैं और सिमोन को दिखाई दिये हैं&quot;।</span> <sup>35</sup><span class='v-txt'>तब उन्होंने भी बताया कि रास्ते में क्या-क्या हुआ और उन्होंने ईसा को रोटी तोड़ते समय कैसे पहचान लिया।</span> <sup>36</sup><span class='v-txt'>वे इन सब घटनाओं पर बातचीत कर ही रहे थे कि ईसा उनके बीच आ कर खड़े हो गये।  उन्होंने उन से कहा, &quot;तुम्हें शान्ति मिले!&quot;</span> <sup>37</sup><span class='v-txt'>परन्तु वे विस्मित और भयभीत हो कर यह समझ रहे थे कि वे कोई प्रेत देख रहे हैं।</span> <sup>38</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;तुम लोग घबराते क्यों हो?  तुम्हारे मन में सन्देह क्यों होता है?</span> <sup>39</sup><span class='v-txt'>मेरे हाथ और मेरे पैर देखो- मैं ही हूँ।  मुझे स्पर्श कर देख लो- प्रेत के मेरे-जैसा हाड़-मांस नहीं होता।&quot;</span> <sup>40</sup><span class='v-txt'>उन्होंने यह कह कर उन को अपने हाथ और पैर दिखाये।</span> <sup>41</sup><span class='v-txt'>जब इस पर भी शिष्यों को आनन्द के मारे विश्वास नहीं हो रहा था और वे आश्चर्यचकित बने हुए थे, तो ईसा ने कहा, &quot;क्या वहाँ तुम्हारे पास खाने को कुछ है?&quot;</span> <sup>42</sup><span class='v-txt'>उन्होंने ईसा को भुनी मछली का एक टुकड़ा दिया।</span> <sup>43</sup><span class='v-txt'>उन्होंने उसे लिया और उनके सामने खाया।</span> <sup>44</sup><span class='v-txt'>ईसा ने उन से कहा, &quot;मैंने तुम्हारे साथ रहते समय तुम लोगों से कहा था कि जो कुछ मूसा की संहिता में और नबियों में तथा भजनों में मेरे विषय में लिखा है, सब का पूरा हो जाना आवश्यक है&quot;।</span> <sup>45</sup><span class='v-txt'>तब उन्होंने उनके मन का अन्धकार दूर करते हुए उन्हें धर्मग्रन्थ का मर्म समझाया</span> <sup>46</sup><span class='v-txt'>और उन से कहा, &quot;ऐसा ही लिखा है कि मसीह दुःख भोगेंगे, तीसरे दिन मृतकों में से जी उठेंगे</span> <sup>47</sup><span class='v-txt'>और उनके नाम पर येरूसालेम से ले कर सभी राष्ट्रों को पापक्षमा के लिए पश्चात्ताप का उपदेश दिया जायेगा।</span> <sup>48</sup><span class='v-txt'>तुम इन बातों के साक्षी हो।</span> <sup>49</sup><span class='v-txt'>देखों, मेरे पिता ने जिस वरदान की प्रतिज्ञा की है, उसे मैं तुम्हारे पास भेजूँगा।  इसलिए तुम लोग शहर में तब तक बने रहो, जब तक ऊपर की शक्ति से सम्पन्न न हो जाओ।&quot;</span> <sup>50</sup><span class='v-txt'>इसके बाद ईसा उन्हें बेथानिया तक ले गये और उन्होंने अपने हाथ उठा कर उन्हें आशिष दी।</span> <sup>51</sup><span class='v-txt'>आशिष देते-देते वह उनकी आँखों से ओझल हो गये और स्वर्ग में आरोहित कर लिये गये।</span> <sup>52</sup><span class='v-txt'>वे उन्हें दण्डवत् कर बड़े आनन्द के साथ येरूसालेम लौटे</span> <sup>53</sup><span class='v-txt'>और ईश्वर की स्तुति करते हुए सारा समय मन्दिर में बिताते थे।</span> </p>
+        <div class='nav'><a href='049023.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

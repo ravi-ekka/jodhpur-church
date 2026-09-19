@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>विधि-विवरण - अध्याय 33</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>विधि-विवरण</h1>
+        <h2>अध्याय 33</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>ईश्वर-भक्त मूसा ने अपनी मृत्यु से पहले इस्राएलियों को यह आशीर्वाद दिया।</span> <sup>2</sup><span class='v-txt'>उसने कहाः “प्रभु सीनई से आया, वह सेईर से उन पर उदित हुआ, पाराना पर्वत से उसकी महिमा प्रकट हुई। वह कादेश से मरीबा पहुँचा, वह दक्षिण पर्वत से उनके पास आया।</span> <sup>3</sup><span class='v-txt'>तू अपनी प्रजा को प्यार करता और सभी भक्तों को सुरक्षित रखता है।  वे तेरे चरणों को दण्डवत् करते और तेरी शिक्षा मानते हैं।</span> <sup>4</sup><span class='v-txt'>मूसा ने हमें संहिता प्रदान की, जो याकूब के समुदाय की निधि है।</span> <sup>5</sup><span class='v-txt'>जब इस्राएली वंशों के साथ नेताओं की सभा हुई, तो यशरून में एक राजा का उदय हुआ।</span> <sup>6</sup><span class='v-txt'>“रूबेन जीवित रहे, मरे नहीं, उसकी जनसंख्या कभी घटे नहीं।“</span> <sup>7</sup><span class='v-txt'>उसने यूदा के विषय में यह कहाः “प्रभु! यूदा की पुकार सुन, उसे उसके अपने लोगों के पास पहुँचा दे।  वह अपने हाथ से अपनी रक्षा करें, तू उसके बैरियों के विरुद्ध उसकी सहायता कर।“</span> <sup>8</sup><span class='v-txt'>उसने लेवी के विषय में यह कहा: “लेवी को अपना तुम्मीम, अपने भक्त को अपना ऊरीम दे।  तूने मस्सा में उसकी परीक्षा ली, मरीबा के जलाशय के पास उसका विरोध किया।</span> <sup>9</sup><span class='v-txt'>उसने अपने माता-पिता के सम्बन्ध में यह कहा, ’मैं उनकी चिन्ता नहीं करता।’  उसने अपने भाइयों को अस्वीकार किया और अपने बाल-बच्चों का ध्यान नहीं रखा।  किन्तु उसने तेरी वाणी हृदयंगम की और तेरे विधान का पालन किया।</span> <sup>10</sup><span class='v-txt'>वह याकूब को तेरे आदेशों की और इस्राएल को तेरी संहिता की शिक्षा देता है।  वह तुझे सुगन्धयुक्त चढ़ावे अर्पित करता और तेरी वेदी पर होम-बलियाँ जलाता है।</span> <sup>11</sup><span class='v-txt'>प्रभु!  उसका सामर्थ्य बढ़ा, उसके कार्यों में आशीर्वाद प्रदान कर।  उसके विरोधियों की कमर तोड़, उसके बैरियों को फिर उठने न दे।“</span> <sup>12</sup><span class='v-txt'>उसने बेनयामीन के विषय में यह कहा: “प्रभु का यह कृपापात्र सकुशल उसके सान्निध्य में रहता हैं।  सर्वोच्च प्रभु उसे सुरक्षित रखता है।  वह प्रभु की पहाड़ियों के बीच निवास करता है।“</span> <sup>13</sup><span class='v-txt'>उसने यूसुफ़ के विषय में यह कहा: “प्रभु उसके प्रदेश को यह आशीर्वाद दे - आकाश की निर्मल ओस, भूमि की गहराईयों का जल,</span> <sup>14</sup><span class='v-txt'>धूप में पकने वाली और चाँदनी में बढ़ने वाली उत्तम फ़सल;</span> <sup>15</sup><span class='v-txt'>प्राचीन पर्वतों की उपज, चिरस्थायी पहाड़ियों की उर्वरता,</span> <sup>16</sup><span class='v-txt'>पृथ्वी के उदार वरदान और प्रभु की कृपादृष्टि यह सब यूसुफ़ का शीर्ष सुशोभित करे, जो अपने भाइयों में श्रेष्ठ है।</span> <sup>17</sup><span class='v-txt'>वह पहलौठे साँड़-जैसा प्रतापी है, उसके सींग जंगली भैंसे के जैसे है; वह उन से पृथ्वी के सीमान्तों तक सभी राष्ट्रों को मारेगा।  ऐसे ही हैं एफ्रईम के लाखों वंशज! ऐसे ही हैं मनस्से के सहस्रों वंशज!</span> <sup>18</sup><span class='v-txt'>उसने ज़बुलोन के विषय में यह कहा; जबुलोन! अपनी यात्राओं में आनन्द मनाओ।  इस्साकार अपने तम्बुओं में आनन्द मनाओ।</span> <sup>19</sup><span class='v-txt'>वे वंशों को पर्वत पर बुलाते हैं, जहाँ वे निर्धारित बलियाँ चढ़ाते हैं।  वे समुद्र से धन निकालते हैं और बालू से छिपी हुई सम्पदा।“</span> <sup>20</sup><span class='v-txt'>उसने गाद के विषय में यह कहा: “धन्य है वह, जो गाद का विस्तार करता है।  गाद उस सिंह की तरह झुक कर बैठा है, जो शिकार की बाँह और सिर फाड़ता है</span> <sup>21</sup><span class='v-txt'>उसने सर्वाेत्तम भूभाग अपने लिए चुना, जहाँ उसे नेतृत्व का भार सौंपा गया।  उसने प्रजा का नेता बन कर प्रभु का उद्देश्य पूरा किया।  और इस्राएल के पक्ष में उसके निर्णय पूरे किये।“</span> <sup>22</sup><span class='v-txt'>उसने दान के विषय में यह कहा, &quot;दान एक युवा सिंह है, जो बाशान से कूद कर आता है।“</span> <sup>23</sup><span class='v-txt'>उसने नफ्ताली के विषय में यह कहा: “नफ्ताली प्रभु का कृपापात्र है और उसके आशीर्वाद से परिपूर्ण है।  उसे समुद्र के दक्षिण का प्रान्त मिलेगा।“</span> <sup>24</sup><span class='v-txt'>उसने आषेर के विषय मे यह कहा: “आषेर पुत्रों में सर्वाधिक धन्य है, उसे अपने भाइयों में सर्वाधिक अनुग्रह मिलें।  वह अपने पैर तेल से नहलाये।</span> <sup>25</sup><span class='v-txt'>तुम्हारी अर्गलाएँ लोहे और काँसे की हों, तुम्हारी शक्ति आजीवन बनी रहे।“</span> <sup>26</sup><span class='v-txt'>“यषरून! ईश्वर के तुल्य कोई नहीं! वह महिमा से विभूषित हो कर, बादलों पर आरूढ़, आकाश के मार्ग से तुम्हारी सहायता करने आता है।</span> <sup>27</sup><span class='v-txt'>शाश्वत ईश्वर तुम्हारा आश्रय है, उसका बाहुबल निरन्तर सक्रिय है।  वह तुम्हारे सामने से यह कहते हुए तुम्हारे शत्रु को भगाता है - उसे मिटा दो।</span> <sup>28</sup><span class='v-txt'>इस्राएल सकुशल निवास करता है।  अन्न और अंगूरी के देश में, जहाँ आकाश ओस टपकाता है, याकूब का वंश सुरक्षित रहता है।</span> <sup>29</sup><span class='v-txt'>प्रभु द्वारा रक्षित प्रजा, इस्राएल! तुम धन्य हो।  तुम्हारे तुल्य कौन है?  वह तुम्हारी ढाल है, तुम्हारा सहायक और तुम्हारी विजयी तलवार है।  तुम्हारे शत्रु तुम्हारी चाटुकारी करेंगे और तुम उनके देश के पर्वतों पर पैर रखोगे।“</span> </p>
+        <div class='nav'><a href='005032.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='005034.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

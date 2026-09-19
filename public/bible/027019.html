@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>प्रज्ञा - अध्याय 19</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>प्रज्ञा</h1>
+        <h2>अध्याय 19</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>किन्तु अधर्मियों पर निर्दय प्रकोप अन्त तक छाया रहा, क्योंकि ईश्वर पहले से जानता था कि वे क्या करने वाले हैं।</span> <sup>2</sup><span class='v-txt'>इस्राएलियों को निकल जाने की अनुमति देने और उन्हें जल्दी में विदा करने के बाद वे अपना मन बदल कर उनका पीछा करने वाले थे।</span> <sup>3</sup><span class='v-txt'>जब वे शोक मना रहे थे और मृतकों की कब्रों के पास विलाप कर रहे थे, तो उन्होंने एक मूर्खतापूर्ण निश्चय, किया।  उन्होंने जिन लोगों से चले जाने के लिए निवेदन किया, वे उनका भगोड़ों की तरह पीछा करने लगे।</span> <sup>4</sup><span class='v-txt'>एक विवषता उन्हें इसके लिए प्रेरित करती थी और बीती हुई घटनाओं का उन्हें विस्मरण करा देती थी, जिससे उनकी यन्त्रणाओें में जिस दण्ड की कमी थी, वह उन्हें पूरा-पूरा दिया जाये।</span> <sup>5</sup><span class='v-txt'>तेरी प्रजा एक आश्चर्यजनक यात्रा का साहस करने वाली थी, किन्तु उन्हें एक अपूर्व मृत्यु मिलने वाली थी।</span> <sup>6</sup><span class='v-txt'>समस्त सृष्टि का, सभी तत्वों के साथ, नवीकरण किया गया और वह तेरे आदेशों का पालन करती थी, जिससे तेरे पुत्र सुरक्षित रह सकें।</span> <sup>7</sup><span class='v-txt'>बादल उनके शिविर पर छाया करते थे।  जहाँ पहले जलाशय था, वहाँ सूखी भूमि, लाल समुद्र के पार जाने वाला अबाध मार्ग और तूफानी लहरों में एक हरा मैदान दिखाई पड़ा।</span> <sup>8</sup><span class='v-txt'>इस प्रकार सारी प्रजा ने तेरे अपूर्व कार्य देखने के बाद, तेरे हाथ का संरक्षण पा कर, लाल समुद्र पार किया।</span> <sup>9</sup><span class='v-txt'>प्रभु!  वे तेरी, अपने मुक्तिदाता की स्तुति करते हुए घोड़ों की तरह विचरते और मेमनों की तरह उछलते-कूदते थे।</span> <sup>10</sup><span class='v-txt'>वे याद करते थे कि विदेश में उन पर क्या बीती थी।  वे मच्छड़ अन्य प्राणियों से नहीं, बल्कि पृथ्वी से उत्पन्न हुए थे; मेढकों के वे झुण्ड जलचरो से नहीं, बल्कि नदी से उत्पन्न हुए थे।</span> <sup>11</sup><span class='v-txt'>बाद में उन्होंने तब पक्षियों का नया प्रजनन देखा, जब वे लालसा से प्रेरित हो कर स्वादिष्ट भोजन की माँग करते थे;</span> <sup>12</sup><span class='v-txt'>क्योंकि उन्हें सान्त्वना देने के लिए बटेरे समुद्र से निकली।</span> <sup>13</sup><span class='v-txt'>पापी मिस्रियों को गरजती बिजलियों की चेतावनी के बाद दण्ड दिया गया।  उन्हें अपनी दुष्टता का उचित दण्ड मिला, क्योंकि उन्होंने परदेशियों से क्रूर बैर किया था।</span> <sup>14</sup><span class='v-txt'>अन्य लोगों ने अपरिचित अतिथियों का स्वागत नहीं किया, बल्कि मिस्रियों ने उन परदेशियों को दास बनाया, जिन्होंने उनका उपकार किया था।</span> <sup>15</sup><span class='v-txt'>उन लोगों को अवश्य विचार के दिन दण्ड मिलेगा, क्योंकि उन्होंने अपरिचित अतिथियों के साथ शत्रुतापूर्ण व्यवहार किया था ;</span> <sup>16</sup><span class='v-txt'>किन्तु मिस्रियों ने इस्राएलियों का धूम-धाम से स्वागत किया और उन्हें समान अधिकार देने के बाद ही उन्हें कठोर बेगार से कष्ट दिया।</span> <sup>17</sup><span class='v-txt'>जिस तरह अन्य लोग धर्मी के द्वार पर अन्धे बनाये गये, उसी तरह मिस्री भी, जब घोर अन्धकार से घिर कर उन में प्रत्येक को टटोलते-टटोलते अपना द्वार ढूँढ़ना पड़ा।</span> <sup>18</sup><span class='v-txt'>घटनाओें पर विचार करने पर लगता है कि जिस प्रकार वीणा के स्वरों के परिवर्तन से लय बदलती है, किन्तु संगीत बना रहता है, इसी प्रकार प्रकृति के तत्वों में भी परिवर्तन हुआ;</span> <sup>19</sup><span class='v-txt'>क्योंकि थलचर जलचर बन गये और तैरने वाले भूमि पर चलते थे।</span> <sup>20</sup><span class='v-txt'>आग पानी में बल पकड़ती थी और पानी आग बुझाने का सामर्थ्य भूल जाता था।</span> <sup>21</sup><span class='v-txt'>दूसरी ओर ज्वाला उन जन्तुओं का विनाश नहीं करती थी, जो उस में आते-जाते थे, और वह दिव्य भोजन नहीं गलाती थी, जो पाले की तरह आसानी से गलता था।</span> <sup>22</sup><span class='v-txt'>प्रभु! तूने अपनी प्रजा को सब तरह से महान् और महिमामय बनाया और तू हर क्षण और हर स्थान में उसकी सहायता करता रहा।</span> </p>
+        <div class='nav'><a href='027018.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>

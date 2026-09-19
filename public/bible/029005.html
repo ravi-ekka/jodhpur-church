@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='hi'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>इसायाह - अध्याय 5</title>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='#0284c7'>
+    <style>
+        body { font-family: sans-serif; margin: 40px auto; max-width: 800px; background: #e0f2fe; color: #1e3a8a; line-height: 1.9; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #bae6fd; }
+        h1 { color: maroon; text-align: center; margin-bottom: 5px; font-size: 32px; }
+        h2 { text-align: center; color: #0369a1; margin-top: 0; font-size: 22px; }
+        .audio-container { text-align: center; margin: 15px 0 25px 0; }
+        .audio-btn { background: #0284c7; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .audio-btn:hover { background: #0369a1; }
+        .audio-btn.playing { background: #dc2626; }
+        p { font-size: 19px; text-align: justify; text-justify: inter-word; }
+        sup { font-weight: bold; color: maroon; margin-left: 5px; margin-right: 3px; font-size: 12px; vertical-align: super; }
+        .nav { text-align: center; margin-top: 25px; font-weight: bold; border-top: 1px solid #bae6fd; padding-top: 15px; }
+        .nav a { color: #0284c7; text-decoration: none; padding: 5px 12px; font-size: 15px; }
+        .nav a:hover { text-decoration: underline; color: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class='card'>
+        <h1>इसायाह</h1>
+        <h2>अध्याय 5</h2>
+        
+        <div class='audio-container'>
+            <button id='play-btn' class='audio-btn' onclick='toggleAudio()'>🔊 अध्याय सुनें</button>
+        </div>
+
+        <p id='chapter-paragraph'><sup>1</sup><span class='v-txt'>मैं अपने मित्र की दाखबारी के विषय में अपने मित्र को एक गीत सुनाऊँगा।  उपजाऊ ढाल पर मेरे मित्र की दाखबारी थी।</span> <sup>2</sup><span class='v-txt'>उसने इसकी ज़मीन खुदवायी, इस में से पत्थर निकाल दिये और इस में बढ़िया दाखलता लगवा दी।  उसने इसके बीच में मीनार बनवायी और इस में एक कोल्हू भी खुदवाया।  उसे अच्छी फ़सल की आशा थी, किन्तु उसे खट्ठे अंगूर ही मिले।</span> <sup>3</sup><span class='v-txt'>“येरूसालेम के निवासियो! यूदा की प्रजा! अब तुम मेरा तथा मेरी दाख़बारी का न्याय करो।</span> <sup>4</sup><span class='v-txt'>कौन बात ऐसी थी, जो मैं अपने दाखबारी के लिए कर सकता था और जिसे मैंने उसके लिए नहीं किया?  मुझे अच्छी फ़सल की आशा थी, उसने खट्ठे अंगूर क्यों पैदा किये?</span> <sup>5</sup><span class='v-txt'>अब, मैं तुम्हें बताऊँगा कि अपनी दाखबारी का क्या करूँगा।  मैं उसका बाड़ा हटाऊँगा ओर पशु उस में चरने आयेंगे।  मैं उसकी दीवारें ढाऊँगा और लोग उसे पैरों तले रौंदेंगे।</span> <sup>6</sup><span class='v-txt'>वह उजड़ जायेगी; कोई उसे छाँटने या खोदने नहीं आयेगा और उस में झाड़-झंखाड़ उग जायेगा।  मैं बादलों को आदेश दूँगा कि वे उस पर पानी नहीं बरसायें।“</span> <sup>7</sup><span class='v-txt'>विश्वमण्डल के प्रभु की यह दाख़बारी इस्राएल का घराना है और इसके प्रिय पौधे यूदा की प्रजा हैं।  प्रभु को न्याय की आशा थी और भ्रष्टाचार दिखाई दिया।  उसे धर्मिकता की आशा थी और अधर्म के कारण हाहाकार सुनाई पड़ा।</span> <sup>8</sup><span class='v-txt'>धिक्कार तुम लोगों को, जो इस प्रकार घर-पर-घर खरीदते और खेत-पर-खेत अपने अधिकार में करते हो कि अन्त में कोई ज़मीन नहीं बचती और तुम भूमि के अकेले स्वामी बन बैठते हो!</span> <sup>9</sup><span class='v-txt'>मेरे कानों में सर्वशक्तिमान् की यह शपथ गूँजती है- “निवासियों के अभाव के कारण बहुसंख्यक बड़े घर उजड़ जायेंगे।</span> <sup>10</sup><span class='v-txt'>बीस बीघे की दाखबारी केवल एक मन अंगूरी उत्पन्न करेगी।  दस सेर बीज केवल एक सेर अन्न पैदा करेंगे।“</span> <sup>11</sup><span class='v-txt'>धिक्कार उन लोगों को, जो बड़े सबेरे से मदिरा पीते और सन्ध्या को देर तक अंगूरी पी कर मतवाले हो जाते हैं।</span> <sup>12</sup><span class='v-txt'>वे सितार, सारंगी ,डफ ओर मुरली बजाते हुए दावतें उड़ाते और मदिरा पीते हैं, किन्तु वे प्रभु के कार्यों पर ध्यान नहीं देते और उसके हाथ की कृतियों का आदर नहीं करते।</span> <sup>13</sup><span class='v-txt'>मेरी प्रजा अपनी अवज्ञा के कारण निर्वासित की जायेगी। कुलीन लोग भूखों मरेंगे और जनसाधारण प्यास से सूख जायेगा।</span> <sup>14</sup><span class='v-txt'>तब अधोलोक अपना मुँह फैलायेगा और अपने जबड़े पूर-पूरे खोलेगा।  विलासप्रिय कुलीन लोग और जनसाधारण, दोनों उस में उतरेंगे।</span> <sup>15</sup><span class='v-txt'>अहंकारियों को झुकना पड़ेगा, मनुष्यों का धमण्ड चूर-चूर किया जायेगा।</span> <sup>16</sup><span class='v-txt'>सर्वशक्तिमान् प्रभु अपने निर्णय के कारण महिमान्वित होगा; परमपावन ईश्वर अपनी न्यायप्रियता द्वारा अपने को पवित्र प्रमाणित करेगा।</span> <sup>17</sup><span class='v-txt'>नगर के खँडहर चरागाह बनेंगे और उन में भेडे़ं और बकरियाँ चरेंगी।</span> <sup>18</sup><span class='v-txt'>धिक्कार उन लोगों को, जो पाप को मानो कपट की डोरियों से और अपराध को मानो गाड़ी के रस्सों से अपनी ओर खींचते हैं!</span> <sup>19</sup><span class='v-txt'>जो कहते हैं, “प्रभु जल्दी करे।  वह अपना कार्य अविलम्ब पूरा करे, जिससे हम उसे देख सकें।  इस्राएल के परमपावन ईश्वर की योजना शीध्र ही कर्यान्वित हो, जिससे हम उसे जान जायें।“</span> <sup>20</sup><span class='v-txt'>धिक्कार उन लागों को, जो बुराई को भलाई और भलाई को बुराई कहते हैं; जो अन्धकार को प्रकाश और प्रकाश को अन्धकार बनाते हैं; जो कटु को मधुर और मधुर को कटु मानते हैं!</span> <sup>21</sup><span class='v-txt'>धिक्कार उन लोगों को, जो अपने को बुद्धिमान् समझते और अपनी दृष्टि में समझदार हैं!</span> <sup>22</sup><span class='v-txt'>धिक्कार उन लागों को, जो अंगूरी पीने में बहादुर और मदिरा का मिश्रण करने में चतुर हैं,</span> <sup>23</sup><span class='v-txt'>जो रिश्वत ले कर दोषी को छोड़ देते और निर्दोष को न्याय नहीं दिलाते!</span> <sup>24</sup><span class='v-txt'>इसलिए, जैसे अग्नि की लपटें भूसी को भस्म कर देती हैं और सूखी धास ज्वाला में राख बनती है, वैसे उन लागों की जड़ सड़ जायेगी और उनका फूल धूल की तरह उड़ जायेगा; क्योंकि उन्होंने सर्वशक्तिमान् पभु की शिक्षा अस्वीकार की और इस्राएल के परमपावन ईश्वर की वाणी का तिरस्कार किया है।</span> <sup>25</sup><span class='v-txt'>इसलिए प्रभु का क्रोध अपनी प्रजा के विरुद्ध भड़कता है, वह उसे मारने के लिए हाथ उठाता है।  पर्वत काँप उठते हैं।  शव कूड़े-करकट की तरह सड़कों पर पड़े हैं।  फिर भी उसका क्रोध शान्त नहीं होता, उसका हाथ उठा रहता है।</span> <sup>26</sup><span class='v-txt'>वह एक दूरवर्ती राष्ट्र के लिए झण्ड़ा फहराता है, वह सीटी दे कर उसे पृथ्वी के सीमान्तों से बुलाता है।  वह अविलम्ब शीध्र ही आ पहुँचता है।</span> <sup>27</sup><span class='v-txt'>उसके योद्धाओं में न तो कोई थका-माँदा है और न कोई लड़खड़ाता है।  उन में न तो कोई ऊँघता और न कोई सोया हुआ है।  उनके कमरबन्ध ढीले नहीं हैं और उनके जूते के बन्धन टूटे हुए नहीं हैं।</span> <sup>28</sup><span class='v-txt'>उनके बाण तीक्ष्ण और उनके धनुष बढ़ाये हुए हैं।  उनके घोड़ों की टापें चक़मक़-जैसी और उनके रथों के पहिये बवण्डर-जैसे हैं।</span> <sup>29</sup><span class='v-txt'>वे सिंहनी की तरह गरजते और सिंह-शावकों की तरह दहाड़ते हैं।  वे गुर्राते हुए अपना शिकार पकड़ कर ले जाते हैं।  और उसे कोई छुड़ा नहीं सकता।</span> <sup>30</sup><span class='v-txt'>उस दिन वे समुद्र के गर्जन की तरह उन पर गुर्रायेंगे। जो देश पर दृष्टि दौड़ायेगा, उसे अन्धकार और विपत्ति दिखाई देगी।  प्रकाश घने बादलों से धूमिल किया जायेगा।</span> </p>
+        <div class='nav'><a href='029004.html'>⏮ पिछला अध्याय</a> | <a href='index.html'>🏠 मुख्य सूची</a> | <a href='029006.html'>अगला अध्याय ⏭</a></div>
+    </div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        function toggleAudio() {
+            const btn = document.getElementById('play-btn');
+            
+            if (isPlaying) {
+                // If audio is currently active, stop execution immediately
+                synth.cancel();
+                btn.innerHTML = '🔊 अध्याय सुनें';
+                btn.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Collect text selectively from class definitions to leave out superscript nodes
+                let textElements = document.querySelectorAll('.v-txt');
+                let fullText = '';
+                textElements.forEach(el => {
+                    fullText += el.textContent + ' ';
+                });
+
+                if(fullText.trim() === '') return;
+
+                utterance = new SpeechSynthesisUtterance(fullText);
+                utterance.lang = 'hi-IN'; // Explicit language mapping targeting standard Hindi
+                
+                // Fine-tune speech attributes for optimal auditory clarity
+                utterance.rate = 0.9;  // Slightly slowed down for a calm, clear reading pace
+                utterance.pitch = 1.0; // Standard tonal resonance
+
+                utterance.onend = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                utterance.onerror = function() {
+                    btn.innerHTML = '🔊 अध्याय सुनें';
+                    btn.classList.remove('playing');
+                    isPlaying = false;
+                };
+
+                synth.speak(utterance);
+                btn.innerHTML = '⏹ ऑडियो बंद करें';
+                btn.classList.add('playing');
+                isPlaying = true;
+            }
+        }
+
+        // Clean up resources if user decides to transition to a separate chapter file view
+        window.onbeforeunload = function() {
+            if (synth) {
+                synth.cancel();
+            }
+        };
+    </script>
+</body>
+</html>
