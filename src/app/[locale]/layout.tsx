@@ -9,7 +9,7 @@ import {
 } from "next-intl/server";
 import { Suspense } from "react";
 
-export const instant = false;
+//export const instant = false;
 
 export default async function LocaleLayout({
   children,

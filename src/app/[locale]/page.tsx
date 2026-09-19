@@ -10,7 +10,7 @@ type HomePageProps = {
   }>;
 };
 
-export const instant = false;
+//export const instant = false;
 
 async function getSliders(): Promise<SliderItem[]> {
   const snapshot = await adminDb
