@@ -15,7 +15,7 @@
     "cloudinary": "^2.11.0",
     "cn": "^0.2.6",
     "firebase": "^12.18.0",
-    "firebase-admin": "^14.3.0",
+    "firebase-admin": "13.10.0",
     "free-use-bible-api": "^0.4.0",
     "lucide-react": "^1.42.0",
     "next": "16.3.4",
