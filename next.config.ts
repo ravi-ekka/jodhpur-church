@@ -7,9 +7,14 @@ const nextConfig: NextConfig = {
     reactCompiler: true,
 
     cacheComponents: true,
+
     typescript: {
         ignoreBuildErrors: true,
     },
+
+    allowedDevOrigins: [
+        "10.182.167.2",
+    ],
     images: {
         remotePatterns: [
             {

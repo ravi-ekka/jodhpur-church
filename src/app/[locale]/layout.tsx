@@ -1,6 +1,7 @@
 
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import PushNotificationProvider from "@/components/providers/PushNotificationProvider";
 import { getChurchSettings } from "@/lib/settings/church-settings";
 import { NextIntlClientProvider } from "next-intl";
 import {
@@ -25,6 +26,8 @@ export default async function LocaleLayout({
       locale={locale}
       messages={messages}
     >
+      <PushNotificationProvider />
+
       <Suspense fallback={null}>
         <Navbar
           locale={locale}
