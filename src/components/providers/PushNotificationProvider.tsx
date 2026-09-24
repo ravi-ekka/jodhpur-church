@@ -246,7 +246,7 @@ export default function PushNotificationProvider() {
                             description:
                                 "Jodhpur Church notifications",
                             importance: 5,
-                            sound: "default",
+                            sound: "church_bell",
                             vibration: true,
                         }
                     );

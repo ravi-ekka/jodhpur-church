@@ -1,4 +1,3 @@
-
 import type { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
@@ -17,8 +16,15 @@ const config: CapacitorConfig = {
         FirebaseAuthentication: {
             providers: ["google.com"],
         },
+
+        PushNotifications: {
+            presentationOptions: [
+                "alert",
+                "sound",
+                "badge",
+            ],
+        },
     },
 };
 
 export default config;
-
