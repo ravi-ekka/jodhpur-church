@@ -1,3 +1,4 @@
+
 "use client";
 
 import {
@@ -14,11 +15,15 @@ import {
     sendEmailVerification,
     signInWithEmailAndPassword,
     signInWithPopup,
+    signInWithCredential,
     GoogleAuthProvider,
     signOut,
     updateProfile,
     type User,
 } from "firebase/auth";
+
+import { Capacitor } from "@capacitor/core";
+import { FirebaseAuthentication } from "@capacitor-firebase/authentication";
 
 import { auth } from "@/lib/firebase/firebase";
 
@@ -193,6 +198,47 @@ export function AuthProvider({
     // ============================================================
 
     const loginWithGoogle = async () => {
+        // ========================================================
+        // ANDROID / CAPACITOR
+        // ========================================================
+
+        if (Capacitor.isNativePlatform()) {
+            // 1. Sign in with native Google authentication
+            const result =
+                await FirebaseAuthentication.signInWithGoogle();
+
+            // Make sure Google returned an ID token
+            if (!result.credential?.idToken) {
+                throw new Error(
+                    "Google sign-in did not return an ID token."
+                );
+            }
+
+            // 2. Create Firebase JS SDK Google credential
+            const credential =
+                GoogleAuthProvider.credential(
+                    result.credential.idToken
+                );
+
+            // 3. Sign in to the Firebase JS SDK
+            const webCredential =
+                await signInWithCredential(
+                    auth,
+                    credential
+                );
+
+            // 4. Create Firestore profile if needed
+            await ensureUserProfile(
+                webCredential.user
+            );
+
+            return webCredential.user;
+        }
+
+        // ========================================================
+        // NORMAL WEB
+        // ========================================================
+
         const provider =
             new GoogleAuthProvider();
 
@@ -216,6 +262,13 @@ export function AuthProvider({
     // ============================================================
 
     const logout = async () => {
+        // Sign out from native Firebase when running
+        // inside the Capacitor Android/iOS app.
+        if (Capacitor.isNativePlatform()) {
+            await FirebaseAuthentication.signOut();
+        }
+
+        // Sign out from Firebase JS SDK
         await signOut(auth);
     };
 

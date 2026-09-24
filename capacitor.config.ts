@@ -9,8 +9,14 @@ const config: CapacitorConfig = {
     webDir: "public",
 
     server: {
-        url: "http://10.182.167.2:3001",
-        cleartext: true,
+        url: "https://jodhpur-church.vercel.app",
+        cleartext: false,
+    },
+
+    plugins: {
+        FirebaseAuthentication: {
+            providers: ["google.com"],
+        },
     },
 };
 
