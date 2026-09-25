@@ -8,6 +8,8 @@ import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkCapabilities;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -18,12 +20,16 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.activity.OnBackPressedCallback;
+
 import com.getcapacitor.BridgeActivity;
 import com.getcapacitor.WebViewListener;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends BridgeActivity {
 
-    private FrameLayout rootLayout;
     private WebView webView;
 
     private FrameLayout overlay;
@@ -36,6 +42,102 @@ public class MainActivity extends BridgeActivity {
 
     private boolean pageLoaded = false;
     private boolean showingOffline = false;
+    private boolean retrying = false;
+
+    /*
+     * --------------------------------------------------------
+     * ANDROID NAVIGATION HISTORY
+     * --------------------------------------------------------
+     *
+     * We maintain our own history because the website uses
+     * Next.js App Router client-side navigation.
+     */
+    private final Handler navigationHandler =
+            new Handler(Looper.getMainLooper());
+
+    private final List<String> navigationHistory =
+            new ArrayList<>();
+
+    private String lastKnownUrl = null;
+
+    /*
+     * True while Android is intentionally navigating backward.
+     *
+     * This prevents the URL tracker from adding the previous
+     * page as a new forward-history entry.
+     */
+    private boolean handlingBackNavigation = false;
+
+    /*
+     * Poll the current URL so we can detect Next.js client-side
+     * navigation such as <Link href="...">.
+     */
+    private final Runnable navigationTracker =
+            new Runnable() {
+
+                @Override
+                public void run() {
+
+                    if (webView == null
+                            || isFinishing()
+                            || isDestroyed()) {
+                        return;
+                    }
+
+                    webView.evaluateJavascript(
+                            "(function(){return window.location.href;})()",
+                            value -> {
+
+                                if (value == null) {
+                                    return;
+                                }
+
+                                String url =
+                                        cleanJavascriptString(value);
+
+                                if (url == null
+                                        || url.isEmpty()
+                                        || "null".equals(url)) {
+                                    return;
+                                }
+
+                                /*
+                                 * Ignore the same URL.
+                                 */
+                                if (url.equals(lastKnownUrl)) {
+                                    return;
+                                }
+
+                                lastKnownUrl = url;
+
+                                /*
+                                 * When Android Back is navigating to
+                                 * an already-known previous page, do
+                                 * not add it again.
+                                 */
+                                if (handlingBackNavigation) {
+                                    return;
+                                }
+
+                                /*
+                                 * Add only a genuinely new route.
+                                 */
+                                if (navigationHistory.isEmpty()
+                                        || !navigationHistory
+                                        .get(navigationHistory.size() - 1)
+                                        .equals(url)) {
+
+                                    navigationHistory.add(url);
+                                }
+                            }
+                    );
+
+                    navigationHandler.postDelayed(
+                            this,
+                            200
+                    );
+                }
+            };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,126 +148,184 @@ public class MainActivity extends BridgeActivity {
         webView = getBridge().getWebView();
 
         if (webView != null) {
+
             setupOverlay();
+
             setupCapacitorWebViewListener();
+
             setupNetworkMonitoring();
+
+            setupBackNavigation();
+
+            startNavigationTracking();
         }
     }
 
     /**
-     * Use Capacitor's existing BridgeWebViewClient.
+     * Convert the value returned by evaluateJavascript()
+     * into a normal Java String.
+     */
+    private String cleanJavascriptString(String value) {
+
+        if (value == null) {
+            return null;
+        }
+
+        String result = value.trim();
+
+        /*
+         * evaluateJavascript returns a JSON string such as:
+         *
+         * "https://example.com/en/about"
+         *
+         * Remove the surrounding quotes.
+         */
+        if (result.length() >= 2
+                && result.startsWith("\"")
+                && result.endsWith("\"")) {
+
+            result = result.substring(
+                    1,
+                    result.length() - 1
+            );
+
+            /*
+             * Decode common JSON escaping.
+             */
+            result = result
+                    .replace("\\/", "/")
+                    .replace("\\\"", "\"")
+                    .replace("\\\\", "\\");
+        }
+
+        return result;
+    }
+
+    /**
+     * Start monitoring the actual URL used by the Next.js app.
+     */
+    private void startNavigationTracking() {
+
+        navigationHandler.removeCallbacks(
+                navigationTracker
+        );
+
+        navigationHandler.post(
+                navigationTracker
+        );
+    }
+
+    /**
+     * Keep Capacitor's own BridgeWebViewClient.
      *
-     * IMPORTANT:
-     * Do NOT call webView.setWebViewClient().
-     *
-     * Capacitor 8.5.2 already has BridgeWebViewClient which handles:
-     * - Capacitor navigation
-     * - local server
-     * - plugins
-     * - WebView errors
-     * - page events
+     * We only listen to its events.
      */
     private void setupCapacitorWebViewListener() {
 
-        getBridge().addWebViewListener(new WebViewListener() {
+        getBridge().addWebViewListener(
+                new WebViewListener() {
 
-            @Override
-            public void onPageStarted(WebView view) {
+                    @Override
+                    public void onPageStarted(
+                            WebView view
+                    ) {
 
-                runOnUiThread(() -> {
+                        runOnUiThread(() -> {
 
-                    pageLoaded = false;
-                    showingOffline = false;
+                            pageLoaded = false;
+                            showingOffline = false;
+                            retrying = false;
 
-                    showLoading();
-                });
-            }
-
-            @Override
-            public void onPageLoaded(WebView view) {
-
-                runOnUiThread(() -> {
-
-                    pageLoaded = true;
-                    showingOffline = false;
-
-                    hideOverlay();
-                });
-            }
-
-            @Override
-            public void onReceivedError(WebView view) {
-
-                runOnUiThread(() -> {
-
-                    pageLoaded = false;
-                    showingOffline = true;
-
-                    showOffline();
-                });
-            }
-
-            @Override
-            public void onReceivedHttpError(WebView view) {
-
-                /*
-                 * HTTP errors such as 404/500 are not necessarily
-                 * an internet connection problem.
-                 *
-                 * Therefore we only show the offline screen when
-                 * Android reports that the device has no usable
-                 * internet connection.
-                 */
-                runOnUiThread(() -> {
-
-                    if (!hasInternetConnection()) {
-
-                        pageLoaded = false;
-                        showingOffline = true;
-
-                        showOffline();
+                            showLoading();
+                        });
                     }
-                });
-            }
 
-            @Override
-            public void onPageCommitVisible(WebView view, String url) {
+                    @Override
+                    public void onPageLoaded(
+                            WebView view
+                    ) {
 
-                runOnUiThread(() -> {
+                        runOnUiThread(() -> {
 
-                    /*
-                     * If a page has successfully committed, keep the
-                     * loading screen until Capacitor reports onPageLoaded.
-                     */
-                });
-            }
-        });
+                            pageLoaded = true;
+                            showingOffline = false;
+                            retrying = false;
+
+                            hideOverlay();
+                        });
+                    }
+
+                    @Override
+                    public void onReceivedError(
+                            WebView view
+                    ) {
+
+                        runOnUiThread(() -> {
+
+                            pageLoaded = false;
+                            showingOffline = true;
+                            retrying = false;
+
+                            showOffline();
+                        });
+                    }
+
+                    @Override
+                    public void onReceivedHttpError(
+                            WebView view
+                    ) {
+
+                        runOnUiThread(() -> {
+
+                            /*
+                             * Only treat an HTTP error as an offline
+                             * condition when there is actually no
+                             * validated internet connection.
+                             */
+                            if (!hasInternetConnection()) {
+
+                                pageLoaded = false;
+                                showingOffline = true;
+                                retrying = false;
+
+                                showOffline();
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onPageCommitVisible(
+                            WebView view,
+                            String url
+                    ) {
+                        // Capacitor page is becoming visible.
+                    }
+                }
+        );
     }
 
+    /**
+     * Put the overlay directly on the Activity content.
+     *
+     * This avoids depending on the WebView's parent layout.
+     */
     private void setupOverlay() {
-
-        if (webView == null) {
-            return;
-        }
-
-        if (!(webView.getParent() instanceof FrameLayout)) {
-            return;
-        }
-
-        rootLayout = (FrameLayout) webView.getParent();
 
         overlay = new FrameLayout(this);
 
         overlay.setClickable(true);
         overlay.setFocusable(true);
 
-        FrameLayout.LayoutParams overlayParams =
+        FrameLayout.LayoutParams params =
                 new FrameLayout.LayoutParams(
                         FrameLayout.LayoutParams.MATCH_PARENT,
                         FrameLayout.LayoutParams.MATCH_PARENT
                 );
 
-        rootLayout.addView(overlay, overlayParams);
+        addContentView(
+                overlay,
+                params
+        );
 
         createLoadingView();
 
@@ -188,7 +348,8 @@ public class MainActivity extends BridgeActivity {
                         : Color.WHITE
         );
 
-        FrameLayout content = new FrameLayout(this);
+        FrameLayout content =
+                new FrameLayout(this);
 
         FrameLayout.LayoutParams contentParams =
                 new FrameLayout.LayoutParams(
@@ -196,9 +357,13 @@ public class MainActivity extends BridgeActivity {
                         FrameLayout.LayoutParams.MATCH_PARENT
                 );
 
-        overlay.addView(content, contentParams);
+        overlay.addView(
+                content,
+                contentParams
+        );
 
-        FrameLayout center = new FrameLayout(this);
+        FrameLayout center =
+                new FrameLayout(this);
 
         FrameLayout.LayoutParams centerParams =
                 new FrameLayout.LayoutParams(
@@ -206,11 +371,16 @@ public class MainActivity extends BridgeActivity {
                         FrameLayout.LayoutParams.WRAP_CONTENT
                 );
 
-        centerParams.gravity = Gravity.CENTER;
+        centerParams.gravity =
+                Gravity.CENTER;
 
-        content.addView(center, centerParams);
+        content.addView(
+                center,
+                centerParams
+        );
 
-        progressBar = new ProgressBar(this);
+        progressBar =
+                new ProgressBar(this);
 
         progressBar.setIndeterminate(true);
 
@@ -220,13 +390,21 @@ public class MainActivity extends BridgeActivity {
                         70
                 );
 
-        progressParams.gravity = Gravity.CENTER_HORIZONTAL;
+        progressParams.gravity =
+                Gravity.CENTER_HORIZONTAL;
 
-        center.addView(progressBar, progressParams);
+        center.addView(
+                progressBar,
+                progressParams
+        );
 
-        messageText = new TextView(this);
+        messageText =
+                new TextView(this);
 
-        messageText.setText("Loading...");
+        messageText.setText(
+                "Loading..."
+        );
+
         messageText.setTextSize(18);
 
         messageText.setTypeface(
@@ -242,7 +420,9 @@ public class MainActivity extends BridgeActivity {
                         : Color.rgb(50, 50, 50)
         );
 
-        messageText.setGravity(Gravity.CENTER);
+        messageText.setGravity(
+                Gravity.CENTER
+        );
 
         FrameLayout.LayoutParams textParams =
                 new FrameLayout.LayoutParams(
@@ -250,28 +430,30 @@ public class MainActivity extends BridgeActivity {
                         FrameLayout.LayoutParams.WRAP_CONTENT
                 );
 
-        textParams.gravity = Gravity.CENTER_HORIZONTAL;
+        textParams.gravity =
+                Gravity.CENTER_HORIZONTAL;
+
         textParams.topMargin = 95;
 
-        center.addView(messageText, textParams);
+        center.addView(
+                messageText,
+                textParams
+        );
 
-        refreshButton = new Button(this);
+        refreshButton =
+                new Button(this);
 
-        refreshButton.setText("Refresh");
+        refreshButton.setText(
+                "Refresh"
+        );
+
         refreshButton.setTextSize(16);
 
         refreshButton.setOnClickListener(v -> {
 
             if (hasInternetConnection()) {
 
-                pageLoaded = false;
-                showingOffline = false;
-
-                showLoading();
-
-                if (webView != null) {
-                    webView.reload();
-                }
+                retryWebView();
 
             } else {
 
@@ -285,10 +467,15 @@ public class MainActivity extends BridgeActivity {
                         FrameLayout.LayoutParams.WRAP_CONTENT
                 );
 
-        buttonParams.gravity = Gravity.CENTER_HORIZONTAL;
+        buttonParams.gravity =
+                Gravity.CENTER_HORIZONTAL;
+
         buttonParams.topMargin = 145;
 
-        center.addView(refreshButton, buttonParams);
+        center.addView(
+                refreshButton,
+                buttonParams
+        );
     }
 
     private void showLoading() {
@@ -299,19 +486,23 @@ public class MainActivity extends BridgeActivity {
 
         createLoadingView();
 
-        if (progressBar != null) {
-            progressBar.setVisibility(View.VISIBLE);
-        }
+        progressBar.setVisibility(
+                View.VISIBLE
+        );
 
-        if (messageText != null) {
-            messageText.setText("Loading...");
-        }
+        messageText.setText(
+                "Loading..."
+        );
 
-        if (refreshButton != null) {
-            refreshButton.setVisibility(View.GONE);
-        }
+        refreshButton.setVisibility(
+                View.GONE
+        );
 
-        overlay.setVisibility(View.VISIBLE);
+        overlay.setVisibility(
+                View.VISIBLE
+        );
+
+        overlay.bringToFront();
     }
 
     private void showOffline() {
@@ -322,33 +513,66 @@ public class MainActivity extends BridgeActivity {
 
         createLoadingView();
 
-        if (progressBar != null) {
-            progressBar.setVisibility(View.GONE);
-        }
+        progressBar.setVisibility(
+                View.GONE
+        );
 
-        if (messageText != null) {
+        messageText.setText(
+                "No Internet Connection\n\n"
+                        + "Please check your internet connection\n"
+                        + "and try again."
+        );
 
-            messageText.setText(
-                    "No Internet Connection\n\n" +
-                    "Please check your internet connection\n" +
-                    "and try again."
-            );
+        messageText.setGravity(
+                Gravity.CENTER
+        );
 
-            messageText.setGravity(Gravity.CENTER);
-        }
+        refreshButton.setVisibility(
+                View.VISIBLE
+        );
 
-        if (refreshButton != null) {
-            refreshButton.setVisibility(View.VISIBLE);
-        }
+        overlay.setVisibility(
+                View.VISIBLE
+        );
 
-        overlay.setVisibility(View.VISIBLE);
+        overlay.bringToFront();
     }
 
     private void hideOverlay() {
 
         if (overlay != null) {
-            overlay.setVisibility(View.GONE);
+
+            overlay.setVisibility(
+                    View.GONE
+            );
         }
+    }
+
+    private void retryWebView() {
+
+        if (webView == null
+                || retrying) {
+            return;
+        }
+
+        retrying = true;
+
+        pageLoaded = false;
+
+        showingOffline = false;
+
+        showLoading();
+
+        webView.postDelayed(
+                () -> {
+
+                    if (webView != null) {
+                        webView.reload();
+                    }
+
+                },
+                150
+        );
     }
 
     private boolean hasInternetConnection() {
@@ -374,7 +598,9 @@ public class MainActivity extends BridgeActivity {
         }
 
         NetworkCapabilities capabilities =
-                connectivityManager.getNetworkCapabilities(network);
+                connectivityManager.getNetworkCapabilities(
+                        network
+                );
 
         return capabilities != null
                 && capabilities.hasCapability(
@@ -401,7 +627,9 @@ public class MainActivity extends BridgeActivity {
                 new ConnectivityManager.NetworkCallback() {
 
                     @Override
-                    public void onAvailable(Network network) {
+                    public void onAvailable(
+                            Network network
+                    ) {
 
                         runOnUiThread(() -> {
 
@@ -410,32 +638,30 @@ public class MainActivity extends BridgeActivity {
                             }
 
                             /*
-                             * When internet returns, reload automatically.
+                             * Internet has returned.
                              */
-                            if (!pageLoaded || showingOffline) {
+                            if (!pageLoaded
+                                    || showingOffline) {
 
-                                pageLoaded = false;
-                                showingOffline = false;
-
-                                showLoading();
-
-                                webView.reload();
+                                retryWebView();
                             }
                         });
                     }
 
                     @Override
-                    public void onLost(Network network) {
+                    public void onLost(
+                            Network network
+                    ) {
 
                         runOnUiThread(() -> {
 
-                            if (webView != null) {
+                            pageLoaded = false;
 
-                                pageLoaded = false;
-                                showingOffline = true;
+                            showingOffline = true;
 
-                                showOffline();
-                            }
+                            retrying = false;
+
+                            showOffline();
                         });
                     }
                 };
@@ -444,6 +670,86 @@ public class MainActivity extends BridgeActivity {
                 networkCallback
         );
     }
+
+
+   /**
+ * Android Back navigation.
+ *
+ * Uses the WebView's actual navigation history.
+ *
+ * Example:
+ *
+ * Home → About → Events
+ *
+ * Back → About
+ * Back → Home
+ * Back → close app
+ */
+private void setupBackNavigation() {
+
+    getOnBackPressedDispatcher().addCallback(
+            this,
+            new OnBackPressedCallback(true) {
+
+                @Override
+                public void handleOnBackPressed() {
+
+                    if (webView == null) {
+                        finish();
+                        return;
+                    }
+
+                    String currentUrl = webView.getUrl();
+
+                    if (currentUrl == null) {
+                        finish();
+                        return;
+                    }
+
+                    /*
+                     * If WebView has browser history,
+                     * go to the previous page.
+                     */
+                    if (webView.canGoBack()) {
+
+                        webView.goBack();
+
+                        return;
+                    }
+
+                    /*
+                     * No WebView history left.
+                     *
+                     * Check whether we are already on Home.
+                     */
+                    boolean isHome =
+                            currentUrl.endsWith("/en") ||
+                            currentUrl.endsWith("/en/") ||
+                            currentUrl.endsWith("/hi") ||
+                            currentUrl.endsWith("/hi/") ||
+                            currentUrl.endsWith("/kru") ||
+                            currentUrl.endsWith("/kru/");
+
+                    if (isHome) {
+
+                        // Already on Home → close app
+                        finish();
+
+                    } else {
+
+                        // Not Home → go to Home
+                        String homeUrl =
+                                currentUrl.replaceFirst(
+                                        "/(en|hi|kru)(/.*)?/?$",
+                                        "/$1"
+                                );
+
+                        webView.loadUrl(homeUrl);
+                    }
+                }
+            }
+    );
+}
 
     private boolean isDarkMode() {
 
@@ -459,9 +765,11 @@ public class MainActivity extends BridgeActivity {
 
     private void updateSystemBars() {
 
-        Window window = getWindow();
+        Window window =
+                getWindow();
 
-        boolean darkMode = isDarkMode();
+        boolean darkMode =
+                isDarkMode();
 
         if (android.os.Build.VERSION.SDK_INT >=
                 android.os.Build.VERSION_CODES.R) {
@@ -516,7 +824,9 @@ public class MainActivity extends BridgeActivity {
             }
 
             window.getDecorView()
-                    .setSystemUiVisibility(flags);
+                    .setSystemUiVisibility(
+                            flags
+                    );
         }
     }
 
@@ -525,35 +835,24 @@ public class MainActivity extends BridgeActivity {
             Configuration newConfig
     ) {
 
-        super.onConfigurationChanged(newConfig);
+        super.onConfigurationChanged(
+                newConfig
+        );
 
         updateSystemBars();
 
-        /*
-         * Rebuild the overlay only if it is currently visible.
-         * This prevents losing the current page state.
-         */
         if (overlay != null
-                && overlay.getVisibility() == View.VISIBLE) {
+                && overlay.getVisibility()
+                == View.VISIBLE) {
 
             if (showingOffline) {
+
                 showOffline();
+
             } else {
+
                 showLoading();
             }
-        }
-    }
-
-    @Override
-    public void onBackPressed() {
-
-        if (webView != null && webView.canGoBack()) {
-
-            webView.goBack();
-
-        } else {
-
-            super.onBackPressed();
         }
     }
 
@@ -572,6 +871,10 @@ public class MainActivity extends BridgeActivity {
             } catch (Exception ignored) {
             }
         }
+
+        navigationHandler.removeCallbacksAndMessages(
+                null
+        );
 
         super.onDestroy();
     }

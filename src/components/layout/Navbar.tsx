@@ -11,6 +11,7 @@ import {
   BookOpen,
   CalendarDays,
   ChevronDown,
+  Download,
   Globe,
   History,
   Home,
@@ -228,8 +229,7 @@ export default function Navbar({
       );
 
     router.push(
-      `/${newLocale}${
-        pathWithoutLocale || ""
+      `/${newLocale}${pathWithoutLocale || ""
       }`
     );
 
@@ -309,7 +309,7 @@ export default function Navbar({
             max-w-7xl
             items-center
             justify-between
-            px-4 sm:px-6 lg:px-8
+            px-4 sm:px-1 lg:px-1
           "
         >
           {/* =====================================================
@@ -490,8 +490,8 @@ export default function Navbar({
                   {(hasUnreadGallery ||
                     hasUnreadSermons ||
                     hasUnreadBlog) && (
-                    <span
-                      className="
+                      <span
+                        className="
                         absolute
                         -right-2
                         -top-1
@@ -500,17 +500,16 @@ export default function Navbar({
                         rounded-full
                         bg-red-600
                       "
-                      aria-label="New media"
-                    />
-                  )}
+                        aria-label="New media"
+                      />
+                    )}
                 </span>
 
                 <ChevronDown
-                  className={`h-4 w-4 transition-transform ${
-                    mediaOpen
-                      ? "rotate-180"
-                      : ""
-                  }`}
+                  className={`h-4 w-4 transition-transform ${mediaOpen
+                    ? "rotate-180"
+                    : ""
+                    }`}
                 />
               </button>
 
@@ -602,6 +601,37 @@ export default function Navbar({
               lg:flex
             "
           >
+            {/* Download App */}
+
+            <Link
+              href={`/${locale}/download`}
+              className="
+    ml-1
+    flex
+    min-h-10
+    items-center
+    gap-2
+    rounded-full
+    bg-[#762f2f]
+    px-4
+    text-sm
+    font-semibold
+    text-white
+    shadow-sm
+    transition-colors
+    hover:bg-[#602525]
+    focus-visible:outline-none
+    focus-visible:ring-2
+    focus-visible:ring-[#a77a32]
+    focus-visible:ring-offset-2
+    focus-visible:ring-offset-[#fffdf7]
+    dark:bg-[#9b4b4b]
+    dark:hover:bg-[#a95b5b]
+  "
+            >
+              <Download className="h-4 w-4" />
+              {t("downloadApp")}
+            </Link>
             {/* Language */}
 
             <select
@@ -993,7 +1023,7 @@ export default function Navbar({
 
                     const Icon =
                       navigationIcons[
-                        index
+                      index
                       ];
 
                     const hasUnread =
@@ -1087,7 +1117,7 @@ export default function Navbar({
 
                       const Icon =
                         mediaIcons[
-                          index
+                        index
                         ];
 
                       const hasUnread =
@@ -1152,7 +1182,41 @@ export default function Navbar({
                   )}
                 </div>
               </nav>
+              {/* Download App */}
 
+              <Link
+                href={`/${locale}/download`}
+                onClick={closeMenus}
+                className="
+    flex
+    min-h-11
+    w-full
+    items-center
+    gap-3
+    rounded-lg
+    bg-[#762f2f]
+    px-3
+    py-2
+    text-sm
+    font-semibold
+    text-white
+    shadow-sm
+    transition-colors
+    hover:bg-[#602525]
+    focus-visible:outline-none
+    focus-visible:ring-2
+    focus-visible:ring-[#a77a32]
+    dark:bg-[#9b4b4b]
+    dark:hover:bg-[#a95b5b]
+  "
+              >
+                <Download
+                  className="h-5 w-5 shrink-0"
+                  strokeWidth={1.8}
+                />
+
+                {t("downloadApp")}
+              </Link>
               <div
                 className="
                   my-4

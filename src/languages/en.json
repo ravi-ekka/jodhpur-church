@@ -80,7 +80,8 @@
     "notifications": "Notice",
     "contact": "Contact",
     "members": "Members",
-    "media": "Media"
+    "media": "Media",
+    "downloadApp": "apk"
   },
   "dashboard": {
     "title": "Profile",
@@ -482,6 +483,26 @@
     "notApproved": "Photos that were not approved",
     "manageMyPhotos": "Manage My Photos",
     "unableToLoadSubmissions": "Unable to load submissions."
+  },
+  "download": {
+    "label": "JODHPUR CHURCH APP",
+    "title": "Take Jodhpur Church with you",
+    "description": "Stay connected with Jodhpur Church through our Android app. Read the Bible, view church events, receive notifications and stay connected with our church community.",
+    "appName": "Jodhpur Church",
+    "version": "Version",
+    "size": "Size",
+    "androidApp": "Android App",
+    "downloadButton": "Download APK",
+    "downloadDescription": "Download the latest version of the Jodhpur Church Android app.",
+    "installationTitle": "How to install",
+    "step1": "Download the APK using the button above.",
+    "step2": "Open the downloaded APK file.",
+    "step3": "If Android asks for permission to install apps from this source, allow it and continue.",
+    "step4": "Tap Install and open the Jodhpur Church app.",
+    "securityNote": "This APK is distributed directly from our official GitHub release. Android may show a security message because the app is installed outside Google Play.",
+    "latestVersion": "Latest Version",
+    "officialRelease": "Official Release",
+    "backHome": "Back to Home"
   },
   "footer": {
     "churchName": "Jodhpur Church",
