@@ -1,7 +1,9 @@
+
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import ShareButton from "@/components/common/ShareButton";
 import NotificationAttachmentViewer from "@/components/notifications/NotificationAttachmentViewer";
+import MarkNotificationsSeen from "@/components/notifications/MarkNotificationsSeen";
 import {
     Bell,
     CalendarDays,
@@ -88,6 +90,12 @@ export default async function NotificationsPage({
 
     return (
         <main className="min-h-screen bg-[#fbf6eb] dark:bg-[#1f1815]">
+            <MarkNotificationsSeen
+                ids={notifications.map(
+                    (notification) => notification.id
+                )}
+            />
+
             {/* =========================================================
                 PAGE HEADER
             ========================================================== */}
@@ -106,7 +114,7 @@ export default async function NotificationsPage({
                     <div className="relative flex min-h-[110px] items-center justify-center">
                         <div className="min-w-0 text-center">
                             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#8b765f] dark:text-[#c9bca9] sm:text-xs">
-                                 {t("label")}
+                                {t("label")}
                             </p>
 
                             <h1 className="mt-1 flex items-center justify-center gap-2 font-serif text-2xl font-semibold leading-tight tracking-tight text-[#4b2823] dark:text-[#f3dfbc] sm:text-3xl">
@@ -183,10 +191,11 @@ export default async function NotificationsPage({
                         {notifications.map((notification) => (
                             <article
                                 key={notification.id}
-                                className={`group min-w-0 overflow-hidden border bg-[#fffaf1] shadow-sm transition-shadow hover:shadow-md dark:bg-[#2a211d] ${notification.isPinned
-                                    ? "border-[#c29a52] dark:border-[#8f6c38]"
-                                    : "border-[#d8c9a8] dark:border-[#4a3c34]"
-                                    }`}
+                                className={`group min-w-0 overflow-hidden border bg-[#fffaf1] shadow-sm transition-shadow hover:shadow-md dark:bg-[#2a211d] ${
+                                    notification.isPinned
+                                        ? "border-[#c29a52] dark:border-[#8f6c38]"
+                                        : "border-[#d8c9a8] dark:border-[#4a3c34]"
+                                }`}
                             >
                                 {/* Gold top line for pinned notifications */}
                                 {notification.isPinned && (
@@ -198,10 +207,11 @@ export default async function NotificationsPage({
 
                                 <div className="min-w-0 p-5 sm:p-6">
                                     <div
-                                        className={`grid min-w-0 gap-6 ${notification.attachment
-                                            ? "md:grid-cols-[minmax(0,1fr)_220px]"
-                                            : "grid-cols-1"
-                                            } md:items-start`}
+                                        className={`grid min-w-0 gap-6 ${
+                                            notification.attachment
+                                                ? "md:grid-cols-[minmax(0,1fr)_220px]"
+                                                : "grid-cols-1"
+                                        } md:items-start`}
                                     >
                                         {/* =================================================
                                             TEXT
@@ -287,3 +297,4 @@ export default async function NotificationsPage({
         </main>
     );
 }
+

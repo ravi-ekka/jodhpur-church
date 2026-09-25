@@ -4,6 +4,7 @@ import { BookOpen, CalendarDays, ChevronRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { getBaseUrl } from "@/lib/site-url";
 import ShareButton from "@/components/common/ShareButton";
+import MarkNotificationsSeen from "@/components/notifications/MarkNotificationsSeen";
 
 type BlogPost = {
     id: string;
@@ -103,7 +104,12 @@ export default async function BlogPage({
 
     return (
         <main className="min-h-screen bg-[#fffdf7] text-[#33251d] dark:bg-[#1b1513] dark:text-[#f5ead8]">
-
+            <MarkNotificationsSeen
+                section="blog"
+                ids={posts.map(
+                    (post) => post.id
+                )}
+            />
             {/* =====================================================
                 PAGE HEADER
             ===================================================== */}

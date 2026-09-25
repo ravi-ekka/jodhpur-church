@@ -9,7 +9,7 @@ import {
 
 import { useTranslations } from "next-intl";
 import ShareButton from "@/components/common/ShareButton";
-
+import MarkNotificationsSeen from "../notifications/MarkNotificationsSeen";
 import {
   ChevronLeft,
   ChevronRight,
@@ -156,7 +156,17 @@ export default function Gallery({
         ? initialVideos
         : [],
     );
-
+  const galleryIds = useMemo(
+    () => [
+      ...photos.map(
+        (photo) => photo.id,
+      ),
+      ...videos.map(
+        (video) => video.id,
+      ),
+    ],
+    [photos, videos],
+  );
   const [filter, setFilter] =
     useState<FilterType>("all");
 
@@ -313,7 +323,7 @@ export default function Gallery({
               (photo) => {
                 const latestCount =
                   data.views?.[
-                    photo.id
+                  photo.id
                   ];
 
                 if (
@@ -349,14 +359,14 @@ export default function Gallery({
               if (
                 !currentMedia ||
                 currentMedia.type !==
-                  "photo"
+                "photo"
               ) {
                 return currentMedia;
               }
 
               const latestCount =
                 data.views?.[
-                  currentMedia.id
+                currentMedia.id
                 ];
 
               if (
@@ -471,7 +481,7 @@ export default function Gallery({
         if (
           data.success !== true ||
           typeof data.viewCount !==
-            "number"
+          "number"
         ) {
           return photo;
         }
@@ -490,7 +500,7 @@ export default function Gallery({
           currentPhotos.map(
             (currentPhoto) =>
               currentPhoto.id ===
-              photo.id
+                photo.id
                 ? updatedPhoto
                 : currentPhoto,
           ),
@@ -595,7 +605,7 @@ export default function Gallery({
 
     const nextIndex =
       selectedIndex >=
-      media.length - 1
+        media.length - 1
         ? 0
         : selectedIndex + 1;
 
@@ -704,7 +714,10 @@ export default function Gallery({
   return (
     <>
       <main className="min-h-screen bg-[#fbf7ef] dark:bg-[#171210]">
-
+        <MarkNotificationsSeen
+          section="gallery"
+          ids={galleryIds}
+        />
         {/* ================================================= */}
         {/* PAGE HEADER                                      */}
         {/* ================================================= */}
@@ -885,7 +898,7 @@ export default function Gallery({
                   <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-[#c29a52]/50 text-[#762f2f] dark:text-[#d8b56a]">
 
                     {filter ===
-                    "videos" ? (
+                      "videos" ? (
                       <Video
                         className="h-6 w-6"
                         aria-hidden="true"
@@ -902,23 +915,23 @@ export default function Gallery({
                   <p className="mt-4 font-serif text-lg font-semibold text-[#4b2823] dark:text-[#f3dfbc]">
 
                     {filter ===
-                    "officialPhotos"
+                      "officialPhotos"
                       ? t(
-                          "noOfficialPhotos",
-                        )
+                        "noOfficialPhotos",
+                      )
                       : filter ===
                         "publicPhotos"
                         ? t(
-                            "noPublicPhotos",
-                          )
+                          "noPublicPhotos",
+                        )
                         : filter ===
                           "videos"
                           ? t(
-                              "noVideos",
-                            )
+                            "noVideos",
+                          )
                           : t(
-                              "noMedia",
-                            )}
+                            "noMedia",
+                          )}
 
                   </p>
 
@@ -951,13 +964,13 @@ export default function Gallery({
                     aria-label={
                       item.title ||
                       (item.type ===
-                      "video"
+                        "video"
                         ? t(
-                            "playVideo",
-                          )
+                          "playVideo",
+                        )
                         : t(
-                            "title",
-                          ))
+                          "title",
+                        ))
                     }
                     className={[
                       "group relative aspect-square overflow-hidden border border-[#d8c9a8] bg-[#eee4d2] text-left shadow-sm",
@@ -972,7 +985,7 @@ export default function Gallery({
                     <img
                       src={
                         item.type ===
-                        "photo"
+                          "photo"
                           ? item.url
                           : item.thumbnail
                       }
@@ -1003,7 +1016,7 @@ export default function Gallery({
                     <div className="absolute left-2.5 top-2.5 sm:left-3 sm:top-3">
 
                       {item.type ===
-                      "video" ? (
+                        "video" ? (
                         <div className="flex h-9 w-9 items-center justify-center rounded-full border border-[#f3dfbc]/60 bg-[#762f2f] text-[#fffaf0] shadow-md sm:h-10 sm:w-10">
 
                           <Play
@@ -1030,7 +1043,7 @@ export default function Gallery({
                     {item.type ===
                       "photo" &&
                       item.source ===
-                        "contributor" && (
+                      "contributor" && (
                         <div className="absolute right-2.5 top-2.5 rounded-full border border-[#f3dfbc]/40 bg-[#762f2f]/90 px-2 py-1 text-[9px] font-semibold uppercase tracking-[0.08em] text-[#fffaf0] shadow-md sm:right-3 sm:top-3 sm:text-[10px]">
 
                           {t(
@@ -1048,13 +1061,13 @@ export default function Gallery({
 
                         {item.title ||
                           (item.type ===
-                          "video"
+                            "video"
                             ? t(
-                                "videos",
-                              )
+                              "videos",
+                            )
                             : t(
-                                "photos",
-                              ))}
+                              "photos",
+                            ))}
 
                       </p>
 
@@ -1062,20 +1075,20 @@ export default function Gallery({
 
                       {item.type ===
                         "photo" && (
-                        <p className="mt-1 flex items-center gap-1 text-[11px] font-medium text-[#f3dfbc]/80">
+                          <p className="mt-1 flex items-center gap-1 text-[11px] font-medium text-[#f3dfbc]/80">
 
-                          <Eye
-                            className="h-3.5 w-3.5"
-                            aria-hidden="true"
-                          />
+                            <Eye
+                              className="h-3.5 w-3.5"
+                              aria-hidden="true"
+                            />
 
-                          {formatPhotoViews(
-                            item.viewCount,
-                          )}{" "}
-                          views
+                            {formatPhotoViews(
+                              item.viewCount,
+                            )}{" "}
+                            views
 
-                        </p>
-                      )}
+                          </p>
+                        )}
 
                       {/* YOUTUBE VIEWS */}
 
@@ -1101,14 +1114,14 @@ export default function Gallery({
 
                       {item.type ===
                         "video" && (
-                        <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.08em] text-[#f3dfbc]/75">
+                          <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.08em] text-[#f3dfbc]/75">
 
-                          {t(
-                            "playVideo",
-                          )}
+                            {t(
+                              "playVideo",
+                            )}
 
-                        </p>
-                      )}
+                          </p>
+                        )}
 
                     </div>
 
@@ -1233,7 +1246,7 @@ export default function Gallery({
           <div className="flex max-h-[96vh] w-full max-w-6xl flex-col items-center">
 
             {selectedMedia.type ===
-            "photo" ? (
+              "photo" ? (
               <div className="relative flex max-h-[82vh] w-full items-center justify-center">
 
                 <img
@@ -1315,7 +1328,7 @@ export default function Gallery({
                 <div className="mt-0.5 shrink-0 text-[#d8b56a]">
 
                   {selectedMedia.type ===
-                  "video" ? (
+                    "video" ? (
                     <Video
                       className="h-5 w-5"
                       aria-hidden="true"
@@ -1351,24 +1364,24 @@ export default function Gallery({
 
                 {selectedMedia.type ===
                   "photo" && (
-                  <div className="shrink-0">
+                    <div className="shrink-0">
 
-                    <div className="inline-flex items-center gap-1.5 rounded-full border border-[#6d5547] bg-[#1b100e] px-2.5 py-1.5 text-[11px] font-semibold text-[#f3dfbc] sm:px-3 sm:text-xs">
+                      <div className="inline-flex items-center gap-1.5 rounded-full border border-[#6d5547] bg-[#1b100e] px-2.5 py-1.5 text-[11px] font-semibold text-[#f3dfbc] sm:px-3 sm:text-xs">
 
-                      <Eye
-                        className="h-3.5 w-3.5 text-[#d8b56a]"
-                        aria-hidden="true"
-                      />
+                        <Eye
+                          className="h-3.5 w-3.5 text-[#d8b56a]"
+                          aria-hidden="true"
+                        />
 
-                      {formatPhotoViews(
-                        selectedMedia.viewCount,
-                      )}{" "}
-                      views
+                        {formatPhotoViews(
+                          selectedMedia.viewCount,
+                        )}{" "}
+                        views
+
+                      </div>
 
                     </div>
-
-                  </div>
-                )}
+                  )}
 
                 {selectedMedia.type ===
                   "video" &&
@@ -1398,7 +1411,7 @@ export default function Gallery({
 
               {media.length > 1 &&
                 selectedIndex !==
-                  null && (
+                null && (
                   <div className="mt-3 border-t border-[#6d5547] pt-2 text-center text-[11px] font-medium uppercase tracking-[0.12em] text-[#d8b56a]/70">
 
                     {selectedIndex + 1} /{" "}

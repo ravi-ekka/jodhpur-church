@@ -1,7 +1,7 @@
-
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import PushNotificationProvider from "@/components/providers/PushNotificationProvider";
+import NotificationUnreadProvider from "@/components/notifications/NotificationUnreadProvider";
 import { getChurchSettings } from "@/lib/settings/church-settings";
 import { NextIntlClientProvider } from "next-intl";
 import {
@@ -28,17 +28,18 @@ export default async function LocaleLayout({
     >
       <PushNotificationProvider />
 
-      <Suspense fallback={null}>
-        <Navbar
-          locale={locale}
-          churchName={settings.churchName}
-        />
-      </Suspense>
+      <NotificationUnreadProvider>
+        <Suspense fallback={null}>
+          <Navbar
+            locale={locale}
+            churchName={settings.churchName}
+          />
+        </Suspense>
 
-      <main>{children}</main>
+        <main>{children}</main>
 
-      <Footer settings={settings} />
+        <Footer settings={settings} />
+      </NotificationUnreadProvider>
     </NextIntlClientProvider>
   );
 }
-

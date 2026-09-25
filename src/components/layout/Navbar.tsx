@@ -30,6 +30,7 @@ import {
 } from "lucide-react";
 
 import { useAuth } from "@/context/AuthContext";
+import { useNotificationUnread } from "@/components/notifications/NotificationUnreadProvider";
 
 type NavbarProps = {
   locale: string;
@@ -51,6 +52,15 @@ export default function Navbar({
 
   const { user, logout } = useAuth();
   const { theme, setTheme } = useTheme();
+
+  const {
+    hasUnreadNotifications,
+    hasUnreadGallery,
+    hasUnreadEvents,
+    hasUnreadSermons,
+    hasUnreadBlog,
+    hasAnyUnreadContent,
+  } = useNotificationUnread();
 
   const [mobileMenuOpen, setMobileMenuOpen] =
     useState(false);
@@ -158,6 +168,56 @@ export default function Navbar({
       isActive(item.href)
     );
 
+  /*
+   * --------------------------------------------------------
+   * UNREAD STATE FOR NAVIGATION ITEMS
+   * --------------------------------------------------------
+   *
+   * Each section gets its own unread indicator.
+   */
+
+  const getNavigationUnread = (
+    href: string
+  ) => {
+    if (
+      href === `/${locale}/events`
+    ) {
+      return hasUnreadEvents;
+    }
+
+    if (
+      href === `/${locale}/notifications`
+    ) {
+      return hasUnreadNotifications;
+    }
+
+    return false;
+  };
+
+  const getMediaUnread = (
+    href: string
+  ) => {
+    if (
+      href === `/${locale}/gallery`
+    ) {
+      return hasUnreadGallery;
+    }
+
+    if (
+      href === `/${locale}/sermons`
+    ) {
+      return hasUnreadSermons;
+    }
+
+    if (
+      href === `/${locale}/blog`
+    ) {
+      return hasUnreadBlog;
+    }
+
+    return false;
+  };
+
   const changeLanguage = (
     newLocale: string
   ) => {
@@ -210,6 +270,7 @@ export default function Navbar({
    * Icons are used only for the mobile navigation.
    * Desktop navigation remains unchanged.
    */
+
   const navigationIcons = [
     Home,
     Info,
@@ -340,6 +401,11 @@ export default function Navbar({
               const active =
                 isActive(item.href);
 
+              const hasUnread =
+                getNavigationUnread(
+                  item.href
+                );
+
               return (
                 <Link
                   key={item.href}
@@ -355,7 +421,24 @@ export default function Navbar({
                       : "text-[#66574c] hover:text-[#762f2f] dark:text-[#c4b6a7] dark:hover:text-[#e2c17a]",
                   ].join(" ")}
                 >
-                  {item.label}
+                  <span className="relative">
+                    {item.label}
+
+                    {hasUnread && (
+                      <span
+                        className="
+                          absolute
+                          -right-2
+                          -top-1
+                          h-2
+                          w-2
+                          rounded-full
+                          bg-red-600
+                        "
+                        aria-label="New content"
+                      />
+                    )}
+                  </span>
 
                   {active && (
                     <span
@@ -401,7 +484,26 @@ export default function Navbar({
                     : "text-[#66574c] hover:text-[#762f2f] dark:text-[#c4b6a7] dark:hover:text-[#e2c17a]",
                 ].join(" ")}
               >
-                {t("media")}
+                <span className="relative">
+                  {t("media")}
+
+                  {(hasUnreadGallery ||
+                    hasUnreadSermons ||
+                    hasUnreadBlog) && (
+                    <span
+                      className="
+                        absolute
+                        -right-2
+                        -top-1
+                        h-2
+                        w-2
+                        rounded-full
+                        bg-red-600
+                      "
+                      aria-label="New media"
+                    />
+                  )}
+                </span>
 
                 <ChevronDown
                   className={`h-4 w-4 transition-transform ${
@@ -434,28 +536,54 @@ export default function Navbar({
                   "
                 >
                   {mediaNavigation.map(
-                    (item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        role="menuitem"
-                        onClick={() =>
-                          setMediaOpen(
-                            false
-                          )
-                        }
-                        className={[
-                          "block rounded-lg px-3 py-2.5 text-sm transition-colors",
-                          isActive(
-                            item.href
-                          )
-                            ? "bg-[#f3e8d2] font-medium text-[#762f2f] dark:bg-[#3b3029] dark:text-[#e2c17a]"
-                            : "text-[#66574c] hover:bg-[#f8f0df] hover:text-[#762f2f] dark:text-[#c4b6a7] dark:hover:bg-[#382d27] dark:hover:text-[#e2c17a]",
-                        ].join(" ")}
-                      >
-                        {item.label}
-                      </Link>
-                    )
+                    (item) => {
+                      const hasUnread =
+                        getMediaUnread(
+                          item.href
+                        );
+
+                      return (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          role="menuitem"
+                          onClick={() =>
+                            setMediaOpen(
+                              false
+                            )
+                          }
+                          className={[
+                            "relative block rounded-lg px-3 py-2.5 text-sm transition-colors",
+                            isActive(
+                              item.href
+                            )
+                              ? "bg-[#f3e8d2] font-medium text-[#762f2f] dark:bg-[#3b3029] dark:text-[#e2c17a]"
+                              : "text-[#66574c] hover:bg-[#f8f0df] hover:text-[#762f2f] dark:text-[#c4b6a7] dark:hover:bg-[#382d27] dark:hover:text-[#e2c17a]",
+                          ].join(" ")}
+                        >
+                          <span className="relative">
+                            {
+                              item.label
+                            }
+
+                            {hasUnread && (
+                              <span
+                                className="
+                                  absolute
+                                  -right-3
+                                  -top-1
+                                  h-2
+                                  w-2
+                                  rounded-full
+                                  bg-red-600
+                                "
+                                aria-label="New content"
+                              />
+                            )}
+                          </span>
+                        </Link>
+                      );
+                    }
                   )}
                 </div>
               )}
@@ -706,11 +834,32 @@ export default function Navbar({
               mobileMenuOpen
             }
           >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            <span className="relative">
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+
+              {!mobileMenuOpen &&
+                hasAnyUnreadContent && (
+                  <span
+                    className="
+                      absolute
+                      -right-1
+                      -top-1
+                      h-2.5
+                      w-2.5
+                      rounded-full
+                      bg-red-600
+                      ring-2
+                      ring-[#fffdf7]
+                      dark:ring-[#332720]
+                    "
+                    aria-label="New content"
+                  />
+                )}
+            </span>
           </button>
         </div>
       </header>
@@ -847,6 +996,11 @@ export default function Navbar({
                         index
                       ];
 
+                    const hasUnread =
+                      getNavigationUnread(
+                        item.href
+                      );
+
                     return (
                       <Link
                         key={
@@ -878,10 +1032,25 @@ export default function Navbar({
                           }
                         />
 
-                        <span>
+                        <span className="relative">
                           {
                             item.label
                           }
+
+                          {hasUnread && (
+                            <span
+                              className="
+                                absolute
+                                -right-3
+                                -top-1
+                                h-2
+                                w-2
+                                rounded-full
+                                bg-red-600
+                              "
+                              aria-label="New content"
+                            />
+                          )}
                         </span>
                       </Link>
                     );
@@ -921,6 +1090,11 @@ export default function Navbar({
                           index
                         ];
 
+                      const hasUnread =
+                        getMediaUnread(
+                          item.href
+                        );
+
                       return (
                         <Link
                           key={
@@ -952,10 +1126,25 @@ export default function Navbar({
                             }
                           />
 
-                          <span>
+                          <span className="relative">
                             {
                               item.label
                             }
+
+                            {hasUnread && (
+                              <span
+                                className="
+                                  absolute
+                                  -right-3
+                                  -top-1
+                                  h-2
+                                  w-2
+                                  rounded-full
+                                  bg-red-600
+                                "
+                                aria-label="New content"
+                              />
+                            )}
                           </span>
                         </Link>
                       );

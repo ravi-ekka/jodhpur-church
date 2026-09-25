@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
@@ -15,7 +16,9 @@ type GalleryApiResponse = {
   photos?: unknown;
   videos?: unknown;
 };
-export const instant = false
+
+export const instant = false;
+
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {

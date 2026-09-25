@@ -8,6 +8,7 @@ import {
     Play,
     Video,
 } from "lucide-react";
+import MarkNotificationsSeen from "@/components/notifications/MarkNotificationsSeen";
 
 type Sermon = {
     id: string;
@@ -155,6 +156,12 @@ export default async function SermonsPage({
 
     return (
         <main className="min-h-screen bg-[#fbf6eb] dark:bg-[#1f1815]">
+            <MarkNotificationsSeen
+                section="sermons"
+                ids={sermons.map(
+                    (sermon) => sermon.id
+                )}
+            />
             {/* PAGE HEADER */}
             <section className="relative overflow-hidden border-b border-[#d8c9a8] bg-[#f7f0e2] dark:border-[#40342e] dark:bg-[#241b18]">
                 <div
@@ -194,167 +201,167 @@ export default async function SermonsPage({
                                 title={t("title")}
                                 text={t("description")}
                             />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-            {/* CONTENT */ }
-    <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
-        {error ? (
-            <div className="mx-auto max-w-xl overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] text-center shadow-sm dark:border-[#4a3c34] dark:bg-[#2a211d]">
-                <div
-                    className="h-1 bg-[#762f2f]"
-                    aria-hidden="true"
-                />
-
-                <div className="p-8">
-                    <div className="mx-auto flex h-12 w-12 items-center justify-center border border-[#d8c9a8] bg-[#f7f0e2] text-[#762f2f] dark:border-[#4a3c34] dark:bg-[#241b18] dark:text-[#d8b56a]">
-                        <Video
-                            className="h-5 w-5"
+            {/* CONTENT */}
+            <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+                {error ? (
+                    <div className="mx-auto max-w-xl overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] text-center shadow-sm dark:border-[#4a3c34] dark:bg-[#2a211d]">
+                        <div
+                            className="h-1 bg-[#762f2f]"
                             aria-hidden="true"
                         />
-                    </div>
 
-                    <p className="mt-4 text-sm leading-6 text-[#762f2f] dark:text-[#d8b56a]">
-                        {t("loadError")}
-                    </p>
-                </div>
-            </div>
-        ) : sermons.length === 0 ? (
-            <div className="mx-auto max-w-xl overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] text-center shadow-sm dark:border-[#4a3c34] dark:bg-[#2a211d]">
-                <div
-                    className="h-1 bg-[#c29a52]"
-                    aria-hidden="true"
-                />
-
-                <div className="p-10">
-                    <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-[#d8c9a8] bg-[#f7f0e2] text-[#762f2f] dark:border-[#4a3c34] dark:bg-[#241b18] dark:text-[#d8b56a]">
-                        <Mic2
-                            className="h-6 w-6"
-                            aria-hidden="true"
-                        />
-                    </div>
-
-                    <p className="mt-4 text-sm leading-6 text-[#65584e] dark:text-[#c9bca9]">
-                        {t("noSermons")}
-                    </p>
-                </div>
-            </div>
-        ) : (
-            <div className="grid min-w-0 gap-6 lg:grid-cols-2">
-                {sermons.map((sermon) => {
-                    const embedUrl =
-                        getYouTubeEmbedUrl(
-                            sermon.youtubeUrl
-                        );
-
-                    return (
-                        <article
-                            key={sermon.id}
-                            className="group min-w-0 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-sm transition-shadow hover:shadow-md dark:border-[#4a3c34] dark:bg-[#2a211d]"
-                        >
-                            {/* MEDIA */}
-                            {embedUrl ? (
-                                <div className="relative aspect-video w-full overflow-hidden bg-[#1b1513]">
-                                    <iframe
-                                        src={embedUrl}
-                                        title={sermon.title}
-                                        className="absolute inset-0 h-full w-full border-0"
-                                        loading="lazy"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowFullScreen
-                                    />
-
-                                    <div
-                                        className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-1 bg-[#c29a52]"
-                                        aria-hidden="true"
-                                    />
-                                </div>
-                            ) : sermon.imageUrl ? (
-                                <div className="relative aspect-video overflow-hidden bg-[#e8decb] dark:bg-[#1d1714]">
-                                    <img
-                                        src={sermon.imageUrl}
-                                        alt={sermon.title}
-                                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                                    />
-
-                                    <div
-                                        className="absolute inset-x-0 bottom-0 h-1 bg-[#c29a52]"
-                                        aria-hidden="true"
-                                    />
-
-                                    <div className="absolute inset-0 flex items-center justify-center bg-[#3b211d]/20">
-                                        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#d8b56a] bg-[#762f2f]/90 text-[#f7e8c5]">
-                                            <Play
-                                                className="ml-0.5 h-5 w-5"
-                                                fill="currentColor"
-                                                aria-hidden="true"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            ) : null}
-
-                            {/* DETAILS */}
-                            <div className="min-w-0 p-5 sm:p-6">
-                                <h2 className="min-w-0 break-words font-serif text-xl font-semibold leading-snug text-[#4b2823] [overflow-wrap:anywhere] dark:text-[#f3dfbc] sm:text-2xl">
-                                    {sermon.title}
-                                </h2>
-
-                                <div className="mt-4 flex min-w-0 flex-wrap gap-x-5 gap-y-2 text-sm text-[#8b765f] dark:text-[#b9a897]">
-                                    {sermon.preacher && (
-                                        <div className="flex min-w-0 items-start gap-1.5">
-                                            <Mic2
-                                                className="mt-0.5 h-4 w-4 shrink-0 text-[#762f2f] dark:text-[#d8b56a]"
-                                                aria-hidden="true"
-                                            />
-
-                                            <span className="min-w-0 break-words [overflow-wrap:anywhere]">
-                                                {t("preacher")}:{" "}
-                                                {
-                                                    sermon.preacher
-                                                }
-                                            </span>
-                                        </div>
-                                    )}
-
-                                    {sermon.sermonDate && (
-                                        <div className="flex min-w-0 items-start gap-1.5">
-                                            <CalendarDays
-                                                className="mt-0.5 h-4 w-4 shrink-0 text-[#762f2f] dark:text-[#d8b56a]"
-                                                aria-hidden="true"
-                                            />
-
-                                            <span className="min-w-0 break-words [overflow-wrap:anywhere]">
-                                                {formatDate(
-                                                    sermon.sermonDate,
-                                                    locale
-                                                )}
-                                            </span>
-                                        </div>
-                                    )}
-                                </div>
-
-                                {sermon.description && (
-                                    <p className="mt-4 min-w-0 line-clamp-4 break-words text-sm leading-6 text-[#65584e] [overflow-wrap:anywhere] dark:text-[#c9bca9]">
-                                        {
-                                            sermon.description
-                                        }
-                                    </p>
-                                )}
+                        <div className="p-8">
+                            <div className="mx-auto flex h-12 w-12 items-center justify-center border border-[#d8c9a8] bg-[#f7f0e2] text-[#762f2f] dark:border-[#4a3c34] dark:bg-[#241b18] dark:text-[#d8b56a]">
+                                <Video
+                                    className="h-5 w-5"
+                                    aria-hidden="true"
+                                />
                             </div>
 
-                            <div
-                                className="h-px bg-[#eadfc9] dark:bg-[#3d302a]"
-                                aria-hidden="true"
-                            />
-                        </article>
-                    );
-                })}
-            </div>
-        )}
-    </section>
+                            <p className="mt-4 text-sm leading-6 text-[#762f2f] dark:text-[#d8b56a]">
+                                {t("loadError")}
+                            </p>
+                        </div>
+                    </div>
+                ) : sermons.length === 0 ? (
+                    <div className="mx-auto max-w-xl overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] text-center shadow-sm dark:border-[#4a3c34] dark:bg-[#2a211d]">
+                        <div
+                            className="h-1 bg-[#c29a52]"
+                            aria-hidden="true"
+                        />
+
+                        <div className="p-10">
+                            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-[#d8c9a8] bg-[#f7f0e2] text-[#762f2f] dark:border-[#4a3c34] dark:bg-[#241b18] dark:text-[#d8b56a]">
+                                <Mic2
+                                    className="h-6 w-6"
+                                    aria-hidden="true"
+                                />
+                            </div>
+
+                            <p className="mt-4 text-sm leading-6 text-[#65584e] dark:text-[#c9bca9]">
+                                {t("noSermons")}
+                            </p>
+                        </div>
+                    </div>
+                ) : (
+                    <div className="grid min-w-0 gap-6 lg:grid-cols-2">
+                        {sermons.map((sermon) => {
+                            const embedUrl =
+                                getYouTubeEmbedUrl(
+                                    sermon.youtubeUrl
+                                );
+
+                            return (
+                                <article
+                                    key={sermon.id}
+                                    className="group min-w-0 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-sm transition-shadow hover:shadow-md dark:border-[#4a3c34] dark:bg-[#2a211d]"
+                                >
+                                    {/* MEDIA */}
+                                    {embedUrl ? (
+                                        <div className="relative aspect-video w-full overflow-hidden bg-[#1b1513]">
+                                            <iframe
+                                                src={embedUrl}
+                                                title={sermon.title}
+                                                className="absolute inset-0 h-full w-full border-0"
+                                                loading="lazy"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowFullScreen
+                                            />
+
+                                            <div
+                                                className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-1 bg-[#c29a52]"
+                                                aria-hidden="true"
+                                            />
+                                        </div>
+                                    ) : sermon.imageUrl ? (
+                                        <div className="relative aspect-video overflow-hidden bg-[#e8decb] dark:bg-[#1d1714]">
+                                            <img
+                                                src={sermon.imageUrl}
+                                                alt={sermon.title}
+                                                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                                            />
+
+                                            <div
+                                                className="absolute inset-x-0 bottom-0 h-1 bg-[#c29a52]"
+                                                aria-hidden="true"
+                                            />
+
+                                            <div className="absolute inset-0 flex items-center justify-center bg-[#3b211d]/20">
+                                                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#d8b56a] bg-[#762f2f]/90 text-[#f7e8c5]">
+                                                    <Play
+                                                        className="ml-0.5 h-5 w-5"
+                                                        fill="currentColor"
+                                                        aria-hidden="true"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ) : null}
+
+                                    {/* DETAILS */}
+                                    <div className="min-w-0 p-5 sm:p-6">
+                                        <h2 className="min-w-0 break-words font-serif text-xl font-semibold leading-snug text-[#4b2823] [overflow-wrap:anywhere] dark:text-[#f3dfbc] sm:text-2xl">
+                                            {sermon.title}
+                                        </h2>
+
+                                        <div className="mt-4 flex min-w-0 flex-wrap gap-x-5 gap-y-2 text-sm text-[#8b765f] dark:text-[#b9a897]">
+                                            {sermon.preacher && (
+                                                <div className="flex min-w-0 items-start gap-1.5">
+                                                    <Mic2
+                                                        className="mt-0.5 h-4 w-4 shrink-0 text-[#762f2f] dark:text-[#d8b56a]"
+                                                        aria-hidden="true"
+                                                    />
+
+                                                    <span className="min-w-0 break-words [overflow-wrap:anywhere]">
+                                                        {t("preacher")}:{" "}
+                                                        {
+                                                            sermon.preacher
+                                                        }
+                                                    </span>
+                                                </div>
+                                            )}
+
+                                            {sermon.sermonDate && (
+                                                <div className="flex min-w-0 items-start gap-1.5">
+                                                    <CalendarDays
+                                                        className="mt-0.5 h-4 w-4 shrink-0 text-[#762f2f] dark:text-[#d8b56a]"
+                                                        aria-hidden="true"
+                                                    />
+
+                                                    <span className="min-w-0 break-words [overflow-wrap:anywhere]">
+                                                        {formatDate(
+                                                            sermon.sermonDate,
+                                                            locale
+                                                        )}
+                                                    </span>
+                                                </div>
+                                            )}
+                                        </div>
+
+                                        {sermon.description && (
+                                            <p className="mt-4 min-w-0 line-clamp-4 break-words text-sm leading-6 text-[#65584e] [overflow-wrap:anywhere] dark:text-[#c9bca9]">
+                                                {
+                                                    sermon.description
+                                                }
+                                            </p>
+                                        )}
+                                    </div>
+
+                                    <div
+                                        className="h-px bg-[#eadfc9] dark:bg-[#3d302a]"
+                                        aria-hidden="true"
+                                    />
+                                </article>
+                            );
+                        })}
+                    </div>
+                )}
+            </section>
         </main >
     );
 }

@@ -7,6 +7,7 @@ import {
   Clock,
   MapPin,
 } from "lucide-react";
+import MarkNotificationsSeen from "@/components/notifications/MarkNotificationsSeen";
 
 type EventItem = {
   id: string;
@@ -116,7 +117,12 @@ export default async function EventsPage() {
 
   return (
     <main className="min-h-screen bg-[#fffdf7] text-[#33251d] dark:bg-[#1b1513] dark:text-[#f5ead8]">
-
+      <MarkNotificationsSeen
+        section="events"
+        ids={events.map(
+          (event) => event.id
+        )}
+      />
       {/* Page Header */}
       <section className="relative overflow-hidden border-b border-[#d8c9a8] bg-[#f7f0e2] dark:border-[#40342e] dark:bg-[#241b18]">
         <div
@@ -152,7 +158,7 @@ export default async function EventsPage() {
             </div>
 
             {/* Share Button */}
-           <div className="absolute -right-2 top-1/2 -translate-y-1/2 sm:-right-3 lg:-right-6">
+            <div className="absolute -right-2 top-1/2 -translate-y-1/2 sm:-right-3 lg:-right-6">
               <ShareButton
                 title={t("title")}
                 text={t("description")}
