@@ -218,13 +218,6 @@ export async function GET() {
                          * ------------------------------------------------
                          * PHOTO SOURCE
                          * ------------------------------------------------
-                         *
-                         * Contributor photos approved by admin have:
-                         *
-                         * source: "contributor"
-                         *
-                         * Official church photos normally have no
-                         * source field.
                          */
 
                         source:
@@ -237,11 +230,6 @@ export async function GET() {
                          * ------------------------------------------------
                          * PHOTO VIEW COUNT
                          * ------------------------------------------------
-                         *
-                         * New photos start with viewCount: 0.
-                         *
-                         * Existing/old gallery documents may not have
-                         * this field, so they safely return 0.
                          */
 
                         viewCount:
@@ -256,6 +244,11 @@ export async function GET() {
          * --------------------------------------------------------
          * LOAD PUBLIC YOUTUBE VIDEOS
          * --------------------------------------------------------
+         *
+         * YouTube failures must NOT make the entire Gallery API
+         * fail. If YouTube returns 429, 403, 500, etc., we simply
+         * return an empty videos array and keep Firestore photos.
+         * --------------------------------------------------------
          */
 
         let videos: GalleryVideo[] =
@@ -265,205 +258,239 @@ export async function GET() {
             YOUTUBE_API_KEY &&
             YOUTUBE_CHANNEL_ID
         ) {
-            const playlistUrl =
-                new URL(
-                    "https://www.googleapis.com/youtube/v3/search",
-                );
-
-            playlistUrl.searchParams.set(
-                "part",
-                "snippet",
-            );
-
-            playlistUrl.searchParams.set(
-                "channelId",
-                YOUTUBE_CHANNEL_ID,
-            );
-
-            playlistUrl.searchParams.set(
-                "maxResults",
-                String(MAX_VIDEOS),
-            );
-
-            playlistUrl.searchParams.set(
-                "order",
-                "date",
-            );
-
-            playlistUrl.searchParams.set(
-                "type",
-                "video",
-            );
-
-            playlistUrl.searchParams.set(
-                "key",
-                YOUTUBE_API_KEY,
-            );
-
-            const searchResponse =
-                await fetch(
-                    playlistUrl.toString(),
-                    {
-                        cache: "no-store",
-                    },
-                );
-
-            if (!searchResponse.ok) {
-                throw new Error(
-                    `YouTube search request failed: ${searchResponse.status}`,
-                );
-            }
-
-            const searchData =
-                (await searchResponse.json()) as YouTubeSearchResponse;
-
-            const videoIds: string[] =
-                searchData.items
-                    ?.map(
-                        (item) =>
-                            item.id
-                                ?.videoId,
-                    )
-                    .filter(
-                        (
-                            id,
-                        ): id is string =>
-                            typeof id ===
-                                "string" &&
-                            id.length > 0,
-                    ) ?? [];
-
-            if (
-                videoIds.length > 0
-            ) {
-                const videosUrl =
+            try {
+                const playlistUrl =
                     new URL(
-                        "https://www.googleapis.com/youtube/v3/videos",
+                        "https://www.googleapis.com/youtube/v3/search",
                     );
 
-                videosUrl.searchParams.set(
+                playlistUrl.searchParams.set(
                     "part",
-                    "snippet,contentDetails,statistics,status",
+                    "snippet",
                 );
 
-                videosUrl.searchParams.set(
-                    "id",
-                    videoIds.join(","),
+                playlistUrl.searchParams.set(
+                    "channelId",
+                    YOUTUBE_CHANNEL_ID,
                 );
 
-                videosUrl.searchParams.set(
+                playlistUrl.searchParams.set(
+                    "maxResults",
+                    String(MAX_VIDEOS),
+                );
+
+                playlistUrl.searchParams.set(
+                    "order",
+                    "date",
+                );
+
+                playlistUrl.searchParams.set(
+                    "type",
+                    "video",
+                );
+
+                playlistUrl.searchParams.set(
                     "key",
                     YOUTUBE_API_KEY,
                 );
 
-                const videosResponse =
+                const searchResponse =
                     await fetch(
-                        videosUrl.toString(),
+                        playlistUrl.toString(),
                         {
                             cache: "no-store",
                         },
                     );
 
-                if (
-                    !videosResponse.ok
-                ) {
-                    throw new Error(
-                        `YouTube videos request failed: ${videosResponse.status}`,
+                /*
+                 * ----------------------------------------------------
+                 * YOUTUBE SEARCH FAILED
+                 * ----------------------------------------------------
+                 *
+                 * Do NOT throw here.
+                 *
+                 * 429 = YouTube rate/quota limit.
+                 *
+                 * The public Gallery should still work using
+                 * Firestore photos.
+                 * ----------------------------------------------------
+                 */
+
+                if (!searchResponse.ok) {
+                    console.error(
+                        `YouTube search request failed: ${searchResponse.status}`,
                     );
+                } else {
+                    const searchData =
+                        (await searchResponse.json()) as YouTubeSearchResponse;
+
+                    const videoIds: string[] =
+                        searchData.items
+                            ?.map(
+                                (item) =>
+                                    item.id
+                                        ?.videoId,
+                            )
+                            .filter(
+                                (
+                                    id,
+                                ): id is string =>
+                                    typeof id ===
+                                        "string" &&
+                                    id.length > 0,
+                            ) ?? [];
+
+                    if (
+                        videoIds.length > 0
+                    ) {
+                        const videosUrl =
+                            new URL(
+                                "https://www.googleapis.com/youtube/v3/videos",
+                            );
+
+                        videosUrl.searchParams.set(
+                            "part",
+                            "snippet,contentDetails,statistics,status",
+                        );
+
+                        videosUrl.searchParams.set(
+                            "id",
+                            videoIds.join(","),
+                        );
+
+                        videosUrl.searchParams.set(
+                            "key",
+                            YOUTUBE_API_KEY,
+                        );
+
+                        const videosResponse =
+                            await fetch(
+                                videosUrl.toString(),
+                                {
+                                    cache: "no-store",
+                                },
+                            );
+
+                        /*
+                         * ------------------------------------------------
+                         * YOUTUBE VIDEO DETAILS FAILED
+                         * ------------------------------------------------
+                         */
+
+                        if (
+                            !videosResponse.ok
+                        ) {
+                            console.error(
+                                `YouTube videos request failed: ${videosResponse.status}`,
+                            );
+                        } else {
+                            const videosData =
+                                (await videosResponse.json()) as YouTubeVideosResponse;
+
+                            videos =
+                                videosData.items
+                                    ?.filter(
+                                        (video) =>
+                                            video
+                                                .status
+                                                ?.privacyStatus ===
+                                            "public",
+                                    )
+                                    .map(
+                                        (
+                                            video,
+                                        ): GalleryVideo => ({
+                                            id:
+                                                video.id ??
+                                                "",
+
+                                            type: "video",
+
+                                            title:
+                                                video
+                                                    .snippet
+                                                    ?.title ??
+                                                "",
+
+                                            description:
+                                                video
+                                                    .snippet
+                                                    ?.description ??
+                                                "",
+
+                                            thumbnail:
+                                                video
+                                                    .snippet
+                                                    ?.thumbnails
+                                                    ?.high
+                                                    ?.url ??
+                                                video
+                                                    .snippet
+                                                    ?.thumbnails
+                                                    ?.medium
+                                                    ?.url ??
+                                                video
+                                                    .snippet
+                                                    ?.thumbnails
+                                                    ?.default
+                                                    ?.url ??
+                                                "",
+
+                                            publishedAt:
+                                                video
+                                                    .snippet
+                                                    ?.publishedAt ??
+                                                null,
+
+                                            duration:
+                                                video
+                                                    .contentDetails
+                                                    ?.duration ??
+                                                null,
+
+                                            /*
+                                             * YouTube's own view count.
+                                             */
+                                            viewCount:
+                                                video
+                                                    .statistics
+                                                    ?.viewCount ??
+                                                null,
+
+                                            likeCount:
+                                                video
+                                                    .statistics
+                                                    ?.likeCount ??
+                                                null,
+
+                                            commentCount:
+                                                video
+                                                    .statistics
+                                                    ?.commentCount ??
+                                                null,
+
+                                            liveBroadcastContent:
+                                                video
+                                                    .snippet
+                                                    ?.liveBroadcastContent ??
+                                                null,
+                                        }),
+                                    ) ?? [];
+                        }
+                    }
                 }
+            } catch (youtubeError) {
+                /*
+                 * Any unexpected YouTube error is also non-fatal.
+                 * Firestore photos will still be returned.
+                 */
 
-                const videosData =
-                    (await videosResponse.json()) as YouTubeVideosResponse;
+                console.error(
+                    "Public gallery YouTube error:",
+                    youtubeError,
+                );
 
-                videos =
-                    videosData.items
-                        ?.filter(
-                            (video) =>
-                                video
-                                    .status
-                                    ?.privacyStatus ===
-                                "public",
-                        )
-                        .map(
-                            (
-                                video,
-                            ): GalleryVideo => ({
-                                id:
-                                    video.id ??
-                                    "",
-
-                                type: "video",
-
-                                title:
-                                    video
-                                        .snippet
-                                        ?.title ??
-                                    "",
-
-                                description:
-                                    video
-                                        .snippet
-                                        ?.description ??
-                                    "",
-
-                                thumbnail:
-                                    video
-                                        .snippet
-                                        ?.thumbnails
-                                        ?.high
-                                        ?.url ??
-                                    video
-                                        .snippet
-                                        ?.thumbnails
-                                        ?.medium
-                                        ?.url ??
-                                    video
-                                        .snippet
-                                        ?.thumbnails
-                                        ?.default
-                                        ?.url ??
-                                    "",
-
-                                publishedAt:
-                                    video
-                                        .snippet
-                                        ?.publishedAt ??
-                                    null,
-
-                                duration:
-                                    video
-                                        .contentDetails
-                                        ?.duration ??
-                                    null,
-
-                                /*
-                                 * YouTube's own view count.
-                                 */
-                                viewCount:
-                                    video
-                                        .statistics
-                                        ?.viewCount ??
-                                    null,
-
-                                likeCount:
-                                    video
-                                        .statistics
-                                        ?.likeCount ??
-                                    null,
-
-                                commentCount:
-                                    video
-                                        .statistics
-                                        ?.commentCount ??
-                                    null,
-
-                                liveBroadcastContent:
-                                    video
-                                        .snippet
-                                        ?.liveBroadcastContent ??
-                                    null,
-                            }),
-                        ) ?? [];
+                videos = [];
             }
         }
 
@@ -485,6 +512,12 @@ export async function GET() {
             media,
         });
     } catch (error) {
+        /*
+         * --------------------------------------------------------
+         * ONLY FIRESTORE / MAIN GALLERY ERRORS REACH HERE
+         * --------------------------------------------------------
+         */
+
         console.error(
             "Public gallery API error:",
             error,
