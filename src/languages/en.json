@@ -144,7 +144,15 @@
     "biblePsalm": "Psalm",
     "bibleSecondReading": "Second Reading",
     "bibleGospel": "Gospel",
-    "bibleReadPassage": "Read today's passage"
+    "bibleReadPassage": "Read today's passage",
+    "serviceInfo": {
+      "sundayWorship": "Sunday Worship",
+      "everySunday": "Every Sunday",
+      "location": "Location",
+      "addressLine1": "Jodhpur, Balrampur,",
+      "addressLine2": "Chhattisgarh - 497119, India",
+      "mapTitle": "Jodhpur Church Location"
+    }
   },
   "about": {
     "label": "About Jodhpur Church",

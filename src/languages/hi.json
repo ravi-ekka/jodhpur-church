@@ -7,7 +7,6 @@
     "password": "पासवर्ड",
     "name": "नाम"
   },
-
   "auth": {
     "loginTitle": "फिर से स्वागत है",
     "loginDescription": "अपने खाते में लॉगिन करें",
@@ -60,7 +59,6 @@
     "googlePopupBlocked": "Google साइन-इन विंडो ब्लॉक कर दी गई। कृपया पॉप-अप की अनुमति दें और फिर प्रयास करें।",
     "accountExistsDifferentCredential": "इस ईमेल से पहले से एक खाता मौजूद है, लेकिन किसी अलग साइन-इन तरीके से जुड़ा हुआ है।"
   },
-
   "navbar": {
     "home": "होम",
     "about": "हमारे बारे में",
@@ -85,7 +83,6 @@
     "media": "मीडिया",
     "downloadApp": "APK"
   },
-
   "dashboard": {
     "title": "प्रोफ़ाइल",
     "description": "अपने खाते और प्रोफ़ाइल की जानकारी प्रबंधित करें।",
@@ -123,7 +120,6 @@
     "notAvailable": "उपलब्ध नहीं",
     "logout": "लॉगआउट"
   },
-
   "home": {
     "heroLabel": "Jodhpur Church में आपका स्वागत है",
     "heroTitle": "एक ऐसी जगह जहाँ",
@@ -148,9 +144,16 @@
     "biblePsalm": "भजन संहिता",
     "bibleSecondReading": "दूसरा पाठ",
     "bibleGospel": "सुसमाचार",
-    "bibleReadPassage": "आज का पाठ पढ़ें"
+    "bibleReadPassage": "आज का पाठ पढ़ें",
+    "serviceInfo": {
+      "sundayWorship": "रविवार की आराधना",
+      "everySunday": "हर रविवार",
+      "location": "स्थान",
+      "addressLine1": "जोधपुर, बलरामपुर,",
+      "addressLine2": "छत्तीसगढ़ - 497119, भारत",
+      "mapTitle": "जोधपुर चर्च का स्थान"
+    }
   },
-
   "about": {
     "label": "Jodhpur Church के बारे में",
     "title": "एक ऐसी जगह जहाँ आप जुड़ें, विश्वास करें और बढ़ें",
@@ -176,7 +179,6 @@
     "ctaDescription": "चाहे आप पहली बार आए हों या किसी चर्च समुदाय की तलाश कर रहे हों, हमें आपका स्वागत करने में खुशी होगी।",
     "contactButton": "संपर्क करें"
   },
-
   "history": {
     "label": "हमारा इतिहास",
     "title": "विश्वास, प्रार्थना और सेवा की यात्रा।",
@@ -240,7 +242,6 @@
     "ctaDescription": "Jodhpur Church में आराधना, प्रार्थना और संगति के लिए हमारे साथ आइए।",
     "contactButton": "संपर्क करें"
   },
-
   "bibleReading": {
     "firstReading": "पहला पाठ",
     "psalm": "उत्तरदायी भजन",
@@ -253,7 +254,6 @@
     "backToReadings": "आज के पाठ",
     "verseQuote": "तेरा वचन मेरे पाँव के लिए दीपक और मेरे मार्ग के लिए उजियाला है।"
   },
-
   "events": {
     "label": "चर्च के कार्यक्रम",
     "title": "आगामी कार्यक्रम",
@@ -264,7 +264,6 @@
     "time": "समय",
     "location": "स्थान"
   },
-
   "sermons": {
     "churchName": "Jodhpur Church",
     "title": "प्रवचन",
@@ -273,7 +272,6 @@
     "loadError": "प्रवचन लोड नहीं हो सके।",
     "noSermons": "कोई प्रवचन उपलब्ध नहीं है।"
   },
-
   "blog": {
     "label": "Jodhpur Church",
     "title": "ब्लॉग",
@@ -283,7 +281,6 @@
     "readMore": "और पढ़ें",
     "backToBlog": "ब्लॉग पर वापस जाएँ"
   },
-
   "notifications": {
     "label": "चर्च की सूचनाएँ",
     "shareTitle": "Jodhpur Church की सूचनाएँ",
@@ -299,7 +296,6 @@
     "pdfDocument": "PDF दस्तावेज़",
     "close": "बंद करें"
   },
-
   "contact": {
     "label": "संपर्क करें",
     "title": "हम आपसे सुनना चाहेंगे।",
@@ -342,7 +338,6 @@
     "errorTitle": "कुछ गलत हो गया।",
     "errorDescription": "कृपया अपना इंटरनेट कनेक्शन जाँचें और फिर प्रयास करें।"
   },
-
   "members": {
     "label": "हमारा चर्च परिवार",
     "title": "हमारे चर्च की सेवा करने वाले लोगों से मिलें",
@@ -359,7 +354,6 @@
     "leaderDescription": "हमारे चर्च में सेवा और नेतृत्व करने वाले लोग",
     "churchMember": "चर्च सदस्य"
   },
-
   "memberProfile": {
     "back": "सदस्यों पर वापस जाएँ",
     "backShort": "वापस",
@@ -380,7 +374,6 @@
     "member": "चर्च सदस्य",
     "shareText": "इस चर्च सदस्य की प्रोफ़ाइल देखें"
   },
-
   "gallery": {
     "label": "मीडिया",
     "title": "गैलरी",
@@ -402,7 +395,6 @@
     "next": "अगला",
     "close": "बंद करें"
   },
-
   "share": {
     "button": "साझा करें",
     "copyLink": "लिंक कॉपी करें",
@@ -411,7 +403,6 @@
     "email": "ईमेल",
     "message": "मैसेज"
   },
-
   "contributorPhotos": {
     "backToDashboard": "डैशबोर्ड पर वापस जाएँ",
     "contributorDashboard": "योगदानकर्ता डैशबोर्ड",
@@ -465,7 +456,6 @@
     "deleteApprovedConfirm": "क्या आप इस स्वीकृत फ़ोटो को हटाना चाहते हैं? यह सार्वजनिक गैलरी से भी हटा दी जाएगी।",
     "deletePhotoConfirm": "क्या आप इस फ़ोटो को हटाना चाहते हैं?"
   },
-
   "contributorSubmissions": {
     "dateUnavailable": "—",
     "pending": "लंबित",
@@ -502,7 +492,6 @@
     "manageMyPhotos": "मेरी फ़ोटो प्रबंधित करें",
     "unableToLoadSubmissions": "प्रस्तुतियाँ लोड नहीं हो सकीं।"
   },
-
   "download": {
     "label": "JODHPUR CHURCH ऐप",
     "title": "Jodhpur Church को अपने साथ रखें",
@@ -523,7 +512,6 @@
     "officialRelease": "आधिकारिक रिलीज़",
     "backHome": "होम पर वापस जाएँ"
   },
-
   "footer": {
     "churchName": "Jodhpur Church",
     "description": "विश्वास, आशा और प्रेम में साथ-साथ बढ़ता हुआ समुदाय। सभी का स्वागत है।",

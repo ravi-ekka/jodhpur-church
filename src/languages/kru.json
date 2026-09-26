@@ -144,7 +144,15 @@
     "biblePsalm": "भजन",
     "bibleSecondReading": "दूसरी पाठ",
     "bibleGospel": "सुसमाचार",
-    "bibleReadPassage": "आज के पाठ पढ़ाअ"
+    "bibleReadPassage": "आज के पाठ पढ़ाअ",
+    "serviceInfo": {
+      "sundayWorship": "इतवार केर आराधना",
+      "everySunday": "हर इतवार",
+      "location": "ठिकाना",
+      "addressLine1": "जोधपुर, बलरामपुर,",
+      "addressLine2": "छत्तीसगढ़ - 497119, भारत",
+      "mapTitle": "जोधपुर चर्च केर ठिकाना"
+    }
   },
   "about": {
     "label": "Jodhpur Church के बारे मं",

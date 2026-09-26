@@ -94,28 +94,28 @@ export default function Navbar({
       href: `/${locale}`,
     },
     {
-      label: t("about"),
-      href: `/${locale}/about`,
-    },
-    {
-      label: t("events"),
-      href: `/${locale}/events`,
+      label: t("notifications"),
+      href: `/${locale}/notifications`,
     },
     {
       label: t("bible"),
       href: `/${locale}/bible`,
     },
     {
+      label: t("events"),
+      href: `/${locale}/events`,
+    },
+    {
       label: t("members"),
       href: `/${locale}/members`,
     },
     {
-      label: t("notifications"),
-      href: `/${locale}/notifications`,
-    },
-    {
       label: t("contact"),
       href: `/${locale}/contact`,
+    },
+    {
+      label: t("about"),
+      href: `/${locale}/about`,
     },
     {
       label: t("history"),
@@ -392,7 +392,7 @@ export default function Navbar({
             className="
               hidden
               items-center
-              gap-1
+              gap-0
               lg:flex
             "
             aria-label="Main navigation"
@@ -752,7 +752,7 @@ export default function Navbar({
                 >
                   <User className="h-4 w-4" />
 
-                  <span className="max-w-28 truncate">
+                  <span className="max-w-28 truncate wrap">
                     {user.displayName ||
                       t("dashboard")}
                   </span>

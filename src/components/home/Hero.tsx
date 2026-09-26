@@ -220,11 +220,7 @@ export default function Hero({ locale,sundayWorship,   }: HeroProps) {
         aria-hidden="true"
       />
 
-      {/* Decorative warm line */}
-      <div
-        className="absolute left-0 right-0 top-0 z-20 h-1 bg-gradient-to-r from-[#a97b32] via-[#e2c06d] to-[#a97b32]"
-        aria-hidden="true"
-      />
+    
 
       {/* =====================================================
           CONTENT

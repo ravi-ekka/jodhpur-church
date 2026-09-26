@@ -9,6 +9,8 @@ import HeroSlider, {
 import { getChurchSettings } from "@/lib/settings/church-settings";
 import { adminDb } from "@/lib/firebase/admin";
 import { unstable_cache } from "next/cache";
+import HomeImage from "@/components/home/HomeImage";
+import ServiceInfo from "@/components/home/ServiceInfo";
 
 type HomePageProps = {
   params: Promise<{
@@ -93,6 +95,11 @@ export default async function HomePage({
       <HeroSlider
         locale={locale}
         sliderItems={sliderItems}
+      />
+      <HomeImage />
+
+      <ServiceInfo
+        sundayWorship={settings.sundayWorship}
       />
     </main>
   );

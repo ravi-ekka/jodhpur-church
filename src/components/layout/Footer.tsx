@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { ChurchSettings } from "@/lib/settings/church-settings";
@@ -20,14 +19,10 @@ const Footer = async ({
 
   return (
     <footer className="border-t border-[#c8a55c]/30 bg-[#241714] text-[#eadfce] dark:bg-[#17110f]">
-      {/* Decorative top line */}
-      <div
-        className="h-1 bg-[#c29a52]"
-        aria-hidden="true"
-      />
 
-      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+      {/* Main Footer */}
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-10 lg:gap-y-14">
 
           {/* Church Information */}
           <div className="sm:col-span-2 lg:col-span-1">
@@ -47,14 +42,17 @@ const Footer = async ({
               </span>
             </Link>
 
-            <div className="mt-5 flex items-center gap-3">
+            {/* Decorative line */}
+            <div className="mt-5 flex items-center gap-2">
               <span className="h-px w-10 bg-[#c29a52]" />
+
               <span
                 className="text-xs text-[#d8b56a]"
                 aria-hidden="true"
               >
                 ✦
               </span>
+
               <span className="h-px w-16 bg-[#c29a52]/50" />
             </div>
 
@@ -64,7 +62,7 @@ const Footer = async ({
 
             <Link
               href={`/${locale}/about`}
-              className="mt-6 inline-flex min-h-10 items-center gap-2 rounded-md border border-[#8e6b35]/60 px-4 py-2 text-sm font-medium text-[#e5c982] transition-colors hover:border-[#d8b56a] hover:bg-[#352019] hover:text-[#fff1d0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a] focus-visible:ring-offset-2 focus-visible:ring-offset-[#241714]"
+              className="mt-6 inline-flex min-h-11 items-center gap-2 rounded-md border border-[#8e6b35]/60 px-4 py-2 text-sm font-medium text-[#e5c982] transition-colors hover:border-[#d8b56a] hover:bg-[#352019] hover:text-[#fff1d0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a] focus-visible:ring-offset-2 focus-visible:ring-offset-[#241714]"
             >
               {t("about")}
               <ArrowUpRight className="h-4 w-4" />
@@ -73,9 +71,11 @@ const Footer = async ({
 
           {/* Quick Links */}
           <div>
-            <FooterHeading>{t("quickLinks")}</FooterHeading>
+            <FooterHeading>
+              {t("quickLinks")}
+            </FooterHeading>
 
-            <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-1">
+            <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-1 sm:gap-x-6 lg:grid-cols-1 lg:gap-x-0">
               <FooterLink href={`/${locale}`}>
                 {t("home")}
               </FooterLink>
@@ -116,9 +116,13 @@ const Footer = async ({
 
           {/* Church Information */}
           <div>
-            <FooterHeading>{t("churchInfo")}</FooterHeading>
+            <FooterHeading>
+              {t("churchInfo")}
+            </FooterHeading>
 
             <div className="mt-5 space-y-6 text-sm">
+
+              {/* Sunday Worship */}
               <div>
                 <p className="font-medium text-[#fff8ec]">
                   {t("sundayWorship")}
@@ -126,7 +130,7 @@ const Footer = async ({
 
                 <div className="mt-2 flex items-center gap-2">
                   <span
-                    className="h-px w-5 bg-[#c29a52]"
+                    className="h-px w-5 shrink-0 bg-[#c29a52]"
                     aria-hidden="true"
                   />
 
@@ -136,6 +140,7 @@ const Footer = async ({
                 </div>
               </div>
 
+              {/* Events */}
               <div>
                 <p className="font-medium text-[#fff8ec]">
                   {t("events")}
@@ -143,13 +148,14 @@ const Footer = async ({
 
                 <Link
                   href={`/${locale}/events`}
-                  className="mt-2 inline-flex items-center gap-1.5 text-[#c9bca9] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
+                  className="mt-2 inline-flex min-h-9 items-center gap-1.5 text-[#c9bca9] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
                 >
                   {t("viewEvents")}
                   <ArrowUpRight className="h-3.5 w-3.5" />
                 </Link>
               </div>
 
+              {/* Sermons */}
               <div>
                 <p className="font-medium text-[#fff8ec]">
                   {t("sermons")}
@@ -157,7 +163,7 @@ const Footer = async ({
 
                 <Link
                   href={`/${locale}/sermons`}
-                  className="mt-2 inline-flex items-center gap-1.5 text-[#c9bca9] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
+                  className="mt-2 inline-flex min-h-9 items-center gap-1.5 text-[#c9bca9] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
                 >
                   {t("watchSermons")}
                   <ArrowUpRight className="h-3.5 w-3.5" />
@@ -168,12 +174,14 @@ const Footer = async ({
 
           {/* Contact */}
           <div>
-            <FooterHeading>{t("contactTitle")}</FooterHeading>
+            <FooterHeading>
+              {t("contactTitle")}
+            </FooterHeading>
 
             <div className="mt-5 space-y-6 text-sm">
 
               {/* Address */}
-              <div className="flex gap-3">
+              <div className="flex items-start gap-3">
                 <span
                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#8e6b35]/50 bg-[#321d18] text-[#d8b56a]"
                   aria-hidden="true"
@@ -181,19 +189,19 @@ const Footer = async ({
                   <MapPin className="h-4 w-4" />
                 </span>
 
-                <div className="min-w-0">
+                <div className="min-w-0 flex-1">
                   <p className="font-medium text-[#fff8ec]">
                     {t("address")}
                   </p>
 
-                  <p className="mt-1 leading-6 text-[#c9bca9]">
+                  <p className="mt-1 break-words leading-6 text-[#c9bca9]">
                     {settings.address}
                   </p>
                 </div>
               </div>
 
               {/* Phone */}
-              <div className="flex gap-3">
+              <div className="flex items-start gap-3">
                 <span
                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#8e6b35]/50 bg-[#321d18] text-[#d8b56a]"
                   aria-hidden="true"
@@ -201,14 +209,14 @@ const Footer = async ({
                   <Phone className="h-4 w-4" />
                 </span>
 
-                <div className="min-w-0">
+                <div className="min-w-0 flex-1">
                   <p className="font-medium text-[#fff8ec]">
                     {t("phone")}
                   </p>
 
                   <a
                     href="tel:+919340358685"
-                    className="mt-1 block text-[#c9bca9] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
+                    className="mt-1 inline-flex min-h-9 items-center text-[#c9bca9] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
                   >
                     {settings.phone}
                   </a>
@@ -216,7 +224,7 @@ const Footer = async ({
               </div>
 
               {/* Email */}
-              <div className="flex gap-3">
+              <div className="flex items-start gap-3">
                 <span
                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#8e6b35]/50 bg-[#321d18] text-[#d8b56a]"
                   aria-hidden="true"
@@ -224,19 +232,20 @@ const Footer = async ({
                   <Mail className="h-4 w-4" />
                 </span>
 
-                <div className="min-w-0">
+                <div className="min-w-0 flex-1">
                   <p className="font-medium text-[#fff8ec]">
                     {t("email")}
                   </p>
 
                   <a
                     href="mailto:jodhpur.church@gmail.com"
-                    className="mt-1 block break-all text-[#c9bca9] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
+                    className="mt-1 block break-all leading-6 text-[#c9bca9] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
                   >
                     {settings.email}
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -250,25 +259,27 @@ const Footer = async ({
             {t("copyright")}
           </p>
 
-          <div className="flex items-center justify-center gap-5 text-xs sm:text-sm md:justify-end">
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs sm:text-sm md:justify-end">
+
             <Link
               href={`/${locale}/privacy`}
-              className="text-[#9f9182] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
+              className="inline-flex min-h-9 items-center text-[#9f9182] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
             >
               {t("privacy")}
             </Link>
 
             <span
-              className="h-3 w-px bg-[#8e6b35]/50"
+              className="hidden h-3 w-px bg-[#8e6b35]/50 sm:block"
               aria-hidden="true"
             />
 
             <Link
               href={`/${locale}/terms`}
-              className="text-[#9f9182] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
+              className="inline-flex min-h-9 items-center text-[#9f9182] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
             >
               {t("terms")}
             </Link>
+
           </div>
         </div>
       </div>
@@ -289,12 +300,14 @@ function FooterHeading({
 
       <div className="mt-3 flex items-center gap-2">
         <span className="h-px w-7 bg-[#c29a52]" />
+
         <span
           className="text-[10px] text-[#d8b56a]"
           aria-hidden="true"
         >
           ✦
         </span>
+
         <span className="h-px w-5 bg-[#c29a52]/40" />
       </div>
     </div>
@@ -312,9 +325,13 @@ function FooterLink({
     <li>
       <Link
         href={href}
-        className="group inline-flex min-h-9 items-center text-sm text-[#c9bca9] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
+        className="group inline-flex min-h-10 items-center text-sm text-[#c9bca9] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
       >
-        <span className="mr-2 h-px w-0 bg-[#c29a52] transition-all duration-200 group-hover:w-3" />
+        <span
+          className="mr-2 h-px w-0 bg-[#c29a52] transition-all duration-200 group-hover:w-3"
+          aria-hidden="true"
+        />
+
         {children}
       </Link>
     </li>
@@ -322,5 +339,3 @@ function FooterLink({
 }
 
 export default Footer;
-
-

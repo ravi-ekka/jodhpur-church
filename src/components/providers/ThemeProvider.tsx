@@ -18,7 +18,7 @@ function BrowserThemeColor() {
     const color =
       resolvedTheme === "dark"
         ? "#0f0f0f"
-        : "#ffffff";
+        : "#710202";
 
     let meta = document.querySelector(
       'meta[name="theme-color"]',
