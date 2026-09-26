@@ -21,6 +21,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.activity.OnBackPressedCallback;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.getcapacitor.BridgeActivity;
 import com.getcapacitor.WebViewListener;
@@ -36,6 +40,17 @@ public class MainActivity extends BridgeActivity {
         private ProgressBar progressBar;
         private TextView messageText;
         private Button refreshButton;
+
+        /*
+         * Dedicated backgrounds for Android system bars.
+         *
+         * Android 15+ uses enforced edge-to-edge, so the old
+         * setStatusBarColor()/setNavigationBarColor() approach
+         * cannot reliably provide the background.
+         */
+        private FrameLayout systemBarsOverlay;
+        private View statusBarBackground;
+        private View navigationBarBackground;
 
         private ConnectivityManager connectivityManager;
         private ConnectivityManager.NetworkCallback networkCallback;
@@ -177,19 +192,29 @@ public class MainActivity extends BridgeActivity {
                 super.onCreate(savedInstanceState);
 
                 /*
+                 * Android 15+ / targetSdk 35+ uses edge-to-edge.
+                 *
+                 * Allow content to extend behind the system bars.
+                 * Dedicated background views below will paint those
+                 * areas correctly.
+                 */
+                Window window = getWindow();
+
+                WindowCompat.setDecorFitsSystemWindows(
+                                window,
+                                false);
+
+                /*
                  * Get Capacitor WebView.
                  */
                 webView = getBridge().getWebView();
 
-                if (webView != null) {
+                /*
+                 * Setup system-bar background views first.
+                 */
+                setupSystemBars();
 
-                        /*
-                         * Start with light system bars.
-                         *
-                         * updateWebsiteTheme() will immediately
-                         * change them if the website is dark.
-                         */
-                        updateSystemBars(false);
+                if (webView != null) {
 
                         setupOverlay();
 
@@ -218,6 +243,141 @@ public class MainActivity extends BridgeActivity {
                                 showOffline();
                         }
                 }
+        }
+
+        /**
+         * Create dedicated background areas behind the
+         * Android status and navigation bars.
+         *
+         * This is the important part for target SDK 36.
+         */
+        private void setupSystemBars() {
+
+                systemBarsOverlay =
+                                new FrameLayout(this);
+
+                systemBarsOverlay.setClickable(false);
+                systemBarsOverlay.setFocusable(false);
+
+                systemBarsOverlay.setBackgroundColor(
+                                Color.TRANSPARENT);
+
+                FrameLayout.LayoutParams overlayParams =
+                                new FrameLayout.LayoutParams(
+                                                FrameLayout.LayoutParams.MATCH_PARENT,
+                                                FrameLayout.LayoutParams.MATCH_PARENT);
+
+                addContentView(
+                                systemBarsOverlay,
+                                overlayParams);
+
+                /*
+                 * Status bar background.
+                 */
+                statusBarBackground =
+                                new View(this);
+
+                statusBarBackground.setBackgroundColor(
+                                Color.WHITE);
+
+                FrameLayout.LayoutParams statusParams =
+                                new FrameLayout.LayoutParams(
+                                                FrameLayout.LayoutParams.MATCH_PARENT,
+                                                0);
+
+                statusParams.gravity =
+                                Gravity.TOP;
+
+                systemBarsOverlay.addView(
+                                statusBarBackground,
+                                statusParams);
+
+                /*
+                 * Navigation bar background.
+                 */
+                navigationBarBackground =
+                                new View(this);
+
+                navigationBarBackground.setBackgroundColor(
+                                Color.WHITE);
+
+                FrameLayout.LayoutParams navigationParams =
+                                new FrameLayout.LayoutParams(
+                                                FrameLayout.LayoutParams.MATCH_PARENT,
+                                                0);
+
+                navigationParams.gravity =
+                                Gravity.BOTTOM;
+
+                systemBarsOverlay.addView(
+                                navigationBarBackground,
+                                navigationParams);
+
+                /*
+                 * Get actual system-bar inset sizes.
+                 */
+                ViewCompat.setOnApplyWindowInsetsListener(
+                                systemBarsOverlay,
+                                (view, windowInsets) -> {
+
+                                        Insets systemBars =
+                                                        windowInsets.getInsets(
+                                                                        WindowInsetsCompat.Type.systemBars());
+
+                                        /*
+                                         * Status bar height.
+                                         *
+                                         * IMPORTANT:
+                                         * Use different variable name here
+                                         * because statusParams was already
+                                         * declared above.
+                                         */
+                                        FrameLayout.LayoutParams updatedStatusParams =
+                                                        (FrameLayout.LayoutParams)
+                                                                        statusBarBackground.getLayoutParams();
+
+                                        updatedStatusParams.height =
+                                                        systemBars.top;
+
+                                        updatedStatusParams.width =
+                                                        FrameLayout.LayoutParams.MATCH_PARENT;
+
+                                        updatedStatusParams.gravity =
+                                                        Gravity.TOP;
+
+                                        statusBarBackground.setLayoutParams(
+                                                        updatedStatusParams);
+
+                                        /*
+                                         * Navigation bar height.
+                                         *
+                                         * IMPORTANT:
+                                         * Use different variable name here
+                                         * because navigationParams was already
+                                         * declared above.
+                                         */
+                                        FrameLayout.LayoutParams updatedNavigationParams =
+                                                        (FrameLayout.LayoutParams)
+                                                                        navigationBarBackground
+                                                                                        .getLayoutParams();
+
+                                        updatedNavigationParams.height =
+                                                        systemBars.bottom;
+
+                                        updatedNavigationParams.width =
+                                                        FrameLayout.LayoutParams.MATCH_PARENT;
+
+                                        updatedNavigationParams.gravity =
+                                                        Gravity.BOTTOM;
+
+                                        navigationBarBackground.setLayoutParams(
+                                                        updatedNavigationParams);
+
+                                        return windowInsets;
+                                });
+
+                ViewCompat.requestApplyInsets(
+                                systemBarsOverlay);
         }
 
         /**
@@ -521,6 +681,18 @@ public class MainActivity extends BridgeActivity {
                                 View.VISIBLE);
 
                 overlay.bringToFront();
+
+                /*
+                 * IMPORTANT:
+                 *
+                 * System-bar backgrounds must be ABOVE the
+                 * full-screen loading overlay. Otherwise the
+                 * loading overlay can cover the status/navigation
+                 * bar background on target SDK 36.
+                 */
+                if (systemBarsOverlay != null) {
+                        systemBarsOverlay.bringToFront();
+                }
         }
 
         private void showOffline() {
@@ -549,6 +721,14 @@ public class MainActivity extends BridgeActivity {
                                 View.VISIBLE);
 
                 overlay.bringToFront();
+
+                /*
+                 * Keep system-bar backgrounds above the
+                 * offline overlay.
+                 */
+                if (systemBarsOverlay != null) {
+                        systemBarsOverlay.bringToFront();
+                }
         }
 
         private void hideOverlay() {
@@ -557,6 +737,11 @@ public class MainActivity extends BridgeActivity {
 
                         overlay.setVisibility(
                                         View.GONE);
+                }
+
+                if (systemBarsOverlay != null) {
+
+                        systemBarsOverlay.bringToFront();
                 }
         }
 
@@ -789,43 +974,49 @@ public class MainActivity extends BridgeActivity {
         /**
          * Update Android system bars according to WEBSITE theme.
          *
-         * WEBSITE LIGHT:
-         * Status bar      = #ffffff
-         * Navigation bar  = #ffffff
-         * Icons           = dark
+         * For target SDK 36 the actual backgrounds are provided
+         * by dedicated inset views. This method controls:
          *
-         * WEBSITE DARK:
-         * Status bar      = #0f0f0f
-         * Navigation bar  = #0f0f0f
-         * Icons           = white
+         * 1. Status/navigation bar background views.
+         * 2. Status/navigation icon appearance.
          */
         private void updateSystemBars(
                         boolean darkMode) {
 
-                Window window = getWindow();
-
-                /*
-                 * -------------------------------------------------
-                 * SYSTEM BAR BACKGROUND
-                 * -------------------------------------------------
-                 *
-                 * Match website theme.
-                 */
                 int backgroundColor =
                                 darkMode
                                                 ? Color.rgb(15, 15, 15)
                                                 : Color.WHITE;
 
-                window.setStatusBarColor(
-                                backgroundColor);
+                /*
+                 * Update dedicated Android 15+ bar backgrounds.
+                 */
+                if (statusBarBackground != null) {
 
-                window.setNavigationBarColor(
-                                backgroundColor);
+                        statusBarBackground.setBackgroundColor(
+                                        backgroundColor);
+                }
+
+                if (navigationBarBackground != null) {
+
+                        navigationBarBackground.setBackgroundColor(
+                                        backgroundColor);
+                }
+
+                Window window = getWindow();
 
                 /*
-                 * -------------------------------------------------
-                 * DISABLE ANDROID CONTRAST SCRIM
-                 * -------------------------------------------------
+                 * Keep system bars transparent so our dedicated
+                 * background views are visible behind them.
+                 */
+                window.setStatusBarColor(
+                                Color.TRANSPARENT);
+
+                window.setNavigationBarColor(
+                                Color.TRANSPARENT);
+
+                /*
+                 * Disable automatic contrast overlays.
                  */
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
 
@@ -837,18 +1028,13 @@ public class MainActivity extends BridgeActivity {
                 }
 
                 /*
-                 * -------------------------------------------------
-                 * SYSTEM BAR ICON COLORS
-                 * -------------------------------------------------
+                 * Android 11+ icon appearance.
                  *
-                 * DARK MODE:
-                 *     no LIGHT flags
-                 *     = white icons
+                 * DARK WEBSITE:
+                 *      white icons
                  *
-                 * LIGHT MODE:
-                 *     LIGHT flags
-                 *     = dark icons
-                 * -------------------------------------------------
+                 * LIGHT WEBSITE:
+                 *      dark icons
                  */
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
 
@@ -888,10 +1074,6 @@ public class MainActivity extends BridgeActivity {
 
                         if (darkMode) {
 
-                                /*
-                                 * Dark background:
-                                 * WHITE icons.
-                                 */
                                 flags &= ~(
                                                 View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
                                                                 |
@@ -899,10 +1081,6 @@ public class MainActivity extends BridgeActivity {
 
                         } else {
 
-                                /*
-                                 * Light background:
-                                 * DARK icons.
-                                 */
                                 flags |=
                                                 View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
                                                                 |
@@ -942,6 +1120,15 @@ public class MainActivity extends BridgeActivity {
 
                                 showLoading();
                         }
+                }
+
+                /*
+                 * Refresh system-bar inset sizes.
+                 */
+                if (systemBarsOverlay != null) {
+
+                        ViewCompat.requestApplyInsets(
+                                        systemBarsOverlay);
                 }
         }
 
