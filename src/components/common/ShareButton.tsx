@@ -1,7 +1,8 @@
 
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import {
     Check,
     Copy,
@@ -28,6 +29,11 @@ export default function ShareButton({
 
     const [copied, setCopied] = useState(false);
     const [open, setOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     const getShareUrl = () => {
         if (url) {
@@ -132,43 +138,48 @@ export default function ShareButton({
         setOpen(false);
     };
 
+    const mobileMenu =
+        mounted && open
+            ? createPortal(
+                  <div
+                      className="fixed right-4 top-20 z-[2147483647] w-52 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-2xl dark:border-[#4a3c34] dark:bg-[#2a211d] sm:hidden"
+                      role="menu"
+                  >
+                      <ShareMenuItems
+                          copied={copied}
+                          t={t}
+                          onCopy={handleCopy}
+                          onWhatsApp={handleWhatsApp}
+                          onEmail={handleEmail}
+                          onMessage={handleMessage}
+                      />
+                  </div>,
+                  document.body
+              )
+            : null;
+
     return (
-        <div
-            className={`relative z-[9999] ${className}`}
-        >
-            <button
-                type="button"
-                onClick={handleNativeShare}
-                className="inline-flex h-8 w-8 items-center justify-center text-[#762f2f] transition-colors hover:text-[#a15a3f] dark:text-[#d8b56a] dark:hover:text-[#f0d38c]"
-                aria-label={t("button")}
-                title={t("button")}
-                aria-expanded={open}
-                aria-haspopup="menu"
+        <>
+            <div
+                className={`relative z-[9999] ${className}`}
             >
-                <Share2
-                    className="h-5 w-5"
-                    aria-hidden="true"
-                />
-            </button>
+                <button
+                    type="button"
+                    onClick={handleNativeShare}
+                    className="inline-flex h-8 w-8 items-center justify-center text-[#762f2f] transition-colors hover:text-[#a15a3f] dark:text-[#d8b56a] dark:hover:text-[#f0d38c]"
+                    aria-label={t("button")}
+                    title={t("button")}
+                    aria-expanded={open}
+                    aria-haspopup="menu"
+                >
+                    <Share2
+                        className="h-5 w-5"
+                        aria-hidden="true"
+                    />
+                </button>
 
-            {open && (
-                <>
-                    {/* Mobile menu */}
-                    <div
-                        className="fixed right-4 top-0 z-[200] w-52 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-2xl dark:border-[#4a3c34] dark:bg-[#2a211d] sm:hidden"
-                        role="menu"
-                    >
-                        <ShareMenuItems
-                            copied={copied}
-                            t={t}
-                            onCopy={handleCopy}
-                            onWhatsApp={handleWhatsApp}
-                            onEmail={handleEmail}
-                            onMessage={handleMessage}
-                        />
-                    </div>
-
-                    {/* Desktop menu */}
+                {/* Desktop menu */}
+                {open && (
                     <div
                         className="absolute right-0 top-full z-[99999] mt-2 hidden w-52 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-xl dark:border-[#4a3c34] dark:bg-[#2a211d] sm:block"
                         role="menu"
@@ -182,9 +193,12 @@ export default function ShareButton({
                             onMessage={handleMessage}
                         />
                     </div>
-                </>
-            )}
-        </div>
+                )}
+            </div>
+
+            {/* Mobile menu is rendered directly under <body> */}
+            {mobileMenu}
+        </>
     );
 }
 
