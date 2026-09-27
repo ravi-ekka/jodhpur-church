@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- Central Cross outline -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M11,2 H13 V8 H19 V10 H13 V22 H11 V10 H5 V8 H11 Z" />
+
+    <!-- Flame element above cross center -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,4.5 C11.5,5.5 11,6 12,7.5 C12.8,6.5 13,5.8 12,4.5 Z" />
+
+    <!-- Dove Silhouette -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M15.5,8.5 C14.2,8.5 12.8,9.5 10.5,11.5 C9.2,11.2 8,10.2 7,9 C6.8,10.2 7.2,11.8 8.5,12.8 C7.5,13.2 6.8,13.8 6.5,14.5 C8,14.8 9.5,14 11,13 C12.2,12.2 13.8,11 15.5,11 C17,11 18,9.8 18.5,9 C17.5,8.5 16.5,8.5 15.5,8.5 Z" />
+</vector>
