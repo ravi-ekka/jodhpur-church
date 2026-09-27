@@ -155,7 +155,7 @@ export default function ShareButton({
                 <>
                     {/* Mobile menu */}
                     <div
-                        className="fixed right-4 top-20 z-[99999] w-52 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-2xl dark:border-[#4a3c34] dark:bg-[#2a211d] sm:hidden"
+                        className="fixed right-4 top-0 z-[200] w-52 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-2xl dark:border-[#4a3c34] dark:bg-[#2a211d] sm:hidden"
                         role="menu"
                     >
                         <ShareMenuItems
