@@ -142,7 +142,7 @@ export default function ShareButton({
         mounted && open
             ? createPortal(
                   <div
-                      className="fixed right-4 top-20 z-[2147483647] w-52 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-2xl dark:border-[#4a3c34] dark:bg-[#2a211d] sm:hidden"
+                      className="fixed right-8 top-20 z-[2147483647] w-52 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-2xl dark:border-[#4a3c34] dark:bg-[#2a211d] sm:hidden"
                       role="menu"
                   >
                       <ShareMenuItems
