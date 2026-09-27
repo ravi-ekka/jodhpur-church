@@ -1,7 +1,14 @@
+
 "use client";
 
 import { useState } from "react";
-import { Check, Copy, Mail, MessageCircle, Share2 } from "lucide-react";
+import {
+    Check,
+    Copy,
+    Mail,
+    MessageCircle,
+    Share2,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 
 type ShareButtonProps = {
@@ -55,7 +62,6 @@ export default function ShareButton({
                 url: shareUrl,
             });
         } catch (error) {
-            // User cancelled the native share sheet.
             if (
                 error instanceof DOMException &&
                 error.name === "AbortError"
@@ -127,13 +133,17 @@ export default function ShareButton({
     };
 
     return (
-        <div className={`relative ${className}`}>
+        <div
+            className={`relative z-[9999] ${className}`}
+        >
             <button
                 type="button"
                 onClick={handleNativeShare}
                 className="inline-flex h-8 w-8 items-center justify-center text-[#762f2f] transition-colors hover:text-[#a15a3f] dark:text-[#d8b56a] dark:hover:text-[#f0d38c]"
                 aria-label={t("button")}
                 title={t("button")}
+                aria-expanded={open}
+                aria-haspopup="menu"
             >
                 <Share2
                     className="h-5 w-5"
@@ -142,56 +152,118 @@ export default function ShareButton({
             </button>
 
             {open && (
-                <div
-                    className="absolute right-0 z-50 mt-2 w-52 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-lg dark:border-[#4a3c34] dark:bg-[#2a211d]"
-                    role="menu"
-                >
-                    <button
-                        type="button"
-                        onClick={handleCopy}
-                        className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#4b2823] hover:bg-[#f7f0e2] dark:text-[#f3dfbc] dark:hover:bg-[#352923]"
+                <>
+                    {/* Mobile menu */}
+                    <div
+                        className="fixed right-4 top-20 z-[99999] w-52 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-2xl dark:border-[#4a3c34] dark:bg-[#2a211d] sm:hidden"
+                        role="menu"
                     >
-                        {copied ? (
-                            <Check className="h-4 w-4 text-green-600" />
-                        ) : (
-                            <Copy className="h-4 w-4" />
-                        )}
+                        <ShareMenuItems
+                            copied={copied}
+                            t={t}
+                            onCopy={handleCopy}
+                            onWhatsApp={handleWhatsApp}
+                            onEmail={handleEmail}
+                            onMessage={handleMessage}
+                        />
+                    </div>
 
-                        <span>
-                            {copied
-                                ? t("copied")
-                                : t("copyLink")}
-                        </span>
-                    </button>
-
-                    <button
-                        type="button"
-                        onClick={handleWhatsApp}
-                        className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#4b2823] hover:bg-[#f7f0e2] dark:text-[#f3dfbc] dark:hover:bg-[#352923]"
+                    {/* Desktop menu */}
+                    <div
+                        className="absolute right-0 top-full z-[99999] mt-2 hidden w-52 overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-xl dark:border-[#4a3c34] dark:bg-[#2a211d] sm:block"
+                        role="menu"
                     >
-                        <MessageCircle className="h-4 w-4" />
-                        <span>{t("whatsapp")}</span>
-                    </button>
-
-                    <button
-                        type="button"
-                        onClick={handleEmail}
-                        className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#4b2823] hover:bg-[#f7f0e2] dark:text-[#f3dfbc] dark:hover:bg-[#352923]"
-                    >
-                        <Mail className="h-4 w-4" />
-                        <span>{t("email")}</span>
-                    </button>
-
-                    <button
-                        type="button"
-                        onClick={handleMessage}
-                        className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#4b2823] hover:bg-[#f7f0e2] dark:text-[#f3dfbc] dark:hover:bg-[#352923]"
-                    >
-                        <MessageCircle className="h-4 w-4" />
-                        <span>{t("message")}</span>
-                    </button>
-                </div>
+                        <ShareMenuItems
+                            copied={copied}
+                            t={t}
+                            onCopy={handleCopy}
+                            onWhatsApp={handleWhatsApp}
+                            onEmail={handleEmail}
+                            onMessage={handleMessage}
+                        />
+                    </div>
+                </>
             )}
         </div>
     );
 }
+
+type ShareMenuItemsProps = {
+    copied: boolean;
+    t: ReturnType<typeof useTranslations<"share">>;
+    onCopy: () => void;
+    onWhatsApp: () => void;
+    onEmail: () => void;
+    onMessage: () => void;
+};
+
+function ShareMenuItems({
+    copied,
+    t,
+    onCopy,
+    onWhatsApp,
+    onEmail,
+    onMessage,
+}: ShareMenuItemsProps) {
+    return (
+        <>
+            <button
+                type="button"
+                onClick={onCopy}
+                className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#4b2823] hover:bg-[#f7f0e2] dark:text-[#f3dfbc] dark:hover:bg-[#352923]"
+            >
+                {copied ? (
+                    <Check className="h-4 w-4 text-green-600" />
+                ) : (
+                    <Copy className="h-4 w-4" />
+                )}
+
+                <span>
+                    {copied
+                        ? t("copied")
+                        : t("copyLink")}
+                </span>
+            </button>
+
+            <button
+                type="button"
+                onClick={onWhatsApp}
+                className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#4b2823] hover:bg-[#f7f0e2] dark:text-[#f3dfbc] dark:hover:bg-[#352923]"
+            >
+                <MessageCircle
+                    className="h-4 w-4"
+                    aria-hidden="true"
+                />
+
+                <span>{t("whatsapp")}</span>
+            </button>
+
+            <button
+                type="button"
+                onClick={onEmail}
+                className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#4b2823] hover:bg-[#f7f0e2] dark:text-[#f3dfbc] dark:hover:bg-[#352923]"
+            >
+                <Mail
+                    className="h-4 w-4"
+                    aria-hidden="true"
+                />
+
+                <span>{t("email")}</span>
+            </button>
+
+            <button
+                type="button"
+                onClick={onMessage}
+                className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#4b2823] hover:bg-[#f7f0e2] dark:text-[#f3dfbc] dark:hover:bg-[#352923]"
+            >
+                <MessageCircle
+                    className="h-4 w-4"
+                    aria-hidden="true"
+                />
+
+                <span>{t("message")}</span>
+            </button>
+        </>
+    );
+}
+
