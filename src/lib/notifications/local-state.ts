@@ -1,4 +1,3 @@
-
 export type ContentSection =
   | "notifications"
   | "gallery"
@@ -265,4 +264,3 @@ export function initializeNotificationState(
     ids
   );
 }
-

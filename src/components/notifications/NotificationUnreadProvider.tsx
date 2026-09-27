@@ -1,4 +1,3 @@
-
 "use client";
 
 import {
@@ -7,6 +6,9 @@ import {
   useEffect,
   useState,
 } from "react";
+
+import { Capacitor } from "@capacitor/core";
+import { Badge } from "@capawesome/capacitor-badge";
 
 import {
   getSeenContentIds,
@@ -97,6 +99,77 @@ function getGalleryIds(
       ...getIds(value.videos),
     ])
   );
+}
+
+/*
+ * --------------------------------------------------------
+ * ANDROID APP BADGE
+ * --------------------------------------------------------
+ *
+ * The badge is based on notification IDs that have not
+ * been marked as seen in the existing local notification
+ * state.
+ *
+ * Important:
+ * - Opening the app does NOT clear the badge.
+ * - Dismissing an Android notification does NOT clear it.
+ * - Opening/seeing the Notifications page marks IDs as seen.
+ * - After IDs are marked seen, the badge is recalculated.
+ */
+
+async function updateNotificationBadge(
+  notificationIds: string[]
+) {
+  if (!Capacitor.isNativePlatform()) {
+    return;
+  }
+
+  try {
+    const supported =
+      await Badge.isSupported();
+
+    if (!supported.isSupported) {
+      console.log(
+        "🔢 App badge is not supported on this device."
+      );
+
+      return;
+    }
+
+    const uniqueIds =
+      Array.from(
+        new Set(notificationIds)
+      );
+
+    const seenIds =
+      getSeenContentIds(
+        "notifications"
+      );
+
+    const unreadCount =
+      uniqueIds.filter(
+        (id) =>
+          !seenIds.includes(id)
+      ).length;
+
+    if (unreadCount > 0) {
+      await Badge.set({
+        count: unreadCount,
+      });
+    } else {
+      await Badge.clear();
+    }
+
+    console.log(
+      "🔢 APP NOTIFICATION BADGE:",
+      unreadCount
+    );
+  } catch (error) {
+    console.error(
+      "APP NOTIFICATION BADGE ERROR:",
+      error
+    );
+  }
 }
 
 export function useNotificationUnread() {
@@ -290,11 +363,22 @@ export default function NotificationUnreadProvider({
                   notifications?: unknown;
                 };
 
-              updateSection(
-                "notifications",
+              const notificationIds =
                 getIds(
                   value.notifications
-                )
+                );
+
+              updateSection(
+                "notifications",
+                notificationIds
+              );
+
+              /*
+               * Update the Android numeric badge
+               * using the same notification IDs.
+               */
+              await updateNotificationBadge(
+                notificationIds
               );
             }
           }
@@ -433,17 +517,6 @@ export default function NotificationUnreadProvider({
      * --------------------------------------------------------
      * IMMEDIATE FCM PUSH HANDLER
      * --------------------------------------------------------
-     *
-     * PushNotificationProvider dispatches:
-     *
-     * "jodhpur-content-push"
-     *
-     * YouTube videos use:
-     *
-     * "youtube_video"
-     *
-     * Because YouTube videos appear in Gallery,
-     * youtube_video maps to the Gallery unread state.
      */
 
     const handleContentPush =
@@ -489,10 +562,6 @@ export default function NotificationUnreadProvider({
           blog:
             "blog",
         };
-
-        /*
-         * Ignore unsupported push types.
-         */
 
         if (
           typeof type !== "string" ||
@@ -605,6 +674,17 @@ export default function NotificationUnreadProvider({
             id,
           }
         );
+
+        /*
+         * For a notification push, immediately
+         * reconcile the badge with the API.
+         */
+        if (
+          section ===
+          "notifications"
+        ) {
+          void checkAllContent();
+        }
       };
 
     /*
@@ -711,4 +791,3 @@ export default function NotificationUnreadProvider({
     </NotificationUnreadContext.Provider>
   );
 }
-

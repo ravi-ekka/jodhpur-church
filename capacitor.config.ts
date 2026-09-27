@@ -24,6 +24,11 @@ const config: CapacitorConfig = {
                 "badge",
             ],
         },
+
+        Badge: {
+            persist: true,
+            autoClear: false,
+        },
     },
 };
 

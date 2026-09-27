@@ -50,7 +50,7 @@ export default async function GalleryPage() {
            * 5 minutes or when the cache tag
            * is explicitly revalidated.
            */
-          revalidate: 1,
+          revalidate: 86400,
           tags: ["church-gallery"],
         },
       },
