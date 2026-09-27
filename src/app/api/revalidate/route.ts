@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { revalidateTag } from "next/cache";
-    
+
 const REVALIDATION_SECRET = process.env.REVALIDATION_SECRET;
 
 const ALLOWED_TAGS = new Set([
@@ -9,9 +9,9 @@ const ALLOWED_TAGS = new Set([
     "church-events",
     "church-gallery",
     "blogger-posts",
-    "church-slider",
     "church-members",
     "church-settings",
+    "home-sliders",
 ]);
 
 export async function POST(request: NextRequest) {

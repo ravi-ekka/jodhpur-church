@@ -65,7 +65,7 @@ const getCachedSliders = unstable_cache(
   },
   ["home-sliders"],
   {
-    revalidate: 3600,
+    revalidate: 86400,
     tags: ["home-sliders"],
   }
 );
