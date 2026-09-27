@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import {
     ArrowLeft,
@@ -8,13 +9,17 @@ import {
     ShieldCheck,
 } from "lucide-react";
 
+import { getChurchSettings } from "@/lib/settings/church-settings";
+
 export const metadata = {
     title: "Privacy Policy | Jodhpur Church",
     description:
         "Privacy Policy for Jodhpur Church, Balrampur, Chhattisgarh.",
 };
 
-export default function PrivacyPolicyPage() {
+export default async function PrivacyPolicyPage() {
+    const settings = await getChurchSettings();
+
     return (
         <main className="min-h-screen bg-[#fbf6eb] text-[#4b2823] dark:bg-[#1f1815] dark:text-[#f3dfbc]">
             {/* =========================================================
@@ -42,7 +47,7 @@ export default function PrivacyPolicyPage() {
 
                         <div className="min-w-0">
                             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#8b765f] dark:text-[#c9bca9] sm:text-xs">
-                                Jodhpur Church
+                                {settings.churchName}
                             </p>
 
                             <h1 className="mt-1 font-serif text-2xl font-semibold leading-tight tracking-tight text-[#4b2823] dark:text-[#f3dfbc] sm:text-3xl">
@@ -62,7 +67,6 @@ export default function PrivacyPolicyPage() {
             ========================================================== */}
             <section className="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
                 <article className="overflow-hidden border border-[#d8c9a8] bg-[#fffaf1] shadow-sm dark:border-[#4a3c34] dark:bg-[#2a211d]">
-                    {/* Decorative top line */}
                     <div
                         className="h-1 bg-[#c29a52]"
                         aria-hidden="true"
@@ -86,7 +90,7 @@ export default function PrivacyPolicyPage() {
                                 <p>
                                     Welcome to the official website of{" "}
                                     <strong className="font-semibold text-[#4b2823] dark:text-[#f3dfbc]">
-                                        Jodhpur Church
+                                        {settings.churchName}
                                     </strong>
                                     , located in Jodhpur, Balrampur,
                                     Chhattisgarh, India.
@@ -168,8 +172,8 @@ export default function PrivacyPolicyPage() {
 
                                 <p className="mt-4">
                                     The availability or accuracy of third-party
-                                    services may change independently of
-                                    Jodhpur Church.
+                                    services may change independently of{" "}
+                                    {settings.churchName}.
                                 </p>
                             </PolicySection>
 
@@ -219,9 +223,10 @@ export default function PrivacyPolicyPage() {
 
                                 <p className="mt-4">
                                     When you follow an external link, you are
-                                    leaving the Jodhpur Church website. We are
-                                    not responsible for the privacy practices,
-                                    content, or security of external websites.
+                                    leaving the {settings.churchName} website.
+                                    We are not responsible for the privacy
+                                    practices, content, or security of external
+                                    websites.
                                 </p>
                             </PolicySection>
 
@@ -295,7 +300,7 @@ export default function PrivacyPolicyPage() {
                                 <p>
                                     If you have any questions, concerns, or
                                     requests regarding this Privacy Policy,
-                                    please contact Jodhpur Church.
+                                    please contact {settings.churchName}.
                                 </p>
 
                                 {/* Contact card */}
@@ -310,51 +315,55 @@ export default function PrivacyPolicyPage() {
 
                                         <div className="min-w-0">
                                             <p className="font-serif text-lg font-semibold text-[#4b2823] dark:text-[#f3dfbc]">
-                                                Jodhpur Church
+                                                {settings.churchName}
                                             </p>
 
                                             <div className="mt-4 space-y-3">
+                                                {/* Address */}
                                                 <div className="flex items-start gap-2.5">
                                                     <MapPin
                                                         className="mt-0.5 h-4 w-4 shrink-0 text-[#762f2f] dark:text-[#d8b56a]"
                                                         aria-hidden="true"
                                                     />
 
-                                                    <p className="min-w-0 text-sm leading-6 text-[#65584e] dark:text-[#c9bca9]">
-                                                        Jodhpur, Balrampur,
-                                                        <br />
-                                                        Chhattisgarh - 497119,
-                                                        India
+                                                    <p className="min-w-0 whitespace-pre-line text-sm leading-6 text-[#65584e] dark:text-[#c9bca9]">
+                                                        {settings.address}
                                                     </p>
                                                 </div>
 
-                                                <div className="flex min-w-0 items-start gap-2.5">
-                                                    <Mail
-                                                        className="mt-0.5 h-4 w-4 shrink-0 text-[#762f2f] dark:text-[#d8b56a]"
-                                                        aria-hidden="true"
-                                                    />
+                                                {/* Email */}
+                                                {settings.email ? (
+                                                    <div className="flex min-w-0 items-start gap-2.5">
+                                                        <Mail
+                                                            className="mt-0.5 h-4 w-4 shrink-0 text-[#762f2f] dark:text-[#d8b56a]"
+                                                            aria-hidden="true"
+                                                        />
 
-                                                    <a
-                                                        href="mailto:jodhpur.church@gmail.com"
-                                                        className="min-w-0 break-words text-sm font-medium text-[#762f2f] hover:underline [overflow-wrap:anywhere] dark:text-[#d8b56a]"
-                                                    >
-                                                        jodhpur.church@gmail.com
-                                                    </a>
-                                                </div>
+                                                        <a
+                                                            href={`mailto:${settings.email}`}
+                                                            className="min-w-0 break-words text-sm font-medium text-[#762f2f] hover:underline [overflow-wrap:anywhere] dark:text-[#d8b56a]"
+                                                        >
+                                                            {settings.email}
+                                                        </a>
+                                                    </div>
+                                                ) : null}
 
-                                                <div className="flex items-start gap-2.5">
-                                                    <Phone
-                                                        className="mt-0.5 h-4 w-4 shrink-0 text-[#762f2f] dark:text-[#d8b56a]"
-                                                        aria-hidden="true"
-                                                    />
+                                                {/* Phone */}
+                                                {settings.phone ? (
+                                                    <div className="flex items-start gap-2.5">
+                                                        <Phone
+                                                            className="mt-0.5 h-4 w-4 shrink-0 text-[#762f2f] dark:text-[#d8b56a]"
+                                                            aria-hidden="true"
+                                                        />
 
-                                                    <a
-                                                        href="tel:+919340358685"
-                                                        className="text-sm font-medium text-[#762f2f] hover:underline dark:text-[#d8b56a]"
-                                                    >
-                                                        +91 93403 58685
-                                                    </a>
-                                                </div>
+                                                        <a
+                                                            href={`tel:${settings.phone.replace(/\s+/g, "")}`}
+                                                            className="text-sm font-medium text-[#762f2f] hover:underline dark:text-[#d8b56a]"
+                                                        >
+                                                            {settings.phone}
+                                                        </a>
+                                                    </div>
+                                                ) : null}
                                             </div>
                                         </div>
                                     </div>
@@ -437,3 +446,4 @@ function PolicyList({ items }: { items: string[] }) {
         </ul>
     );
 }
+
