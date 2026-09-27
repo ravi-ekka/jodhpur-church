@@ -1,16 +1,16 @@
+
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import PushNotificationProvider from "@/components/providers/PushNotificationProvider";
 import NotificationUnreadProvider from "@/components/notifications/NotificationUnreadProvider";
 import { getChurchSettings } from "@/lib/settings/church-settings";
 import { NextIntlClientProvider } from "next-intl";
+import { Analytics } from "@vercel/analytics/next";
 import {
   getLocale,
   getMessages,
 } from "next-intl/server";
 import { Suspense } from "react";
-
-//export const instant = false;
 
 export default async function LocaleLayout({
   children,
@@ -36,10 +36,15 @@ export default async function LocaleLayout({
           />
         </Suspense>
 
-        <main>{children}</main>
+        <main>
+          {children}
+        </main>
 
         <Footer settings={settings} />
+
+        <Analytics />
       </NotificationUnreadProvider>
     </NextIntlClientProvider>
   );
 }
+
