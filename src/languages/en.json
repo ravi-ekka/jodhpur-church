@@ -154,6 +154,17 @@
       "mapTitle": "Jodhpur Church Location"
     }
   },
+  "welcome": {
+    "label": "Welcome",
+    "title": "You are welcome here.",
+    "paragraph1": "Whether you are exploring faith for the first time or have followed Jesus for many years, there is a place for you at Jodhpur Church.",
+    "paragraph2": "Come as you are, meet our community, worship with us, and take the next step in your journey of faith.",
+    "verse": "“For where two or three gather in my name, there am I with them.”",
+    "reference": "— Matthew 18:20",
+    "imageAlt": "Jodhpur Church"
+  },
+  
+
   "about": {
     "label": "About Jodhpur Church",
     "title": "A place to belong, believe & grow",

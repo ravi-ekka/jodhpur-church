@@ -185,7 +185,7 @@ export default function HeroSlider({
 
   return (
     <section className="bg-[#fffdf7] py-10 text-[#33251d] dark:bg-[#211b18] dark:text-[#f5ead8] sm:py-12 lg:py-14">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
 
         {/* Section heading */}
         <div className="mb-6 text-center sm:mb-8">
@@ -205,7 +205,7 @@ export default function HeroSlider({
 
         {/* Slider */}
         <div
-          className="group relative overflow-hidden rounded-xl border border-[#d8c9a8] bg-[#2e1b17] shadow-md dark:border-[#4b4038]"
+          className="group relative overflow-hidden rounded border border-[#d8c9a8] bg-[#2e1b17] shadow-md dark:border-[#4b4038]"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
@@ -272,28 +272,38 @@ export default function HeroSlider({
                   {/* <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-[#24130f]/80 to-transparent" /> */}
 
                   {/* Content */}
-                  <div className="absolute inset-0 flex items-end">
-                    <div className="w-full px-5 pb-9 sm:px-9 sm:pb-11 lg:px-14 lg:pb-14">
-                      <div className="max-w-2xl text-white">
+                  <div className="absolute inset-0 flex items-end justify-center">
+                    <div className="w-full px-5 pb-10 text-center sm:px-9 sm:pb-12 lg:px-14 lg:pb-16">
+                      <div className="mx-auto max-w-3xl text-black">
 
                         {title && (
-                          <>
-                            <div className="mb-3 flex items-center gap-3">
-                              <span className="h-px w-8 bg-[#d8b56a]" />
-
-                              <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[#e5cb91]">
-                                Jodhpur Church
-                              </span>
-                            </div>
-
-                            <h2 className="font-serif text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-                              {title}
-                            </h2>
-                          </>
+                          <h2
+                            className="
+            font-serif text-2xl font-semibold leading-tight tracking-tight
+            text-black
+            [-webkit-text-stroke:1.5px_white]
+            [text-shadow:0_0_6px_rgba(255,255,255,1),0_0_14px_rgba(255,255,255,1),0_3px_8px_rgba(255,255,255,1)]
+            sm:text-3xl
+            md:text-4xl
+            lg:text-5xl
+          "
+                          >
+                            {title}
+                          </h2>
                         )}
 
                         {description && (
-                          <p className="mt-3 max-w-xl text-sm leading-6 text-[#f4eadc] sm:mt-4 sm:text-base sm:leading-7 lg:text-lg">
+                          <p
+                            className="
+            mx-auto mt-4 max-w-2xl
+            text-sm leading-6 text-black
+            [-webkit-text-stroke:0.8px_white]
+            [text-shadow:0_0_5px_rgba(255,255,255,1),0_0_12px_rgba(255,255,255,1),0_2px_6px_rgba(255,255,255,1)]
+            sm:mt-5
+            sm:text-base sm:leading-7
+            lg:text-lg lg:leading-8
+          "
+                          >
                             {description}
                           </p>
                         )}
@@ -301,16 +311,32 @@ export default function HeroSlider({
                         {buttonText && slider.buttonUrl && (
                           <Link
                             href={slider.buttonUrl}
-                            className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md border border-[#d4ae5e] bg-[#f4e7c8] px-5 py-2.5 text-sm font-semibold text-[#552521] shadow-lg transition-colors hover:bg-[#fff1d0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e2c27b] focus-visible:ring-offset-2 focus-visible:ring-offset-[#3a211d] sm:mt-6 sm:px-6 sm:text-base"
+                            className="
+            mt-6 inline-flex min-h-11 items-center justify-center
+            rounded-md border border-[#d4ae5e]
+            bg-[#f4e7c8] px-5 py-2.5
+            text-sm font-semibold text-[#552521]
+            shadow-[0_4px_15px_rgba(0,0,0,0.45)]
+            transition-colors
+            hover:bg-[#fff1d0]
+            focus-visible:outline-none
+            focus-visible:ring-2
+            focus-visible:ring-[#e2c27b]
+            focus-visible:ring-offset-2
+            focus-visible:ring-offset-transparent
+            sm:mt-7 sm:px-6 sm:text-base
+          "
                           >
                             {buttonText}
-
                             <ChevronRight className="ml-1 h-4 w-4" />
                           </Link>
                         )}
+
                       </div>
                     </div>
                   </div>
+
+
                 </div>
               );
             })}

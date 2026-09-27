@@ -11,6 +11,7 @@ import { adminDb } from "@/lib/firebase/admin";
 import { unstable_cache } from "next/cache";
 import HomeImage from "@/components/home/HomeImage";
 import ServiceInfo from "@/components/home/ServiceInfo";
+import Welcome from "@/components/home/Welcome";
 
 type HomePageProps = {
   params: Promise<{
@@ -96,7 +97,8 @@ export default async function HomePage({
         locale={locale}
         sliderItems={sliderItems}
       />
-      <HomeImage />
+      {/* <HomeImage /> */}
+      <Welcome/>
 
       <ServiceInfo
         sundayWorship={settings.sundayWorship}

@@ -1,7 +1,6 @@
 package com.jodhpurchurch.app;
 
 import android.content.Context;
-import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.ConnectivityManager;
@@ -12,8 +11,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.view.Gravity;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowInsetsController;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -21,10 +18,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.activity.OnBackPressedCallback;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.getcapacitor.BridgeActivity;
 import com.getcapacitor.WebViewListener;
@@ -41,17 +34,6 @@ public class MainActivity extends BridgeActivity {
         private TextView messageText;
         private Button refreshButton;
 
-        /*
-         * Dedicated backgrounds for Android system bars.
-         *
-         * Android 15+ uses enforced edge-to-edge, so the old
-         * setStatusBarColor()/setNavigationBarColor() approach
-         * cannot reliably provide the background.
-         */
-        private FrameLayout systemBarsOverlay;
-        private View statusBarBackground;
-        private View navigationBarBackground;
-
         private ConnectivityManager connectivityManager;
         private ConnectivityManager.NetworkCallback networkCallback;
 
@@ -63,30 +45,27 @@ public class MainActivity extends BridgeActivity {
          * --------------------------------------------------------
          * ANDROID NAVIGATION HISTORY
          * --------------------------------------------------------
+         *
+         * We maintain our own history because the website uses
+         * Next.js App Router client-side navigation.
          */
-        private final Handler navigationHandler =
-                        new Handler(Looper.getMainLooper());
+        private final Handler navigationHandler = new Handler(Looper.getMainLooper());
 
-        private final List<String> navigationHistory =
-                        new ArrayList<>();
+        private final List<String> navigationHistory = new ArrayList<>();
 
         private String lastKnownUrl = null;
 
         /*
-         * Current theme reported by the WEBSITE.
-         *
-         * true  = website dark mode
-         * false = website light mode
-         */
-        private boolean lastKnownWebsiteDarkMode = false;
-
-        /*
          * True while Android is intentionally navigating backward.
+         *
+         * This prevents the URL tracker from adding the previous
+         * page as a new forward-history entry.
          */
         private boolean handlingBackNavigation = false;
 
         /*
-         * Poll the current URL and website theme.
+         * Poll the current URL and website theme so we can detect
+         * Next.js client-side navigation and next-themes changes.
          */
         private final Runnable navigationTracker = new Runnable() {
 
@@ -111,8 +90,7 @@ public class MainActivity extends BridgeActivity {
                                                         return;
                                                 }
 
-                                                String url =
-                                                                cleanJavascriptString(value);
+                                                String url = cleanJavascriptString(value);
 
                                                 if (url == null
                                                                 || url.isEmpty()
@@ -139,47 +117,6 @@ public class MainActivity extends BridgeActivity {
                                                 }
                                         });
 
-                        // -------------------------------------------------
-                        // CHECK WEBSITE DARK / LIGHT MODE
-                        // -------------------------------------------------
-
-                        webView.evaluateJavascript(
-                                        "(function() {" +
-                                                        "return document.documentElement.classList.contains('dark');" +
-                                                        "})()",
-                                        value -> {
-
-                                                boolean websiteDarkMode =
-                                                                "true".equals(value);
-
-                                                if (websiteDarkMode
-                                                                != lastKnownWebsiteDarkMode) {
-
-                                                        lastKnownWebsiteDarkMode =
-                                                                        websiteDarkMode;
-
-                                                        updateSystemBars(
-                                                                        websiteDarkMode);
-
-                                                        /*
-                                                         * Rebuild overlay using
-                                                         * the new website theme.
-                                                         */
-                                                        if (overlay != null
-                                                                        && overlay.getVisibility() == View.VISIBLE) {
-
-                                                                if (showingOffline) {
-
-                                                                        showOffline();
-
-                                                                } else {
-
-                                                                        showLoading();
-                                                                }
-                                                        }
-                                                }
-                                        });
-
                         navigationHandler.postDelayed(
                                         this,
                                         200);
@@ -188,31 +125,8 @@ public class MainActivity extends BridgeActivity {
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
-
                 super.onCreate(savedInstanceState);
-
-                /*
-                 * Android 15+ / targetSdk 35+ uses edge-to-edge.
-                 *
-                 * Allow content to extend behind the system bars.
-                 * Dedicated background views below will paint those
-                 * areas correctly.
-                 */
-                Window window = getWindow();
-
-                WindowCompat.setDecorFitsSystemWindows(
-                                window,
-                                false);
-
-                /*
-                 * Get Capacitor WebView.
-                 */
                 webView = getBridge().getWebView();
-
-                /*
-                 * Setup system-bar background views first.
-                 */
-                setupSystemBars();
 
                 if (webView != null) {
 
@@ -227,12 +141,7 @@ public class MainActivity extends BridgeActivity {
                         startNavigationTracking();
 
                         /*
-                         * Read website's actual theme.
-                         */
-                        updateWebsiteTheme();
-
-                        /*
-                         * Check internet immediately.
+                         * Check internet immediately when the app starts.
                          */
                         if (!hasInternetConnection()) {
 
@@ -246,143 +155,8 @@ public class MainActivity extends BridgeActivity {
         }
 
         /**
-         * Create dedicated background areas behind the
-         * Android status and navigation bars.
-         *
-         * This is the important part for target SDK 36.
-         */
-        private void setupSystemBars() {
-
-                systemBarsOverlay =
-                                new FrameLayout(this);
-
-                systemBarsOverlay.setClickable(false);
-                systemBarsOverlay.setFocusable(false);
-
-                systemBarsOverlay.setBackgroundColor(
-                                Color.TRANSPARENT);
-
-                FrameLayout.LayoutParams overlayParams =
-                                new FrameLayout.LayoutParams(
-                                                FrameLayout.LayoutParams.MATCH_PARENT,
-                                                FrameLayout.LayoutParams.MATCH_PARENT);
-
-                addContentView(
-                                systemBarsOverlay,
-                                overlayParams);
-
-                /*
-                 * Status bar background.
-                 */
-                statusBarBackground =
-                                new View(this);
-
-                statusBarBackground.setBackgroundColor(
-                                Color.WHITE);
-
-                FrameLayout.LayoutParams statusParams =
-                                new FrameLayout.LayoutParams(
-                                                FrameLayout.LayoutParams.MATCH_PARENT,
-                                                0);
-
-                statusParams.gravity =
-                                Gravity.TOP;
-
-                systemBarsOverlay.addView(
-                                statusBarBackground,
-                                statusParams);
-
-                /*
-                 * Navigation bar background.
-                 */
-                navigationBarBackground =
-                                new View(this);
-
-                navigationBarBackground.setBackgroundColor(
-                                Color.WHITE);
-
-                FrameLayout.LayoutParams navigationParams =
-                                new FrameLayout.LayoutParams(
-                                                FrameLayout.LayoutParams.MATCH_PARENT,
-                                                0);
-
-                navigationParams.gravity =
-                                Gravity.BOTTOM;
-
-                systemBarsOverlay.addView(
-                                navigationBarBackground,
-                                navigationParams);
-
-                /*
-                 * Get actual system-bar inset sizes.
-                 */
-                ViewCompat.setOnApplyWindowInsetsListener(
-                                systemBarsOverlay,
-                                (view, windowInsets) -> {
-
-                                        Insets systemBars =
-                                                        windowInsets.getInsets(
-                                                                        WindowInsetsCompat.Type.systemBars());
-
-                                        /*
-                                         * Status bar height.
-                                         *
-                                         * IMPORTANT:
-                                         * Use different variable name here
-                                         * because statusParams was already
-                                         * declared above.
-                                         */
-                                        FrameLayout.LayoutParams updatedStatusParams =
-                                                        (FrameLayout.LayoutParams)
-                                                                        statusBarBackground.getLayoutParams();
-
-                                        updatedStatusParams.height =
-                                                        systemBars.top;
-
-                                        updatedStatusParams.width =
-                                                        FrameLayout.LayoutParams.MATCH_PARENT;
-
-                                        updatedStatusParams.gravity =
-                                                        Gravity.TOP;
-
-                                        statusBarBackground.setLayoutParams(
-                                                        updatedStatusParams);
-
-                                        /*
-                                         * Navigation bar height.
-                                         *
-                                         * IMPORTANT:
-                                         * Use different variable name here
-                                         * because navigationParams was already
-                                         * declared above.
-                                         */
-                                        FrameLayout.LayoutParams updatedNavigationParams =
-                                                        (FrameLayout.LayoutParams)
-                                                                        navigationBarBackground
-                                                                                        .getLayoutParams();
-
-                                        updatedNavigationParams.height =
-                                                        systemBars.bottom;
-
-                                        updatedNavigationParams.width =
-                                                        FrameLayout.LayoutParams.MATCH_PARENT;
-
-                                        updatedNavigationParams.gravity =
-                                                        Gravity.BOTTOM;
-
-                                        navigationBarBackground.setLayoutParams(
-                                                        updatedNavigationParams);
-
-                                        return windowInsets;
-                                });
-
-                ViewCompat.requestApplyInsets(
-                                systemBarsOverlay);
-        }
-
-        /**
-         * Convert evaluateJavascript() result into
-         * a normal Java String.
+         * Convert the value returned by evaluateJavascript()
+         * into a normal Java String.
          */
         private String cleanJavascriptString(String value) {
 
@@ -392,6 +166,13 @@ public class MainActivity extends BridgeActivity {
 
                 String result = value.trim();
 
+                /*
+                 * evaluateJavascript returns a JSON string such as:
+                 *
+                 * "https://example.com/en/about"
+                 *
+                 * Remove the surrounding quotes.
+                 */
                 if (result.length() >= 2
                                 && result.startsWith("\"")
                                 && result.endsWith("\"")) {
@@ -400,6 +181,9 @@ public class MainActivity extends BridgeActivity {
                                         1,
                                         result.length() - 1);
 
+                        /*
+                         * Decode common JSON escaping.
+                         */
                         result = result
                                         .replace("\\/", "/")
                                         .replace("\\\"", "\"")
@@ -410,7 +194,7 @@ public class MainActivity extends BridgeActivity {
         }
 
         /**
-         * Start monitoring URL and website theme.
+         * Start monitoring the actual URL and website theme.
          */
         private void startNavigationTracking() {
 
@@ -422,7 +206,9 @@ public class MainActivity extends BridgeActivity {
         }
 
         /**
-         * Keep Capacitor's own WebViewClient.
+         * Keep Capacitor's own BridgeWebViewClient.
+         *
+         * We only listen to its events.
          */
         private void setupCapacitorWebViewListener() {
 
@@ -455,11 +241,6 @@ public class MainActivity extends BridgeActivity {
 
                                                         hideOverlay();
 
-                                                        /*
-                                                         * Read website theme
-                                                         * after loading.
-                                                         */
-                                                        updateWebsiteTheme();
                                                 });
                                         }
 
@@ -483,6 +264,11 @@ public class MainActivity extends BridgeActivity {
 
                                                 runOnUiThread(() -> {
 
+                                                        /*
+                                                         * Only treat an HTTP error as an offline
+                                                         * condition when there is actually no
+                                                         * validated internet connection.
+                                                         */
                                                         if (!hasInternetConnection()) {
 
                                                                 pageLoaded = false;
@@ -499,13 +285,15 @@ public class MainActivity extends BridgeActivity {
                                                         WebView view,
                                                         String url) {
 
-                                                // Capacitor page becoming visible.
+                                                // Capacitor page is becoming visible.
                                         }
                                 });
         }
 
         /**
-         * Put overlay directly on Activity content.
+         * Put the overlay directly on the Activity content.
+         *
+         * This avoids depending on the WebView's parent layout.
          */
         private void setupOverlay() {
 
@@ -514,10 +302,9 @@ public class MainActivity extends BridgeActivity {
                 overlay.setClickable(true);
                 overlay.setFocusable(true);
 
-                FrameLayout.LayoutParams params =
-                                new FrameLayout.LayoutParams(
-                                                FrameLayout.LayoutParams.MATCH_PARENT,
-                                                FrameLayout.LayoutParams.MATCH_PARENT);
+                FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
+                                FrameLayout.LayoutParams.MATCH_PARENT,
+                                FrameLayout.LayoutParams.MATCH_PARENT);
 
                 addContentView(
                                 overlay,
@@ -536,36 +323,23 @@ public class MainActivity extends BridgeActivity {
 
                 overlay.removeAllViews();
 
-                /*
-                 * Use WEBSITE theme.
-                 */
-                boolean darkMode =
-                                lastKnownWebsiteDarkMode;
+                overlay.setBackgroundColor(Color.WHITE);
 
-                overlay.setBackgroundColor(
-                                darkMode
-                                                ? Color.rgb(15, 15, 15)
-                                                : Color.WHITE);
+                FrameLayout content = new FrameLayout(this);
 
-                FrameLayout content =
-                                new FrameLayout(this);
-
-                FrameLayout.LayoutParams contentParams =
-                                new FrameLayout.LayoutParams(
-                                                FrameLayout.LayoutParams.MATCH_PARENT,
-                                                FrameLayout.LayoutParams.MATCH_PARENT);
+                FrameLayout.LayoutParams contentParams = new FrameLayout.LayoutParams(
+                                FrameLayout.LayoutParams.MATCH_PARENT,
+                                FrameLayout.LayoutParams.MATCH_PARENT);
 
                 overlay.addView(
                                 content,
                                 contentParams);
 
-                FrameLayout center =
-                                new FrameLayout(this);
+                FrameLayout center = new FrameLayout(this);
 
-                FrameLayout.LayoutParams centerParams =
-                                new FrameLayout.LayoutParams(
-                                                FrameLayout.LayoutParams.WRAP_CONTENT,
-                                                FrameLayout.LayoutParams.WRAP_CONTENT);
+                FrameLayout.LayoutParams centerParams = new FrameLayout.LayoutParams(
+                                FrameLayout.LayoutParams.WRAP_CONTENT,
+                                FrameLayout.LayoutParams.WRAP_CONTENT);
 
                 centerParams.gravity = Gravity.CENTER;
 
@@ -573,25 +347,21 @@ public class MainActivity extends BridgeActivity {
                                 center,
                                 centerParams);
 
-                progressBar =
-                                new ProgressBar(this);
+                progressBar = new ProgressBar(this);
 
                 progressBar.setIndeterminate(true);
 
-                FrameLayout.LayoutParams progressParams =
-                                new FrameLayout.LayoutParams(
-                                                70,
-                                                70);
+                FrameLayout.LayoutParams progressParams = new FrameLayout.LayoutParams(
+                                70,
+                                70);
 
-                progressParams.gravity =
-                                Gravity.CENTER_HORIZONTAL;
+                progressParams.gravity = Gravity.CENTER_HORIZONTAL;
 
                 center.addView(
                                 progressBar,
                                 progressParams);
 
-                messageText =
-                                new TextView(this);
+                messageText = new TextView(this);
 
                 messageText.setText(
                                 "Loading...");
@@ -603,21 +373,16 @@ public class MainActivity extends BridgeActivity {
                                                 Typeface.DEFAULT,
                                                 Typeface.NORMAL));
 
-                messageText.setTextColor(
-                                darkMode
-                                                ? Color.WHITE
-                                                : Color.rgb(50, 50, 50));
+                messageText.setTextColor(Color.rgb(50, 50, 50));
 
                 messageText.setGravity(
                                 Gravity.CENTER);
 
-                FrameLayout.LayoutParams textParams =
-                                new FrameLayout.LayoutParams(
-                                                FrameLayout.LayoutParams.WRAP_CONTENT,
-                                                FrameLayout.LayoutParams.WRAP_CONTENT);
+                FrameLayout.LayoutParams textParams = new FrameLayout.LayoutParams(
+                                FrameLayout.LayoutParams.WRAP_CONTENT,
+                                FrameLayout.LayoutParams.WRAP_CONTENT);
 
-                textParams.gravity =
-                                Gravity.CENTER_HORIZONTAL;
+                textParams.gravity = Gravity.CENTER_HORIZONTAL;
 
                 textParams.topMargin = 95;
 
@@ -625,8 +390,7 @@ public class MainActivity extends BridgeActivity {
                                 messageText,
                                 textParams);
 
-                refreshButton =
-                                new Button(this);
+                refreshButton = new Button(this);
 
                 refreshButton.setText(
                                 "Refresh");
@@ -645,13 +409,11 @@ public class MainActivity extends BridgeActivity {
                         }
                 });
 
-                FrameLayout.LayoutParams buttonParams =
-                                new FrameLayout.LayoutParams(
-                                                FrameLayout.LayoutParams.WRAP_CONTENT,
-                                                FrameLayout.LayoutParams.WRAP_CONTENT);
+                FrameLayout.LayoutParams buttonParams = new FrameLayout.LayoutParams(
+                                FrameLayout.LayoutParams.WRAP_CONTENT,
+                                FrameLayout.LayoutParams.WRAP_CONTENT);
 
-                buttonParams.gravity =
-                                Gravity.CENTER_HORIZONTAL;
+                buttonParams.gravity = Gravity.CENTER_HORIZONTAL;
 
                 buttonParams.topMargin = 145;
 
@@ -681,18 +443,6 @@ public class MainActivity extends BridgeActivity {
                                 View.VISIBLE);
 
                 overlay.bringToFront();
-
-                /*
-                 * IMPORTANT:
-                 *
-                 * System-bar backgrounds must be ABOVE the
-                 * full-screen loading overlay. Otherwise the
-                 * loading overlay can cover the status/navigation
-                 * bar background on target SDK 36.
-                 */
-                if (systemBarsOverlay != null) {
-                        systemBarsOverlay.bringToFront();
-                }
         }
 
         private void showOffline() {
@@ -721,14 +471,6 @@ public class MainActivity extends BridgeActivity {
                                 View.VISIBLE);
 
                 overlay.bringToFront();
-
-                /*
-                 * Keep system-bar backgrounds above the
-                 * offline overlay.
-                 */
-                if (systemBarsOverlay != null) {
-                        systemBarsOverlay.bringToFront();
-                }
         }
 
         private void hideOverlay() {
@@ -737,11 +479,6 @@ public class MainActivity extends BridgeActivity {
 
                         overlay.setVisibility(
                                         View.GONE);
-                }
-
-                if (systemBarsOverlay != null) {
-
-                        systemBarsOverlay.bringToFront();
                 }
         }
 
@@ -775,26 +512,22 @@ public class MainActivity extends BridgeActivity {
 
                 if (connectivityManager == null) {
 
-                        connectivityManager =
-                                        (ConnectivityManager)
-                                                        getSystemService(
-                                                                        Context.CONNECTIVITY_SERVICE);
+                        connectivityManager = (ConnectivityManager) getSystemService(
+                                        Context.CONNECTIVITY_SERVICE);
                 }
 
                 if (connectivityManager == null) {
                         return false;
                 }
 
-                Network network =
-                                connectivityManager.getActiveNetwork();
+                Network network = connectivityManager.getActiveNetwork();
 
                 if (network == null) {
                         return false;
                 }
 
-                NetworkCapabilities capabilities =
-                                connectivityManager.getNetworkCapabilities(
-                                                network);
+                NetworkCapabilities capabilities = connectivityManager.getNetworkCapabilities(
+                                network);
 
                 return capabilities != null
                                 && capabilities.hasCapability(
@@ -805,76 +538,80 @@ public class MainActivity extends BridgeActivity {
 
         private void setupNetworkMonitoring() {
 
-                connectivityManager =
-                                (ConnectivityManager)
-                                                getSystemService(
-                                                                Context.CONNECTIVITY_SERVICE);
+                connectivityManager = (ConnectivityManager) getSystemService(
+                                Context.CONNECTIVITY_SERVICE);
 
                 if (connectivityManager == null) {
                         return;
                 }
 
-                networkCallback =
-                                new ConnectivityManager.NetworkCallback() {
+                networkCallback = new ConnectivityManager.NetworkCallback() {
 
-                                        @Override
-                                        public void onAvailable(
-                                                        Network network) {
+                        @Override
+                        public void onAvailable(Network network) {
 
-                                                runOnUiThread(() -> {
+                                runOnUiThread(() -> {
 
-                                                        if (webView == null) {
-                                                                return;
+                                        if (webView == null) {
+                                                return;
+                                        }
+
+                                        /*
+                                         * Give Android a moment to validate the network.
+                                         */
+                                        navigationHandler.postDelayed(() -> {
+
+                                                if (webView == null) {
+                                                        return;
+                                                }
+
+                                                /*
+                                                 * Only retry when the network actually has
+                                                 * validated internet access.
+                                                 */
+                                                if (hasInternetConnection()) {
+
+                                                        if (!pageLoaded || showingOffline) {
+                                                                retryWebView();
                                                         }
+                                                }
 
-                                                        navigationHandler.postDelayed(
-                                                                        () -> {
+                                        }, 500);
+                                });
+                        }
 
-                                                                                if (webView == null) {
-                                                                                        return;
-                                                                                }
+                        @Override
+                        public void onLost(Network network) {
 
-                                                                                if (hasInternetConnection()) {
+                                runOnUiThread(() -> {
 
-                                                                                        if (!pageLoaded
-                                                                                                        || showingOffline) {
+                                        /*
+                                         * Give Android a moment to switch to another
+                                         * available network, such as mobile data.
+                                         */
+                                        navigationHandler.postDelayed(() -> {
 
-                                                                                                retryWebView();
-                                                                                        }
-                                                                                }
+                                                if (webView == null) {
+                                                        return;
+                                                }
 
-                                                                        },
-                                                                        500);
-                                                });
-                                        }
+                                                /*
+                                                 * Only show the offline screen if there is
+                                                 * really no validated internet connection.
+                                                 */
+                                                if (!hasInternetConnection()) {
 
-                                        @Override
-                                        public void onLost(
-                                                        Network network) {
+                                                        pageLoaded = false;
+                                                        showingOffline = true;
+                                                        retrying = false;
 
-                                                runOnUiThread(() -> {
+                                                        showOffline();
+                                                }
 
-                                                        navigationHandler.postDelayed(
-                                                                        () -> {
-
-                                                                                if (webView == null) {
-                                                                                        return;
-                                                                                }
-
-                                                                                if (!hasInternetConnection()) {
-
-                                                                                        pageLoaded = false;
-                                                                                        showingOffline = true;
-                                                                                        retrying = false;
-
-                                                                                        showOffline();
-                                                                                }
-
-                                                                        },
-                                                                        500);
-                                                });
-                                        }
-                                };
+                                        }, 500);
+                                });
+                        }
+                };
 
                 connectivityManager.registerDefaultNetworkCallback(
                                 networkCallback);
@@ -883,7 +620,17 @@ public class MainActivity extends BridgeActivity {
         /**
          * Android Back navigation.
          *
-         * DO NOT CHANGE.
+         * Uses the WebView's actual navigation history.
+         *
+         * Example:
+         *
+         * Home → About → Events
+         *
+         * Back → About
+         * Back → Home
+         * Back → close app
+         *
+         * DO NOT CHANGE unless specifically requested.
          */
         private void setupBackNavigation() {
 
@@ -899,14 +646,17 @@ public class MainActivity extends BridgeActivity {
                                                         return;
                                                 }
 
-                                                String currentUrl =
-                                                                webView.getUrl();
+                                                String currentUrl = webView.getUrl();
 
                                                 if (currentUrl == null) {
                                                         finish();
                                                         return;
                                                 }
 
+                                                /*
+                                                 * If WebView has browser history,
+                                                 * go to the previous page.
+                                                 */
                                                 if (webView.canGoBack()) {
 
                                                         webView.goBack();
@@ -914,222 +664,34 @@ public class MainActivity extends BridgeActivity {
                                                         return;
                                                 }
 
-                                                boolean isHome =
-                                                                currentUrl.endsWith("/en")
-                                                                                ||
-                                                                currentUrl.endsWith("/en/")
-                                                                                ||
-                                                                currentUrl.endsWith("/hi")
-                                                                                ||
-                                                                currentUrl.endsWith("/hi/")
-                                                                                ||
-                                                                currentUrl.endsWith("/kru")
-                                                                                ||
+                                                /*
+                                                 * No WebView history left.
+                                                 *
+                                                 * Check whether we are already on Home.
+                                                 */
+                                                boolean isHome = currentUrl.endsWith("/en") ||
+                                                                currentUrl.endsWith("/en/") ||
+                                                                currentUrl.endsWith("/hi") ||
+                                                                currentUrl.endsWith("/hi/") ||
+                                                                currentUrl.endsWith("/kru") ||
                                                                 currentUrl.endsWith("/kru/");
 
                                                 if (isHome) {
 
+                                                        // Already on Home → close app
                                                         finish();
 
                                                 } else {
 
-                                                        String homeUrl =
-                                                                        currentUrl.replaceFirst(
-                                                                                        "/(en|hi|kru)(/.*)?/?$",
-                                                                                        "/$1");
+                                                        // Not Home → go to Home
+                                                        String homeUrl = currentUrl.replaceFirst(
+                                                                        "/(en|hi|kru)(/.*)?/?$",
+                                                                        "/$1");
 
-                                                        webView.loadUrl(
-                                                                        homeUrl);
+                                                        webView.loadUrl(homeUrl);
                                                 }
                                         }
                                 });
-        }
-
-        /**
-         * Read CURRENT theme from WEBSITE.
-         */
-        private void updateWebsiteTheme() {
-
-                if (webView == null) {
-                        return;
-                }
-
-                webView.evaluateJavascript(
-                                "(function() {" +
-                                                "return document.documentElement.classList.contains('dark');" +
-                                                "})()",
-                                value -> {
-
-                                        boolean darkMode =
-                                                        "true".equals(value);
-
-                                        lastKnownWebsiteDarkMode =
-                                                        darkMode;
-
-                                        updateSystemBars(
-                                                        darkMode);
-                                });
-        }
-
-        /**
-         * Update Android system bars according to WEBSITE theme.
-         *
-         * For target SDK 36 the actual backgrounds are provided
-         * by dedicated inset views. This method controls:
-         *
-         * 1. Status/navigation bar background views.
-         * 2. Status/navigation icon appearance.
-         */
-        private void updateSystemBars(
-                        boolean darkMode) {
-
-                int backgroundColor =
-                                darkMode
-                                                ? Color.rgb(15, 15, 15)
-                                                : Color.WHITE;
-
-                /*
-                 * Update dedicated Android 15+ bar backgrounds.
-                 */
-                if (statusBarBackground != null) {
-
-                        statusBarBackground.setBackgroundColor(
-                                        backgroundColor);
-                }
-
-                if (navigationBarBackground != null) {
-
-                        navigationBarBackground.setBackgroundColor(
-                                        backgroundColor);
-                }
-
-                Window window = getWindow();
-
-                /*
-                 * Keep system bars transparent so our dedicated
-                 * background views are visible behind them.
-                 */
-                window.setStatusBarColor(
-                                Color.TRANSPARENT);
-
-                window.setNavigationBarColor(
-                                Color.TRANSPARENT);
-
-                /*
-                 * Disable automatic contrast overlays.
-                 */
-                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
-
-                        window.setStatusBarContrastEnforced(
-                                        false);
-
-                        window.setNavigationBarContrastEnforced(
-                                        false);
-                }
-
-                /*
-                 * Android 11+ icon appearance.
-                 *
-                 * DARK WEBSITE:
-                 *      white icons
-                 *
-                 * LIGHT WEBSITE:
-                 *      dark icons
-                 */
-                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
-
-                        WindowInsetsController controller =
-                                        window.getInsetsController();
-
-                        if (controller != null) {
-
-                                int appearance = 0;
-
-                                if (!darkMode) {
-
-                                        appearance =
-                                                        WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
-                                                                        |
-                                                        WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS;
-                                }
-
-                                controller.setSystemBarsAppearance(
-                                                appearance,
-
-                                                WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
-                                                                |
-                                                WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS);
-                        }
-
-                } else {
-
-                        /*
-                         * Older Android versions.
-                         */
-                        View decorView =
-                                        window.getDecorView();
-
-                        int flags =
-                                        decorView.getSystemUiVisibility();
-
-                        if (darkMode) {
-
-                                flags &= ~(
-                                                View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-                                                                |
-                                                View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
-
-                        } else {
-
-                                flags |=
-                                                View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-                                                                |
-                                                View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
-                        }
-
-                        decorView.setSystemUiVisibility(
-                                        flags);
-                }
-        }
-
-        @Override
-        public void onConfigurationChanged(
-                        Configuration newConfig) {
-
-                super.onConfigurationChanged(
-                                newConfig);
-
-                /*
-                 * Do NOT use Android's system theme.
-                 *
-                 * Use website theme instead.
-                 */
-                updateWebsiteTheme();
-
-                /*
-                 * Rebuild overlay using website theme.
-                 */
-                if (overlay != null
-                                && overlay.getVisibility() == View.VISIBLE) {
-
-                        if (showingOffline) {
-
-                                showOffline();
-
-                        } else {
-
-                                showLoading();
-                        }
-                }
-
-                /*
-                 * Refresh system-bar inset sizes.
-                 */
-                if (systemBarsOverlay != null) {
-
-                        ViewCompat.requestApplyInsets(
-                                        systemBarsOverlay);
-                }
         }
 
         @Override

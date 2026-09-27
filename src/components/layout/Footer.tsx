@@ -260,7 +260,6 @@ const Footer = async ({
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs sm:text-sm md:justify-end">
-
             <Link
               href={`/${locale}/privacy`}
               className="inline-flex min-h-9 items-center text-[#9f9182] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
@@ -279,7 +278,18 @@ const Footer = async ({
             >
               {t("terms")}
             </Link>
-
+            <span
+              className="hidden h-3 w-px bg-[#8e6b35]/50 sm:block"
+              aria-hidden="true"
+            />  
+            <a
+              href="https://jodhpur-church-admin.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-9 items-center gap-1 text-[#9f9182] transition-colors hover:text-[#e5c982] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b56a]"
+            >
+              Admin Login
+            </a>
           </div>
         </div>
       </div>

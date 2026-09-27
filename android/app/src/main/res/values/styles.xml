@@ -12,12 +12,12 @@
         <item name="windowNoTitle">true</item>
         <item name="android:background">@null</item>
 
-        <!-- Android 15+ uses edge-to-edge -->
-        <item name="android:windowLightStatusBar">false</item>
-        <item name="android:windowLightNavigationBar">false</item>
+        <!-- Default to light system bars.
+             MainActivity changes these when website is dark. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
 
-        <!-- Actual colors are supplied by MainActivity -->
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- <item name="android:statusBarColor">@android:color/transparent</item> -->
         <item name="android:navigationBarColor">@android:color/transparent</item>
 
     </style>
