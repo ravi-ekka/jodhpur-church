@@ -127,7 +127,7 @@ export default function LoginPage() {
         );
 
       if (loggedInUser.emailVerified) {
-        router.push(`/${locale}`);
+        router.push(`/${locale}/dashboard`);
       } else {
         router.push(
           `/${locale}/verify-email`,
@@ -165,7 +165,7 @@ export default function LoginPage() {
           await loginWithGoogle();
 
         if (googleUser.emailVerified) {
-          router.push(`/${locale}`);
+          router.push(`/${locale}/dashboard`);
         } else {
           router.push(
             `/${locale}/verify-email`,

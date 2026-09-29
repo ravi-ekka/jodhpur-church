@@ -65,7 +65,7 @@ export default function SignupPage() {
       const googleUser = await loginWithGoogle();
 
       if (googleUser.emailVerified) {
-        router.push(`/${locale}`);
+        router.push(`/${locale}/dashboard`);
       } else {
         router.push(`/${locale}/verify-email`);
       }

@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "120688223915-qfchmgmv0ld0qk5ch82lfnpub2nfm4t9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jodhpurchurch.app",
+            "certificate_hash": "bcb1568c077ffe645e8f9d16de56ff4bec9a8da4"
+          }
+        },
+        {
           "client_id": "120688223915-7kmako6me7jpkvt5i821d2asst0djdia.apps.googleusercontent.com",
           "client_type": 3
         }
